@@ -3,7 +3,9 @@
 日常只看两个文件：
 
 - [femm_config.py](femm_config.py)：唯一配置入口。MAT/模型路径、5个基因、内外角、初始电流角、问题定义、电流公式和转矩公式均在这里。
-- [run_femm.py](run_femm.py)：唯一运行入口，负责准备模型、顺序求解和生成对照图。
+- [run_femm.py](run_femm.py)：历史五基因复现入口，负责准备模型、顺序求解和生成对照图。
+
+下一步四组新种子的批量入口集中在 [pilot.py](../experiments/input_distribution_pilot_v1/pilot.py)，复用本目录的物理配置，不改变这里的历史五基因。手动运行方法见 [试验说明](../experiments/input_distribution_pilot_v1/README.md)。
 
 电流幅值、极对数、深度直接读原始 MAT 的 `inp.Is_amp`、`inp.P`、`inp.Lfe`；当前为3.5 A、4对极、36 mm。几何、绕组和材料BH曲线来自只读FEM模板；基因映射辅助模块保留在 `scripts/spmsm_mapping.py`，供FEMM和CNN共用。
 

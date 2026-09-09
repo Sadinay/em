@@ -1,0 +1,265 @@
+{
+  "status": "passed_by_verified_existing_results",
+  "new_femm_calls": 0,
+  "records": [
+    {
+      "historical_id": "G2",
+      "state": 31,
+      "row": 190,
+      "reference_tavg_nm": 3.183132769850227,
+      "reference_delta_t_nm": 0.454533168517397,
+      "angles": [
+        {
+          "inner_angle_deg": 29.0,
+          "raw_torque_nm": 3.284467446394624,
+          "fem_sha256": "e53917f72e1be14923db14db02c959b4ea601e3b45ab617b124392d001176cc0",
+          "ans_sha256": "b79e1ad74ced8aade2cdbf75dedef9d67b7ec0089325d7f12833e2e01ee1d7ac"
+        },
+        {
+          "inner_angle_deg": 32.0,
+          "raw_torque_nm": 3.420987437103323,
+          "fem_sha256": "c49ec752369d7bec9d09f40383e5503d08c46df9ac148caaa0fb349f719f2181",
+          "ans_sha256": "6e35d55db5780b411dde8770b38e271a4d96324661521a4825aca6307c122641"
+        },
+        {
+          "inner_angle_deg": 35.0,
+          "raw_torque_nm": 2.966454268586339,
+          "fem_sha256": "c1dbee9c0b018378d9ae969c219e069104ac6086aa1ee03e7985f50e21c91d08",
+          "ans_sha256": "a24bcc8840d1bdf53e08067a9869aad84caf3dc1885747651e8072daf7a11402"
+        },
+        {
+          "inner_angle_deg": 38.0,
+          "raw_torque_nm": 3.119209370136498,
+          "fem_sha256": "b5f73ef8ced48c23e8a643c3259bdfc2667a132a54140788dba738c71124422a",
+          "ans_sha256": "51f33d4ca1af0b11eaa54e9f70e92c67faf349c1e3c2a5276981191791e04d96"
+        },
+        {
+          "inner_angle_deg": 41.0,
+          "raw_torque_nm": 3.026029576907968,
+          "fem_sha256": "697c58eaf5346db434a96f0810a52869ad30e8acd28b41f1d2e69698e5ebaf23",
+          "ans_sha256": "9da32b8e9bd4aea98e88520c759827964ef209f90d22db33523631fc0b6595ad"
+        },
+        {
+          "inner_angle_deg": 44.0,
+          "raw_torque_nm": 3.281648519971953,
+          "fem_sha256": "af31d81894b95dcb271ec996b034afffbc712a8a108de86f9b698a68ff815429",
+          "ans_sha256": "44e46558f1cdac181cf2adb9a38888feac5f795e9c3e3eef3c1ae3831dbda971"
+        }
+      ],
+      "raw_torques_nm": [
+        3.284467446394624,
+        3.420987437103323,
+        2.966454268586339,
+        3.119209370136498,
+        3.026029576907968,
+        3.281648519971953
+      ],
+      "comparison_torques_nm": [
+        3.284467446394624,
+        3.420987437103323,
+        2.966454268586339,
+        3.119209370136498,
+        3.026029576907968,
+        3.281648519971953
+      ],
+      "tavg_nm": 3.183132769850118,
+      "peak_to_peak_nm": 0.454533168516984,
+      "ripple_relative": 0.14279428518414777
+    },
+    {
+      "historical_id": "G3",
+      "state": 193,
+      "row": 258,
+      "reference_tavg_nm": 3.9186576845750505,
+      "reference_delta_t_nm": 0.21329158923616598,
+      "angles": [
+        {
+          "inner_angle_deg": 29.0,
+          "raw_torque_nm": 3.940012894070048,
+          "fem_sha256": "e06dcc551192c4dc0990e74b01e2d7cca1ebeba0a50c7f15771d7c235c2435bc",
+          "ans_sha256": "9864f56209ac03d2d2ff96d869d621e806437c40373c69e7f10833068acc818f"
+        },
+        {
+          "inner_angle_deg": 32.0,
+          "raw_torque_nm": 4.032418889318524,
+          "fem_sha256": "64bdb56d1504e8492a0d489c377d7ab0f2fcd1309f39387613753fc39fcbc217",
+          "ans_sha256": "8e24ee9812d079ebc1cd7a6deef6c11431b93194ea1f5135ad5d23c3346f645b"
+        },
+        {
+          "inner_angle_deg": 35.0,
+          "raw_torque_nm": 3.81912730008361,
+          "fem_sha256": "cdbb3970da3af2aab5e375cde77700006e181b30be847753f947ed8df06a0eba",
+          "ans_sha256": "5313e230cd3cca831e75a030705647c5adb45c5c6e365b03a280d8743a60e9fd"
+        },
+        {
+          "inner_angle_deg": 38.0,
+          "raw_torque_nm": 3.958696339904848,
+          "fem_sha256": "e610aac4a1e82896a25d6d24c3e89af63ed3ca7f081fd270cc64c356501097b0",
+          "ans_sha256": "0cb2d82517e0261a3e12a304f32ba0006165f9a59a62a9b9b1c27c2552c723ab"
+        },
+        {
+          "inner_angle_deg": 41.0,
+          "raw_torque_nm": 3.823182709580016,
+          "fem_sha256": "3e9ae400db6c63b07c940bd4f365977f5c52123c93b6acc858be0c9699751ab3",
+          "ans_sha256": "eaeea1e7618abb65a5a73e6b19b4c429ffa9c91129fa696fff29f512b662160d"
+        },
+        {
+          "inner_angle_deg": 44.0,
+          "raw_torque_nm": 3.93850797449264,
+          "fem_sha256": "72026d421f47dacb594ad18931091a7733a8b4d3bb64710ec6d230f2bf8a0d29",
+          "ans_sha256": "668ab463cc69e96903aad6b45c5fa21d1b745e063b9dbd06472cbbb37a386178"
+        }
+      ],
+      "raw_torques_nm": [
+        3.940012894070048,
+        4.032418889318524,
+        3.81912730008361,
+        3.958696339904848,
+        3.823182709580016,
+        3.93850797449264
+      ],
+      "comparison_torques_nm": [
+        3.940012894070048,
+        4.032418889318524,
+        3.81912730008361,
+        3.958696339904848,
+        3.823182709580016,
+        3.93850797449264
+      ],
+      "tavg_nm": 3.918657684574948,
+      "peak_to_peak_nm": 0.21329158923491454,
+      "ripple_relative": 0.054429757943516316
+    },
+    {
+      "historical_id": "G4",
+      "state": 200,
+      "row": 491,
+      "reference_tavg_nm": 3.155745847366145,
+      "reference_delta_t_nm": 0.18494258054991697,
+      "angles": [
+        {
+          "inner_angle_deg": 29.0,
+          "raw_torque_nm": 3.102613147310328,
+          "fem_sha256": "1471a63f37cd61a85722fccedd9058f8ac7492186b8bffce8bb8ac58cd749829",
+          "ans_sha256": "8c1f0769e43add3c560969d3e798868a29e3d5e45329ef910a9a7f7532e77533"
+        },
+        {
+          "inner_angle_deg": 32.0,
+          "raw_torque_nm": 3.130887711421465,
+          "fem_sha256": "a91a495aa61d5212c280b78f31c0405b7b9f1d2b566cfe1f69eff669d7038b1c",
+          "ans_sha256": "d5686785c96fd98f50370cb98b87d7b1ce7d53456f0e47526427a41090d1adf3"
+        },
+        {
+          "inner_angle_deg": 35.0,
+          "raw_torque_nm": 3.27381942104512,
+          "fem_sha256": "92ed4e692a8c968378be842039043d266f9763c810ded7e42a1377d456ed2b3b",
+          "ans_sha256": "9cadcb9ae2e2f75d3e1070fa143b54ba1ec699650c011c9d4bfacbeda91b10f4"
+        },
+        {
+          "inner_angle_deg": 38.0,
+          "raw_torque_nm": 3.088876840495362,
+          "fem_sha256": "d6805b255a3d59843cde801b79fcce8f29435b04919f81a6ce8fe093ca72a812",
+          "ans_sha256": "055ded42f372cabfbd47df44e08df698183d56ffe2b4bf09b9537c119331d328"
+        },
+        {
+          "inner_angle_deg": 41.0,
+          "raw_torque_nm": 3.235327163661009,
+          "fem_sha256": "cb2c00d162a27e58f46485b30a076de85d3e15910688200d4df051b06f802cb0",
+          "ans_sha256": "db4c5af7f3d7c45773bd444eb3833db77864400f85c6867b1d203fdad299024b"
+        },
+        {
+          "inner_angle_deg": 44.0,
+          "raw_torque_nm": 3.102950800263637,
+          "fem_sha256": "d44653195d7b23b421e445b3c99b841b5867133b2b7d4fa531deed4966ce893a",
+          "ans_sha256": "831f9b3e2ac015faad0845799083a071cd2b600a745bfdc7f19be1a224fa0e29"
+        }
+      ],
+      "raw_torques_nm": [
+        3.102613147310328,
+        3.130887711421465,
+        3.27381942104512,
+        3.088876840495362,
+        3.235327163661009,
+        3.102950800263637
+      ],
+      "comparison_torques_nm": [
+        3.102613147310328,
+        3.130887711421465,
+        3.27381942104512,
+        3.088876840495362,
+        3.235327163661009,
+        3.102950800263637
+      ],
+      "tavg_nm": 3.1557458473661537,
+      "peak_to_peak_nm": 0.18494258054975798,
+      "ripple_relative": 0.05860503015606108
+    },
+    {
+      "historical_id": "G5",
+      "state": 200,
+      "row": 33,
+      "reference_tavg_nm": 3.8501566605986075,
+      "reference_delta_t_nm": 0.4947766516831762,
+      "angles": [
+        {
+          "inner_angle_deg": 29.0,
+          "raw_torque_nm": 3.737679072513372,
+          "fem_sha256": "ed5f25892b5a5b384003ad6bd62e3f74fba09d7d1205dc79b9b2f411a669fccd",
+          "ans_sha256": "0518f05a73318c69a71a3580400c7850e1d0472052261b5781775a8f0a28595d"
+        },
+        {
+          "inner_angle_deg": 32.0,
+          "raw_torque_nm": 3.553575034179567,
+          "fem_sha256": "55e01660dbea1268e2b41f8c284e22018ede78b196cb00481f5de9b45065606a",
+          "ans_sha256": "f9e13ce1da7d8a536aa5a2e39477fc549f9d0cf3e9ca6e7de2052a238e946db6"
+        },
+        {
+          "inner_angle_deg": 35.0,
+          "raw_torque_nm": 4.002032582586887,
+          "fem_sha256": "7ae6ae75605727b39c0db8536e68cfa775b791a22eba03d236778c7db1e91b61",
+          "ans_sha256": "6faa0b2f849c1539ac86807d1fec63e88b3b3f3c8dc9588f562c00fdee6c80b3"
+        },
+        {
+          "inner_angle_deg": 38.0,
+          "raw_torque_nm": 4.025741334983169,
+          "fem_sha256": "80b47ed5bb334badff17221081b8fab975253e1e1f6e678693f7cf48a809f16d",
+          "ans_sha256": "3804acf9362039e600a1d76f02f7b52bd9532aac38ce900c12602c57a7ea7460"
+        },
+        {
+          "inner_angle_deg": 41.0,
+          "raw_torque_nm": 4.048351685862222,
+          "fem_sha256": "f5dc9ea4ecfa601698ad2571a2afa33c7b4effc5895623490a4e0f176be0345d",
+          "ans_sha256": "ad36c68e53e5e0bb94972d4c01c5274631c5654ce35409a0d1c1ecfd0d12a791"
+        },
+        {
+          "inner_angle_deg": 44.0,
+          "raw_torque_nm": 3.733560253467642,
+          "fem_sha256": "c1c0bf528fb3fa5aa4356546a4b92577a88d594b25905c1d433d6263c1a23364",
+          "ans_sha256": "3f99c10e5c2617cdc1c0ecd9e0ada4a096324b98882ce3eaf495b50b33725c6e"
+        }
+      ],
+      "raw_torques_nm": [
+        3.737679072513372,
+        3.553575034179567,
+        4.002032582586887,
+        4.025741334983169,
+        4.048351685862222,
+        3.733560253467642
+      ],
+      "comparison_torques_nm": [
+        3.737679072513372,
+        3.553575034179567,
+        4.002032582586887,
+        4.025741334983169,
+        4.048351685862222,
+        3.733560253467642
+      ],
+      "tavg_nm": 3.85015666059881,
+      "peak_to_peak_nm": 0.4947766516826553,
+      "ripple_relative": 0.12850818688653134
+    }
+  ],
+  "source_run_sha256": "0a84591995a0e01e0b1ccec7decf262be28cc0ad4bf5782a13eddbcf7c98e282",
+  "source_summary_sha256": "87a0ca72594a434f6c99f76ce2f60119d11b29bfb90f1d5d8fec45713830ddc7",
+  "note": "Reuses G2-G5 completed six-angle results after file-hash and condition checks. G1 is excluded."
+}

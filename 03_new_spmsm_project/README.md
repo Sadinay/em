@@ -2,9 +2,11 @@
 
 本项目按 `02_new_ipmsm_project` 的功能区规格独立组织，用于 `SPMSM_discrete.fem` 与 `workspace_200.mat` 所代表的第三类基因和电机结构。03 与 01、02 的基因编码、FEMM 几何映射、GA 配置、数据库、CNN 模型及实验结果不得混用。
 
-FEMM配置已统一到 [femm_config.py](femm_zone/femm_config.py)，运行只使用 [run_femm.py](femm_zone/run_femm.py)。默认仅显示配置；准备、求解和出图用法见 [FEMM说明](femm_zone/README.md)。旧试验脚本已归档。
+FEMM配置统一到 [femm_config.py](femm_zone/femm_config.py)，历史五基因复现使用 [run_femm.py](femm_zone/run_femm.py)。默认仅显示配置；准备、求解和出图用法见 [FEMM说明](femm_zone/README.md)。旧试验脚本已归档。
 
-当前已完成项目框架、原始输入归档、120位基因—FEMM结构映射，以及6个代表基因的FEMM历史重算验证；尚未启动正式数据转换、CNN或GA测试。详细结论见 [基因—FEMM映射与验证报告](reports/MAT_FEM_MAPPING_VALIDATION.md)。
+下一步四组输入分布试验使用独立的 [pilot.py](experiments/input_distribution_pilot_v1/pilot.py)，新增选种子、孤立单格修正和批量 FEMM 入口集中在此文件，沿用上述物理配置。种子清单、审计和之后手动启动 FEMM 的命令见 [试验说明](experiments/input_distribution_pilot_v1/README.md)。本次只准备种子，不启动新 FEMM 求解或四组训练。
+
+当前已完成120位基因—FEMM结构映射、数据整理和40000样本旧CNN训练。采用初始内角29°后，历史G2–G5的平均转矩与峰峰转矩差已复现；G1仍有基因与历史记录不一致的问题。早期映射结论见 [基因—FEMM映射与验证报告](reports/MAT_FEM_MAPPING_VALIDATION.md)，当前物理口径见 [FEMM说明](femm_zone/README.md)。
 
 ## 目录结构
 

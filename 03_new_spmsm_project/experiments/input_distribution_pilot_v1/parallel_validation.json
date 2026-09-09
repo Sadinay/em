@@ -1,0 +1,35 @@
+{
+  "status": "passed_mock_execution_only",
+  "default_workers": 6,
+  "new_femm_calls": 0,
+  "checks": {
+    "success": {
+      "status": "completed",
+      "stop_reason": null,
+      "workers": 6,
+      "submitted_genes": 20,
+      "peak_inflight_jobs": 6,
+      "not_submitted_genes": 0,
+      "elapsed_seconds": 1.5443323999970744,
+      "observed_concurrent_processes": 6
+    },
+    "fail": {
+      "status": "paused",
+      "stop_reason": "failure_threshold",
+      "workers": 6,
+      "submitted_genes": 8,
+      "peak_inflight_jobs": 6,
+      "not_submitted_genes": 12,
+      "elapsed_seconds": 1.2818556999991415
+    }
+  },
+  "duplicate_jobs_rejected": true,
+  "exclusive_coordinator_lock": true,
+  "failure_window_tests": true,
+  "pilot_source_sha256": "216c13fc16674ded805196b97f689bacdbdf17c8564638fa8e08426a1cef191a",
+  "adapter_mock_tests": "six-angle aggregation, isolated retry, cache reuse, tamper rejection passed",
+  "full_queue_gate_checked": true,
+  "prepared_case_count": 120,
+  "prepared_inputs_identical_to_sequential": true,
+  "condition_fingerprint": "aa3c2c6658200077df5408693aba82dd4ecbb1ce0de9916ea46aa6eef61fc671"
+}

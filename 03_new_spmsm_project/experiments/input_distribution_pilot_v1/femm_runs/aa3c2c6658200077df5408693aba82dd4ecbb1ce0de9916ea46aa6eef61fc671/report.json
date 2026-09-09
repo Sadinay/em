@@ -1,0 +1,13 @@
+{
+  "complete_genes": 0,
+  "incomplete_genes": 3299,
+  "attempted_genes": 0,
+  "failed_gene_attempts": 0,
+  "median_seconds_per_gene": null,
+  "p90_seconds_per_gene": null,
+  "measured_workers": null,
+  "successful_genes_per_hour": null,
+  "remaining_seconds_estimate_from_throughput": null,
+  "timing_note": "Throughput uses coordinator wall time at the same worker count, including worker startup and retries; not the sum of concurrent gene durations.",
+  "no_time_estimate_before_measured_success": true
+}

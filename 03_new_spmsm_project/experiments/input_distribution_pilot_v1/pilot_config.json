@@ -1,0 +1,201 @@
+{
+  "protocol": "input_distribution_pilot_v1",
+  "seed": 20260909,
+  "named_stream_seeds": {
+    "pool": 13349480423077743689,
+    "dev": 5722876337384258552,
+    "test": 3862549395330453298,
+    "anchors": 13125606191248499607,
+    "audit": 2145505506785977173,
+    "parents": 5900928531816609610
+  },
+  "candidate_per_source": 5000,
+  "train_per_method": 1400,
+  "dev_per_source": 50,
+  "test_per_source": {
+    "same_range": 50,
+    "parameter_holdout": 50
+  },
+  "anchors": 512,
+  "parent_counts_pool_dev_test": [
+    128,
+    64,
+    64
+  ],
+  "magnet_count_range": [
+    12,
+    108
+  ],
+  "scales": {
+    "L": [
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.5,
+        2
+      ],
+      [
+        1.5,
+        0.5
+      ],
+      [
+        1.5,
+        2
+      ]
+    ],
+    "B": [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        8
+      ]
+    ]
+  },
+  "held_scales": {
+    "L": [
+      [
+        0.75,
+        1
+      ],
+      [
+        1,
+        1.5
+      ]
+    ],
+    "B": [
+      [
+        1,
+        8
+      ],
+      [
+        4,
+        2
+      ]
+    ]
+  },
+  "held_U_counts": [
+    3,
+    6,
+    114,
+    117
+  ],
+  "held_U_allocation": [
+    13,
+    13,
+    12,
+    12
+  ],
+  "rectangles": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "held_rectangles": [
+    [
+      4,
+      10
+    ],
+    [
+      6,
+      8
+    ]
+  ],
+  "covariance": "exp(-0.5*((dr/lr)^2+(da/la)^2)); no wrap",
+  "covariance_factor": "symmetric eigh; roundoff-negative eigenvalues clipped to zero, no added jitter",
+  "G": "position-labelled WL0+WL1 exact categorical matches, each layer divided by sqrt(2)*492",
+  "F": "f0 eval FP32; final-Linear pre-hooks 256+256; centered scalar RMS per head; divide sqrt(2)",
+  "selection": "LCMD, exact block distances; 512 shared old anchors; SHA256 lexical ties",
+  "user_amendment_isolated_cell_filter": {
+    "neighbors": 8,
+    "boundary": "in-domain only; no periodic wrap",
+    "rule": "flip only if all existing surrounding neighbors differ; synchronous passes to fixed point",
+    "applies_to": "all newly generated pool/dev/test before hashing, history exclusion, features and selection",
+    "not_general_majority_smoothing": true,
+    "magnet_count_and_P_rectangles_describe_raw_generator": true
+  },
+  "reserve_policy": "no automatic replacements; failures remain failures, no unregistered budget expansion",
+  "test_feature_policy": "no dev/test F feature extraction during selection",
+  "worker_count": 1,
+  "automatic_retries": 1,
+  "regression_atol": 1e-06,
+  "regression_rtol": 1e-06,
+  "physical": {
+    "mat_file": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+    "template_file": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem",
+    "input_sha256": {
+      "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+      "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+    },
+    "current": {
+      "amplitude_a": 3.5,
+      "pole_pairs": 4,
+      "omega_e_rad_s": 2513.2741228718346,
+      "omega_m_rad_s": 628.3185307179587
+    },
+    "current_source": "导师cos(omega*t)公式；MAT inp.Is_amp、F、wmech、P。t=deg2rad(ANG_R)/wmech。",
+    "problem": {
+      "Frequency": 0,
+      "Precision": 1e-08,
+      "MinAngle": 15,
+      "DoSmartMesh": 1,
+      "Depth": 36.0,
+      "LengthUnits": "millimeters",
+      "ProblemType": "planar",
+      "Coordinates": "cartesian",
+      "ACSolver": 0,
+      "PrevType": 0,
+      "PrevSoln": ""
+    },
+    "airgap": {
+      "name": "sliding_airgap",
+      "boundary_type": 6,
+      "outer_angle_deg": 0,
+      "initial_inner_angle_deg": 29.0
+    },
+    "angle_source": "导师补充ang_0=29°；用户指定ANG_R=0:3:15°。原脚本T/ANG_R生成部分未提供。",
+    "rotor_travel_angles_deg": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15
+    ],
+    "inner_angles_deg": [
+      29.0,
+      32.0,
+      35.0,
+      38.0,
+      41.0,
+      44.0
+    ],
+    "initial_phases_deg": [
+      0.0
+    ],
+    "torque_multiplier": 1.0,
+    "comparison_note": "六点算术平均；MAT DeltaT按峰峰转矩差(N·m)比较。旧-2经验换算另存对照。",
+    "material_source": "几何、绕组和材料BH曲线来自FEM模板；基因只切换设计区Air/N38。"
+  }
+}

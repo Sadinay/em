@@ -1,0 +1,32 @@
+{
+  "git_commit": "4da8d8c8d84f5c2cfa035cf9a1b140da921109a8",
+  "input_sha256": {
+    "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt": "34cdee2e373e36ecd40e82197de5ea34941397bafea5f586cb00eb87dbfe58ba",
+    "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\config.json": "130bafef8b5c93178dc988c20ba3136869b5b32a2e841c2df47775888c1895b6",
+    "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\result.json": "720b4dc9d4be74dcb6644230fa96af8e56e164fd152730fcc3b008f236690294",
+    "cnn_zone\\outputs\\lookups\\spmsm_polar90_224_full_motor.npz": "6f49f46729c2567e3523da71760c54f3f002f18996c988361d2b3f4495dc5c21",
+    "data_zone\\processed\\spmsm_topology_dataset\\training_corrected_binary\\topology_bits.npy": "cbbf1562f59d44bd18067fc8acd9cfcd4c46ffb443054b08fc4da6b0d0f59f84",
+    "data_zone\\processed\\spmsm_topology_dataset\\training_corrected_binary\\targets_tavg_delta.npy": "90fe5a8526d76b5d813ee7e18ed0731aba6c96390717c2d407502f044fe1881b",
+    "cnn_zone\\outputs\\splits\\scheme_a_tavg_bands_train40000_val6483_test6483.npz": "de499be640b68e3aac7f8ce48e6169139896178e43b781c2a8cca8853df7d826",
+    "data_zone\\raw\\workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+    "femm_zone\\models\\SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5",
+    "femm_zone\\workspaces\\teacher_angle29_5genes_20260908\\G2\\phase_0\\angle_29\\model.ans": "b79e1ad74ced8aade2cdbf75dedef9d67b7ec0089325d7f12833e2e01ee1d7ac",
+    "cnn_zone\\src\\training.py": "e33bbd02e82c51bd93384acf2b62af94fd62162a34d3b32d02fcf2a9a5cae069",
+    "cnn_zone\\src\\training_inputs.py": "e4d5f14e4a7a394cad8c6867dea5936c49e7e53a13f97a0fcfe698426ee7d443",
+    "cnn_zone\\src\\models_v2.py": "7fa9316b20a5b109d319a288ed44019ee15fedd6a2d6f897c24552a46ae73954",
+    "cnn_zone\\src\\fem_mesh.py": "77f1d056186ffbe69c5e0ddd00c788f2d1d277a500ae03856f3b8c14725f1e41",
+    "femm_zone\\femm_config.py": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+    "femm_zone\\scripts\\spmsm_mapping.py": "12947026bb7e7601c7d4bfcf2839d71fe6f00c082a61be2266cc979bf7d076e0"
+  },
+  "config_sha256": "a610c32961e22f8dad72f5c526661d4d477a2a874dff54ef63f73df955bc1f3f",
+  "split_counts": {
+    "train": 40000,
+    "validation": 6483,
+    "test": 6483,
+    "unused_train_pool": 11838
+  },
+  "train_index_bytes_sha256": "ade8379a3c0c72ed4a4127ac60efce2dc0799de9a95c8df5d0d0d61e38db596f",
+  "initial_pilot_source_sha256": "d108431d068b2732aa0e03c8bb9c926dbf6d9e5c4e7d470d72eac225f17ba499",
+  "python": "3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)]",
+  "numpy": "2.4.2"
+}
