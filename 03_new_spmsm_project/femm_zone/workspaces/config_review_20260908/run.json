@@ -1,0 +1,330 @@
+{
+  "status": "prepared",
+  "config": {
+    "mat_file": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+    "template_file": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem",
+    "input_sha256": {
+      "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+      "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+    },
+    "current": {
+      "amplitude_a": 3.5,
+      "pole_pairs": 4
+    },
+    "current_source": "MAT inp.Is_amp、inp.P；本方案不使用 Id/Iq 或保存的零值 Ia/Ib/Ic。",
+    "problem": {
+      "Frequency": 0,
+      "Precision": 1e-08,
+      "MinAngle": 15,
+      "DoSmartMesh": 1,
+      "Depth": 36.0,
+      "LengthUnits": "millimeters",
+      "ProblemType": "planar",
+      "Coordinates": "cartesian",
+      "ACSolver": 0,
+      "PrevType": 0,
+      "PrevSoln": ""
+    },
+    "airgap": {
+      "name": "sliding_airgap",
+      "boundary_type": 6,
+      "outer_angle_deg": 0
+    },
+    "inner_angles_deg": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15
+    ],
+    "initial_phases_deg": [
+      0.0
+    ],
+    "gene_source": "population_all",
+    "genes": [
+      {
+        "id": "G1",
+        "state": 0,
+        "row": 338
+      },
+      {
+        "id": "G2",
+        "state": 31,
+        "row": 190
+      },
+      {
+        "id": "G3",
+        "state": 193,
+        "row": 258
+      },
+      {
+        "id": "G4",
+        "state": 200,
+        "row": 491
+      },
+      {
+        "id": "G5",
+        "state": 200,
+        "row": 33
+      }
+    ],
+    "torque_multiplier": -2.0,
+    "comparison_note": "六点算术平均；DeltaT暂按相对峰峰值比较，历史公式尚未确认。",
+    "material_source": "几何、绕组和材料BH曲线来自FEM模板；基因只切换设计区Air/N38。"
+  },
+  "genes": [
+    {
+      "id": "G1",
+      "state": 0,
+      "row": 338,
+      "pm_cells": 45,
+      "reference_tavg_nm": 1.6172313314639906,
+      "reference_delta_t": 0.35074853072759105
+    },
+    {
+      "id": "G2",
+      "state": 31,
+      "row": 190,
+      "pm_cells": 80,
+      "reference_tavg_nm": 3.183132769850227,
+      "reference_delta_t": 0.454533168517397
+    },
+    {
+      "id": "G3",
+      "state": 193,
+      "row": 258,
+      "pm_cells": 100,
+      "reference_tavg_nm": 3.9186576845750505,
+      "reference_delta_t": 0.21329158923616598
+    },
+    {
+      "id": "G4",
+      "state": 200,
+      "row": 491,
+      "pm_cells": 82,
+      "reference_tavg_nm": 3.155745847366145,
+      "reference_delta_t": 0.18494258054991697
+    },
+    {
+      "id": "G5",
+      "state": 200,
+      "row": 33,
+      "pm_cells": 99,
+      "reference_tavg_nm": 3.8501566605986075,
+      "reference_delta_t": 0.4947766516831762
+    }
+  ],
+  "cases": [
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 0,
+      "model": "G1\\phase_0\\angle_0\\model.fem",
+      "prepared_sha256": "d591459672b6e2971dfd1b6bd9e145e91746d5fd1cb995f42925ef0c49e08ace"
+    },
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 3,
+      "model": "G1\\phase_0\\angle_3\\model.fem",
+      "prepared_sha256": "a72b6f7abf92726c1c9b603e2b736a21ea68121a33019f9c20e4e7f51a16ee71"
+    },
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 6,
+      "model": "G1\\phase_0\\angle_6\\model.fem",
+      "prepared_sha256": "cb1ce03f37dcfe3d05174ed681bbfeaa6f86a1bc9229ad7c9dd505f604eff271"
+    },
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 9,
+      "model": "G1\\phase_0\\angle_9\\model.fem",
+      "prepared_sha256": "bd099fd605ad41e22acc2c16fdd1b74ce0ce616d358fcf52a4c20bed38e76eaf"
+    },
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 12,
+      "model": "G1\\phase_0\\angle_12\\model.fem",
+      "prepared_sha256": "c19457aaaaaf839ef0632c03da769cfb652d0b5dc5093dc1ba584abc40068321"
+    },
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 15,
+      "model": "G1\\phase_0\\angle_15\\model.fem",
+      "prepared_sha256": "b6a252427278c65ee210385904384fdfcca43f83f6222c423e72ed51467c41c9"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 0,
+      "model": "G2\\phase_0\\angle_0\\model.fem",
+      "prepared_sha256": "72611ba6db1732849400490d234d1d4dd9c8eabe24f40966ae6a371922655a8b"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 3,
+      "model": "G2\\phase_0\\angle_3\\model.fem",
+      "prepared_sha256": "0686073a0ee73a11dc802a79fee281f5da61f63f298b86b0425c2641b983dc17"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 6,
+      "model": "G2\\phase_0\\angle_6\\model.fem",
+      "prepared_sha256": "9ecb2af3d55861a364fd07eff67491f56cdf1cb08164b5ffef393f74245da307"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 9,
+      "model": "G2\\phase_0\\angle_9\\model.fem",
+      "prepared_sha256": "6e43c8674ef4698e2daa3a66504f2053ad82ab1009b2814c1f23923bbe14f0db"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 12,
+      "model": "G2\\phase_0\\angle_12\\model.fem",
+      "prepared_sha256": "dd360c4a6190098eb70a1cab470a6e81d926a61e4118f473f9a717d694117e45"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 15,
+      "model": "G2\\phase_0\\angle_15\\model.fem",
+      "prepared_sha256": "ecd83a8065e2767f6b0c26106348e1c2907cf7586c97b12a41910f7ea34d8d3a"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 0,
+      "model": "G3\\phase_0\\angle_0\\model.fem",
+      "prepared_sha256": "6e6d07db559c6853b8d84684794fe5760536d3f13e8518835b342afe4eeb4ecc"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 3,
+      "model": "G3\\phase_0\\angle_3\\model.fem",
+      "prepared_sha256": "4ae123156d882c6f43864a1326d8fd14ba6fb6a8c1a0a2ba24fa4facae160b4c"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 6,
+      "model": "G3\\phase_0\\angle_6\\model.fem",
+      "prepared_sha256": "6b11e5044847fdcf1dbef6a4c05e17be6e73cfbe38a9af931a1f3a58057001b2"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 9,
+      "model": "G3\\phase_0\\angle_9\\model.fem",
+      "prepared_sha256": "2c7b90a3be0942731c7cd8546f794748ae1e551bd5a92459ab4502a9b0fc2707"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 12,
+      "model": "G3\\phase_0\\angle_12\\model.fem",
+      "prepared_sha256": "62786b7d6dd276cb2c6d5b9340500fc790bed37a693cfa4cd4e7c52298dadf0d"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 15,
+      "model": "G3\\phase_0\\angle_15\\model.fem",
+      "prepared_sha256": "8e77808bea76ed54c0811feca7570f70947098605baa6ca889c54db92aad06b1"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 0,
+      "model": "G4\\phase_0\\angle_0\\model.fem",
+      "prepared_sha256": "b77ea4f18276bec92b96d73f0bbab5811206690d03d939ee202e387891fb5d72"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 3,
+      "model": "G4\\phase_0\\angle_3\\model.fem",
+      "prepared_sha256": "0f45d80d47f3374aeec9d17d610b7052171986f2957eae027b3811f70f290d6c"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 6,
+      "model": "G4\\phase_0\\angle_6\\model.fem",
+      "prepared_sha256": "ac2f9a57f79cc405ed02633a454c1ad4c80a2b86af42969293c438ddbfdbbc45"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 9,
+      "model": "G4\\phase_0\\angle_9\\model.fem",
+      "prepared_sha256": "0c6218d8f9beab055f24bef7d5a4745f88c9bdea4268ef6a39488c64784f8d56"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 12,
+      "model": "G4\\phase_0\\angle_12\\model.fem",
+      "prepared_sha256": "9df33c5b40e99ef7cd8f2dffed787d5791d8258e2df6daa973ba3bd3e9b0b4af"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 15,
+      "model": "G4\\phase_0\\angle_15\\model.fem",
+      "prepared_sha256": "1fddaf30d5dc372d8329b625a677cb8c60c2c9a529613399534aac6ba38d9043"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 0,
+      "model": "G5\\phase_0\\angle_0\\model.fem",
+      "prepared_sha256": "e113d2445982030acc67232f9437a73334dfc3c2861b3418997b37fa131391bc"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 3,
+      "model": "G5\\phase_0\\angle_3\\model.fem",
+      "prepared_sha256": "6054e5167aac385716674acb656b3455218a82daa8cba21f0faba9072affab3d"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 6,
+      "model": "G5\\phase_0\\angle_6\\model.fem",
+      "prepared_sha256": "8d14da3e1f87646c63b00d158b1ef0b2c2949262636cdb57f7e416c82b6b4fa3"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 9,
+      "model": "G5\\phase_0\\angle_9\\model.fem",
+      "prepared_sha256": "e06f797fc14f86a34c3ae26033c468afea151a8b8649c70fdba1a129511d0fa9"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 12,
+      "model": "G5\\phase_0\\angle_12\\model.fem",
+      "prepared_sha256": "507d42508cdfebf5b7699338b19e7009872cf977c39ce5106f0a213c21536da0"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 15,
+      "model": "G5\\phase_0\\angle_15\\model.fem",
+      "prepared_sha256": "c25e6423e1583e8d0a3199a65b330d8a59177ec0631c03803293b99b8bcfd4fe"
+    }
+  ]
+}

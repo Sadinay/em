@@ -1,0 +1,36 @@
+{
+  "seed": 20260821,
+  "same_cleaned_topology_catalog": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\data_zone\\processed\\ipmsm_topology_dataset\\training_corrected_physical_three_state",
+  "scheme_a": {
+    "definition": "grouped Tavg-band × within-band DeltaT-quartile stratification",
+    "train": 117160,
+    "validation": 14656,
+    "test": 14655
+  },
+  "scheme_b": {
+    "definition": "test topology and every member of its repair-related component first appear in states >= late_generation_start",
+    "late_generation_start": 541,
+    "train": 118857,
+    "validation": 13218,
+    "test": 14396,
+    "test_tavg_range": [
+      0.771473940267151,
+      3.496159276788727
+    ],
+    "test_delta_range": [
+      0.26648681206442215,
+      2.3349382615821885
+    ],
+    "sampled_hamming_to_training": {
+      "method": "minimum distance to a fixed random subset of at most 8192 training topologies; not an exact all-training nearest neighbour",
+      "test_samples": 512,
+      "training_reference_samples": 8192,
+      "minimum": 4,
+      "median": 15.0,
+      "p90": 18.0,
+      "maximum": 22
+    }
+  },
+  "hash_overlap": 0,
+  "repair_component_overlap": 0
+}

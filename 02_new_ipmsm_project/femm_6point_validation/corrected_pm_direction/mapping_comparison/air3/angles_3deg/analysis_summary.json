@@ -1,0 +1,45 @@
+{
+  "status": "complete",
+  "candidate_id": "candidate_002",
+  "mapping": "air3",
+  "topology_fix": "all PM labels receive pole-dependent radial magnetization",
+  "iron_material_variant": "reference nonlinear Pure Iron with 21-point BH curve",
+  "angles_mechanical_deg": [
+    0.0,
+    3.0,
+    6.0,
+    9.0,
+    12.0,
+    15.0
+  ],
+  "raw_femm_torques_nm": [
+    -1.53324595397613,
+    -1.166326657808939,
+    -1.931018909896865,
+    -2.223554358242101,
+    -2.706964020804101,
+    -2.639586213262634
+  ],
+  "sign_reversed_torques_nm": [
+    1.53324595397613,
+    1.166326657808939,
+    1.931018909896865,
+    2.223554358242101,
+    2.706964020804101,
+    2.639586213262634
+  ],
+  "historical_tavg_nm": 2.858312027674773,
+  "tavg_candidates_nm": {
+    "mean6": 2.033449352331795,
+    "mean5_excluding_15": 1.912221980145627,
+    "trapz_0_to_15": 2.0228560060742775
+  },
+  "tavg_relative_errors": {
+    "mean6": 0.2885838450653692,
+    "mean5_excluding_15": 0.33099606983733926,
+    "trapz_0_to_15": 0.2922899996611413
+  },
+  "historical_delta_t": 1.067494754869203,
+  "delta_absolute_peak_to_peak": 1.5406373629951617,
+  "delta_absolute_peak_to_peak_relative_error": 0.4432271034286547
+}

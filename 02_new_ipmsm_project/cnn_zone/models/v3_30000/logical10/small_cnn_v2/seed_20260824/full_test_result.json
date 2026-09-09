@@ -1,0 +1,124 @@
+{
+  "status": "complete",
+  "evaluation_set": "full_test",
+  "sample_count": 14655,
+  "standardized_mse": 0.021302375148604325,
+  "metrics": {
+    "overall": {
+      "tavg": {
+        "mae": 0.04214717075228691,
+        "rmse": 0.0691387802362442,
+        "r2": 0.9887135624885559,
+        "normalized_mae_by_actual_range": 0.011489741504192352,
+        "bias": 0.011310523375868797,
+        "calibration_slope_predicted_vs_actual": 0.9932779456952944,
+        "calibration_intercept_nm": 0.02504206000864139,
+        "absolute_error_p50": 0.026690006256103516,
+        "absolute_error_p90": 0.09320715814828873,
+        "absolute_error_p95": 0.13371068239212036,
+        "fraction_absolute_error_le_0_05_nm": 0.737768679631525,
+        "fraction_absolute_error_le_0_10_nm": 0.9125213237802797
+      },
+      "delta_t": {
+        "mae": 0.041688114404678345,
+        "rmse": 0.07663199305534363,
+        "r2": 0.9347203373908997,
+        "normalized_mae_by_actual_range": 0.012890378944575787,
+        "bias": 0.006603984162211418,
+        "calibration_slope_predicted_vs_actual": 0.9486634561955593,
+        "calibration_intercept_nm": 0.046918606717689985,
+        "absolute_error_p50": 0.02334660291671753,
+        "absolute_error_p90": 0.08952994644641876,
+        "absolute_error_p95": 0.14425575733184814,
+        "fraction_absolute_error_le_0_05_nm": 0.7735926305015353,
+        "fraction_absolute_error_le_0_10_nm": 0.914704878880928
+      }
+    },
+    "bands": {
+      "tavg": [
+        {
+          "band": "<0.5",
+          "count": 440,
+          "mae": 0.10070864856243134,
+          "bias": 0.04749064892530441
+        },
+        {
+          "band": "0.5-1.0",
+          "count": 896,
+          "mae": 0.09301091730594635,
+          "bias": 0.01387226115912199
+        },
+        {
+          "band": "1.0-1.5",
+          "count": 1403,
+          "mae": 0.0748896598815918,
+          "bias": 0.009876224212348461
+        },
+        {
+          "band": "1.5-2.0",
+          "count": 3216,
+          "mae": 0.04629230499267578,
+          "bias": 0.012567794881761074
+        },
+        {
+          "band": "2.0-2.5",
+          "count": 4596,
+          "mae": 0.02865438535809517,
+          "bias": 0.008761043660342693
+        },
+        {
+          "band": "2.5-3.0",
+          "count": 4036,
+          "mae": 0.0254061259329319,
+          "bias": 0.00928740669041872
+        },
+        {
+          "band": ">=3.0",
+          "count": 68,
+          "mae": 0.02700435370206833,
+          "bias": 0.005973360035568476
+        }
+      ],
+      "delta_t": [
+        {
+          "band": "<0.5",
+          "count": 2546,
+          "mae": 0.040920086205005646,
+          "bias": 0.022672703489661217
+        },
+        {
+          "band": "0.5-0.75",
+          "count": 4138,
+          "mae": 0.036863088607788086,
+          "bias": 0.012163488194346428
+        },
+        {
+          "band": "0.75-1.0",
+          "count": 5219,
+          "mae": 0.03600458428263664,
+          "bias": 0.005625473335385323
+        },
+        {
+          "band": "1.0-1.5",
+          "count": 2439,
+          "mae": 0.052892155945301056,
+          "bias": -0.007539651356637478
+        },
+        {
+          "band": "1.5-2.0",
+          "count": 264,
+          "mae": 0.10314297676086426,
+          "bias": -0.0541500598192215
+        },
+        {
+          "band": ">=2.0",
+          "count": 49,
+          "mae": 0.20562675595283508,
+          "bias": -0.16225183010101318
+        }
+      ]
+    }
+  },
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\v3_30000\\logical10\\small_cnn_v2\\seed_20260824\\best_checkpoint.pt",
+  "checkpoint_epoch": 57
+}

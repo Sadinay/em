@@ -1,0 +1,58 @@
+{
+  "status": "generated_and_structurally_validated",
+  "femm_solve_performed": false,
+  "mapping_mode": "inferred_three_material_v1",
+  "mapping_evidence_status": "strongly inferred; matching MATLAB assignment source is absent",
+  "code_mapping": {
+    "0": "air",
+    "1": "permanent_magnet",
+    "2": "iron",
+    "3": "iron"
+  },
+  "grid_axes": "[radial_index, angular_index]",
+  "symmetry": "each of 100 cells is written to four audited FEM block-label coordinates",
+  "genotype_sha256": "82e39ffff4c5c5c43e3e1c5fbf628f6f6a5de4af71bcd822e3db0fec60458721",
+  "physical_topology_sha256": "3f80451f49cf41c7f69877d1e3c2d777f68a27f660a3d0134eccb530ae35c5a0",
+  "template": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_zone\\models\\IPMSM.fem",
+    "sha256": "696e68c9f0cbedc7c82ba621f10496fef031b292ff69d4c969b4642ebb515e82"
+  },
+  "material_position_source": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\data_zone\\raw\\workspace_600.mat",
+    "sha256": "26b1dc59b72c4b856b75f9a92358d60d1b26093c9f634a44426df98a82271193"
+  },
+  "provenance": {
+    "kind": "semantic_renderer_validation",
+    "generation": 208,
+    "individual": 74
+  },
+  "material_code_counts": {
+    "0": 7,
+    "1": 28,
+    "2": 37,
+    "3": 28
+  },
+  "validation": {
+    "mapped_cells": 100,
+    "mapped_design_labels": 400,
+    "four_copy_material_consistency": true,
+    "physical_class_counts": {
+      "air": 7,
+      "permanent_magnet": 28,
+      "iron": 65
+    },
+    "all_expected_materials_match": true,
+    "pm_label_count": 112,
+    "maximum_pm_magnetization_direction_error_deg": 0.0,
+    "all_pm_magnetization_directions_match_template_rule": true
+  },
+  "files": {
+    "model": "model.fem",
+    "original_gene": "gene_bits.txt",
+    "canonical_three_material_gene": "canonical_physical_bits.txt",
+    "material_code_grid": "material_codes_10x10.csv",
+    "physical_class_grid": "physical_classes_10x10.csv",
+    "cell_copy_mapping": "gene_to_fem_mapping.csv",
+    "topology_preview": "topology_preview.png"
+  }
+}

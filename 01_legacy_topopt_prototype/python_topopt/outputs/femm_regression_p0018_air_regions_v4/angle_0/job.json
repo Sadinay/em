@@ -1,0 +1,16 @@
+{
+  "air_gap_boundary_name": "Air gap",
+  "circuit_mode": "split_six_phase_signs",
+  "electrical_angle_multiplier": 4.0,
+  "electrical_phase_offset_deg": 90.0,
+  "explicit_mesh_before_solve": true,
+  "model_path": "outputs\\femm_regression_p0018_air_regions_v4\\angle_0\\model.fem",
+  "operation": "solve_angle",
+  "process_manifest_path": "outputs\\femm_regression_p0018_air_regions_v4\\angle_0\\process_manifest.json",
+  "result_path": "outputs\\femm_regression_p0018_air_regions_v4\\angle_0\\result.json",
+  "rotor_group": 1,
+  "stator_current_a": 3.5,
+  "torque_angles_deg": [
+    0.0
+  ]
+}

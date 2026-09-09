@@ -1,0 +1,21 @@
+{
+  "attempt": 1,
+  "command": [
+    "C:\\Users\\26096\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\scripts\\solve_one_angle.py",
+    "--base-fem",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\generated_fem\\candidate_001\\air0\\base\\model.fem",
+    "--output-dir",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\generated_fem\\candidate_001\\air0\\angle_000",
+    "--angle-deg",
+    "0.0",
+    "--pole-pairs",
+    "4",
+    "--amplitude-a",
+    "3.5"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 103.20307820000016,
+  "stdout": "{\"status\": \"complete\", \"angle_mechanical_deg\": 0.0, \"angle_electrical_deg\": 0.0, \"pole_pairs\": 4, \"current_amplitude_a\": 3.5, \"phase_currents_a\": {\"A\": 3.5, \"B\": -1.7499999999999991, \"C\": -1.7499999999999991}, \"rotor_angle_method\": \"mi_modifyboundprop('sliding_airgap', 10, angle_mechanical_deg)\", \"torque_method\": \"mo_gapintegral('sliding_airgap', 0)\", \"base_fem\": \"C:\\\\Users\\\\26096\\\\Desktop\\\\em\\\\02_new_ipmsm_project\\\\femm_6point_validation\\\\generated_fem\\\\candidate_001\\\\air0\\\\base\\\\model.fem\", \"model_fem\": \"C:\\\\Users\\\\26096\\\\Desktop\\\\em\\\\02_new_ipmsm_project\\\\femm_6point_validation\\\\generated_fem\\\\candidate_001\\\\air0\\\\angle_000\\\\model.fem\", \"torque_nm\": -0.1836175993782216, \"timing_seconds\": {\"prepare\": 0.12769919999846024, \"analyze\": 102.46299419999923, \"postprocess\": 0.4701223000010941, \"total\": 103.06081569999878}, \"ans_path\": \"C:\\\\Users\\\\26096\\\\Desktop\\\\em\\\\02_new_ipmsm_project\\\\femm_6point_validation\\\\generated_fem\\\\candidate_001\\\\air0\\\\angle_000\\\\model.ans\", \"ans_exists\": true, \"ans_size_bytes\": 13313582}\n",
+  "stderr": ""
+}

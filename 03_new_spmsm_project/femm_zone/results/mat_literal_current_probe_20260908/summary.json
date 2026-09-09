@@ -1,0 +1,696 @@
+{
+  "status": "complete",
+  "fresh_solves": 60,
+  "scenarios": {
+    "template_iron": {
+      "spec": {
+        "status": "prepared",
+        "angles_mechanical_deg": [
+          0,
+          3,
+          6,
+          9,
+          12,
+          15
+        ],
+        "min_angle_deg": 15,
+        "pole_pairs": 4,
+        "amplitude_a": 3.5,
+        "fixed_currents_a": {
+          "A": 0.0,
+          "B": 0.0,
+          "C": 0.0
+        },
+        "fixed_current_phase_electrical_deg": null,
+        "outer_angle_deg": 0,
+        "torque_multiplier": -2,
+        "multiplier_source": "previous mean-torque validation; not refitted",
+        "mat_unused_current_parameters": {
+          "Id": 5.0,
+          "Iq": 0.0,
+          "Ia": 0.0,
+          "Ib": 0.0,
+          "Ic": 0.0
+        },
+        "input_sha256": {
+          "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+          "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+        },
+        "candidates": [
+          {
+            "candidate_id": "low_tavg",
+            "state_index_0based": 0,
+            "population_row_0based": 338,
+            "pm_cells": 45,
+            "historical_tavg_nm": 1.6172313314639906,
+            "historical_delta_t": 0.35074853072759105,
+            "before_after_identical": true
+          },
+          {
+            "candidate_id": "median_tavg",
+            "state_index_0based": 31,
+            "population_row_0based": 190,
+            "pm_cells": 80,
+            "historical_tavg_nm": 3.183132769850227,
+            "historical_delta_t": 0.454533168517397,
+            "before_after_identical": true
+          },
+          {
+            "candidate_id": "high_tavg",
+            "state_index_0based": 193,
+            "population_row_0based": 258,
+            "pm_cells": 100,
+            "historical_tavg_nm": 3.9186576845750505,
+            "historical_delta_t": 0.21329158923616598,
+            "before_after_identical": true
+          },
+          {
+            "candidate_id": "final_low_tavg",
+            "state_index_0based": 200,
+            "population_row_0based": 491,
+            "pm_cells": 82,
+            "historical_tavg_nm": 3.155745847366145,
+            "historical_delta_t": 0.18494258054991697,
+            "before_after_identical": true
+          },
+          {
+            "candidate_id": "final_high_tavg",
+            "state_index_0based": 200,
+            "population_row_0based": 33,
+            "pm_cells": 99,
+            "historical_tavg_nm": 3.8501566605986075,
+            "historical_delta_t": 0.4947766516831762,
+            "before_after_identical": true
+          }
+        ],
+        "current_source": "literal inp.Ia / inp.Ib / inp.Ic; no inferred phase",
+        "material_scenario": "template_iron"
+      },
+      "candidates": [
+        {
+          "candidate_id": "low_tavg",
+          "state_index_0based": 0,
+          "population_row_0based": 338,
+          "pm_cells": 45,
+          "historical_tavg_nm": 1.6172313314639906,
+          "historical_delta_t": 0.35074853072759105,
+          "before_after_identical": true,
+          "raw_torques_nm": [
+            -0.0008799075772399703,
+            -0.03103115461183881,
+            -0.09615845848991611,
+            0.09812317973980222,
+            0.03287441738976121,
+            0.0007157891782632663
+          ],
+          "historical_scale_torques_nm": [
+            0.0017598151544799406,
+            0.06206230922367762,
+            0.19231691697983222,
+            -0.19624635947960445,
+            -0.06574883477952242,
+            -0.0014315783565265327
+          ],
+          "tavg_nm_previous_scale": -0.0012146218762772649,
+          "peak_to_peak_nm_previous_scale": 0.38856327645943667,
+          "tavg_error_percent": 100.07510501760918,
+          "delta_definition_probes": {
+            "absolute_peak_to_peak_previous_scale": {
+              "value": 0.38856327645943667,
+              "error_percent": 10.781155847867103
+            },
+            "absolute_peak_to_peak_raw": {
+              "value": 0.19428163822971833,
+              "error_percent": 44.60942207606645
+            },
+            "absolute_peak_to_peak_sector4": {
+              "value": 0.7771265529188733,
+              "error_percent": 121.56231169573421
+            },
+            "half_peak_to_peak_previous_scale": {
+              "value": 0.19428163822971833,
+              "error_percent": 44.60942207606645
+            },
+            "relative_peak_to_peak": {
+              "value": 319.9047243001725,
+              "error_percent": 91106.29062552699
+            }
+          }
+        },
+        {
+          "candidate_id": "median_tavg",
+          "state_index_0based": 31,
+          "population_row_0based": 190,
+          "pm_cells": 80,
+          "historical_tavg_nm": 3.183132769850227,
+          "historical_delta_t": 0.454533168517397,
+          "before_after_identical": true,
+          "raw_torques_nm": [
+            5.726195002309111e-05,
+            0.1321372315226779,
+            -0.02941490996947934,
+            0.02891484768203141,
+            -0.1347376849591264,
+            0.0007660331603219539
+          ],
+          "historical_scale_torques_nm": [
+            -0.00011452390004618222,
+            -0.2642744630453558,
+            0.05882981993895868,
+            -0.05782969536406282,
+            0.2694753699182528,
+            -0.0015320663206439078
+          ],
+          "tavg_nm_previous_scale": 0.0007590735378504746,
+          "peak_to_peak_nm_previous_scale": 0.5337498329636086,
+          "tavg_error_percent": 99.9761532555274,
+          "delta_definition_probes": {
+            "absolute_peak_to_peak_previous_scale": {
+              "value": 0.5337498329636086,
+              "error_percent": 17.428137247849623
+            },
+            "absolute_peak_to_peak_raw": {
+              "value": 0.2668749164818043,
+              "error_percent": 41.28593137607519
+            },
+            "absolute_peak_to_peak_sector4": {
+              "value": 1.0674996659272171,
+              "error_percent": 134.85627449569924
+            },
+            "half_peak_to_peak_previous_scale": {
+              "value": 0.2668749164818043,
+              "error_percent": 41.28593137607519
+            },
+            "relative_peak_to_peak": {
+              "value": 703.1595838198601,
+              "error_percent": 154599.28984796346
+            }
+          }
+        },
+        {
+          "candidate_id": "high_tavg",
+          "state_index_0based": 193,
+          "population_row_0based": 258,
+          "pm_cells": 100,
+          "historical_tavg_nm": 3.9186576845750505,
+          "historical_delta_t": 0.21329158923616598,
+          "before_after_identical": true,
+          "raw_torques_nm": [
+            0.0003740482993453904,
+            0.08314028841723078,
+            -0.0828685718217183,
+            0.0820882580259909,
+            -0.08457165481517136,
+            -0.0007265509127397365
+          ],
+          "historical_scale_torques_nm": [
+            -0.0007480965986907808,
+            -0.16628057683446157,
+            0.1657371436434366,
+            -0.1641765160519818,
+            0.16914330963034271,
+            0.001453101825479473
+          ],
+          "tavg_nm_previous_scale": 0.0008547276023541103,
+          "peak_to_peak_nm_previous_scale": 0.33542388646480426,
+          "tavg_error_percent": 99.97818825549068,
+          "delta_definition_probes": {
+            "absolute_peak_to_peak_previous_scale": {
+              "value": 0.33542388646480426,
+              "error_percent": 57.26071884316448
+            },
+            "absolute_peak_to_peak_raw": {
+              "value": 0.16771194323240213,
+              "error_percent": 21.36964057841776
+            },
+            "absolute_peak_to_peak_sector4": {
+              "value": 0.6708477729296085,
+              "error_percent": 214.52143768632897
+            },
+            "half_peak_to_peak_previous_scale": {
+              "value": 0.16771194323240213,
+              "error_percent": 21.36964057841776
+            },
+            "relative_peak_to_peak": {
+              "value": 392.4336660486594,
+              "error_percent": 183889.28314709087
+            }
+          }
+        },
+        {
+          "candidate_id": "final_low_tavg",
+          "state_index_0based": 200,
+          "population_row_0based": 491,
+          "pm_cells": 82,
+          "historical_tavg_nm": 3.155745847366145,
+          "historical_delta_t": 0.18494258054991697,
+          "before_after_identical": true,
+          "raw_torques_nm": [
+            0.00192092320393861,
+            -0.1465450988360438,
+            0.013686642273816,
+            -0.01401817439257203,
+            0.1484323673314418,
+            0.001707639782557158
+          ],
+          "historical_scale_torques_nm": [
+            -0.00384184640787722,
+            0.2930901976720876,
+            -0.027373284547632,
+            0.02803634878514406,
+            -0.2968647346628836,
+            -0.003415279565114316
+          ],
+          "tavg_nm_previous_scale": -0.0017280997877125784,
+          "peak_to_peak_nm_previous_scale": 0.5899549323349712,
+          "tavg_error_percent": 100.05476042340847,
+          "delta_definition_probes": {
+            "absolute_peak_to_peak_previous_scale": {
+              "value": 0.5899549323349712,
+              "error_percent": 218.9935657763461
+            },
+            "absolute_peak_to_peak_raw": {
+              "value": 0.2949774661674856,
+              "error_percent": 59.496782888173044
+            },
+            "absolute_peak_to_peak_sector4": {
+              "value": 1.1799098646699424,
+              "error_percent": 537.9871315526922
+            },
+            "half_peak_to_peak_previous_scale": {
+              "value": 0.2949774661674856,
+              "error_percent": 59.496782888173044
+            },
+            "relative_peak_to_peak": {
+              "value": 341.38938997028214,
+              "error_percent": 184492.0982367494
+            }
+          }
+        },
+        {
+          "candidate_id": "final_high_tavg",
+          "state_index_0based": 200,
+          "population_row_0based": 33,
+          "pm_cells": 99,
+          "historical_tavg_nm": 3.8501566605986075,
+          "historical_delta_t": 0.4947766516831762,
+          "before_after_identical": true,
+          "raw_torques_nm": [
+            0.001797022292897563,
+            -0.2593288459629299,
+            -0.02125473809339554,
+            0.01770319602983283,
+            0.2602089923524413,
+            0.0008189227492799666
+          ],
+          "historical_scale_torques_nm": [
+            -0.003594044585795126,
+            0.5186576919258598,
+            0.04250947618679108,
+            -0.03540639205966566,
+            -0.5204179847048827,
+            -0.001637845498559933
+          ],
+          "tavg_nm_previous_scale": 1.8483543957912333e-05,
+          "peak_to_peak_nm_previous_scale": 1.0390756766307425,
+          "tavg_error_percent": 99.9995199274838,
+          "delta_definition_probes": {
+            "absolute_peak_to_peak_previous_scale": {
+              "value": 1.0390756766307425,
+              "error_percent": 110.0090360157296
+            },
+            "absolute_peak_to_peak_raw": {
+              "value": 0.5195378383153713,
+              "error_percent": 5.004518007864803
+            },
+            "absolute_peak_to_peak_sector4": {
+              "value": 2.078151353261485,
+              "error_percent": 320.0180720314592
+            },
+            "half_peak_to_peak_previous_scale": {
+              "value": 0.5195378383153713,
+              "error_percent": 5.004518007864803
+            },
+            "relative_peak_to_peak": {
+              "value": 56216.25803994914,
+              "error_percent": 11361846.415358841
+            }
+          }
+        }
+      ],
+      "mean_delta_error_percent": {
+        "absolute_peak_to_peak_previous_scale": 82.89452274619138,
+        "absolute_peak_to_peak_raw": 34.35325898531945,
+        "absolute_peak_to_peak_sector4": 265.7890454923828,
+        "half_peak_to_peak_previous_scale": 34.35325898531945,
+        "relative_peak_to_peak": 2395186.6754432344
+      },
+      "mean_tavg_error_percent": 100.01674537590391
+    },
+    "mat_linear_iron": {
+      "spec": {
+        "status": "prepared",
+        "angles_mechanical_deg": [
+          0,
+          3,
+          6,
+          9,
+          12,
+          15
+        ],
+        "min_angle_deg": 15,
+        "pole_pairs": 4,
+        "amplitude_a": 3.5,
+        "fixed_currents_a": {
+          "A": 0.0,
+          "B": 0.0,
+          "C": 0.0
+        },
+        "fixed_current_phase_electrical_deg": null,
+        "outer_angle_deg": 0,
+        "torque_multiplier": -2,
+        "multiplier_source": "previous mean-torque validation; not refitted",
+        "mat_unused_current_parameters": {
+          "Id": 5.0,
+          "Iq": 0.0,
+          "Ia": 0.0,
+          "Ib": 0.0,
+          "Ic": 0.0
+        },
+        "input_sha256": {
+          "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+          "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+        },
+        "candidates": [
+          {
+            "candidate_id": "low_tavg",
+            "state_index_0based": 0,
+            "population_row_0based": 338,
+            "pm_cells": 45,
+            "historical_tavg_nm": 1.6172313314639906,
+            "historical_delta_t": 0.35074853072759105,
+            "before_after_identical": true
+          },
+          {
+            "candidate_id": "median_tavg",
+            "state_index_0based": 31,
+            "population_row_0based": 190,
+            "pm_cells": 80,
+            "historical_tavg_nm": 3.183132769850227,
+            "historical_delta_t": 0.454533168517397,
+            "before_after_identical": true
+          },
+          {
+            "candidate_id": "high_tavg",
+            "state_index_0based": 193,
+            "population_row_0based": 258,
+            "pm_cells": 100,
+            "historical_tavg_nm": 3.9186576845750505,
+            "historical_delta_t": 0.21329158923616598,
+            "before_after_identical": true
+          },
+          {
+            "candidate_id": "final_low_tavg",
+            "state_index_0based": 200,
+            "population_row_0based": 491,
+            "pm_cells": 82,
+            "historical_tavg_nm": 3.155745847366145,
+            "historical_delta_t": 0.18494258054991697,
+            "before_after_identical": true
+          },
+          {
+            "candidate_id": "final_high_tavg",
+            "state_index_0based": 200,
+            "population_row_0based": 33,
+            "pm_cells": 99,
+            "historical_tavg_nm": 3.8501566605986075,
+            "historical_delta_t": 0.4947766516831762,
+            "before_after_identical": true
+          }
+        ],
+        "current_source": "literal inp.Ia / inp.Ib / inp.Ic; no inferred phase",
+        "material_scenario": "mat_linear_iron"
+      },
+      "candidates": [
+        {
+          "candidate_id": "low_tavg",
+          "state_index_0based": 0,
+          "population_row_0based": 338,
+          "pm_cells": 45,
+          "historical_tavg_nm": 1.6172313314639906,
+          "historical_delta_t": 0.35074853072759105,
+          "before_after_identical": true,
+          "raw_torques_nm": [
+            -0.0008774757959144134,
+            -0.03185530491772618,
+            -0.09509387749187372,
+            0.09705279860516923,
+            0.03370260694055515,
+            0.0007212230332179162
+          ],
+          "historical_scale_torques_nm": [
+            0.0017549515918288269,
+            0.06371060983545236,
+            0.19018775498374743,
+            -0.19410559721033846,
+            -0.0674052138811103,
+            -0.0014424460664358323
+          ],
+          "tavg_nm_previous_scale": -0.0012166567911426624,
+          "peak_to_peak_nm_previous_scale": 0.3842933521940859,
+          "tavg_error_percent": 100.07523084468326,
+          "delta_definition_probes": {
+            "absolute_peak_to_peak_previous_scale": {
+              "value": 0.3842933521940859,
+              "error_percent": 9.563781036205521
+            },
+            "absolute_peak_to_peak_raw": {
+              "value": 0.19214667609704295,
+              "error_percent": 45.21810948189724
+            },
+            "absolute_peak_to_peak_sector4": {
+              "value": 0.7685867043881718,
+              "error_percent": 119.12756207241104
+            },
+            "half_peak_to_peak_previous_scale": {
+              "value": 0.19214667609704295,
+              "error_percent": 45.21810948189724
+            },
+            "relative_peak_to_peak": {
+              "value": 315.86011354374176,
+              "error_percent": 89953.15371913978
+            }
+          }
+        },
+        {
+          "candidate_id": "median_tavg",
+          "state_index_0based": 31,
+          "population_row_0based": 190,
+          "pm_cells": 80,
+          "historical_tavg_nm": 3.183132769850227,
+          "historical_delta_t": 0.454533168517397,
+          "before_after_identical": true,
+          "raw_torques_nm": [
+            1.735394559547351e-05,
+            0.1302632924431885,
+            -0.02815352161508271,
+            0.02765253023758051,
+            -0.1328074085637702,
+            0.0007063157008644934
+          ],
+          "historical_scale_torques_nm": [
+            -3.470789119094702e-05,
+            -0.260526584886377,
+            0.05630704323016542,
+            -0.05530506047516102,
+            0.2656148171275404,
+            -0.0014126314017289868
+          ],
+          "tavg_nm_previous_scale": 0.0007738126172079908,
+          "peak_to_peak_nm_previous_scale": 0.5261414020139175,
+          "tavg_error_percent": 99.97569021862559,
+          "delta_definition_probes": {
+            "absolute_peak_to_peak_previous_scale": {
+              "value": 0.5261414020139175,
+              "error_percent": 15.754237194634937
+            },
+            "absolute_peak_to_peak_raw": {
+              "value": 0.26307070100695873,
+              "error_percent": 42.12288140268253
+            },
+            "absolute_peak_to_peak_sector4": {
+              "value": 1.052282804027835,
+              "error_percent": 131.50847438926988
+            },
+            "half_peak_to_peak_previous_scale": {
+              "value": 0.26307070100695873,
+              "error_percent": 42.12288140268253
+            },
+            "relative_peak_to_peak": {
+              "value": 679.9338629451391,
+              "error_percent": 149489.49314149228
+            }
+          }
+        },
+        {
+          "candidate_id": "high_tavg",
+          "state_index_0based": 193,
+          "population_row_0based": 258,
+          "pm_cells": 100,
+          "historical_tavg_nm": 3.9186576845750505,
+          "historical_delta_t": 0.21329158923616598,
+          "before_after_identical": true,
+          "raw_torques_nm": [
+            0.000256420214430999,
+            0.09340403784955241,
+            -0.07554530842803718,
+            0.07498247870275633,
+            -0.09477749258461751,
+            -0.0007195584643596679
+          ],
+          "historical_scale_torques_nm": [
+            -0.000512840428861998,
+            -0.18680807569910482,
+            0.15109061685607436,
+            -0.14996495740551266,
+            0.18955498516923502,
+            0.0014391169287193359
+          ],
+          "tavg_nm_previous_scale": 0.000799807570091542,
+          "peak_to_peak_nm_previous_scale": 0.3763630608683398,
+          "tavg_error_percent": 99.97958975663428,
+          "delta_definition_probes": {
+            "absolute_peak_to_peak_previous_scale": {
+              "value": 0.3763630608683398,
+              "error_percent": 76.45471263829997
+            },
+            "absolute_peak_to_peak_raw": {
+              "value": 0.1881815304341699,
+              "error_percent": 11.772643680850019
+            },
+            "absolute_peak_to_peak_sector4": {
+              "value": 0.7527261217366796,
+              "error_percent": 252.9094252765999
+            },
+            "half_peak_to_peak_previous_scale": {
+              "value": 0.1881815304341699,
+              "error_percent": 11.772643680850019
+            },
+            "relative_peak_to_peak": {
+              "value": 470.5670150449603,
+              "error_percent": 220521.45850670536
+            }
+          }
+        },
+        {
+          "candidate_id": "final_low_tavg",
+          "state_index_0based": 200,
+          "population_row_0based": 491,
+          "pm_cells": 82,
+          "historical_tavg_nm": 3.155745847366145,
+          "historical_delta_t": 0.18494258054991697,
+          "before_after_identical": true,
+          "raw_torques_nm": [
+            0.001905119742958418,
+            -0.1473159946591114,
+            0.01448774812887,
+            -0.01477032853632768,
+            0.1492083617250082,
+            0.001681249026785655
+          ],
+          "historical_scale_torques_nm": [
+            -0.003810239485916836,
+            0.2946319893182228,
+            -0.02897549625774,
+            0.02954065707265536,
+            -0.2984167234500164,
+            -0.00336249805357131
+          ],
+          "tavg_nm_previous_scale": -0.0017320518093943977,
+          "peak_to_peak_nm_previous_scale": 0.5930487127682392,
+          "tavg_error_percent": 100.0548856559802,
+          "delta_definition_probes": {
+            "absolute_peak_to_peak_previous_scale": {
+              "value": 0.5930487127682392,
+              "error_percent": 220.6663987302655
+            },
+            "absolute_peak_to_peak_raw": {
+              "value": 0.2965243563841196,
+              "error_percent": 60.333199365132764
+            },
+            "absolute_peak_to_peak_sector4": {
+              "value": 1.1860974255364785,
+              "error_percent": 541.332797460531
+            },
+            "half_peak_to_peak_previous_scale": {
+              "value": 0.2965243563841196,
+              "error_percent": 60.333199365132764
+            },
+            "relative_peak_to_peak": {
+              "value": 342.3966359156401,
+              "error_percent": 185036.72454312135
+            }
+          }
+        },
+        {
+          "candidate_id": "final_high_tavg",
+          "state_index_0based": 200,
+          "population_row_0based": 33,
+          "pm_cells": 99,
+          "historical_tavg_nm": 3.8501566605986075,
+          "historical_delta_t": 0.4947766516831762,
+          "before_after_identical": true,
+          "raw_torques_nm": [
+            0.00177872010992394,
+            -0.2502788933454088,
+            -0.01609339179954034,
+            0.01279573968475851,
+            0.2511941446305688,
+            0.0009117915935555359
+          ],
+          "historical_scale_torques_nm": [
+            -0.00355744021984788,
+            0.5005577866908176,
+            0.03218678359908068,
+            -0.02559147936951702,
+            -0.5023882892611377,
+            -0.0018235831871110718
+          ],
+          "tavg_nm_previous_scale": -0.00010270362461920939,
+          "peak_to_peak_nm_previous_scale": 1.0029460759519553,
+          "tavg_error_percent": 100.00266751806933,
+          "delta_definition_probes": {
+            "absolute_peak_to_peak_previous_scale": {
+              "value": 1.0029460759519553,
+              "error_percent": 102.70683196954467
+            },
+            "absolute_peak_to_peak_raw": {
+              "value": 0.5014730379759776,
+              "error_percent": 1.3534159847723357
+            },
+            "absolute_peak_to_peak_sector4": {
+              "value": 2.0058921519039106,
+              "error_percent": 305.4136639390893
+            },
+            "half_peak_to_peak_previous_scale": {
+              "value": 0.5014730379759776,
+              "error_percent": 1.3534159847723357
+            },
+            "relative_peak_to_peak": {
+              "value": 9765.439921624413,
+              "error_percent": 1973606.6994579171
+            }
+          }
+        }
+      ],
+      "mean_delta_error_percent": {
+        "absolute_peak_to_peak_previous_scale": 85.02919231379012,
+        "absolute_peak_to_peak_raw": 32.160049983066976,
+        "absolute_peak_to_peak_sector4": 270.0583846275802,
+        "half_peak_to_peak_previous_scale": 32.160049983066976,
+        "relative_peak_to_peak": 523721.50587367517
+      },
+      "mean_tavg_error_percent": 100.01761279879854
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "status": "generated_and_structurally_validated",
+  "mapping_version": "spmsm_binary_pm_v1",
+  "mapping": {
+    "0": "Air",
+    "1": "N38 permanent magnet"
+  },
+  "mapping_evidence": [
+    "MaterialPosition[120,8] matches 480 unique FEM labels",
+    "those labels point one-to-one to c1..c120",
+    "VolumePM equals the number of one-bits for all 612 final-state individuals",
+    "the design domain contains cell-specific Air properties plus N38 as the PM source"
+  ],
+  "grid_axes": "gene_index = angular_index * 6 + radial_index; grid is [6 radial,20 angular]; radial index increases outward and angular index advances toward decreasing physical polar angle",
+  "genotype_sha256": "baeb721ff0d38f1035cd7c96a9a3290ee36a2d52c607562f74574a4bc230a6a9",
+  "template": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem",
+    "sha256": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+  },
+  "mat": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+    "sha256": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8"
+  },
+  "provenance": {
+    "kind": "workspace_history",
+    "source_variable": "population_all",
+    "state_index_0based": 0,
+    "generation_interpretation": "0=initial, 1..200=GA generations",
+    "population_row_0based": 338,
+    "stored_results": {
+      "tavg_nm": 1.6172313314639906,
+      "delta_t": 0.35074853072759105,
+      "fitness": 2.7916429467517476,
+      "volume_pm_cells": 44
+    }
+  },
+  "validation": {
+    "mapped_genes": 120,
+    "mapped_design_labels": 480,
+    "distinct_design_labels": 480,
+    "maximum_coordinate_error_mm": 1.517719948885615e-14,
+    "air_cells": 75,
+    "permanent_magnet_cells": 45,
+    "material_assignment_matches_all_120_bits": true,
+    "template_magnetization_directions_preserved": true
+  },
+  "femm_solve_performed": false
+}

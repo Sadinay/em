@@ -1,0 +1,12 @@
+{
+  "key": "exact corrected 120-bit chromosome from population_all",
+  "historical_records": 123012,
+  "unique_chromosomes": 65702,
+  "removed_duplicate_records": 57310,
+  "duplicate_groups": 24320,
+  "maximum_occurrence_count": 30,
+  "quarantined_label_conflicts": 898,
+  "clean_unique_chromosomes": 64804,
+  "label_conflict_atol": 1e-06,
+  "repeated_label_policy": "median only when repeated labels agree within tolerance; otherwise quarantine"
+}

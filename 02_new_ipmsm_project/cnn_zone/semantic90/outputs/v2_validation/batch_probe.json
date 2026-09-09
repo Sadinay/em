@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "torch": "2.13.0+cu132",
+  "cuda": "13.2",
+  "all_forward_backward_finite": true,
+  "models": [
+    {
+      "model_id": "logical10/mini_inception_v2",
+      "candidates": [
+        {
+          "physical_batch_size": 64,
+          "status": "passed",
+          "torch_peak_allocated_mb": 89.826171875,
+          "error": null
+        }
+      ],
+      "selected": 64,
+      "parameter_count": 932146,
+      "input_channels": 3,
+      "effective_batch_size": 64
+    },
+    {
+      "model_id": "logical10/resnet20_v2",
+      "candidates": [
+        {
+          "physical_batch_size": 64,
+          "status": "passed",
+          "torch_peak_allocated_mb": 76.8916015625,
+          "error": null
+        }
+      ],
+      "selected": 64,
+      "parameter_count": 681938,
+      "input_channels": 3,
+      "effective_batch_size": 64
+    },
+    {
+      "model_id": "logical10/small_cnn_v2",
+      "candidates": [
+        {
+          "physical_batch_size": 64,
+          "status": "passed",
+          "torch_peak_allocated_mb": 77.751953125,
+          "error": null
+        }
+      ],
+      "selected": 64,
+      "parameter_count": 1060898,
+      "input_channels": 3,
+      "effective_batch_size": 64
+    },
+    {
+      "model_id": "semantic224/mini_inception_v2",
+      "candidates": [
+        {
+          "physical_batch_size": 8,
+          "status": "passed",
+          "torch_peak_allocated_mb": 1581.06201171875,
+          "error": null
+        },
+        {
+          "physical_batch_size": 16,
+          "status": "passed",
+          "torch_peak_allocated_mb": 3095.16162109375,
+          "error": null
+        },
+        {
+          "physical_batch_size": 24,
+          "status": "passed",
+          "torch_peak_allocated_mb": 4586.4111328125,
+          "error": null
+        },
+        {
+          "physical_batch_size": 32,
+          "status": "passed",
+          "torch_peak_allocated_mb": 6077.0810546875,
+          "error": null
+        }
+      ],
+      "selected": 32,
+      "parameter_count": 1036466,
+      "input_channels": 8,
+      "effective_batch_size": 64
+    },
+    {
+      "model_id": "semantic224/resnet18_v2",
+      "candidates": [
+        {
+          "physical_batch_size": 8,
+          "status": "passed",
+          "torch_peak_allocated_mb": 1258.9892578125,
+          "error": null
+        },
+        {
+          "physical_batch_size": 16,
+          "status": "passed",
+          "torch_peak_allocated_mb": 2409.2451171875,
+          "error": null
+        },
+        {
+          "physical_batch_size": 24,
+          "status": "passed",
+          "torch_peak_allocated_mb": 3572.08349609375,
+          "error": null
+        }
+      ],
+      "selected": 24,
+      "parameter_count": 3845570,
+      "input_channels": 8,
+      "effective_batch_size": 64
+    },
+    {
+      "model_id": "semantic224/vgg16_v2",
+      "candidates": [
+        {
+          "physical_batch_size": 8,
+          "status": "passed",
+          "torch_peak_allocated_mb": 1271.84521484375,
+          "error": null
+        },
+        {
+          "physical_batch_size": 16,
+          "status": "passed",
+          "torch_peak_allocated_mb": 2345.97607421875,
+          "error": null
+        }
+      ],
+      "selected": 16,
+      "parameter_count": 18917122,
+      "input_channels": 8,
+      "effective_batch_size": 64
+    }
+  ]
+}

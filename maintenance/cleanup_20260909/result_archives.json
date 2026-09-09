@@ -1,0 +1,75 @@
+[
+  {
+    "run": "_discarded_band_supplement_init_20260808_001",
+    "tables": {
+      "samples": 0,
+      "angle_evaluations": 0,
+      "candidates": 0
+    },
+    "archive_files": 3,
+    "complete_angles": 0,
+    "sample_statuses": {},
+    "archive_bytes": 22531,
+    "archive_sha256": "be026bd9942666dae41a3b9f08b3a6f7888f3033d243bb9464195506c7257666"
+  },
+  {
+    "run": "band_supplement_300_20260808_001",
+    "tables": {
+      "samples": 301,
+      "angle_evaluations": 1806,
+      "candidates": 300
+    },
+    "archive_files": 7233,
+    "complete_angles": 1806,
+    "sample_statuses": {
+      "classified": 301
+    },
+    "archive_bytes": 3141190,
+    "archive_sha256": "c3a419575861e8ef42d9f9956fb25610763cec65556317cc014a3c931f8e2891"
+  },
+  {
+    "run": "clonalg_real_2gen_20260806_001",
+    "tables": {
+      "samples": 2,
+      "angle_evaluations": 12,
+      "candidates": 40
+    },
+    "archive_files": 49,
+    "complete_angles": 12,
+    "sample_statuses": {
+      "classified": 2
+    },
+    "archive_bytes": 36015,
+    "archive_sha256": "c633d84f1c5022c60a8dc6d8e9d17a541a574cd76f2ec80c309760cd28ed0d1a"
+  },
+  {
+    "run": "improved_dataset_1000_20260807_001",
+    "tables": {
+      "samples": 1001,
+      "angle_evaluations": 6006,
+      "candidates": 1000
+    },
+    "archive_files": 24078,
+    "complete_angles": 6006,
+    "sample_statuses": {
+      "classified": 1001
+    },
+    "archive_bytes": 10488217,
+    "archive_sha256": "b95e1aa86bfe5175f35d83fec8df8307edec4b54146c3c6e51e43de9b1e1c44d"
+  },
+  {
+    "run": "reference_validation_20260806_001",
+    "tables": {
+      "samples": 5,
+      "angle_evaluations": 30,
+      "candidates": 14
+    },
+    "archive_files": 120,
+    "complete_angles": 30,
+    "sample_statuses": {
+      "classified": 5
+    },
+    "archive_bytes": 54264,
+    "archive_sha256": "de9aebe257db0617fcb17179beb74905c0a0fb95c5fb647755bab8450e8bc493"
+  }
+]

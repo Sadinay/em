@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "candidate_id": "high_tavg",
+  "angle_mechanical_deg": 13.75,
+  "current_phase_electrical_deg": null,
+  "torque_nm_raw": -0.08448497658725256,
+  "torque_nm_historical_scale": 0.1689699531745051,
+  "verified_input": {
+    "headers": {
+      "Frequency": 0.0,
+      "Precision": 1e-08,
+      "MinAngle": 15.0,
+      "DoSmartMesh": 1.0,
+      "Depth": 36.0
+    },
+    "inner_angle_deg": 13.75,
+    "outer_angle_deg": 0,
+    "fixed_currents_a": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0
+    },
+    "fem_sha256": "c54936aa5b8ea117b0556d35e8e6326f03f277439f1ba3199dbe374b4ff8ff86"
+  },
+  "elapsed_seconds": 5.584503099998983,
+  "ans_path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\mat_literal_current_probe_20260908\\timing_grid\\high_tavg\\angle_013p75\\model.ans",
+  "fresh_solve": true
+}

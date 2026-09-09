@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "candidate_id": "final_low_tavg",
+  "angle_mechanical_deg": 3,
+  "current_phase_electrical_deg": 0,
+  "torque_nm_raw": -1.214447694319637,
+  "torque_nm_historical_scale": 2.428895388639274,
+  "verified_input": {
+    "headers": {
+      "Frequency": 0.0,
+      "Precision": 1e-08,
+      "MinAngle": 15.0,
+      "DoSmartMesh": 1.0,
+      "Depth": 36.0
+    },
+    "inner_angle_deg": 3,
+    "outer_angle_deg": 0,
+    "fixed_currents_a": {
+      "A": 3.5,
+      "B": -1.75,
+      "C": -1.75
+    },
+    "fem_sha256": "ff38dbc3680a1402228fdb000ada31d0bc1acc720747aadc46646c35df9983e1"
+  },
+  "elapsed_seconds": 3.8973882000027515,
+  "ans_path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\fixed_current_5genes_20260908\\final_low_tavg\\angle_003\\model.ans",
+  "fresh_solve": true
+}

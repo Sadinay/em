@@ -1,0 +1,75 @@
+{
+  "config": {
+    "campaign_count": 6,
+    "constraints": {
+      "fixed_cells": {},
+      "minimum_copper_island_cells": 4,
+      "theta_periodic": false
+    },
+    "initial_parent_reuse": false,
+    "lineage": {
+      "maximum_parents_per_generation_lineage": 60,
+      "topology_family_candidate_distance": 20
+    },
+    "mode": "improved_dataset_sampling",
+    "parent_archive_target": 60,
+    "parents_per_campaign": 10,
+    "parents_per_cluster": 5,
+    "physics": {
+      "formula_version": "historical_six_angle_v1",
+      "reference_t_avg_nm": 0.8707406437252049,
+      "source_config_path": "C:\\Users\\26096\\Desktop\\em\\python_topopt\\configs\\dataset_merged_v5.json",
+      "source_config_sha256": "f18b26cec31861eb763ac2c0500d3832779dd39cb27d4f58c59382f0d1c5f4a3"
+    },
+    "proposal": {
+      "checkpoint_every_proposal": true,
+      "hamming_admission_mode": "observe_only",
+      "maximum_proposals": 100000,
+      "operator_weights": {
+        "boundary_growth": 0.3,
+        "connected_region_repaint": 0.55,
+        "rectangular_patch": 0.15
+      },
+      "scales": {
+        "large": {
+          "maximum_cells": 40,
+          "maximum_parent_distance": 180,
+          "minimum_archive_distance": 0,
+          "minimum_cells": 16,
+          "probability": 0.2
+        },
+        "medium": {
+          "maximum_cells": 15,
+          "maximum_parent_distance": 180,
+          "minimum_archive_distance": 0,
+          "minimum_cells": 5,
+          "probability": 0.35
+        },
+        "small": {
+          "maximum_cells": 4,
+          "maximum_parent_distance": 180,
+          "minimum_archive_distance": 0,
+          "minimum_cells": 1,
+          "probability": 0.45
+        }
+      },
+      "selection_window": 50
+    },
+    "random_seed": 20260807,
+    "repair": {
+      "floating_iron_strategy": "remove",
+      "maximum_iterations": 8,
+      "maximum_repair_hamming": 40,
+      "small_copper_island_strategy": "remove"
+    },
+    "schema_version": 1,
+    "seed": {
+      "chromosome_sha256": "00435b1e344f7280618f320a984a2ee6526a0debe44967d6f071d8662a6ceac3",
+      "mat_path": "C:\\Users\\26096\\Desktop\\em\\FP\\CLONALG\\seed_bits_fine.mat",
+      "mat_sha256": "2665708b95df13c525483463ec0d836bc9f1bee73e93f53fc29a7762d4b208e7",
+      "mat_variable": "seed_bits"
+    },
+    "topology_cluster_target": 12
+  },
+  "config_hash": "4091d21853362e8b7c3c0ca2021790336d4098d44a3b0532175ba776e17e4d5e"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "small_cnn",
+  "family": "logical10",
+  "input_mode": "logical10",
+  "epochs": 10,
+  "batch_size": 64,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "loss": "mean MSE of two standardized targets",
+  "scheduler": "ReduceLROnPlateau(factor=0.5, patience=10, min_lr=1e-6)",
+  "seed": 20260824,
+  "parameter_count": 503458,
+  "train_samples": 11700,
+  "validation_samples": 1500,
+  "test_samples": 1500,
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 5070"
+}

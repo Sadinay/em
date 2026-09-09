@@ -1,0 +1,94 @@
+{
+  "campaigns_assigned": true,
+  "completed": true,
+  "config_hash": "4091d21853362e8b7c3c0ca2021790336d4098d44a3b0532175ba776e17e4d5e",
+  "duplicate_proposals": 697,
+  "legal_proposals": 3647,
+  "legal_unique_proposals": 2950,
+  "operator_statistics": [
+    {
+      "avg_parent_hamming": 20.543,
+      "avg_repair_hamming": 2.491,
+      "legal": 229,
+      "operator": "boundary_growth",
+      "scale": "large",
+      "total": 232
+    },
+    {
+      "avg_parent_hamming": 8.816,
+      "avg_repair_hamming": 1.351,
+      "legal": 357,
+      "operator": "boundary_growth",
+      "scale": "medium",
+      "total": 359
+    },
+    {
+      "avg_parent_hamming": 2.328,
+      "avg_repair_hamming": 0.559,
+      "legal": 449,
+      "operator": "boundary_growth",
+      "scale": "small",
+      "total": 451
+    },
+    {
+      "avg_parent_hamming": 25.881,
+      "avg_repair_hamming": 10.487,
+      "legal": 401,
+      "operator": "connected_region_repaint",
+      "scale": "large",
+      "total": 429
+    },
+    {
+      "avg_parent_hamming": 9.753,
+      "avg_repair_hamming": 5.045,
+      "legal": 731,
+      "operator": "connected_region_repaint",
+      "scale": "medium",
+      "total": 741
+    },
+    {
+      "avg_parent_hamming": 2.479,
+      "avg_repair_hamming": 1.753,
+      "legal": 922,
+      "operator": "connected_region_repaint",
+      "scale": "small",
+      "total": 926
+    },
+    {
+      "avg_parent_hamming": 22.854,
+      "avg_repair_hamming": 9.978,
+      "legal": 87,
+      "operator": "rectangular_patch",
+      "scale": "large",
+      "total": 89
+    },
+    {
+      "avg_parent_hamming": 9.126,
+      "avg_repair_hamming": 4.065,
+      "legal": 213,
+      "operator": "rectangular_patch",
+      "scale": "medium",
+      "total": 215
+    },
+    {
+      "avg_parent_hamming": 2.382,
+      "avg_repair_hamming": 1.622,
+      "legal": 258,
+      "operator": "rectangular_patch",
+      "scale": "small",
+      "total": 259
+    }
+  ],
+  "parent_archive_target": 60,
+  "parent_count": 60,
+  "physics_hash": "d727b66b38528a60097e12eca1bd52d0304d96537d92ec72cc2407a025792153",
+  "proposal_count": 3701,
+  "repaired_proposals": 1531,
+  "run_id": "improved_parent_archive_20260807_001",
+  "sampling_hash": "1aa85d5bd1f406a08bc4d86c3ed18e5cbd8f25073c2d4db6c9be85f2ed5a7588",
+  "selection_window": 50,
+  "status": "completed",
+  "stop_reason": "parent_archive_complete",
+  "updated_at": "2026-08-07T01:31:12.765+02:00",
+  "window_size": 0
+}

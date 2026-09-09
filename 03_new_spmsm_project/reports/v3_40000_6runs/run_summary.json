@@ -1,0 +1,296 @@
+{
+  "status": "complete",
+  "experiment": "SPMSM V3 40,000-sample simplified 6-run matrix",
+  "models": [
+    "logical6x20/small_cnn_v2",
+    "logical6x20/mini_inception_v2",
+    "xy90_224/vgg16_v2",
+    "polar90_224/vgg16_v2",
+    "xy360_224/vgg16_v2",
+    "polar360_224/vgg16_v2"
+  ],
+  "seeds": [
+    20260903
+  ],
+  "expected_runs": 6,
+  "split_sizes": {
+    "train": 40000,
+    "validation": 6483,
+    "test": 6483
+  },
+  "split_hashes_sha256": {
+    "train": "ade8379a3c0c72ed4a4127ac60efce2dc0799de9a95c8df5d0d0d61e38db596f",
+    "validation": "4756d67211e62be0bea21c22e1e773e107b612a9de5090c8ef678f019332c190",
+    "test": "7e037e82c2c26fd2953519336c14b52b668c3cc8efd3f4debf824ba52f79c9fa"
+  },
+  "specifications": {
+    "logical6x20/small_cnn_v2": {
+      "experiment_id": "logical6x20/small_cnn_v2",
+      "input_mode": "logical6x20",
+      "architecture": "small_cnn_v2",
+      "lookup": null,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "max_epochs": 100,
+      "minimum_epochs": 20,
+      "early_stopping_patience": 12,
+      "scheduler_patience": 3,
+      "physical_batch_size": 64,
+      "effective_batch_size": 64,
+      "circular_angular_padding": false
+    },
+    "logical6x20/mini_inception_v2": {
+      "experiment_id": "logical6x20/mini_inception_v2",
+      "input_mode": "logical6x20",
+      "architecture": "mini_inception_v2",
+      "lookup": null,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "max_epochs": 100,
+      "minimum_epochs": 20,
+      "early_stopping_patience": 12,
+      "scheduler_patience": 3,
+      "physical_batch_size": 64,
+      "effective_batch_size": 64,
+      "circular_angular_padding": false
+    },
+    "xy90_224/vgg16_v2": {
+      "experiment_id": "xy90_224/vgg16_v2",
+      "input_mode": "xy90_224",
+      "architecture": "vgg16_v2",
+      "lookup": "cnn_zone/outputs/lookups/spmsm_xy224_full_motor.npz",
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "max_epochs": 40,
+      "minimum_epochs": 30,
+      "early_stopping_patience": 8,
+      "scheduler_patience": 3,
+      "physical_batch_size": 8,
+      "effective_batch_size": 64,
+      "circular_angular_padding": false
+    },
+    "polar90_224/vgg16_v2": {
+      "experiment_id": "polar90_224/vgg16_v2",
+      "input_mode": "polar90_224",
+      "architecture": "vgg16_v2",
+      "lookup": "cnn_zone/outputs/lookups/spmsm_polar90_224_full_motor.npz",
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "max_epochs": 40,
+      "minimum_epochs": 30,
+      "early_stopping_patience": 8,
+      "scheduler_patience": 3,
+      "physical_batch_size": 8,
+      "effective_batch_size": 64,
+      "circular_angular_padding": false
+    },
+    "xy360_224/vgg16_v2": {
+      "experiment_id": "xy360_224/vgg16_v2",
+      "input_mode": "xy360_224",
+      "architecture": "vgg16_v2",
+      "lookup": "cnn_zone/outputs/lookups/spmsm_xy360_224_full_motor_ss4.npz",
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "max_epochs": 40,
+      "minimum_epochs": 30,
+      "early_stopping_patience": 8,
+      "scheduler_patience": 3,
+      "physical_batch_size": 8,
+      "effective_batch_size": 64,
+      "circular_angular_padding": false
+    },
+    "polar360_224/vgg16_v2": {
+      "experiment_id": "polar360_224/vgg16_v2",
+      "input_mode": "polar360_224",
+      "architecture": "vgg16_v2",
+      "lookup": "cnn_zone/outputs/lookups/spmsm_polar360_224_full_motor_ss4.npz",
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "max_epochs": 40,
+      "minimum_epochs": 30,
+      "early_stopping_patience": 8,
+      "scheduler_patience": 3,
+      "physical_batch_size": 8,
+      "effective_batch_size": 64,
+      "circular_angular_padding": true
+    }
+  },
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "selection": {
+    "logical": [
+      "small_cnn_v2",
+      "mini_inception_v2"
+    ],
+    "semantic224": [
+      "vgg16_v2"
+    ],
+    "evidence": "VGG16 retained for all 224 views by the simplified training decision"
+  },
+  "test_policy": "test split is evaluated only after a run finishes; validation chooses the checkpoint",
+  "resume_requested": true,
+  "completed_or_paused": [
+    {
+      "status": "complete",
+      "experiment_id": "logical6x20/small_cnn_v2",
+      "seed": 20260903,
+      "epochs_completed": 52,
+      "best_epoch": 40,
+      "best_validation_standardized_mse": 0.018038361892276537,
+      "test_standardized_mse": 0.019566633920876972,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.009256133809685707,
+          "rmse": 0.01445038802921772,
+          "r2": 0.9983555674552917,
+          "bias": 0.001779868733137846,
+          "absolute_error_p95": 0.02569561079144478
+        },
+        "delta_t": {
+          "mae": 0.027189958840608597,
+          "rmse": 0.037019308656454086,
+          "r2": 0.9630123972892761,
+          "bias": 0.0034282966516911983,
+          "absolute_error_p95": 0.07425864040851593
+        }
+      },
+      "elapsed_seconds": 196.17963500000042,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\logical6x20\\small_cnn_v2\\seed_20260903\\best_checkpoint.pt"
+    },
+    {
+      "status": "complete",
+      "experiment_id": "logical6x20/mini_inception_v2",
+      "seed": 20260903,
+      "epochs_completed": 46,
+      "best_epoch": 34,
+      "best_validation_standardized_mse": 0.026937286504970258,
+      "test_standardized_mse": 0.028121433130444042,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.019685344770550728,
+          "rmse": 0.04205639660358429,
+          "r2": 0.9860709309577942,
+          "bias": -0.008659937418997288,
+          "absolute_error_p95": 0.08805994689464569
+        },
+        "delta_t": {
+          "mae": 0.029308831319212914,
+          "rmse": 0.03935001417994499,
+          "r2": 0.9582083225250244,
+          "bias": 0.003842779668048024,
+          "absolute_error_p95": 0.07818584889173508
+        }
+      },
+      "elapsed_seconds": 483.82385950000025,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\logical6x20\\mini_inception_v2\\seed_20260903\\best_checkpoint.pt"
+    },
+    {
+      "status": "complete",
+      "experiment_id": "xy90_224/vgg16_v2",
+      "seed": 20260903,
+      "epochs_completed": 40,
+      "best_epoch": 39,
+      "best_validation_standardized_mse": 0.00613121250175289,
+      "test_standardized_mse": 0.007254250107744495,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.008474296890199184,
+          "rmse": 0.013892159797251225,
+          "r2": 0.9984801411628723,
+          "bias": 0.0038258801214396954,
+          "absolute_error_p95": 0.02470707893371582
+        },
+        "delta_t": {
+          "mae": 0.013302493840456009,
+          "rmse": 0.021793032065033913,
+          "r2": 0.987181544303894,
+          "bias": -0.0007113972096703947,
+          "absolute_error_p95": 0.033545225858688354
+        }
+      },
+      "elapsed_seconds": 9350.442799000004,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\xy90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt"
+    },
+    {
+      "status": "complete",
+      "experiment_id": "polar90_224/vgg16_v2",
+      "seed": 20260903,
+      "epochs_completed": 40,
+      "best_epoch": 39,
+      "best_validation_standardized_mse": 0.005224786694759922,
+      "test_standardized_mse": 0.006491925961544992,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.0065152570605278015,
+          "rmse": 0.012045360170304775,
+          "r2": 0.9988573789596558,
+          "bias": 0.0016485691303387284,
+          "absolute_error_p95": 0.017833685502409935
+        },
+        "delta_t": {
+          "mae": 0.011925505474209785,
+          "rmse": 0.020807400345802307,
+          "r2": 0.9883148074150085,
+          "bias": -0.000127759063616395,
+          "absolute_error_p95": 0.030222347006201744
+        }
+      },
+      "elapsed_seconds": 9174.165467700004,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt"
+    },
+    {
+      "status": "complete",
+      "experiment_id": "xy360_224/vgg16_v2",
+      "seed": 20260903,
+      "epochs_completed": 40,
+      "best_epoch": 40,
+      "best_validation_standardized_mse": 0.007097358157426997,
+      "test_standardized_mse": 0.008647084444015414,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.008709568530321121,
+          "rmse": 0.014148356392979622,
+          "r2": 0.9984235763549805,
+          "bias": 0.002788486424833536,
+          "absolute_error_p95": 0.024896979331970215
+        },
+        "delta_t": {
+          "mae": 0.015002761036157608,
+          "rmse": 0.023972727358341217,
+          "r2": 0.9844892024993896,
+          "bias": 0.002989665837958455,
+          "absolute_error_p95": 0.04014597833156586
+        }
+      },
+      "elapsed_seconds": 9243.6369414,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\xy360_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt"
+    },
+    {
+      "status": "complete",
+      "experiment_id": "polar360_224/vgg16_v2",
+      "seed": 20260903,
+      "epochs_completed": 40,
+      "best_epoch": 37,
+      "best_validation_standardized_mse": 0.028316147291589516,
+      "test_standardized_mse": 0.02983428462713465,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.01577020063996315,
+          "rmse": 0.02135777659714222,
+          "r2": 0.9964077472686768,
+          "bias": -0.005638528615236282,
+          "absolute_error_p95": 0.04005694389343262
+        },
+        "delta_t": {
+          "mae": 0.033711519092321396,
+          "rmse": 0.045277561992406845,
+          "r2": 0.9446693062782288,
+          "bias": 0.005337093956768513,
+          "absolute_error_p95": 0.08966650813817978
+        }
+      },
+      "elapsed_seconds": 12816.694576599999,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\polar360_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt"
+    }
+  ]
+}

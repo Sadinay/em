@@ -1,0 +1,155 @@
+{
+  "duplicate_chromosome_hash_groups": 0,
+  "duplicate_chromosome_samples": 0,
+  "duplicate_matrix_groups": 0,
+  "duplicate_matrix_samples": 0,
+  "fitness_band_counts": {
+    "B1": 771,
+    "B2": 75,
+    "B3": 95,
+    "B4": 102,
+    "B5": 67,
+    "B6": 162,
+    "B7": 28
+  },
+  "groups": {
+    "generation": {
+      "group_count": 43,
+      "largest_groups": {
+        "improved_dataset_1000_20260807_001:GEN-0000": 60,
+        "improved_dataset_1000_20260807_001:GEN-0001": 30,
+        "improved_dataset_1000_20260807_001:GEN-0002": 30,
+        "improved_dataset_1000_20260807_001:GEN-0003": 30,
+        "improved_dataset_1000_20260807_001:GEN-0004": 30,
+        "improved_dataset_1000_20260807_001:GEN-0005": 30,
+        "improved_dataset_1000_20260807_001:GEN-0006": 30,
+        "improved_dataset_1000_20260807_001:GEN-0007": 30,
+        "improved_dataset_1000_20260807_001:GEN-0008": 30,
+        "improved_dataset_1000_20260807_001:GEN-0009": 30,
+        "improved_dataset_1000_20260807_001:GEN-0010": 30,
+        "improved_dataset_1000_20260807_001:GEN-0011": 30,
+        "improved_dataset_1000_20260807_001:GEN-0012": 30,
+        "improved_dataset_1000_20260807_001:GEN-0013": 30,
+        "improved_dataset_1000_20260807_001:GEN-0014": 30
+      },
+      "maximum_group_size": 60,
+      "median_group_size": 30.0,
+      "minimum_group_size": 10
+    },
+    "parent": {
+      "group_count": 531,
+      "largest_groups": {
+        "band_supplement_300_20260808_001:C000068": 10,
+        "source:C000001": 9,
+        "source:C000064": 11,
+        "source:C000274": 11,
+        "source:C000289": 13,
+        "source:C000362": 18,
+        "source:C000393": 9,
+        "source:C000479": 10,
+        "source:C000482": 10,
+        "source:C000492": 24,
+        "source:C000513": 11,
+        "source:C000528": 11,
+        "source:C000610": 15,
+        "source:C000643": 10,
+        "source:C000644": 11
+      },
+      "maximum_group_size": 24,
+      "median_group_size": 2.0,
+      "minimum_group_size": 1
+    },
+    "root_parent": {
+      "group_count": 60,
+      "largest_groups": {
+        "source:C000001": 159,
+        "source:C000003": 33,
+        "source:C000005": 31,
+        "source:C000013": 131,
+        "source:C000015": 21,
+        "source:C000018": 18,
+        "source:C000027": 18,
+        "source:C000028": 183,
+        "source:C000031": 24,
+        "source:C000036": 19,
+        "source:C000040": 58,
+        "source:C000047": 86,
+        "source:C000055": 24,
+        "source:C000057": 31,
+        "source:C000059": 64
+      },
+      "maximum_group_size": 183,
+      "median_group_size": 12.0,
+      "minimum_group_size": 1
+    },
+    "topology_family": {
+      "group_count": 522,
+      "largest_groups": {
+        "TOPO-0046": 25,
+        "TOPO-0078": 12,
+        "TOPO-0086": 16,
+        "TOPO-0127": 16,
+        "TOPO-0181": 15,
+        "TOPO-0198": 30,
+        "TOPO-0226": 10,
+        "TOPO-0235": 16,
+        "TOPO-0267": 13,
+        "TOPO-0279": 13,
+        "TOPO-0287": 13,
+        "TOPO-0314": 17,
+        "TOPO-0346": 11,
+        "TOPO-0421": 14,
+        "TOPO-0426": 22
+      },
+      "maximum_group_size": 30,
+      "median_group_size": 1.0,
+      "minimum_group_size": 1
+    }
+  },
+  "material_categories_expected": [
+    0,
+    1,
+    2
+  ],
+  "material_categories_observed": [
+    0,
+    1,
+    2
+  ],
+  "material_cell_counts": {
+    "0": 83892,
+    "1": 84970,
+    "2": 65138
+  },
+  "missing_matrix_values": 0,
+  "network_tensor_shape_per_sample": [
+    3,
+    18,
+    10
+  ],
+  "run_counts": {
+    "band_supplement_300_20260808_001": 300,
+    "improved_dataset_1000_20260807_001": 1000
+  },
+  "sample_count": 1300,
+  "stored_matrix_shape": [
+    18,
+    10
+  ],
+  "targets": {
+    "torque_ripple": {
+      "count": 1300,
+      "max": 3.644233330771775,
+      "mean": 0.22447727803435613,
+      "median": 0.11865846922705953,
+      "min": 0.010356281064368943,
+      "missing_or_nonfinite": 0,
+      "q05": 0.028169630971449998,
+      "q25": 0.060921102380371295,
+      "q75": 0.23420664189400808,
+      "q95": 0.8499031786580484,
+      "std": 0.338348084079037
+    }
+  },
+  "unknown_material_cell_count": 0
+}

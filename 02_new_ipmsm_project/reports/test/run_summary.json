@@ -1,0 +1,154 @@
+{
+  "status": "complete",
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "torch_version": "2.13.0+cu132",
+  "cuda_version": "13.2",
+  "source_split": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\semantic90\\outputs\\splits\\scheme_a_performance_80_10_10.npz",
+  "subsample_split": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\reports\\test\\fixed_scheme_a_subsample_11700_1500_1500.npz",
+  "train_samples": 11700,
+  "validation_samples": 1500,
+  "test_samples": 1500,
+  "same_indices_for_all_models": true,
+  "target_scaler_training_only": true,
+  "results": [
+    {
+      "model_id": "logical10/mini_inception",
+      "epochs": 10,
+      "best_epoch": 10,
+      "best_validation_loss": 0.10292009727160135,
+      "test_standardized_mse": 0.10464552774031957,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.0692850723862648,
+          "rmse": 0.1043669730424881,
+          "r2": 0.9745721817016602
+        },
+        "delta_t": {
+          "mae": 0.07478153705596924,
+          "rmse": 0.13081946969032288,
+          "r2": 0.8033082485198975
+        }
+      },
+      "elapsed_seconds": 35.41807120000158,
+      "peak_cuda_memory_mb": 95.517578125,
+      "parameter_count": 911346,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\test_11700\\logical10\\mini_inception\\best_checkpoint.pt"
+    },
+    {
+      "model_id": "logical10/resnet20",
+      "epochs": 10,
+      "best_epoch": 8,
+      "best_validation_loss": 0.11263258306185404,
+      "test_standardized_mse": 0.10391252275307973,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.07794425636529922,
+          "rmse": 0.11362024396657944,
+          "r2": 0.9698634147644043
+        },
+        "delta_t": {
+          "mae": 0.0740869864821434,
+          "rmse": 0.1285853534936905,
+          "r2": 0.8099690079689026
+        }
+      },
+      "elapsed_seconds": 20.362009800002852,
+      "peak_cuda_memory_mb": 74.1494140625,
+      "parameter_count": 345938,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\test_11700\\logical10\\resnet20\\best_checkpoint.pt"
+    },
+    {
+      "model_id": "logical10/small_cnn",
+      "epochs": 10,
+      "best_epoch": 7,
+      "best_validation_loss": 0.11201067193349203,
+      "test_standardized_mse": 0.10523213139176368,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.06452394276857376,
+          "rmse": 0.09494056552648544,
+          "r2": 0.978958010673523
+        },
+        "delta_t": {
+          "mae": 0.07762305438518524,
+          "rmse": 0.132798969745636,
+          "r2": 0.7973106503486633
+        }
+      },
+      "elapsed_seconds": 7.798468699998921,
+      "peak_cuda_memory_mb": 76.95556640625,
+      "parameter_count": 503458,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\test_11700\\logical10\\small_cnn\\best_checkpoint.pt"
+    },
+    {
+      "model_id": "semantic224/mini_inception",
+      "epochs": 2,
+      "best_epoch": 2,
+      "best_validation_loss": 0.17162424168984095,
+      "test_standardized_mse": 0.16856876423954964,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.13007871806621552,
+          "rmse": 0.15879471600055695,
+          "r2": 0.9411352872848511
+        },
+        "delta_t": {
+          "mae": 0.10308543592691422,
+          "rmse": 0.16088418662548065,
+          "r2": 0.7025128602981567
+        }
+      },
+      "elapsed_seconds": 189.90444720000232,
+      "peak_cuda_memory_mb": 664.13330078125,
+      "parameter_count": 990706,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\test_11700\\semantic224\\mini_inception\\best_checkpoint.pt"
+    },
+    {
+      "model_id": "semantic224/resnet18",
+      "epochs": 2,
+      "best_epoch": 1,
+      "best_validation_loss": 0.3146005799372991,
+      "test_standardized_mse": 0.3082192753950755,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.2843177020549774,
+          "rmse": 0.3352547287940979,
+          "r2": 0.7376188635826111
+        },
+        "delta_t": {
+          "mae": 0.12421493232250214,
+          "rmse": 0.1810297966003418,
+          "r2": 0.6233468651771545
+        }
+      },
+      "elapsed_seconds": 636.5224234000052,
+      "peak_cuda_memory_mb": 1162.8466796875,
+      "parameter_count": 11303554,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\test_11700\\semantic224\\resnet18\\best_checkpoint.pt"
+    },
+    {
+      "model_id": "semantic224/vgg16",
+      "epochs": 2,
+      "best_epoch": 1,
+      "best_validation_loss": 0.39002209341526034,
+      "test_standardized_mse": 0.3742226730386416,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.1546371430158615,
+          "rmse": 0.22412194311618805,
+          "r2": 0.8827395439147949
+        },
+        "delta_t": {
+          "mae": 0.1701027750968933,
+          "rmse": 0.24233050644397736,
+          "r2": 0.3250717520713806
+        }
+      },
+      "elapsed_seconds": 288.9958149000013,
+      "peak_cuda_memory_mb": 900.98974609375,
+      "parameter_count": 18917634,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\test_11700\\semantic224\\vgg16\\best_checkpoint.pt"
+    }
+  ]
+}

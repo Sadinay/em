@@ -1,0 +1,26 @@
+{
+  "comparison_policy": "one uniform configuration for all smoke-test samples",
+  "smoke_sample_count": 2,
+  "material_mapping_count": 3,
+  "angle_solve_count": 36,
+  "best_global_configuration_by_joint_mean_relative_error": {
+    "mapping_candidate": "air0",
+    "torque_sign_multiplier": -1,
+    "average_formula": "mean_5_excluding_15_deg",
+    "delta_formula": "absolute_peak_to_peak",
+    "sample_count": 2,
+    "mean_relative_error_tavg": 0.299229900110937,
+    "median_relative_error_tavg": 0.299229900110937,
+    "max_relative_error_tavg": 0.36916345389732336,
+    "mean_relative_error_delta_t": 0.12862076864096222,
+    "median_relative_error_delta_t": 0.12862076864096222,
+    "max_relative_error_delta_t": 0.1422105861113738,
+    "joint_mean_relative_error": 0.4278506687518992,
+    "samples_meeting_both_tolerances": 0
+  },
+  "thresholds": {
+    "tavg_relative_error": 0.005,
+    "delta_t_relative_error": 0.02
+  },
+  "conclusion": "not_reproduced_within_tolerance"
+}

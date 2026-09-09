@@ -1,0 +1,199 @@
+{
+  "status": "smoke_complete",
+  "angles_deg": [
+    0.0,
+    3.0,
+    6.0,
+    9.0,
+    12.0,
+    15.0
+  ],
+  "pole_pairs": 4,
+  "current_amplitude_a": 3.5,
+  "torque_method": "mo_gapintegral('sliding_airgap', 0)",
+  "tasks": {
+    "candidate_001/air0/angle_000": {
+      "status": "complete",
+      "updated_at_epoch": 1787259001.6792977,
+      "torque_nm": -0.1836175993782216
+    },
+    "candidate_001/air0/angle_003": {
+      "status": "complete",
+      "updated_at_epoch": 1787259001.6812992,
+      "torque_nm": -0.7214159968543986
+    },
+    "candidate_001/air0/angle_006": {
+      "status": "complete",
+      "updated_at_epoch": 1787259118.041693,
+      "torque_nm": -1.004504558381575
+    },
+    "candidate_001/air0/angle_009": {
+      "status": "complete",
+      "updated_at_epoch": 1787259426.6579173,
+      "torque_nm": -0.119666800862423
+    },
+    "candidate_001/air0/angle_012": {
+      "status": "complete",
+      "updated_at_epoch": 1787259412.8946424,
+      "torque_nm": 0.139686671401606
+    },
+    "candidate_001/air0/angle_015": {
+      "status": "complete",
+      "updated_at_epoch": 1787259399.2929168,
+      "torque_nm": -1.022237651741463
+    },
+    "candidate_001/air2/angle_000": {
+      "status": "complete",
+      "updated_at_epoch": 1787259536.8725786,
+      "torque_nm": 0.6378284101265528
+    },
+    "candidate_001/air2/angle_003": {
+      "status": "complete",
+      "updated_at_epoch": 1787259562.0781736,
+      "torque_nm": 0.2576639547502979
+    },
+    "candidate_001/air2/angle_006": {
+      "status": "complete",
+      "updated_at_epoch": 1787259581.169675,
+      "torque_nm": -0.1715795608278586
+    },
+    "candidate_001/air2/angle_009": {
+      "status": "complete",
+      "updated_at_epoch": 1787260129.970177,
+      "torque_nm": 0.1492049894305298
+    },
+    "candidate_001/air2/angle_012": {
+      "status": "complete",
+      "updated_at_epoch": 1787260144.0381744,
+      "torque_nm": -0.1896547680429203
+    },
+    "candidate_001/air2/angle_015": {
+      "status": "complete",
+      "updated_at_epoch": 1787260125.6551733,
+      "torque_nm": -1.723894502930882
+    },
+    "candidate_001/air3/angle_000": {
+      "status": "complete",
+      "updated_at_epoch": 1787260313.0651739,
+      "torque_nm": 0.1158605896014674
+    },
+    "candidate_001/air3/angle_003": {
+      "status": "complete",
+      "updated_at_epoch": 1787260322.0726755,
+      "torque_nm": -0.08028231375926335
+    },
+    "candidate_001/air3/angle_006": {
+      "status": "complete",
+      "updated_at_epoch": 1787260339.2711747,
+      "torque_nm": -0.6686610680940566
+    },
+    "candidate_001/air3/angle_009": {
+      "status": "complete",
+      "updated_at_epoch": 1787260509.527175,
+      "torque_nm": -0.00712919125885291
+    },
+    "candidate_001/air3/angle_012": {
+      "status": "complete",
+      "updated_at_epoch": 1787260524.7326732,
+      "torque_nm": 0.2271535395852733
+    },
+    "candidate_001/air3/angle_015": {
+      "status": "complete",
+      "updated_at_epoch": 1787260532.7886732,
+      "torque_nm": -1.169331734925494
+    },
+    "candidate_002/air0/angle_000": {
+      "status": "complete",
+      "updated_at_epoch": 1787260783.1106746,
+      "torque_nm": -2.231888129774205
+    },
+    "candidate_002/air0/angle_003": {
+      "status": "complete",
+      "updated_at_epoch": 1787260773.4921756,
+      "torque_nm": -1.829447201691962
+    },
+    "candidate_002/air0/angle_006": {
+      "status": "complete",
+      "updated_at_epoch": 1787260796.9976754,
+      "torque_nm": -1.841430494302021
+    },
+    "candidate_002/air0/angle_009": {
+      "status": "complete",
+      "updated_at_epoch": 1787261060.4576757,
+      "torque_nm": -2.015857533101308
+    },
+    "candidate_002/air0/angle_012": {
+      "status": "complete",
+      "updated_at_epoch": 1787261031.604174,
+      "torque_nm": -1.097015077240964
+    },
+    "candidate_002/air0/angle_015": {
+      "status": "complete",
+      "updated_at_epoch": 1787261049.4861753,
+      "torque_nm": -1.012584320144235
+    },
+    "candidate_002/air2/angle_000": {
+      "status": "complete",
+      "updated_at_epoch": 1787261176.6871758,
+      "torque_nm": -1.44898969901599
+    },
+    "candidate_002/air2/angle_003": {
+      "status": "complete",
+      "updated_at_epoch": 1787261196.459175,
+      "torque_nm": -2.135577304874384
+    },
+    "candidate_002/air2/angle_006": {
+      "status": "complete",
+      "updated_at_epoch": 1787261211.2436764,
+      "torque_nm": -1.204596566414381
+    },
+    "candidate_002/air2/angle_009": {
+      "status": "complete",
+      "updated_at_epoch": 1787261324.0846753,
+      "torque_nm": -1.236611624348534
+    },
+    "candidate_002/air2/angle_012": {
+      "status": "complete",
+      "updated_at_epoch": 1787261352.3506773,
+      "torque_nm": -0.3809218998128843
+    },
+    "candidate_002/air2/angle_015": {
+      "status": "complete",
+      "updated_at_epoch": 1787261365.206677,
+      "torque_nm": -0.3280123585631676
+    },
+    "candidate_002/air3/angle_000": {
+      "status": "complete",
+      "updated_at_epoch": 1787261580.2861764,
+      "torque_nm": -1.281885856908077
+    },
+    "candidate_002/air3/angle_003": {
+      "status": "complete",
+      "updated_at_epoch": 1787261619.2166762,
+      "torque_nm": -1.58583771654631
+    },
+    "candidate_002/air3/angle_006": {
+      "status": "complete",
+      "updated_at_epoch": 1787261563.4006746,
+      "torque_nm": -1.257325674449411
+    },
+    "candidate_002/air3/angle_009": {
+      "status": "complete",
+      "updated_at_epoch": 1787261769.5561738,
+      "torque_nm": -1.219943067542635
+    },
+    "candidate_002/air3/angle_012": {
+      "status": "complete",
+      "updated_at_epoch": 1787261789.6431754,
+      "torque_nm": -0.3225260228298716
+    },
+    "candidate_002/air3/angle_015": {
+      "status": "complete",
+      "updated_at_epoch": 1787261816.532173,
+      "torque_nm": -0.3102459484705694
+    }
+  },
+  "stage": "smoke",
+  "workers": 3,
+  "completed_result_rows": 6
+}

@@ -1,0 +1,8 @@
+numpy>=2.4
+scipy>=1.18
+matplotlib>=3.10
+torch>=2.13
+pytest>=9.1
+# pyfemm is only needed to regenerate the one-time reference ANS mesh.
+femm>=0.1.1
+

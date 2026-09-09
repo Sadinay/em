@@ -1,0 +1,49 @@
+{
+  "mode": "overfit",
+  "seed": 20260730,
+  "model_parameters": 13121,
+  "train_samples": 8,
+  "validation_samples": 8,
+  "train_unique_feature_vectors": 8,
+  "validation_unique_feature_vectors": 8,
+  "epochs_completed": 3000,
+  "best_epoch": 558,
+  "feature_names": [
+    "air_fraction",
+    "iron_fraction",
+    "copper_fraction",
+    "radial_transition_rate",
+    "angular_transition_rate",
+    "t_min"
+  ],
+  "feature_mean": [
+    0.16041666269302368,
+    0.5902777314186096,
+    0.24930556118488312,
+    0.38713234663009644,
+    0.5540123581886292,
+    0.7124999761581421
+  ],
+  "feature_std": [
+    0.0969216600060463,
+    0.02616867981851101,
+    0.090413898229599,
+    0.10486579686403275,
+    0.05606760084629059,
+    0.08926784247159958
+  ],
+  "target_mean": 0.16667628288269043,
+  "target_std": 0.05781048163771629,
+  "train_metrics": {
+    "mse": 1.9484282243187323e-11,
+    "rmse": 4.414100388888694e-06,
+    "mae": 3.1655654311180115e-06,
+    "r2": 0.9999999941699643
+  },
+  "validation_metrics": {
+    "mse": 1.9484282243187323e-11,
+    "rmse": 4.414100388888694e-06,
+    "mae": 3.1655654311180115e-06,
+    "r2": 0.9999999941699643
+  }
+}

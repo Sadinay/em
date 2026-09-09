@@ -1,0 +1,82 @@
+{
+  "status": "complete",
+  "experiment": "SPMSM V3 40,000-sample matrix plus supplementary logical ResNet20",
+  "models": [
+    "logical6x20/resnet20_v2"
+  ],
+  "seeds": [
+    20260903
+  ],
+  "expected_runs": 1,
+  "split_sizes": {
+    "train": 40000,
+    "validation": 6483,
+    "test": 6483
+  },
+  "split_hashes_sha256": {
+    "train": "ade8379a3c0c72ed4a4127ac60efce2dc0799de9a95c8df5d0d0d61e38db596f",
+    "validation": "4756d67211e62be0bea21c22e1e773e107b612a9de5090c8ef678f019332c190",
+    "test": "7e037e82c2c26fd2953519336c14b52b668c3cc8efd3f4debf824ba52f79c9fa"
+  },
+  "specifications": {
+    "logical6x20/resnet20_v2": {
+      "experiment_id": "logical6x20/resnet20_v2",
+      "input_mode": "logical6x20",
+      "architecture": "resnet20_v2",
+      "lookup": null,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.0001,
+      "max_epochs": 100,
+      "minimum_epochs": 20,
+      "early_stopping_patience": 12,
+      "scheduler_patience": 3,
+      "physical_batch_size": 64,
+      "effective_batch_size": 64,
+      "circular_angular_padding": false
+    }
+  },
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "selection": {
+    "logical": [
+      "small_cnn_v2",
+      "mini_inception_v2",
+      "resnet20_v2"
+    ],
+    "semantic224": [
+      "vgg16_v2"
+    ],
+    "evidence": "VGG16 retained for all 224 views by the simplified training decision"
+  },
+  "test_policy": "test split is evaluated only after a run finishes; validation chooses the checkpoint",
+  "resume_requested": true,
+  "completed_or_paused": [
+    {
+      "status": "complete",
+      "experiment_id": "logical6x20/resnet20_v2",
+      "seed": 20260903,
+      "epochs_completed": 89,
+      "best_epoch": 77,
+      "best_validation_standardized_mse": 0.008838327430601237,
+      "test_standardized_mse": 0.010036999900161199,
+      "test_metrics": {
+        "tavg": {
+          "mae": 0.011195925064384937,
+          "rmse": 0.016094233840703964,
+          "r2": 0.9979601502418518,
+          "bias": -0.0018809097819030285,
+          "absolute_error_p95": 0.029106641188263893
+        },
+        "delta_t": {
+          "mae": 0.017263464629650116,
+          "rmse": 0.025679122656583786,
+          "r2": 0.9822024703025818,
+          "bias": 0.0017556569073349237,
+          "absolute_error_p95": 0.04528646916151047
+        }
+      },
+      "elapsed_seconds": 746.155737000001,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\logical6x20\\resnet20_v2\\seed_20260903\\best_checkpoint.pt"
+    }
+  ]
+}

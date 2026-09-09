@@ -1,0 +1,23 @@
+{
+  "model_id": "semantic224/vgg16",
+  "epochs": 2,
+  "best_epoch": 1,
+  "best_validation_loss": 0.39002209341526034,
+  "test_standardized_mse": 0.3742226730386416,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.1546371430158615,
+      "rmse": 0.22412194311618805,
+      "r2": 0.8827395439147949
+    },
+    "delta_t": {
+      "mae": 0.1701027750968933,
+      "rmse": 0.24233050644397736,
+      "r2": 0.3250717520713806
+    }
+  },
+  "elapsed_seconds": 288.9958149000013,
+  "peak_cuda_memory_mb": 900.98974609375,
+  "parameter_count": 18917634,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\test_11700\\semantic224\\vgg16\\best_checkpoint.pt"
+}

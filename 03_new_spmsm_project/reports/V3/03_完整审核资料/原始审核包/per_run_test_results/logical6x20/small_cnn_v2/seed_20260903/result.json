@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "experiment_id": "logical6x20/small_cnn_v2",
+  "seed": 20260903,
+  "epochs_completed": 52,
+  "best_epoch": 40,
+  "best_validation_standardized_mse": 0.018038361892276537,
+  "test_standardized_mse": 0.019566633920876972,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.009256133809685707,
+      "rmse": 0.01445038802921772,
+      "r2": 0.9983555674552917,
+      "bias": 0.001779868733137846,
+      "absolute_error_p95": 0.02569561079144478
+    },
+    "delta_t": {
+      "mae": 0.027189958840608597,
+      "rmse": 0.037019308656454086,
+      "r2": 0.9630123972892761,
+      "bias": 0.0034282966516911983,
+      "absolute_error_p95": 0.07425864040851593
+    }
+  },
+  "elapsed_seconds": 196.17963500000042,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\logical6x20\\small_cnn_v2\\seed_20260903\\best_checkpoint.pt"
+}

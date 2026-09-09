@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "candidate_id": "final_low_tavg",
+  "angle_mechanical_deg": 5.0,
+  "current_phase_electrical_deg": null,
+  "torque_nm_raw": 0.08968625015472825,
+  "torque_nm_historical_scale": -0.1793725003094565,
+  "verified_input": {
+    "headers": {
+      "Frequency": 0.0,
+      "Precision": 1e-08,
+      "MinAngle": 15.0,
+      "DoSmartMesh": 1.0,
+      "Depth": 36.0
+    },
+    "inner_angle_deg": 5.0,
+    "outer_angle_deg": 0,
+    "fixed_currents_a": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0
+    },
+    "fem_sha256": "156be0e4c922af75152e78a341bd68c4b6f570d3ccd653fd70c99c54919f35cc"
+  },
+  "elapsed_seconds": 5.375111800000013,
+  "ans_path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\mat_literal_current_probe_20260908\\timing_grid\\final_low_tavg\\angle_005\\model.ans",
+  "fresh_solve": true
+}

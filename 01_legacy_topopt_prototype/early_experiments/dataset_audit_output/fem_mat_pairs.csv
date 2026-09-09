@@ -1,0 +1,235 @@
+﻿sample_id,fem_path,mat_path,match_score,match_status,matching_evidence,conflicting_evidence
+SAMPLE_0001,blank_9x5.FEM,,11,unmatched,位于父子目录；修改时间相差 7.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0002,CLONALG/25.12.15_1.fem,,20,unmatched,共享数字标识: 15；位于同一目录,修改时间相差 20.4 天；最高候选分低于最低证据阈值
+SAMPLE_0003,CLONALG/best_J0.080216_20260109_165414.fem,,18,unmatched,位于同一目录；修改时间相差 3.1 小时,最高候选分低于最低证据阈值
+SAMPLE_0004,CLONALG/best_J0.110898_20260103_164233.fem,IA_test/0103 groupB/best_result_20260103_164233.mat,58,uncertain,"共享运行/时间标签: 20260103_164233；共享数字标识: 164233, 20260103；修改时间相差 10.3 分钟",
+SAMPLE_0005,CLONALG/best_J0.150072_20251230_212929.fem,IA_test/1230.3/best_result_20251230_212929.mat,50,uncertain,"共享运行/时间标签: 20251230_212929；共享数字标识: 20251230, 212929",次优候选 IA_test_groupA/1230.3/best_result_20251230_212929.mat 得分 50，分差仅 0
+SAMPLE_0006,CLONALG/best_J0.157009_20251230_165105.fem,IA_test/1230.2/best_result_20251230_165105.mat,58,uncertain,"共享运行/时间标签: 20251230_165105；共享数字标识: 165105, 20251230；修改时间相差 32.4 分钟",次优候选 IA_test_groupA/1230.2/best_result_20251230_165105.mat 得分 58，分差仅 0
+SAMPLE_0007,CLONALG/best_J0.166453_20251230_130901.fem,IA_test/1230/best_result_20251230_130901.mat,50,uncertain,"共享运行/时间标签: 20251230_130901；共享数字标识: 130901, 20251230",次优候选 IA_test_groupA/1230/best_result_20251230_130901.mat 得分 50，分差仅 0
+SAMPLE_0008,CLONALG/blank.FEM,,18,unmatched,位于同一目录；修改时间相差 21.1 小时,最高候选分低于最低证据阈值
+SAMPLE_0009,CLONALG/blank9x5.FEM,,15,unmatched,位于同一目录,修改时间相差 19.0 天；最高候选分低于最低证据阈值
+SAMPLE_0010,CLONALG/blank_18x10.FEM,,20,unmatched,共享数字标识: 10；位于同一目录,修改时间相差 9.4 天；最高候选分低于最低证据阈值
+SAMPLE_0011,CLONALG/blank_9x5.FEM,,15,unmatched,位于同一目录,修改时间相差 1.2 天；最高候选分低于最低证据阈值
+SAMPLE_0012,CLONALG/blank_inset_18x10.FEM,,20,unmatched,共享数字标识: 10；位于同一目录,修改时间相差 19.7 天；最高候选分低于最低证据阈值
+SAMPLE_0013,CLONALG/blank_inset_9x5.FEM,,18,unmatched,位于同一目录；修改时间相差 6.1 小时,最高候选分低于最低证据阈值
+SAMPLE_0014,CLONALG/model.fem,,23,unmatched,位于同一目录；修改时间相差 5.3 分钟,最高候选分低于最低证据阈值
+SAMPLE_0015,CLONALG/seed_bits_fine.FEM,CLONALG/seed_bits_fine.mat,95,confirmed,文件 stem 完全相同；位于同一目录,
+SAMPLE_0016,CLONALG/strukturFemm.fem,,18,unmatched,位于同一目录；修改时间相差 3.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0017,CLONALG/temp_airgap_scan.fem,,15,unmatched,位于同一目录,修改时间相差 66.0 天；最高候选分低于最低证据阈值
+SAMPLE_0018,CLONALG/test.fem,,18,unmatched,位于同一目录；修改时间相差 13.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0019,IA_test/0103 groupB/best_J0.110898_20260103_164233.fem,IA_test/0103 groupB/best_result_20260103_164233.mat,77,probable,"共享运行/时间标签: 20260103_164233；共享数字标识: 164233, 20260103；位于同一目录；修改时间相差 62 秒",
+SAMPLE_0020,IA_test/0104 groupA/best_J0.0994011_20260105_081953.fem,IA_test/0104 groupA/best_result_20260105_081953.mat,77,probable,"共享运行/时间标签: 20260105_081953；共享数字标识: 081953, 20260105；位于同一目录；修改时间相差 20 秒",
+SAMPLE_0021,IA_test/0104 groupB/best_J0.106306_20260104_150857.fem,IA_test/0104 groupB/best_result_20260104_150857.mat,77,probable,"共享运行/时间标签: 20260104_150857；共享数字标识: 150857, 20260104；位于同一目录；修改时间相差 14 秒",
+SAMPLE_0022,IA_test/0107 groupA2/best_J0.082148_20260107_145512.fem,IA_test/0107 groupA2/best_result_20260107_145512.mat,77,probable,"共享运行/时间标签: 20260107_145512；共享数字标识: 145512, 20260107；位于同一目录；修改时间相差 14 秒",
+SAMPLE_0023,IA_test/0109 groupA2 best/best_J0.080216_20260109_165414.fem,IA_test/0109 groupA2 best/best_bits_coarse.mat,27,uncertain,位于同一目录；修改时间相差 14 秒,次优候选 IA_test/0109 groupA2 best/best_result_group4 100gen.mat 得分 27，分差仅 0
+SAMPLE_0024,IA_test/0118 groupA2/tmp_eval_20260119_004747212_814724.fem,,18,unmatched,位于同一目录；修改时间相差 2.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0025,IA_test/0120/tmp_eval_20260121_103344220_905792.fem,,23,unmatched,共享数字标识: 20260121；位于同一目录；修改时间相差 9.5 小时,最高候选分低于最低证据阈值
+SAMPLE_0026,IA_test/12.21 N3G10/w01/blank_inset_9x5_w01.fem,,8,unmatched,位于父子目录,修改时间相差 2.4 天；最高候选分低于最低证据阈值
+SAMPLE_0027,IA_test/12.21 N3G10/w01/case_000001.fem,,11,unmatched,位于父子目录；修改时间相差 11.5 小时,最高候选分低于最低证据阈值
+SAMPLE_0028,IA_test/12.21 N3G10/w01/case_05963250-a8c1-4677-b3e3-be5039f26d1d.fem,,11,unmatched,位于父子目录；修改时间相差 4.9 小时,最高候选分低于最低证据阈值
+SAMPLE_0029,IA_test/12.21 N3G10/w01/case_1141e6dc-b050-48d0-87ac-9a58316d5c79.fem,,16,unmatched,位于父子目录；修改时间相差 49.3 分钟,最高候选分低于最低证据阈值
+SAMPLE_0030,IA_test/12.21 N3G10/w01/case_115ad528-f65b-4929-bfa4-daf3ca841231.fem,,11,unmatched,位于父子目录；修改时间相差 11.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0031,IA_test/12.21 N3G10/w01/case_159544e8-63cb-4408-9973-e9d2ad3a60bd.fem,,11,unmatched,位于父子目录；修改时间相差 2.3 小时,最高候选分低于最低证据阈值
+SAMPLE_0032,IA_test/12.21 N3G10/w01/case_1915b143-be46-4c57-85bf-b92b1c59bba4.fem,,11,unmatched,位于父子目录；修改时间相差 9.4 小时,最高候选分低于最低证据阈值
+SAMPLE_0033,IA_test/12.21 N3G10/w01/case_26334935-dc9f-4603-8b42-fe82caaf8ec9.fem,,11,unmatched,位于父子目录；修改时间相差 5.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0034,IA_test/12.21 N3G10/w01/case_2b2a547c-f178-454b-9e44-02c863fd6322.fem,,11,unmatched,位于父子目录；修改时间相差 4.1 小时,最高候选分低于最低证据阈值
+SAMPLE_0035,IA_test/12.21 N3G10/w01/case_3881750a-9f02-446d-911b-1e57fa0eca81.fem,,11,unmatched,位于父子目录；修改时间相差 9.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0036,IA_test/12.21 N3G10/w01/case_3a720ac5-09fc-4fb1-a0ba-2dca1089d401.fem,,11,unmatched,位于父子目录；修改时间相差 9.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0037,IA_test/12.21 N3G10/w01/case_3ac07a5b-3e67-4c68-895f-a1c664264ced.fem,,11,unmatched,位于父子目录；修改时间相差 10.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0038,IA_test/12.21 N3G10/w01/case_435bdce4-b8b9-421e-926e-a54b11a7b00b.fem,,11,unmatched,位于父子目录；修改时间相差 1.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0039,IA_test/12.21 N3G10/w01/case_529bb037-4ab6-4ecd-a709-ad9308af1d2f.fem,,16,unmatched,位于父子目录；修改时间相差 38.0 分钟,最高候选分低于最低证据阈值
+SAMPLE_0040,IA_test/12.21 N3G10/w01/case_5788955c-1a7b-42ad-9bb5-3897f1f1a6b4.fem,,11,unmatched,位于父子目录；修改时间相差 8.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0041,IA_test/12.21 N3G10/w01/case_5990fe76-0532-4c4c-a616-1dc97f2c102d.fem,,11,unmatched,位于父子目录；修改时间相差 1.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0042,IA_test/12.21 N3G10/w01/case_605aa08e-3688-4deb-b757-aead046701a8.fem,,11,unmatched,位于父子目录；修改时间相差 5.4 小时,最高候选分低于最低证据阈值
+SAMPLE_0043,IA_test/12.21 N3G10/w01/case_6ea6528f-1564-4893-8bfc-b1396461dd94.fem,,11,unmatched,位于父子目录；修改时间相差 3.4 小时,最高候选分低于最低证据阈值
+SAMPLE_0044,IA_test/12.21 N3G10/w01/case_7027617d-4c95-41c7-a3e3-467928059793.fem,,11,unmatched,位于父子目录；修改时间相差 5.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0045,IA_test/12.21 N3G10/w01/case_7c635f09-76c8-4c6d-8b57-2013080f7f33.fem,,11,unmatched,位于父子目录；修改时间相差 11.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0046,IA_test/12.21 N3G10/w01/case_7cc4f036-aae5-4a5b-99ca-ab8d40ea2659.fem,,11,unmatched,位于父子目录；修改时间相差 6.5 小时,最高候选分低于最低证据阈值
+SAMPLE_0047,IA_test/12.21 N3G10/w01/case_845bec1a-d7c1-4128-971a-228fe0cf726e.fem,,11,unmatched,位于父子目录；修改时间相差 4.5 小时,最高候选分低于最低证据阈值
+SAMPLE_0048,IA_test/12.21 N3G10/w01/case_8513135f-ba52-4e31-afc6-966c01f1b3bc.fem,,11,unmatched,位于父子目录；修改时间相差 2.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0049,IA_test/12.21 N3G10/w01/case_924cd090-aa4f-49ba-8a04-282f6d2b4f1d.fem,,11,unmatched,位于父子目录；修改时间相差 3.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0050,IA_test/12.21 N3G10/w01/case_96dab361-cb17-4e91-a8eb-655d2308954d.fem,,11,unmatched,位于父子目录；修改时间相差 9.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0051,IA_test/12.21 N3G10/w01/case_a4dead31-1a55-488e-9fab-d4706f6eb981.fem,,11,unmatched,位于父子目录；修改时间相差 2.5 小时,最高候选分低于最低证据阈值
+SAMPLE_0052,IA_test/12.21 N3G10/w01/case_a749e1e3-7a3a-4188-87da-d4e965f4a648.fem,,11,unmatched,位于父子目录；修改时间相差 1.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0053,IA_test/12.21 N3G10/w01/case_adb29ec9-52ac-44de-b362-c9583ca2d6b5.fem,,11,unmatched,位于父子目录；修改时间相差 9.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0054,IA_test/12.21 N3G10/w01/case_b7c711f4-abbd-4e3e-8ebb-c96276d96490.fem,,11,unmatched,位于父子目录；修改时间相差 1.4 小时,最高候选分低于最低证据阈值
+SAMPLE_0055,IA_test/12.21 N3G10/w01/case_b7e3f609-1358-4c27-aab2-25e3b8eccf83.fem,,11,unmatched,位于父子目录；修改时间相差 4.3 小时,最高候选分低于最低证据阈值
+SAMPLE_0056,IA_test/12.21 N3G10/w01/case_b96cec23-9ced-49cd-8cd5-b47aa69d4be2.fem,,11,unmatched,位于父子目录；修改时间相差 3.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0057,IA_test/12.21 N3G10/w01/case_bdd5c199-4644-4ed0-9e29-b1842e899ba6.fem,,11,unmatched,位于父子目录；修改时间相差 6.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0058,IA_test/12.21 N3G10/w01/case_bf3cd316-91b0-4ef9-aaa9-71ae850fcad1.fem,,11,unmatched,位于父子目录；修改时间相差 3.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0059,IA_test/12.21 N3G10/w01/case_c0c92f18-0cc9-47bb-92d3-3fa219d7f28e.fem,,11,unmatched,位于父子目录；修改时间相差 6.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0060,IA_test/12.21 N3G10/w01/case_c55d66e1-d6c1-495f-871d-c7b32467c15c.fem,,11,unmatched,位于父子目录；修改时间相差 10.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0061,IA_test/12.21 N3G10/w01/case_c5866522-4cf0-4a2a-b1a1-7cd7f573cc1a.fem,,11,unmatched,位于父子目录；修改时间相差 4.7 小时,最高候选分低于最低证据阈值
+SAMPLE_0062,IA_test/12.21 N3G10/w01/case_d913c8cd-1263-4f0d-b05e-0a8fab3137c5.fem,,16,unmatched,位于父子目录；修改时间相差 26.3 分钟,最高候选分低于最低证据阈值
+SAMPLE_0063,IA_test/12.21 N3G10/w01/case_dae5f276-1734-4152-ad34-77bd08daf795.fem,,16,unmatched,位于父子目录；修改时间相差 13.1 分钟,最高候选分低于最低证据阈值
+SAMPLE_0064,IA_test/12.21 N3G10/w01/case_dc30fb28-b7bc-4faf-9a24-649f92b0e581.fem,,11,unmatched,位于父子目录；修改时间相差 10.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0065,IA_test/12.21 N3G10/w01/case_e33f1d2d-0d7e-4924-a9d0-3977d35a0b95.fem,,11,unmatched,位于父子目录；修改时间相差 3.9 小时,最高候选分低于最低证据阈值
+SAMPLE_0066,IA_test/12.21 N3G10/w01/case_e4e2c761-d87a-4501-b0d7-4dc276a3fe44.fem,,11,unmatched,位于父子目录；修改时间相差 2.1 小时,最高候选分低于最低证据阈值
+SAMPLE_0067,IA_test/12.21 N3G10/w01/case_e51f9061-5028-4304-bded-31ea0ccc434c.fem,,11,unmatched,位于父子目录；修改时间相差 10.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0068,IA_test/12.21 N3G10/w01/case_e7958f48-6565-488f-8a32-ed6e9fdbbbee.fem,,11,unmatched,位于父子目录；修改时间相差 5.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0069,IA_test/12.21 N3G10/w01/case_e89c0421-6da4-4e3b-ab9d-837f509f1cc5.fem,,11,unmatched,位于父子目录；修改时间相差 1.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0070,IA_test/12.21 N3G10/w02/blank_inset_9x5_w02.fem,,8,unmatched,位于父子目录,修改时间相差 2.4 天；最高候选分低于最低证据阈值
+SAMPLE_0071,IA_test/12.21 N3G10/w02/case_000001.fem,,11,unmatched,位于父子目录；修改时间相差 11.5 小时,最高候选分低于最低证据阈值
+SAMPLE_0072,IA_test/12.21 N3G10/w02/case_0704aed2-95f7-4488-b805-9fdc1df2a4b9.fem,,16,unmatched,位于父子目录；修改时间相差 49.3 分钟,最高候选分低于最低证据阈值
+SAMPLE_0073,IA_test/12.21 N3G10/w02/case_07d06f9c-23de-489a-aa10-cde663a9bcea.fem,,11,unmatched,位于父子目录；修改时间相差 5.4 小时,最高候选分低于最低证据阈值
+SAMPLE_0074,IA_test/12.21 N3G10/w02/case_10bdf2e7-6933-4a50-8be9-536a0f4dfc6a.fem,,11,unmatched,位于父子目录；修改时间相差 9.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0075,IA_test/12.21 N3G10/w02/case_17c5fdbd-2370-4744-80bf-2a2f0a287340.fem,,11,unmatched,位于父子目录；修改时间相差 3.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0076,IA_test/12.21 N3G10/w02/case_1a903502-eae2-44aa-b20d-f5a319beef36.fem,,11,unmatched,位于父子目录；修改时间相差 1.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0077,IA_test/12.21 N3G10/w02/case_278f70c1-be87-474f-bd88-9270d1b9edf9.fem,,11,unmatched,位于父子目录；修改时间相差 4.3 小时,最高候选分低于最低证据阈值
+SAMPLE_0078,IA_test/12.21 N3G10/w02/case_2cc7bc73-cd5f-4e19-869d-9b67a5b8b5af.fem,,11,unmatched,位于父子目录；修改时间相差 9.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0079,IA_test/12.21 N3G10/w02/case_2efb83d5-5d0b-458b-b718-044c34efdc44.fem,,11,unmatched,位于父子目录；修改时间相差 4.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0080,IA_test/12.21 N3G10/w02/case_3781bdbc-eb47-4019-9edd-e771f7eb5ab4.fem,,11,unmatched,位于父子目录；修改时间相差 2.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0081,IA_test/12.21 N3G10/w02/case_39c72458-418d-4b0c-8b68-5fc28c1f9ce2.fem,,11,unmatched,位于父子目录；修改时间相差 2.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0082,IA_test/12.21 N3G10/w02/case_3a323f0f-60ba-4182-ae91-0c7440176ebc.fem,,11,unmatched,位于父子目录；修改时间相差 10.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0083,IA_test/12.21 N3G10/w02/case_3f463c7e-3d8c-4c80-9e27-fb58c599e037.fem,,11,unmatched,位于父子目录；修改时间相差 2.1 小时,最高候选分低于最低证据阈值
+SAMPLE_0084,IA_test/12.21 N3G10/w02/case_43941121-5520-4fab-a0e2-0ea2f23e15e3.fem,,11,unmatched,位于父子目录；修改时间相差 5.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0085,IA_test/12.21 N3G10/w02/case_45e42035-642a-401b-bb86-90917e928696.fem,,11,unmatched,位于父子目录；修改时间相差 3.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0086,IA_test/12.21 N3G10/w02/case_5128b0bc-6616-42bc-948a-0526565a2964.fem,,11,unmatched,位于父子目录；修改时间相差 1.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0087,IA_test/12.21 N3G10/w02/case_54b7a8af-c961-4020-904c-27aee80cfda6.fem,,11,unmatched,位于父子目录；修改时间相差 9.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0088,IA_test/12.21 N3G10/w02/case_5cb4e85c-14dd-444a-9cc3-965f42880507.fem,,11,unmatched,位于父子目录；修改时间相差 4.5 小时,最高候选分低于最低证据阈值
+SAMPLE_0089,IA_test/12.21 N3G10/w02/case_6dc6b2ab-4d29-44fa-a85f-5e86f0132a64.fem,,11,unmatched,位于父子目录；修改时间相差 1.4 小时,最高候选分低于最低证据阈值
+SAMPLE_0090,IA_test/12.21 N3G10/w02/case_6ea371ff-ec56-4ae1-90b7-9c6394e79cb8.fem,,11,unmatched,位于父子目录；修改时间相差 3.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0091,IA_test/12.21 N3G10/w02/case_7406642a-8a7f-44e5-a919-9d6bdcdf667f.fem,,11,unmatched,位于父子目录；修改时间相差 2.3 小时,最高候选分低于最低证据阈值
+SAMPLE_0092,IA_test/12.21 N3G10/w02/case_749129f2-9526-483c-aeb7-23858e7b0e59.fem,,11,unmatched,位于父子目录；修改时间相差 6.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0093,IA_test/12.21 N3G10/w02/case_85e13400-b93f-41d7-a022-6af54ca5fdf6.fem,,11,unmatched,位于父子目录；修改时间相差 11.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0094,IA_test/12.21 N3G10/w02/case_8b670471-529a-4d49-9e45-f711c972ed03.fem,,11,unmatched,位于父子目录；修改时间相差 9.9 小时,最高候选分低于最低证据阈值
+SAMPLE_0095,IA_test/12.21 N3G10/w02/case_9ea14e95-b1d5-4690-b666-91fd603a3230.fem,,16,unmatched,位于父子目录；修改时间相差 26.9 分钟,最高候选分低于最低证据阈值
+SAMPLE_0096,IA_test/12.21 N3G10/w02/case_a15f2e35-e60e-4aed-9a5f-94ee4990f15c.fem,,16,unmatched,位于父子目录；修改时间相差 37.5 分钟,最高候选分低于最低证据阈值
+SAMPLE_0097,IA_test/12.21 N3G10/w02/case_a7ecd80d-fb62-407c-b380-670fa66c3f66.fem,,11,unmatched,位于父子目录；修改时间相差 3.9 小时,最高候选分低于最低证据阈值
+SAMPLE_0098,IA_test/12.21 N3G10/w02/case_b387b2c3-8c37-4860-bddb-cac9004396a6.fem,,11,unmatched,位于父子目录；修改时间相差 4.1 小时,最高候选分低于最低证据阈值
+SAMPLE_0099,IA_test/12.21 N3G10/w02/case_bbd260f1-8d6a-4e88-bc2a-800810968b5c.fem,,11,unmatched,位于父子目录；修改时间相差 1.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0100,IA_test/12.21 N3G10/w02/case_bc015e21-0860-4f7a-99ed-3a22058d8ee7.fem,,11,unmatched,位于父子目录；修改时间相差 5.1 小时,最高候选分低于最低证据阈值
+SAMPLE_0101,IA_test/12.21 N3G10/w02/case_bd182655-75e0-4b80-8bad-90b1cb383d32.fem,,16,unmatched,位于父子目录；修改时间相差 4.2 分钟,最高候选分低于最低证据阈值
+SAMPLE_0102,IA_test/12.21 N3G10/w02/case_bf096598-6d7f-40f1-baff-576a499c62f8.fem,,11,unmatched,位于父子目录；修改时间相差 1.9 小时,最高候选分低于最低证据阈值
+SAMPLE_0103,IA_test/12.21 N3G10/w02/case_c876b0c1-ceff-482e-9d89-1d2d2ed0610a.fem,,11,unmatched,位于父子目录；修改时间相差 4.9 小时,最高候选分低于最低证据阈值
+SAMPLE_0104,IA_test/12.21 N3G10/w02/case_ce520cd2-7cf9-421b-ba62-b8af3d02a342.fem,,11,unmatched,位于父子目录；修改时间相差 6.1 小时,最高候选分低于最低证据阈值
+SAMPLE_0105,IA_test/12.21 N3G10/w02/case_cfab5013-eb64-4989-a962-dd508f6cb161.fem,,11,unmatched,位于父子目录；修改时间相差 11.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0106,IA_test/12.21 N3G10/w02/case_e4af992a-7c33-4699-bed8-01c1709c43ce.fem,,11,unmatched,位于父子目录；修改时间相差 6.4 小时,最高候选分低于最低证据阈值
+SAMPLE_0107,IA_test/12.21 N3G10/w02/case_f101242a-3f2d-456a-82aa-760b9fc8948a.fem,,11,unmatched,位于父子目录；修改时间相差 10.4 小时,最高候选分低于最低证据阈值
+SAMPLE_0108,IA_test/12.21 N3G10/w02/case_f1aab01c-3f34-43bd-b140-90988461ff8b.fem,,11,unmatched,位于父子目录；修改时间相差 5.9 小时,最高候选分低于最低证据阈值
+SAMPLE_0109,IA_test/12.21 N3G10/w02/case_fea96c20-f768-4d65-83bf-57b62578b9b1.fem,,11,unmatched,位于父子目录；修改时间相差 3.4 小时,最高候选分低于最低证据阈值
+SAMPLE_0110,IA_test/12.21 N3G10/w03/blank_inset_9x5_w03.fem,,8,unmatched,位于父子目录,修改时间相差 2.4 天；最高候选分低于最低证据阈值
+SAMPLE_0111,IA_test/12.21 N3G10/w03/case_000001.fem,,11,unmatched,位于父子目录；修改时间相差 11.5 小时,最高候选分低于最低证据阈值
+SAMPLE_0112,IA_test/12.21 N3G10/w03/case_0110943c-ca16-4544-815a-5016dd1279f1.fem,,11,unmatched,位于父子目录；修改时间相差 10.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0113,IA_test/12.21 N3G10/w03/case_07b5eb98-9a38-4771-b597-00e1c31895b2.fem,,11,unmatched,位于父子目录；修改时间相差 9.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0114,IA_test/12.21 N3G10/w03/case_0b166cbf-45e8-4aa7-9bcb-a44f87362407.fem,,11,unmatched,位于父子目录；修改时间相差 5.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0115,IA_test/12.21 N3G10/w03/case_0be1acca-91d2-4158-98fd-0fd1eb36f24d.fem,,11,unmatched,位于父子目录；修改时间相差 10.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0116,IA_test/12.21 N3G10/w03/case_1bb73884-c37c-428d-a599-1a10b170ec9a.fem,,11,unmatched,位于父子目录；修改时间相差 9.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0117,IA_test/12.21 N3G10/w03/case_271d3202-ee3a-4537-8732-f53064677824.fem,,11,unmatched,位于父子目录；修改时间相差 3.9 小时,最高候选分低于最低证据阈值
+SAMPLE_0118,IA_test/12.21 N3G10/w03/case_2c3e8022-90a4-4ebd-9982-43ab040c88e4.fem,,11,unmatched,位于父子目录；修改时间相差 1.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0119,IA_test/12.21 N3G10/w03/case_30613252-6f1a-436a-953b-92a27e8260e4.fem,,11,unmatched,位于父子目录；修改时间相差 6.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0120,IA_test/12.21 N3G10/w03/case_3a8b1934-4441-4d43-b8e7-96228efff4aa.fem,,11,unmatched,位于父子目录；修改时间相差 9.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0121,IA_test/12.21 N3G10/w03/case_3bb26db5-3721-4b15-adf5-92e72e9c38d6.fem,,16,unmatched,位于父子目录；修改时间相差 37.9 分钟,最高候选分低于最低证据阈值
+SAMPLE_0122,IA_test/12.21 N3G10/w03/case_4e22798d-f32f-4a70-80e5-5c7771b2b351.fem,,11,unmatched,位于父子目录；修改时间相差 8.8 小时,最高候选分低于最低证据阈值
+SAMPLE_0123,IA_test/12.21 N3G10/w03/case_5f3baec7-3278-4e43-8895-de6c543775e4.fem,,11,unmatched,位于父子目录；修改时间相差 5.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0124,IA_test/12.21 N3G10/w03/case_64b66201-8dd1-4c2d-afdb-407e2222b655.fem,,11,unmatched,位于父子目录；修改时间相差 10.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0125,IA_test/12.21 N3G10/w03/case_656f7822-7a15-46b3-96da-19977c1d0d59.fem,,11,unmatched,位于父子目录；修改时间相差 1.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0126,IA_test/12.21 N3G10/w03/case_73a80977-7d67-41bf-95e0-c05f40cbb9e2.fem,,11,unmatched,位于父子目录；修改时间相差 9.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0127,IA_test/12.21 N3G10/w03/case_7e438ca1-c59d-463a-a10a-6d04b6f3b09e.fem,,11,unmatched,位于父子目录；修改时间相差 2.5 小时,最高候选分低于最低证据阈值
+SAMPLE_0128,IA_test/12.21 N3G10/w03/case_86d62f9a-dbfd-4195-8fd4-2ddf63b2c724.fem,,11,unmatched,位于父子目录；修改时间相差 11.0 小时,最高候选分低于最低证据阈值
+SAMPLE_0129,IA_test/12.21 N3G10/w03/case_91a9c760-b8d5-406b-984d-9d2d06311615.fem,,11,unmatched,位于父子目录；修改时间相差 5.9 小时,最高候选分低于最低证据阈值
+SAMPLE_0130,IA_test/12.21 N3G10/w03/case_9477881f-38d7-4bf2-978e-c5c0e1dd186c.fem,,11,unmatched,位于父子目录；修改时间相差 2.9 小时,最高候选分低于最低证据阈值
+SAMPLE_0131,IA_test/12.21 N3G10/w03/case_94e02f76-4578-4c74-aac4-25161d0050e0.fem,,11,unmatched,位于父子目录；修改时间相差 11.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0132,IA_test/12.21 N3G10/w03/case_a01e7cd3-4286-4e0f-9ec1-71ba10d5645d.fem,,11,unmatched,位于父子目录；修改时间相差 4.9 小时,最高候选分低于最低证据阈值
+SAMPLE_0133,IA_test/12.21 N3G10/w03/case_ac9126e5-a9bf-4997-929a-0d9737c68413.fem,,16,unmatched,位于父子目录；修改时间相差 26.4 分钟,最高候选分低于最低证据阈值
+SAMPLE_0134,IA_test/12.21 N3G10/w03/case_af6a0094-c542-4d31-a44b-c2971979232f.fem,,11,unmatched,位于父子目录；修改时间相差 3.7 小时,最高候选分低于最低证据阈值
+SAMPLE_0135,IA_test/12.21 N3G10/w03/case_bab7e4ee-c4d4-4c2c-b4db-3d29785844db.fem,,11,unmatched,位于父子目录；修改时间相差 4.5 小时,最高候选分低于最低证据阈值
+SAMPLE_0136,IA_test/12.21 N3G10/w03/case_c63bcd95-e4d0-47e8-a21b-734be9388415.fem,,11,unmatched,位于父子目录；修改时间相差 3.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0137,IA_test/12.21 N3G10/w03/case_d02dea35-b420-4c03-8df6-c4477e5b8130.fem,,11,unmatched,位于父子目录；修改时间相差 10.3 小时,最高候选分低于最低证据阈值
+SAMPLE_0138,IA_test/12.21 N3G10/w03/case_d0c2449e-f195-4d56-bb73-93d6dd49fe0d.fem,,11,unmatched,位于父子目录；修改时间相差 9.4 小时,最高候选分低于最低证据阈值
+SAMPLE_0139,IA_test/12.21 N3G10/w03/case_d8083771-02f6-4dce-afe8-5233bf3f66fe.fem,,11,unmatched,位于父子目录；修改时间相差 4.3 小时,最高候选分低于最低证据阈值
+SAMPLE_0140,IA_test/12.21 N3G10/w03/case_dae3b9ab-a5df-434c-966d-77e470159d02.fem,,11,unmatched,位于父子目录；修改时间相差 2.3 小时,最高候选分低于最低证据阈值
+SAMPLE_0141,IA_test/12.21 N3G10/w03/case_e7bd6b47-d4fd-4718-866b-61937b1aaa14.fem,,11,unmatched,位于父子目录；修改时间相差 6.5 小时,最高候选分低于最低证据阈值
+SAMPLE_0142,IA_test/12.21 N3G10/w03/case_f97d8b24-16c3-4b5c-84bd-60685a3b65d9.fem,,11,unmatched,位于父子目录；修改时间相差 1.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0143,IA_test/12.21 N3G10/w03/case_ff71ef89-6891-4223-b862-01eebccd32e4.fem,,11,unmatched,位于父子目录；修改时间相差 1.2 小时,最高候选分低于最低证据阈值
+SAMPLE_0144,IA_test/1225/best_J0.177345_20251225_205238.fem,IA_test/1225/best_result_20251225_205238.mat,77,probable,"共享运行/时间标签: 20251225_205238；共享数字标识: 20251225, 205238；位于同一目录；修改时间相差 34 秒",
+SAMPLE_0145,IA_test/1226/best_J0.234241_20251226_165530.fem,IA_test/1226/best_result_20251226_165530.mat,77,probable,"共享运行/时间标签: 20251226_165530；共享数字标识: 165530, 20251226；位于同一目录；修改时间相差 44 秒",
+SAMPLE_0146,IA_test/1227.1/best_J0.239788_20251227_151645.fem,IA_test/1227.1/best_result_20251227_151645.mat,77,probable,"共享运行/时间标签: 20251227_151645；共享数字标识: 151645, 20251227；位于同一目录；修改时间相差 76 秒",
+SAMPLE_0147,IA_test/1227.2/best_J0.147733_20251228_001658.fem,IA_test/1227.2/best_result_20251228_001658.mat,77,probable,"共享运行/时间标签: 20251228_001658；共享数字标识: 001658, 20251228；位于同一目录；修改时间相差 60 秒",
+SAMPLE_0148,IA_test/1228/best_J0.222504_20251229_005752.fem,IA_test/best_result_20251229_005752.mat,70,conflict,"共享运行/时间标签: 20251229_005752；共享数字标识: 005752, 20251229；位于父子目录；修改时间相差 26 秒",次优候选 IA_test/无优化组/best_result_20251229_005752.mat 得分 66，分差仅 4
+SAMPLE_0149,IA_test/1229/best_J0.238035_20251229_221434.fem,IA_test/1229/best_result_20251229_221434.mat,77,probable,"共享运行/时间标签: 20251229_221434；共享数字标识: 20251229, 221434；位于同一目录；修改时间相差 20 秒",
+SAMPLE_0150,IA_test/1230.2/best_J0.157009_20251230_165105.fem,IA_test/1230.2/best_result_20251230_165105.mat,77,probable,"共享运行/时间标签: 20251230_165105；共享数字标识: 165105, 20251230；位于同一目录；修改时间相差 10 秒",
+SAMPLE_0151,IA_test/1230.3/best_J0.150072_20251230_212929.fem,IA_test/1230.3/best_result_20251230_212929.mat,77,probable,"共享运行/时间标签: 20251230_212929；共享数字标识: 20251230, 212929；位于同一目录；修改时间相差 10 秒",
+SAMPLE_0152,IA_test/1230/best_J0.166453_20251230_130901.fem,IA_test/1230/best_result_20251230_130901.mat,77,probable,"共享运行/时间标签: 20251230_130901；共享数字标识: 130901, 20251230；位于同一目录；修改时间相差 30 秒",
+SAMPLE_0153,IA_test/1231/best_J0.145728_20251231_192359.fem,IA_test/1231/best_result_20251231_192359.mat,77,probable,"共享运行/时间标签: 20251231_192359；共享数字标识: 192359, 20251231；位于同一目录；修改时间相差 10 秒",
+SAMPLE_0154,IA_test/best_J0.080216_20260110_195804.fem,IA_test/best_result_20260110_195804.mat,77,probable,"共享运行/时间标签: 20260110_195804；共享数字标识: 195804, 20260110；位于同一目录；修改时间相差 14 秒",
+SAMPLE_0155,IA_test/best_J0.080216_20260111_184658.fem,IA_test/best_result_20260111_184658.mat,77,probable,"共享运行/时间标签: 20260111_184658；共享数字标识: 184658, 20260111；位于同一目录；修改时间相差 14 秒",
+SAMPLE_0156,IA_test/best_J0.082148_20260108_181234.fem,IA_test/best_result_20260108_181234.mat,77,probable,"共享运行/时间标签: 20260108_181234；共享数字标识: 181234, 20260108；位于同一目录；修改时间相差 12 秒",
+SAMPLE_0157,IA_test/best_J0.082148_20260108_231323.fem,IA_test/best_result_20260108_231323.mat,77,probable,"共享运行/时间标签: 20260108_231323；共享数字标识: 20260108, 231323；位于同一目录；修改时间相差 18 秒",
+SAMPLE_0158,IA_test/best_J0.106306_20260105_193139.fem,IA_test/best_result_20260105_193139.mat,77,probable,"共享运行/时间标签: 20260105_193139；共享数字标识: 193139, 20260105；位于同一目录；修改时间相差 16 秒",
+SAMPLE_0159,IA_test/best_J0.106306_20260106_151138.fem,IA_test/best_result_20260106_151138.mat,77,probable,"共享运行/时间标签: 20260106_151138；共享数字标识: 151138, 20260106；位于同一目录；修改时间相差 14 秒",
+SAMPLE_0160,IA_test/best_J0.106306_20260106_224059.fem,IA_test/best_result_20260106_224059.mat,77,probable,"共享运行/时间标签: 20260106_224059；共享数字标识: 20260106, 224059；位于同一目录；修改时间相差 18 秒",
+SAMPLE_0161,IA_test/best_J0.113614_20260103_045247.fem,IA_test/best_result_20260103_045247.mat,73,conflict,"共享运行/时间标签: 20260103_045247；共享数字标识: 045247, 20260103；位于同一目录；修改时间相差 2.6 分钟",次优候选 IA_test/无优化组/best_result_20260103_045247.mat 得分 66，分差仅 7
+SAMPLE_0162,IA_test/best_J0.238035_20251229_211603.fem,IA_test/best_result_20251229_211603.mat,77,conflict,"共享运行/时间标签: 20251229_211603；共享数字标识: 20251229, 211603；位于同一目录；修改时间相差 20 秒",次优候选 IA_test/无优化组/best_result_20251229_211603.mat 得分 70，分差仅 7
+SAMPLE_0163,IA_test/best_J0.257147_20251228_164352.fem,IA_test/best_result_20251228_164352.mat,77,conflict,"共享运行/时间标签: 20251228_164352；共享数字标识: 164352, 20251228；位于同一目录；修改时间相差 52 秒",次优候选 IA_test/无优化组/best_result_20251228_164352.mat 得分 70，分差仅 7
+SAMPLE_0164,IA_test/新建文件夹/temp_airgap_scan.fem,,8,unmatched,位于父子目录,修改时间相差 28.6 天；最高候选分低于最低证据阈值
+SAMPLE_0165,IA_test/无优化组/best_J0.106306_20260105_011544.fem,IA_test/无优化组/best_result_20260105_011544.mat,77,probable,"共享运行/时间标签: 20260105_011544；共享数字标识: 011544, 20260105；位于同一目录；修改时间相差 14 秒",
+SAMPLE_0166,IA_test/无优化组/best_J0.110898_20260103_223049.fem,IA_test/无优化组/best_result_20260103_223049.mat,77,probable,"共享运行/时间标签: 20260103_223049；共享数字标识: 20260103, 223049；位于同一目录；修改时间相差 76 秒",
+SAMPLE_0167,IA_test/无优化组/best_J0.110898_20260104_040203.fem,IA_test/无优化组/best_result_20260104_040203.mat,77,probable,"共享运行/时间标签: 20260104_040203；共享数字标识: 040203, 20260104；位于同一目录；修改时间相差 94 秒",
+SAMPLE_0168,IA_test/无优化组/best_J0.113614_20260103_045247.fem,IA_test/无优化组/best_result_20260103_045247.mat,73,conflict,"共享运行/时间标签: 20260103_045247；共享数字标识: 045247, 20260103；位于同一目录；修改时间相差 2.6 分钟",次优候选 IA_test/best_result_20260103_045247.mat 得分 66，分差仅 7
+SAMPLE_0169,IA_test/无优化组/best_J0.238035_20251229_211603.fem,IA_test/无优化组/best_result_20251229_211603.mat,77,conflict,"共享运行/时间标签: 20251229_211603；共享数字标识: 20251229, 211603；位于同一目录；修改时间相差 20 秒",次优候选 IA_test/best_result_20251229_211603.mat 得分 70，分差仅 7
+SAMPLE_0170,IA_test/无优化组/best_J0.257147_20251228_164352.fem,IA_test/无优化组/best_result_20251228_164352.mat,77,conflict,"共享运行/时间标签: 20251228_164352；共享数字标识: 164352, 20251228；位于同一目录；修改时间相差 52 秒",次优候选 IA_test/best_result_20251228_164352.mat 得分 70，分差仅 7
+SAMPLE_0171,IA_test/无优化组/best_J2.16323_20260103_182158.fem,IA_test/无优化组/best_result_20260103_182158.mat,77,probable,"共享运行/时间标签: 20260103_182158；共享数字标识: 182158, 20260103；位于同一目录；修改时间相差 24 秒",
+SAMPLE_0172,IA_test/设计/blank.FEM,,8,unmatched,位于父子目录,修改时间相差 31.1 天；最高候选分低于最低证据阈值
+SAMPLE_0173,IA_test_Float/0227 30gen/best_J0.120593_20260227_125153.fem,IA_test_Float/0227 30gen/best_result_20260227_125153.mat,77,conflict,"共享运行/时间标签: 20260227_125153；共享数字标识: 125153, 20260227；位于同一目录；修改时间相差 90 秒",次优候选 IA_test_Float/0227 30gen/trace_all_20260227_125153.mat 得分 77，分差仅 0
+SAMPLE_0174,IA_test_Float/0228 50gen/best_J0.114586_20260228_124726.fem,IA_test_Float/0228 50gen/best_result_20260228_124726.mat,77,conflict,"共享运行/时间标签: 20260228_124726；共享数字标识: 124726, 20260228；位于同一目录；修改时间相差 82 秒",次优候选 IA_test_Float/0228 50gen/trace_all_20260228_124726.mat 得分 77，分差仅 0
+SAMPLE_0175,IA_test_Float/0228 70gen-140gen/best_J0.113564_20260228_180032.fem,IA_test_Float/0228 70gen-140gen/best_result_20260228_180032.mat,77,conflict,"共享运行/时间标签: 20260228_180032；共享数字标识: 180032, 20260228；位于同一目录；修改时间相差 104 秒",次优候选 IA_test_Float/0228 70gen-140gen/trace_all_20260228_180032.mat 得分 77，分差仅 0
+SAMPLE_0176,IA_test_Float/0228 70gen-140gen/best_J0.113564_20260301_172121.fem,IA_test_Float/0228 70gen-140gen/best_result_20260301_172121.mat,77,conflict,"共享运行/时间标签: 20260301_172121；共享数字标识: 172121, 20260301；位于同一目录；修改时间相差 100 秒",次优候选 IA_test_Float/0228 70gen-140gen/trace_all_20260301_172121.mat 得分 77，分差仅 0
+SAMPLE_0177,IA_test_Float/0228 70gen-140gen/best_J0.113564_20260301_224723.fem,IA_test_Float/0228 70gen-140gen/best_result_20260301_224723.mat,65,conflict,"共享运行/时间标签: 20260301_224723；共享数字标识: 20260301, 224723；位于同一目录",次优候选 IA_test_Float/0228 70gen-140gen/trace_all_20260301_224723.mat 得分 65，分差仅 0
+SAMPLE_0178,IA_test_Float/0228 70gen-140gen/groupF 100gen.fem,,15,unmatched,位于同一目录,修改时间相差 69.1 天；最高候选分低于最低证据阈值
+SAMPLE_0179,IA_test_Float/0302 160gen-200gen/best_J0.111733_20260302_114631.fem,IA_test_Float/0302 160gen-200gen/best_result_20260302_114631.mat,77,conflict,"共享运行/时间标签: 20260302_114631；共享数字标识: 114631, 20260302；位于同一目录；修改时间相差 10 秒",次优候选 IA_test_Float/0302 160gen-200gen/trace_all_20260302_114631.mat 得分 77，分差仅 0
+SAMPLE_0180,IA_test_Float/0302 300gen/best_J0.105091_20260302_173331.fem,IA_test_Float/0302 300gen/best_result_20260302_173331.mat,77,conflict,"共享运行/时间标签: 20260302_173331；共享数字标识: 173331, 20260302；位于同一目录；修改时间相差 10 秒",次优候选 IA_test_Float/0302 300gen/trace_all_20260302_173331.mat 得分 77，分差仅 0
+SAMPLE_0181,IA_test_Float/0302 400gen-500gen/best_J0.0980357_20260302_213720.fem,IA_test_Float/0302 400gen-500gen/best_result_20260302_213720.mat,77,conflict,"共享运行/时间标签: 20260302_213720；共享数字标识: 20260302, 213720；位于同一目录；修改时间相差 10 秒",次优候选 IA_test_Float/0302 400gen-500gen/trace_all_20260302_213720.mat 得分 77，分差仅 0
+SAMPLE_0182,IA_test_Float/0303 700gen/best_J0.0961933_20260303_215010.fem,IA_test_Float/0303 700gen/best_result_20260303_215010.mat,77,conflict,"共享运行/时间标签: 20260303_215010；共享数字标识: 20260303, 215010；位于同一目录；修改时间相差 10 秒",次优候选 IA_test_Float/0303 700gen/trace_all_20260303_215010.mat 得分 77，分差仅 0
+SAMPLE_0183,IA_test_Float/0303 700gen/best_J0.0980357_20260303_161511.fem,IA_test_Float/0303 700gen/best_result_20260303_161511.mat,77,conflict,"共享运行/时间标签: 20260303_161511；共享数字标识: 161511, 20260303；位于同一目录；修改时间相差 12 秒",次优候选 IA_test_Float/0303 700gen/trace_all_20260303_161511.mat 得分 77，分差仅 0
+SAMPLE_0184,IA_test_Float/0304 800gen/best_J0.092999_20260304_220254.fem,IA_test_Float/0304 800gen/best_result_20260304_220254.mat,77,conflict,"共享运行/时间标签: 20260304_220254；共享数字标识: 20260304, 220254；位于同一目录；修改时间相差 10 秒",次优候选 IA_test_Float/0304 800gen/trace_all_20260304_220254.mat 得分 77，分差仅 0
+SAMPLE_0185,IA_test_Float/0305 900gen/best_J0.0924955_20260305_173935.fem,IA_test_Float/0305 900gen/best_result_20260305_173935.mat,77,conflict,"共享运行/时间标签: 20260305_173935；共享数字标识: 173935, 20260305；位于同一目录；修改时间相差 10 秒",次优候选 IA_test_Float/0305 900gen/trace_all_20260305_173935.mat 得分 77，分差仅 0
+SAMPLE_0186,IA_test_Float/best_J0.0924955_20260306_174158.fem,IA_test_Float/best_result_20260306_174158.mat,77,conflict,"共享运行/时间标签: 20260306_174158；共享数字标识: 174158, 20260306；位于同一目录；修改时间相差 10 秒",次优候选 IA_test_Float/trace_all_20260306_174158.mat 得分 77，分差仅 0
+SAMPLE_0187,IA_test_group4/best_J0.11069_20260203_184421.fem,IA_test_group4/best_result_20260203_184421.mat,77,probable,"共享运行/时间标签: 20260203_184421；共享数字标识: 184421, 20260203；位于同一目录；修改时间相差 110 秒",
+SAMPLE_0188,IA_test_group4/best_J0.121914_20260205_172915.fem,IA_test_group4/best_result_20260205_172915.mat,77,conflict,"共享运行/时间标签: 20260205_172915；共享数字标识: 172915, 20260205；位于同一目录；修改时间相差 94 秒",次优候选 IA_test_group4/trace_all_20260205_172915.mat 得分 77，分差仅 0
+SAMPLE_0189,IA_test_group4/best_J0.123215_20260205_145651.fem,IA_test_group4/best_result_20260205_145651.mat,77,conflict,"共享运行/时间标签: 20260205_145651；共享数字标识: 145651, 20260205；位于同一目录；修改时间相差 56 秒",次优候选 IA_test_group4/trace_all_20260205_145651.mat 得分 77，分差仅 0
+SAMPLE_0190,IA_test_groupA/0103 groupA/best_J0.112828_20260103_174233.fem,IA_test_groupA/0103 groupA/best_result_20260103_174233.mat,73,probable,"共享运行/时间标签: 20260103_174233；共享数字标识: 174233, 20260103；位于同一目录；修改时间相差 2.8 分钟",
+SAMPLE_0191,IA_test_groupA/0104 groupA/best_J0.0994011_20260105_081953.fem,IA_test_groupA/0104 groupA/best_result_20260105_081953.mat,65,probable,"共享运行/时间标签: 20260105_081953；共享数字标识: 081953, 20260105；位于同一目录",
+SAMPLE_0192,IA_test_groupA/1225/best_J0.177345_20251225_205238.fem,IA_test_groupA/1225/best_result_20251225_205238.mat,77,probable,"共享运行/时间标签: 20251225_205238；共享数字标识: 20251225, 205238；位于同一目录；修改时间相差 34 秒",
+SAMPLE_0193,IA_test_groupA/1226/best_J0.234241_20251226_165530.fem,IA_test_groupA/1226/best_result_20251226_165530.mat,77,probable,"共享运行/时间标签: 20251226_165530；共享数字标识: 165530, 20251226；位于同一目录；修改时间相差 44 秒",
+SAMPLE_0194,IA_test_groupA/1227.1/best_J0.239788_20251227_151645.fem,IA_test_groupA/1227.1/best_result_20251227_151645.mat,77,probable,"共享运行/时间标签: 20251227_151645；共享数字标识: 151645, 20251227；位于同一目录；修改时间相差 76 秒",
+SAMPLE_0195,IA_test_groupA/1227.2/best_J0.147733_20251228_001658.fem,IA_test_groupA/1227.2/best_result_20251228_001658.mat,77,probable,"共享运行/时间标签: 20251228_001658；共享数字标识: 001658, 20251228；位于同一目录；修改时间相差 60 秒",
+SAMPLE_0196,IA_test_groupA/1228/best_J0.222504_20251229_005752.fem,IA_test_groupA/best_result_20251229_005752.mat,70,probable,"共享运行/时间标签: 20251229_005752；共享数字标识: 005752, 20251229；位于父子目录；修改时间相差 26 秒",
+SAMPLE_0197,IA_test_groupA/1229/best_J0.238035_20251229_221434.fem,IA_test_groupA/1229/best_result_20251229_221434.mat,77,probable,"共享运行/时间标签: 20251229_221434；共享数字标识: 20251229, 221434；位于同一目录；修改时间相差 20 秒",
+SAMPLE_0198,IA_test_groupA/1230.2/best_J0.157009_20251230_165105.fem,IA_test_groupA/1230.2/best_result_20251230_165105.mat,77,probable,"共享运行/时间标签: 20251230_165105；共享数字标识: 165105, 20251230；位于同一目录；修改时间相差 10 秒",
+SAMPLE_0199,IA_test_groupA/1230.3/best_J0.150072_20251230_212929.fem,IA_test_groupA/1230.3/best_result_20251230_212929.mat,77,probable,"共享运行/时间标签: 20251230_212929；共享数字标识: 20251230, 212929；位于同一目录；修改时间相差 10 秒",
+SAMPLE_0200,IA_test_groupA/1230/best_J0.166453_20251230_130901.fem,IA_test_groupA/1230/best_result_20251230_130901.mat,77,probable,"共享运行/时间标签: 20251230_130901；共享数字标识: 130901, 20251230；位于同一目录；修改时间相差 30 秒",
+SAMPLE_0201,IA_test_groupA/1231/best_J0.145728_20251231_192359.fem,IA_test_groupA/1231/best_result_20251231_192359.mat,77,probable,"共享运行/时间标签: 20251231_192359；共享数字标识: 192359, 20251231；位于同一目录；修改时间相差 10 秒",
+SAMPLE_0202,IA_test_groupA/best_J0.0937403_20260107_221145.fem,IA_test_groupA/best_result_20260107_221145.mat,77,probable,"共享运行/时间标签: 20260107_221145；共享数字标识: 20260107, 221145；位于同一目录；修改时间相差 48 秒",
+SAMPLE_0203,IA_test_groupA/best_J0.112828_20260104_040221.fem,IA_test_groupA/best_result_20260104_040221.mat,77,probable,"共享运行/时间标签: 20260104_040221；共享数字标识: 040221, 20260104；位于同一目录；修改时间相差 90 秒",
+SAMPLE_0204,IA_test_groupA/best_J0.113614_20260103_045247.fem,IA_test_groupA/best_result_20260103_045247.mat,73,probable,"共享运行/时间标签: 20260103_045247；共享数字标识: 045247, 20260103；位于同一目录；修改时间相差 2.6 分钟",
+SAMPLE_0205,IA_test_groupA/best_J0.238035_20251229_211603.fem,IA_test_groupA/best_result_20251229_211603.mat,77,probable,"共享运行/时间标签: 20251229_211603；共享数字标识: 20251229, 211603；位于同一目录；修改时间相差 20 秒",
+SAMPLE_0206,IA_test_groupA/best_J0.257147_20251228_164352.fem,IA_test_groupA/best_result_20251228_164352.mat,77,probable,"共享运行/时间标签: 20251228_164352；共享数字标识: 164352, 20251228；位于同一目录；修改时间相差 52 秒",
+SAMPLE_0207,IA_test_groupA/新建文件夹/temp_airgap_scan.fem,,8,unmatched,位于父子目录,修改时间相差 22.7 天；最高候选分低于最低证据阈值
+SAMPLE_0208,IA_test_groupA/设计/blank.FEM,,8,unmatched,位于父子目录,修改时间相差 25.2 天；最高候选分低于最低证据阈值
+SAMPLE_0209,IA_test_N/0204 100gen/model.fem,,15,unmatched,位于同一目录,修改时间相差 6.0 天；最高候选分低于最低证据阈值
+SAMPLE_0210,temp_airgap_scan.fem,,8,unmatched,位于父子目录,修改时间相差 35.9 天；最高候选分低于最低证据阈值
+SAMPLE_0211,temp_motor.fem,,8,unmatched,位于父子目录,修改时间相差 42.2 天；最高候选分低于最低证据阈值
+SAMPLE_0212,免疫算法测试/01.13/best_J0.080216_20260109_165414.fem,,12,unmatched,修改时间相差 14 秒,最高候选分低于最低证据阈值
+SAMPLE_0213,免疫算法测试/01.13/seed_bits_fine.FEM,CLONALG/seed_bits_fine.mat,80,probable,文件 stem 完全相同,
+SAMPLE_0214,免疫算法测试/01.13/strukturFemm.fem,,3,unmatched,修改时间相差 16.6 小时,最高候选分低于最低证据阈值
+SAMPLE_0215,免疫算法测试/03.10/best_J0.0924955_20260306_174158.fem,IA_test_Float/best_result_20260306_174158.mat,62,conflict,"共享运行/时间标签: 20260306_174158；共享数字标识: 174158, 20260306；修改时间相差 10 秒",次优候选 IA_test_Float/trace_all_20260306_174158.mat 得分 62，分差仅 0
+SAMPLE_0216,免疫算法测试/0317/groupF_1000gen_block.fem,CLONALG/best_result_0306_groupF_1000gen.mat,45,uncertain,共享运行/时间标签: 1000；共享数字标识: 1000,
+SAMPLE_0217,免疫算法测试/0317/groupN_100gen_block.fem,,5,unmatched,共享数字标识: 100,修改时间相差 57.4 天；最高候选分低于最低证据阈值
+SAMPLE_0218,免疫算法测试/0414/groupF 1000gen.fem,CLONALG/best_result_0306_groupF_1000gen.mat,45,uncertain,共享运行/时间标签: 1000；共享数字标识: 1000,
+SAMPLE_0219,免疫算法测试/0414/groupN 100gen.fem,,5,unmatched,共享数字标识: 100,修改时间相差 85.3 天；最高候选分低于最低证据阈值
+SAMPLE_0220,免疫算法测试/0415/group4 100gen.fem,,5,unmatched,共享数字标识: 100,修改时间相差 108.3 天；最高候选分低于最低证据阈值
+SAMPLE_0221,免疫算法测试/0415/groupF 1000gen.fem,CLONALG/best_result_0306_groupF_1000gen.mat,45,uncertain,共享运行/时间标签: 1000；共享数字标识: 1000,
+SAMPLE_0222,免疫算法测试/0415/groupN 100gen.fem,,5,unmatched,共享数字标识: 100,修改时间相差 108.3 天；最高候选分低于最低证据阈值
+SAMPLE_0223,免疫算法测试/新建文件夹/temp_airgap_scan.fem,,0,unmatched,,没有发现候选
+SAMPLE_0224,免疫算法测试/设计/blank.FEM,,0,unmatched,,没有发现候选
+SAMPLE_0225,待修改模型.FEM,,8,unmatched,位于父子目录,修改时间相差 32.0 天；最高候选分低于最低证据阈值
+SAMPLE_0226,无标题.FEM,,8,unmatched,位于父子目录,修改时间相差 32.8 天；最高候选分低于最低证据阈值
+SAMPLE_0227,论文/ppt/blank.FEM,,0,unmatched,,没有发现候选
+SAMPLE_0228,论文/ppt/blank_18x10.FEM,,5,unmatched,共享数字标识: 10,修改时间相差 105.8 天；最高候选分低于最低证据阈值
+SAMPLE_0229,论文/ppt/dis referencemodell.fem,,0,unmatched,,没有发现候选
+SAMPLE_0230,论文/ppt/group4 100gen.fem,,5,unmatched,共享数字标识: 100,修改时间相差 109.9 天；最高候选分低于最低证据阈值
+SAMPLE_0231,论文/ppt/groupF 1000gen.fem,CLONALG/best_result_0306_groupF_1000gen.mat,45,uncertain,共享运行/时间标签: 1000；共享数字标识: 1000,
+SAMPLE_0232,论文/ppt/groupF 100gen.fem,,5,unmatched,共享数字标识: 100,修改时间相差 110.2 天；最高候选分低于最低证据阈值
+SAMPLE_0233,论文/ppt/groupN 100gen.fem,,5,unmatched,共享数字标识: 100,修改时间相差 110.2 天；最高候选分低于最低证据阈值
+SAMPLE_0234,论文/ppt/strukturFemm.fem,,0,unmatched,,没有发现候选

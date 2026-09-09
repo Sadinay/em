@@ -1,0 +1,13 @@
+{
+  "reason": "Correct legacy descriptive text left over from the earlier small-phase scan; numerical settings and all solve results are unchanged.",
+  "previous_note": "A common phase offset is applied to all five genes. +/-1 and +/-3 electrical degrees test the vicinity of the prior zero convention. +120 electrical degrees tests a cyclic ABC phase assignment, not a fitted MAT parameter. No per-gene phase fitting.",
+  "corrected_note": "A common initial electrical phase is applied to all five genes; actual tested phases are listed in scenarios. Only initial phase varies; amplitude, current direction, geometry, and torque scale are unchanged.",
+  "before_sha256": {
+    "run_spec.json": "9b13566e5d63320036f06735a63c3ca0ae0419d80c75c07a71e4c2e1ef1a902b",
+    "summary.json": "422a7d7a36b06ef614641488b9b25b49fe104ff2ec5d8d825832593769a450bd"
+  },
+  "after_sha256": {
+    "run_spec.json": "2731df0960f7727b4c0d5caaabfbb4d863364f1b3b87e37a8e7e7910d6d41011",
+    "summary.json": "8ef0b87040d565fb0bc5d424008fa7938cc966d569ae1476f571c6910089192c"
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "status": "complete",
+  "candidate_ids": [
+    "median_tavg",
+    "high_tavg",
+    "final_median_tavg"
+  ],
+  "angles_mechanical_deg": [
+    0.0,
+    3.0,
+    6.0,
+    9.0,
+    12.0,
+    15.0
+  ],
+  "torque_multiplier": -2,
+  "tavg_method": "six-point arithmetic mean",
+  "configuration_results": [
+    {
+      "current_phase_offset_electrical_deg": -30.0,
+      "mean_relative_error_tavg": 0.99939316328163,
+      "mean_relative_error_delta_if_absolute": 1.1964321486650478,
+      "mean_relative_error_delta_if_relative": 873.7217194406476,
+      "candidates": [
+        {
+          "candidate_id": "median_tavg",
+          "historical_tavg": 3.183132769850227,
+          "recomputed_tavg": 0.0016215928121192172,
+          "relative_error_tavg": 0.9994905670201764,
+          "historical_delta_t": 0.454533168517397,
+          "absolute_peak_to_peak": 0.22739746063553778,
+          "relative_peak_to_peak": 140.23092538154384,
+          "relative_error_if_delta_is_absolute": 0.49971206418826114,
+          "relative_error_if_delta_is_relative": 307.51637480923813,
+          "torques_nm": [
+            -0.0016169938965265068,
+            -0.04417207922918482,
+            -0.11151688025302016,
+            0.11588058038251764,
+            0.0505265666498193,
+            0.0006283632191098546
+          ]
+        },
+        {
+          "candidate_id": "high_tavg",
+          "historical_tavg": 3.9186576845750505,
+          "recomputed_tavg": 0.0017578366626492513,
+          "relative_error_tavg": 0.999551418673397,
+          "historical_delta_t": 0.21329158923616598,
+          "absolute_peak_to_peak": 0.5704380411840764,
+          "relative_peak_to_peak": 324.51140273998163,
+          "relative_error_if_delta_is_absolute": 1.6744516425936602,
+          "relative_error_if_delta_is_relative": 1520.4449097693584,
+          "torques_nm": [
+            -0.0012789494302155359,
+            0.2035678167388998,
+            0.2879834034365548,
+            -0.2824546377475216,
+            -0.2026673472308018,
+            0.005396734208979862
+          ]
+        },
+        {
+          "candidate_id": "final_median_tavg",
+          "historical_tavg": 3.5257538657943965,
+          "recomputed_tavg": 0.003040948072728356,
+          "relative_error_tavg": 0.9991375041513163,
+          "historical_delta_t": 0.474898358160591,
+          "absolute_peak_to_peak": 1.14694257259225,
+          "relative_peak_to_peak": 377.16611568549627,
+          "relative_error_if_delta_is_absolute": 1.415132739213222,
+          "relative_error_if_delta_is_relative": 793.2038737433459,
+          "torques_nm": [
+            -0.0013014091551770135,
+            0.5739313326607982,
+            0.18792328181862,
+            -0.1752555089718012,
+            -0.5730112399314518,
+            0.005959232015381888
+          ]
+        }
+      ]
+    },
+    {
+      "current_phase_offset_electrical_deg": -15.0,
+      "mean_relative_error_tavg": 0.4797292725683691,
+      "mean_relative_error_delta_if_absolute": 1.0971903261057896,
+      "mean_relative_error_delta_if_relative": 0.38974797874990924,
+      "candidates": [
+        {
+          "candidate_id": "median_tavg",
+          "historical_tavg": 3.183132769850227,
+          "recomputed_tavg": 1.6679069158057045,
+          "relative_error_tavg": 0.4760171703789211,
+          "historical_delta_t": 0.454533168517397,
+          "absolute_peak_to_peak": 0.30413634528104594,
+          "relative_peak_to_peak": 0.18234611440179133,
+          "relative_error_if_delta_is_absolute": 0.33088195461492426,
+          "relative_error_if_delta_is_relative": 0.5988277049250981,
+          "torques_nm": [
+            1.7893758178714343,
+            1.560951706815274,
+            1.4870871711728264,
+            1.7051205404398706,
+            1.6736827420809501,
+            1.7912235164538723
+          ]
+        },
+        {
+          "candidate_id": "high_tavg",
+          "historical_tavg": 3.9186576845750505,
+          "recomputed_tavg": 2.042150774349642,
+          "relative_error_tavg": 0.47886471880712433,
+          "historical_delta_t": 0.21329158923616598,
+          "absolute_peak_to_peak": 0.5584831041563416,
+          "relative_peak_to_peak": 0.27347789946322654,
+          "relative_error_if_delta_is_absolute": 1.6184019077187528,
+          "relative_error_if_delta_is_relative": 0.2821785446045863,
+          "torques_nm": [
+            2.096008114994834,
+            2.208894032785138,
+            2.284718321340108,
+            1.7262352171837665,
+            1.8346261185144872,
+            2.10242284127952
+          ]
+        },
+        {
+          "candidate_id": "final_median_tavg",
+          "historical_tavg": 3.5257538657943965,
+          "recomputed_tavg": 1.8182103660911693,
+          "relative_error_tavg": 0.48430592851906196,
+          "historical_delta_t": 0.474898358160591,
+          "absolute_peak_to_peak": 1.1123483057213608,
+          "relative_peak_to_peak": 0.6117819623439464,
+          "relative_error_if_delta_is_absolute": 1.3422871159836913,
+          "relative_error_if_delta_is_relative": 0.28823768672004346,
+          "torques_nm": [
+            1.7137138726020484,
+            2.38077745254789,
+            2.094444257308304,
+            1.7316680561483322,
+            1.2684291468265292,
+            1.7202294111139111
+          ]
+        }
+      ]
+    },
+    {
+      "current_phase_offset_electrical_deg": 0.0,
+      "mean_relative_error_tavg": 0.007026557184033483,
+      "mean_relative_error_delta_if_absolute": 0.8865363838493763,
+      "mean_relative_error_delta_if_relative": 0.4794185230177515,
+      "candidates": [
+        {
+          "candidate_id": "median_tavg",
+          "historical_tavg": 3.183132769850227,
+          "recomputed_tavg": 3.216129191608875,
+          "relative_error_tavg": 0.010366021194962709,
+          "historical_delta_t": 0.454533168517397,
+          "absolute_peak_to_peak": 0.4623698358857542,
+          "relative_peak_to_peak": 0.14376593984225267,
+          "relative_error_if_delta_is_absolute": 0.01724113422551528,
+          "relative_error_if_delta_is_relative": 0.6837063831640923,
+          "torques_nm": [
+            3.44969999352677,
+            3.035840934991494,
+            2.988520934480556,
+            3.17557983291778,
+            3.196242683370342,
+            3.45089077036631
+          ]
+        },
+        {
+          "candidate_id": "high_tavg",
+          "historical_tavg": 3.9186576845750505,
+          "recomputed_tavg": 3.9412090568354734,
+          "relative_error_tavg": 0.005754871712625353,
+          "historical_delta_t": 0.21329158923616598,
+          "absolute_peak_to_peak": 0.530057777928802,
+          "relative_peak_to_peak": 0.13449116001839367,
+          "relative_error_if_delta_is_absolute": 1.485132113399457,
+          "relative_error_if_delta_is_relative": 0.369449304119165,
+          "torques_nm": [
+            4.046325407808786,
+            4.046108959772838,
+            4.13846975398162,
+            3.608411976052818,
+            3.755707772669366,
+            4.05223047072741
+          ]
+        },
+        {
+          "candidate_id": "final_median_tavg",
+          "historical_tavg": 3.5257538657943965,
+          "recomputed_tavg": 3.5082704328188883,
+          "relative_error_tavg": 0.004958778644512388,
+          "historical_delta_t": 0.474898358160591,
+          "absolute_peak_to_peak": 1.0244677889381855,
+          "relative_peak_to_peak": 0.2920150565801815,
+          "relative_error_if_delta_is_absolute": 1.1572359039231566,
+          "relative_error_if_delta_is_relative": 0.38509988176999743,
+          "torques_nm": [
+            3.309767753591134,
+            4.034568262953504,
+            3.875335507544208,
+            3.504723742349158,
+            3.010100474015318,
+            3.315126856460008
+          ]
+        }
+      ]
+    },
+    {
+      "current_phase_offset_electrical_deg": 15.0,
+      "mean_relative_error_tavg": 0.41888458299470915,
+      "mean_relative_error_delta_if_absolute": 0.843624396923948,
+      "mean_relative_error_delta_if_relative": 0.6376386663059587,
+      "candidates": [
+        {
+          "candidate_id": "median_tavg",
+          "historical_tavg": 3.183132769850227,
+          "recomputed_tavg": 4.543822400236787,
+          "relative_error_tavg": 0.42746870104654267,
+          "historical_delta_t": 0.454533168517397,
+          "absolute_peak_to_peak": 0.5839502071360743,
+          "relative_peak_to_peak": 0.12851519177018086,
+          "relative_error_if_delta_is_absolute": 0.2847251808725239,
+          "relative_error_if_delta_is_relative": 0.7172589358233775,
+          "torques_nm": [
+            4.869801473781132,
+            4.286212962370308,
+            4.296262279381118,
+            4.426781263052364,
+            4.513713253329416,
+            4.870163169506382
+          ]
+        },
+        {
+          "candidate_id": "high_tavg",
+          "historical_tavg": 3.9186576845750505,
+          "recomputed_tavg": 5.572687834069061,
+          "relative_error_tavg": 0.4220910022339392,
+          "historical_delta_t": 0.21329158923616598,
+          "absolute_peak_to_peak": 0.49701513878531767,
+          "relative_peak_to_peak": 0.08918768708822643,
+          "relative_error_if_delta_is_absolute": 1.3302144288258844,
+          "relative_error_if_delta_is_relative": 0.581850895257413,
+          "torques_nm": [
+            5.717717260456678,
+            5.601378798514566,
+            5.731680133308876,
+            5.234664994523558,
+            5.427771791833674,
+            5.722914025777018
+          ]
+        },
+        {
+          "candidate_id": "final_median_tavg",
+          "historical_tavg": 3.5257538657943965,
+          "recomputed_tavg": 4.961067271175906,
+          "relative_error_tavg": 0.40709404570364555,
+          "historical_delta_t": 0.474898358160591,
+          "absolute_peak_to_peak": 0.9098737119965161,
+          "relative_peak_to_peak": 0.18340281682591492,
+          "relative_error_if_delta_is_absolute": 0.9159335810734356,
+          "relative_error_if_delta_is_relative": 0.6138061678370855,
+          "torques_nm": [
+            4.680095658209138,
+            5.436514160709722,
+            5.418819286544516,
+            5.02021049661883,
+            4.526640448713206,
+            4.684123576260024
+          ]
+        }
+      ]
+    },
+    {
+      "current_phase_offset_electrical_deg": 30.0,
+      "mean_relative_error_tavg": 0.7386173228003236,
+      "mean_relative_error_delta_if_absolute": 0.9657375668294431,
+      "mean_relative_error_delta_if_relative": 0.682957489013417,
+      "candidates": [
+        {
+          "candidate_id": "median_tavg",
+          "historical_tavg": 3.183132769850227,
+          "recomputed_tavg": 5.565731013314291,
+          "relative_error_tavg": 0.7485073403256661,
+          "historical_delta_t": 0.454533168517397,
+          "absolute_peak_to_peak": 0.7263200302803199,
+          "relative_peak_to_peak": 0.13049858653657959,
+          "relative_error_if_delta_is_absolute": 0.5979472579513642,
+          "relative_error_if_delta_is_relative": 0.7128953493927808,
+          "torques_nm": [
+            5.960678136602248,
+            5.234358106321928,
+            5.324497860357688,
+            5.37335882798111,
+            5.541373633527214,
+            5.960119515095556
+          ]
+        },
+        {
+          "candidate_id": "high_tavg",
+          "historical_tavg": 3.9186576845750505,
+          "recomputed_tavg": 6.828840036158049,
+          "relative_error_tavg": 0.7426477599812564,
+          "historical_delta_t": 0.21329158923616598,
+          "absolute_peak_to_peak": 0.5090923501851599,
+          "relative_peak_to_peak": 0.07455034053947157,
+          "relative_error_if_delta_is_absolute": 1.3868374369955585,
+          "relative_error_if_delta_is_relative": 0.650476885626624,
+          "torques_nm": [
+            6.99972020176546,
+            6.776669866967696,
+            6.956832075753272,
+            6.495214034083748,
+            6.740297654109204,
+            7.004306384268908
+          ]
+        },
+        {
+          "candidate_id": "final_median_tavg",
+          "historical_tavg": 3.5257538657943965,
+          "recomputed_tavg": 6.080856650006079,
+          "relative_error_tavg": 0.7246968680940482,
+          "historical_delta_t": 0.474898358160591,
+          "absolute_peak_to_peak": 0.9082089199319476,
+          "relative_peak_to_peak": 0.149355423455187,
+          "relative_error_if_delta_is_absolute": 0.9124280055414066,
+          "relative_error_if_delta_is_relative": 0.6855002320208461,
+          "torques_nm": [
+            5.734120371869862,
+            6.500708853764026,
+            6.623514649576814,
+            6.174610441028986,
+            5.715305729644866,
+            5.736879854151924
+          ]
+        }
+      ]
+    }
+  ]
+}

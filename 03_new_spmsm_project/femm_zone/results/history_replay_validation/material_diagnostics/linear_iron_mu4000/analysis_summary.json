@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "variant": "Pure Iron linear mu_x=mu_y=4000, BHPoints=0",
+  "angles_mechanical_deg": [
+    0.0,
+    3.0,
+    6.0,
+    9.0,
+    12.0,
+    15.0
+  ],
+  "torque_multiplier": -2,
+  "mean_relative_error_tavg": 0.00920294412327336,
+  "mean_relative_error_delta_t": 1.0341697315260492,
+  "candidates": [
+    {
+      "candidate_id": "median_tavg",
+      "historical_tavg_nm": 3.183132769850227,
+      "recomputed_tavg_nm": 3.1678174064906264,
+      "relative_error_tavg": 0.0048114120481130415,
+      "historical_delta_t_nm": 0.454533168517397,
+      "recomputed_delta_t_nm": 0.49165122125330196,
+      "relative_error_delta_t": 0.08166192328048835,
+      "sign_and_sector_scaled_torques_nm": [
+        3.466891462839792,
+        3.047977522113996,
+        2.97621188167537,
+        3.159353410744904,
+        3.188166935034626,
+        3.467863102928672
+      ]
+    },
+    {
+      "candidate_id": "high_tavg",
+      "historical_tavg_nm": 3.9186576845750505,
+      "recomputed_tavg_nm": 3.967308627175234,
+      "relative_error_tavg": 0.012415206051727221,
+      "historical_delta_t_nm": 0.21329158923616598,
+      "recomputed_delta_t_nm": 0.5758486999051877,
+      "relative_error_delta_t": 1.6998190691316117,
+      "sign_and_sector_scaled_torques_nm": [
+        4.162800106816562,
+        4.131057548524126,
+        4.139679322208372,
+        3.592761411605786,
+        3.807339744374114,
+        4.168610111510974
+      ]
+    },
+    {
+      "candidate_id": "final_median_tavg",
+      "historical_tavg_nm": 3.5257538657943965,
+      "recomputed_tavg_nm": 3.5623589978922836,
+      "relative_error_tavg": 0.010382214269979812,
+      "historical_delta_t_nm": 0.474898358160591,
+      "recomputed_delta_t_nm": 1.1022524824530842,
+      "relative_error_delta_t": 1.3210282021660473,
+      "sign_and_sector_scaled_torques_nm": [
+        3.318426972246202,
+        4.11126564764736,
+        3.880771875377992,
+        3.489387636049692,
+        3.009013165194276,
+        3.324286358137996
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "best_epoch": 58,
+  "best_standardized_validation_mse": 0.12195441501205834,
+  "device": "cpu",
+  "epochs_completed": 88,
+  "model": "resnet20",
+  "splits": {
+    "test": {
+      "torque_ripple": {
+        "mae": 0.07010666838661885,
+        "r2": 0.8218702634425038,
+        "rmse": 0.1389208949097273
+      }
+    },
+    "train": {
+      "torque_ripple": {
+        "mae": 0.01833123642466344,
+        "r2": 0.9918909516159001,
+        "rmse": 0.03206203751099415
+      }
+    },
+    "val": {
+      "torque_ripple": {
+        "mae": 0.07267392645682576,
+        "r2": 0.7563208444515497,
+        "rmse": 0.12433830374626643
+      }
+    }
+  }
+}

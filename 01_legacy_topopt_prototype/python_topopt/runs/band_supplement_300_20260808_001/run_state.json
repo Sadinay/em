@@ -1,0 +1,50 @@
+{
+  "T_avg_ref": 0.8707406437252049,
+  "active_sample_ids": [],
+  "angle_counts": {
+    "completed": 1806
+  },
+  "candidate_counts": {
+    "completed": 300
+  },
+  "candidate_order": 301,
+  "candidate_total": 300,
+  "completed_angles_deg": [
+    0.0,
+    3.0,
+    6.0,
+    9.0,
+    12.0,
+    15.0
+  ],
+  "config_hash": "15da216552b4cfea918047a7df61cbefcef1478be37754a079fdc1a1303a6d55",
+  "current_angle_deg": null,
+  "current_sample_id": "S000301",
+  "duplicate_candidates": 0,
+  "fitness_bands": {
+    "B1": 38,
+    "B2": 42,
+    "B3": 30,
+    "B4": 72,
+    "B5": 48,
+    "B6": 44,
+    "B7": 26
+  },
+  "generation": 10,
+  "geometry_mode": "merged_copper_v5",
+  "negative_torque": 0,
+  "new_valid_candidates": 300,
+  "parallel_femm_workers": null,
+  "pending_angles_deg": [],
+  "recent_mean_seconds_per_angle": 27.838495611997786,
+  "rejected_candidates": 0,
+  "rejection_reasons": {},
+  "run_id": "band_supplement_300_20260808_001",
+  "sample_counts": {
+    "classified": 301
+  },
+  "status": "completed",
+  "unique_chromosomes": 300,
+  "updated_at": "2026-08-08T22:51:35.495+02:00",
+  "valid_unique_samples": 300
+}

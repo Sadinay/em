@@ -1,0 +1,24 @@
+{
+  "run_count": 7,
+  "seeds": [20260903],
+  "train_samples": 40000,
+  "validation_samples": 6483,
+  "test_samples": 6483,
+  "logical": {
+    "input": "2x6x20",
+    "architectures": ["small_cnn_v2", "mini_inception_v2", "resnet20_v2"],
+    "maximum_epochs": 100,
+    "early_stopping_patience": 12
+  },
+  "semantic224": {
+    "views": ["xy90", "polar90", "xy360", "polar360"],
+    "architectures": ["vgg16_v2"],
+    "minimum_epochs": 30,
+    "maximum_epochs": 40,
+    "early_stopping_patience": 8,
+    "polar360_angular_padding": "circular"
+  },
+  "targets": ["Tavg", "DeltaT"],
+  "checkpoint_selection": "validation standardized MSE",
+  "test_access": "once, only after each completed run"
+}

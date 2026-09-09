@@ -1,0 +1,76 @@
+compatibility_mode: historical_march
+geometry_mode: historical_inset
+
+design:
+  chromosome_length: 180
+  radial_cells: 18
+  angular_cells: 10
+  radial_inner_mm: 31.5
+  radial_outer_mm: 52.0
+  sector_span_deg: 15.0
+  sector_offsets_deg: [0, 15, 30, 45, 60, 75]
+  inset_radial_ratio: 0.2
+  inset_angular_ratio: 0.2
+
+materials:
+  air_code: 0
+  iron_code: 1
+  copper_code: 2
+
+circuits:
+  names: [A+, A-, B+, B-, C+, C-]
+  sector_circuit_ids: [4, 3, 6, 5, 2, 1]
+  total_turns_per_circuit: [100, 100, 100, 100, 100, 100]
+
+constraints:
+  theta_periodic: false
+  minimum_copper_island_cells: 4
+  invalid_base_objective: 1000000.0
+  invalid_per_floating_iron_cell: 50.0
+  invalid_per_small_copper_cell: 50.0
+
+objective:
+  torque_angles_deg: [0, 3, 6, 9, 12, 15]
+  minimum_average_torque_nm: 0.8
+  average_torque_penalty_coefficient: 10.0
+  ripple_denominator_floor_nm: 1.0e-6
+  floating_iron_sigmoid_k: 50.0
+  floating_iron_sigmoid_weight: 0.10
+  floating_copper_sigmoid_k: 30.0
+  floating_copper_sigmoid_weight: 0.05
+
+clonalg:
+  population_size: 10
+  generations: 100
+  beta: 0.4
+  random_immigrant_fraction: 0.2
+  near_fraction_of_nonseed: 0.6
+  middle_fraction_of_nonseed: 0.2
+  near_mutation_probability: 0.05
+  middle_mutation_probability: 0.12
+  far_mutation_probability: 0.25
+  hypermutation_min_probability: 0.03
+  hypermutation_max_probability: 0.20
+  hypermutation_rank_exponent: 2.0
+  immigrant_best_mutation_probability: 0.25
+  immigrant_best_branch_probability: 0.5
+  elite_count: 1
+  random_seed: 20260806
+
+femm:
+  geometry_mode: historical_inset
+  executable: C:\femm42\bin\femm.exe
+  base_model: C:\Users\26096\Desktop\em\FP\CLONALG\blank_18x10.FEM
+  work_root: C:\Users\26096\Desktop\em\python_topopt\outputs\femm_cases
+  stator_current_a: 3.5
+  rotor_group: 1
+  air_gap_boundary_name: Air gap
+  timeout_seconds_per_individual: 900
+  maximum_retries: 1
+  failure_objective: 10000000.0  # 新增运行保障值，不是已确认的MATLAB参数
+  require_clean_process_state: true
+
+experiments:
+  merged_copper_v5:
+    geometry_mode: merged_copper_v5
+    compatibility_claim: false

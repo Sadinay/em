@@ -1,0 +1,148 @@
+{
+  "status": "deduplicated_and_split_ready_no_training_started",
+  "source_mat": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+  "deduplication": {
+    "key": "exact corrected 120-bit chromosome from population_all",
+    "historical_records": 123012,
+    "unique_chromosomes": 65702,
+    "removed_duplicate_records": 57310,
+    "duplicate_groups": 24320,
+    "maximum_occurrence_count": 30,
+    "quarantined_label_conflicts": 898,
+    "clean_unique_chromosomes": 64804,
+    "label_conflict_atol": 1e-06,
+    "repeated_label_policy": "median only when repeated labels agree within tolerance; otherwise quarantine"
+  },
+  "gene": {
+    "bits": 120,
+    "grid": "6 radial x 20 angular",
+    "vector_order": "gene_index = angular_index * 6 + radial_index",
+    "semantics": {
+      "0": "Air",
+      "1": "N38 permanent magnet"
+    }
+  },
+  "tavg_bands": [
+    {
+      "label": "<2.0",
+      "lower_edge_nm": null,
+      "upper_edge_nm": 2.0,
+      "total": 166,
+      "train": 132,
+      "validation": 17,
+      "test": 17
+    },
+    {
+      "label": "2.0-2.5",
+      "lower_edge_nm": 2.0,
+      "upper_edge_nm": 2.5,
+      "total": 4766,
+      "train": 3812,
+      "validation": 477,
+      "test": 477
+    },
+    {
+      "label": "2.5-3.0",
+      "lower_edge_nm": 2.5,
+      "upper_edge_nm": 3.0,
+      "total": 16615,
+      "train": 13291,
+      "validation": 1662,
+      "test": 1662
+    },
+    {
+      "label": "3.0-3.25",
+      "lower_edge_nm": 3.0,
+      "upper_edge_nm": 3.25,
+      "total": 17256,
+      "train": 13804,
+      "validation": 1726,
+      "test": 1726
+    },
+    {
+      "label": "3.25-3.5",
+      "lower_edge_nm": 3.25,
+      "upper_edge_nm": 3.5,
+      "total": 19576,
+      "train": 15660,
+      "validation": 1958,
+      "test": 1958
+    },
+    {
+      "label": "3.5-3.75",
+      "lower_edge_nm": 3.5,
+      "upper_edge_nm": 3.75,
+      "total": 6176,
+      "train": 4940,
+      "validation": 618,
+      "test": 618
+    },
+    {
+      "label": ">=3.75",
+      "lower_edge_nm": 3.75,
+      "upper_edge_nm": null,
+      "total": 249,
+      "train": 199,
+      "validation": 25,
+      "test": 25
+    }
+  ],
+  "split": {
+    "method": "repair-component grouped stratification using Tavg bands only",
+    "ratios_requested": {
+      "train": 0.8,
+      "validation": 0.1,
+      "test": 0.1
+    },
+    "seed": 20260902,
+    "train": 51838,
+    "validation": 6483,
+    "test": 6483,
+    "train_ratio": 0.7999197580396272,
+    "validation_ratio": 0.10004012098018641,
+    "test_ratio": 0.10004012098018641,
+    "topology_hash_overlap": 0,
+    "repair_components_crossing_splits": 0
+  },
+  "targets": {
+    "columns": [
+      "Tavg",
+      "DeltaT"
+    ],
+    "split_stratification_uses": [
+      "Tavg"
+    ],
+    "delta_t_note": "retained as a label but excluded from split stratification until its historical definition is fully reproduced",
+    "tavg_min_nm": 1.6172313314639906,
+    "tavg_median_nm": 3.1699135823025273,
+    "tavg_max_nm": 3.9186576845750505,
+    "delta_t_min": 0.010409973379561066,
+    "delta_t_median": 0.3763471140146297,
+    "delta_t_max": 1.8980191519326952
+  },
+  "integrity": {
+    "train_validation_overlap": 0,
+    "train_test_overlap": 0,
+    "validation_test_overlap": 0,
+    "all_clean_hashes_unique": true,
+    "pm_count_matches_volume_pm": 64266,
+    "pm_count_volume_pm_mismatches": 538,
+    "history_pm_count_volume_pm_mismatches": 538,
+    "history_pm_count_mismatches_all_initial_state": true,
+    "pm_count_mismatch_policy": "retained as the same initial-state source audit exception used in project 02; Tavg/DeltaT are aligned to population_all and the mismatch does not occur after state 0",
+    "clean_sample_count": 64804
+  },
+  "artifacts": {
+    "deduplicated_npz": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\exports\\deduplicated_femm_results\\deduplicated_topology_results.npz",
+    "deduplicated_csv": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\exports\\deduplicated_femm_results\\deduplicated_topology_results.csv",
+    "dataset": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\processed\\spmsm_topology_dataset\\training_corrected_binary",
+    "split_npz": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\outputs\\splits\\scheme_a_tavg_bands_80_10_10.npz",
+    "band_csv": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\reports\\spmsm_topology_dataset\\tavg_band_split_distribution.csv",
+    "band_figure": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\reports\\spmsm_topology_dataset\\tavg_band_split_distribution.png"
+  },
+  "index_hashes_sha256": {
+    "train": "edf0765e5160a9469ec44f028569875d9239c69f607eaef25471857dcde9a1e0",
+    "validation": "4756d67211e62be0bea21c22e1e773e107b612a9de5090c8ef678f019332c190",
+    "test": "7e037e82c2c26fd2953519336c14b52b668c3cc8efd3f4debf824ba52f79c9fa"
+  }
+}

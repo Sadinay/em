@@ -1,0 +1,37 @@
+{
+  "deduplication_key": "exact corrected 200-bit chromosome (population_all)",
+  "representative_result": "median of all records sharing the same chromosome",
+  "total_historical_records": 302904,
+  "unique_chromosomes": 159921,
+  "removed_duplicate_records": 142983,
+  "single_occurrence_topologies": 100212,
+  "maximum_repeat_count": 40,
+  "groups_with_tavg_disagreement": 3754,
+  "groups_with_delta_t_disagreement": 3754,
+  "groups_with_fitness_disagreement": 3754,
+  "tavg_median_distribution": {
+    "min": 0.00010197142807824751,
+    "mean": 2.0467870264276775,
+    "max": 3.7829200617498606,
+    "p10": 1.066911725730983,
+    "p25": 1.6756449038180161,
+    "p50": 2.260591366990221,
+    "p75": 2.5326075365508323,
+    "p90": 2.733253918587456
+  },
+  "delta_t_median_distribution": {
+    "min": 0.06075138167636973,
+    "mean": 0.7861631694077554,
+    "max": 4.381166465795453,
+    "p10": 0.3972755709235509,
+    "p25": 0.599476867927009,
+    "p50": 0.7761793449646273,
+    "p75": 0.9492384507994291,
+    "p90": 1.1117189101306642
+  },
+  "notes": [
+    "The MAT file stores scalar results, not the original angle-by-angle torque curves.",
+    "A repeated chromosome may be copied between GA generations rather than rerun in FEMM.",
+    "Quantile lines are descriptive aids, not finalized training-band boundaries."
+  ]
+}

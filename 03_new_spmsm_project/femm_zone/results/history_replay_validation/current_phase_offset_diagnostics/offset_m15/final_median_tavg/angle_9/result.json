@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "angle_mechanical_deg": 9.0,
+  "angle_electrical_deg": 36.0,
+  "pole_pairs": 4,
+  "current_amplitude_a": 3.5,
+  "rotor_angle_factor": 1,
+  "current_angle_factor": 1,
+  "current_phase_offset_deg": -15.0,
+  "applied_rotor_angle_deg": 9.0,
+  "phase_currents_a": {
+    "A": 3.267531492740206,
+    "B": -0.5475206276408071,
+    "C": -2.7200108650993973
+  },
+  "rotor_angle_method": "mi_modifyboundprop('sliding_airgap',10,angle_deg)",
+  "torque_method": "mo_gapintegral('sliding_airgap',0)",
+  "base_fem": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\history_replay_validation\\final_median_tavg\\base\\model.fem",
+  "torque_nm": -0.8658340280741661,
+  "ans_path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\history_replay_validation\\current_phase_offset_diagnostics\\offset_m15\\final_median_tavg\\angle_9\\model.ans",
+  "ans_exists_before_optional_cleanup": true,
+  "ans_size_bytes_before_optional_cleanup": 3212126,
+  "timing_seconds": {
+    "prepare": 0.13947990000087884,
+    "analyze": 4.318273900000349,
+    "postprocess": 0.12739850000070874,
+    "total": 4.585152300001937
+  },
+  "ans_discarded_after_torque_extraction": true
+}

@@ -1,0 +1,23 @@
+{
+  "model_id": "semantic224/mini_inception",
+  "epochs": 2,
+  "best_epoch": 2,
+  "best_validation_loss": 0.17162424168984095,
+  "test_standardized_mse": 0.16856876423954964,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.13007871806621552,
+      "rmse": 0.15879471600055695,
+      "r2": 0.9411352872848511
+    },
+    "delta_t": {
+      "mae": 0.10308543592691422,
+      "rmse": 0.16088418662548065,
+      "r2": 0.7025128602981567
+    }
+  },
+  "elapsed_seconds": 189.90444720000232,
+  "peak_cuda_memory_mb": 664.13330078125,
+  "parameter_count": 990706,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\test_11700\\semantic224\\mini_inception\\best_checkpoint.pt"
+}

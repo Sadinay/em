@@ -1,0 +1,46 @@
+{
+  "status": "ready",
+  "lookup_path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\outputs\\lookups\\spmsm_polar90_224_full_motor.npz",
+  "coordinate_system": "polar90",
+  "image_shape": [
+    224,
+    224
+  ],
+  "coverage": "complete 0-90 degree FEM motor quadrant",
+  "coordinate_bounds": {
+    "theta_deg": [
+      0.0,
+      90.0
+    ],
+    "radius_mm": [
+      0.0,
+      64.0
+    ]
+  },
+  "outer_radius_mm": 64.0,
+  "mesh_nodes": 39611,
+  "mesh_triangles": 78082,
+  "fem_block_labels": 492,
+  "design_block_labels": 480,
+  "mapped_gene_count": 120,
+  "copies_per_gene": 4,
+  "design_pixels": 2024,
+  "geometry_pixels": 50176,
+  "minimum_pixels_per_gene": 8,
+  "maximum_pixels_per_gene": 24,
+  "fixed_pixel_counts": {
+    "air": 23962,
+    "iron": 19872,
+    "winding": 4318,
+    "other": 0
+  },
+  "polar_layout_note": "for polar90, columns are physical angle 0..90 degrees and rows are radius 0..outer radius; the complete motor is included and no design-band crop is used",
+  "source": {
+    "fem": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem",
+    "fem_sha256": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5",
+    "mat": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+    "mat_sha256": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+    "ans_mesh": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\history_replay_validation_minangle25\\final_high_tavg\\angle_0\\model.ans",
+    "ans_mesh_sha256": "0fcf40ad278d792bb36f419f6dadd6b51748ebd7e5c4a0a7afba0f5f967b5bcb"
+  }
+}

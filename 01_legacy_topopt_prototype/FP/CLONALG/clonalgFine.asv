@@ -1,0 +1,583 @@
+clear; close all; clc;
+
+%% 1) 读粗网格最优
+S = load('C:\Users\lenovo\Desktop\FP\IA_test\best_bits_coarse.mat', ...
+         'best_bits','cfg','ctx','bestOverall');   % 你保存的字段
+best_bits_coarse = S.best_bits;
+cfg_coarse       = S.cfg;
+domain_coarse    = S.ctx.domain;
+
+%% 2) 定义细网格 cfg（几何参数尽量一致，只改 nr/nt）
+cfg_fine = cfg_coarse;
+cfg_fine.nr = 18;     % 举例：加密
+cfg_fine.nt = 10;
+
+domain0_f = stator_design_domain_blank(cfg_fine);
+theta0    = 0;
+domain_f  = prepare_design_domain(domain0_f, theta0);
+
+% 重新组装 ctx_fine（基本照抄你 coarse 的 ctx 组装，只把 domain 改成 domain_f）
+ctx_f = S.ctx;                 % 先复制大部分
+ctx_f.cfg    = cfg_fine;
+ctx_f.domain = domain_f;
+ctx.baseFemFile = 'blank_inset_18x10.fem';
+
+% 注意：如果你 coarse 的 groupId / baseFemFile / 设计域构建依赖 nr/nt
+% 那这里要确保 ctx_f 中相关字段是适配 fine 的（通常 groupId 不变、baseFemFile 不变）
+
+%% 3) coarse -> fine seed
+seed_bits_fine = map_bits_coarse_to_fine(best_bits_coarse, cfg_coarse, domain_coarse, cfg_fine, domain_f);
+
+%% 4) 初始化种群
+Nd = domain_f.Nd;
+N  = 6;  % 细网格建议比粗网格稍大，否则探索不足
+
+Ab = zeros(N, Nd);
+Ab(1,:) = seed_bits_fine;
+Ab(2,:) = mutate_trit(seed_bits_fine, 0.04);   % 精修
+Ab(3,:) = mutate_trit(seed_bits_fine, 0.10);   % 中扰动
+Ab(4,:) = mutate_trit(seed_bits_fine, 0.18);   % 更强探索
+Ab(5,:) = randi([0,2], 1, Nd);                 % 可选：移民（也可用"带先验随机"替代）
+Ab(6,:) = mutate_trit(seed_bits_fine, 0.06);
+gen  = 5;                   % Number of generations
+% pm_start = 0.15;   % 原来的 pm
+% pm_end   = 0.03;   % 后期别太小，0.03~0.08 都行
+% 
+% alpha = (it-1)/(gen-1);          % 0 -> 1
+% pm_t  = pm_start + (pm_end - pm_start)*alpha;                 % Mutation probability
+d    = 0.2;                  % Population to suffer random reshuffle %保证N*d>1
+beta = 0.5;                  % Proportion of clones %保证N*
+
+% 可选：初始化后 repair 一下（至少 iron 浮岛清理）
+% for i=1:N
+%     Ab(i,:) = remove_floating_iron(Ab(i,:), ctx_f.cfg, ctx_f.ironCode, ctx_f.airCode, ctx_f.thetaPeriodic);
+% end
+
+%% 5) 后面就是你现成 IA 主循环（把 ctx 换成 ctx_f, Nd 换成 Nd）
+% ... parpool / W / f_wrapper(bits, ctx_f, W) ...
+% ... for it=1:gen 评估/克隆/超变异/择优/shift/精英回填 ...
+% Function to optimization
+p = gcp('nocreate');
+if ~isempty(p), delete(p); end
+parpool('local', min(N, feature('numcores')));
+
+W = parallel.pool.Constant(@() femm_worker_init(ctx), @(S) femm_worker_cleanup(S));
+
+f = @(bits) f_wrapper(bits, ctx_f, W);
+
+fbest = 0; % Global f best (minimum)
+
+% General defintions
+% 预分配
+J_hist      = nan(gen,1);        % 每代最优 J
+best_bits_hist = zeros(gen, Lbit);% 可选：记录每代的最优基因串
+
+
+%% --------- 迭代 ----------
+globalBestJ    = inf;
+globalBestBits = Ab(1,:);
+
+for it = 1:gen
+pm_min = 0.03;
+pm_max = 0.2;        % 你已有的退火 pm_t 作为上限
+gamma  = 2;           % 越大越"差的更乱变"
+
+pm_i = pm_min + (pm_max - pm_min) * ((i-1)/(N-1))^gamma;                % Mutation probability
+    % 1) 评估当前种群
+    % J = zeros(N,1);
+    % p = gcp();
+    % parfor (i = 1:N, p.NumWorkers)
+    %     J(i) = f(Ab(i,:));
+    % end
+    p = gcp();
+    F = parallel.FevalFuture.empty(N,0);
+    for i = 1:N
+        F(i) = parfeval(p, f, 1, Ab(i,:));
+    end
+
+    J = zeros(N,1);
+    for k = 1:N
+        [idx, val] = fetchNext(F);
+        J(idx) = val;
+    end
+
+    % 2) 排序（越小越好）
+    [J_sorted, ind] = sort(J);
+
+    bestJ = J_sorted(1);
+    best_bits_hist(it,:) = Ab(ind(1),:);   % <--- 记录该代最优设计
+    J_hist(it) = bestJ;
+    fprintf('Gen %2d: best J = %.4f\n', it, bestJ);
+
+if bestJ < globalBestJ
+    globalBestJ    = bestJ;
+    globalBestBits = Ab(ind(1),:);
+end
+
+eliteBits = globalBestBits;
+eliteJ    = globalBestJ;
+% 如果已经是最后一代：别再生成下一代了，直接结束
+if it == gen
+    break;
+end
+    % 3) 按排名克隆
+    % 每个个体克隆 cs(i) 个
+    % 3) 按排名克隆（让好的个体多克隆）
+    cs_max = round(beta * N * 1.5);  % 自己调, 比如 N=6,beta=0.5 -> cs_max≈5
+    cs_min = 1;
+
+    rank = 1:N;  % rank=1 最优
+    cs = round( cs_max - (cs_max-cs_min) * (rank-1)/(N-1) );
+    cs(cs < cs_min) = cs_min;
+
+    pcs = cumsum(cs);
+    T   = zeros(pcs(end), Lbit);
+
+    start_idx = 1;
+    for i = 1:N
+        stop_idx = pcs(i);
+        T(start_idx:stop_idx, :) = repmat( Ab(ind(i),:), cs(i), 1 );
+        start_idx = stop_idx + 1;
+    end
+
+    % 4) 变异（按 bit 翻转）
+    M = rand(size(T)) <= pm_i;    % 变异掩膜
+    if any(M(:))
+        idx = find(M);
+
+        old = T(idx);           % 旧值 0/1/2
+        delta = randi([1,2], size(old));   % 1 or 2
+        new  = mod(old + delta, 3);        % 0->1/2, 1->2/0, 2->0/1 (一定变)
+
+        T(idx) = new;
+    end
+
+    % 5) 评估克隆池
+    % J_T = zeros(size(T,1),1);
+    % p = gcp();
+    % parfor (i = 1:size(T,1), p.NumWorkers)
+    %     J_T(i) = f(T(i,:));
+    % end
+    p = gcp();
+    M = size(T,1);
+    F = parallel.FevalFuture.empty(M,0);
+    for i = 1:M
+        F(i) = parfeval(p, f, 1, T(i,:));
+    end
+
+    J_T = zeros(M,1);
+    for k = 1:M
+        [idx, val] = fetchNext(F);
+        J_T(idx) = val;
+    end
+
+    [minCloneJ, idxMinClone] = min(J_T);
+if minCloneJ < globalBestJ
+    globalBestJ    = minCloneJ;
+    globalBestBits = T(idxMinClone,:);
+end
+
+    % 6) 每个簇：父代 vs 最优克隆，择优进入 newAb
+    newAb = zeros(size(Ab));
+    start_idx = 1;
+    for i = 1:N
+        stop_idx = pcs(i);
+
+        parentBits = Ab(ind(i),:);   % 排名第 i 的父代
+        parentJ    = J_sorted(i);
+
+        [bestCloneJ, localBest] = min( J_T(start_idx:stop_idx) );
+        bestCloneBits = T(start_idx + localBest - 1, :);
+
+        % 变异没带来提升，就保留父代（防退化）
+        if bestCloneJ <= parentJ
+            newAb(i,:) = bestCloneBits;
+        else
+            newAb(i,:) = parentBits;
+        end
+
+        start_idx = stop_idx + 1;
+    end
+
+    % 7) Repertoire shift：随机重置一些个体（但不动精英）
+    nedit = max(1, round(d * N));
+
+    candidates = 2:N;  % 1号留给精英
+    if ~isempty(candidates)
+        rp = candidates(randperm(numel(candidates), min(nedit, numel(candidates))));
+        newAb(rp,:) = randi([0,2], numel(rp), Nd);
+    end
+
+    % ====== 精英强行塞回（保证不丢）======
+    newAb(1,:) = globalBestBits;
+
+    % 更新种群
+    Ab = newAb;
+end
+
+% --------- 画收敛曲线 ----------
+figure;
+semilogy(J_hist,'-o');
+grid on;
+xlabel('Generation');
+ylabel('Best J (log scale)');
+title('Clonal Selection on Topology Bits');
+
+[bestOverall, genIdx] = min(J_hist);
+fprintf('\nBest J found = %.4f at generation %d\n', bestOverall, genIdx);
+
+best_bits = best_bits_hist(genIdx,:);   % 这一代的基因就是全局最优
+
+% best_bits = remove_floating_iron(best_bits, ctx.cfg, ctx.ironCode, ctx.airCode, ctx.thetaPeriodic);
+
+%% ---------- 保存最优结果（bits + FEMM 文件） ----------
+outDir = 'C:\Users\lenovo\Desktop\FP\IA_test';
+if ~exist(outDir,'dir'), mkdir(outDir); end
+
+tag = datestr(now,'yyyymmdd_HHMMSS');
+save(fullfile(outDir, ['best_result_' tag '.mat']), ...
+    'best_bits','bestOverall','genIdx','J_hist','best_bits_hist','cfg','ctx');
+
+bestFemPath = fullfile(outDir, sprintf('best_J%.6g_%s.fem', bestOverall, tag));
+bestPngPath = fullfile(outDir, sprintf('best_J%.6g_%s.png', bestOverall, tag));
+
+save(fullfile(outDir, 'best_bits_coarse.mat'), 'best_bits', 'cfg', 'ctx', 'bestOverall'); %%保数数据
+save_best_design_femm(best_bits, ctx, bestFemPath, bestPngPath); %%保存结构图
+
+fprintf('Saved best FEMM model to:\n  %s\n', bestFemPath);
+fprintf('If analyzed, solution .ans will be next to it with same basename.\n');
+% % Minimization problem
+% x  = valx(1);
+% y  = valy(1);
+% fx = vfx(end);
+%
+% % Plot
+% figure
+% semilogy(vfx)
+% title('Minimization')
+% xlabel('Iterations')
+% ylabel('Best f(x,y)')
+% grid on
+%
+% txt2 = ['F Best: ', num2str(fbest)];
+% text(0,1,txt2,'Units','normalized',...
+%      'HorizontalAlignment','left','VerticalAlignment','bottom');
+%
+% txt3 = ['F Found: ', num2str(fx)];
+% text(1,1,txt3,'Units','normalized',...
+%      'HorizontalAlignment','right','VerticalAlignment','bottom');
+
+
+%%
+% INTERNAL FUNCTIONS
+
+function imprime(PRINT,vx,vy,vz,x,y,fx)
+
+if PRINT == 1
+    meshc(vx,vy,vz)
+    hold on
+    title('Minimization')
+    xlabel('x')
+    ylabel('y')
+    zlabel('f(x,y)')
+    plot3(x,y,fx,'k*')
+    colormap jet
+    drawnow
+    hold off
+    pause(0.1)
+end
+
+end
+
+function [T,pcs] = reprod(N,beta,ind,Ab)
+
+% N	   -> number of clones
+% beta -> multiplying factor
+% ind  -> best individuals
+% Ab   -> antibody population
+
+% T	   -> temporary population
+% pcs  -> final position of each clone
+
+T = [];
+
+for i = 1:N
+    cs(i) = round(beta*N);
+    pcs(i) = sum(cs);
+    T = [T; ones(cs(i),1) * Ab(ind(end-i+1),:)];
+end
+
+end
+
+function pm = pmcont(pm,pma,pmr,it,itpm)
+
+% pma  -> initial value
+% pmr  -> control rate
+% itpm -> iterations for restoring
+
+if rem(it,itpm) == 0
+    pm = pm * pmr;
+    if rem(it,10*itpm) == 0
+        pm = pma;
+    end
+end
+
+end
+
+function z = decode(Ab,varMin,varMax)
+
+% x	-> real value (precision: 6)
+% v	-> binary string (length: 22)
+
+Ab = fliplr(Ab);
+s = size(Ab);
+aux = 0:1:21;
+aux = ones(s(1),1)*aux;
+x1 = sum((Ab.*2.^aux),2);
+
+% Keeping values between bounds
+z = varMin + x1' .* (varMax - varMin)/(2^22 - 1);
+
+end
+
+function Ab = cadeia(n1,s1)
+
+% Antibody (Ab) chains
+Ab = randi([0,1], n1, s1);
+
+end
+
+function J = f_wrapper(bits, ctx, W)
+t = getCurrentTask();
+wid = -1; if ~isempty(t), wid = t.ID; end
+fprintf('[%s] worker %d START\n', datestr(now,'HH:MM:SS.FFF'), wid);
+% 1) 悬浮铁修复（只处理铁，铜先不管）
+% bits = remove_floating_iron(bits, ctx.cfg, ctx.ironCode, ctx.airCode, ctx.thetaPeriodic);
+
+% 2) FEMM 评估
+S = W.Value;
+[J, ~, ~] = eval_design_femm_worker(bits, ctx, S);
+
+fprintf('[%s] worker %d END\n', datestr(now,'HH:MM:SS.FFF'), wid);
+end
+
+function bits2 = remove_floating_iron(bits, cfg, ironCode, airCode, thetaPeriodic)
+% 只保留与"外侧边界（nr行）"连通的铁，其余铁 -> air
+% thetaPeriodic=true 时，theta方向左右边界相连（适用于扇区重复/整圆周期）
+
+if nargin < 5, thetaPeriodic = false; end
+
+nr = cfg.nr; nt = cfg.nt;
+B  = reshape(bits, [nr, nt]);
+isIron = (B == ironCode);
+
+% 锚点：设计域最外一圈（靠固定背轭）
+support = false(nr, nt);
+support(nr, :) = true;
+
+seeds = find(isIron & support);
+
+% 若没有任何锚点铁：
+% - 如果内部根本没铁：直接返回
+% - 如果内部有铁：说明全部铁都不与背轭接触 => 全部删掉
+if isempty(seeds)
+    if any(isIron(:))
+        B(isIron) = airCode;
+    end
+    bits2 = B(:).';
+    return;
+end
+
+% BFS
+keep = false(nr, nt);
+q = seeds(:);
+keep(q) = true;
+
+while ~isempty(q)
+    idx = q(1); q(1) = [];
+    [r,c] = ind2sub([nr,nt], idx);
+
+    % 4邻接
+    nb = [r-1 c; r+1 c; r c-1; r c+1];
+
+    for k = 1:4
+        rr = nb(k,1); cc = nb(k,2);
+
+        % theta周期：左右边界 wrap
+        if thetaPeriodic
+            if cc < 1,  cc = nt; end
+            if cc > nt, cc = 1;  end
+        end
+
+        % 非周期时，越界直接跳过
+        if rr<1 || rr>nr || cc<1 || cc>nt
+            continue;
+        end
+
+        if isIron(rr,cc) && ~keep(rr,cc)
+            keep(rr,cc) = true;
+            q(end+1,1) = sub2ind([nr,nt], rr, cc);
+        end
+    end
+end
+
+% 删除悬浮铁
+floatingIron = isIron & ~keep;
+B(floatingIron) = airCode;
+
+bits2 = B(:).';
+end
+
+
+function y = mutate_trit(x, pm)
+% trit 变异：0/1/2 随机跳到另外两个值之一
+y = x;
+M = rand(size(x)) < pm;
+if any(M)
+    idx = find(M);
+    old = y(idx);
+    delta = randi([1,2], size(old));
+    y(idx) = mod(old + delta, 3);
+end
+end
+
+function seed_bits = make_seed_bits_from_reference(ctx)
+dom = ctx.domain;
+Nd  = dom.Nd;
+
+% 假设 dom 里有 x_c, y_c（如果是 r_c 更方便）
+r = hypot(dom.x_c, dom.y_c);
+
+rmin = min(r); rmax = max(r);
+rho = (r - rmin) / (rmax - rmin + eps); % 0..1
+
+seed_bits = zeros(1,Nd);    % 先全空气(0)
+
+% 中外层设为铁(1)：让它天然连到外侧固定铁
+seed_bits(rho > 0.8) = 1;
+
+seed_bits( (rho > 0.2) & (rho < 0.8) ) = 2;
+
+seed_bits(rho < 2) = 1;
+
+% 内层先留空（你后面让算法去"长齿/补铁"）
+% seed_bits(rho < 0.25) = 0;
+
+% 如果你想让 seed 更"像图里那样有齿"，可以再加一个角度条纹/扇区规则
+% （等你确认 dom 里 theta 的定义，我可以给你写得更贴合）
+end
+
+
+function save_best_design_femm(best_bits, ctx, femPath, pngPath)
+% 作用：
+%  1) 打开 baseFemFile
+%  2) 应用 best_bits 对应的设计（与你 parfor 里一样的构建逻辑）
+%  3) mi_saveas 保存为 femPath
+%  4) mi_analyze -> 自动生成同名 .ans
+%  5) 可选：导出一张位图 png
+
+% 建议：这里用一个"干净的 FEMM 实例"来复现，避免并行 worker 状态影响
+openfemm;
+
+% 打开基础模型（你 ctx.baseFemFile）
+opendocument(ctx.baseFemFile);
+
+% ====== 关键：调用你现有的"应用bits到模型"的函数 ======
+% 你在 eval_design_femm_worker 里已经做过同样的事情
+% 推荐你把"删旧label + 打新label"的那段封装成一个函数，比如：
+% femm_apply_design_bits_rep6(best_bits, ctx.domain, ...)
+%
+% 这里我假设你已经有 femm_apply_design_bits_rep6：
+mi_selectgroup(ctx.groupId_core);  mi_deleteselected();
+mi_selectgroup(ctx.groupId_ring);  mi_deleteselected();
+
+domain          = ctx.domain;
+phase_id_sector = ctx.phase_id_sector;
+N_phase_total   = ctx.N_phase_total;
+
+[mat_code, turns_per_cell] = compute_turns_per_cell(best_bits, domain, phase_id_sector, N_phase_total);
+femm_apply_design_bits_rep6(best_bits, ctx.domain, ctx.phase_id_sector, ...
+    ctx.mats, ctx.circNames, ...
+    ctx.groupId_core, ctx.groupId_ring,turns_per_cell);
+
+% 保存 .fem
+mi_saveas(femPath);
+
+% 求解（会在同目录生成同名 .ans）
+mi_analyze(1);
+mi_loadsolution;
+
+% 可选：导出一张图（磁密云图/矢量图等，取决于你当前显示设置）
+if nargin >= 4 && ~isempty(pngPath)
+    try
+        mo_savebitmap(pngPath);
+    catch
+        % 有些 FEMM 版本/状态下 bitmap 导出会失败，不影响 fem/ans 保存
+    end
+end
+
+% 关闭后处理窗口（可选）
+try, mo_close; end
+try, mi_close; end
+try, closefemm; end
+end
+
+function seed_bits_fine = map_bits_coarse_to_fine(best_bits_coarse, cfg_coarse, domain_coarse, cfg_fine, domain_fine)
+% 将粗网格 trit (0/1/2) 映射到细网格
+% 依据：每个 cell 中心点 (x_c,y_c) -> 极坐标 (r,theta) -> 对应到粗网格 bin
+%
+% 前提：粗细两次的设计域几何范围一致（同一扇区、同一径向范围），只是 nr/nt 更细。
+
+nrC = cfg_coarse.nr;  ntC = cfg_coarse.nt;
+nrF = cfg_fine.nr;    ntF = cfg_fine.nt;
+
+BC = reshape(best_bits_coarse, [nrC, ntC]);  % 注意：你其他地方也这么 reshape 的
+
+% --- 1) 用粗网格中心点估计 ρ(r) 的归一化范围，theta 的范围 ---
+rC = hypot(domain_coarse.x_c, domain_coarse.y_c);
+rmin = min(rC); 
+rmax = max(rC);
+
+% 角度：用 coarse 的中心点估计扇区中心角，然后构造扇区范围
+thC = atan2d(domain_coarse.y_c, domain_coarse.x_c);   % deg, [-180,180]
+% 把角度 unwrap 到连续区间（避免跨 -180/180）
+thC_unwrap = unwrap(deg2rad(thC)); thC_unwrap = rad2deg(thC_unwrap);
+
+th_center = median(thC_unwrap);
+th_span   = cfg_coarse.theta_span_deg;   % 例如 15 deg
+th_min    = th_center - th_span/2;
+th_max    = th_center + th_span/2;
+
+% --- 2) 对 fine 网格每个 cell，计算它落在哪个 coarse bin ---
+seed_bits_fine = zeros(1, domain_fine.Nd);
+
+rF  = hypot(domain_fine.x_c, domain_fine.y_c);
+thF = atan2d(domain_fine.y_c, domain_fine.x_c);
+thF_unwrap = unwrap(deg2rad(thF)); thF_unwrap = rad2deg(thF_unwrap);
+
+% 将 th 映射到 [th_min, th_max) 的等效角（扇区内）
+% 如果你扇区不跨 180/-180，这个基本稳；跨界时 unwrap 已经处理了连续性
+th_rel = thF_unwrap;
+
+% 归一化坐标（0..1）
+rho = (rF - rmin) ./ (rmax - rmin + eps);
+tau = (th_rel - th_min) ./ (th_max - th_min + eps);
+
+% 限幅
+rho = min(max(rho, 0), 1);
+tau = min(max(tau, 0), 1);
+
+% 对应到 coarse 的索引（1..nrC, 1..ntC）
+r_idx = 1 + round(rho * (nrC - 1));
+t_idx = 1 + round(tau * (ntC - 1));
+
+% 防越界
+r_idx = min(max(r_idx, 1), nrC);
+t_idx = min(max(t_idx, 1), ntC);
+
+% 赋值
+for k = 1:domain_fine.Nd
+    seed_bits_fine(k) = BC(r_idx(k), t_idx(k));
+end
+end
+

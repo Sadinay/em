@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "compatibility_mode": "historical_compatibility",
+  "selection": {"metric": "historical_j", "direction": "minimize"},
+  "training_label": "torque_ratio",
+  "seed": {
+    "mat_path": "C:\\Users\\26096\\Desktop\\em\\FP\\CLONALG\\seed_bits_fine.mat",
+    "mat_variable": "seed_bits",
+    "mat_sha256": "2665708b95df13c525483463ec0d836bc9f1bee73e93f53fc29a7762d4b208e7",
+    "chromosome_sha256": "00435b1e344f7280618f320a984a2ee6526a0debe44967d6f071d8662a6ceac3"
+  },
+  "reference_model": {
+    "kind": "unsegmented_fixed_fem",
+    "fem_path": "C:\\Users\\26096\\Desktop\\em\\FP\\CLONALG\\strukturFemm.fem",
+    "fem_sha256": "08aa0006e8de407b45d8349df27b5a73df8cbfeda7fa1517f6bfe356e7e51fcf",
+    "geometry_mode": "strukturFemm_unsegmented",
+    "circuit_mode": "three_phase_abc",
+    "circuit_names": ["A", "B", "C"]
+  },
+  "candidate_model": {
+    "base_fem_path": "C:\\Users\\26096\\Desktop\\em\\FP\\CLONALG\\blank_18x10.FEM",
+    "base_fem_sha256": "f81278d2deefce49294116336205dfef3d80aadccf965325db0b09168a1f3046",
+    "geometry_mode": "merged_copper_v5",
+    "circuit_mode": "split_six_phase_signs",
+    "circuit_names": ["A+", "A-", "B+", "B-", "C+", "C-"]
+  },
+  "physics": {
+    "torque_angles_deg": [0, 3, 6, 9, 12, 15],
+    "stator_current_peak_a": 3.5,
+    "electrical_angle_multiplier": 4.0,
+    "electrical_phase_offset_deg": 90.0,
+    "rotor_group": 1,
+    "air_gap_boundary_name": "Air gap",
+    "air_gap_inner_angle_property_index": 10,
+    "circuit_current_property_index": 1,
+    "torque_block_integral_type": 22,
+    "units": {"length": "millimeters", "torque": "N*m", "current": "A"},
+    "femm_executable": "C:\\femm42\\bin\\femm.exe",
+    "femm_version": "4.2",
+    "solver_process_name": "fkn.exe",
+    "mesh_and_material_settings_source": "embedded_in_fem_models"
+  },
+  "constraints": {
+    "rule_version": "historical_march_checked_in_matlab_source",
+    "theta_periodic": false,
+    "minimum_copper_island_cells": 4,
+    "floating_iron_anchor": "outer_radial_row",
+    "connectivity": 4,
+    "known_floating_iron_trace_drift_records": 99
+  },
+  "historical_objective": {
+    "save_J": true,
+    "minimum_average_torque_nm": 0.8,
+    "average_torque_penalty_coefficient": 10.0,
+    "ripple_denominator_floor_nm": 1e-6,
+    "floating_iron_sigmoid_k": 50.0,
+    "floating_iron_sigmoid_weight": 0.1,
+    "floating_copper_sigmoid_k": 30.0,
+    "floating_copper_sigmoid_weight": 0.05,
+    "invalid_base_objective": 1000000.0,
+    "invalid_per_floating_iron_cell": 50.0,
+    "invalid_per_small_copper_cell": 50.0
+  },
+  "clonalg": {
+    "population_size": 10,
+    "beta": 0.4,
+    "random_immigrant_fraction": 0.2,
+    "near_fraction_of_nonseed": 0.6,
+    "middle_fraction_of_nonseed": 0.2,
+    "near_mutation_probability": 0.05,
+    "middle_mutation_probability": 0.12,
+    "far_mutation_probability": 0.25,
+    "hypermutation_min_probability": 0.03,
+    "hypermutation_max_probability": 0.2,
+    "hypermutation_rank_exponent": 2.0,
+    "immigrant_best_mutation_probability": 0.25,
+    "immigrant_best_branch_probability": 0.5,
+    "elite_count": 1,
+    "crossover": false,
+    "random_seed": 20260818
+  },
+  "fitness_bands": {
+    "interval_convention": "left_closed_right_open",
+    "negative_torque_separate": true,
+    "targets": {"B1": 0, "B2": 120, "B3": 120, "B4": 140, "B5": 170, "B6": 180, "B7": 100}
+  },
+  "limits": {
+    "target_valid_unique_samples": 300,
+    "minimum_samples_per_band": 0,
+    "maximum_candidates": 100000,
+    "maximum_femm_evaluations": 600,
+    "maximum_generations": 1000,
+    "maximum_runtime_hours": 720
+  },
+  "recovery": {
+    "max_attempts_per_angle": 2,
+    "angle_timeout_seconds": 360,
+    "max_consecutive_femm_failures": 3,
+    "checkpoint_every_completed_angle": true,
+    "keep_previous_checkpoint": true,
+    "single_femm_process_only": true
+  }
+}

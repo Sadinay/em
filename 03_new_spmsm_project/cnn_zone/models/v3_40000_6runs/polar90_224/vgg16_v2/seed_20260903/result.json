@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "experiment_id": "polar90_224/vgg16_v2",
+  "seed": 20260903,
+  "epochs_completed": 40,
+  "best_epoch": 39,
+  "best_validation_standardized_mse": 0.005224786694759922,
+  "test_standardized_mse": 0.006491925961544992,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.0065152570605278015,
+      "rmse": 0.012045360170304775,
+      "r2": 0.9988573789596558,
+      "bias": 0.0016485691303387284,
+      "absolute_error_p95": 0.017833685502409935
+    },
+    "delta_t": {
+      "mae": 0.011925505474209785,
+      "rmse": 0.020807400345802307,
+      "r2": 0.9883148074150085,
+      "bias": -0.000127759063616395,
+      "absolute_error_p95": 0.030222347006201744
+    }
+  },
+  "elapsed_seconds": 9174.165467700004,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt"
+}

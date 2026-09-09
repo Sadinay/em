@@ -1,0 +1,349 @@
+clear all;
+% %%
+% femmfunc_design();
+% 
+%    cfg = struct('nr',8,'nt',16,'r_inner',31.5,'r_outer',54,...
+%      'theta_span_deg',15,'slot_center_deg',7.5,...
+%      'lip_w',1.8,'lip_h',2.5,'top_w',8.7,'top_h',2,...
+%      'bottom_w',15.5,'bottom_h',12.645+2.5,'slot_depth',17.5,...
+%      'yoke_buffer_deg',0.1);
+%    domain0 = stator_design_domain_blank(cfg);
+%    % visualize_design_domain(domain); % 可视化确认掩膜是否符合预期
+%    theta_offset_deg = 0; 
+%    % femm_debug_design_domain(domain, cfg, theta_offset_deg);
+%    femm_draw_design_grid(domain0, theta_offset_deg, 20);
+% % visualize_design_cells(domain, theta_offset_deg);
+% %%
+% domain = prepare_design_domain(domain0, theta_offset_deg);
+% Nd      = domain.Nd;         % 可设计格子数
+% r_c     = hypot(domain.x_c, domain.y_c);   % 每个格子中心的半径
+% circNames = {'A+','A-','B+','B-','C+','C-'};  % 6 条电路
+% % sectorCircuit(s) = 第 s 个 15° 扇区的电路编号（对应 circNames）
+% % 例如：0~15° → A+, 15~30° → B+, 30~45° → C+, 45~60° → A-, 60~75° → B-, 75~90° → C-
+% sectorCircuit = [4 3 6 5 2 1];    % 按你自己的相序填；这里只是一个例子
+% 
+% phase_id_sector = cell(6,1);      % 6 个扇区，每个一个 Nd×1 向量
+% 
+% for s = 1:6
+%     pid = sectorCircuit(s);       % 1..6
+%     phase_id_sector{s} = pid * ones(Nd,1);   % 整个扇区里的铜都挂到同一条电路
+% end
+% 
+% Nd   = domain.Nd;
+% L    = 2 * Nd;
+% 
+% % 1) 随机一条基因串
+% bits = rand(1, L) > 0.5;
+% 
+% % 2) 6 个扇区的旋转角
+% sector_offsets_deg = 0:15:75;
+% 
+% % 3) 材料名（按你 FEMM 工程改）
+% mats = struct();
+% mats.air      = 'Air';
+% mats.iron     = 'Pure Iron';
+% mats.copper   = 'Copper';
+% mats.meshSize = 1.0;
+% 
+% femm_apply_design_bits_rep6(bits, domain, sector_offsets_deg, ...
+%                             phase_id_sector, mats, circNames, 10);
+
+%%
+% [T_avg, T_ripple] = scantorque(3.5)
+
+% best_param = 25;  % = 39.3212
+% 
+% % 1. 看看最优点的指标
+% femmfunc(best_param)
+% [T_avg_best, T_ripple_best] = scantorque(3.5);
+% F_best = T_avg_best - 1*T_ripple_best;
+
+%%
+% b1 = randi([0,1], 1, 2*domain.Nd);
+% b2 = randi([0,1], 1, 2*domain.Nd);
+% 
+% [J1,Tavg1,Trip1] = eval_design_femm(b1, ctx);
+% [J2,Tavg2,Trip2] = eval_design_femm(b2, ctx);
+% 
+% disp([J1 Tavg1 Trip1]);
+% disp([J2 Tavg2 Trip2]);
+%% ---------- 0. 一次性准备设计域 + ctx ----------
+clear; clc;
+
+% ---- 0.1 设计域参数（示意，改成你自己的 cfg）----
+   cfg = struct('nr',18,'nt',10,'r_inner',31.5,'r_outer',52,...
+     'theta_span_deg',15,'slot_center_deg',7.5,...
+     'lip_w',1.8,'lip_h',2.5,'top_w',8.7,'top_h',2,...
+     'bottom_w',15.5,'bottom_h',12.645+2.5,'slot_depth',17.5,...
+     'yoke_buffer_deg',0.1);
+
+domain0 = stator_design_domain_blank(cfg);  % 你现有的"空白定子设计域"函数
+theta0_deg = 0;                             % 第一块 15° 就是 0~15°
+domain  = prepare_design_domain(domain0, theta0_deg);  % 加上 x_c,y_c,Nd 等
+
+Nd   = domain.Nd;
+Lbit = Nd;
+
+% ---- 0.2 6 个扇区的相别模板（你应该已经有 build_phase_id_sector）----
+circNames = {'A+','A-','B+','B-','C+','C-'};  % 6 条电路
+sectorCircuit = [4 3 6 5 2 1];    % 按你自己的相序填；这里只是一个例子
+phase_id_sector = cell(6,1);      % 6 个扇区，每个一个 Nd×1 向量
+
+for s = 1:6
+    pid = sectorCircuit(s);       % 1..6
+    phase_id_sector{s} = pid * ones(Nd,1);   % 整个扇区里的铜都挂到同一条电路
+end
+
+% ---- 0.3 材料 & 电路名 ----
+mats = struct();
+mats.air      = 'Air';
+mats.iron     = 'Pure Iron';
+mats.copper   = 'Copper';
+mats.meshSize = 1.0;   % 设计域网格尺寸，自己调
+
+% ---- 0.4 每个电路的"总匝数"设定（例子：每个电路 100 匝）----
+N_phase_total = 100 * ones(1, numel(circNames));
+
+% ---- 0.5 FEMM 模板文件 & 分组号 ----
+ctx = struct();
+
+ctx.domain             = domain;
+ctx.sector_offsets_deg = 0:15:75;        % 或者 30+0:15:75 之类
+ctx.phase_id_sector    = phase_id_sector;
+ctx.groupId_design     = 30;             % 设计域 group 号你自己定
+
+ctx.baseFemFile = 'blank_18x10.fem';
+
+ctx.mats = struct();
+ctx.mats.air      = 'Air';
+ctx.mats.iron     = 'Pure Iron';
+ctx.mats.copper   = 'Copper';
+ctx.mats.meshSize = 4.0;
+
+ctx.circNames = {'A+','A-','B+','B-','C+','C-'};
+
+ctx.T_min       = 0.5;    % 目标平均转矩要求（先随便放一个）
+ctx.penaltyCoef = 10;
+
+ctx.N_phase_total   = N_phase_total;
+
+ctx.groupId_core = 30;
+ctx.groupId_ring = 31;
+ctx.inset_r_ratio  = 0.2;
+ctx.inset_th_ratio = 0.2;
+
+ctx.cfg = cfg;
+
+% 你 trit 的材料编码（按你实际改）
+ctx.airCode  = 0;
+ctx.ironCode = 1;
+ctx.cuCode   = 2;
+
+% 你的拓扑是扇区重复的，所以建议 θ 方向周期连通
+ctx.thetaPeriodic = false;
+
+% ===== penalty config for floating islands (scheme A: count-based sigmoid) =====
+ctx.penFloating = struct();
+
+ctx.penFloating.enable = true;
+
+% sigmoid: p = w * sigmoid(k*(nFloat-0.5))
+ctx.penFloating.kFe = 50;
+ctx.penFloating.wFe = 0.10;   % 注意：你的J_em≈0.08，wFe建议>=0.08量级
+ctx.penFloating.kCu = 30;
+ctx.penFloating.wCu = 0.05;
+
+
+%% ---------- 1. 用一条 bits 测试 eval_design_femm ----------
+% Nd   = domain.Nd;
+% Lbit = Nd;
+% 
+% S = load('best_result_0306_groupF_1000gen.mat', 'best_bits', 'cfg');
+% assert(numel(S.best_bits) == ctx.domain.Nd, 'seed_bits length mismatch: cfg changed?');
+% seed_bits = S.best_bits;
+% 
+% fprintf('Before clean: iron=%d, cu=%d, air=%d\n', ...
+%     nnz(seed_bits==ctx.ironCode), nnz(seed_bits==ctx.cuCode), nnz(seed_bits==ctx.airCode));
+% seed_bits2 = remove_floating_iron(seed_bits, ctx.cfg, ctx.ironCode, ctx.airCode, false);
+% fprintf('After  clean: iron=%d, cu=%d, air=%d\n', ...
+%     nnz(seed_bits2==ctx.ironCode), nnz(seed_bits2==ctx.cuCode), nnz(seed_bits2==ctx.airCode));
+% 
+% [J, T_avg, T_ripple] = eval_design_femm(seed_bits2, ctx);
+% 
+% fprintf('Test design: J = %.4f, T_avg = %.3f Nm, T_ripple = %.3f Nm\n', ...
+%         J, T_avg, T_ripple);
+
+%%
+% refFemFile = 'best_J0.080216_20260109_165414.fem';
+% openfemm;
+% opendocument(refFemFile)
+% [theta_deg, T] = scantorque_test(3.5);
+%   T_avg    = mean(T);
+%     T_max    = max(T);
+%     T_min    = min(T);
+%     T_ripple = (T_max - T_min)/max(abs(T_avg), 1e-6);
+
+%%
+
+Nd   = domain.Nd;
+Lbit = Nd;
+
+S = load('seed_bits_filter.mat', 'seed_bits', 'cfg');
+assert(numel(S.seed_bits) == ctx.domain.Nd, 'seed_bits length mismatch: cfg changed?');
+seed_bits = S.seed_bits;
+
+fprintf('Before clean: iron=%d, cu=%d, air=%d\n', ...
+    nnz(seed_bits==ctx.ironCode), nnz(seed_bits==ctx.cuCode), nnz(seed_bits==ctx.airCode));
+seed_bits = remove_floating_iron(seed_bits, ctx.cfg, ctx.ironCode, ctx.airCode, false);
+fprintf('After  clean: iron=%d, cu=%d, air=%d\n', ...
+    nnz(seed_bits==ctx.ironCode), nnz(seed_bits==ctx.cuCode), nnz(seed_bits==ctx.airCode));
+
+fe = detect_floating_iron(seed_bits, ctx.cfg, ctx.ironCode, false);
+Amin=4;
+cu = detect_floating_copper_small_islands(seed_bits, ctx.cfg, ctx.cuCode, ctx.thetaPeriodic,Amin);
+
+fprintf('floatFe=%d/%d (%.3f), floatCu=%d/%d (%.3f), nCompCu=%d\n', ...
+    fe.nFloat, fe.nIron, fe.ratio, cu.nFloat, cu.nCu, cu.ratio, cu.nComp);
+
+A = cu.compSizes(:);
+fprintf('nCu=%d, sum(compSizes)=%d, maxA=%d\n', cu.nCu, sum(A), max(A));
+fprintf('nFloat_reported=%d, nFloat_small_check=%d\n', cu.nFloat, sum(A(A < Amin)));
+
+[J, T_avg, T_ripple] = eval_design_femm_float_test(seed_bits, ctx);
+fprintf('Test design: J = %.4f, T_avg = %.3f Nm, T_ripple = %.3f Nm\n', ...
+        J, T_avg, T_ripple);
+%%
+function [theta_deg, T] = scantorque_test(inp)
+
+    rotor_group = 1;      % 你把转子所有 block 都设成 group=1 了
+    innerIndex  = 10;     % ia = Inner Angle, Deg 在 mi_addboundprop 里的索引是 10
+
+    dtheta    = 3;        % 每步 1°
+    maxAngle  = 15;       % 扫 0~90°
+    theta_deg = 0:dtheta:maxAngle;
+    nSteps    = numel(theta_deg);
+    T         = zeros(nSteps,1);
+
+delta_e_deg = 90;      % 电角度电流相位（90° ≈ 只在 q 轴上，表贴机型大致最大转矩）
+delta_e = delta_e_deg*pi/180;
+
+    % 先保存一次。
+    % mi_saveas('temp_airgap_scan.fem');
+
+    % --- 2) 扫描角度 ---
+    for k = 1:nSteps
+        th = theta_deg(k);          % 机械角，单位：deg
+
+        % 2.1 只改 Air gap 边界的 Inner Angle = 转子角度
+        mi_modifyboundprop('Air gap', innerIndex, th);
+        % Outer Angle(11) 一直保持 0，不用动
+
+            % ===== 新增：根据当前转子位置设置三相电流 =====
+    theta_e = 4 * th * pi/180 + delta_e;  % 电角度（rad）
+
+    Ia = inp * cos(theta_e);
+    Ib = inp * cos(theta_e - 2*pi/3);
+    Ic = inp * cos(theta_e - 4*pi/3);
+
+    % 写入三相电路电流（propID=0 表示电流） //这里修改为了带+-的，所以不能再给参考模型的脚本使用
+    mi_modifycircprop('A+', 1, Ia);
+    mi_modifycircprop('A-', 1, -Ia);
+    mi_modifycircprop('B+', 1, Ib);
+    mi_modifycircprop('B-', 1, -Ib);
+    mi_modifycircprop('C+', 1, Ic);
+    mi_modifycircprop('C-', 1, -Ic);
+        % 2.2 求解
+        mi_analyze(1);
+        mi_loadsolution;
+        % mi_zoomnatural;           % 自动缩放到合适大小
+
+        % 2.3 在转子组上做转矩积分
+        mo_groupselectblock(rotor_group);
+        T(k) = mo_blockintegral(22);    % 22 = Torque
+        mo_clearblock;
+        mo_close;
+    end
+
+    % % --- 3) 简单画图 ---
+    figure;
+    plot(theta_deg, T, '-o');
+    xlabel('Mechanical angle / deg');
+    ylabel('Electromagnetic torque / Nm');
+    grid on;
+    title('Loaded torque vs. rotor position (Air-gap BC)');
+
+    % closefemm;   % 需要的话自己决定什么时候关
+
+ 
+end
+
+function bits2 = remove_floating_iron(bits, cfg, ironCode, airCode, thetaPeriodic)
+% 只保留与"外侧边界（nr行）"连通的铁，其余铁 -> air
+% thetaPeriodic=true 时，theta方向左右边界相连（适用于扇区重复/整圆周期）
+
+if nargin < 5, thetaPeriodic = false; end
+
+nr = cfg.nr; nt = cfg.nt;
+% bits 的线性顺序是按 (it, ir) 走的，需先按 [nt,nr] reshape
+% 再转置成 [nr,nt] 方便用 (r,c) = (ir,it) 访问
+B  = reshape(bits, [nt, nr]).';
+isIron = (B == ironCode);
+
+% 锚点：设计域最外一圈（靠固定背轭）
+support = false(nr, nt);
+support(nr, :) = true;
+
+seeds = find(isIron & support);
+
+% 若没有任何锚点铁：
+% - 如果内部根本没铁：直接返回
+% - 如果内部有铁：说明全部铁都不与背轭接触 => 全部删掉
+if isempty(seeds)
+    if any(isIron(:))
+        B(isIron) = airCode;
+    end
+    bits2 = B(:).';
+    return;
+end
+
+% BFS
+keep = false(nr, nt);
+q = seeds(:);
+keep(q) = true;
+
+while ~isempty(q)
+    idx = q(1); q(1) = [];
+    [r,c] = ind2sub([nr,nt], idx);
+
+    % 4邻接
+    nb = [r-1 c; r+1 c; r c-1; r c+1];
+
+    for k = 1:4
+        rr = nb(k,1); cc = nb(k,2);
+
+        % theta周期：左右边界 wrap
+        if thetaPeriodic
+            if cc < 1,  cc = nt; end
+            if cc > nt, cc = 1;  end
+        end
+
+        % 非周期时，越界直接跳过
+        if rr<1 || rr>nr || cc<1 || cc>nt
+            continue;
+        end
+
+        if isIron(rr,cc) && ~keep(rr,cc)
+            keep(rr,cc) = true;
+            q(end+1,1) = sub2ind([nr,nt], rr, cc);
+        end
+    end
+end
+
+% 删除悬浮铁
+floatingIron = isIron & ~keep;
+B(floatingIron) = airCode;
+
+% 还原成原本的线性顺序 (it, ir)
+bits2 = reshape(B.', 1, []);
+end
+

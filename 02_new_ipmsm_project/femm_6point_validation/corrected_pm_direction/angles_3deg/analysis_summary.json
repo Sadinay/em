@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "candidate_id": "candidate_002",
+  "mapping": "air0",
+  "topology_fix": "all PM labels receive pole-dependent radial magnetization",
+  "angles_mechanical_deg": [
+    0.0,
+    3.0,
+    6.0,
+    9.0,
+    12.0,
+    15.0
+  ],
+  "raw_femm_torques_nm": [
+    -2.260238849589332,
+    -2.35483557236914,
+    -3.103287095616318,
+    -3.184127061015041,
+    -2.844827899619423,
+    -3.295493695330988
+  ],
+  "sign_reversed_torques_nm": [
+    2.260238849589332,
+    2.35483557236914,
+    3.103287095616318,
+    3.184127061015041,
+    2.844827899619423,
+    3.295493695330988
+  ],
+  "historical_tavg_nm": 2.858312027674773,
+  "tavg_candidates_nm": {
+    "mean6": 2.8404683622567073,
+    "mean5_excluding_15": 2.749463295641851,
+    "trapz_0_to_15": 2.8529887802160165
+  },
+  "tavg_relative_errors": {
+    "mean6": 0.0062427283114297885,
+    "mean5_excluding_15": 0.03808147290394673,
+    "trapz_0_to_15": 0.0018623745088764104
+  },
+  "historical_delta_t": 1.067494754869203,
+  "delta_absolute_peak_to_peak": 1.035254845741656,
+  "delta_absolute_peak_to_peak_relative_error": 0.030201468419858803
+}

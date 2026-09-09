@@ -1,0 +1,791 @@
+{
+  "fresh_solves": 30,
+  "fem_ans_hashes_verified": 30,
+  "original_inputs_unchanged": true,
+  "comparison_tolerance_nm": 1e-09,
+  "genes": [
+    {
+      "id": "G1",
+      "tavg_difference_nm": 0.057527568696980724,
+      "delta_t_difference_nm": -0.08975424884221406,
+      "matched_both": false
+    },
+    {
+      "id": "G2",
+      "tavg_difference_nm": -1.092459456231154e-13,
+      "delta_t_difference_nm": -4.1300296516055823e-13,
+      "matched_both": true
+    },
+    {
+      "id": "G3",
+      "tavg_difference_nm": -1.0258460747536446e-13,
+      "delta_t_difference_nm": -1.2514433933574765e-12,
+      "matched_both": true
+    },
+    {
+      "id": "G4",
+      "tavg_difference_nm": 8.881784197001252e-15,
+      "delta_t_difference_nm": -1.5898393712632242e-13,
+      "matched_both": true
+    },
+    {
+      "id": "G5",
+      "tavg_difference_nm": 2.0250467969162855e-13,
+      "delta_t_difference_nm": -5.209166431541234e-13,
+      "matched_both": true
+    }
+  ],
+  "solver_model_rewrites": [
+    {
+      "model": "G1\\phase_0\\angle_29\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G1\\phase_0\\angle_32\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G1\\phase_0\\angle_35\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G1\\phase_0\\angle_38\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G1\\phase_0\\angle_41\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G1\\phase_0\\angle_44\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G2\\phase_0\\angle_29\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G2\\phase_0\\angle_32\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G2\\phase_0\\angle_35\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G2\\phase_0\\angle_38\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G2\\phase_0\\angle_41\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G2\\phase_0\\angle_44\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G3\\phase_0\\angle_29\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G3\\phase_0\\angle_32\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G3\\phase_0\\angle_35\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G3\\phase_0\\angle_38\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G3\\phase_0\\angle_41\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G3\\phase_0\\angle_44\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G4\\phase_0\\angle_29\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G4\\phase_0\\angle_32\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G4\\phase_0\\angle_35\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G4\\phase_0\\angle_38\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G4\\phase_0\\angle_41\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G4\\phase_0\\angle_44\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G5\\phase_0\\angle_29\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G5\\phase_0\\angle_32\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G5\\phase_0\\angle_35\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G5\\phase_0\\angle_38\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G5\\phase_0\\angle_41\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    },
+    {
+      "model": "G5\\phase_0\\angle_44\\model.fem",
+      "changes": [
+        {
+          "line": 3,
+          "before": "[Precision]   =  1e-08",
+          "after": "[Precision]   =  1e-008"
+        },
+        {
+          "line": 4321,
+          "before": "634\t633\t90\t1\t1\t1\t6\t1",
+          "after": "634\t633\t90\t1\t1\t1\t6\t0.87"
+        },
+        {
+          "line": 4322,
+          "before": "636\t635\t90\t1\t2\t1\t0\t1",
+          "after": "636\t635\t90\t1\t2\t1\t0\t0.26000000000000001"
+        },
+        {
+          "line": 4323,
+          "before": "638\t637\t90\t1\t2\t1\t0\t1",
+          "after": "638\t637\t90\t1\t2\t1\t0\t0.26000000000000001"
+        }
+      ]
+    }
+  ],
+  "matched_genes": 4
+}

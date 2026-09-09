@@ -1,0 +1,7 @@
+{
+  "status": "FAILED",
+  "error_type": "Exception",
+  "error": "error: Material properties have not been defined for all regions",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\26096\\Desktop\\em\\python_topopt\\src\\femm_runner\\worker.py\", line 138, in execute\n    torques, angle_timings = _scan_torque(femm, job)\n                             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\26096\\Desktop\\em\\python_topopt\\src\\femm_runner\\worker.py\", line 67, in _scan_torque\n    api.mi_analyze(1)\n  File \"C:\\Users\\26096\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\femm\\__init__.py\", line 1622, in mi_analyze\n    callfemm('mi_analyze' + doargs(*arg));\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\26096\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\femm\\__init__.py\", line 156, in callfemm\n    raise Exception(ErrorMsg)\nException: error: Material properties have not been defined for all regions\n",
+  "total_seconds": 1.8766436000005342
+}

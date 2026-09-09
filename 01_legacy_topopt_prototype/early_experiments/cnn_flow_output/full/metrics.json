@@ -1,0 +1,49 @@
+{
+  "mode": "full",
+  "seed": 20260730,
+  "model_parameters": 13121,
+  "train_samples": 32,
+  "validation_samples": 10,
+  "train_unique_feature_vectors": 16,
+  "validation_unique_feature_vectors": 5,
+  "epochs_completed": 1121,
+  "best_epoch": 621,
+  "feature_names": [
+    "air_fraction",
+    "iron_fraction",
+    "copper_fraction",
+    "radial_transition_rate",
+    "angular_transition_rate",
+    "t_min"
+  ],
+  "feature_mean": [
+    0.193576380610466,
+    0.5869792103767395,
+    0.2194444239139557,
+    0.3847886621952057,
+    0.5628857612609863,
+    0.7421875
+  ],
+  "feature_std": [
+    0.10730557143688202,
+    0.028854461386799812,
+    0.10561037063598633,
+    0.0998455211520195,
+    0.06252738833427429,
+    0.07192593067884445
+  ],
+  "target_mean": 0.22216910123825073,
+  "target_std": 0.3527190685272217,
+  "train_metrics": {
+    "mse": 7.887021638453007e-05,
+    "rmse": 0.008880890517539897,
+    "mae": 0.008718111552298069,
+    "r2": 0.9993660497441449
+  },
+  "validation_metrics": {
+    "mse": 6.739199307048693e-05,
+    "rmse": 0.008209262638659268,
+    "mae": 0.004634881857782602,
+    "r2": 0.9488995966363458
+  }
+}

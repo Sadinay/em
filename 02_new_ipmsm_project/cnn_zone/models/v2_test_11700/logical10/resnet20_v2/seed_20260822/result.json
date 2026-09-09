@@ -1,0 +1,141 @@
+{
+  "status": "complete",
+  "model_id": "logical10/resnet20_v2",
+  "seed": 20260822,
+  "epochs_completed": 30,
+  "best_epoch": 30,
+  "best_validation_standardized_mse": 0.1400685969988505,
+  "test_standardized_mse": 0.15022396357854206,
+  "metrics": {
+    "overall": {
+      "tavg": {
+        "mae": 0.09991125762462616,
+        "rmse": 0.13738009333610535,
+        "r2": 0.9559414386749268,
+        "normalized_mae_by_actual_range": 0.03155999630689621,
+        "bias": -0.04899872839450836,
+        "calibration_slope_predicted_vs_actual": 0.9461769956340754,
+        "calibration_intercept_nm": 0.060790604258894196,
+        "absolute_error_p50": 0.0740358829498291,
+        "absolute_error_p90": 0.21015016734600067,
+        "absolute_error_p95": 0.2820148169994354,
+        "fraction_absolute_error_le_0_05_nm": 0.33466666666666667,
+        "fraction_absolute_error_le_0_10_nm": 0.632
+      },
+      "delta_t": {
+        "mae": 0.08764977753162384,
+        "rmse": 0.1544569730758667,
+        "r2": 0.7258068323135376,
+        "normalized_mae_by_actual_range": 0.035445619374513626,
+        "bias": 0.0008264826028607786,
+        "calibration_slope_predicted_vs_actual": 0.7071107523315758,
+        "calibration_intercept_nm": 0.23022227121685943,
+        "absolute_error_p50": 0.04380643367767334,
+        "absolute_error_p90": 0.2204144448041916,
+        "absolute_error_p95": 0.3444521129131317,
+        "fraction_absolute_error_le_0_05_nm": 0.5466666666666666,
+        "fraction_absolute_error_le_0_10_nm": 0.7593333333333333
+      }
+    },
+    "bands": {
+      "tavg": [
+        {
+          "band": "<0.5",
+          "count": 42,
+          "mae": 0.16711151599884033,
+          "bias": 0.13204962015151978
+        },
+        {
+          "band": "0.5-1.0",
+          "count": 96,
+          "mae": 0.14838659763336182,
+          "bias": -0.000511129095684737
+        },
+        {
+          "band": "1.0-1.5",
+          "count": 147,
+          "mae": 0.16738653182983398,
+          "bias": -0.04103250801563263
+        },
+        {
+          "band": "1.5-2.0",
+          "count": 333,
+          "mae": 0.09572716802358627,
+          "bias": -0.03453103452920914
+        },
+        {
+          "band": "2.0-2.5",
+          "count": 467,
+          "mae": 0.06901250034570694,
+          "bias": -0.0507856123149395
+        },
+        {
+          "band": "2.5-3.0",
+          "count": 409,
+          "mae": 0.09435171633958817,
+          "bias": -0.08911047130823135
+        },
+        {
+          "band": ">=3.0",
+          "count": 6,
+          "mae": 0.216904878616333,
+          "bias": -0.216904878616333
+        }
+      ],
+      "delta_t": [
+        {
+          "band": "<0.5",
+          "count": 266,
+          "mae": 0.1001497283577919,
+          "bias": 0.08867904543876648
+        },
+        {
+          "band": "0.5-0.75",
+          "count": 421,
+          "mae": 0.06933645904064178,
+          "bias": 0.03679875656962395
+        },
+        {
+          "band": "0.75-1.0",
+          "count": 527,
+          "mae": 0.054788172245025635,
+          "bias": -0.006445212755352259
+        },
+        {
+          "band": "1.0-1.5",
+          "count": 257,
+          "mae": 0.12350913882255554,
+          "bias": -0.07724205404520035
+        },
+        {
+          "band": "1.5-2.0",
+          "count": 23,
+          "mae": 0.48043861985206604,
+          "bias": -0.46149787306785583
+        },
+        {
+          "band": ">=2.0",
+          "count": 6,
+          "mae": 0.663148820400238,
+          "bias": -0.663148820400238
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 73.30106479999813,
+  "torch_peak_allocated_mb": 82.12939453125,
+  "gpu_monitor": {
+    "sample_count": 69,
+    "gpu_utilization_percent_mean": 22.971014492753625,
+    "gpu_utilization_percent_p50": 23.0,
+    "gpu_utilization_percent_p90": 25.0,
+    "gpu_utilization_percent_max": 28.0,
+    "driver_memory_used_mb_peak": 3075.0,
+    "power_watts_mean": 49.42550724637682,
+    "temperature_celsius_max": 55.0
+  },
+  "maximum_gradient_norm": 40.28914260864258,
+  "optimizer_steps_total": 5490,
+  "optimizer_steps_per_completed_epoch": 183,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\v2_test_11700\\logical10\\resnet20_v2\\seed_20260822\\best_checkpoint.pt"
+}

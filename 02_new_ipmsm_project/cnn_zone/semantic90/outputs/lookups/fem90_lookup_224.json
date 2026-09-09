@@ -1,0 +1,61 @@
+{
+  "lookup_path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\semantic90\\outputs\\lookups\\fem90_lookup_224.npz",
+  "image_size": 224,
+  "coordinate_bounds_mm": [
+    0.0,
+    64.0
+  ],
+  "pixel_spacing_mm": 0.2857142857142857,
+  "mesh_nodes": 99936,
+  "mesh_triangles": 198019,
+  "fem_block_labels": 411,
+  "design_block_labels": 400,
+  "mapped_gene_count": 100,
+  "copies_per_gene": 4,
+  "all_400_label_centres_match_mesh_regions": true,
+  "design_pixels": 6729,
+  "minimum_pixels_per_gene": 42,
+  "maximum_pixels_per_gene": 96,
+  "fixed_pixel_counts": {
+    "air": 16239,
+    "iron": 11938,
+    "winding": 4428,
+    "other": 0
+  },
+  "replica_definition": {
+    "0": "0..22.5 deg, base",
+    "1": "22.5..45 deg, mirrored",
+    "2": "45..67.5 deg, base",
+    "3": "67.5..90 deg, mirrored"
+  },
+  "pm_polarity_definition": {
+    "-1": "radially inward, 0..45 deg",
+    "1": "radially outward, 45..90 deg"
+  },
+  "source": {
+    "fem": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_zone\\models\\IPMSM.fem",
+    "fem_sha256": "696e68c9f0cbedc7c82ba621f10496fef031b292ff69d4c969b4642ebb515e82",
+    "mat": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\data_zone\\raw\\workspace_600.mat",
+    "mat_sha256": "26b1dc59b72c4b856b75f9a92358d60d1b26093c9f634a44426df98a82271193",
+    "ans_mesh": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\corrected_pm_direction\\angles_3deg\\angle_000\\model.ans",
+    "ans_mesh_sha256": "3812f1477785d62865b230e2297e6468a5c7e10a898a346c3930ef09e76a3748",
+    "fem_counts": {
+      "Format": 4.0,
+      "Frequency": 0.0,
+      "Precision": 1e-08,
+      "MinAngle": 30.0,
+      "Depth": 36.0,
+      "Coordinates": "cartesian",
+      "ProblemType": "planar",
+      "BdryProps": 19,
+      "BlockProps": 104,
+      "CircuitProps": 3,
+      "NumPoints": 512,
+      "NumSegments": 470,
+      "NumArcSegments": 447,
+      "NumHoles": 1,
+      "NumBlockLabels": 411
+    },
+    "ans_material_count": 104
+  }
+}

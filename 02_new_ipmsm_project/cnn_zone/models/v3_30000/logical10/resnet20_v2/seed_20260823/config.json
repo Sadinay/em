@@ -1,0 +1,30 @@
+{
+  "model_id": "logical10/resnet20_v2",
+  "input_mode": "logical10",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "max_epochs": 100,
+  "scheduler_patience": 3,
+  "early_stopping_patience": 6,
+  "physical_batch_candidates": [
+    64
+  ],
+  "effective_batch_size": 64,
+  "input_channels": 3,
+  "physical_batch_size": 64,
+  "optimizer": "AdamW",
+  "loss": "mean MSE over two independently standardized targets",
+  "scheduler": "ReduceLROnPlateau(factor=0.5,min_lr=1e-6)",
+  "amp": true,
+  "amp_grad_scaler_init_scale": 128.0,
+  "amp_overflow_policy": "skip the affected optimizer update, reduce GradScaler scale, and fail only after more than 8 consecutive overflows",
+  "channels_last": false,
+  "seed": 20260823,
+  "dropout_disabled_for_memorization_diagnostic": false,
+  "epoch_checkpoint_resume_enabled": true,
+  "parameter_count": 681938,
+  "train_samples": 30000,
+  "validation_samples": 5000,
+  "test_samples": 1500,
+  "expected_optimizer_steps_per_epoch": 469
+}

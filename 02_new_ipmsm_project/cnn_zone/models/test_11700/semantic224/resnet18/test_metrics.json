@@ -1,0 +1,23 @@
+{
+  "model_id": "semantic224/resnet18",
+  "epochs": 2,
+  "best_epoch": 1,
+  "best_validation_loss": 0.3146005799372991,
+  "test_standardized_mse": 0.3082192753950755,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.2843177020549774,
+      "rmse": 0.3352547287940979,
+      "r2": 0.7376188635826111
+    },
+    "delta_t": {
+      "mae": 0.12421493232250214,
+      "rmse": 0.1810297966003418,
+      "r2": 0.6233468651771545
+    }
+  },
+  "elapsed_seconds": 636.5224234000052,
+  "peak_cuda_memory_mb": 1162.8466796875,
+  "parameter_count": 11303554,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\test_11700\\semantic224\\resnet18\\best_checkpoint.pt"
+}

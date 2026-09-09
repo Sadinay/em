@@ -1,0 +1,33 @@
+{
+  "best_historical_j_by_campaign": {
+    "CAMPAIGN-01": 0.06651460990676095,
+    "CAMPAIGN-02": 0.11609032324320435,
+    "CAMPAIGN-03": 0.11764185842683524,
+    "CAMPAIGN-04": 0.2315514003272898,
+    "CAMPAIGN-05": 0.25901004296364855,
+    "CAMPAIGN-06": 4.908256604887342
+  },
+  "campaign_index": 1,
+  "completed_campaign_generations": 187,
+  "execution_workers": 5,
+  "fitness_bands": {
+    "B1": 733,
+    "B2": 33,
+    "B3": 65,
+    "B4": 30,
+    "B5": 19,
+    "B6": 118,
+    "B7": 2
+  },
+  "generation": 32,
+  "phase": "completed",
+  "proposal_count": 1154,
+  "proposal_status_counts": {
+    "accepted": 940,
+    "rejected": 214
+  },
+  "runner_kind": "improved_dataset_campaigns",
+  "stop_reason": "target_reached",
+  "target_valid_unique_samples": 1000,
+  "valid_unique_samples": 1000
+}

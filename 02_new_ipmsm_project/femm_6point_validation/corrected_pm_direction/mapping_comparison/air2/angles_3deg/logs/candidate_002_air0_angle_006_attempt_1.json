@@ -1,0 +1,22 @@
+{
+  "attempt": 1,
+  "command": [
+    "C:\\Users\\26096\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\scripts\\solve_one_angle.py",
+    "--base-fem",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\corrected_pm_direction\\mapping_comparison\\air2\\base\\model.fem",
+    "--output-dir",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\corrected_pm_direction\\mapping_comparison\\air2\\angles_3deg\\angle_006",
+    "--angle-deg",
+    "6.0",
+    "--pole-pairs",
+    "4",
+    "--amplitude-a",
+    "3.5"
+  ],
+  "worker_pid": 1380,
+  "returncode": 0,
+  "elapsed_seconds": 64.94859429999633,
+  "stdout": "{\"status\": \"complete\", \"angle_mechanical_deg\": 6.0, \"angle_electrical_deg\": 24.0, \"pole_pairs\": 4, \"current_amplitude_a\": 3.5, \"phase_currents_a\": {\"A\": 3.197409101749103, \"B\": -0.3658496214367859, \"C\": -2.8315594803123156}, \"rotor_angle_method\": \"mi_modifyboundprop('sliding_airgap', 10, angle_mechanical_deg)\", \"torque_method\": \"mo_gapintegral('sliding_airgap', 0)\", \"base_fem\": \"C:\\\\Users\\\\26096\\\\Desktop\\\\em\\\\02_new_ipmsm_project\\\\femm_6point_validation\\\\corrected_pm_direction\\\\mapping_comparison\\\\air2\\\\base\\\\model.fem\", \"model_fem\": \"C:\\\\Users\\\\26096\\\\Desktop\\\\em\\\\02_new_ipmsm_project\\\\femm_6point_validation\\\\corrected_pm_direction\\\\mapping_comparison\\\\air2\\\\angles_3deg\\\\angle_006\\\\model.fem\", \"torque_nm\": -1.710657115032145, \"timing_seconds\": {\"prepare\": 0.21535399999993388, \"analyze\": 64.16430549999495, \"postprocess\": 0.44163920000573853, \"total\": 64.82129870000063}, \"ans_path\": \"C:\\\\Users\\\\26096\\\\Desktop\\\\em\\\\02_new_ipmsm_project\\\\femm_6point_validation\\\\corrected_pm_direction\\\\mapping_comparison\\\\air2\\\\angles_3deg\\\\angle_006\\\\model.ans\", \"ans_exists\": true, \"ans_size_bytes\": 13287796}\n",
+  "stderr": ""
+}

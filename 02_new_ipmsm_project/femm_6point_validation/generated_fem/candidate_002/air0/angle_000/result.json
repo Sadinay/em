@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "angle_mechanical_deg": 0.0,
+  "angle_electrical_deg": 0.0,
+  "pole_pairs": 4,
+  "current_amplitude_a": 3.5,
+  "phase_currents_a": {
+    "A": 3.5,
+    "B": -1.7499999999999991,
+    "C": -1.7499999999999991
+  },
+  "rotor_angle_method": "mi_modifyboundprop('sliding_airgap', 10, angle_mechanical_deg)",
+  "torque_method": "mo_gapintegral('sliding_airgap', 0)",
+  "base_fem": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\generated_fem\\candidate_002\\air0\\base\\model.fem",
+  "model_fem": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\generated_fem\\candidate_002\\air0\\angle_000\\model.fem",
+  "torque_nm": -2.231888129774205,
+  "timing_seconds": {
+    "prepare": 0.29282839999723365,
+    "analyze": 271.5070890999996,
+    "postprocess": 1.0961218000011286,
+    "total": 272.89603929999794
+  },
+  "ans_path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\generated_fem\\candidate_002\\air0\\angle_000\\model.ans",
+  "ans_exists": true,
+  "ans_size_bytes": 13306169
+}

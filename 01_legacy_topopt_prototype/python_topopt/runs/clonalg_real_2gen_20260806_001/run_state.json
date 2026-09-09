@@ -1,0 +1,45 @@
+{
+  "T_avg_ref": 0.8707406437252049,
+  "angle_counts": {
+    "completed": 12
+  },
+  "candidate_counts": {
+    "completed": 2,
+    "rejected": 38
+  },
+  "candidate_order": 0,
+  "candidate_total": 40,
+  "completed_angles_deg": [],
+  "config_hash": "f18b26cec31861eb763ac2c0500d3832779dd39cb27d4f58c59382f0d1c5f4a3",
+  "current_angle_deg": null,
+  "current_sample_id": null,
+  "duplicate_candidates": 1,
+  "fitness_bands": {
+    "B1": 0,
+    "B2": 0,
+    "B3": 0,
+    "B4": 0,
+    "B5": 0,
+    "B6": 1,
+    "B7": 0
+  },
+  "generation": 0,
+  "geometry_mode": "merged_copper_v5",
+  "negative_torque": 0,
+  "new_valid_candidates": 1,
+  "pending_angles_deg": [],
+  "recent_mean_seconds_per_angle": 13.840702116667671,
+  "rejected_candidates": 38,
+  "rejection_reasons": {
+    "FLOATING_IRON": 37,
+    "SMALL_COPPER_ISLAND": 37
+  },
+  "run_id": "clonalg_real_2gen_20260806_001",
+  "sample_counts": {
+    "classified": 2
+  },
+  "status": "paused",
+  "unique_chromosomes": 32,
+  "updated_at": "2026-08-07T00:13:18.325+02:00",
+  "valid_unique_samples": 1
+}

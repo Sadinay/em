@@ -1,0 +1,31 @@
+seed: 20260730
+validation_samples: 10
+image:
+  height: 96
+  width: 96
+  bbox:
+    - 0.0
+    - 0.0
+    - 74.0
+    - 74.0
+  channels:
+    - Background
+    - Air
+    - Iron
+    - Copper
+    - Magnet
+raster_quality:
+  max_ambiguous_faces: 10
+model:
+  conv_filters: 16
+  kernel_size: 3
+  pool_size: 2
+  pool_stride: 2
+  dense_units: 384
+training:
+  epochs: 1200
+  learning_rate: 0.004
+  patience: 250
+  min_delta: 1.0e-8
+  overfit_samples: 5
+  overfit_epochs: 1200

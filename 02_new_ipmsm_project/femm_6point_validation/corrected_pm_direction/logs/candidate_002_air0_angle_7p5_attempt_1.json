@@ -1,0 +1,22 @@
+{
+  "attempt": 1,
+  "command": [
+    "C:\\Users\\26096\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\scripts\\solve_one_angle.py",
+    "--base-fem",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\corrected_pm_direction\\base\\model.fem",
+    "--output-dir",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\corrected_pm_direction\\angle_7p5",
+    "--angle-deg",
+    "7.5",
+    "--pole-pairs",
+    "4",
+    "--amplitude-a",
+    "3.5"
+  ],
+  "worker_pid": 28836,
+  "returncode": 1,
+  "elapsed_seconds": 58.15973429999576,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\scripts\\solve_one_angle.py\", line 135, in <module>\n    main()\n  File \"C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\scripts\\solve_one_angle.py\", line 131, in main\n    solve(args.base_fem, args.output_dir, args.angle_deg, args.pole_pairs, args.amplitude_a)\n  File \"C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\scripts\\solve_one_angle.py\", line 68, in solve\n    torque = femm.mo_gapintegral(\"sliding_airgap\", 0)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\26096\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\femm\\__init__.py\", line 1896, in mo_gapintegral\n    return callfemm('mo_gapintegral(' + quotec(bdryname) + num(inttype) + ')');\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\26096\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\femm\\__init__.py\", line 156, in callfemm\n    raise Exception(ErrorMsg)\nException: error: No magnetics output in focus\nstack traceback:\n   1:  function `mo_gapintegral' [C]\n   2:  main of string \"lua2matlab(mo_gapintegral(\"sliding_airgap\" ...\" at line 1\n\n"
+}

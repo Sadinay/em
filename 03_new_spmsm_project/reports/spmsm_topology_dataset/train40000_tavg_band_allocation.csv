@@ -1,0 +1,8 @@
+﻿tavg_band,source_train,selected_train,unused_train_pool,retention_percent,selection_policy
+<2.0,132,132,0,100.0,retain_all_rare_edge_band
+2.0-2.5,3812,2936,876,77.02,proportional_seeded_sample
+2.5-3.0,13291,10236,3055,77.015,proportional_seeded_sample
+3.0-3.25,13804,10631,3173,77.014,proportional_seeded_sample
+3.25-3.5,15660,12061,3599,77.018,proportional_seeded_sample
+3.5-3.75,4940,3805,1135,77.024,proportional_seeded_sample
+>=3.75,199,199,0,100.0,retain_all_rare_edge_band

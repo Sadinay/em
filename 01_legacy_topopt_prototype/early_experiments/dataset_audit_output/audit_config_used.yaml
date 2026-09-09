@@ -1,0 +1,52 @@
+hash:
+  quick_bytes: 65536
+mat:
+  candidate_keywords:
+    - torque
+    - tavg
+    - tmean
+    - cogging
+    - ripple
+    - flux
+    - flux_linkage
+    - bemf
+    - emf
+    - ld
+    - lq
+    - loss
+    - iron_loss
+    - copper_loss
+    - efficiency
+    - power
+    - current
+    - angle
+    - speed
+    - rpm
+    - position
+    - geometry
+    - design
+    - parameter
+    - objective
+    - fitness
+    - best
+    - j_hist
+    - j_ripple
+    - t_avg
+    - t_ripple
+fem:
+  preview_count: 20
+  preview_dpi: 110
+matching:
+  confirmed_score: 85
+  probable_score: 60
+  ambiguity_margin: 8
+  time_close_seconds: 86400
+  removable_suffixes:
+    - result
+    - results
+    - output
+    - analysis
+    - ans
+    - solution
+    - data
+    - fem

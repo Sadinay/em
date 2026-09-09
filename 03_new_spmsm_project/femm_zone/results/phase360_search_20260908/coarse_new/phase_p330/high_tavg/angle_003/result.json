@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "fresh_solve": true,
+  "scenario_id": "phase_p330",
+  "candidate_id": "high_tavg",
+  "inner_angle_deg": 3,
+  "outer_angle_deg": 0,
+  "current_angle_deg": 342.0,
+  "currents_a": {
+    "A": 3.3286978070330373,
+    "B": -2.60100688917088,
+    "C": -0.7276909178621546
+  },
+  "raw_gap_torque_nm": -0.101783908369493,
+  "comparison_torque_nm": 0.203567816738986,
+  "verified_input": {
+    "headers": {
+      "Frequency": 0.0,
+      "Precision": 1e-08,
+      "MinAngle": 15.0,
+      "DoSmartMesh": 1.0,
+      "Depth": 36.0
+    },
+    "inner_angle_deg": 3,
+    "outer_angle_deg": 0,
+    "fixed_currents_a": {
+      "A": 3.3286978070330373,
+      "B": -2.60100688917088,
+      "C": -0.7276909178621546
+    },
+    "fem_sha256": "69fcbf2897f6b0fb09bf8f9c200feae7760bff95524c24b5240dea85aeef41bd"
+  },
+  "ans_sha256": "0b1fd825a71d673a4a8d3a6fe2a9b00e10145f2c86265a53b47e640adb796995"
+}

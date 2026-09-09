@@ -1,0 +1,49 @@
+{
+  "lookup": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\semantic90\\outputs\\lookups\\fem90_lookup_224.npz",
+  "audit_images": 12,
+  "repeat_render_pixel_exact": true,
+  "comparison_samples": [
+    {
+      "dataset_index": 21169,
+      "generation": 17,
+      "individual": 55,
+      "fem_design_label_mismatches": 0,
+      "maximum_pm_direction_error_deg": 0.0,
+      "generated_fem": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\semantic90\\outputs\\audit\\fem_memory_comparison\\sample_01\\model.fem"
+    },
+    {
+      "dataset_index": 109364,
+      "generation": 208,
+      "individual": 74,
+      "fem_design_label_mismatches": 0,
+      "maximum_pm_direction_error_deg": 0.0,
+      "generated_fem": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\semantic90\\outputs\\audit\\fem_memory_comparison\\sample_02\\model.fem"
+    },
+    {
+      "dataset_index": 83860,
+      "generation": 467,
+      "individual": 392,
+      "fem_design_label_mismatches": 0,
+      "maximum_pm_direction_error_deg": 0.0,
+      "generated_fem": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\semantic90\\outputs\\audit\\fem_memory_comparison\\sample_03\\model.fem"
+    }
+  ],
+  "all_three_fem_memory_comparisons_pass": true,
+  "renderer_channels": [
+    "design_air",
+    "design_pm_inward",
+    "design_pm_outward",
+    "design_iron",
+    "fixed_air",
+    "fixed_iron",
+    "winding",
+    "geometry_mask"
+  ],
+  "renderer_only_cpu_benchmark": {
+    "samples": 1024,
+    "seconds": 0.8843669000016234,
+    "samples_per_second": 1157.8904637861506
+  },
+  "no_training_performed": true,
+  "no_bulk_images_written": true
+}

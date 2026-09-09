@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Keep scientific inputs byte-exact for the recorded SHA-256 checks.
+*.[fF][eE][mM] -text
+*.mat -text
+*.npz -text
+*.npy -text
+*.sqlite -text
+*.pt -text
+*.zip -text

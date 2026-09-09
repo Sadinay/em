@@ -1,0 +1,30 @@
+{
+  "source_run_records": 41,
+  "independent_topology_tmin_samples": 21,
+  "train_samples": 11,
+  "validation_samples": 10,
+  "train_target_range": [
+    0.08021601571920854,
+    2.1632259187497307
+  ],
+  "validation_target_range": [
+    0.08214802531200001,
+    0.2571473675453812
+  ],
+  "topology_overlap": [],
+  "leakage_check": true,
+  "input_shape": [
+    21,
+    5,
+    96,
+    96
+  ],
+  "channel_order": [
+    "Background",
+    "Air",
+    "Iron",
+    "Copper",
+    "Magnet"
+  ],
+  "split_strategy": "target-rank alternating, independent topology/T_min only"
+}

@@ -1,0 +1,57 @@
+{
+  "status": "generated_and_structurally_validated",
+  "femm_solve_performed": false,
+  "mapping_mode": "candidate_air2_v1",
+  "mapping_evidence_status": "strongly inferred; matching MATLAB assignment source is absent",
+  "code_mapping": {
+    "0": "iron",
+    "1": "permanent_magnet",
+    "2": "air",
+    "3": "iron"
+  },
+  "grid_axes": "[radial_index, angular_index]",
+  "symmetry": "each of 100 cells is written to four audited FEM block-label coordinates",
+  "genotype_sha256": "f227f413b99be6f03f3ef59d4a6120fb6122a957ecd020ee25054d026bb275ef",
+  "physical_topology_sha256": "8144a6c1fe3099a430e75981f431a2a822fd8cfeacfbf4d5492c1b9b1159e651",
+  "template": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_zone\\models\\IPMSM.fem",
+    "sha256": "696e68c9f0cbedc7c82ba621f10496fef031b292ff69d4c969b4642ebb515e82"
+  },
+  "material_position_source": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\data_zone\\raw\\workspace_600.mat",
+    "sha256": "26b1dc59b72c4b856b75f9a92358d60d1b26093c9f634a44426df98a82271193"
+  },
+  "provenance": {
+    "kind": "six_angle_validation_candidate",
+    "candidate_id": "candidate_001",
+    "state_index_0based": 0,
+    "population_row_0based": 274,
+    "before_after_equal": true
+  },
+  "material_code_counts": {
+    "0": 30,
+    "1": 15,
+    "2": 25,
+    "3": 30
+  },
+  "validation": {
+    "mapped_cells": 100,
+    "mapped_design_labels": 400,
+    "four_copy_material_consistency": true,
+    "physical_class_counts": {
+      "air": 25,
+      "permanent_magnet": 15,
+      "iron": 60
+    },
+    "all_expected_materials_match": true
+  },
+  "files": {
+    "model": "model.fem",
+    "original_gene": "gene_bits.txt",
+    "canonical_three_material_gene": "canonical_physical_bits.txt",
+    "material_code_grid": "material_codes_10x10.csv",
+    "physical_class_grid": "physical_classes_10x10.csv",
+    "cell_copy_mapping": "gene_to_fem_mapping.csv",
+    "topology_preview": "topology_preview.png"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "status": "SUCCEEDED",
+  "operation": "solve_angle",
+  "geometry_builder_version": null,
+  "torque_values_nm": [
+    0.6243515173049913
+  ],
+  "timings": {
+    "topology_seconds": 0.0,
+    "angles": [
+      {
+        "angle_deg": 0.0,
+        "mesh_seconds": 0.46444099999644095,
+        "solve_seconds": 13.737997199998063,
+        "postprocess_seconds": 0.042134699993766844,
+        "total_angle_seconds": 14.359007899998687,
+        "mesh_nodes": 22956,
+        "mesh_elements": 44682
+      }
+    ],
+    "total_seconds": 14.744478499997058
+  }
+}

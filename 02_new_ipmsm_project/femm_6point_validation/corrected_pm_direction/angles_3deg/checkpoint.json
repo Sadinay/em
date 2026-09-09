@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "angles_mechanical_deg": [
+    0.0,
+    3.0,
+    6.0,
+    9.0,
+    12.0,
+    15.0
+  ],
+  "tasks": {
+    "angle_015": {
+      "status": "reused",
+      "source": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\corrected_pm_direction\\angle_15\\result.json"
+    },
+    "angle_000": {
+      "status": "complete",
+      "torque_nm": -2.260238849589332
+    },
+    "angle_003": {
+      "status": "complete",
+      "torque_nm": -2.35483557236914
+    },
+    "angle_006": {
+      "status": "complete",
+      "torque_nm": -3.103287095616318
+    },
+    "angle_009": {
+      "status": "complete",
+      "torque_nm": -3.184127061015041
+    },
+    "angle_012": {
+      "status": "complete",
+      "torque_nm": -2.844827899619423
+    }
+  },
+  "summary": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\corrected_pm_direction\\angles_3deg\\analysis_summary.json"
+}

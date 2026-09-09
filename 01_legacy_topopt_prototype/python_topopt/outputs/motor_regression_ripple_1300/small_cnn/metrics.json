@@ -1,0 +1,30 @@
+{
+  "best_epoch": 54,
+  "best_standardized_validation_mse": 0.08484715812686663,
+  "device": "cpu",
+  "epochs_completed": 84,
+  "model": "small_cnn",
+  "splits": {
+    "test": {
+      "torque_ripple": {
+        "mae": 0.0605297687704267,
+        "r2": 0.9096882781211297,
+        "rmse": 0.09891711032905065
+      }
+    },
+    "train": {
+      "torque_ripple": {
+        "mae": 0.015332492464612841,
+        "r2": 0.9964522937238225,
+        "rmse": 0.021207037296129702
+      }
+    },
+    "val": {
+      "torque_ripple": {
+        "mae": 0.057654226406994684,
+        "r2": 0.8304654843886174,
+        "rmse": 0.10371099782256141
+      }
+    }
+  }
+}

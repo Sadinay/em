@@ -1,0 +1,32 @@
+{
+  "experiment_id": "polar360_224/vgg16_v2",
+  "input_mode": "polar360_224",
+  "architecture": "vgg16_v2",
+  "lookup": "cnn_zone/outputs/lookups/spmsm_polar360_224_full_motor_ss4.npz",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "max_epochs": 40,
+  "minimum_epochs": 30,
+  "early_stopping_patience": 8,
+  "scheduler_patience": 3,
+  "physical_batch_size": 8,
+  "effective_batch_size": 64,
+  "circular_angular_padding": true,
+  "seed": 20260903,
+  "train_samples": 40000,
+  "validation_samples": 6483,
+  "test_samples": 6483,
+  "target_mean": [
+    3.099832773208618,
+    0.4043262302875519
+  ],
+  "target_std": [
+    0.35699909925460815,
+    0.191180020570755
+  ],
+  "target_scaler_source": "training set only",
+  "parameter_count": 18917122,
+  "optimizer": "AdamW",
+  "loss": "mean MSE over independently standardized Tavg and DeltaT",
+  "best_checkpoint_selection": "validation standardized MSE only"
+}

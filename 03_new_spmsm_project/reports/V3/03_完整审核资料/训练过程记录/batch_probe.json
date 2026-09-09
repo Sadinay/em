@@ -1,0 +1,18 @@
+{
+  "status": "all_passed",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "results": [
+    {
+      "experiment_id": "logical6x20/resnet20_v2",
+      "physical_batch_size": 64,
+      "parameter_count": 763714,
+      "output_shape": [
+        64,
+        2
+      ],
+      "loss": 0.11151877790689468,
+      "peak_allocated_mb": 77.98291015625,
+      "status": "passed"
+    }
+  ]
+}

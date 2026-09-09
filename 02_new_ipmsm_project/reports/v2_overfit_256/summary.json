@@ -1,0 +1,862 @@
+{
+  "status": "passed",
+  "purpose": "memorization/pipeline diagnostic only; not generalization",
+  "samples": 256,
+  "seed": 20260822,
+  "pass_rule": "both same-sample target R2 values >= 0.97 and all values finite",
+  "results": [
+    {
+      "status": "complete",
+      "model_id": "logical10/mini_inception_v2",
+      "seed": 20260822,
+      "epochs_completed": 9,
+      "best_epoch": 9,
+      "best_validation_standardized_mse": 0.010046862065792084,
+      "test_standardized_mse": 0.010046862065792084,
+      "metrics": {
+        "overall": {
+          "tavg": {
+            "mae": 0.04487747699022293,
+            "rmse": 0.05599857121706009,
+            "r2": 0.992063045501709,
+            "normalized_mae_by_actual_range": 0.015917012467980385,
+            "bias": 0.03613923117518425,
+            "calibration_slope_predicted_vs_actual": 0.9975650273990786,
+            "calibration_intercept_nm": 0.04081986862282653,
+            "absolute_error_p50": 0.04060322046279907,
+            "absolute_error_p90": 0.08774906396865845,
+            "absolute_error_p95": 0.10116687417030334,
+            "fraction_absolute_error_le_0_05_nm": 0.59765625,
+            "fraction_absolute_error_le_0_10_nm": 0.9453125
+          },
+          "delta_t": {
+            "mae": 0.027919428423047066,
+            "rmse": 0.03443917632102966,
+            "r2": 0.9878432154655457,
+            "normalized_mae_by_actual_range": 0.011167243123054504,
+            "bias": 0.019459906965494156,
+            "calibration_slope_predicted_vs_actual": 0.9734267197560885,
+            "calibration_intercept_nm": 0.04158240811258223,
+            "absolute_error_p50": 0.025269269943237305,
+            "absolute_error_p90": 0.0571712851524353,
+            "absolute_error_p95": 0.06557399034500122,
+            "fraction_absolute_error_le_0_05_nm": 0.8359375,
+            "fraction_absolute_error_le_0_10_nm": 0.99609375
+          }
+        },
+        "bands": {
+          "tavg": [
+            {
+              "band": "<0.5",
+              "count": 7,
+              "mae": 0.04681820422410965,
+              "bias": 0.04681820422410965
+            },
+            {
+              "band": "0.5-1.0",
+              "count": 20,
+              "mae": 0.051190078258514404,
+              "bias": 0.023024041205644608
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 33,
+              "mae": 0.04335968568921089,
+              "bias": 0.03344486653804779
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 70,
+              "mae": 0.049460384994745255,
+              "bias": 0.04454197734594345
+            },
+            {
+              "band": "2.0-2.5",
+              "count": 80,
+              "mae": 0.04400122910737991,
+              "bias": 0.03855147957801819
+            },
+            {
+              "band": "2.5-3.0",
+              "count": 46,
+              "mae": 0.037476323544979095,
+              "bias": 0.025167331099510193
+            },
+            {
+              "band": ">=3.0",
+              "count": 0,
+              "mae": null,
+              "bias": null
+            }
+          ],
+          "delta_t": [
+            {
+              "band": "<0.5",
+              "count": 31,
+              "mae": 0.036033131182193756,
+              "bias": 0.036033131182193756
+            },
+            {
+              "band": "0.5-0.75",
+              "count": 67,
+              "mae": 0.027961887419223785,
+              "bias": 0.02414006181061268
+            },
+            {
+              "band": "0.75-1.0",
+              "count": 100,
+              "mae": 0.02725072205066681,
+              "bias": 0.018906064331531525
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 53,
+              "mae": 0.02326410822570324,
+              "bias": 0.006194086745381355
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 2,
+              "mae": 0.03607553243637085,
+              "bias": 0.03607553243637085
+            },
+            {
+              "band": ">=2.0",
+              "count": 3,
+              "mae": 0.042226314544677734,
+              "bias": -0.014573097229003906
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 2.327599900003406,
+      "torch_peak_allocated_mb": 87.96142578125,
+      "gpu_monitor": {
+        "sample_count": 3,
+        "gpu_utilization_percent_mean": 7.333333333333333,
+        "gpu_utilization_percent_p50": 1.0,
+        "gpu_utilization_percent_p90": 16.200000000000003,
+        "gpu_utilization_percent_max": 20.0,
+        "driver_memory_used_mb_peak": 3046.0,
+        "power_watts_mean": 24.03333333333333,
+        "temperature_celsius_max": 41.0
+      },
+      "maximum_gradient_norm": 110.48416137695312,
+      "optimizer_steps_total": 72,
+      "optimizer_steps_per_completed_epoch": 8,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\v2_overfit_256\\logical10\\mini_inception_v2\\best_checkpoint.pt",
+      "overfit_pass": true
+    },
+    {
+      "status": "complete",
+      "model_id": "logical10/resnet20_v2",
+      "seed": 20260822,
+      "epochs_completed": 8,
+      "best_epoch": 8,
+      "best_validation_standardized_mse": 0.010387098067440093,
+      "test_standardized_mse": 0.010387098067440093,
+      "metrics": {
+        "overall": {
+          "tavg": {
+            "mae": 0.04789156839251518,
+            "rmse": 0.05980708822607994,
+            "r2": 0.9909467697143555,
+            "normalized_mae_by_actual_range": 0.016986042261123657,
+            "bias": 0.008295813575387001,
+            "calibration_slope_predicted_vs_actual": 0.9514928145899006,
+            "calibration_intercept_nm": 0.1015389769101021,
+            "absolute_error_p50": 0.03970444202423096,
+            "absolute_error_p90": 0.10043901205062866,
+            "absolute_error_p95": 0.1188027411699295,
+            "fraction_absolute_error_le_0_05_nm": 0.58984375,
+            "fraction_absolute_error_le_0_10_nm": 0.8984375
+          },
+          "delta_t": {
+            "mae": 0.023882953450083733,
+            "rmse": 0.033816203474998474,
+            "r2": 0.9882790446281433,
+            "normalized_mae_by_actual_range": 0.009552729316055775,
+            "bias": 0.001043254742398858,
+            "calibration_slope_predicted_vs_actual": 0.9743317478314513,
+            "calibration_intercept_nm": 0.0224123108737103,
+            "absolute_error_p50": 0.017487555742263794,
+            "absolute_error_p90": 0.05386209487915039,
+            "absolute_error_p95": 0.06448924541473389,
+            "fraction_absolute_error_le_0_05_nm": 0.890625,
+            "fraction_absolute_error_le_0_10_nm": 0.98828125
+          }
+        },
+        "bands": {
+          "tavg": [
+            {
+              "band": "<0.5",
+              "count": 7,
+              "mae": 0.08041375875473022,
+              "bias": 0.07294996827840805
+            },
+            {
+              "band": "0.5-1.0",
+              "count": 20,
+              "mae": 0.08406458050012589,
+              "bias": 0.062186598777770996
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 33,
+              "mae": 0.05517788976430893,
+              "bias": 0.037853311747312546
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 70,
+              "mae": 0.04670038819313049,
+              "bias": 0.016844844445586205
+            },
+            {
+              "band": "2.0-2.5",
+              "count": 80,
+              "mae": 0.035060808062553406,
+              "bias": -0.009316965937614441
+            },
+            {
+              "band": "2.5-3.0",
+              "count": 46,
+              "mae": 0.04611501842737198,
+              "bias": -0.028556404635310173
+            },
+            {
+              "band": ">=3.0",
+              "count": 0,
+              "mae": null,
+              "bias": null
+            }
+          ],
+          "delta_t": [
+            {
+              "band": "<0.5",
+              "count": 31,
+              "mae": 0.02134975977241993,
+              "bias": 0.009943165816366673
+            },
+            {
+              "band": "0.5-0.75",
+              "count": 67,
+              "mae": 0.01983439177274704,
+              "bias": 0.003182573476806283
+            },
+            {
+              "band": "0.75-1.0",
+              "count": 100,
+              "mae": 0.02229997143149376,
+              "bias": 0.0014978325925767422
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 53,
+              "mae": 0.027525682002305984,
+              "bias": -0.00103744026273489
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 2,
+              "mae": 0.13841062784194946,
+              "bias": -0.1082039475440979
+            },
+            {
+              "band": ">=2.0",
+              "count": 3,
+              "mae": 0.05253656581044197,
+              "bias": -0.044262807816267014
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 1.0610784999953466,
+      "torch_peak_allocated_mb": 77.82861328125,
+      "gpu_monitor": {
+        "sample_count": 1,
+        "gpu_utilization_percent_mean": 21.0,
+        "gpu_utilization_percent_p50": 21.0,
+        "gpu_utilization_percent_p90": 21.0,
+        "gpu_utilization_percent_max": 21.0,
+        "driver_memory_used_mb_peak": 3048.0,
+        "power_watts_mean": 44.65,
+        "temperature_celsius_max": 42.0
+      },
+      "maximum_gradient_norm": 48.45016860961914,
+      "optimizer_steps_total": 64,
+      "optimizer_steps_per_completed_epoch": 8,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\v2_overfit_256\\logical10\\resnet20_v2\\best_checkpoint.pt",
+      "overfit_pass": true
+    },
+    {
+      "status": "complete",
+      "model_id": "logical10/small_cnn_v2",
+      "seed": 20260822,
+      "epochs_completed": 13,
+      "best_epoch": 13,
+      "best_validation_standardized_mse": 0.006340781692415476,
+      "test_standardized_mse": 0.006340781692415476,
+      "metrics": {
+        "overall": {
+          "tavg": {
+            "mae": 0.028844457119703293,
+            "rmse": 0.03659801557660103,
+            "r2": 0.9966098666191101,
+            "normalized_mae_by_actual_range": 0.010230467654764652,
+            "bias": 0.006564050447195768,
+            "calibration_slope_predicted_vs_actual": 0.9691843063776625,
+            "calibration_intercept_nm": 0.06579966134860178,
+            "absolute_error_p50": 0.024076104164123535,
+            "absolute_error_p90": 0.059264570474624634,
+            "absolute_error_p95": 0.07267239689826965,
+            "fraction_absolute_error_le_0_05_nm": 0.81640625,
+            "fraction_absolute_error_le_0_10_nm": 0.99609375
+          },
+          "delta_t": {
+            "mae": 0.024116244167089462,
+            "rmse": 0.03010822832584381,
+            "r2": 0.9907085299491882,
+            "normalized_mae_by_actual_range": 0.009646041318774223,
+            "bias": -0.008841117843985558,
+            "calibration_slope_predicted_vs_actual": 1.0193963384474136,
+            "calibration_intercept_nm": -0.024988748204293195,
+            "absolute_error_p50": 0.020585745573043823,
+            "absolute_error_p90": 0.04808208346366882,
+            "absolute_error_p95": 0.05724955350160599,
+            "fraction_absolute_error_le_0_05_nm": 0.91015625,
+            "fraction_absolute_error_le_0_10_nm": 0.99609375
+          }
+        },
+        "bands": {
+          "tavg": [
+            {
+              "band": "<0.5",
+              "count": 7,
+              "mae": 0.061374835669994354,
+              "bias": 0.061374835669994354
+            },
+            {
+              "band": "0.5-1.0",
+              "count": 20,
+              "mae": 0.042267702519893646,
+              "bias": 0.042267702519893646
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 33,
+              "mae": 0.036258041858673096,
+              "bias": 0.02850629761815071
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 70,
+              "mae": 0.03096666745841503,
+              "bias": 0.006299648899585009
+            },
+            {
+              "band": "2.0-2.5",
+              "count": 80,
+              "mae": 0.020756399258971214,
+              "bias": -0.0022247792221605778
+            },
+            {
+              "band": "2.5-3.0",
+              "count": 46,
+              "mae": 0.0235762856900692,
+              "bias": -0.017353953793644905
+            },
+            {
+              "band": ">=3.0",
+              "count": 0,
+              "mae": null,
+              "bias": null
+            }
+          ],
+          "delta_t": [
+            {
+              "band": "<0.5",
+              "count": 31,
+              "mae": 0.01819971576333046,
+              "bias": -0.003999689128249884
+            },
+            {
+              "band": "0.5-0.75",
+              "count": 67,
+              "mae": 0.023139871656894684,
+              "bias": -0.01415551919490099
+            },
+            {
+              "band": "0.75-1.0",
+              "count": 100,
+              "mae": 0.02270391955971718,
+              "bias": -0.009706689976155758
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 53,
+              "mae": 0.02821333147585392,
+              "bias": -0.008674714714288712
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 2,
+              "mae": 0.02890455722808838,
+              "bias": 0.0019121170043945312
+            },
+            {
+              "band": ">=2.0",
+              "count": 3,
+              "mae": 0.078562892973423,
+              "bias": 0.078562892973423
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 0.8337118999988888,
+      "torch_peak_allocated_mb": 84.318359375,
+      "gpu_monitor": {
+        "sample_count": 1,
+        "gpu_utilization_percent_mean": 25.0,
+        "gpu_utilization_percent_p50": 25.0,
+        "gpu_utilization_percent_p90": 25.0,
+        "gpu_utilization_percent_max": 25.0,
+        "driver_memory_used_mb_peak": 3050.0,
+        "power_watts_mean": 42.92,
+        "temperature_celsius_max": 42.0
+      },
+      "maximum_gradient_norm": 36.17466354370117,
+      "optimizer_steps_total": 104,
+      "optimizer_steps_per_completed_epoch": 8,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\v2_overfit_256\\logical10\\small_cnn_v2\\best_checkpoint.pt",
+      "overfit_pass": true
+    },
+    {
+      "status": "complete",
+      "model_id": "semantic224/mini_inception_v2",
+      "seed": 20260822,
+      "epochs_completed": 45,
+      "best_epoch": 45,
+      "best_validation_standardized_mse": 0.008423009014222771,
+      "test_standardized_mse": 0.008423009014222771,
+      "metrics": {
+        "overall": {
+          "tavg": {
+            "mae": 0.0371222086250782,
+            "rmse": 0.047966644167900085,
+            "r2": 0.9941765666007996,
+            "normalized_mae_by_actual_range": 0.013166396878659725,
+            "bias": 0.0017861946253105998,
+            "calibration_slope_predicted_vs_actual": 0.9867299080011445,
+            "calibration_intercept_nm": 0.02729469079340761,
+            "absolute_error_p50": 0.031173229217529297,
+            "absolute_error_p90": 0.07382988929748535,
+            "absolute_error_p95": 0.09170138835906982,
+            "fraction_absolute_error_le_0_05_nm": 0.75,
+            "fraction_absolute_error_le_0_10_nm": 0.97265625
+          },
+          "delta_t": {
+            "mae": 0.023886455222964287,
+            "rmse": 0.03279333561658859,
+            "r2": 0.9889773726463318,
+            "normalized_mae_by_actual_range": 0.009554130025207996,
+            "bias": 0.00030593806877732277,
+            "calibration_slope_predicted_vs_actual": 0.9814815609468531,
+            "calibration_intercept_nm": 0.015722708988452405,
+            "absolute_error_p50": 0.01834559440612793,
+            "absolute_error_p90": 0.05016124248504639,
+            "absolute_error_p95": 0.05875757336616516,
+            "fraction_absolute_error_le_0_05_nm": 0.8984375,
+            "fraction_absolute_error_le_0_10_nm": 0.99609375
+          }
+        },
+        "bands": {
+          "tavg": [
+            {
+              "band": "<0.5",
+              "count": 7,
+              "mae": 0.1066231057047844,
+              "bias": 0.1066231057047844
+            },
+            {
+              "band": "0.5-1.0",
+              "count": 20,
+              "mae": 0.04059412702918053,
+              "bias": -0.014726689085364342
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 33,
+              "mae": 0.036797162145376205,
+              "bias": 0.002371896291151643
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 70,
+              "mae": 0.03408147394657135,
+              "bias": 0.005875541362911463
+            },
+            {
+              "band": "2.0-2.5",
+              "count": 80,
+              "mae": 0.031015992164611816,
+              "bias": 0.005170003976672888
+            },
+            {
+              "band": "2.5-3.0",
+              "count": 46,
+              "mae": 0.04051635041832924,
+              "bias": -0.019515717402100563
+            },
+            {
+              "band": ">=3.0",
+              "count": 0,
+              "mae": null,
+              "bias": null
+            }
+          ],
+          "delta_t": [
+            {
+              "band": "<0.5",
+              "count": 31,
+              "mae": 0.024815620854496956,
+              "bias": 0.005126637872308493
+            },
+            {
+              "band": "0.5-0.75",
+              "count": 67,
+              "mae": 0.02045600861310959,
+              "bias": -0.0007007362437434494
+            },
+            {
+              "band": "0.75-1.0",
+              "count": 100,
+              "mae": 0.023509589955210686,
+              "bias": 0.0010118186473846436
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 53,
+              "mae": 0.023751046508550644,
+              "bias": 0.0011668441584333777
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 2,
+              "mae": 0.03333026170730591,
+              "bias": 0.03333026170730591
+            },
+            {
+              "band": ">=2.0",
+              "count": 3,
+              "mae": 0.09955692291259766,
+              "bias": -0.08778047561645508
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 94.7179329999999,
+      "torch_peak_allocated_mb": 6085.1953125,
+      "gpu_monitor": {
+        "sample_count": 90,
+        "gpu_utilization_percent_mean": 92.47777777777777,
+        "gpu_utilization_percent_p50": 94.0,
+        "gpu_utilization_percent_p90": 97.0,
+        "gpu_utilization_percent_max": 97.0,
+        "driver_memory_used_mb_peak": 9593.0,
+        "power_watts_mean": 147.74433333333334,
+        "temperature_celsius_max": 58.0
+      },
+      "maximum_gradient_norm": 38.9713020324707,
+      "optimizer_steps_total": 360,
+      "optimizer_steps_per_completed_epoch": 8,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\v2_overfit_256\\semantic224\\mini_inception_v2\\best_checkpoint.pt",
+      "overfit_pass": true
+    },
+    {
+      "status": "complete",
+      "model_id": "semantic224/resnet18_v2",
+      "seed": 20260822,
+      "epochs_completed": 63,
+      "best_epoch": 63,
+      "best_validation_standardized_mse": 0.01296322449343279,
+      "test_standardized_mse": 0.01296322449343279,
+      "metrics": {
+        "overall": {
+          "tavg": {
+            "mae": 0.057847585529088974,
+            "rmse": 0.07174370437860489,
+            "r2": 0.9869723320007324,
+            "normalized_mae_by_actual_range": 0.02051721327006817,
+            "bias": -0.030903931707143784,
+            "calibration_slope_predicted_vs_actual": 0.9778816144711426,
+            "calibration_intercept_nm": 0.011613240211339746,
+            "absolute_error_p50": 0.04992777109146118,
+            "absolute_error_p90": 0.11202377080917358,
+            "absolute_error_p95": 0.14120467007160187,
+            "fraction_absolute_error_le_0_05_nm": 0.5,
+            "fraction_absolute_error_le_0_10_nm": 0.8203125
+          },
+          "delta_t": {
+            "mae": 0.027023177593946457,
+            "rmse": 0.035474617034196854,
+            "r2": 0.9871012568473816,
+            "normalized_mae_by_actual_range": 0.010808759368956089,
+            "bias": 0.0003643861273303628,
+            "calibration_slope_predicted_vs_actual": 0.9591182219506894,
+            "calibration_intercept_nm": 0.034398842433856644,
+            "absolute_error_p50": 0.022131428122520447,
+            "absolute_error_p90": 0.057327061891555786,
+            "absolute_error_p95": 0.06699953973293304,
+            "fraction_absolute_error_le_0_05_nm": 0.86328125,
+            "fraction_absolute_error_le_0_10_nm": 0.98828125
+          }
+        },
+        "bands": {
+          "tavg": [
+            {
+              "band": "<0.5",
+              "count": 7,
+              "mae": 0.06113733723759651,
+              "bias": 0.03699692711234093
+            },
+            {
+              "band": "0.5-1.0",
+              "count": 20,
+              "mae": 0.05256674811244011,
+              "bias": -0.00981602631509304
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 33,
+              "mae": 0.056488897651433945,
+              "bias": -0.043972499668598175
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 70,
+              "mae": 0.04541255906224251,
+              "bias": -0.02240101434290409
+            },
+            {
+              "band": "2.0-2.5",
+              "count": 80,
+              "mae": 0.058232229202985764,
+              "bias": -0.023015502840280533
+            },
+            {
+              "band": "2.5-3.0",
+              "count": 46,
+              "mae": 0.07887160032987595,
+              "bias": -0.06768827140331268
+            },
+            {
+              "band": ">=3.0",
+              "count": 0,
+              "mae": null,
+              "bias": null
+            }
+          ],
+          "delta_t": [
+            {
+              "band": "<0.5",
+              "count": 31,
+              "mae": 0.032352346926927567,
+              "bias": 0.024943793192505836
+            },
+            {
+              "band": "0.5-0.75",
+              "count": 67,
+              "mae": 0.028387630358338356,
+              "bias": 0.005913694389164448
+            },
+            {
+              "band": "0.75-1.0",
+              "count": 100,
+              "mae": 0.02297266758978367,
+              "bias": -0.002520609414204955
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 53,
+              "mae": 0.028443412855267525,
+              "bias": -0.011619990691542625
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 2,
+              "mae": 0.04750281572341919,
+              "bias": -0.04750281572341919
+            },
+            {
+              "band": ">=2.0",
+              "count": 3,
+              "mae": 0.03775541111826897,
+              "bias": -0.03775541111826897
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 123.72200809999777,
+      "torch_peak_allocated_mb": 3603.3154296875,
+      "gpu_monitor": {
+        "sample_count": 117,
+        "gpu_utilization_percent_mean": 89.64102564102564,
+        "gpu_utilization_percent_p50": 90.0,
+        "gpu_utilization_percent_p90": 95.4,
+        "gpu_utilization_percent_max": 97.0,
+        "driver_memory_used_mb_peak": 6731.0,
+        "power_watts_mean": 149.5182051282051,
+        "temperature_celsius_max": 60.0
+      },
+      "maximum_gradient_norm": 110.5823745727539,
+      "optimizer_steps_total": 504,
+      "optimizer_steps_per_completed_epoch": 8,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\v2_overfit_256\\semantic224\\resnet18_v2\\best_checkpoint.pt",
+      "overfit_pass": true
+    },
+    {
+      "status": "complete",
+      "model_id": "semantic224/vgg16_v2",
+      "seed": 20260822,
+      "epochs_completed": 73,
+      "best_epoch": 73,
+      "best_validation_standardized_mse": 0.00826994757517241,
+      "test_standardized_mse": 0.00826994757517241,
+      "metrics": {
+        "overall": {
+          "tavg": {
+            "mae": 0.047669291496276855,
+            "rmse": 0.06269551813602448,
+            "r2": 0.9900511503219604,
+            "normalized_mae_by_actual_range": 0.016907205805182457,
+            "bias": 0.020650874823331833,
+            "calibration_slope_predicted_vs_actual": 0.9497139050538731,
+            "calibration_intercept_nm": 0.11731355485128388,
+            "absolute_error_p50": 0.0359954833984375,
+            "absolute_error_p90": 0.10611632466316223,
+            "absolute_error_p95": 0.12049026042222977,
+            "fraction_absolute_error_le_0_05_nm": 0.62109375,
+            "fraction_absolute_error_le_0_10_nm": 0.8828125
+          },
+          "delta_t": {
+            "mae": 0.019523121416568756,
+            "rmse": 0.025358349084854126,
+            "r2": 0.9934089183807373,
+            "normalized_mae_by_actual_range": 0.007808879017829895,
+            "bias": -0.003357207402586937,
+            "calibration_slope_predicted_vs_actual": 1.0024907337259914,
+            "calibration_intercept_nm": -0.005430766149375671,
+            "absolute_error_p50": 0.015511423349380493,
+            "absolute_error_p90": 0.04359409213066101,
+            "absolute_error_p95": 0.05244596302509308,
+            "fraction_absolute_error_le_0_05_nm": 0.93359375,
+            "fraction_absolute_error_le_0_10_nm": 1.0
+          }
+        },
+        "bands": {
+          "tavg": [
+            {
+              "band": "<0.5",
+              "count": 7,
+              "mae": 0.10728919506072998,
+              "bias": 0.08470050245523453
+            },
+            {
+              "band": "0.5-1.0",
+              "count": 20,
+              "mae": 0.0782056674361229,
+              "bias": 0.07305143773555756
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 33,
+              "mae": 0.07692604511976242,
+              "bias": 0.06978192180395126
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 70,
+              "mae": 0.039717454463243484,
+              "bias": 0.01784621924161911
+            },
+            {
+              "band": "2.0-2.5",
+              "count": 80,
+              "mae": 0.03302580118179321,
+              "bias": 0.009117227979004383
+            },
+            {
+              "band": "2.5-3.0",
+              "count": 46,
+              "mae": 0.04189903661608696,
+              "bias": -0.022798383608460426
+            },
+            {
+              "band": ">=3.0",
+              "count": 0,
+              "mae": null,
+              "bias": null
+            }
+          ],
+          "delta_t": [
+            {
+              "band": "<0.5",
+              "count": 31,
+              "mae": 0.017918718978762627,
+              "bias": -0.003109199460595846
+            },
+            {
+              "band": "0.5-0.75",
+              "count": 67,
+              "mae": 0.018723972141742706,
+              "bias": -0.002900115679949522
+            },
+            {
+              "band": "0.75-1.0",
+              "count": 100,
+              "mae": 0.017000753432512283,
+              "bias": -0.0039616660214960575
+            },
+            {
+              "band": "1.0-1.5",
+              "count": 53,
+              "mae": 0.025566989555954933,
+              "bias": -0.005461817607283592
+            },
+            {
+              "band": "1.5-2.0",
+              "count": 2,
+              "mae": 0.053462326526641846,
+              "bias": 0.053462326526641846
+            },
+            {
+              "band": ">=2.0",
+              "count": 3,
+              "mae": 0.008627335540950298,
+              "bias": 0.003322045085951686
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 146.46049199999834,
+      "torch_peak_allocated_mb": 2562.79150390625,
+      "gpu_monitor": {
+        "sample_count": 138,
+        "gpu_utilization_percent_mean": 90.07971014492753,
+        "gpu_utilization_percent_p50": 93.0,
+        "gpu_utilization_percent_p90": 94.0,
+        "gpu_utilization_percent_max": 96.0,
+        "driver_memory_used_mb_peak": 5856.0,
+        "power_watts_mean": 152.35753623188404,
+        "temperature_celsius_max": 61.0
+      },
+      "maximum_gradient_norm": 74.18482971191406,
+      "optimizer_steps_total": 584,
+      "optimizer_steps_per_completed_epoch": 8,
+      "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\v2_overfit_256\\semantic224\\vgg16_v2\\best_checkpoint.pt",
+      "overfit_pass": true
+    }
+  ],
+  "all_six_pass": true
+}

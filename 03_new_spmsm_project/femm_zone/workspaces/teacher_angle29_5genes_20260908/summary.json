@@ -1,0 +1,282 @@
+{
+  "status": "complete",
+  "config": {
+    "mat_file": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+    "template_file": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem",
+    "input_sha256": {
+      "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+      "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+    },
+    "current": {
+      "amplitude_a": 3.5,
+      "pole_pairs": 4,
+      "omega_e_rad_s": 2513.2741228718346,
+      "omega_m_rad_s": 628.3185307179587
+    },
+    "current_source": "导师cos(omega*t)公式；MAT inp.Is_amp、F、wmech、P。t=deg2rad(ANG_R)/wmech。",
+    "problem": {
+      "Frequency": 0,
+      "Precision": 1e-08,
+      "MinAngle": 15,
+      "DoSmartMesh": 1,
+      "Depth": 36.0,
+      "LengthUnits": "millimeters",
+      "ProblemType": "planar",
+      "Coordinates": "cartesian",
+      "ACSolver": 0,
+      "PrevType": 0,
+      "PrevSoln": ""
+    },
+    "airgap": {
+      "name": "sliding_airgap",
+      "boundary_type": 6,
+      "outer_angle_deg": 0,
+      "initial_inner_angle_deg": 29.0
+    },
+    "angle_source": "导师补充ang_0=29°；用户指定ANG_R=0:3:15°。原脚本T/ANG_R生成部分未提供。",
+    "rotor_travel_angles_deg": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15
+    ],
+    "inner_angles_deg": [
+      29.0,
+      32.0,
+      35.0,
+      38.0,
+      41.0,
+      44.0
+    ],
+    "initial_phases_deg": [
+      0.0
+    ],
+    "gene_source": "population_all",
+    "genes": [
+      {
+        "id": "G1",
+        "state": 0,
+        "row": 338
+      },
+      {
+        "id": "G2",
+        "state": 31,
+        "row": 190
+      },
+      {
+        "id": "G3",
+        "state": 193,
+        "row": 258
+      },
+      {
+        "id": "G4",
+        "state": 200,
+        "row": 491
+      },
+      {
+        "id": "G5",
+        "state": 200,
+        "row": 33
+      }
+    ],
+    "torque_multiplier": 1.0,
+    "comparison_note": "六点算术平均；DeltaT暂按相对峰峰值比较。旧-2经验换算另存对照，非已知历史公式。",
+    "material_source": "几何、绕组和材料BH曲线来自FEM模板；基因只切换设计区Air/N38。"
+  },
+  "rows": [
+    {
+      "id": "G1",
+      "state": 0,
+      "row": 338,
+      "pm_cells": 45,
+      "reference_tavg_nm": 1.6172313314639906,
+      "reference_delta_t": 0.35074853072759105,
+      "initial_phase_deg": 0.0,
+      "raw_torques_nm": [
+        1.622008742930102,
+        1.598137455684951,
+        1.668126279559056,
+        1.859131737570328,
+        1.679366623800696,
+        1.621782561420695
+      ],
+      "comparison_torques_nm": [
+        1.622008742930102,
+        1.598137455684951,
+        1.668126279559056,
+        1.859131737570328,
+        1.679366623800696,
+        1.621782561420695
+      ],
+      "tavg_nm": 1.6747589001609713,
+      "peak_to_peak_nm": 0.260994281885377,
+      "ripple_relative": 0.15583991335128372,
+      "reference_ripple_relative": 0.2168821020862103,
+      "tavg_error_percent": 3.5571638749358314,
+      "delta_t_error_percent": 25.589344210802047
+    },
+    {
+      "id": "G2",
+      "state": 31,
+      "row": 190,
+      "pm_cells": 80,
+      "reference_tavg_nm": 3.183132769850227,
+      "reference_delta_t": 0.454533168517397,
+      "initial_phase_deg": 0.0,
+      "raw_torques_nm": [
+        3.284467446394624,
+        3.420987437103323,
+        2.966454268586339,
+        3.119209370136498,
+        3.026029576907968,
+        3.281648519971953
+      ],
+      "comparison_torques_nm": [
+        3.284467446394624,
+        3.420987437103323,
+        2.966454268586339,
+        3.119209370136498,
+        3.026029576907968,
+        3.281648519971953
+      ],
+      "tavg_nm": 3.183132769850118,
+      "peak_to_peak_nm": 0.454533168516984,
+      "ripple_relative": 0.14279428518414777,
+      "reference_ripple_relative": 0.14279428518427262,
+      "tavg_error_percent": 3.4305891460917337e-12,
+      "delta_t_error_percent": 9.086065233532281e-11
+    },
+    {
+      "id": "G3",
+      "state": 193,
+      "row": 258,
+      "pm_cells": 100,
+      "reference_tavg_nm": 3.9186576845750505,
+      "reference_delta_t": 0.21329158923616598,
+      "initial_phase_deg": 0.0,
+      "raw_torques_nm": [
+        3.940012894070048,
+        4.032418889318524,
+        3.81912730008361,
+        3.958696339904848,
+        3.823182709580016,
+        3.93850797449264
+      ],
+      "comparison_torques_nm": [
+        3.940012894070048,
+        4.032418889318524,
+        3.81912730008361,
+        3.958696339904848,
+        3.823182709580016,
+        3.93850797449264
+      ],
+      "tavg_nm": 3.918657684574948,
+      "peak_to_peak_nm": 0.21329158923491454,
+      "ripple_relative": 0.054429757943516316,
+      "reference_ripple_relative": 0.05442975794383425,
+      "tavg_error_percent": 2.6201263381153694e-12,
+      "delta_t_error_percent": 5.867306640539027e-10
+    },
+    {
+      "id": "G4",
+      "state": 200,
+      "row": 491,
+      "pm_cells": 82,
+      "reference_tavg_nm": 3.155745847366145,
+      "reference_delta_t": 0.18494258054991697,
+      "initial_phase_deg": 0.0,
+      "raw_torques_nm": [
+        3.102613147310328,
+        3.130887711421465,
+        3.27381942104512,
+        3.088876840495362,
+        3.235327163661009,
+        3.102950800263637
+      ],
+      "comparison_torques_nm": [
+        3.102613147310328,
+        3.130887711421465,
+        3.27381942104512,
+        3.088876840495362,
+        3.235327163661009,
+        3.102950800263637
+      ],
+      "tavg_nm": 3.1557458473661537,
+      "peak_to_peak_nm": 0.18494258054975798,
+      "ripple_relative": 0.05860503015606108,
+      "reference_ripple_relative": 0.05860503015611163,
+      "tavg_error_percent": 2.886579864025407e-13,
+      "delta_t_error_percent": 8.596456879672587e-11
+    },
+    {
+      "id": "G5",
+      "state": 200,
+      "row": 33,
+      "pm_cells": 99,
+      "reference_tavg_nm": 3.8501566605986075,
+      "reference_delta_t": 0.4947766516831762,
+      "initial_phase_deg": 0.0,
+      "raw_torques_nm": [
+        3.737679072513372,
+        3.553575034179567,
+        4.002032582586887,
+        4.025741334983169,
+        4.048351685862222,
+        3.733560253467642
+      ],
+      "comparison_torques_nm": [
+        3.737679072513372,
+        3.553575034179567,
+        4.002032582586887,
+        4.025741334983169,
+        4.048351685862222,
+        3.733560253467642
+      ],
+      "tavg_nm": 3.85015666059881,
+      "peak_to_peak_nm": 0.4947766516826553,
+      "ripple_relative": 0.12850818688653134,
+      "reference_ripple_relative": 0.1285081868866734,
+      "tavg_error_percent": 5.262457136723242e-12,
+      "delta_t_error_percent": 1.052824494252036e-10
+    }
+  ],
+  "report_definition": {
+    "reference_delta_t_metric": "peak_to_peak_nm",
+    "reference_delta_t_unit": "N*m",
+    "note": "29°重算的四个基因证实DeltaT为峰峰转矩差；取代求解前冻结配置中的暂定相对波动解释。"
+  },
+  "legacy_minus2_comparison": [
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "tavg_nm": -3.3495178003219426,
+      "note": "旧经验倍率对照，未用作本次计算值"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "tavg_nm": -6.366265539700236,
+      "note": "旧经验倍率对照，未用作本次计算值"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "tavg_nm": -7.837315369149896,
+      "note": "旧经验倍率对照，未用作本次计算值"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "tavg_nm": -6.311491694732307,
+      "note": "旧经验倍率对照，未用作本次计算值"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "tavg_nm": -7.70031332119762,
+      "note": "旧经验倍率对照，未用作本次计算值"
+    }
+  ]
+}

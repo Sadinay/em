@@ -1,0 +1,37 @@
+{
+  "mode": "full",
+  "seed": 20260730,
+  "model_parameters": 100193,
+  "train_samples": 11,
+  "validation_samples": 10,
+  "epochs_completed": 253,
+  "best_epoch": 3,
+  "input_image_shape": [
+    5,
+    96,
+    96
+  ],
+  "channel_order": [
+    "Background",
+    "Air",
+    "Iron",
+    "Copper",
+    "Magnet"
+  ],
+  "t_min_mean": 0.7227272987365723,
+  "t_min_std": 0.09381712228059769,
+  "target_mean": 0.32946503162384033,
+  "target_std": 0.5821239352226257,
+  "train_metrics": {
+    "mse": 0.2803107500076294,
+    "rmse": 0.5294438119457336,
+    "mae": 0.2119375318288803,
+    "r2": 0.17280317779656384
+  },
+  "validation_metrics": {
+    "mse": 0.021564751863479614,
+    "rmse": 0.14684941900967677,
+    "mae": 0.12457484006881714,
+    "r2": -5.315607101897319
+  }
+}

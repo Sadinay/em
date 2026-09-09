@@ -1,0 +1,1874 @@
+[
+  {
+    "epoch": 1,
+    "training_standardized_mse": 0.3497903628826141,
+    "validation_standardized_mse": 0.12624346754550933,
+    "learning_rate": 0.0003,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.1282169371843338,
+        "rmse": 0.17986878752708435,
+        "r2": 0.9232822060585022,
+        "normalized_mae_by_actual_range": 0.03672107681632042,
+        "bias": 0.031042711809277534,
+        "calibration_slope_predicted_vs_actual": 0.9974701480457036,
+        "calibration_intercept_nm": 0.03621723042326598,
+        "absolute_error_p50": 0.09161078929901123,
+        "absolute_error_p90": 0.2846042215824127,
+        "absolute_error_p95": 0.3815251886844635,
+        "fraction_absolute_error_le_0_05_nm": 0.304,
+        "fraction_absolute_error_le_0_10_nm": 0.5334
+      },
+      "delta_t": {
+        "mae": 0.12115944921970367,
+        "rmse": 0.18333227932453156,
+        "r2": 0.6421330571174622,
+        "normalized_mae_by_actual_range": 0.03905154764652252,
+        "bias": -0.004725823178887367,
+        "calibration_slope_predicted_vs_actual": 0.671244276748789,
+        "calibration_intercept_nm": 0.25447417098698766,
+        "absolute_error_p50": 0.07829731702804565,
+        "absolute_error_p90": 0.285531610250473,
+        "absolute_error_p95": 0.39973124861717224,
+        "fraction_absolute_error_le_0_05_nm": 0.3374,
+        "fraction_absolute_error_le_0_10_nm": 0.5974
+      }
+    }
+  },
+  {
+    "epoch": 2,
+    "training_standardized_mse": 0.1643859711964925,
+    "validation_standardized_mse": 0.09637934303283692,
+    "learning_rate": 0.0003,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.1061563491821289,
+        "rmse": 0.15238997340202332,
+        "r2": 0.944932222366333,
+        "normalized_mae_by_actual_range": 0.03040296956896782,
+        "bias": -0.005813603289425373,
+        "calibration_slope_predicted_vs_actual": 1.0241562419984274,
+        "calibration_intercept_nm": -0.05522238893957486,
+        "absolute_error_p50": 0.0733259916305542,
+        "absolute_error_p90": 0.23777681589126587,
+        "absolute_error_p95": 0.32868024706840515,
+        "fraction_absolute_error_le_0_05_nm": 0.3672,
+        "fraction_absolute_error_le_0_10_nm": 0.6184
+      },
+      "delta_t": {
+        "mae": 0.10258843749761581,
+        "rmse": 0.16154514253139496,
+        "r2": 0.7221364974975586,
+        "normalized_mae_by_actual_range": 0.03306582570075989,
+        "bias": -0.010955564677715302,
+        "calibration_slope_predicted_vs_actual": 0.7303078544196905,
+        "calibration_intercept_nm": 0.20167709184666713,
+        "absolute_error_p50": 0.06427210569381714,
+        "absolute_error_p90": 0.23623688519001007,
+        "absolute_error_p95": 0.3424009680747986,
+        "fraction_absolute_error_le_0_05_nm": 0.4096,
+        "fraction_absolute_error_le_0_10_nm": 0.6844
+      }
+    }
+  },
+  {
+    "epoch": 3,
+    "training_standardized_mse": 0.11652071580886841,
+    "validation_standardized_mse": 0.09083155765533447,
+    "learning_rate": 0.0003,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.09222817420959473,
+        "rmse": 0.13261443376541138,
+        "r2": 0.9582971334457397,
+        "normalized_mae_by_actual_range": 0.026413967832922935,
+        "bias": 0.01743176206946373,
+        "calibration_slope_predicted_vs_actual": 0.9496606666261611,
+        "calibration_intercept_nm": 0.12039502054939281,
+        "absolute_error_p50": 0.0641794204711914,
+        "absolute_error_p90": 0.20779329538345337,
+        "absolute_error_p95": 0.2822006046772003,
+        "fraction_absolute_error_le_0_05_nm": 0.4074,
+        "fraction_absolute_error_le_0_10_nm": 0.6776
+      },
+      "delta_t": {
+        "mae": 0.10420051217079163,
+        "rmse": 0.16083252429962158,
+        "r2": 0.7245825529098511,
+        "normalized_mae_by_actual_range": 0.03358542174100876,
+        "bias": 0.06275852024555206,
+        "calibration_slope_predicted_vs_actual": 0.8783422909155096,
+        "calibration_intercept_nm": 0.15867678167749918,
+        "absolute_error_p50": 0.06728331744670868,
+        "absolute_error_p90": 0.24326877295970917,
+        "absolute_error_p95": 0.3514966070652008,
+        "fraction_absolute_error_le_0_05_nm": 0.3852,
+        "fraction_absolute_error_le_0_10_nm": 0.6718
+      }
+    }
+  },
+  {
+    "epoch": 4,
+    "training_standardized_mse": 0.0927819839477539,
+    "validation_standardized_mse": 0.06906374866962432,
+    "learning_rate": 0.0003,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.10629855841398239,
+        "rmse": 0.14353469014167786,
+        "r2": 0.9511461853981018,
+        "normalized_mae_by_actual_range": 0.030443698167800903,
+        "bias": 0.06942125409841537,
+        "calibration_slope_predicted_vs_actual": 0.9628717811570896,
+        "calibration_intercept_nm": 0.14536271265798137,
+        "absolute_error_p50": 0.08024685084819794,
+        "absolute_error_p90": 0.23206982016563416,
+        "absolute_error_p95": 0.29481369256973267,
+        "fraction_absolute_error_le_0_05_nm": 0.3224,
+        "fraction_absolute_error_le_0_10_nm": 0.5938
+      },
+      "delta_t": {
+        "mae": 0.08601189404726028,
+        "rmse": 0.1323939561843872,
+        "r2": 0.8133706450462341,
+        "normalized_mae_by_actual_range": 0.027722951024770737,
+        "bias": 0.022013314068317413,
+        "calibration_slope_predicted_vs_actual": 0.8117234977758683,
+        "calibration_intercept_nm": 0.17045565019015052,
+        "absolute_error_p50": 0.05785903334617615,
+        "absolute_error_p90": 0.18562084436416626,
+        "absolute_error_p95": 0.27282148599624634,
+        "fraction_absolute_error_le_0_05_nm": 0.4428,
+        "fraction_absolute_error_le_0_10_nm": 0.7328
+      }
+    }
+  },
+  {
+    "epoch": 5,
+    "training_standardized_mse": 0.07551007890701295,
+    "validation_standardized_mse": 0.07607916662693023,
+    "learning_rate": 0.0003,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.11117643117904663,
+        "rmse": 0.1411300152540207,
+        "r2": 0.95276939868927,
+        "normalized_mae_by_actual_range": 0.03184071183204651,
+        "bias": -0.07262876629829407,
+        "calibration_slope_predicted_vs_actual": 0.9400797587971713,
+        "calibration_intercept_nm": 0.04993112294421049,
+        "absolute_error_p50": 0.09744775295257568,
+        "absolute_error_p90": 0.21142524480819702,
+        "absolute_error_p95": 0.26991868019104004,
+        "fraction_absolute_error_le_0_05_nm": 0.2396,
+        "fraction_absolute_error_le_0_10_nm": 0.5136
+      },
+      "delta_t": {
+        "mae": 0.09560641646385193,
+        "rmse": 0.14188240468502045,
+        "r2": 0.7856612205505371,
+        "normalized_mae_by_actual_range": 0.03081541135907173,
+        "bias": -0.05510900914669037,
+        "calibration_slope_predicted_vs_actual": 0.838766519799496,
+        "calibration_intercept_nm": 0.07201186797255506,
+        "absolute_error_p50": 0.06803986430168152,
+        "absolute_error_p90": 0.20039093494415283,
+        "absolute_error_p95": 0.28767722845077515,
+        "fraction_absolute_error_le_0_05_nm": 0.3762,
+        "fraction_absolute_error_le_0_10_nm": 0.6828
+      }
+    }
+  },
+  {
+    "epoch": 6,
+    "training_standardized_mse": 0.0633977447271347,
+    "validation_standardized_mse": 0.05889894915223122,
+    "learning_rate": 0.0003,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.08048510551452637,
+        "rmse": 0.11552797257900238,
+        "r2": 0.9683510661125183,
+        "normalized_mae_by_actual_range": 0.02305077575147152,
+        "bias": -0.009559910744428635,
+        "calibration_slope_predicted_vs_actual": 0.9694010835052403,
+        "calibration_intercept_nm": 0.05302661755941954,
+        "absolute_error_p50": 0.05890786647796631,
+        "absolute_error_p90": 0.1748127043247223,
+        "absolute_error_p95": 0.2379295378923416,
+        "fraction_absolute_error_le_0_05_nm": 0.4416,
+        "fraction_absolute_error_le_0_10_nm": 0.7314
+      },
+      "delta_t": {
+        "mae": 0.07821707427501678,
+        "rmse": 0.12727251648902893,
+        "r2": 0.8275302052497864,
+        "normalized_mae_by_actual_range": 0.025210561230778694,
+        "bias": 0.014906620606780052,
+        "calibration_slope_predicted_vs_actual": 0.9081245555016951,
+        "calibration_intercept_nm": 0.08734373068301604,
+        "absolute_error_p50": 0.0482238233089447,
+        "absolute_error_p90": 0.17353186011314392,
+        "absolute_error_p95": 0.25564226508140564,
+        "fraction_absolute_error_le_0_05_nm": 0.5138,
+        "fraction_absolute_error_le_0_10_nm": 0.7714
+      }
+    }
+  },
+  {
+    "epoch": 7,
+    "training_standardized_mse": 0.06064323298931122,
+    "validation_standardized_mse": 0.05888575266599655,
+    "learning_rate": 0.0003,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.08673912286758423,
+        "rmse": 0.12132461369037628,
+        "r2": 0.9650954008102417,
+        "normalized_mae_by_actual_range": 0.0248419139534235,
+        "bias": -0.03885858878493309,
+        "calibration_slope_predicted_vs_actual": 0.9708250511999958,
+        "calibration_intercept_nm": 0.020815378150063703,
+        "absolute_error_p50": 0.06478261947631836,
+        "absolute_error_p90": 0.1844111680984497,
+        "absolute_error_p95": 0.2433578372001648,
+        "fraction_absolute_error_le_0_05_nm": 0.3964,
+        "fraction_absolute_error_le_0_10_nm": 0.6902
+      },
+      "delta_t": {
+        "mae": 0.08163411915302277,
+        "rmse": 0.12564806640148163,
+        "r2": 0.8319047689437866,
+        "normalized_mae_by_actual_range": 0.026311926543712616,
+        "bias": -0.0165973212569952,
+        "calibration_slope_predicted_vs_actual": 0.8030979696409133,
+        "calibration_intercept_nm": 0.13864561882791993,
+        "absolute_error_p50": 0.05557700991630554,
+        "absolute_error_p90": 0.17382289469242096,
+        "absolute_error_p95": 0.2476206123828888,
+        "fraction_absolute_error_le_0_05_nm": 0.456,
+        "fraction_absolute_error_le_0_10_nm": 0.7508
+      }
+    }
+  },
+  {
+    "epoch": 8,
+    "training_standardized_mse": 0.053467596367994946,
+    "validation_standardized_mse": 0.052287780451774596,
+    "learning_rate": 0.0003,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.07866552472114563,
+        "rmse": 0.11429949104785919,
+        "r2": 0.9690206050872803,
+        "normalized_mae_by_actual_range": 0.02252965047955513,
+        "bias": 0.022830519825220108,
+        "calibration_slope_predicted_vs_actual": 1.0008560664768327,
+        "calibration_intercept_nm": 0.021079534323634054,
+        "absolute_error_p50": 0.05501723289489746,
+        "absolute_error_p90": 0.17644146084785461,
+        "absolute_error_p95": 0.23323090374469757,
+        "fraction_absolute_error_le_0_05_nm": 0.4636,
+        "fraction_absolute_error_le_0_10_nm": 0.7344
+      },
+      "delta_t": {
+        "mae": 0.0712217316031456,
+        "rmse": 0.1184072494506836,
+        "r2": 0.8507204651832581,
+        "normalized_mae_by_actual_range": 0.02295585535466671,
+        "bias": -0.0011877842480316758,
+        "calibration_slope_predicted_vs_actual": 0.8982814618202806,
+        "calibration_intercept_nm": 0.07900989054242129,
+        "absolute_error_p50": 0.04253503680229187,
+        "absolute_error_p90": 0.16159284114837646,
+        "absolute_error_p95": 0.24023251235485077,
+        "fraction_absolute_error_le_0_05_nm": 0.5668,
+        "fraction_absolute_error_le_0_10_nm": 0.8052
+      }
+    }
+  },
+  {
+    "epoch": 9,
+    "training_standardized_mse": 0.04904982118606568,
+    "validation_standardized_mse": 0.0526352105140686,
+    "learning_rate": 0.0003,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.08719457685947418,
+        "rmse": 0.12013458460569382,
+        "r2": 0.965776801109314,
+        "normalized_mae_by_actual_range": 0.024972354993224144,
+        "bias": -0.044594939798116684,
+        "calibration_slope_predicted_vs_actual": 0.9834617235507783,
+        "calibration_intercept_nm": -0.010767817982964847,
+        "absolute_error_p50": 0.06829279661178589,
+        "absolute_error_p90": 0.17742648720741272,
+        "absolute_error_p95": 0.24483846127986908,
+        "fraction_absolute_error_le_0_05_nm": 0.3758,
+        "fraction_absolute_error_le_0_10_nm": 0.6916
+      },
+      "delta_t": {
+        "mae": 0.07104315608739853,
+        "rmse": 0.11719328165054321,
+        "r2": 0.8537657260894775,
+        "normalized_mae_by_actual_range": 0.022898297756910324,
+        "bias": -0.008414218202233315,
+        "calibration_slope_predicted_vs_actual": 0.9016368576668096,
+        "calibration_intercept_nm": 0.06913797050662376,
+        "absolute_error_p50": 0.0432666540145874,
+        "absolute_error_p90": 0.15926219522953033,
+        "absolute_error_p95": 0.23192580044269562,
+        "fraction_absolute_error_le_0_05_nm": 0.5554,
+        "fraction_absolute_error_le_0_10_nm": 0.7996
+      }
+    }
+  },
+  {
+    "epoch": 10,
+    "training_standardized_mse": 0.04489821807940801,
+    "validation_standardized_mse": 0.05475683418512344,
+    "learning_rate": 0.0003,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.07587283849716187,
+        "rmse": 0.11106407642364502,
+        "r2": 0.9707496166229248,
+        "normalized_mae_by_actual_range": 0.021729830652475357,
+        "bias": 0.014705529436469078,
+        "calibration_slope_predicted_vs_actual": 0.994439453663184,
+        "calibration_intercept_nm": 0.02607898232470876,
+        "absolute_error_p50": 0.05175316333770752,
+        "absolute_error_p90": 0.16847984492778778,
+        "absolute_error_p95": 0.2274712771177292,
+        "fraction_absolute_error_le_0_05_nm": 0.4886,
+        "fraction_absolute_error_le_0_10_nm": 0.7488
+      },
+      "delta_t": {
+        "mae": 0.07855203747749329,
+        "rmse": 0.12280350178480148,
+        "r2": 0.8394296765327454,
+        "normalized_mae_by_actual_range": 0.02531852386891842,
+        "bias": 0.024596408009529114,
+        "calibration_slope_predicted_vs_actual": 0.8580151701716463,
+        "calibration_intercept_nm": 0.13654112739032154,
+        "absolute_error_p50": 0.05074203014373779,
+        "absolute_error_p90": 0.17340236902236938,
+        "absolute_error_p95": 0.24850675463676453,
+        "fraction_absolute_error_le_0_05_nm": 0.4946,
+        "fraction_absolute_error_le_0_10_nm": 0.764
+      }
+    }
+  },
+  {
+    "epoch": 11,
+    "training_standardized_mse": 0.04382887915372848,
+    "validation_standardized_mse": 0.06941535403728485,
+    "learning_rate": 0.0003,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.11849335581064224,
+        "rmse": 0.161367729306221,
+        "r2": 0.9382526874542236,
+        "normalized_mae_by_actual_range": 0.033936262130737305,
+        "bias": -0.09841641783714294,
+        "calibration_slope_predicted_vs_actual": 1.0613704138916498,
+        "calibration_intercept_nm": -0.22394247747024001,
+        "absolute_error_p50": 0.0870962142944336,
+        "absolute_error_p90": 0.25920578837394714,
+        "absolute_error_p95": 0.3392127454280853,
+        "fraction_absolute_error_le_0_05_nm": 0.2752,
+        "fraction_absolute_error_le_0_10_nm": 0.5578
+      },
+      "delta_t": {
+        "mae": 0.08059519529342651,
+        "rmse": 0.12664590775966644,
+        "r2": 0.8292243480682373,
+        "normalized_mae_by_actual_range": 0.025977065786719322,
+        "bias": -0.04285883158445358,
+        "calibration_slope_predicted_vs_actual": 0.9248091600728514,
+        "calibration_intercept_nm": 0.016423682155698397,
+        "absolute_error_p50": 0.05193254351615906,
+        "absolute_error_p90": 0.1746639460325241,
+        "absolute_error_p95": 0.2642512321472168,
+        "fraction_absolute_error_le_0_05_nm": 0.4862,
+        "fraction_absolute_error_le_0_10_nm": 0.7542
+      }
+    }
+  },
+  {
+    "epoch": 12,
+    "training_standardized_mse": 0.04043060478369395,
+    "validation_standardized_mse": 0.05444992901682854,
+    "learning_rate": 0.00015,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.0856124609708786,
+        "rmse": 0.11989910155534744,
+        "r2": 0.9659108519554138,
+        "normalized_mae_by_actual_range": 0.024519240483641624,
+        "bias": 0.05471663922071457,
+        "calibration_slope_predicted_vs_actual": 0.9635379264333966,
+        "calibration_intercept_nm": 0.12929557082286608,
+        "absolute_error_p50": 0.06364387273788452,
+        "absolute_error_p90": 0.1860913634300232,
+        "absolute_error_p95": 0.24657957255840302,
+        "fraction_absolute_error_le_0_05_nm": 0.406,
+        "fraction_absolute_error_le_0_10_nm": 0.7026
+      },
+      "delta_t": {
+        "mae": 0.07473933696746826,
+        "rmse": 0.11988236010074615,
+        "r2": 0.8469778299331665,
+        "normalized_mae_by_actual_range": 0.0240896325558424,
+        "bias": 0.02483438141644001,
+        "calibration_slope_predicted_vs_actual": 0.9453007984084829,
+        "calibration_intercept_nm": 0.06796072495421886,
+        "absolute_error_p50": 0.04736533761024475,
+        "absolute_error_p90": 0.16436174511909485,
+        "absolute_error_p95": 0.238581582903862,
+        "fraction_absolute_error_le_0_05_nm": 0.5198,
+        "fraction_absolute_error_le_0_10_nm": 0.7898
+      }
+    }
+  },
+  {
+    "epoch": 13,
+    "training_standardized_mse": 0.029836900065342585,
+    "validation_standardized_mse": 0.04287319410443306,
+    "learning_rate": 0.00015,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.07122277468442917,
+        "rmse": 0.10580506920814514,
+        "r2": 0.9734541177749634,
+        "normalized_mae_by_actual_range": 0.020398061722517014,
+        "bias": 0.03872910887002945,
+        "calibration_slope_predicted_vs_actual": 0.9617697684105412,
+        "calibration_intercept_nm": 0.11692460612679541,
+        "absolute_error_p50": 0.04745614528656006,
+        "absolute_error_p90": 0.15985935926437378,
+        "absolute_error_p95": 0.22432929277420044,
+        "fraction_absolute_error_le_0_05_nm": 0.5184,
+        "fraction_absolute_error_le_0_10_nm": 0.7802
+      },
+      "delta_t": {
+        "mae": 0.0639934092760086,
+        "rmse": 0.10655064880847931,
+        "r2": 0.8791195750236511,
+        "normalized_mae_by_actual_range": 0.02062605507671833,
+        "bias": 0.010901466012001038,
+        "calibration_slope_predicted_vs_actual": 0.912071636150688,
+        "calibration_intercept_nm": 0.0802265905190169,
+        "absolute_error_p50": 0.04049822688102722,
+        "absolute_error_p90": 0.13716277480125427,
+        "absolute_error_p95": 0.21513326466083527,
+        "fraction_absolute_error_le_0_05_nm": 0.5902,
+        "fraction_absolute_error_le_0_10_nm": 0.845
+      }
+    }
+  },
+  {
+    "epoch": 14,
+    "training_standardized_mse": 0.025715189182758332,
+    "validation_standardized_mse": 0.044650834143161774,
+    "learning_rate": 0.00015,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06710001081228256,
+        "rmse": 0.09980259835720062,
+        "r2": 0.9763806462287903,
+        "normalized_mae_by_actual_range": 0.01921731047332287,
+        "bias": 0.01664963737130165,
+        "calibration_slope_predicted_vs_actual": 0.9933703468402502,
+        "calibration_intercept_nm": 0.030209822572586587,
+        "absolute_error_p50": 0.045699119567871094,
+        "absolute_error_p90": 0.14806777238845825,
+        "absolute_error_p95": 0.20017138123512268,
+        "fraction_absolute_error_le_0_05_nm": 0.5336,
+        "fraction_absolute_error_le_0_10_nm": 0.7964
+      },
+      "delta_t": {
+        "mae": 0.06864999979734421,
+        "rmse": 0.11102435737848282,
+        "r2": 0.8687557578086853,
+        "normalized_mae_by_actual_range": 0.022126946598291397,
+        "bias": 0.012822416611015797,
+        "calibration_slope_predicted_vs_actual": 0.9792107790352453,
+        "calibration_intercept_nm": 0.029213206819449496,
+        "absolute_error_p50": 0.04475763440132141,
+        "absolute_error_p90": 0.14290645718574524,
+        "absolute_error_p95": 0.2186552882194519,
+        "fraction_absolute_error_le_0_05_nm": 0.5542,
+        "fraction_absolute_error_le_0_10_nm": 0.8182
+      }
+    }
+  },
+  {
+    "epoch": 15,
+    "training_standardized_mse": 0.024442322965463004,
+    "validation_standardized_mse": 0.04349047583937645,
+    "learning_rate": 0.00015,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06551269441843033,
+        "rmse": 0.09847392141819,
+        "r2": 0.9770053625106812,
+        "normalized_mae_by_actual_range": 0.018762705847620964,
+        "bias": 0.005060888826847076,
+        "calibration_slope_predicted_vs_actual": 0.9596705468129394,
+        "calibration_intercept_nm": 0.08755009835930207,
+        "absolute_error_p50": 0.044080138206481934,
+        "absolute_error_p90": 0.1477643847465515,
+        "absolute_error_p95": 0.20435775816440582,
+        "fraction_absolute_error_le_0_05_nm": 0.5502,
+        "fraction_absolute_error_le_0_10_nm": 0.8112
+      },
+      "delta_t": {
+        "mae": 0.0650496780872345,
+        "rmse": 0.1095784530043602,
+        "r2": 0.8721519708633423,
+        "normalized_mae_by_actual_range": 0.020966507494449615,
+        "bias": 0.018771713599562645,
+        "calibration_slope_predicted_vs_actual": 0.9133859269142213,
+        "calibration_intercept_nm": 0.08706061605922953,
+        "absolute_error_p50": 0.039400652050971985,
+        "absolute_error_p90": 0.14131402969360352,
+        "absolute_error_p95": 0.22085626423358917,
+        "fraction_absolute_error_le_0_05_nm": 0.5932,
+        "fraction_absolute_error_le_0_10_nm": 0.8382
+      }
+    }
+  },
+  {
+    "epoch": 16,
+    "training_standardized_mse": 0.02391862654685974,
+    "validation_standardized_mse": 0.04315491338968277,
+    "learning_rate": 0.00015,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.07312263548374176,
+        "rmse": 0.10314135253429413,
+        "r2": 0.9747738838195801,
+        "normalized_mae_by_actual_range": 0.02094217948615551,
+        "bias": -0.02987547591328621,
+        "calibration_slope_predicted_vs_actual": 0.9631706142090402,
+        "calibration_intercept_nm": 0.045454751523039225,
+        "absolute_error_p50": 0.055431365966796875,
+        "absolute_error_p90": 0.15089422464370728,
+        "absolute_error_p95": 0.201879620552063,
+        "fraction_absolute_error_le_0_05_nm": 0.4522,
+        "fraction_absolute_error_le_0_10_nm": 0.777
+      },
+      "delta_t": {
+        "mae": 0.06365373730659485,
+        "rmse": 0.10776891559362411,
+        "r2": 0.8763395547866821,
+        "normalized_mae_by_actual_range": 0.020516574382781982,
+        "bias": -0.0062260315753519535,
+        "calibration_slope_predicted_vs_actual": 0.9269243840606335,
+        "calibration_intercept_nm": 0.05138878102633154,
+        "absolute_error_p50": 0.03784310817718506,
+        "absolute_error_p90": 0.14397373795509338,
+        "absolute_error_p95": 0.21549218893051147,
+        "fraction_absolute_error_le_0_05_nm": 0.6116,
+        "fraction_absolute_error_le_0_10_nm": 0.8318
+      }
+    }
+  },
+  {
+    "epoch": 17,
+    "training_standardized_mse": 0.02293645843466123,
+    "validation_standardized_mse": 0.04096577368378639,
+    "learning_rate": 0.00015,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06732844561338425,
+        "rmse": 0.10034981369972229,
+        "r2": 0.9761208891868591,
+        "normalized_mae_by_actual_range": 0.019282734021544456,
+        "bias": 0.024533972144126892,
+        "calibration_slope_predicted_vs_actual": 0.9874548013218611,
+        "calibration_intercept_nm": 0.05019371703036232,
+        "absolute_error_p50": 0.04646855592727661,
+        "absolute_error_p90": 0.14747369289398193,
+        "absolute_error_p95": 0.2057657241821289,
+        "fraction_absolute_error_le_0_05_nm": 0.5286,
+        "fraction_absolute_error_le_0_10_nm": 0.8016
+      },
+      "delta_t": {
+        "mae": 0.061907533556222916,
+        "rmse": 0.10503994673490524,
+        "r2": 0.8825230598449707,
+        "normalized_mae_by_actual_range": 0.01995374634861946,
+        "bias": 0.004830441437661648,
+        "calibration_slope_predicted_vs_actual": 0.8931131162664501,
+        "calibration_intercept_nm": 0.0891029811187451,
+        "absolute_error_p50": 0.037786051630973816,
+        "absolute_error_p90": 0.13358229398727417,
+        "absolute_error_p95": 0.20704220235347748,
+        "fraction_absolute_error_le_0_05_nm": 0.62,
+        "fraction_absolute_error_le_0_10_nm": 0.8482
+      }
+    }
+  },
+  {
+    "epoch": 18,
+    "training_standardized_mse": 0.023467407667636872,
+    "validation_standardized_mse": 0.04362366659045219,
+    "learning_rate": 0.00015,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.07891050726175308,
+        "rmse": 0.10785160213708878,
+        "r2": 0.9724172353744507,
+        "normalized_mae_by_actual_range": 0.02259981445968151,
+        "bias": -0.04069671034812927,
+        "calibration_slope_predicted_vs_actual": 0.9597453607020545,
+        "calibration_intercept_nm": 0.041639475937201305,
+        "absolute_error_p50": 0.061933279037475586,
+        "absolute_error_p90": 0.1586325317621231,
+        "absolute_error_p95": 0.21120160818099976,
+        "fraction_absolute_error_le_0_05_nm": 0.406,
+        "fraction_absolute_error_le_0_10_nm": 0.7358
+      },
+      "delta_t": {
+        "mae": 0.06443727761507034,
+        "rmse": 0.10714641958475113,
+        "r2": 0.8777640461921692,
+        "normalized_mae_by_actual_range": 0.02076912112534046,
+        "bias": -0.010044699534773827,
+        "calibration_slope_predicted_vs_actual": 0.8937205217222772,
+        "calibration_intercept_nm": 0.07374894494752758,
+        "absolute_error_p50": 0.03939765691757202,
+        "absolute_error_p90": 0.14322741329669952,
+        "absolute_error_p95": 0.21492089331150055,
+        "fraction_absolute_error_le_0_05_nm": 0.6008,
+        "fraction_absolute_error_le_0_10_nm": 0.8354
+      }
+    }
+  },
+  {
+    "epoch": 19,
+    "training_standardized_mse": 0.02205042805671692,
+    "validation_standardized_mse": 0.0419061889052391,
+    "learning_rate": 0.00015,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.0639243870973587,
+        "rmse": 0.09784802049398422,
+        "r2": 0.9772967100143433,
+        "normalized_mae_by_actual_range": 0.018307818099856377,
+        "bias": 0.005530909635126591,
+        "calibration_slope_predicted_vs_actual": 0.9748865374655463,
+        "calibration_intercept_nm": 0.056897579337319884,
+        "absolute_error_p50": 0.04262971878051758,
+        "absolute_error_p90": 0.1443806141614914,
+        "absolute_error_p95": 0.20537328720092773,
+        "fraction_absolute_error_le_0_05_nm": 0.5748,
+        "fraction_absolute_error_le_0_10_nm": 0.815
+      },
+      "delta_t": {
+        "mae": 0.06203358247876167,
+        "rmse": 0.10724665224552155,
+        "r2": 0.8775352239608765,
+        "normalized_mae_by_actual_range": 0.019994374364614487,
+        "bias": -0.0010135382181033492,
+        "calibration_slope_predicted_vs_actual": 0.9195536832389826,
+        "calibration_intercept_nm": 0.062412535859201125,
+        "absolute_error_p50": 0.03542354702949524,
+        "absolute_error_p90": 0.1392585039138794,
+        "absolute_error_p95": 0.21715225279331207,
+        "fraction_absolute_error_le_0_05_nm": 0.6322,
+        "fraction_absolute_error_le_0_10_nm": 0.8444
+      }
+    }
+  },
+  {
+    "epoch": 20,
+    "training_standardized_mse": 0.02203323856393496,
+    "validation_standardized_mse": 0.04694996480345726,
+    "learning_rate": 0.00015,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.08181707561016083,
+        "rmse": 0.11306709051132202,
+        "r2": 0.9696850180625916,
+        "normalized_mae_by_actual_range": 0.023432249203324318,
+        "bias": -0.054974522441625595,
+        "calibration_slope_predicted_vs_actual": 0.9936386812916805,
+        "calibration_intercept_nm": -0.04196318196005451,
+        "absolute_error_p50": 0.06364935636520386,
+        "absolute_error_p90": 0.16898417472839355,
+        "absolute_error_p95": 0.21843759715557098,
+        "fraction_absolute_error_le_0_05_nm": 0.3934,
+        "fraction_absolute_error_le_0_10_nm": 0.7282
+      },
+      "delta_t": {
+        "mae": 0.06784920394420624,
+        "rmse": 0.11080262809991837,
+        "r2": 0.8692794442176819,
+        "normalized_mae_by_actual_range": 0.021868837997317314,
+        "bias": -0.02664240635931492,
+        "calibration_slope_predicted_vs_actual": 0.9021552070163465,
+        "calibration_intercept_nm": 0.05050109899079707,
+        "absolute_error_p50": 0.04276499152183533,
+        "absolute_error_p90": 0.14744563400745392,
+        "absolute_error_p95": 0.21441121399402618,
+        "fraction_absolute_error_le_0_05_nm": 0.5652,
+        "fraction_absolute_error_le_0_10_nm": 0.8186
+      }
+    }
+  },
+  {
+    "epoch": 21,
+    "training_standardized_mse": 0.020735667701562245,
+    "validation_standardized_mse": 0.041124893563985826,
+    "learning_rate": 7.5e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06478238105773926,
+        "rmse": 0.09953159093856812,
+        "r2": 0.9765087366104126,
+        "normalized_mae_by_actual_range": 0.01855354569852352,
+        "bias": 0.017363568767905235,
+        "calibration_slope_predicted_vs_actual": 0.9707024876887232,
+        "calibration_intercept_nm": 0.07728822625149928,
+        "absolute_error_p50": 0.04228973388671875,
+        "absolute_error_p90": 0.14753882586956024,
+        "absolute_error_p95": 0.2063324898481369,
+        "fraction_absolute_error_le_0_05_nm": 0.566,
+        "fraction_absolute_error_le_0_10_nm": 0.8128
+      },
+      "delta_t": {
+        "mae": 0.062201470136642456,
+        "rmse": 0.1055283173918724,
+        "r2": 0.8814281225204468,
+        "normalized_mae_by_actual_range": 0.020048486068844795,
+        "bias": 0.0034155044704675674,
+        "calibration_slope_predicted_vs_actual": 0.9385659126190485,
+        "calibration_intercept_nm": 0.05185181756416406,
+        "absolute_error_p50": 0.03710120916366577,
+        "absolute_error_p90": 0.13995645940303802,
+        "absolute_error_p95": 0.21363067626953125,
+        "fraction_absolute_error_le_0_05_nm": 0.619,
+        "fraction_absolute_error_le_0_10_nm": 0.8426
+      }
+    }
+  },
+  {
+    "epoch": 22,
+    "training_standardized_mse": 0.017813376053174335,
+    "validation_standardized_mse": 0.03845214722752571,
+    "learning_rate": 7.5e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.061558935791254044,
+        "rmse": 0.09515342861413956,
+        "r2": 0.9785299301147461,
+        "normalized_mae_by_actual_range": 0.017630357295274734,
+        "bias": -0.0029384943190962076,
+        "calibration_slope_predicted_vs_actual": 0.9882112326349645,
+        "calibration_intercept_nm": 0.021174059229460418,
+        "absolute_error_p50": 0.04033651947975159,
+        "absolute_error_p90": 0.13790936768054962,
+        "absolute_error_p95": 0.19884899258613586,
+        "fraction_absolute_error_le_0_05_nm": 0.5828,
+        "fraction_absolute_error_le_0_10_nm": 0.8266
+      },
+      "delta_t": {
+        "mae": 0.05896275117993355,
+        "rmse": 0.10234348475933075,
+        "r2": 0.888477087020874,
+        "normalized_mae_by_actual_range": 0.019004598259925842,
+        "bias": -0.004433515015989542,
+        "calibration_slope_predicted_vs_actual": 0.9223864099352157,
+        "calibration_intercept_nm": 0.056759160088954555,
+        "absolute_error_p50": 0.03362244367599487,
+        "absolute_error_p90": 0.13195884227752686,
+        "absolute_error_p95": 0.20617449283599854,
+        "fraction_absolute_error_le_0_05_nm": 0.6524,
+        "fraction_absolute_error_le_0_10_nm": 0.8558
+      }
+    }
+  },
+  {
+    "epoch": 23,
+    "training_standardized_mse": 0.015616202626625697,
+    "validation_standardized_mse": 0.041095361924171445,
+    "learning_rate": 7.5e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06608983874320984,
+        "rmse": 0.1005614772439003,
+        "r2": 0.976020097732544,
+        "normalized_mae_by_actual_range": 0.01892799884080887,
+        "bias": 0.029913445934653282,
+        "calibration_slope_predicted_vs_actual": 0.9777710027076143,
+        "calibration_intercept_nm": 0.07538027636057609,
+        "absolute_error_p50": 0.04389303922653198,
+        "absolute_error_p90": 0.1511124074459076,
+        "absolute_error_p95": 0.20655404031276703,
+        "fraction_absolute_error_le_0_05_nm": 0.5562,
+        "fraction_absolute_error_le_0_10_nm": 0.8072
+      },
+      "delta_t": {
+        "mae": 0.06021351367235184,
+        "rmse": 0.1051909402012825,
+        "r2": 0.8821850419044495,
+        "normalized_mae_by_actual_range": 0.019407738000154495,
+        "bias": 0.009510556235909462,
+        "calibration_slope_predicted_vs_actual": 0.9471821170809303,
+        "calibration_intercept_nm": 0.05115361838697561,
+        "absolute_error_p50": 0.034579306840896606,
+        "absolute_error_p90": 0.13303080201148987,
+        "absolute_error_p95": 0.2128119170665741,
+        "fraction_absolute_error_le_0_05_nm": 0.6432,
+        "fraction_absolute_error_le_0_10_nm": 0.855
+      }
+    }
+  },
+  {
+    "epoch": 24,
+    "training_standardized_mse": 0.015268868283430735,
+    "validation_standardized_mse": 0.03924981182217598,
+    "learning_rate": 7.5e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06270885467529297,
+        "rmse": 0.0973578691482544,
+        "r2": 0.9775236248970032,
+        "normalized_mae_by_actual_range": 0.01795969158411026,
+        "bias": 0.008917299099266529,
+        "calibration_slope_predicted_vs_actual": 0.9983833060115566,
+        "calibration_intercept_nm": 0.012224058540991812,
+        "absolute_error_p50": 0.040699124336242676,
+        "absolute_error_p90": 0.1440502256155014,
+        "absolute_error_p95": 0.20195484161376953,
+        "fraction_absolute_error_le_0_05_nm": 0.5808,
+        "fraction_absolute_error_le_0_10_nm": 0.8282
+      },
+      "delta_t": {
+        "mae": 0.059295136481523514,
+        "rmse": 0.10306044667959213,
+        "r2": 0.8869090676307678,
+        "normalized_mae_by_actual_range": 0.01911173015832901,
+        "bias": 0.012848010286688805,
+        "calibration_slope_predicted_vs_actual": 0.9206198819780855,
+        "calibration_intercept_nm": 0.0754334643757688,
+        "absolute_error_p50": 0.0354333221912384,
+        "absolute_error_p90": 0.12844137847423553,
+        "absolute_error_p95": 0.20352984964847565,
+        "fraction_absolute_error_le_0_05_nm": 0.6462,
+        "fraction_absolute_error_le_0_10_nm": 0.8562
+      }
+    }
+  },
+  {
+    "epoch": 25,
+    "training_standardized_mse": 0.015344652460018794,
+    "validation_standardized_mse": 0.039361295908689496,
+    "learning_rate": 7.5e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06202830746769905,
+        "rmse": 0.09661296010017395,
+        "r2": 0.9778662323951721,
+        "normalized_mae_by_actual_range": 0.017764784395694733,
+        "bias": 0.012116714380681515,
+        "calibration_slope_predicted_vs_actual": 0.97529007403186,
+        "calibration_intercept_nm": 0.06265799588577599,
+        "absolute_error_p50": 0.03983640670776367,
+        "absolute_error_p90": 0.14271380007266998,
+        "absolute_error_p95": 0.19921691715717316,
+        "fraction_absolute_error_le_0_05_nm": 0.5858,
+        "fraction_absolute_error_le_0_10_nm": 0.8224
+      },
+      "delta_t": {
+        "mae": 0.05880504101514816,
+        "rmse": 0.10345219820737839,
+        "r2": 0.8860476613044739,
+        "normalized_mae_by_actual_range": 0.01895376481115818,
+        "bias": 0.003940182272344828,
+        "calibration_slope_predicted_vs_actual": 0.9391348215162345,
+        "calibration_intercept_nm": 0.051927951522210115,
+        "absolute_error_p50": 0.03291681408882141,
+        "absolute_error_p90": 0.13112497329711914,
+        "absolute_error_p95": 0.2066824734210968,
+        "fraction_absolute_error_le_0_05_nm": 0.6556,
+        "fraction_absolute_error_le_0_10_nm": 0.8558
+      }
+    }
+  },
+  {
+    "epoch": 26,
+    "training_standardized_mse": 0.014383248249689737,
+    "validation_standardized_mse": 0.038951225352287296,
+    "learning_rate": 3.75e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06166165694594383,
+        "rmse": 0.09553822129964828,
+        "r2": 0.9783559441566467,
+        "normalized_mae_by_actual_range": 0.017659777775406837,
+        "bias": -0.008700779639184475,
+        "calibration_slope_predicted_vs_actual": 0.9860042655027763,
+        "calibration_intercept_nm": 0.019925868947085847,
+        "absolute_error_p50": 0.04020977020263672,
+        "absolute_error_p90": 0.13838420808315277,
+        "absolute_error_p95": 0.19811242818832397,
+        "fraction_absolute_error_le_0_05_nm": 0.581,
+        "fraction_absolute_error_le_0_10_nm": 0.8312
+      },
+      "delta_t": {
+        "mae": 0.058897465467453,
+        "rmse": 0.10306889563798904,
+        "r2": 0.8868905305862427,
+        "normalized_mae_by_actual_range": 0.01898355595767498,
+        "bias": 0.0008503621211275458,
+        "calibration_slope_predicted_vs_actual": 0.9204546987876279,
+        "calibration_intercept_nm": 0.06356605119045998,
+        "absolute_error_p50": 0.03364187479019165,
+        "absolute_error_p90": 0.13043752312660217,
+        "absolute_error_p95": 0.20679768919944763,
+        "fraction_absolute_error_le_0_05_nm": 0.6524,
+        "fraction_absolute_error_le_0_10_nm": 0.8544
+      }
+    }
+  },
+  {
+    "epoch": 27,
+    "training_standardized_mse": 0.013364206616083781,
+    "validation_standardized_mse": 0.03771133805513382,
+    "learning_rate": 3.75e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06296810507774353,
+        "rmse": 0.09631714224815369,
+        "r2": 0.978001594543457,
+        "normalized_mae_by_actual_range": 0.018033940345048904,
+        "bias": 0.01723887026309967,
+        "calibration_slope_predicted_vs_actual": 0.9925931340566139,
+        "calibration_intercept_nm": 0.03238875375560483,
+        "absolute_error_p50": 0.04167330265045166,
+        "absolute_error_p90": 0.1413046419620514,
+        "absolute_error_p95": 0.20051071047782898,
+        "fraction_absolute_error_le_0_05_nm": 0.572,
+        "fraction_absolute_error_le_0_10_nm": 0.8172
+      },
+      "delta_t": {
+        "mae": 0.057248231023550034,
+        "rmse": 0.10077114403247833,
+        "r2": 0.8918774724006653,
+        "normalized_mae_by_actual_range": 0.018451981246471405,
+        "bias": 0.0016883545322343707,
+        "calibration_slope_predicted_vs_actual": 0.9269273832898007,
+        "calibration_intercept_nm": 0.05930080205829626,
+        "absolute_error_p50": 0.03232792019844055,
+        "absolute_error_p90": 0.13101841509342194,
+        "absolute_error_p95": 0.20058830082416534,
+        "fraction_absolute_error_le_0_05_nm": 0.6674,
+        "fraction_absolute_error_le_0_10_nm": 0.8616
+      }
+    }
+  },
+  {
+    "epoch": 28,
+    "training_standardized_mse": 0.01247960659066836,
+    "validation_standardized_mse": 0.037485164147615435,
+    "learning_rate": 3.75e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06079133227467537,
+        "rmse": 0.09465121477842331,
+        "r2": 0.9787559509277344,
+        "normalized_mae_by_actual_range": 0.01741051860153675,
+        "bias": 0.0034169654827564955,
+        "calibration_slope_predicted_vs_actual": 0.9900140306217763,
+        "calibration_intercept_nm": 0.02384210521387866,
+        "absolute_error_p50": 0.039120376110076904,
+        "absolute_error_p90": 0.13904988765716553,
+        "absolute_error_p95": 0.20178423821926117,
+        "fraction_absolute_error_le_0_05_nm": 0.5954,
+        "fraction_absolute_error_le_0_10_nm": 0.8348
+      },
+      "delta_t": {
+        "mae": 0.057664744555950165,
+        "rmse": 0.10085439682006836,
+        "r2": 0.8916987776756287,
+        "normalized_mae_by_actual_range": 0.018586229532957077,
+        "bias": 0.005824469029903412,
+        "calibration_slope_predicted_vs_actual": 0.9269558285167813,
+        "calibration_intercept_nm": 0.06341448985220495,
+        "absolute_error_p50": 0.03279639780521393,
+        "absolute_error_p90": 0.12935735285282135,
+        "absolute_error_p95": 0.205402672290802,
+        "fraction_absolute_error_le_0_05_nm": 0.6612,
+        "fraction_absolute_error_le_0_10_nm": 0.8616
+      }
+    }
+  },
+  {
+    "epoch": 29,
+    "training_standardized_mse": 0.012397921296954155,
+    "validation_standardized_mse": 0.03820160440206528,
+    "learning_rate": 3.75e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06535101681947708,
+        "rmse": 0.09649764001369476,
+        "r2": 0.9779190421104431,
+        "normalized_mae_by_actual_range": 0.01871640235185623,
+        "bias": -0.01592615619301796,
+        "calibration_slope_predicted_vs_actual": 0.9605250247665604,
+        "calibration_intercept_nm": 0.06481531793133483,
+        "absolute_error_p50": 0.046726346015930176,
+        "absolute_error_p90": 0.14042282104492188,
+        "absolute_error_p95": 0.1961538940668106,
+        "fraction_absolute_error_le_0_05_nm": 0.5284,
+        "fraction_absolute_error_le_0_10_nm": 0.8192
+      },
+      "delta_t": {
+        "mae": 0.05770590901374817,
+        "rmse": 0.1015491783618927,
+        "r2": 0.8902014493942261,
+        "normalized_mae_by_actual_range": 0.0185994990170002,
+        "bias": -0.0045443009585142136,
+        "calibration_slope_predicted_vs_actual": 0.9318738716042728,
+        "calibration_intercept_nm": 0.049168199906031856,
+        "absolute_error_p50": 0.03270655870437622,
+        "absolute_error_p90": 0.1286434531211853,
+        "absolute_error_p95": 0.2013615071773529,
+        "fraction_absolute_error_le_0_05_nm": 0.6624,
+        "fraction_absolute_error_le_0_10_nm": 0.8598
+      }
+    }
+  },
+  {
+    "epoch": 30,
+    "training_standardized_mse": 0.012179347810149193,
+    "validation_standardized_mse": 0.03800805175304413,
+    "learning_rate": 3.75e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.060744285583496094,
+        "rmse": 0.09440794587135315,
+        "r2": 0.9788650274276733,
+        "normalized_mae_by_actual_range": 0.017397044226527214,
+        "bias": 0.010670654475688934,
+        "calibration_slope_predicted_vs_actual": 0.9858307192193505,
+        "calibration_intercept_nm": 0.039652271961274216,
+        "absolute_error_p50": 0.03927457332611084,
+        "absolute_error_p90": 0.1379324197769165,
+        "absolute_error_p95": 0.19539569318294525,
+        "fraction_absolute_error_le_0_05_nm": 0.596,
+        "fraction_absolute_error_le_0_10_nm": 0.8314
+      },
+      "delta_t": {
+        "mae": 0.058091215789318085,
+        "rmse": 0.10180419683456421,
+        "r2": 0.8896493315696716,
+        "normalized_mae_by_actual_range": 0.018723689019680023,
+        "bias": 0.005600265692919493,
+        "calibration_slope_predicted_vs_actual": 0.9259167208735715,
+        "calibration_intercept_nm": 0.06400954709276888,
+        "absolute_error_p50": 0.033652812242507935,
+        "absolute_error_p90": 0.12897942960262299,
+        "absolute_error_p95": 0.1988169103860855,
+        "fraction_absolute_error_le_0_05_nm": 0.6538,
+        "fraction_absolute_error_le_0_10_nm": 0.8608
+      }
+    }
+  },
+  {
+    "epoch": 31,
+    "training_standardized_mse": 0.011909174343943596,
+    "validation_standardized_mse": 0.0387049932718277,
+    "learning_rate": 3.75e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06246858090162277,
+        "rmse": 0.09602110087871552,
+        "r2": 0.9781365990638733,
+        "normalized_mae_by_actual_range": 0.01789087802171707,
+        "bias": -0.01119371596723795,
+        "calibration_slope_predicted_vs_actual": 0.9831781579887264,
+        "calibration_intercept_nm": 0.023213406795567822,
+        "absolute_error_p50": 0.04143577814102173,
+        "absolute_error_p90": 0.13893377780914307,
+        "absolute_error_p95": 0.19984884560108185,
+        "fraction_absolute_error_le_0_05_nm": 0.5718,
+        "fraction_absolute_error_le_0_10_nm": 0.8296
+      },
+      "delta_t": {
+        "mae": 0.05863991752266884,
+        "rmse": 0.10252603888511658,
+        "r2": 0.8880788683891296,
+        "normalized_mae_by_actual_range": 0.018900543451309204,
+        "bias": -0.0060338787734508514,
+        "calibration_slope_predicted_vs_actual": 0.927642705631073,
+        "calibration_intercept_nm": 0.05101458957334657,
+        "absolute_error_p50": 0.0340459942817688,
+        "absolute_error_p90": 0.13145343959331512,
+        "absolute_error_p95": 0.19795046746730804,
+        "fraction_absolute_error_le_0_05_nm": 0.6522,
+        "fraction_absolute_error_le_0_10_nm": 0.8542
+      }
+    }
+  },
+  {
+    "epoch": 32,
+    "training_standardized_mse": 0.01194905732969443,
+    "validation_standardized_mse": 0.03777545018196106,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.060622528195381165,
+        "rmse": 0.09442760795354843,
+        "r2": 0.9788562059402466,
+        "normalized_mae_by_actual_range": 0.017362171784043312,
+        "bias": -0.00162414344958961,
+        "calibration_slope_predicted_vs_actual": 0.9819639730857195,
+        "calibration_intercept_nm": 0.03526645361218664,
+        "absolute_error_p50": 0.04008883237838745,
+        "absolute_error_p90": 0.13848401606082916,
+        "absolute_error_p95": 0.1993047446012497,
+        "fraction_absolute_error_le_0_05_nm": 0.591,
+        "fraction_absolute_error_le_0_10_nm": 0.8366
+      },
+      "delta_t": {
+        "mae": 0.05750008672475815,
+        "rmse": 0.10140722244977951,
+        "r2": 0.890508234500885,
+        "normalized_mae_by_actual_range": 0.01853315904736519,
+        "bias": 0.0033603061456233263,
+        "calibration_slope_predicted_vs_actual": 0.9158983602958399,
+        "calibration_intercept_nm": 0.06966833680283803,
+        "absolute_error_p50": 0.032598912715911865,
+        "absolute_error_p90": 0.12823902070522308,
+        "absolute_error_p95": 0.20426274836063385,
+        "fraction_absolute_error_le_0_05_nm": 0.6602,
+        "fraction_absolute_error_le_0_10_nm": 0.8624
+      }
+    }
+  },
+  {
+    "epoch": 33,
+    "training_standardized_mse": 0.011234242657820383,
+    "validation_standardized_mse": 0.03789857242703438,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06192123517394066,
+        "rmse": 0.09475047141313553,
+        "r2": 0.9787113666534424,
+        "normalized_mae_by_actual_range": 0.017734119668602943,
+        "bias": -0.011780403554439545,
+        "calibration_slope_predicted_vs_actual": 0.9776748938226153,
+        "calibration_intercept_nm": 0.03388300657883868,
+        "absolute_error_p50": 0.041382431983947754,
+        "absolute_error_p90": 0.13741081953048706,
+        "absolute_error_p95": 0.19557011127471924,
+        "fraction_absolute_error_le_0_05_nm": 0.573,
+        "fraction_absolute_error_le_0_10_nm": 0.8332
+      },
+      "delta_t": {
+        "mae": 0.05726892873644829,
+        "rmse": 0.1015257015824318,
+        "r2": 0.8902522325515747,
+        "normalized_mae_by_actual_range": 0.01845865324139595,
+        "bias": -0.003318622475489974,
+        "calibration_slope_predicted_vs_actual": 0.9256871756237489,
+        "calibration_intercept_nm": 0.05527163839577498,
+        "absolute_error_p50": 0.03226625919342041,
+        "absolute_error_p90": 0.12851586937904358,
+        "absolute_error_p95": 0.1976000815629959,
+        "fraction_absolute_error_le_0_05_nm": 0.6666,
+        "fraction_absolute_error_le_0_10_nm": 0.8596
+      }
+    }
+  },
+  {
+    "epoch": 34,
+    "training_standardized_mse": 0.01090684790412585,
+    "validation_standardized_mse": 0.03741873744726181,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.060952745378017426,
+        "rmse": 0.0946413204073906,
+        "r2": 0.9787604212760925,
+        "normalized_mae_by_actual_range": 0.017456745728850365,
+        "bias": -0.003875612746924162,
+        "calibration_slope_predicted_vs_actual": 0.9761131124411779,
+        "calibration_intercept_nm": 0.04498223988409374,
+        "absolute_error_p50": 0.03923964500427246,
+        "absolute_error_p90": 0.13709360361099243,
+        "absolute_error_p95": 0.1977873146533966,
+        "fraction_absolute_error_le_0_05_nm": 0.5894,
+        "fraction_absolute_error_le_0_10_nm": 0.8346
+      },
+      "delta_t": {
+        "mae": 0.05706854164600372,
+        "rmse": 0.10074443370103836,
+        "r2": 0.8919348120689392,
+        "normalized_mae_by_actual_range": 0.018394064158201218,
+        "bias": 0.0010464937658980489,
+        "calibration_slope_predicted_vs_actual": 0.9142004984341031,
+        "calibration_intercept_nm": 0.06869316484716494,
+        "absolute_error_p50": 0.03254476189613342,
+        "absolute_error_p90": 0.12771880626678467,
+        "absolute_error_p95": 0.20075860619544983,
+        "fraction_absolute_error_le_0_05_nm": 0.6636,
+        "fraction_absolute_error_le_0_10_nm": 0.8628
+      }
+    }
+  },
+  {
+    "epoch": 35,
+    "training_standardized_mse": 0.010609993860125542,
+    "validation_standardized_mse": 0.03792303099632263,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.061098966747522354,
+        "rmse": 0.09461378306150436,
+        "r2": 0.978772759437561,
+        "normalized_mae_by_actual_range": 0.017498623579740524,
+        "bias": -0.0009799167746677995,
+        "calibration_slope_predicted_vs_actual": 0.9740298953360451,
+        "calibration_intercept_nm": 0.05213891441210267,
+        "absolute_error_p50": 0.04016624391078949,
+        "absolute_error_p90": 0.13739308714866638,
+        "absolute_error_p95": 0.19700999557971954,
+        "fraction_absolute_error_le_0_05_nm": 0.5894,
+        "fraction_absolute_error_le_0_10_nm": 0.8336
+      },
+      "delta_t": {
+        "mae": 0.05740879476070404,
+        "rmse": 0.10160460323095322,
+        "r2": 0.8900815844535828,
+        "normalized_mae_by_actual_range": 0.018503732979297638,
+        "bias": 0.003367419121786952,
+        "calibration_slope_predicted_vs_actual": 0.9287563728848326,
+        "calibration_intercept_nm": 0.05953784120718343,
+        "absolute_error_p50": 0.03231063485145569,
+        "absolute_error_p90": 0.13031072914600372,
+        "absolute_error_p95": 0.20384664833545685,
+        "fraction_absolute_error_le_0_05_nm": 0.662,
+        "fraction_absolute_error_le_0_10_nm": 0.8636
+      }
+    }
+  },
+  {
+    "epoch": 36,
+    "training_standardized_mse": 0.01077906684676806,
+    "validation_standardized_mse": 0.037800215780735016,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06105020269751549,
+        "rmse": 0.09521464258432388,
+        "r2": 0.9785022735595703,
+        "normalized_mae_by_actual_range": 0.01748465746641159,
+        "bias": -0.007630887441337109,
+        "calibration_slope_predicted_vs_actual": 0.9883019297813703,
+        "calibration_intercept_nm": 0.01629615596616896,
+        "absolute_error_p50": 0.03963017463684082,
+        "absolute_error_p90": 0.13774389028549194,
+        "absolute_error_p95": 0.19989733397960663,
+        "fraction_absolute_error_le_0_05_nm": 0.5898,
+        "fraction_absolute_error_le_0_10_nm": 0.8304
+      },
+      "delta_t": {
+        "mae": 0.05734878033399582,
+        "rmse": 0.10123104602098465,
+        "r2": 0.8908883333206177,
+        "normalized_mae_by_actual_range": 0.018484389409422874,
+        "bias": -0.0040246290154755116,
+        "calibration_slope_predicted_vs_actual": 0.9248311455624844,
+        "calibration_intercept_nm": 0.055240549256698454,
+        "absolute_error_p50": 0.03232526779174805,
+        "absolute_error_p90": 0.12929493188858032,
+        "absolute_error_p95": 0.19878989458084106,
+        "fraction_absolute_error_le_0_05_nm": 0.6612,
+        "fraction_absolute_error_le_0_10_nm": 0.862
+      }
+    }
+  },
+  {
+    "epoch": 37,
+    "training_standardized_mse": 0.01075381868481636,
+    "validation_standardized_mse": 0.037977805572748186,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06046949326992035,
+        "rmse": 0.09462890028953552,
+        "r2": 0.9787659645080566,
+        "normalized_mae_by_actual_range": 0.017318343743681908,
+        "bias": 0.007593496702611446,
+        "calibration_slope_predicted_vs_actual": 0.9805016420026603,
+        "calibration_intercept_nm": 0.047475121457282804,
+        "absolute_error_p50": 0.038857221603393555,
+        "absolute_error_p90": 0.13857214152812958,
+        "absolute_error_p95": 0.20051157474517822,
+        "fraction_absolute_error_le_0_05_nm": 0.5948,
+        "fraction_absolute_error_le_0_10_nm": 0.834
+      },
+      "delta_t": {
+        "mae": 0.058067686855793,
+        "rmse": 0.10169260948896408,
+        "r2": 0.8898910880088806,
+        "normalized_mae_by_actual_range": 0.018716104328632355,
+        "bias": 0.01039168145507574,
+        "calibration_slope_predicted_vs_actual": 0.9247912089818031,
+        "calibration_intercept_nm": 0.06968834736177416,
+        "absolute_error_p50": 0.033913493156433105,
+        "absolute_error_p90": 0.12791311740875244,
+        "absolute_error_p95": 0.20392848551273346,
+        "fraction_absolute_error_le_0_05_nm": 0.6538,
+        "fraction_absolute_error_le_0_10_nm": 0.8606
+      }
+    }
+  },
+  {
+    "epoch": 38,
+    "training_standardized_mse": 0.010583919034401576,
+    "validation_standardized_mse": 0.03736510879993439,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.0605054572224617,
+        "rmse": 0.09490414708852768,
+        "r2": 0.9786422848701477,
+        "normalized_mae_by_actual_range": 0.017328644171357155,
+        "bias": -0.00401990907266736,
+        "calibration_slope_predicted_vs_actual": 0.9931441122959458,
+        "calibration_intercept_nm": 0.010003012759743258,
+        "absolute_error_p50": 0.03888559341430664,
+        "absolute_error_p90": 0.13792775571346283,
+        "absolute_error_p95": 0.20051801204681396,
+        "fraction_absolute_error_le_0_05_nm": 0.5946,
+        "fraction_absolute_error_le_0_10_nm": 0.8386
+      },
+      "delta_t": {
+        "mae": 0.05690554156899452,
+        "rmse": 0.10058007389307022,
+        "r2": 0.8922871351242065,
+        "normalized_mae_by_actual_range": 0.01834152825176716,
+        "bias": 0.00021059680148027837,
+        "calibration_slope_predicted_vs_actual": 0.9243342383693682,
+        "calibration_intercept_nm": 0.05986755066055793,
+        "absolute_error_p50": 0.03196647763252258,
+        "absolute_error_p90": 0.12583822011947632,
+        "absolute_error_p95": 0.1978849619626999,
+        "fraction_absolute_error_le_0_05_nm": 0.668,
+        "fraction_absolute_error_le_0_10_nm": 0.8642
+      }
+    }
+  },
+  {
+    "epoch": 39,
+    "training_standardized_mse": 0.010624295004208882,
+    "validation_standardized_mse": 0.03821250398159027,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06110682338476181,
+        "rmse": 0.09569408744573593,
+        "r2": 0.9782852530479431,
+        "normalized_mae_by_actual_range": 0.017500873655080795,
+        "bias": -0.0027069025672972202,
+        "calibration_slope_predicted_vs_actual": 0.996657416495873,
+        "calibration_intercept_nm": 0.0041299637280290576,
+        "absolute_error_p50": 0.03875643014907837,
+        "absolute_error_p90": 0.14099636673927307,
+        "absolute_error_p95": 0.19899755716323853,
+        "fraction_absolute_error_le_0_05_nm": 0.5932,
+        "fraction_absolute_error_le_0_10_nm": 0.83
+      },
+      "delta_t": {
+        "mae": 0.057793743908405304,
+        "rmse": 0.10179229825735092,
+        "r2": 0.8896750807762146,
+        "normalized_mae_by_actual_range": 0.01862780936062336,
+        "bias": 0.005249463487416506,
+        "calibration_slope_predicted_vs_actual": 0.9340396477691131,
+        "calibration_intercept_nm": 0.05725440723945653,
+        "absolute_error_p50": 0.03245288133621216,
+        "absolute_error_p90": 0.12987810373306274,
+        "absolute_error_p95": 0.19917771220207214,
+        "fraction_absolute_error_le_0_05_nm": 0.6584,
+        "fraction_absolute_error_le_0_10_nm": 0.861
+      }
+    }
+  },
+  {
+    "epoch": 40,
+    "training_standardized_mse": 0.010408491016427676,
+    "validation_standardized_mse": 0.037747783315181735,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.060612987726926804,
+        "rmse": 0.09461510926485062,
+        "r2": 0.9787721633911133,
+        "normalized_mae_by_actual_range": 0.01735943928360939,
+        "bias": -0.0003378900873940438,
+        "calibration_slope_predicted_vs_actual": 0.9849169421223748,
+        "calibration_intercept_nm": 0.030512751971906563,
+        "absolute_error_p50": 0.03900349140167236,
+        "absolute_error_p90": 0.13835880160331726,
+        "absolute_error_p95": 0.1992223560810089,
+        "fraction_absolute_error_le_0_05_nm": 0.595,
+        "fraction_absolute_error_le_0_10_nm": 0.8364
+      },
+      "delta_t": {
+        "mae": 0.05753706023097038,
+        "rmse": 0.10130878537893295,
+        "r2": 0.8907206654548645,
+        "normalized_mae_by_actual_range": 0.018545076251029968,
+        "bias": 0.002579631982371211,
+        "calibration_slope_predicted_vs_actual": 0.9320324115158277,
+        "calibration_intercept_nm": 0.056167135916040965,
+        "absolute_error_p50": 0.03246963024139404,
+        "absolute_error_p90": 0.13000155985355377,
+        "absolute_error_p95": 0.19980132579803467,
+        "fraction_absolute_error_le_0_05_nm": 0.6638,
+        "fraction_absolute_error_le_0_10_nm": 0.8614
+      }
+    }
+  },
+  {
+    "epoch": 41,
+    "training_standardized_mse": 0.010482362063725789,
+    "validation_standardized_mse": 0.03767742115855217,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06048691272735596,
+        "rmse": 0.09431560337543488,
+        "r2": 0.9789063334465027,
+        "normalized_mae_by_actual_range": 0.017323331907391548,
+        "bias": -0.0034891883842647076,
+        "calibration_slope_predicted_vs_actual": 0.983442891274424,
+        "calibration_intercept_nm": 0.030376453539097317,
+        "absolute_error_p50": 0.038935303688049316,
+        "absolute_error_p90": 0.13754892349243164,
+        "absolute_error_p95": 0.1993461549282074,
+        "fraction_absolute_error_le_0_05_nm": 0.5902,
+        "fraction_absolute_error_le_0_10_nm": 0.8358
+      },
+      "delta_t": {
+        "mae": 0.057458192110061646,
+        "rmse": 0.10127264261245728,
+        "r2": 0.8907986283302307,
+        "normalized_mae_by_actual_range": 0.018519654870033264,
+        "bias": -0.0032362903002649546,
+        "calibration_slope_predicted_vs_actual": 0.9221653197380836,
+        "calibration_intercept_nm": 0.05813069804950319,
+        "absolute_error_p50": 0.032882481813430786,
+        "absolute_error_p90": 0.12811443209648132,
+        "absolute_error_p95": 0.19624479115009308,
+        "fraction_absolute_error_le_0_05_nm": 0.666,
+        "fraction_absolute_error_le_0_10_nm": 0.8604
+      }
+    }
+  },
+  {
+    "epoch": 42,
+    "training_standardized_mse": 0.01027516852915287,
+    "validation_standardized_mse": 0.03722047656774521,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.061086975038051605,
+        "rmse": 0.09446046501398087,
+        "r2": 0.9788414835929871,
+        "normalized_mae_by_actual_range": 0.017495188862085342,
+        "bias": -0.006029495969414711,
+        "calibration_slope_predicted_vs_actual": 0.9761411096700956,
+        "calibration_intercept_nm": 0.04277109109840376,
+        "absolute_error_p50": 0.040346622467041016,
+        "absolute_error_p90": 0.1376899927854538,
+        "absolute_error_p95": 0.19491097331047058,
+        "fraction_absolute_error_le_0_05_nm": 0.5858,
+        "fraction_absolute_error_le_0_10_nm": 0.8354
+      },
+      "delta_t": {
+        "mae": 0.05690372362732887,
+        "rmse": 0.10045765340328217,
+        "r2": 0.8925491571426392,
+        "normalized_mae_by_actual_range": 0.01834094151854515,
+        "bias": 0.0022031115368008614,
+        "calibration_slope_predicted_vs_actual": 0.9170189568316026,
+        "calibration_intercept_nm": 0.0676276328806431,
+        "absolute_error_p50": 0.03266561031341553,
+        "absolute_error_p90": 0.12917707860469818,
+        "absolute_error_p95": 0.19988957047462463,
+        "fraction_absolute_error_le_0_05_nm": 0.6692,
+        "fraction_absolute_error_le_0_10_nm": 0.864
+      }
+    }
+  },
+  {
+    "epoch": 43,
+    "training_standardized_mse": 0.01032370758454005,
+    "validation_standardized_mse": 0.0378630339384079,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 468,
+    "amp_overflow_steps": 1,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06158524751663208,
+        "rmse": 0.09536109119653702,
+        "r2": 0.9784361124038696,
+        "normalized_mae_by_actual_range": 0.017637893557548523,
+        "bias": -0.009966102428734303,
+        "calibration_slope_predicted_vs_actual": 0.985698058790617,
+        "calibration_intercept_nm": 0.019286856077848066,
+        "absolute_error_p50": 0.04048812389373779,
+        "absolute_error_p90": 0.13991372287273407,
+        "absolute_error_p95": 0.2025146484375,
+        "fraction_absolute_error_le_0_05_nm": 0.5818,
+        "fraction_absolute_error_le_0_10_nm": 0.8368
+      },
+      "delta_t": {
+        "mae": 0.05746768042445183,
+        "rmse": 0.10129635781049728,
+        "r2": 0.8907474875450134,
+        "normalized_mae_by_actual_range": 0.0185227133333683,
+        "bias": -0.000945062842220068,
+        "calibration_slope_predicted_vs_actual": 0.9187194179970457,
+        "calibration_intercept_nm": 0.06313876858679954,
+        "absolute_error_p50": 0.0327380895614624,
+        "absolute_error_p90": 0.12983618676662445,
+        "absolute_error_p95": 0.19929052889347076,
+        "fraction_absolute_error_le_0_05_nm": 0.6626,
+        "fraction_absolute_error_le_0_10_nm": 0.8594
+      }
+    }
+  },
+  {
+    "epoch": 44,
+    "training_standardized_mse": 0.010166270343462626,
+    "validation_standardized_mse": 0.037433938795328144,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06073563173413277,
+        "rmse": 0.09424691647291183,
+        "r2": 0.9789370894432068,
+        "normalized_mae_by_actual_range": 0.017394565045833588,
+        "bias": -0.0019178043585270643,
+        "calibration_slope_predicted_vs_actual": 0.9748408432148429,
+        "calibration_intercept_nm": 0.049542327277230486,
+        "absolute_error_p50": 0.03933262825012207,
+        "absolute_error_p90": 0.1359994113445282,
+        "absolute_error_p95": 0.19860383868217468,
+        "fraction_absolute_error_le_0_05_nm": 0.5896,
+        "fraction_absolute_error_le_0_10_nm": 0.8356
+      },
+      "delta_t": {
+        "mae": 0.05720086023211479,
+        "rmse": 0.10087957978248596,
+        "r2": 0.8916446566581726,
+        "normalized_mae_by_actual_range": 0.01843671314418316,
+        "bias": -0.0021944649051874876,
+        "calibration_slope_predicted_vs_actual": 0.9264040324046995,
+        "calibration_intercept_nm": 0.055830606805077086,
+        "absolute_error_p50": 0.03220674395561218,
+        "absolute_error_p90": 0.1296519935131073,
+        "absolute_error_p95": 0.20013836026191711,
+        "fraction_absolute_error_le_0_05_nm": 0.6636,
+        "fraction_absolute_error_le_0_10_nm": 0.859
+      }
+    }
+  },
+  {
+    "epoch": 45,
+    "training_standardized_mse": 0.01026118838985761,
+    "validation_standardized_mse": 0.03796700932383537,
+    "learning_rate": 1.875e-05,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06231388449668884,
+        "rmse": 0.09548575431108475,
+        "r2": 0.9783797264099121,
+        "normalized_mae_by_actual_range": 0.017846573144197464,
+        "bias": -0.013689904473721981,
+        "calibration_slope_predicted_vs_actual": 0.9809217433433253,
+        "calibration_intercept_nm": 0.025332451937133814,
+        "absolute_error_p50": 0.041075944900512695,
+        "absolute_error_p90": 0.13851357996463776,
+        "absolute_error_p95": 0.20108120143413544,
+        "fraction_absolute_error_le_0_05_nm": 0.575,
+        "fraction_absolute_error_le_0_10_nm": 0.8302
+      },
+      "delta_t": {
+        "mae": 0.05750563368201256,
+        "rmse": 0.10143707692623138,
+        "r2": 0.890443742275238,
+        "normalized_mae_by_actual_range": 0.01853494718670845,
+        "bias": 0.0024397526867687702,
+        "calibration_slope_predicted_vs_actual": 0.9279677180385922,
+        "calibration_intercept_nm": 0.059231971714923906,
+        "absolute_error_p50": 0.03261399269104004,
+        "absolute_error_p90": 0.129071906208992,
+        "absolute_error_p95": 0.19942934811115265,
+        "fraction_absolute_error_le_0_05_nm": 0.6638,
+        "fraction_absolute_error_le_0_10_nm": 0.8592
+      }
+    }
+  },
+  {
+    "epoch": 46,
+    "training_standardized_mse": 0.010250791971882185,
+    "validation_standardized_mse": 0.03751414813399315,
+    "learning_rate": 9.375e-06,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.0611996203660965,
+        "rmse": 0.09534469246864319,
+        "r2": 0.9784435629844666,
+        "normalized_mae_by_actual_range": 0.017527449876070023,
+        "bias": 0.012048091739416122,
+        "calibration_slope_predicted_vs_actual": 0.9887466442269341,
+        "calibration_intercept_nm": 0.03506552320419037,
+        "absolute_error_p50": 0.03914070129394531,
+        "absolute_error_p90": 0.14008958637714386,
+        "absolute_error_p95": 0.19966813921928406,
+        "fraction_absolute_error_le_0_05_nm": 0.5878,
+        "fraction_absolute_error_le_0_10_nm": 0.826
+      },
+      "delta_t": {
+        "mae": 0.05725516378879547,
+        "rmse": 0.10071013122797012,
+        "r2": 0.892008364200592,
+        "normalized_mae_by_actual_range": 0.018454216420650482,
+        "bias": 0.004802381619811058,
+        "calibration_slope_predicted_vs_actual": 0.9318056488257581,
+        "calibration_intercept_nm": 0.05856867140749361,
+        "absolute_error_p50": 0.032450467348098755,
+        "absolute_error_p90": 0.1281333565711975,
+        "absolute_error_p95": 0.1970358043909073,
+        "fraction_absolute_error_le_0_05_nm": 0.6642,
+        "fraction_absolute_error_le_0_10_nm": 0.863
+      }
+    }
+  },
+  {
+    "epoch": 47,
+    "training_standardized_mse": 0.009823325296243033,
+    "validation_standardized_mse": 0.03759095242023468,
+    "learning_rate": 9.375e-06,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 469,
+    "amp_overflow_steps": 0,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06036689877510071,
+        "rmse": 0.0945138931274414,
+        "r2": 0.9788175821304321,
+        "normalized_mae_by_actual_range": 0.01728896051645279,
+        "bias": -0.0015300626400858164,
+        "calibration_slope_predicted_vs_actual": 0.9848244766203786,
+        "calibration_intercept_nm": 0.029509706716530654,
+        "absolute_error_p50": 0.038897350430488586,
+        "absolute_error_p90": 0.13846465945243835,
+        "absolute_error_p95": 0.19968263804912567,
+        "fraction_absolute_error_le_0_05_nm": 0.5918,
+        "fraction_absolute_error_le_0_10_nm": 0.8372
+      },
+      "delta_t": {
+        "mae": 0.05732504278421402,
+        "rmse": 0.10107169300317764,
+        "r2": 0.8912315964698792,
+        "normalized_mae_by_actual_range": 0.018476739525794983,
+        "bias": 0.00573789793998003,
+        "calibration_slope_predicted_vs_actual": 0.9191139598460571,
+        "calibration_intercept_nm": 0.06951066174991319,
+        "absolute_error_p50": 0.03261330723762512,
+        "absolute_error_p90": 0.12869243323802948,
+        "absolute_error_p95": 0.1983194798231125,
+        "fraction_absolute_error_le_0_05_nm": 0.665,
+        "fraction_absolute_error_le_0_10_nm": 0.862
+      }
+    }
+  },
+  {
+    "epoch": 48,
+    "training_standardized_mse": 0.009771181124448776,
+    "validation_standardized_mse": 0.03752508677244187,
+    "learning_rate": 9.375e-06,
+    "optimizer_steps": 469,
+    "successful_optimizer_steps": 468,
+    "amp_overflow_steps": 1,
+    "validation_metrics": {
+      "tavg": {
+        "mae": 0.06060653179883957,
+        "rmse": 0.09462014585733414,
+        "r2": 0.9787698984146118,
+        "normalized_mae_by_actual_range": 0.017357591539621353,
+        "bias": 0.0010590903693810105,
+        "calibration_slope_predicted_vs_actual": 0.9731403635748658,
+        "calibration_intercept_nm": 0.05599735544317554,
+        "absolute_error_p50": 0.039195746183395386,
+        "absolute_error_p90": 0.13739340007305145,
+        "absolute_error_p95": 0.1998385488986969,
+        "fraction_absolute_error_le_0_05_nm": 0.5936,
+        "fraction_absolute_error_le_0_10_nm": 0.8354
+      },
+      "delta_t": {
+        "mae": 0.057165227830410004,
+        "rmse": 0.10093070566654205,
+        "r2": 0.8915348052978516,
+        "normalized_mae_by_actual_range": 0.018425228074193,
+        "bias": 0.0011365246027708054,
+        "calibration_slope_predicted_vs_actual": 0.924381341439301,
+        "calibration_intercept_nm": 0.060756340946295735,
+        "absolute_error_p50": 0.032502397894859314,
+        "absolute_error_p90": 0.12790900468826294,
+        "absolute_error_p95": 0.20100408792495728,
+        "fraction_absolute_error_le_0_05_nm": 0.67,
+        "fraction_absolute_error_le_0_10_nm": 0.8608
+      }
+    }
+  }
+]

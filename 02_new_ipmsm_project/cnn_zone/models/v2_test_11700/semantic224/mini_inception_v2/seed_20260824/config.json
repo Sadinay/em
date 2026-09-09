@@ -1,0 +1,32 @@
+{
+  "model_id": "semantic224/mini_inception_v2",
+  "input_mode": "semantic224",
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "max_epochs": 30,
+  "scheduler_patience": 3,
+  "early_stopping_patience": 6,
+  "physical_batch_candidates": [
+    8,
+    16,
+    24,
+    32
+  ],
+  "effective_batch_size": 64,
+  "input_channels": 8,
+  "physical_batch_size": 32,
+  "optimizer": "AdamW",
+  "loss": "mean MSE over two independently standardized targets",
+  "scheduler": "ReduceLROnPlateau(factor=0.5,min_lr=1e-6)",
+  "amp": true,
+  "amp_grad_scaler_init_scale": 128.0,
+  "channels_last": true,
+  "seed": 20260824,
+  "dropout_disabled_for_memorization_diagnostic": false,
+  "epoch_checkpoint_resume_enabled": true,
+  "parameter_count": 1036466,
+  "train_samples": 11700,
+  "validation_samples": 1500,
+  "test_samples": 1500,
+  "expected_optimizer_steps_per_epoch": 183
+}

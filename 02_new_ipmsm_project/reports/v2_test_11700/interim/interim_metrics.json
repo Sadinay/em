@@ -1,0 +1,208 @@
+{
+  "status": "complete",
+  "warning": null,
+  "figures": [
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\reports\\v2_test_11700\\interim\\interim_tavg_prediction_six_models.png",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\reports\\v2_test_11700\\interim\\interim_tavg_residual_six_models.png",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\reports\\v2_test_11700\\interim\\interim_delta_t_prediction_six_models.png",
+    "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\reports\\v2_test_11700\\interim\\interim_delta_t_residual_six_models.png"
+  ],
+  "targets": {
+    "tavg": [
+      {
+        "model_id": "logical10/mini_inception_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.04762579643674608,
+          "rmse": 0.0729694165564338,
+          "r2": 0.9875701953932039,
+          "bias": -0.006425516619140067
+        }
+      },
+      {
+        "model_id": "logical10/resnet20_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.0726711325507818,
+          "rmse": 0.10569396944737917,
+          "r2": 0.9739214781664498,
+          "bias": -0.01253691195168843
+        }
+      },
+      {
+        "model_id": "logical10/small_cnn_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.04383221165287412,
+          "rmse": 0.0718487432871374,
+          "r2": 0.9879490604852692,
+          "bias": 0.009348740855335363
+        }
+      },
+      {
+        "model_id": "semantic224/mini_inception_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.04357042518868629,
+          "rmse": 0.06778966534789127,
+          "r2": 0.9892722280165857,
+          "bias": -0.00022455275110486625
+        }
+      },
+      {
+        "model_id": "semantic224/resnet18_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.042137452313779966,
+          "rmse": 0.06366485738496631,
+          "r2": 0.990538018484797,
+          "bias": 0.00010779321141955182
+        }
+      },
+      {
+        "model_id": "semantic224/vgg16_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.04886399623368764,
+          "rmse": 0.07056039268621671,
+          "r2": 0.9883773667926632,
+          "bias": -0.010025808056712975
+        }
+      }
+    ],
+    "delta_t": [
+      {
+        "model_id": "logical10/mini_inception_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.06186196409662564,
+          "rmse": 0.10895203531754924,
+          "r2": 0.8635692563376247,
+          "bias": 0.002014652599891028
+        }
+      },
+      {
+        "model_id": "logical10/resnet20_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.07852975607249471,
+          "rmse": 0.1436282453656216,
+          "r2": 0.7629056193099626,
+          "bias": 0.002514604426092574
+        }
+      },
+      {
+        "model_id": "logical10/small_cnn_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.06309827651249038,
+          "rmse": 0.11080610402971212,
+          "r2": 0.8588863837068501,
+          "bias": 0.010955388072464203
+        }
+      },
+      {
+        "model_id": "semantic224/mini_inception_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.05847384618057146,
+          "rmse": 0.10195646238356149,
+          "r2": 0.8805266428068692,
+          "bias": 0.008715170009268653
+        }
+      },
+      {
+        "model_id": "semantic224/resnet18_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.05923008953531583,
+          "rmse": 0.10506398939405717,
+          "r2": 0.8731328084771096,
+          "bias": 0.0033261590699354827
+        }
+      },
+      {
+        "model_id": "semantic224/vgg16_v2",
+        "completed_seeds": 3,
+        "seeds": [
+          20260822,
+          20260823,
+          20260824
+        ],
+        "prediction_aggregation": "arithmetic mean across completed seed predictions",
+        "metrics": {
+          "mae": 0.0557714451385869,
+          "rmse": 0.09972025610053628,
+          "r2": 0.8857099766423947,
+          "bias": 0.0075244976513915585
+        }
+      }
+    ]
+  }
+}

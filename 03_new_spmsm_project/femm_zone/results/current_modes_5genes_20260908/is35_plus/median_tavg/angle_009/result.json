@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "fresh_solve": true,
+  "scenario_id": "is35_plus",
+  "candidate_id": "median_tavg",
+  "inner_angle_deg": 9,
+  "outer_angle_deg": 0,
+  "current_angle_deg": 36.0,
+  "currents_a": {
+    "A": 2.831559480312316,
+    "B": 0.3658496214367871,
+    "C": -3.197409101749103
+  },
+  "raw_gap_torque_nm": -1.587789916459278,
+  "comparison_torque_nm": 3.175579832918556,
+  "verified_input": {
+    "headers": {
+      "Frequency": 0.0,
+      "Precision": 1e-08,
+      "MinAngle": 15.0,
+      "DoSmartMesh": 1.0,
+      "Depth": 36.0
+    },
+    "inner_angle_deg": 9,
+    "outer_angle_deg": 0,
+    "fixed_currents_a": {
+      "A": 2.831559480312316,
+      "B": 0.3658496214367871,
+      "C": -3.197409101749103
+    },
+    "fem_sha256": "5ce96193a771b5523cb0a53255761f17b61a25d498a8afc25593074924526ec9"
+  },
+  "ans_sha256": "8c43a8b24e8944ad2c5f9c52a481338930b9a0020786d991da8c23d1c3d930b5"
+}

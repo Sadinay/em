@@ -1,0 +1,56 @@
+{
+  "status": "superseded_by_v3_40000_6runs.json",
+  "split": {
+    "train": 40000,
+    "validation": 6483,
+    "test": 6483,
+    "path": "../outputs/splits/scheme_a_tavg_bands_train40000_val6483_test6483.npz",
+    "stratification": "Tavg bands only",
+    "note": "validation and test are unchanged from the audited 80/10/10 split"
+  },
+  "targets": ["Tavg", "DeltaT"],
+  "logical_input": {
+    "name": "logical6x20",
+    "shape": [2, 6, 20],
+    "channels": ["Air", "N38_PM"],
+    "order": "gene_index = angular_index * 6 + radial_index"
+  },
+  "semantic_inputs": {
+    "xy224": {
+      "shape": [8, 224, 224],
+      "coverage": "complete 0-90 degree motor quadrant",
+      "axes": ["physical y", "physical x"],
+      "lookup": "../outputs/lookups/spmsm_xy224_full_motor.npz"
+    },
+    "polar90_224": {
+      "shape": [8, 224, 224],
+      "coverage": "the same complete 0-90 degree motor quadrant",
+      "axes": ["radius 0..outer radius", "physical angle 0..90 degrees"],
+      "lookup": "../outputs/lookups/spmsm_polar90_224_full_motor.npz"
+    },
+    "channels": [
+      "design_air",
+      "design_pm_radially_inward",
+      "design_pm_radially_outward",
+      "fixed_air",
+      "fixed_iron",
+      "winding",
+      "fixed_other",
+      "geometry_mask"
+    ],
+    "rendering": "on demand from FEM triangle lookup; images are not pre-expanded on disk"
+  },
+  "experiments": [
+    "logical6x20/mini_inception_v2",
+    "logical6x20/resnet20_v2",
+    "logical6x20/small_cnn_v2",
+    "xy224/mini_inception_v2",
+    "xy224/resnet18_v2",
+    "xy224/vgg16_v2",
+    "polar90_224/mini_inception_v2",
+    "polar90_224/resnet18_v2",
+    "polar90_224/vgg16_v2"
+  ],
+  "architecture_policy": "same six V2 architecture families; logical variants are dimension/channel adapted for binary 6x20 input; each 224 backbone is evaluated independently on xy and polar90 inputs",
+  "weight_transfer_from_v2": false
+}

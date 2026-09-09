@@ -1,0 +1,7 @@
+{
+  "status": "FAILED",
+  "error_type": "Exception",
+  "error": "error: Some regions in the problem have been defined\nby more than one block label.  These potentially\nproblematic regions will appear as selected in\nthe initial view.",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\26096\\Desktop\\em\\python_topopt\\src\\femm_runner\\worker.py\", line 138, in execute\n    torques, angle_timings = _scan_torque(femm, job)\n                             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\26096\\Desktop\\em\\python_topopt\\src\\femm_runner\\worker.py\", line 69, in _scan_torque\n    api.mi_loadsolution()\n  File \"C:\\Users\\26096\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\femm\\__init__.py\", line 1722, in mi_loadsolution\n    callfemm('mi_loadsolution()');\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\26096\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\femm\\__init__.py\", line 156, in callfemm\n    raise Exception(ErrorMsg)\nException: error: Some regions in the problem have been defined\nby more than one block label.  These potentially\nproblematic regions will appear as selected in\nthe initial view.\n",
+  "total_seconds": 106.92987510000239
+}

@@ -1,0 +1,59 @@
+{
+  "status": "generated_and_structurally_validated",
+  "femm_solve_performed": false,
+  "mapping_mode": "candidate_air2_pm_direction_fixed_v2",
+  "mapping_evidence_status": "strongly inferred; matching MATLAB assignment source is absent",
+  "code_mapping": {
+    "0": "iron",
+    "1": "permanent_magnet",
+    "2": "air",
+    "3": "iron"
+  },
+  "grid_axes": "[radial_index, angular_index]",
+  "symmetry": "each of 100 cells is written to four audited FEM block-label coordinates",
+  "genotype_sha256": "f8ab09017afe5dec330c1bb2967b7d5c0367586b1abdc50d91f0d06ac6030079",
+  "physical_topology_sha256": "9c088d0456c88222dfdaa0f94a26d25ee136138b09074cee2b2359702c011976",
+  "template": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_zone\\models\\IPMSM.fem",
+    "sha256": "696e68c9f0cbedc7c82ba621f10496fef031b292ff69d4c969b4642ebb515e82"
+  },
+  "material_position_source": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\data_zone\\raw\\workspace_600.mat",
+    "sha256": "26b1dc59b72c4b856b75f9a92358d60d1b26093c9f634a44426df98a82271193"
+  },
+  "provenance": {
+    "kind": "corrected_pm_direction_material_mapping_comparison",
+    "candidate_id": "candidate_002",
+    "state_index_0based": 300,
+    "individual_0based": 150
+  },
+  "material_code_counts": {
+    "0": 10,
+    "1": 32,
+    "2": 34,
+    "3": 24
+  },
+  "validation": {
+    "mapped_cells": 100,
+    "mapped_design_labels": 400,
+    "four_copy_material_consistency": true,
+    "physical_class_counts": {
+      "air": 34,
+      "permanent_magnet": 32,
+      "iron": 34
+    },
+    "all_expected_materials_match": true,
+    "pm_label_count": 128,
+    "maximum_pm_magnetization_direction_error_deg": 0.0,
+    "all_pm_magnetization_directions_match_template_rule": true
+  },
+  "files": {
+    "model": "model.fem",
+    "original_gene": "gene_bits.txt",
+    "canonical_three_material_gene": "canonical_physical_bits.txt",
+    "material_code_grid": "material_codes_10x10.csv",
+    "physical_class_grid": "physical_classes_10x10.csv",
+    "cell_copy_mapping": "gene_to_fem_mapping.csv",
+    "topology_preview": "topology_preview.png"
+  }
+}

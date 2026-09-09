@@ -1,0 +1,41 @@
+{
+  "retained_direct_sha256_verified": 1231,
+  "retained_archive_sha256_verified": 31483,
+  "deleted_files_absent": 68883,
+  "legacy_after_files": 1261,
+  "legacy_after_bytes": 311075666,
+  "remaining_fem_templates_and_reference_snapshots": 36,
+  "remaining_ans": 0,
+  "databases": [
+    {
+      "run": "band_supplement_300_20260808_001",
+      "integrity": "ok",
+      "samples": 301,
+      "angles": 1806
+    },
+    {
+      "run": "clonalg_real_2gen_20260806_001",
+      "integrity": "ok",
+      "samples": 2,
+      "angles": 12
+    },
+    {
+      "run": "improved_dataset_1000_20260807_001",
+      "integrity": "ok",
+      "samples": 1001,
+      "angles": 6006
+    },
+    {
+      "run": "reference_validation_20260806_001",
+      "integrity": "ok",
+      "samples": 5,
+      "angles": 30
+    },
+    {
+      "run": "_discarded_band_supplement_init_20260808_001",
+      "integrity": "ok",
+      "samples": 0,
+      "angles": 0
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "candidate_id": "candidate_002",
+  "mapping": "air0",
+  "angles_mechanical_deg": [
+    2.5,
+    5.0,
+    7.5,
+    10.0,
+    12.5,
+    15.0
+  ],
+  "base_manifest": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\corrected_pm_direction\\base\\manifest.json",
+  "tasks": {
+    "angle_2p5": {
+      "status": "complete",
+      "torque_nm": -2.351901566178756
+    },
+    "angle_5": {
+      "status": "complete",
+      "torque_nm": -2.79349808123186
+    },
+    "angle_7p5": {
+      "status": "complete",
+      "torque_nm": -3.261674210471357
+    },
+    "angle_10": {
+      "status": "complete",
+      "torque_nm": -2.936849544140481
+    },
+    "angle_12p5": {
+      "status": "complete",
+      "torque_nm": -2.872669044562795
+    },
+    "angle_15": {
+      "status": "complete",
+      "torque_nm": -3.295493695330988
+    }
+  },
+  "summary": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\corrected_pm_direction\\analysis_summary.json"
+}

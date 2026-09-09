@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "candidate_id": "median_tavg",
+  "angle_mechanical_deg": 0,
+  "current_phase_electrical_deg": null,
+  "torque_nm_raw": 5.726195002309111e-05,
+  "torque_nm_historical_scale": -0.00011452390004618222,
+  "verified_input": {
+    "headers": {
+      "Frequency": 0.0,
+      "Precision": 1e-08,
+      "MinAngle": 15.0,
+      "DoSmartMesh": 1.0,
+      "Depth": 36.0
+    },
+    "inner_angle_deg": 0,
+    "outer_angle_deg": 0,
+    "fixed_currents_a": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0
+    },
+    "fem_sha256": "6982f7ba43166268005a09066e7c38074d8a1507b5f8b3b92641f455d6cc551d"
+  },
+  "elapsed_seconds": 5.071825400002126,
+  "ans_path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\mat_literal_current_probe_20260908\\template_iron\\median_tavg\\angle_000\\model.ans",
+  "fresh_solve": true
+}

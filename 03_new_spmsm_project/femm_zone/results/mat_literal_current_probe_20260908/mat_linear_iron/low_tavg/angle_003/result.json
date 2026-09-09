@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "candidate_id": "low_tavg",
+  "angle_mechanical_deg": 3,
+  "current_phase_electrical_deg": null,
+  "torque_nm_raw": -0.03185530491772618,
+  "torque_nm_historical_scale": 0.06371060983545236,
+  "verified_input": {
+    "headers": {
+      "Frequency": 0.0,
+      "Precision": 1e-08,
+      "MinAngle": 15.0,
+      "DoSmartMesh": 1.0,
+      "Depth": 36.0
+    },
+    "inner_angle_deg": 3,
+    "outer_angle_deg": 0,
+    "fixed_currents_a": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0
+    },
+    "fem_sha256": "3b539b35653a2bed058313d7b6850929721c16bc62f754e70a27adedfd15e7df"
+  },
+  "elapsed_seconds": 1.3273967000022822,
+  "ans_path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\mat_literal_current_probe_20260908\\mat_linear_iron\\low_tavg\\angle_003\\model.ans",
+  "fresh_solve": true
+}

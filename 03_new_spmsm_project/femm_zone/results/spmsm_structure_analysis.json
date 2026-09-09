@@ -1,0 +1,95 @@
+{
+  "status": "mapping_audited",
+  "mat": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+    "sha256": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8"
+  },
+  "fem": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem",
+    "sha256": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+  },
+  "fem_header": {
+    "Format": "4.0",
+    "Frequency": "0",
+    "Precision": "1e-008",
+    "MinAngle": "15",
+    "Depth": "36",
+    "Coordinates": "cartesian",
+    "ProblemType": "planar",
+    "BdryProps": 9,
+    "BlockProps": 124,
+    "CircuitProps": 3,
+    "NumPoints": 639,
+    "NumSegments": 554,
+    "NumArcSegments": 571,
+    "NumHoles": 1,
+    "NumBlockLabels": 492
+  },
+  "gene_count": 120,
+  "gene_values": [
+    0,
+    1
+  ],
+  "grid": {
+    "radial_cells": 6,
+    "angular_cells": 20,
+    "index_formula_0based": "gene = angular_index * 6 + radial_index",
+    "radial_centers_mm": [
+      28.05,
+      28.55,
+      29.05,
+      29.55,
+      30.05,
+      30.55
+    ],
+    "first_copy_angular_centers_deg": [
+      85.63746267053742,
+      84.70733637974064,
+      83.77721008894385,
+      82.84708379814705,
+      81.91695750735026,
+      80.98683121655347,
+      80.05670492575668,
+      79.12657863495988,
+      78.1964523441631,
+      77.2663260533663,
+      76.33619976256952,
+      75.40607347177273,
+      74.47594718097594,
+      73.54582089017914,
+      72.61569459938235,
+      71.68556830858556,
+      70.75544201778877,
+      69.82531572699197,
+      68.89518943619518,
+      67.9650631453984
+    ],
+    "angular_step_deg": -0.9301262907967924
+  },
+  "fem_mapping": {
+    "copies_per_gene": 4,
+    "mapped_labels": 480,
+    "distinct_labels": 480,
+    "maximum_coordinate_error_mm": 1.517719948885615e-14,
+    "label_material_names": "gene N maps to cN in all four copies"
+  },
+  "material_semantics": {
+    "0": "Air",
+    "1": "N38 permanent magnet",
+    "evidence": "VolumePM equals the number of one-bits; c1..c120 are the variable material properties",
+    "final_state_exact_matches": 612,
+    "final_state_records": 612,
+    "full_history_exact_matches": 122474,
+    "full_history_records": 123012
+  },
+  "history_source": {
+    "recommended_femm_input": "population_all",
+    "unchanged_before_after_records": 117651,
+    "total_records": 123012,
+    "validation_candidates_restricted_to_unchanged_records": true
+  },
+  "artifacts": {
+    "mapping_csv": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\gene_to_fem_labels.csv",
+    "mapping_figure": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\reports\\gene_to_structure_mapping.png"
+  }
+}

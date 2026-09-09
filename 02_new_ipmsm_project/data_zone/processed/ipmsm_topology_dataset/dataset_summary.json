@@ -1,0 +1,144 @@
+{
+  "source_mat": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\data_zone\\raw\\workspace_600.mat",
+  "random_seed": 20260821,
+  "label_conflict_atol": 1e-06,
+  "material_mapping": {
+    "0": "Air",
+    "1": "N38 permanent magnet",
+    "2": "Pure Iron",
+    "3": "Pure Iron"
+  },
+  "default_training_encoding": {
+    "classes": 3,
+    "mapping": {
+      "0": "Air",
+      "1": "PM",
+      "2": "Iron"
+    }
+  },
+  "counts": {
+    "historical_records": 302904,
+    "raw_unique_four_state": 170251,
+    "raw_conflict_four_state": 334,
+    "raw_clean_four_state": 169917,
+    "corrected_unique_four_state": 159921,
+    "corrected_conflict_four_state": 3754,
+    "corrected_clean_four_state": 156167,
+    "combined_unique_four_state": 187775,
+    "combined_intersection_four_state": 142397,
+    "corrected_unique_physical": 150422,
+    "corrected_conflict_physical": 3951,
+    "training_physical_clean": 146471,
+    "history_records_changed_by_repair": 29341,
+    "initial_state_volume_pm_mismatch_records": 445
+  },
+  "combined_audit": {
+    "unique_union": 187775,
+    "intersection": 142397,
+    "raw_only": 27854,
+    "corrected_only": 17524,
+    "supervised_eligible_from_corrected": 156167
+  },
+  "material_position_validation": {
+    "copy_used_1based": 4,
+    "angle_centres_deg": [
+      1.125,
+      3.375,
+      5.625,
+      7.875,
+      10.125,
+      12.375,
+      14.625,
+      16.875,
+      19.125,
+      21.375
+    ],
+    "angle_step_deg": 2.25,
+    "radius_centres_mm": [
+      16.55,
+      18.05,
+      19.550000000000004,
+      21.05000000000001,
+      22.55,
+      24.049999999999997,
+      25.55,
+      27.050000000000008,
+      28.55,
+      30.050000000000004
+    ],
+    "verified_vector_index_formula": "index = angular_index * 10 + radial_index",
+    "exported_grid_axes": "[radial_index, angular_index]"
+  },
+  "delta_t_quartiles_by_tavg_band": {
+    "0": [
+      0.37528200306021625,
+      0.5705885193201832,
+      0.8066547097513788
+    ],
+    "1": [
+      0.5081973770351014,
+      0.7001808779199399,
+      0.9686001764202155
+    ],
+    "2": [
+      0.4338845724936199,
+      0.661901934692785,
+      0.9223630040393385
+    ],
+    "3": [
+      0.3790986133314611,
+      0.4968428101919251,
+      0.7189856169620232
+    ],
+    "4": [
+      0.6709778967451085,
+      0.7398740124747235,
+      0.8338147162834965
+    ],
+    "5": [
+      0.863849440369111,
+      0.9480650610785992,
+      1.029641248299372
+    ],
+    "6": [
+      1.2070072611319622,
+      1.273863324478389,
+      1.6188511545349709
+    ]
+  },
+  "split": {
+    "train": 102519,
+    "validation": 21977,
+    "test": 21975,
+    "train_ratio": 0.6999269479965318,
+    "validation_ratio": 0.1500433532917779,
+    "test_ratio": 0.15002969871169036,
+    "repair_groups_crossing_splits": 0,
+    "topology_hashes_crossing_splits": 0
+  },
+  "target_audit": {
+    "tavg_min": 0.00010197142807824751,
+    "tavg_median": 2.257438199102624,
+    "tavg_mean": 2.0446813446240406,
+    "tavg_max": 3.7829200617498606,
+    "delta_min": 0.06075138167636973,
+    "delta_median": 0.776578511292265,
+    "delta_mean": 0.7867975275581706,
+    "delta_max": 4.381166465795453
+  },
+  "material_class_counts": {
+    "Air": 1861395,
+    "PM": 4026291,
+    "Iron": 8759414
+  },
+  "repair_group_audit": {
+    "group_count": 145741,
+    "maximum_group_size": 4
+  },
+  "scientific_decisions": [
+    "Only corrected population_all topologies receive historical FEMM targets.",
+    "Raw population_noChange_all topologies are audit/grouping metadata, not extra labeled samples.",
+    "Codes 2 and 3 are collapsed because both were verified to become Pure Iron in FEMM.",
+    "Conflicting repeated physical topologies are quarantined rather than averaged into training."
+  ]
+}

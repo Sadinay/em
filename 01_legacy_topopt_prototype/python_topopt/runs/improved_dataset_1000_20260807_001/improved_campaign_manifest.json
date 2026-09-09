@@ -1,0 +1,46 @@
+{
+  "campaign_assignments_sha256": "08d9fbc5fbe092d1c0b68060c658111fa2381f4e846749a78a6cc98c3e81ae6f",
+  "campaign_config": {
+    "elite_count": 2,
+    "hamming_admission": {
+      "large": {
+        "maximum_parent_distance": 60,
+        "minimum_archive_distance": 6
+      },
+      "medium": {
+        "maximum_parent_distance": 30,
+        "minimum_archive_distance": 3
+      },
+      "small": {
+        "maximum_parent_distance": 12,
+        "minimum_archive_distance": 1
+      }
+    },
+    "maximum_generations": 1000,
+    "maximum_proposals": 100000,
+    "minimum_completed_generations": 30,
+    "mode": "improved_dataset_campaigns",
+    "offspring_per_campaign_generation": 5,
+    "parent_selection": {
+      "band_deficit_guidance": true,
+      "maximum_band_weight": 4.0,
+      "objective_exploitation_probability": 0.7,
+      "objective_rank_pressure": 2.0
+    },
+    "random_seed": 20260817,
+    "schema_version": 1,
+    "selection": {
+      "direction": "minimize",
+      "metric": "historical_j",
+      "remaining_slots": "greedy_maximum_hamming_with_objective_tiebreak"
+    },
+    "target_valid_unique_samples": 1000
+  },
+  "campaign_config_hash": "f6cf0c47f78af5106747e13f6440c52f6f59f9ab469b69899046d94aa8560893",
+  "dataset_config_hash": "f18b26cec31861eb763ac2c0500d3832779dd39cb27d4f58c59382f0d1c5f4a3",
+  "parent_archive_sha256": "22d2bc775cad6493dc603a2464caba2b52b5bce610973cefe787a95b9c64c54a",
+  "parent_config_hash": "4091d21853362e8b7c3c0ca2021790336d4098d44a3b0532175ba776e17e4d5e",
+  "parent_run": "C:\\Users\\26096\\Desktop\\em\\python_topopt\\improved_runs\\improved_parent_archive_20260807_001",
+  "runner_kind": "improved_dataset_campaigns",
+  "schema_version": 1
+}

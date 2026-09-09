@@ -1,0 +1,26 @@
+{
+  "geometry_builder_version": "merged_copper_v5_air_regions_v5",
+  "reason": "MATLAB V5 cell-level air-band connectivity missed one closed geometric air region in P0018",
+  "affected_candidate_id": "C000005",
+  "affected_sample_id": "S000006",
+  "original_failures": {
+    "angle_deg": 0.0,
+    "attempts": 2,
+    "error": "Material properties have not been defined for all regions"
+  },
+  "recovery": {
+    "status": "classified",
+    "completed_angles_deg": [0.0, 3.0, 6.0, 9.0, 12.0, 15.0],
+    "T_avg_nm": 0.2995776786041678,
+    "T_ripple": 0.1447912079249385,
+    "torque_ratio": 0.34404926514342293,
+    "historical_J": 6.400070240669342,
+    "fitness_band": "B1"
+  },
+  "normal_sample_regression": {
+    "candidate_ids": ["C000001", "C000002", "C000003", "C000004"],
+    "angle_deg": 0.0,
+    "maximum_absolute_torque_difference_nm": 0.0
+  },
+  "validation": "passed"
+}

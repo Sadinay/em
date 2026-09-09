@@ -1,0 +1,4182 @@
+[Format]      =  4.0
+[Frequency]   =  0
+[Precision]   =  1e-008
+[MinAngle]    =  30
+[DoSmartMesh] =  1
+[Depth]       =  36
+[LengthUnits] =  millimeters
+[ProblemType] =  planar
+[Coordinates] =  cartesian
+[ACSolver]    =  0
+[PrevType]    =  0
+[PrevSoln]    =  ""
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 19
+  <BeginBdry>
+    <BdryName> = "boundary"
+    <BdryType> = 0
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "sliding_airgap"
+    <BdryType> = 6
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 15.000000000000002
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adpc1"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adpc2"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adp2_1"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adp2_2"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adp2_3"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adp2_4"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adp2_5"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adp2_6"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adp2_7"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adp2_8"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adp2_9"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adp2_10"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adpc3"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adpc4"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adpc5"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adpc6"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "adpc7"
+    <BdryType> = 4
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+[BlockProps]  = 104
+  <BeginBlock>
+    <BlockName> = "Air"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Copper"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 58
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "N38"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Pure Iron"
+    <Mu_x> = 14872
+    <Mu_y> = 14872
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 10.44
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 21
+      0	0
+      0.22706499999999999	13.898400000000001
+      0.45412999999999998	27.796700000000001
+      0.68119499999999999	42.397399999999998
+      0.90825999999999996	61.415700000000001
+      1.13533	82.382400000000004
+      1.36239	144.66900000000001
+      1.58935	897.75999999999999
+      1.81236	4581.7399999999998
+      2.01004	17736.200000000001
+      2.1331600000000002	41339.300000000003
+      2.1999900000000001	68321.800000000003
+      2.2547899999999998	95685.5
+      2.2999299999999998	123355
+      2.3425099999999999	151083
+      2.3787600000000002	178954
+      2.4150100000000001	206825
+      2.45126	234696
+      2.4874999999999998	262568
+      2.5237500000000002	290439
+      2.5600000000000001	318310
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c1"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c2"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c3"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c4"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c5"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c6"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c7"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c8"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c9"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c10"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c11"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c12"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c13"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c14"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c15"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c16"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c17"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c18"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c19"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c20"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c21"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c22"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c23"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c24"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c25"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c26"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c27"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c28"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c29"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c30"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c31"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c32"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c33"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c34"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c35"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c36"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c37"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c38"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c39"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c40"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c41"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c42"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c43"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c44"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c45"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c46"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c47"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c48"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c49"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c50"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c51"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c52"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c53"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c54"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c55"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c56"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c57"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c58"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c59"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c60"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c61"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c62"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c63"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c64"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c65"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c66"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c67"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c68"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c69"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c70"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c71"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c72"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c73"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c74"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c75"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c76"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c77"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c78"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c79"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c80"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c81"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c82"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c83"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c84"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c85"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c86"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c87"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c88"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c89"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c90"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c91"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c92"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c93"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c94"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c95"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c96"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 944771
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c97"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c98"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c99"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "c100"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+[CircuitProps]  = 3
+  <BeginCircuit>
+    <CircuitName> = "A"
+    <TotalAmps_re> = 1.7499999999999996
+    <TotalAmps_im> = 0
+    <CircuitType> = 1
+  <EndCircuit>
+  <BeginCircuit>
+    <CircuitName> = "B"
+    <TotalAmps_re> = 1.7500000000000011
+    <TotalAmps_im> = 0
+    <CircuitType> = 1
+  <EndCircuit>
+  <BeginCircuit>
+    <CircuitName> = "C"
+    <TotalAmps_re> = -3.5
+    <TotalAmps_im> = 0
+    <CircuitType> = 1
+  <EndCircuit>
+[NumPoints] = 512
+0	49	0	0
+0.40333333333333332	48	0	0
+6.6199999999999992	45.958999999999996	0	0
+3.6733333333333329	34.566666666666663	0	0
+0.40333333333333332	35	0	0
+7.75	46.644999999999996	0	0
+4.3499999999999996	33.5	0	0
+0.90000000000000002	34	0	0
+0.90000000000000002	31.5	0	0
+23.650703087140272	41.770886048319724	0	0
+17.246411826947011	43.11166153252902	0	0
+14.102133350098491	31.772278124148762	0	0
+17.150703087140272	30.512555799122023	0	0
+24.499999999999996	42.435244785437497	0	0
+16.610803120670596	44.270754959525142	0	0
+12.982789493537688	31.186851026778697	0	0
+16.220577136594002	29.894863728670916	0	0
+14.970577136594004	27.729800219209817	0	0
+24.349296912859721	41.367552714986388	0	0
+28.712588173052978	36.491661532529015	0	0
+20.464533316568165	28.09894479081543	0	0
+17.849296912859721	30.109222465788687	0	0
+30.034196879329393	36.520754959525142	0	0
+20.517210506462305	26.836851026778696	0	0
+17.779422863405991	28.994863728670918	0	0
+16.529422863405994	26.829800219209819	0	0
+41.367552714986388	24.349296912859732	0	0
+36.491661532529008	28.712588173052985	0	0
+28.098944790815423	20.464533316568172	0	0
+30.109222465788683	17.849296912859728	0	0
+42.43524478543749	24.500000000000007	0	0
+36.520754959525135	30.0341968793294	0	0
+26.836851026778692	20.517210506462312	0	0
+28.994863728670914	17.779422863405998	0	0
+26.829800219209815	16.529422863405998	0	0
+41.770886048319724	23.650703087140283	0	0
+43.111661532529013	17.246411826947018	0	0
+31.772278124148755	14.102133350098498	0	0
+30.512555799122019	17.150703087140279	0	0
+44.270754959525135	16.610803120670603	0	0
+31.186851026778694	12.982789493537696	0	0
+29.894863728670913	16.220577136594009	0	0
+27.729800219209814	14.970577136594009	0	0
+48	0.40333333333334309	0	0
+45.958999999999996	6.6200000000000117	0	0
+34.566666666666663	3.6733333333333409	0	0
+35	0.40333333333334309	0	0
+49	1.0658141036401503e-014	0	0
+46.644999999999996	7.7500000000000089	0	0
+33.5	4.3500000000000085	0	0
+34	0.90000000000000746	0	0
+31.5	0.90000000000000568	0	0
+0	54	0	0
+54	0	0	0
+0	0	0	0
+1.2092023253793132	30.776254316214267	0	0
+0.62030508899328407	15.787818772603423	0	0
+2.4165401484176243	30.70505387898034	0	0
+1.2396537124999503	15.751293872983425	0	0
+3.6201518417013996	30.58650847421173	0	0
+1.8570908798338348	15.690481619887835	0	0
+4.8181815232391108	30.420800890330245	0	0
+2.471664547635648	15.605475781403177	0	0
+6.0087819180967514	30.208186636419498	0	0
+3.0824270878548274	15.496407430371043	0	0
+7.1901172067618875	29.948993548248438	0	0
+3.6884367489233063	15.363444742283292	0	0
+8.3603658558442877	29.643621282772337	0	0
+4.2887591078681737	15.20679273596763	0	0
+9.5177234267483808	29.292540701890729	0	0
+4.8824685111241708	15.026692957463432	0	0
+10.660405357986784	28.896293146412514	0	0
+5.468649501824391	14.823423107575254	0	0
+11.786649716844765	28.455489601347633	0	0
+6.0463982313684204	14.597296613678335	0	0
+12.894719916152786	27.970809753812507	0	0
+6.614823853091365	14.348662146436288	0	0
+13.982907391978042	27.443000945001732	0	0
+7.1730498958848425	14.077903082176219	0	0
+15.049534238106213	26.872877017842153	0	0
+7.7202156156518917	13.785436911750201	0	0
+16.092955793251225	26.261317062106045	0	0
+8.2554773225119948	13.471714596794664	0	0
+17.111563177003749	25.609264058918395	0	0
+8.7780096817097188	13.137219874380222	0	0
+18.103785770608173	24.917723426748381	0	0
+9.287006986221078	12.782468511124172	0	0
+19.068093638742887	24.187761471126944	0	0
+9.7816843990953792	12.408007507915771	0	0
+20.002999888569658	23.420503740480953	0	0
+10.261279163616905	12.014414256480492	0	0
+20.907062962414603	22.617133290619115	0	0
+10.725051779420484	11.602295649083837	0	0
+21.778888860545667	21.778888860545667	0	0
+11.172287142747455	11.172287142747455	0	0
+22.617133290619115	20.907062962414603	0	0
+11.602295649083841	10.725051779420486	0	0
+23.420503740480953	20.002999888569658	0	0
+12.014414256480499	10.26127916361691	0	0
+24.187761471126944	19.068093638742887	0	0
+12.408007507915782	9.7816843990953881	0	0
+24.917723426748381	18.103785770608173	0	0
+12.782468511124181	9.2870069862210833	0	0
+25.609264058918395	17.111563177003749	0	0
+13.137219874380225	8.7780096817097224	0	0
+26.261317062106045	16.092955793251225	0	0
+13.471714596794667	8.2554773225119966	0	0
+26.872877017842153	15.049534238106213	0	0
+13.785436911750205	7.7202156156518935	0	0
+27.443000945001732	13.982907391978042	0	0
+14.077903082176224	7.1730498958848452	0	0
+27.970809753812507	12.894719916152786	0	0
+14.348662146436299	6.6148238530913694	0	0
+28.455489601347633	11.786649716844765	0	0
+14.597296613678342	6.046398231368423	0	0
+28.896293146412514	10.660405357986784	0	0
+14.823423107575259	5.4686495018243928	0	0
+29.292540701890729	9.5177234267483808	0	0
+15.026692957463437	4.8824685111241726	0	0
+29.643621282772337	8.3603658558442877	0	0
+15.206792735967637	4.2887591078681764	0	0
+29.948993548248438	7.1901172067618875	0	0
+15.363444742283301	3.6884367489233081	0	0
+30.208186636419498	6.0087819180967514	0	0
+15.49640743037105	3.0824270878548288	0	0
+30.420800890330245	4.8181815232391108	0	0
+15.605475781403186	2.4716645476356494	0	0
+30.58650847421173	3.6201518417013996	0	0
+15.690481619887844	1.8570908798338359	0	0
+30.70505387898034	2.4165401484176243	0	0
+15.751293872983432	1.2396537124999509	0	0
+30.776254316214267	1.2092023253793132	0	0
+15.78781877260343	0.62030508899328429	0	0
+0	17.300000000000001	0	0
+17.300000000000001	0	0	0
+0.67919481263188708	17.28666232696451	0	0
+1.3573423560917175	17.246669873583116	0	0
+2.0333969760205912	17.180084305320225	0	0
+2.7063162451959948	17.087008292295888	0	0
+3.3750625708790194	16.967585350975884	0	0
+4.0386047947071635	16.821999622879805	0	0
+4.6959197826657846	16.650475590648099	0	0
+5.3459940026865906	16.453277731906159	0	0
+5.9878250874406289	16.230710111458976	0	0
+6.620423379916053	15.98311591244526	0	0
+7.2428134593975075	15.71087690717391	0	0
+7.8540356454941591	15.414412868458765	0	0
+8.4531474778973212	15.09418092235939	0	0
+9.0392251695859116	14.750674843325793	0	0
+9.6113650312391172	14.384424292834032	0	0
+10.168684864659783	13.995994002686587	0	0
+10.710325323060131	13.585982904236889	0	0
+11.235451236112176	13.155023204880534	0	0
+11.743252897719895	12.703779413237363	0	0
+12.232947314527271	12.232947314527271	0	0
+12.703779413237362	11.743252897719891	0	0
+13.155023204880537	11.23545123611218	0	0
+13.585982904236888	10.710325323060131	0	0
+13.995994002686592	10.168684864659786	0	0
+14.384424292834032	9.6113650312391172	0	0
+14.750674843325797	9.0392251695859152	0	0
+15.094180922359392	8.4531474778973212	0	0
+15.414412868458763	7.8540356454941591	0	0
+15.710876907173907	7.2428134593975049	0	0
+15.98311591244526	6.620423379916053	0	0
+16.230710111458976	5.987825087440628	0	0
+16.453277731906159	5.3459940026865906	0	0
+16.650475590648099	4.6959197826657846	0	0
+16.821999622879801	4.0386047947071626	0	0
+16.967585350975888	3.3750625708790194	0	0
+17.087008292295884	2.7063162451959943	0	0
+17.180084305320221	2.0333969760205912	0	0
+17.246669873583112	1.3573423560917175	0	0
+17.286662326964507	0.67919481263188697	0	0
+0	18.800000000000001	0	0
+18.800000000000001	0	0	0
+0.73808453627048998	18.785505881325594	0	0
+1.4750309996834849	18.742045874182807	0	0
+2.2097030722073474	18.669686990752609	0	0
+2.9409679427563407	18.56854080318859	0	0
+3.6676980539032118	18.438763271580729	0	0
+4.388772840491022	18.280554503476321	0	0
+5.1030804574633963	18.094158445328571	0	0
+5.8095194942490123	17.879862506348889	0	0
+6.5070006730568686	17.637997115342703	0	0
+7.1944485284636892	17.368935211212193	0	0
+7.8708030657036483	17.07309166791153	0	0
+8.5350213951034792	16.750922654741316	0	0
+9.1860793401427578	16.402924932968592	0	0
+9.822973016659839	16.029635089856939	0	0
+10.444720380768521	15.631628711287849	0	0
+11.050362743098493	15.209519494249008	0	0
+11.638966247024882	14.763958300558008	0	0
+12.209623308607455	14.295632153280582	0	0
+12.761454016019306	13.80526317739089	0	0
+13.293607486307092	13.293607486307092	0	0
+13.80526317739089	12.761454016019304	0	0
+14.295632153280581	12.209623308607453	0	0
+14.763958300558006	11.638966247024882	0	0
+15.209519494249014	11.050362743098496	0	0
+15.631628711287849	10.444720380768521	0	0
+16.029635089856935	9.822973016659839	0	0
+16.402924932968592	9.1860793401427561	0	0
+16.750922654741316	8.5350213951034792	0	0
+17.073091667911527	7.8708030657036474	0	0
+17.36893521121219	7.1944485284636874	0	0
+17.637997115342699	6.5070006730568659	0	0
+17.879862506348889	5.8095194942490123	0	0
+18.094158445328571	5.1030804574633963	0	0
+18.280554503476321	4.388772840491022	0	0
+18.438763271580733	3.6676980539032118	0	0
+18.56854080318859	2.9409679427563407	0	0
+18.669686990752616	2.2097030722073487	0	0
+18.742045874182804	1.4750309996834849	0	0
+18.785505881325591	0.73808453627048987	0	0
+0	20.300000000000001	0	0
+20.300000000000001	0	0	0
+0.79697425990909276	20.284349435686675	0	0
+1.5927196432752526	20.237421874782502	0	0
+2.3860091683941045	20.159289676185004	0	0
+3.1756196403166874	20.050073314081299	0	0
+3.9603335369274042	19.909941192185574	0	0
+4.7389408862748796	19.739109384072833	0	0
+5.5102411322610081	19.537841300009042	0	0
+6.2730449858114321	19.306447280791616	0	0
+7.0261762586731082	19.04528411922643	0	0
+7.7684736770113227	18.754754509979119	0	0
+8.4987926720097899	18.435306428649152	0	0
+9.2160071447127994	18.087432441023868	0	0
+9.9190112023881873	17.711668943577781	0	0
+10.606720863733763	17.308595336388077	0	0
+11.278075730297925	16.878833129741668	0	0
+11.932040621537206	16.423044985811433	0	0
+12.567607170989634	15.941933696879126	0	0
+13.18379538110273	15.436241101680629	0	0
+13.779655134318718	14.906746941544418	0	0
+14.354267658086913	14.354267658086913	0	0
+14.906746941544418	13.779655134318716	0	0
+15.436241101680627	13.183795381102728	0	0
+15.941933696879119	12.567607170989628	0	0
+16.42304498581143	11.932040621537201	0	0
+16.878833129741668	11.278075730297925	0	0
+17.308595336388073	10.606720863733763	0	0
+17.711668943577784	9.9190112023881873	0	0
+18.087432441023864	9.2160071447127976	0	0
+18.435306428649149	8.4987926720097899	0	0
+18.754754509979119	7.7684736770113219	0	0
+19.04528411922643	7.0261762586731065	0	0
+19.306447280791616	6.2730449858114321	0	0
+19.537841300009042	5.5102411322610081	0	0
+19.739109384072833	4.7389408862748796	0	0
+19.909941192185578	3.9603335369274042	0	0
+20.050073314081295	3.175619640316687	0	0
+20.159289676185004	2.3860091683941049	0	0
+20.237421874782498	1.5927196432752526	0	0
+20.284349435686675	0.79697425990909276	0	0
+0	21.800000000000001	0	0
+21.800000000000001	0	0	0
+0.85586398354769577	21.783192990047763	0	0
+1.7104082868670198	21.73279787538219	0	0
+2.5623152645808611	21.648892361617396	0	0
+3.4102713378770342	21.531605824974008	0	0
+4.2529690199515962	21.381119112790419	0	0
+5.089108932058739	21.197664264669353	0	0
+5.9174018070586198	20.981524154689513	0	0
+6.7365704773738555	20.733032055234354	0	0
+7.5453518442893479	20.452571123110157	0	0
+8.3424988255589589	20.140573808746051	0	0
+9.1267822783159325	19.797521189386774	0	0
+9.8969928943221177	19.423942227306416	0	0
+10.65194306463362	19.020412954186977	0	0
+11.390468710807681	18.587555582919208	0	0
+12.111431079827327	18.126037548195484	0	0
+12.813718499975916	17.636570477373855	0	0
+13.496248094954385	17.119909093200242	0	0
+14.157967453598005	16.576850050080676	0	0
+14.797856252618132	16.008230705697947	0	0
+15.414927829866734	15.414927829866734	0	0
+16.008230705697947	14.797856252618129	0	0
+16.576850050080672	14.157967453598003	0	0
+17.119909093200242	13.496248094954383	0	0
+17.636570477373855	12.813718499975913	0	0
+18.126037548195484	12.111431079827327	0	0
+18.587555582919212	11.390468710807685	0	0
+19.02041295418698	10.65194306463362	0	0
+19.423942227306416	9.8969928943221177	0	0
+19.797521189386771	9.1267822783159325	0	0
+20.140573808746051	8.3424988255589572	0	0
+20.452571123110157	7.5453518442893461	0	0
+20.73303205523435	6.7365704773738546	0	0
+20.981524154689509	5.917401807058619	0	0
+21.197664264669349	5.0891089320587382	0	0
+21.381119112790422	4.2529690199515962	0	0
+21.531605824974008	3.4102713378770342	0	0
+21.648892361617392	2.5623152645808611	0	0
+21.73279787538219	1.7104082868670201	0	0
+21.783192990047763	0.85586398354769577	0	0
+0	23.300000000000001	0	0
+23.300000000000001	0	0	0
+0.91475370718629878	23.28203654440885	0	0
+1.8280969304587875	23.228173875981884	0	0
+2.7386213607676178	23.138495047049783	0	0
+3.6449230354373805	23.013138335866714	0	0
+4.545604502975789	22.852297033395267	0	0
+5.4392769778425967	22.656219145265865	0	0
+6.3245624818562325	22.425207009369988	0	0
+7.2000959689362771	22.159616829677084	0	0
+8.0645274299055867	21.859858126993881	0	0
+8.9165239741065943	21.526393107512984	0	0
+9.7547718846220768	21.1597359501244	0	0
+10.57797864393144	20.760452013588971	0	0
+11.384874926879053	20.329156964796177	0	0
+12.174216557881607	19.86651582945035	0	0
+12.944786429356732	19.373241966649303	0	0
+13.695396378414628	18.85009596893628	0	0
+14.424889018919131	18.297884489521355	0	0
+15.132139526093283	17.717458998480726	0	0
+15.816057370917546	17.109714469851479	0	0
+16.47558800164656	16.47558800164656	0	0
+17.109714469851482	15.816057370917546	0	0
+17.717458998480723	15.132139526093281	0	0
+18.297884489521362	14.424889018919137	0	0
+18.85009596893628	13.695396378414625	0	0
+19.373241966649303	12.944786429356732	0	0
+19.86651582945035	12.174216557881609	0	0
+20.329156964796177	11.384874926879053	0	0
+20.760452013588971	10.57797864393144	0	0
+21.159735950124396	9.7547718846220768	0	0
+21.526393107512984	8.9165239741065925	0	0
+21.859858126993881	8.0645274299055849	0	0
+22.159616829677077	7.2000959689362745	0	0
+22.425207009369988	6.3245624818562325	0	0
+22.656219145265865	5.4392769778425967	0	0
+22.852297033395274	4.5456045029757899	0	0
+23.013138335866714	3.6449230354373805	0	0
+23.138495047049787	2.7386213607676178	0	0
+23.228173875981884	1.8280969304587877	0	0
+23.28203654440885	0.91475370718629878	0	0
+0	24.800000000000001	0	0
+24.800000000000001	0	0	0
+0.97364343082490157	24.780880098769931	0	0
+1.9457855740505545	24.723549876581572	0	0
+2.9149274569543739	24.628097732482168	0	0
+3.8795747329977273	24.494670846759423	0	0
+4.8382399859999818	24.323474954000115	0	0
+5.7894450236264552	24.114774025862381	0	0
+6.7317231566538416	23.868889864050452	0	0
+7.6636214604986961	23.586201604119807	0	0
+8.5837030155218255	23.267145130877608	0	0
+9.490549122654226	22.912212406279906	0	0
+10.382761490928216	22.521950710862015	0	0
+11.258964393540758	22.096961799871519	0	0
+12.117806789124486	21.637900975405373	0	0
+12.957964404955529	21.145476075981485	0	0
+13.778141778886139	20.620446385103126	0	0
+14.577074256853331	20.063621460498691	0	0
+15.353529942883885	19.475859885842475	0	0
+16.106311598588555	18.858067946880766	0	0
+16.834258489216957	18.211198234005003	0	0
+17.536248173426376	17.536248173426376	0	0
+18.211198234005007	16.834258489216953	0	0
+18.858067946880762	16.106311598588551	0	0
+19.475859885842475	15.353529942883885	0	0
+20.063621460498698	14.577074256853333	0	0
+20.620446385103126	13.778141778886138	0	0
+21.145476075981488	12.957964404955531	0	0
+21.637900975405366	12.117806789124483	0	0
+22.096961799871522	11.25896439354076	0	0
+22.521950710862015	10.382761490928218	0	0
+22.912212406279906	9.4905491226542242	0	0
+23.267145130877612	8.5837030155218255	0	0
+23.586201604119815	7.6636214604986979	0	0
+23.868889864050452	6.7317231566538416	0	0
+24.114774025862378	5.7894450236264543	0	0
+24.323474954000112	4.838239985999981	0	0
+24.494670846759419	3.8795747329977268	0	0
+24.628097732482168	2.9149274569543735	0	0
+24.723549876581572	1.9457855740505547	0	0
+24.780880098769931	0.97364343082490157	0	0
+0	26.300000000000001	0	0
+26.300000000000001	0	0	0
+1.0325331544635046	26.279723653131018	0	0
+2.0634742176423226	26.21892587718127	0	0
+3.0912335531411306	26.117700417914563	0	0
+4.1142264305580731	25.976203357652125	0	0
+5.1308754690241738	25.794652874604957	0	0
+6.1396130694103128	25.573328906458894	0	0
+7.1388838314514551	25.31257271873093	0	0
+8.1271469520611177	25.012786378562542	0	0
+9.102878601138066	24.674432134761339	0	0
+10.064574271201865	24.298031705046846	0	0
+11.01075109723436	23.884165471599641	0	0
+11.939950143150082	23.433471586154077	0	0
+12.85073865136992	22.946644986014569	0	0
+13.741712252029455	22.42443632251263	0	0
+14.611497128415538	21.867650803556938	0	0
+15.458752135292048	21.277146952061123	0	0
+16.282170866848634	20.653835282163591	0	0
+17.080483671083829	19.998676895280813	0	0
+17.852459607516369	19.312681998158531	0	0
+18.596908345206202	18.596908345206202	0	0
+19.312681998158538	17.852459607516369	0	0
+19.998676895280813	17.080483671083829	0	0
+20.653835282163591	16.282170866848634	0	0
+21.27714695206112	15.458752135292043	0	0
+21.867650803556945	14.611497128415541	0	0
+22.42443632251263	13.741712252029457	0	0
+22.946644986014572	12.85073865136992	0	0
+23.433471586154077	11.939950143150082	0	0
+23.884165471599644	11.010751097234362	0	0
+24.298031705046846	10.064574271201863	0	0
+24.674432134761336	9.1028786011380642	0	0
+25.012786378562538	8.1271469520611177	0	0
+25.31257271873093	7.1388838314514551	0	0
+25.573328906458894	6.1396130694103128	0	0
+25.794652874604964	5.1308754690241747	0	0
+25.976203357652125	4.1142264305580731	0	0
+26.117700417914563	3.0912335531411301	0	0
+26.21892587718127	2.0634742176423226	0	0
+26.279723653131018	1.0325331544635046	0	0
+0	27.800000000000001	0	0
+27.800000000000001	0	0	0
+1.0914228781021074	27.778567207492099	0	0
+2.181162861234089	27.714301877780951	0	0
+3.2675396493278863	27.607303103346943	0	0
+4.3488781281184181	27.457735868544823	0	0
+5.4235109520483658	27.265830795209798	0	0
+6.4897811151941704	27.031883787055406	0	0
+7.5460445062490624	26.756255573411387	0	0
+8.5906724436235393	26.439371153005272	0	0
+9.622054186754303	26.08171913864506	0	0
+10.638599419749497	25.683851003813771	0	0
+11.638740703540501	25.246380232337259	0	0
+12.620935892759398	24.769981372436622	0	0
+13.583670513615347	24.255388996623758	0	0
+14.525460099103379	23.703396569043768	0	0
+15.444852477944943	23.11485522201076	0	0
+16.340430013730753	22.490672443623538	0	0
+17.210811790813384	21.831810678484707	0	0
+18.054655743579104	21.13928584368086	0	0
+18.870660725815778	20.414165762312056	0	0
+19.657568516986018	19.657568516986018	0	0
+20.414165762312056	18.870660725815771	0	0
+21.13928584368086	18.054655743579104	0	0
+21.831810678484711	17.210811790813388	0	0
+22.490672443623534	16.340430013730749	0	0
+23.114855222010757	15.444852477944941	0	0
+23.703396569043761	14.525460099103375	0	0
+24.255388996623761	13.583670513615349	0	0
+24.769981372436622	12.620935892759398	0	0
+25.246380232337252	11.638740703540497	0	0
+25.683851003813768	10.638599419749495	0	0
+26.081719138645056	9.6220541867543012	0	0
+26.439371153005265	8.5906724436235375	0	0
+26.756255573411387	7.5460445062490624	0	0
+27.031883787055406	6.4897811151941704	0	0
+27.265830795209801	5.4235109520483658	0	0
+27.457735868544827	4.3488781281184181	0	0
+27.607303103346947	3.2675396493278863	0	0
+27.714301877780954	2.1811628612340894	0	0
+27.778567207492099	1.0914228781021074	0	0
+0	29.300000000000001	0	0
+29.300000000000001	0	0	0
+1.1503126017407104	29.277410761853183	0	0
+2.2988515048258571	29.209677878380653	0	0
+3.4438457455146434	29.096905788779338	0	0
+4.5835298256787658	28.939268379437539	0	0
+5.7161464350725595	28.737008715814653	0	0
+6.839949160978029	28.490438667651922	0	0
+7.9532051810466768	28.199938428091869	0	0
+9.0541979351859592	27.865955927447995	0	0
+10.141229772370544	27.489006142528787	0	0
+11.212624568297134	27.069670302580707	0	0
+12.266730309846643	26.608594993074885	0	0
+13.30192164236872	26.106491158719177	0	0
+14.316602375860782	25.564133007232961	0	0
+15.309207946177299	24.982356815574903	0	0
+16.278207827474343	24.362059640464572	0	0
+17.222107892169465	23.704197935185963	0	0
+18.139452714778141	23.009786074805831	0	0
+19.028827816074383	22.27989479208091	0	0
+19.888861844115194	21.515649526465591	0	0
+20.718228688765844	20.718228688765844	0	0
+21.515649526465587	19.888861844115191	0	0
+22.279894792080906	19.028827816074379	0	0
+23.009786074805824	18.139452714778134	0	0
+23.70419793518596	17.222107892169465	0	0
+24.362059640464569	16.27820782747434	0	0
+24.982356815574907	15.309207946177301	0	0
+25.564133007232957	14.31660237586078	0	0
+26.106491158719177	13.30192164236872	0	0
+26.608594993074885	12.266730309846643	0	0
+27.069670302580704	11.212624568297132	0	0
+27.489006142528787	10.141229772370544	0	0
+27.865955927447999	9.0541979351859592	0	0
+28.199938428091865	7.953205181046676	0	0
+28.490438667651922	6.839949160978029	0	0
+28.737008715814646	5.7161464350725577	0	0
+28.939268379437536	4.5835298256787649	0	0
+29.096905788779338	3.4438457455146425	0	0
+29.209677878380653	2.2988515048258575	0	0
+29.277410761853183	1.1503126017407104	0	0
+0	64	0	0
+64	0	0	0
+0	30.800000000000008	0	0
+0	15.800000000000002	0	0
+30.800000000000001	0	0	0
+15.800000000000008	0	0	0
+0	31.080000000000002	0	0
+31.080000000000002	0	0	0
+0	31.220000000000002	0	0
+31.220000000000002	0	0	0
+[NumSegments] = 470
+1	2	-1	0	0	0
+2	3	-1	0	0	0
+3	4	-1	0	0	0
+4	1	-1	0	0	0
+0	5	-1	0	0	0
+5	6	-1	0	0	0
+6	7	-1	0	0	0
+7	8	-1	0	0	0
+9	10	-1	0	0	0
+10	11	-1	0	0	0
+11	12	-1	0	0	0
+12	9	-1	0	0	0
+13	14	-1	0	0	0
+14	15	-1	0	0	0
+15	16	-1	0	0	0
+16	17	-1	0	0	0
+18	19	-1	0	0	0
+19	20	-1	0	0	0
+20	21	-1	0	0	0
+21	18	-1	0	0	0
+13	22	-1	0	0	0
+22	23	-1	0	0	0
+23	24	-1	0	0	0
+24	25	-1	0	0	0
+26	27	-1	0	0	0
+27	28	-1	0	0	0
+28	29	-1	0	0	0
+29	26	-1	0	0	0
+30	31	-1	0	0	0
+31	32	-1	0	0	0
+32	33	-1	0	0	0
+33	34	-1	0	0	0
+35	36	-1	0	0	0
+36	37	-1	0	0	0
+37	38	-1	0	0	0
+38	35	-1	0	0	0
+30	39	-1	0	0	0
+39	40	-1	0	0	0
+40	41	-1	0	0	0
+41	42	-1	0	0	0
+43	44	-1	0	0	0
+44	45	-1	0	0	0
+45	46	-1	0	0	0
+46	43	-1	0	0	0
+47	48	-1	0	0	0
+48	49	-1	0	0	0
+49	50	-1	0	0	0
+50	51	-1	0	0	0
+56	135	-1	0	0	0
+58	136	-1	0	0	0
+60	137	-1	0	0	0
+62	138	-1	0	0	0
+64	139	-1	0	0	0
+66	140	-1	0	0	0
+68	141	-1	0	0	0
+70	142	-1	0	0	0
+72	143	-1	0	0	0
+74	144	-1	0	0	0
+76	145	-1	0	0	0
+78	146	-1	0	0	0
+80	147	-1	0	0	0
+82	148	-1	0	0	0
+84	149	-1	0	0	0
+86	150	-1	0	0	0
+88	151	-1	0	0	0
+90	152	-1	0	0	0
+92	153	-1	0	0	0
+94	154	-1	0	0	0
+96	155	-1	0	0	0
+98	156	-1	0	0	0
+100	157	-1	0	0	0
+102	158	-1	0	0	0
+104	159	-1	0	0	0
+106	160	-1	0	0	0
+108	161	-1	0	0	0
+110	162	-1	0	0	0
+112	163	-1	0	0	0
+114	164	-1	0	0	0
+116	165	-1	0	0	0
+118	166	-1	0	0	0
+120	167	-1	0	0	0
+122	168	-1	0	0	0
+124	169	-1	0	0	0
+126	170	-1	0	0	0
+128	171	-1	0	0	0
+130	172	-1	0	0	0
+132	173	-1	0	0	0
+135	176	-1	0	0	0
+136	177	-1	0	0	0
+137	178	-1	0	0	0
+138	179	-1	0	0	0
+139	180	-1	0	0	0
+140	181	-1	0	0	0
+141	182	-1	0	0	0
+142	183	-1	0	0	0
+143	184	-1	0	0	0
+144	185	-1	0	0	0
+145	186	-1	0	0	0
+146	187	-1	0	0	0
+147	188	-1	0	0	0
+148	189	-1	0	0	0
+149	190	-1	0	0	0
+150	191	-1	0	0	0
+151	192	-1	0	0	0
+152	193	-1	0	0	0
+153	194	-1	0	0	0
+154	195	-1	0	0	0
+155	196	-1	0	0	0
+156	197	-1	0	0	0
+157	198	-1	0	0	0
+158	199	-1	0	0	0
+159	200	-1	0	0	0
+160	201	-1	0	0	0
+161	202	-1	0	0	0
+162	203	-1	0	0	0
+163	204	-1	0	0	0
+164	205	-1	0	0	0
+165	206	-1	0	0	0
+166	207	-1	0	0	0
+167	208	-1	0	0	0
+168	209	-1	0	0	0
+169	210	-1	0	0	0
+170	211	-1	0	0	0
+171	212	-1	0	0	0
+172	213	-1	0	0	0
+173	214	-1	0	0	0
+176	217	-1	0	0	0
+177	218	-1	0	0	0
+178	219	-1	0	0	0
+179	220	-1	0	0	0
+180	221	-1	0	0	0
+181	222	-1	0	0	0
+182	223	-1	0	0	0
+183	224	-1	0	0	0
+184	225	-1	0	0	0
+185	226	-1	0	0	0
+186	227	-1	0	0	0
+187	228	-1	0	0	0
+188	229	-1	0	0	0
+189	230	-1	0	0	0
+190	231	-1	0	0	0
+191	232	-1	0	0	0
+192	233	-1	0	0	0
+193	234	-1	0	0	0
+194	235	-1	0	0	0
+195	236	-1	0	0	0
+196	237	-1	0	0	0
+197	238	-1	0	0	0
+198	239	-1	0	0	0
+199	240	-1	0	0	0
+200	241	-1	0	0	0
+201	242	-1	0	0	0
+202	243	-1	0	0	0
+203	244	-1	0	0	0
+204	245	-1	0	0	0
+205	246	-1	0	0	0
+206	247	-1	0	0	0
+207	248	-1	0	0	0
+208	249	-1	0	0	0
+209	250	-1	0	0	0
+210	251	-1	0	0	0
+211	252	-1	0	0	0
+212	253	-1	0	0	0
+213	254	-1	0	0	0
+214	255	-1	0	0	0
+217	258	-1	0	0	0
+218	259	-1	0	0	0
+219	260	-1	0	0	0
+220	261	-1	0	0	0
+221	262	-1	0	0	0
+222	263	-1	0	0	0
+223	264	-1	0	0	0
+224	265	-1	0	0	0
+225	266	-1	0	0	0
+226	267	-1	0	0	0
+227	268	-1	0	0	0
+228	269	-1	0	0	0
+229	270	-1	0	0	0
+230	271	-1	0	0	0
+231	272	-1	0	0	0
+232	273	-1	0	0	0
+233	274	-1	0	0	0
+234	275	-1	0	0	0
+235	276	-1	0	0	0
+236	277	-1	0	0	0
+237	278	-1	0	0	0
+238	279	-1	0	0	0
+239	280	-1	0	0	0
+240	281	-1	0	0	0
+241	282	-1	0	0	0
+242	283	-1	0	0	0
+243	284	-1	0	0	0
+244	285	-1	0	0	0
+245	286	-1	0	0	0
+246	287	-1	0	0	0
+247	288	-1	0	0	0
+248	289	-1	0	0	0
+249	290	-1	0	0	0
+250	291	-1	0	0	0
+251	292	-1	0	0	0
+252	293	-1	0	0	0
+253	294	-1	0	0	0
+254	295	-1	0	0	0
+255	296	-1	0	0	0
+258	299	-1	0	0	0
+259	300	-1	0	0	0
+260	301	-1	0	0	0
+261	302	-1	0	0	0
+262	303	-1	0	0	0
+263	304	-1	0	0	0
+264	305	-1	0	0	0
+265	306	-1	0	0	0
+266	307	-1	0	0	0
+267	308	-1	0	0	0
+268	309	-1	0	0	0
+269	310	-1	0	0	0
+270	311	-1	0	0	0
+271	312	-1	0	0	0
+272	313	-1	0	0	0
+273	314	-1	0	0	0
+274	315	-1	0	0	0
+275	316	-1	0	0	0
+276	317	-1	0	0	0
+277	318	-1	0	0	0
+278	319	-1	0	0	0
+279	320	-1	0	0	0
+280	321	-1	0	0	0
+281	322	-1	0	0	0
+282	323	-1	0	0	0
+283	324	-1	0	0	0
+284	325	-1	0	0	0
+285	326	-1	0	0	0
+286	327	-1	0	0	0
+287	328	-1	0	0	0
+288	329	-1	0	0	0
+289	330	-1	0	0	0
+290	331	-1	0	0	0
+291	332	-1	0	0	0
+292	333	-1	0	0	0
+293	334	-1	0	0	0
+294	335	-1	0	0	0
+295	336	-1	0	0	0
+296	337	-1	0	0	0
+299	340	-1	0	0	0
+300	341	-1	0	0	0
+301	342	-1	0	0	0
+302	343	-1	0	0	0
+303	344	-1	0	0	0
+304	345	-1	0	0	0
+305	346	-1	0	0	0
+306	347	-1	0	0	0
+307	348	-1	0	0	0
+308	349	-1	0	0	0
+309	350	-1	0	0	0
+310	351	-1	0	0	0
+311	352	-1	0	0	0
+312	353	-1	0	0	0
+313	354	-1	0	0	0
+314	355	-1	0	0	0
+315	356	-1	0	0	0
+316	357	-1	0	0	0
+317	358	-1	0	0	0
+318	359	-1	0	0	0
+319	360	-1	0	0	0
+320	361	-1	0	0	0
+321	362	-1	0	0	0
+322	363	-1	0	0	0
+323	364	-1	0	0	0
+324	365	-1	0	0	0
+325	366	-1	0	0	0
+326	367	-1	0	0	0
+327	368	-1	0	0	0
+328	369	-1	0	0	0
+329	370	-1	0	0	0
+330	371	-1	0	0	0
+331	372	-1	0	0	0
+332	373	-1	0	0	0
+333	374	-1	0	0	0
+334	375	-1	0	0	0
+335	376	-1	0	0	0
+336	377	-1	0	0	0
+337	378	-1	0	0	0
+340	381	-1	0	0	0
+341	382	-1	0	0	0
+342	383	-1	0	0	0
+343	384	-1	0	0	0
+344	385	-1	0	0	0
+345	386	-1	0	0	0
+346	387	-1	0	0	0
+347	388	-1	0	0	0
+348	389	-1	0	0	0
+349	390	-1	0	0	0
+350	391	-1	0	0	0
+351	392	-1	0	0	0
+352	393	-1	0	0	0
+353	394	-1	0	0	0
+354	395	-1	0	0	0
+355	396	-1	0	0	0
+356	397	-1	0	0	0
+357	398	-1	0	0	0
+358	399	-1	0	0	0
+359	400	-1	0	0	0
+360	401	-1	0	0	0
+361	402	-1	0	0	0
+362	403	-1	0	0	0
+363	404	-1	0	0	0
+364	405	-1	0	0	0
+365	406	-1	0	0	0
+366	407	-1	0	0	0
+367	408	-1	0	0	0
+368	409	-1	0	0	0
+369	410	-1	0	0	0
+370	411	-1	0	0	0
+371	412	-1	0	0	0
+372	413	-1	0	0	0
+373	414	-1	0	0	0
+374	415	-1	0	0	0
+375	416	-1	0	0	0
+376	417	-1	0	0	0
+377	418	-1	0	0	0
+378	419	-1	0	0	0
+381	422	-1	0	0	0
+382	423	-1	0	0	0
+383	424	-1	0	0	0
+384	425	-1	0	0	0
+385	426	-1	0	0	0
+386	427	-1	0	0	0
+387	428	-1	0	0	0
+388	429	-1	0	0	0
+389	430	-1	0	0	0
+390	431	-1	0	0	0
+391	432	-1	0	0	0
+392	433	-1	0	0	0
+393	434	-1	0	0	0
+394	435	-1	0	0	0
+395	436	-1	0	0	0
+396	437	-1	0	0	0
+397	438	-1	0	0	0
+398	439	-1	0	0	0
+399	440	-1	0	0	0
+400	441	-1	0	0	0
+401	442	-1	0	0	0
+402	443	-1	0	0	0
+403	444	-1	0	0	0
+404	445	-1	0	0	0
+405	446	-1	0	0	0
+406	447	-1	0	0	0
+407	448	-1	0	0	0
+408	449	-1	0	0	0
+409	450	-1	0	0	0
+410	451	-1	0	0	0
+411	452	-1	0	0	0
+412	453	-1	0	0	0
+413	454	-1	0	0	0
+414	455	-1	0	0	0
+415	456	-1	0	0	0
+416	457	-1	0	0	0
+417	458	-1	0	0	0
+418	459	-1	0	0	0
+419	460	-1	0	0	0
+422	463	-1	0	0	0
+423	464	-1	0	0	0
+424	465	-1	0	0	0
+425	466	-1	0	0	0
+426	467	-1	0	0	0
+427	468	-1	0	0	0
+428	469	-1	0	0	0
+429	470	-1	0	0	0
+430	471	-1	0	0	0
+431	472	-1	0	0	0
+432	473	-1	0	0	0
+433	474	-1	0	0	0
+434	475	-1	0	0	0
+435	476	-1	0	0	0
+436	477	-1	0	0	0
+437	478	-1	0	0	0
+438	479	-1	0	0	0
+439	480	-1	0	0	0
+440	481	-1	0	0	0
+441	482	-1	0	0	0
+442	483	-1	0	0	0
+443	484	-1	0	0	0
+444	485	-1	0	0	0
+445	486	-1	0	0	0
+446	487	-1	0	0	0
+447	488	-1	0	0	0
+448	489	-1	0	0	0
+449	490	-1	0	0	0
+450	491	-1	0	0	0
+451	492	-1	0	0	0
+452	493	-1	0	0	0
+453	494	-1	0	0	0
+454	495	-1	0	0	0
+455	496	-1	0	0	0
+456	497	-1	0	0	0
+457	498	-1	0	0	0
+458	499	-1	0	0	0
+459	500	-1	0	0	0
+460	501	-1	0	0	0
+463	55	-1	0	0	0
+464	57	-1	0	0	0
+465	59	-1	0	0	0
+466	61	-1	0	0	0
+467	63	-1	0	0	0
+468	65	-1	0	0	0
+469	67	-1	0	0	0
+470	69	-1	0	0	0
+471	71	-1	0	0	0
+472	73	-1	0	0	0
+473	75	-1	0	0	0
+474	77	-1	0	0	0
+475	79	-1	0	0	0
+476	81	-1	0	0	0
+477	83	-1	0	0	0
+478	85	-1	0	0	0
+479	87	-1	0	0	0
+480	89	-1	0	0	0
+481	91	-1	0	0	0
+482	93	-1	0	0	0
+483	95	-1	0	0	0
+484	97	-1	0	0	0
+485	99	-1	0	0	0
+486	101	-1	0	0	0
+487	103	-1	0	0	0
+488	105	-1	0	0	0
+489	107	-1	0	0	0
+490	109	-1	0	0	0
+491	111	-1	0	0	0
+492	113	-1	0	0	0
+493	115	-1	0	0	0
+494	117	-1	0	0	0
+495	119	-1	0	0	0
+496	121	-1	0	0	0
+497	123	-1	0	0	0
+498	125	-1	0	0	0
+499	127	-1	0	0	0
+500	129	-1	0	0	0
+501	131	-1	0	0	0
+54	505	-1	3	0	0
+505	133	-1	14	0	0
+133	174	-1	13	0	0
+174	215	-1	12	0	0
+215	256	-1	11	0	0
+256	297	-1	10	0	0
+297	338	-1	9	0	0
+338	379	-1	8	0	0
+379	420	-1	7	0	0
+420	461	-1	6	0	0
+461	504	-1	5	0	0
+504	508	-1	15	0	0
+0	52	-1	18	0	0
+52	502	-1	19	0	0
+54	507	-1	3	0	0
+507	134	-1	14	0	0
+134	175	-1	13	0	0
+175	216	-1	12	0	0
+216	257	-1	11	0	0
+257	298	-1	10	0	0
+298	339	-1	9	0	0
+339	380	-1	8	0	0
+380	421	-1	7	0	0
+421	462	-1	6	0	0
+462	506	-1	5	0	0
+506	509	-1	15	0	0
+47	53	-1	18	0	0
+53	503	-1	19	0	0
+508	510	-1	16	0	0
+509	511	-1	16	0	0
+510	0	-1	17	0	0
+511	47	-1	17	0	0
+[NumArcSegments] = 447
+17	8	26.725955456395297	1	0	0	0	1
+34	25	26.725955456395297	1	0	0	0	1
+51	42	26.725955456395297	1	0	0	0	1
+53	52	90	1	0	0	0	1
+55	504	2.2500000000000004	1	0	0	0	1
+56	505	2.25	1	0	0	0	1
+57	55	2.2500000000000013	1	0	0	0	1
+58	56	2.2499999999999991	1	0	0	0	1
+59	57	2.25	1	0	0	0	1
+60	58	2.25	1	0	0	0	1
+61	59	2.2499999999999982	1	0	0	0	1
+62	60	2.2500000000000018	1	0	0	0	1
+63	61	2.2500000000000022	1	0	0	0	1
+64	62	2.2500000000000013	1	0	0	0	1
+65	63	2.2500000000000009	1	0	0	0	1
+66	64	2.2500000000000009	1	0	0	0	1
+67	65	2.2499999999999996	1	0	0	0	1
+68	66	2.2499999999999978	1	0	0	0	1
+69	67	2.2499999999999978	1	0	0	0	1
+70	68	2.2499999999999982	1	0	0	0	1
+71	69	2.2500000000000009	1	0	0	0	1
+72	70	2.2500000000000067	1	0	0	0	1
+73	71	2.2500000000000004	1	0	0	0	1
+74	72	2.2500000000000004	1	0	0	0	1
+75	73	2.2499999999999978	1	0	0	0	1
+76	74	2.25	1	0	0	0	1
+77	75	2.250000000000004	1	0	0	0	1
+78	76	2.250000000000004	1	0	0	0	1
+79	77	2.2500000000000009	1	0	0	0	1
+80	78	2.2500000000000044	1	0	0	0	1
+81	79	2.2499999999999978	1	0	0	0	1
+82	80	2.2499999999999973	1	0	0	0	1
+83	81	2.2500000000000009	1	0	0	0	1
+84	82	2.2500000000000009	1	0	0	0	1
+85	83	2.2500000000000031	1	0	0	0	1
+86	84	2.2500000000000067	1	0	0	0	1
+87	85	2.2499999999999973	1	0	0	0	1
+88	86	2.2500000000000036	1	0	0	0	1
+89	87	2.2500000000000009	1	0	0	0	1
+90	88	2.2500000000000071	1	0	0	0	1
+91	89	2.2499999999999911	1	0	0	0	1
+92	90	2.250000000000004	1	0	0	0	1
+93	91	2.2500000000000044	1	0	0	0	1
+94	92	2.2500000000000036	1	0	0	0	1
+95	93	2.2500000000000036	1	0	0	0	1
+96	94	2.2500000000000138	1	0	0	0	1
+97	95	2.2499999999999942	1	0	0	0	1
+98	96	2.2499999999999978	1	0	0	0	1
+99	97	2.2500000000000107	1	0	0	0	1
+100	98	2.2499999999999911	1	0	0	0	1
+101	99	2.2500000000000004	1	0	0	0	1
+102	100	2.2500000000000067	1	0	0	0	1
+103	101	2.250000000000004	1	0	0	0	1
+104	102	2.2500000000000004	1	0	0	0	1
+105	103	2.250000000000004	1	0	0	0	1
+106	104	2.2500000000000067	1	0	0	0	1
+107	105	2.249999999999988	1	0	0	0	1
+108	106	2.2499999999999978	1	0	0	0	1
+109	107	2.2499999999999978	1	0	0	0	1
+110	108	2.2500000000000036	1	0	0	0	1
+111	109	2.2500000000000009	1	0	0	0	1
+112	110	2.2500000000000044	1	0	0	0	1
+113	111	2.2499999999999942	1	0	0	0	1
+114	112	2.2500000000000004	1	0	0	0	1
+115	113	2.2500000000000009	1	0	0	0	1
+116	114	2.2500000000000067	1	0	0	0	1
+117	115	2.2499999999999942	1	0	0	0	1
+118	116	2.250000000000004	1	0	0	0	1
+119	117	2.2500000000000009	1	0	0	0	1
+120	118	2.2500000000000036	1	0	0	0	1
+121	119	2.2499999999999978	1	0	0	0	1
+122	120	2.2500000000000049	1	0	0	0	1
+123	121	2.2499999999999991	1	0	0	0	1
+124	122	2.2500000000000049	1	0	0	0	1
+125	123	2.2500000000000022	1	0	0	0	1
+126	124	2.250000000000004	1	0	0	0	1
+127	125	2.2499999999999987	1	0	0	0	1
+128	126	2.250000000000004	1	0	0	0	1
+129	127	2.2500000000000009	1	0	0	0	1
+130	128	2.2500000000000044	1	0	0	0	1
+131	129	2.2499999999999991	1	0	0	0	1
+132	130	2.2500000000000036	1	0	0	0	1
+134	173	2.250000000000004	1	0	0	0	1
+173	172	2.250000000000004	1	0	0	0	1
+172	171	2.2500000000000049	1	0	0	0	1
+171	170	2.2500000000000031	1	0	0	0	1
+170	169	2.2500000000000022	1	0	0	0	1
+169	168	2.2500000000000027	1	0	0	0	1
+168	167	2.2500000000000013	1	0	0	0	1
+167	166	2.250000000000004	1	0	0	0	1
+166	165	2.2500000000000009	1	0	0	0	1
+165	164	2.2500000000000031	1	0	0	0	1
+164	163	2.2499999999999973	1	0	0	0	1
+163	162	2.250000000000004	1	0	0	0	1
+162	161	2.2499999999999942	1	0	0	0	1
+161	160	2.2499999999999978	1	0	0	0	1
+160	159	2.2499999999999978	1	0	0	0	1
+159	158	2.2500000000000031	1	0	0	0	1
+158	157	2.2500000000000071	1	0	0	0	1
+157	156	2.2499999999999969	1	0	0	0	1
+156	155	2.2499999999999911	1	0	0	0	1
+155	154	2.2499999999999982	1	0	0	0	1
+154	153	2.25	1	0	0	0	1
+153	152	2.2499999999999982	1	0	0	0	1
+152	151	2.2499999999999964	1	0	0	0	1
+151	150	2.2499999999999951	1	0	0	0	1
+150	149	2.25	1	0	0	0	1
+149	148	2.2500000000000098	1	0	0	0	1
+148	147	2.2499999999999902	1	0	0	0	1
+147	146	2.2500000000000098	1	0	0	0	1
+146	145	2.2499999999999973	1	0	0	0	1
+145	144	2.2499999999999951	1	0	0	0	1
+144	143	2.2499999999999978	1	0	0	0	1
+143	142	2.2499999999999978	1	0	0	0	1
+142	141	2.2499999999999982	1	0	0	0	1
+141	140	2.2499999999999933	1	0	0	0	1
+140	139	2.249999999999996	1	0	0	0	1
+139	138	2.2500000000000013	1	0	0	0	1
+138	137	2.2499999999999982	1	0	0	0	1
+137	136	2.2500000000000004	1	0	0	0	1
+136	135	2.25	1	0	0	0	1
+135	133	2.25	1	0	0	0	1
+175	214	2.2500000000000018	1	0	0	0	1
+214	213	2.2500000000000022	1	0	0	0	1
+213	212	2.2500000000000044	1	0	0	0	1
+212	211	2.2500000000000004	1	0	0	0	1
+211	210	2.2499999999999991	1	0	0	0	1
+210	209	2.2499999999999991	1	0	0	0	1
+209	208	2.2499999999999978	1	0	0	0	1
+208	207	2.2500000000000009	1	0	0	0	1
+207	206	2.2499999999999951	1	0	0	0	1
+206	205	2.2500000000000004	1	0	0	0	1
+205	204	2.2500000000000004	1	0	0	0	1
+204	203	2.2499999999999973	1	0	0	0	1
+203	202	2.25	1	0	0	0	1
+202	201	2.2499999999999982	1	0	0	0	1
+201	200	2.2500000000000009	1	0	0	0	1
+200	199	2.2499999999999969	1	0	0	0	1
+199	198	2.2500000000000067	1	0	0	0	1
+198	197	2.2499999999999978	1	0	0	0	1
+197	196	2.2499999999999942	1	0	0	0	1
+196	195	2.2500000000000009	1	0	0	0	1
+195	194	2.2500000000000004	1	0	0	0	1
+194	193	2.249999999999988	1	0	0	0	1
+193	192	2.25	1	0	0	0	1
+192	191	2.2499999999999982	1	0	0	0	1
+191	190	2.2499999999999969	1	0	0	0	1
+190	189	2.2500000000000058	1	0	0	0	1
+189	188	2.2499999999999845	1	0	0	0	1
+188	187	2.2500000000000071	1	0	0	0	1
+187	186	2.2499999999999951	1	0	0	0	1
+186	185	2.2499999999999942	1	0	0	0	1
+185	184	2.2500000000000009	1	0	0	0	1
+184	183	2.25	1	0	0	0	1
+183	182	2.2499999999999978	1	0	0	0	1
+182	181	2.249999999999996	1	0	0	0	1
+181	180	2.249999999999996	1	0	0	0	1
+180	179	2.2500000000000022	1	0	0	0	1
+179	178	2.25	1	0	0	0	1
+178	177	2.25	1	0	0	0	1
+177	176	2.25	1	0	0	0	1
+176	174	2.2499999999999996	1	0	0	0	1
+216	255	2.25	1	0	0	0	1
+255	254	2.2500000000000004	1	0	0	0	1
+254	253	2.2500000000000004	1	0	0	0	1
+253	252	2.2499999999999969	1	0	0	0	1
+252	251	2.2499999999999978	1	0	0	0	1
+251	250	2.2499999999999969	1	0	0	0	1
+250	249	2.2499999999999969	1	0	0	0	1
+249	248	2.2499999999999942	1	0	0	0	1
+248	247	2.2499999999999942	1	0	0	0	1
+247	246	2.2500000000000044	1	0	0	0	1
+246	245	2.25	1	0	0	0	1
+245	244	2.2499999999999911	1	0	0	0	1
+244	243	2.25	1	0	0	0	1
+243	242	2.2499999999999978	1	0	0	0	1
+242	241	2.2499999999999951	1	0	0	0	1
+241	240	2.2499999999999942	1	0	0	0	1
+240	239	2.250000000000004	1	0	0	0	1
+239	238	2.2499999999999911	1	0	0	0	1
+238	237	2.2499999999999942	1	0	0	0	1
+237	236	2.2499999999999982	1	0	0	0	1
+236	235	2.2500000000000004	1	0	0	0	1
+235	234	2.2499999999999978	1	0	0	0	1
+234	233	2.2499999999999973	1	0	0	0	1
+233	232	2.2499999999999916	1	0	0	0	1
+232	231	2.250000000000004	1	0	0	0	1
+231	230	2.2500000000000031	1	0	0	0	1
+230	229	2.2499999999999853	1	0	0	0	1
+229	228	2.250000000000004	1	0	0	0	1
+228	227	2.2500000000000004	1	0	0	0	1
+227	226	2.2499999999999911	1	0	0	0	1
+226	225	2.2500000000000067	1	0	0	0	1
+225	224	2.2500000000000009	1	0	0	0	1
+224	223	2.2499999999999973	1	0	0	0	1
+223	222	2.2499999999999982	1	0	0	0	1
+222	221	2.249999999999996	1	0	0	0	1
+221	220	2.2500000000000027	1	0	0	0	1
+220	219	2.2499999999999996	1	0	0	0	1
+219	218	2.2500000000000009	1	0	0	0	1
+218	217	2.2499999999999996	1	0	0	0	1
+217	215	2.2499999999999996	1	0	0	0	1
+257	296	2.2500000000000009	1	0	0	0	1
+296	295	2.2500000000000013	1	0	0	0	1
+295	294	2.2500000000000013	1	0	0	0	1
+294	293	2.2500000000000009	1	0	0	0	1
+293	292	2.2499999999999982	1	0	0	0	1
+292	291	2.2499999999999991	1	0	0	0	1
+291	290	2.2500000000000009	1	0	0	0	1
+290	289	2.2499999999999973	1	0	0	0	1
+289	288	2.2499999999999942	1	0	0	0	1
+288	287	2.250000000000004	1	0	0	0	1
+287	286	2.2500000000000009	1	0	0	0	1
+286	285	2.2499999999999978	1	0	0	0	1
+285	284	2.2500000000000089	1	0	0	0	1
+284	283	2.2499999999999942	1	0	0	0	1
+283	282	2.250000000000004	1	0	0	0	1
+282	281	2.2499999999999973	1	0	0	0	1
+281	280	2.2500000000000129	1	0	0	0	1
+280	279	2.2500000000000013	1	0	0	0	1
+279	278	2.2499999999999902	1	0	0	0	1
+278	277	2.250000000000004	1	0	0	0	1
+277	276	2.2500000000000031	1	0	0	0	1
+276	275	2.2500000000000009	1	0	0	0	1
+275	274	2.249999999999988	1	0	0	0	1
+274	273	2.250000000000004	1	0	0	0	1
+273	272	2.2499999999999951	1	0	0	0	1
+272	271	2.2500000000000071	1	0	0	0	1
+271	270	2.2499999999999813	1	0	0	0	1
+270	269	2.250000000000004	1	0	0	0	1
+269	268	2.25	1	0	0	0	1
+268	267	2.2499999999999942	1	0	0	0	1
+267	266	2.2500000000000067	1	0	0	0	1
+266	265	2.2500000000000009	1	0	0	0	1
+265	264	2.2499999999999982	1	0	0	0	1
+264	263	2.2500000000000004	1	0	0	0	1
+263	262	2.2499999999999982	1	0	0	0	1
+262	261	2.250000000000004	1	0	0	0	1
+261	260	2.2499999999999996	1	0	0	0	1
+260	259	2.2500000000000013	1	0	0	0	1
+259	258	2.2499999999999991	1	0	0	0	1
+258	256	2.2500000000000004	1	0	0	0	1
+298	337	2.2500000000000018	1	0	0	0	1
+337	336	2.2500000000000031	1	0	0	0	1
+336	335	2.2500000000000018	1	0	0	0	1
+335	334	2.2500000000000018	1	0	0	0	1
+334	333	2.2500000000000036	1	0	0	0	1
+333	332	2.2500000000000013	1	0	0	0	1
+332	331	2.2500000000000031	1	0	0	0	1
+331	330	2.2499999999999951	1	0	0	0	1
+330	329	2.2499999999999973	1	0	0	0	1
+329	328	2.2500000000000067	1	0	0	0	1
+328	327	2.2500000000000009	1	0	0	0	1
+327	326	2.2499999999999978	1	0	0	0	1
+326	325	2.2500000000000004	1	0	0	0	1
+325	324	2.2499999999999951	1	0	0	0	1
+324	323	2.2500000000000036	1	0	0	0	1
+323	322	2.2499999999999876	1	0	0	0	1
+322	321	2.2500000000000071	1	0	0	0	1
+321	320	2.2499999999999978	1	0	0	0	1
+320	319	2.2499999999999902	1	0	0	0	1
+319	318	2.2500000000000009	1	0	0	0	1
+318	317	2.2500000000000004	1	0	0	0	1
+317	316	2.2499999999999942	1	0	0	0	1
+316	315	2.2499999999999978	1	0	0	0	1
+315	314	2.2500000000000027	1	0	0	0	1
+314	313	2.2499999999999982	1	0	0	0	1
+313	312	2.2500000000000098	1	0	0	0	1
+312	311	2.2499999999999933	1	0	0	0	1
+311	310	2.2499999999999978	1	0	0	0	1
+310	309	2.2499999999999902	1	0	0	0	1
+309	308	2.2499999999999885	1	0	0	0	1
+308	307	2.2500000000000009	1	0	0	0	1
+307	306	2.25	1	0	0	0	1
+306	305	2.2500000000000004	1	0	0	0	1
+305	304	2.2499999999999996	1	0	0	0	1
+304	303	2.2499999999999978	1	0	0	0	1
+303	302	2.2500000000000009	1	0	0	0	1
+302	301	2.2499999999999982	1	0	0	0	1
+301	300	2.2500000000000009	1	0	0	0	1
+300	299	2.2500000000000004	1	0	0	0	1
+299	297	2.25	1	0	0	0	1
+339	378	2.2500000000000018	1	0	0	0	1
+378	377	2.2500000000000022	1	0	0	0	1
+377	376	2.2500000000000018	1	0	0	0	1
+376	375	2.2500000000000018	1	0	0	0	1
+375	374	2.2499999999999996	1	0	0	0	1
+374	373	2.25	1	0	0	0	1
+373	372	2.2499999999999991	1	0	0	0	1
+372	371	2.2499999999999996	1	0	0	0	1
+371	370	2.2499999999999911	1	0	0	0	1
+370	369	2.2500000000000044	1	0	0	0	1
+369	368	2.25	1	0	0	0	1
+368	367	2.2499999999999942	1	0	0	0	1
+367	366	2.2500000000000129	1	0	0	0	1
+366	365	2.2499999999999902	1	0	0	0	1
+365	364	2.2499999999999973	1	0	0	0	1
+364	363	2.2499999999999942	1	0	0	0	1
+363	362	2.2500000000000036	1	0	0	0	1
+362	361	2.2499999999999982	1	0	0	0	1
+361	360	2.2499999999999809	1	0	0	0	1
+360	359	2.2500000000000138	1	0	0	0	1
+359	358	2.2499999999999933	1	0	0	0	1
+358	357	2.2499999999999885	1	0	0	0	1
+357	356	2.2500000000000009	1	0	0	0	1
+356	355	2.250000000000004	1	0	0	0	1
+355	354	2.2499999999999964	1	0	0	0	1
+354	353	2.2499999999999956	1	0	0	0	1
+353	352	2.2499999999999933	1	0	0	0	1
+352	351	2.2499999999999956	1	0	0	0	1
+351	350	2.2499999999999969	1	0	0	0	1
+350	349	2.2499999999999911	1	0	0	0	1
+349	348	2.2500000000000031	1	0	0	0	1
+348	347	2.2499999999999942	1	0	0	0	1
+347	346	2.2500000000000004	1	0	0	0	1
+346	345	2.2499999999999978	1	0	0	0	1
+345	344	2.2499999999999991	1	0	0	0	1
+344	343	2.2499999999999987	1	0	0	0	1
+343	342	2.2499999999999996	1	0	0	0	1
+342	341	2.2500000000000018	1	0	0	0	1
+341	340	2.2499999999999996	1	0	0	0	1
+340	338	2.2499999999999996	1	0	0	0	1
+380	419	2.2500000000000018	1	0	0	0	1
+419	418	2.2500000000000018	1	0	0	0	1
+418	417	2.2500000000000013	1	0	0	0	1
+417	416	2.2500000000000036	1	0	0	0	1
+416	415	2.2499999999999991	1	0	0	0	1
+415	414	2.2499999999999991	1	0	0	0	1
+414	413	2.2500000000000013	1	0	0	0	1
+413	412	2.2499999999999951	1	0	0	0	1
+412	411	2.2499999999999978	1	0	0	0	1
+411	410	2.2500000000000098	1	0	0	0	1
+410	409	2.25	1	0	0	0	1
+409	408	2.2500000000000009	1	0	0	0	1
+408	407	2.25	1	0	0	0	1
+407	406	2.2499999999999982	1	0	0	0	1
+406	405	2.2500000000000004	1	0	0	0	1
+405	404	2.2500000000000009	1	0	0	0	1
+404	403	2.250000000000004	1	0	0	0	1
+403	402	2.2500000000000009	1	0	0	0	1
+402	401	2.2499999999999902	1	0	0	0	1
+401	400	2.2500000000000044	1	0	0	0	1
+400	399	2.2500000000000009	1	0	0	0	1
+399	398	2.2500000000000071	1	0	0	0	1
+398	397	2.2499999999999978	1	0	0	0	1
+397	396	2.25	1	0	0	0	1
+396	395	2.2499999999999982	1	0	0	0	1
+395	394	2.2500000000000067	1	0	0	0	1
+394	393	2.2499999999999911	1	0	0	0	1
+393	392	2.250000000000004	1	0	0	0	1
+392	391	2.2499999999999969	1	0	0	0	1
+391	390	2.2499999999999973	1	0	0	0	1
+390	389	2.2500000000000098	1	0	0	0	1
+389	388	2.2499999999999982	1	0	0	0	1
+388	387	2.25	1	0	0	0	1
+387	386	2.2499999999999982	1	0	0	0	1
+386	385	2.2499999999999978	1	0	0	0	1
+385	384	2.2500000000000018	1	0	0	0	1
+384	383	2.2500000000000018	1	0	0	0	1
+383	382	2.2500000000000018	1	0	0	0	1
+382	381	2.25	1	0	0	0	1
+381	379	2.25	1	0	0	0	1
+421	460	2.2499999999999982	1	0	0	0	1
+460	459	2.2499999999999987	1	0	0	0	1
+459	458	2.2499999999999987	1	0	0	0	1
+458	457	2.2499999999999987	1	0	0	0	1
+457	456	2.2500000000000009	1	0	0	0	1
+456	455	2.2499999999999987	1	0	0	0	1
+455	454	2.2499999999999982	1	0	0	0	1
+454	453	2.2500000000000004	1	0	0	0	1
+453	452	2.2499999999999911	1	0	0	0	1
+452	451	2.250000000000004	1	0	0	0	1
+451	450	2.2499999999999978	1	0	0	0	1
+450	449	2.2500000000000036	1	0	0	0	1
+449	448	2.2500000000000031	1	0	0	0	1
+448	447	2.2499999999999942	1	0	0	0	1
+447	446	2.2500000000000009	1	0	0	0	1
+446	445	2.2500000000000009	1	0	0	0	1
+445	444	2.2500000000000067	1	0	0	0	1
+444	443	2.2499999999999951	1	0	0	0	1
+443	442	2.2499999999999787	1	0	0	0	1
+442	441	2.2500000000000098	1	0	0	0	1
+441	440	2.2500000000000004	1	0	0	0	1
+440	439	2.2500000000000004	1	0	0	0	1
+439	438	2.2500000000000009	1	0	0	0	1
+438	437	2.2499999999999973	1	0	0	0	1
+437	436	2.2500000000000036	1	0	0	0	1
+436	435	2.2500000000000004	1	0	0	0	1
+435	434	2.2499999999999916	1	0	0	0	1
+434	433	2.2499999999999982	1	0	0	0	1
+433	432	2.25	1	0	0	0	1
+432	431	2.2500000000000004	1	0	0	0	1
+431	430	2.2500000000000036	1	0	0	0	1
+430	429	2.2499999999999933	1	0	0	0	1
+429	428	2.2499999999999982	1	0	0	0	1
+428	427	2.2499999999999982	1	0	0	0	1
+427	426	2.2499999999999978	1	0	0	0	1
+426	425	2.2500000000000004	1	0	0	0	1
+425	424	2.2499999999999996	1	0	0	0	1
+424	423	2.2500000000000009	1	0	0	0	1
+423	422	2.25	1	0	0	0	1
+422	420	2.25	1	0	0	0	1
+462	501	2.2499999999999991	1	0	0	0	1
+501	500	2.2500000000000004	1	0	0	0	1
+500	499	2.2499999999999987	1	0	0	0	1
+499	498	2.2500000000000004	1	0	0	0	1
+498	497	2.2500000000000009	1	0	0	0	1
+497	496	2.2500000000000018	1	0	0	0	1
+496	495	2.2499999999999991	1	0	0	0	1
+495	494	2.2500000000000009	1	0	0	0	1
+494	493	2.2499999999999973	1	0	0	0	1
+493	492	2.2500000000000036	1	0	0	0	1
+492	491	2.2500000000000004	1	0	0	0	1
+491	490	2.2500000000000009	1	0	0	0	1
+490	489	2.2499999999999973	1	0	0	0	1
+489	488	2.2499999999999942	1	0	0	0	1
+488	487	2.2500000000000075	1	0	0	0	1
+487	486	2.2500000000000031	1	0	0	0	1
+486	485	2.2499999999999973	1	0	0	0	1
+485	484	2.2499999999999973	1	0	0	0	1
+484	483	2.2500000000000067	1	0	0	0	1
+483	482	2.2500000000000067	1	0	0	0	1
+482	481	2.2500000000000098	1	0	0	0	1
+481	480	2.2499999999999876	1	0	0	0	1
+480	479	2.2500000000000004	1	0	0	0	1
+479	478	2.2500000000000009	1	0	0	0	1
+478	477	2.2499999999999951	1	0	0	0	1
+477	476	2.2500000000000067	1	0	0	0	1
+476	475	2.2499999999999969	1	0	0	0	1
+475	474	2.2499999999999916	1	0	0	0	1
+474	473	2.2500000000000031	1	0	0	0	1
+473	472	2.2499999999999969	1	0	0	0	1
+472	471	2.250000000000004	1	0	0	0	1
+471	470	2.2499999999999916	1	0	0	0	1
+470	469	2.2500000000000031	1	0	0	0	1
+469	468	2.2499999999999991	1	0	0	0	1
+468	467	2.2500000000000004	1	0	0	0	1
+467	466	2.2499999999999991	1	0	0	0	1
+466	465	2.25	1	0	0	0	1
+465	464	2.2500000000000013	1	0	0	0	1
+464	463	2.2499999999999996	1	0	0	0	1
+463	461	2.2500000000000009	1	0	0	0	1
+503	502	90	1	1	1	6	0.76000000000000001
+506	131	2.2499999999999991	1	0	0	0	1
+507	132	2.2500000000000031	1	0	0	0	1
+509	508	90	1	2	1	0	0.26000000000000001
+511	510	90	1	2	1	0	0.26000000000000001
+[NumHoles] = 1
+22.02637623396096	22.02637623396096	0
+[NumBlockLabels] = 411
+36.4159992311072	36.4159992311072	4	-1	0	0	11	1	0
+16.375	28.362331973940364	1	-1	0	0	15	1	0
+15.487500000000001	26.825136882222989	1	-1	0	0	5	1	0
+5.586143571373726	5.586143571373726	1	-1	0	0	3	1	0
+41.719300090006307	41.719300090006307	1	-1	0	0	13	1	0
+3.875	41.5	2	-1	1	0	12	-100	0
+17.394151560335295	37.877554257054207	2	-1	1	0	12	100	0
+24.105848439664697	34.002554257054207	2	-1	3	0	12	-100	0
+34.0025542570542	24.105848439664705	2	-1	3	0	12	100	0
+37.8775542570542	17.394151560335303	2	-1	2	0	12	-100	0
+41.5	3.8750000000000027	2	-1	2	0	12	100	0
+0.3249376102233984	16.546809829978173	4	-1	0	0	8	1	0
+0.97431180042717858	16.521295848557049	15	-1	0	86.625	8	1	0
+1.622183672454228	16.470307226424861	4	-1	0	84.375	8	1	0
+2.2675542548365715	16.393922584341205	4	-1	0	82.125	8	1	0
+2.9094284329135673	16.292259701887705	4	-1	0	0	8	1	0
+3.54681648322659	16.165475335860439	4	-1	0	0	8	1	0
+4.1787355996008646	16.0137649785623	4	-1	0	75.375	8	1	0
+4.8042114085613523	15.837362556368056	4	-1	0	73.125	8	1	0
+5.4222794717460276	15.636540069026832	4	-1	0	70.875	8	1	0
+6.031986772999927	15.4116071702582	95	-1	0	0	8	1	0
+0.35438814891434084	18.046520690701271	6	-1	0	88.875	8	1	0
+1.062618005903962	18.018694263834124	16	-1	0	0	8	1	0
+1.7692093829485689	17.963084316433154	26	-1	0	84.375	8	1	0
+2.4730727673595232	17.879776595006572	4	-1	0	0	8	1	0
+3.1731228528150992	17.768899554022543	46	-1	0	0	8	1	0
+3.8682802128241662	17.630624157841748	4	-1	0	0	8	1	0
+4.5574729651236012	17.465163617102689	66	-1	0	75.375	8	1	0
+5.2396384244430463	17.272773059966369	76	-1	0	73.125	8	1	0
+5.9137247410885676	17.053749138727149	86	-1	0	0	8	1	0
+6.5786925228186517	16.808429572396406	4	-1	0	0	8	1	0
+0.38383868760528328	19.546231551424366	7	-1	0	88.875	8	1	0
+1.1509242113807456	19.516092679111196	17	-1	0	0	8	1	0
+1.9162350934429098	19.45586140644145	27	-1	0	84.375	8	1	0
+2.6785912798824754	19.365630605671935	37	-1	0	82.125	8	1	0
+3.4368172727166306	19.245539406157381	47	-1	0	79.875	8	1	0
+4.1897439424217424	19.095772979823057	4	-1	0	77.625	8	1	0
+4.9362103306463379	18.916562255643079	4	-1	0	0	8	1	0
+5.6750654403247403	18.708183563564685	77	-1	0	73.125	8	1	0
+6.4051700104311076	18.470958208427465	87	-1	0	0	8	1	0
+7.1253982726373755	18.205251974534612	4	-1	0	0	8	1	0
+0.41328922629622572	21.045942412147465	4	-1	0	0	8	1	0
+1.2392304168575292	21.013491094388272	4	-1	0	86.625	8	1	0
+2.0632608039372506	20.948638496449746	28	-1	0	84.375	8	1	0
+2.8841097924054275	20.851484616337302	4	-1	0	0	8	1	0
+3.7005116926181625	20.722179258292218	4	-1	0	79.875	8	1	0
+4.5112076720193182	20.560921801804366	58	-1	0	77.625	8	1	0
+5.3149476961690754	20.367960894183469	68	-1	0	75.375	8	1	0
+6.1104924562064333	20.143594067162997	4	-1	0	73.125	8	1	0
+6.8966152797736484	19.888167278127785	4	-1	0	0	8	1	0
+7.6721040224561001	19.602074376672817	4	-1	0	0	8	1	0
+0.44273976498716822	22.545653272870563	9	-1	0	88.875	8	1	0
+1.3275366223343128	22.510889509665343	4	-1	0	0	8	1	0
+2.2102865144315915	22.441415586458042	4	-1	0	0	8	1	0
+3.0896283049283797	22.337338627002669	39	-1	0	0	8	1	0
+3.9642061125196943	22.198819110427056	49	-1	0	0	8	1	0
+4.8326714016168948	22.026070623785674	59	-1	0	0	8	1	0
+5.693685061691812	21.819359532723858	4	-1	0	0	8	1	0
+6.5459194720881273	21.57900457076131	4	-1	0	73.125	8	1	0
+7.3880605491161884	21.305376347828101	4	-1	0	0	8	1	0
+8.2188097722748239	20.998896778811019	99	-1	0	68.625	8	1	0
+0.47219030367811066	24.045364133593658	4	-1	0	0	8	1	0
+1.4158428278110964	24.008287924942419	4	-1	0	0	8	1	0
+2.3573122249259324	23.934192676466338	4	-1	0	0	8	1	0
+3.2951468174513314	23.823192637668033	4	-1	0	82.125	8	1	0
+4.2279005324212262	23.675458962561894	50	-1	0	79.875	8	1	0
+5.1541351312144705	23.49121944576698	4	-1	0	0	8	1	0
+6.0724224272145486	23.270758171264248	4	-1	0	0	8	1	0
+6.9813464879698204	23.014415074359622	80	-1	0	73.125	8	1	0
+7.8795058184587283	22.722585417528418	90	-1	0	70.875	8	1	0
+8.7655155220935494	22.395719180949225	100	-1	0	68.625	8	1	0
+0.50164084236905304	25.545074994316757	4	-1	0	0	8	1	0
+1.5041490332878797	25.505686340219494	21	-1	0	0	8	1	0
+2.5043379354202733	25.426969766474631	4	-1	0	0	8	1	0
+3.5006653299742836	25.3090466483334	41	-1	0	0	8	1	0
+4.4915949523227576	25.152098814696732	51	-1	0	79.875	8	1	0
+5.4755988608120463	24.956368267748289	4	-1	0	0	8	1	0
+6.4511597927372861	24.722156809804638	4	-1	0	75.375	8	1	0
+7.4167735038515143	24.449825577957935	81	-1	0	73.125	8	1	0
+8.3709510878012683	24.139794487228734	91	-1	0	0	8	1	0
+9.3122212719122732	23.792541583087431	4	-1	0	0	8	1	0
+0.53109138105999554	27.044785855039855	4	-1	0	88.875	8	1	0
+1.5924552387646633	27.003084755496566	4	-1	0	0	8	1	0
+2.6513636459146146	26.919746856482927	4	-1	0	84.375	8	1	0
+3.7061838424972358	26.794900658998767	42	-1	0	0	8	1	0
+4.7552893722242899	26.62873866683157	52	-1	0	79.875	8	1	0
+5.7970625904096229	26.421517089729598	62	-1	0	77.625	8	1	0
+6.8298971582600227	26.173555448345027	4	-1	0	75.375	8	1	0
+7.8522005197332074	25.885236081556251	4	-1	0	73.125	8	1	0
+8.86239635714381	25.55700355692905	92	-1	0	70.875	8	1	0
+9.8589270217309988	25.189363985225636	4	-1	0	68.625	8	1	0
+0.56054191975093803	28.54449671576295	13	-1	0	88.875	8	1	0
+1.6807614442414469	28.500483170773641	4	-1	0	0	8	1	0
+2.7983893564089555	28.412523946491223	4	-1	0	84.375	8	1	0
+3.9117023550201879	28.28075466966413	4	-1	0	82.125	8	1	0
+5.0189837921258214	28.105378518966404	53	-1	0	79.875	8	1	0
+6.1185263200071986	27.886665911710907	63	-1	0	77.625	8	1	0
+7.2086345237827594	27.624954086885417	4	-1	0	0	8	1	0
+8.2876275356149005	27.320646585154563	4	-1	0	0	8	1	0
+9.35384162648635	26.97421262662937	93	-1	0	0	8	1	0
+10.405632771549723	26.586186387363842	4	-1	0	68.625	8	1	0
+0.58999245844188042	30.044207576486048	4	-1	0	0	8	1	0
+1.7690676497182305	29.997881586050713	4	-1	0	86.625	8	1	0
+2.9454150669032964	29.90530103649952	4	-1	0	84.375	8	1	0
+4.1172208675431401	29.766608680329497	4	-1	0	82.125	8	1	0
+5.2826782120273528	29.582018371101242	4	-1	0	0	8	1	0
+6.4399900496047753	29.351814733692215	64	-1	0	77.625	8	1	0
+7.5873718893054969	29.076352725425807	4	-1	0	0	8	1	0
+8.7230545514965954	28.756057088752875	84	-1	0	0	8	1	0
+9.8452868958288899	28.391421696329687	94	-1	0	0	8	1	0
+10.952338521368446	27.983008789502048	4	-1	0	0	8	1	0
+11.470595850130273	11.930127025433306	4	-1	0	0	8	1	0
+10.993377847431711	12.371262809575976	15	-1	0	48.375000000000007	8	1	0
+10.499208852908334	12.793323003153299	4	-1	0	50.625000000000007	8	1	0
+9.988850839331608	13.195656819938304	4	-1	0	52.875	8	1	0
+9.4630907417669814	13.577643890347249	4	-1	0	0	8	1	0
+8.9227392441770537	13.938695218004542	4	-1	0	0	8	1	0
+8.368629529405645	14.278254087932455	4	-1	0	59.625000000000007	8	1	0
+7.8016159944702599	14.595796924965278	4	-1	0	61.875000000000007	8	1	0
+7.2225729331438124	14.890834101064266	4	-1	0	64.125	8	1	0
+6.6323931878569837	15.1629106902886	95	-1	0	0	8	1	0
+12.510226893948728	13.011407420487688	6	-1	0	46.125000000000014	8	1	0
+11.989756504298636	13.492525299869873	16	-1	0	0	8	1	0
+11.4507987791538	13.952838683197403	26	-1	0	50.625000000000007	8	1	0
+10.894184752261964	14.391637800597364	4	-1	0	0	8	1	0
+10.320772682108402	14.808246055635523	46	-1	0	0	8	1	0
+9.7314467285435526	15.20202106857897	4	-1	0	0	8	1	0
+9.1271155894726199	15.572355666899139	66	-1	0	59.625000000000007	8	1	0
+8.5087110997092541	15.918678821487806	76	-1	0	61.875000000000007	8	1	0
+7.8771867941538236	16.240456527142598	86	-1	0	0	8	1	0
+7.2335164375116943	16.537192625964302	4	-1	0	0	8	1	0
+13.549857937767179	14.09268781554206	7	-1	0	46.125	8	1	0
+12.986135161165556	14.613787790163769	17	-1	0	0	8	1	0
+12.402388705399268	15.112354363241508	27	-1	0	50.625000000000007	8	1	0
+11.79951866519232	15.587618781256422	37	-1	0	52.875	8	1	0
+11.178454622449818	16.038848220923789	47	-1	0	55.125000000000007	8	1	0
+10.540154212910053	16.465346919153401	4	-1	0	57.375000000000007	8	1	0
+9.8856016495395984	16.866457245865828	4	-1	0	0	8	1	0
+9.2158062049482545	17.241560718010344	77	-1	0	61.875000000000007	8	1	0
+8.5318006551638366	17.590078953220928	87	-1	0	0	8	1	0
+7.8346396871664075	17.911474561640009	4	-1	0	0	8	1	0
+14.589488981585632	15.173968210596437	4	-1	0	0	8	1	0
+13.98251381803248	15.735050280457664	4	-1	0	48.375000000000014	8	1	0
+13.35397863164474	16.271870043285617	28	-1	0	50.625000000000007	8	1	0
+12.704852578122676	16.783599761915486	4	-1	0	0	8	1	0
+12.036136562791235	17.269450386212061	4	-1	0	55.125000000000014	8	1	0
+11.348861697276554	17.728672769727833	58	-1	0	57.375000000000007	8	1	0
+10.644087709606575	18.160558824832517	68	-1	0	59.625000000000007	8	1	0
+9.9229013101872496	18.564442614532872	4	-1	0	61.875000000000007	8	1	0
+9.1864145161738531	18.939701379299262	4	-1	0	0	8	1	0
+8.4357629368211207	19.285756497315713	4	-1	0	0	8	1	0
+15.629120025404088	16.25524860565082	9	-1	0	46.125000000000014	8	1	0
+14.978892474899402	16.856312770751558	4	-1	0	0	8	1	0
+14.305568557890204	17.431385723329718	4	-1	0	0	8	1	0
+13.610186491053037	17.979580742574548	39	-1	0	0	8	1	0
+12.893818503132657	18.500052551500332	49	-1	0	0	8	1	0
+12.157569181643055	18.991998620302262	59	-1	0	0	8	1	0
+11.402573769673548	19.454660403799203	4	-1	0	0	8	1	0
+10.629996415426247	19.887324511055407	4	-1	0	61.875000000000007	8	1	0
+9.8410283771838643	20.289323805377595	4	-1	0	0	8	1	0
+9.0368861864758294	20.660038432991414	99	-1	0	66.375	8	1	0
+16.668751069222541	17.336529000705195	4	-1	0	0	8	1	0
+15.975271131766325	17.977575261045452	4	-1	0	0	8	1	0
+15.257158484135676	18.590901403373827	4	-1	0	0	8	1	0
+14.515520403983391	19.17556172323361	4	-1	0	52.875	8	1	0
+13.751500443474075	19.730654716788603	50	-1	0	55.125	8	1	0
+12.966276666009552	20.25532447087669	4	-1	0	0	8	1	0
+12.161059829740529	20.748761982765892	4	-1	0	0	8	1	0
+11.33709152066524	21.210206407577935	80	-1	0	61.875000000000007	8	1	0
+10.495642238193877	21.638946231455925	90	-1	0	64.125	8	1	0
+9.63800943613054	22.034320368667117	100	-1	0	66.375	8	1	0
+17.708382113040994	18.417809395759573	4	-1	0	0	8	1	0
+16.97164978863325	19.098837751339349	21	-1	0	0	8	1	0
+16.208748410381141	19.750417083417929	4	-1	0	0	8	1	0
+15.420854316913749	20.371542703892665	41	-1	0	0	8	1	0
+14.60918238381549	20.961256882076874	51	-1	0	55.125000000000014	8	1	0
+13.774984150376053	21.518650321451119	4	-1	0	0	8	1	0
+12.919545889807505	22.042863561732577	4	-1	0	59.625000000000007	8	1	0
+12.044186625904238	22.533088304100474	81	-1	0	61.875000000000007	8	1	0
+11.15025609920389	22.988568657534259	91	-1	0	0	8	1	0
+10.23913268578525	23.408602304342825	4	-1	0	0	8	1	0
+18.74801315685945	19.499089790813954	4	-1	0	46.125000000000014	8	1	0
+17.96802844550017	20.220100241633244	4	-1	0	0	8	1	0
+17.160338336626609	20.909932763462034	4	-1	0	50.625000000000007	8	1	0
+16.326188229844107	21.56752368455173	42	-1	0	0	8	1	0
+15.466864324156912	22.191859047365142	52	-1	0	55.125	8	1	0
+14.583691634742554	22.781976172025548	62	-1	0	57.375000000000007	8	1	0
+13.678031949874484	23.33696514069927	4	-1	0	59.625000000000007	8	1	0
+12.751281731143237	23.855970200623005	4	-1	0	61.875000000000007	8	1	0
+11.804869960213901	24.338191083612589	92	-1	0	64.125	8	1	0
+10.840255935439961	24.782884240018525	4	-1	0	66.375	8	1	0
+19.787644200677903	20.580370185868329	13	-1	0	46.125000000000014	8	1	0
+18.964407102367094	21.341362731927141	4	-1	0	0	8	1	0
+18.111928262872077	22.06944844350614	4	-1	0	50.625000000000007	8	1	0
+17.231522142774459	22.763504665210785	4	-1	0	52.875	8	1	0
+16.324546264498327	23.42246121265341	53	-1	0	55.125000000000014	8	1	0
+15.392399119109054	24.04530202259998	63	-1	0	57.375000000000007	8	1	0
+14.436518009941461	24.631066719665956	4	-1	0	0	8	1	0
+13.45837683638223	25.178852097145533	4	-1	0	0	8	1	0
+12.459483821223918	25.687813509690923	93	-1	0	0	8	1	0
+11.441379185094673	26.157166175694229	4	-1	0	66.375	8	1	0
+20.827275244496356	21.661650580922707	4	-1	0	0	8	1	0
+19.960785759234014	22.462625222221032	4	-1	0	48.375000000000014	8	1	0
+19.063518189117548	23.228964123550249	4	-1	0	50.625000000000007	8	1	0
+18.136856055704818	23.959485645869851	4	-1	0	52.875	8	1	0
+17.182228204839745	24.653063377941685	4	-1	0	0	8	1	0
+16.201106603475555	25.308627873174409	64	-1	0	57.375000000000007	8	1	0
+15.195004070008437	25.925168298632645	4	-1	0	0	8	1	0
+14.165471941621227	26.501733993668068	84	-1	0	0	8	1	0
+13.114097682233931	27.037435935769256	94	-1	0	0	8	1	0
+12.042502434749386	27.531448111369933	4	-1	0	0	8	1	0
+16.546809829978173	0.3249376102233984	4	-1	0	0	8	1	0
+16.521295848557049	0.97431180042717858	15	-1	0	183.375	8	1	0
+16.470307226424861	1.622183672454228	4	-1	0	185.625	9	1	0
+16.393922584341205	2.2675542548365715	4	-1	0	187.875	9	1	0
+16.292259701887705	2.9094284329135673	4	-1	0	0	8	1	0
+16.165475335860439	3.54681648322659	4	-1	0	0	8	1	0
+16.0137649785623	4.1787355996008646	4	-1	0	194.625	9	1	0
+15.837362556368056	4.8042114085613523	4	-1	0	196.875	9	1	0
+15.636540069026832	5.4222794717460276	4	-1	0	199.125	9	1	0
+15.4116071702582	6.031986772999927	95	-1	0	0	8	1	0
+18.046520690701271	0.35438814891434084	6	-1	0	181.125	9	1	0
+18.018694263834124	1.062618005903962	16	-1	0	0	8	1	0
+17.963084316433154	1.7692093829485689	26	-1	0	185.625	8	1	0
+17.879776595006572	2.4730727673595232	4	-1	0	0	8	1	0
+17.768899554022543	3.1731228528150992	46	-1	0	0	8	1	0
+17.630624157841748	3.8682802128241662	4	-1	0	0	8	1	0
+17.465163617102689	4.5574729651236012	66	-1	0	194.625	8	1	0
+17.272773059966369	5.2396384244430463	76	-1	0	196.875	8	1	0
+17.053749138727149	5.9137247410885676	86	-1	0	0	8	1	0
+16.808429572396406	6.5786925228186517	4	-1	0	0	8	1	0
+19.546231551424366	0.38383868760528328	7	-1	0	181.125	8	1	0
+19.516092679111196	1.1509242113807456	17	-1	0	0	8	1	0
+19.45586140644145	1.9162350934429098	27	-1	0	185.625	9	1	0
+19.365630605671935	2.6785912798824754	37	-1	0	187.875	8	1	0
+19.245539406157381	3.4368172727166306	47	-1	0	190.125	8	1	0
+19.095772979823057	4.1897439424217424	4	-1	0	192.375	9	1	0
+18.916562255643079	4.9362103306463379	4	-1	0	0	8	1	0
+18.708183563564685	5.6750654403247403	77	-1	0	196.875	9	1	0
+18.470958208427465	6.4051700104311076	87	-1	0	0	8	1	0
+18.205251974534612	7.1253982726373755	4	-1	0	0	8	1	0
+21.045942412147465	0.41328922629622572	4	-1	0	0	8	1	0
+21.013491094388272	1.2392304168575292	4	-1	0	183.375	9	1	0
+20.948638496449746	2.0632608039372506	28	-1	0	185.625	9	1	0
+20.851484616337302	2.8841097924054275	4	-1	0	0	8	1	0
+20.722179258292218	3.7005116926181625	4	-1	0	190.125	9	1	0
+20.560921801804366	4.5112076720193182	58	-1	0	192.375	9	1	0
+20.367960894183469	5.3149476961690754	68	-1	0	194.625	9	1	0
+20.143594067162997	6.1104924562064333	4	-1	0	196.875	9	1	0
+19.888167278127785	6.8966152797736484	4	-1	0	0	8	1	0
+19.602074376672817	7.6721040224561001	4	-1	0	0	8	1	0
+22.545653272870563	0.44273976498716822	9	-1	0	181.125	9	1	0
+22.510889509665343	1.3275366223343128	4	-1	0	0	8	1	0
+22.441415586458042	2.2102865144315915	4	-1	0	0	8	1	0
+22.337338627002669	3.0896283049283797	39	-1	0	0	8	1	0
+22.198819110427056	3.9642061125196943	49	-1	0	0	8	1	0
+22.026070623785674	4.8326714016168948	59	-1	0	0	8	1	0
+21.819359532723858	5.693685061691812	4	-1	0	0	8	1	0
+21.57900457076131	6.5459194720881273	4	-1	0	196.875	9	1	0
+21.305376347828101	7.3880605491161884	4	-1	0	0	8	1	0
+20.998896778811019	8.2188097722748239	99	-1	0	201.375	9	1	0
+24.045364133593658	0.47219030367811066	4	-1	0	0	8	1	0
+24.008287924942419	1.4158428278110964	4	-1	0	0	8	1	0
+23.934192676466338	2.3573122249259324	4	-1	0	0	8	1	0
+23.823192637668033	3.2951468174513314	4	-1	0	187.875	9	1	0
+23.675458962561894	4.2279005324212262	50	-1	0	190.125	8	1	0
+23.49121944576698	5.1541351312144705	4	-1	0	0	8	1	0
+23.270758171264248	6.0724224272145486	4	-1	0	0	8	1	0
+23.014415074359622	6.9813464879698204	80	-1	0	196.875	9	1	0
+22.722585417528418	7.8795058184587283	90	-1	0	199.125	8	1	0
+22.395719180949225	8.7655155220935494	100	-1	0	201.375	8	1	0
+25.545074994316757	0.50164084236905304	4	-1	0	0	8	1	0
+25.505686340219494	1.5041490332878797	21	-1	0	0	8	1	0
+25.426969766474631	2.5043379354202733	4	-1	0	0	8	1	0
+25.3090466483334	3.5006653299742836	41	-1	0	0	8	1	0
+25.152098814696732	4.4915949523227576	51	-1	0	190.125	8	1	0
+24.956368267748289	5.4755988608120463	4	-1	0	0	8	1	0
+24.722156809804638	6.4511597927372861	4	-1	0	194.625	9	1	0
+24.449825577957935	7.4167735038515143	81	-1	0	196.875	9	1	0
+24.139794487228734	8.3709510878012683	91	-1	0	0	8	1	0
+23.792541583087431	9.3122212719122732	4	-1	0	0	8	1	0
+27.044785855039855	0.53109138105999554	4	-1	0	181.125	9	1	0
+27.003084755496566	1.5924552387646633	4	-1	0	0	8	1	0
+26.919746856482927	2.6513636459146146	4	-1	0	185.625	9	1	0
+26.794900658998767	3.7061838424972358	42	-1	0	0	8	1	0
+26.62873866683157	4.7552893722242899	52	-1	0	190.125	9	1	0
+26.421517089729598	5.7970625904096229	62	-1	0	192.375	9	1	0
+26.173555448345027	6.8298971582600227	4	-1	0	194.625	9	1	0
+25.885236081556251	7.8522005197332074	4	-1	0	196.875	9	1	0
+25.55700355692905	8.86239635714381	92	-1	0	199.125	9	1	0
+25.189363985225636	9.8589270217309988	4	-1	0	201.375	9	1	0
+28.54449671576295	0.56054191975093803	13	-1	0	181.125	9	1	0
+28.500483170773641	1.6807614442414469	4	-1	0	0	8	1	0
+28.412523946491223	2.7983893564089555	4	-1	0	185.625	9	1	0
+28.28075466966413	3.9117023550201879	4	-1	0	187.875	9	1	0
+28.105378518966404	5.0189837921258214	53	-1	0	190.125	9	1	0
+27.886665911710907	6.1185263200071986	63	-1	0	192.375	8	1	0
+27.624954086885417	7.2086345237827594	4	-1	0	0	8	1	0
+27.320646585154563	8.2876275356149005	4	-1	0	0	8	1	0
+26.97421262662937	9.35384162648635	93	-1	0	0	8	1	0
+26.586186387363842	10.405632771549723	4	-1	0	201.375	9	1	0
+30.044207576486048	0.58999245844188042	4	-1	0	0	8	1	0
+29.997881586050713	1.7690676497182305	4	-1	0	183.375	9	1	0
+29.90530103649952	2.9454150669032964	4	-1	0	185.625	9	1	0
+29.766608680329497	4.1172208675431401	4	-1	0	187.875	9	1	0
+29.582018371101242	5.2826782120273528	4	-1	0	0	8	1	0
+29.351814733692215	6.4399900496047753	64	-1	0	192.375	8	1	0
+29.076352725425807	7.5873718893054969	4	-1	0	0	8	1	0
+28.756057088752875	8.7230545514965954	84	-1	0	0	8	1	0
+28.391421696329687	9.8452868958288899	94	-1	0	0	8	1	0
+27.983008789502048	10.952338521368446	4	-1	0	0	8	1	0
+11.930127025433306	11.470595850130273	4	-1	0	0	8	1	0
+12.371262809575976	10.993377847431711	15	-1	0	-138.375	8	1	0
+12.793323003153299	10.499208852908334	4	-1	0	-140.625	9	1	0
+13.195656819938304	9.988850839331608	4	-1	0	-142.875	9	1	0
+13.577643890347249	9.4630907417669814	4	-1	0	0	8	1	0
+13.938695218004542	8.9227392441770537	4	-1	0	0	8	1	0
+14.278254087932455	8.368629529405645	4	-1	0	-149.62499999999997	9	1	0
+14.595796924965278	7.8016159944702599	4	-1	0	-151.875	9	1	0
+14.890834101064266	7.2225729331438124	4	-1	0	-154.12499999999997	9	1	0
+15.1629106902886	6.6323931878569837	95	-1	0	0	8	1	0
+13.011407420487688	12.510226893948728	6	-1	0	-136.125	9	1	0
+13.492525299869873	11.989756504298636	16	-1	0	0	8	1	0
+13.952838683197403	11.4507987791538	26	-1	0	-140.625	8	1	0
+14.391637800597364	10.894184752261964	4	-1	0	0	8	1	0
+14.808246055635523	10.320772682108402	46	-1	0	0	8	1	0
+15.20202106857897	9.7314467285435526	4	-1	0	0	8	1	0
+15.572355666899139	9.1271155894726199	66	-1	0	-149.625	8	1	0
+15.918678821487806	8.5087110997092541	76	-1	0	-151.875	8	1	0
+16.240456527142598	7.8771867941538236	86	-1	0	0	8	1	0
+16.537192625964302	7.2335164375116943	4	-1	0	0	8	1	0
+14.09268781554206	13.549857937767179	7	-1	0	-136.125	8	1	0
+14.613787790163769	12.986135161165556	17	-1	0	0	8	1	0
+15.112354363241508	12.402388705399268	27	-1	0	-140.625	9	1	0
+15.587618781256422	11.79951866519232	37	-1	0	-142.875	8	1	0
+16.038848220923789	11.178454622449818	47	-1	0	-145.125	8	1	0
+16.465346919153401	10.540154212910053	4	-1	0	-147.375	9	1	0
+16.866457245865828	9.8856016495395984	4	-1	0	0	8	1	0
+17.241560718010344	9.2158062049482545	77	-1	0	-151.875	9	1	0
+17.590078953220928	8.5318006551638366	87	-1	0	0	8	1	0
+17.911474561640009	7.8346396871664075	4	-1	0	0	8	1	0
+15.173968210596437	14.589488981585632	4	-1	0	0	8	1	0
+15.735050280457664	13.98251381803248	4	-1	0	-138.375	9	1	0
+16.271870043285617	13.35397863164474	28	-1	0	-140.625	9	1	0
+16.783599761915486	12.704852578122676	4	-1	0	0	8	1	0
+17.269450386212061	12.036136562791235	4	-1	0	-145.12499999999997	9	1	0
+17.728672769727833	11.348861697276554	58	-1	0	-147.375	9	1	0
+18.160558824832517	10.644087709606575	68	-1	0	-149.62499999999997	9	1	0
+18.564442614532872	9.9229013101872496	4	-1	0	-151.875	9	1	0
+18.939701379299262	9.1864145161738531	4	-1	0	0	8	1	0
+19.285756497315713	8.4357629368211207	4	-1	0	0	8	1	0
+16.25524860565082	15.629120025404088	9	-1	0	-136.125	9	1	0
+16.856312770751558	14.978892474899402	4	-1	0	0	8	1	0
+17.431385723329718	14.305568557890204	4	-1	0	0	8	1	0
+17.979580742574548	13.610186491053037	39	-1	0	0	8	1	0
+18.500052551500332	12.893818503132657	49	-1	0	0	8	1	0
+18.991998620302262	12.157569181643055	59	-1	0	0	8	1	0
+19.454660403799203	11.402573769673548	4	-1	0	0	8	1	0
+19.887324511055407	10.629996415426247	4	-1	0	-151.875	9	1	0
+20.289323805377595	9.8410283771838643	4	-1	0	0	8	1	0
+20.660038432991414	9.0368861864758294	99	-1	0	-156.375	9	1	0
+17.336529000705195	16.668751069222541	4	-1	0	0	8	1	0
+17.977575261045452	15.975271131766325	4	-1	0	0	8	1	0
+18.590901403373827	15.257158484135676	4	-1	0	0	8	1	0
+19.17556172323361	14.515520403983391	4	-1	0	-142.875	9	1	0
+19.730654716788603	13.751500443474075	50	-1	0	-145.125	8	1	0
+20.25532447087669	12.966276666009552	4	-1	0	0	8	1	0
+20.748761982765892	12.161059829740529	4	-1	0	0	8	1	0
+21.210206407577935	11.33709152066524	80	-1	0	-151.875	9	1	0
+21.638946231455925	10.495642238193877	90	-1	0	-154.125	8	1	0
+22.034320368667117	9.63800943613054	100	-1	0	-156.375	8	1	0
+18.417809395759573	17.708382113040994	4	-1	0	0	8	1	0
+19.098837751339349	16.97164978863325	21	-1	0	0	8	1	0
+19.750417083417929	16.208748410381141	4	-1	0	0	8	1	0
+20.371542703892665	15.420854316913749	41	-1	0	0	8	1	0
+20.961256882076874	14.60918238381549	51	-1	0	-145.125	8	1	0
+21.518650321451119	13.774984150376053	4	-1	0	0	8	1	0
+22.042863561732577	12.919545889807505	4	-1	0	-149.62499999999997	9	1	0
+22.533088304100474	12.044186625904238	81	-1	0	-151.875	9	1	0
+22.988568657534259	11.15025609920389	91	-1	0	0	8	1	0
+23.408602304342825	10.23913268578525	4	-1	0	0	8	1	0
+19.499089790813954	18.74801315685945	4	-1	0	-136.125	9	1	0
+20.220100241633244	17.96802844550017	4	-1	0	0	8	1	0
+20.909932763462034	17.160338336626609	4	-1	0	-140.625	9	1	0
+21.56752368455173	16.326188229844107	42	-1	0	0	8	1	0
+22.191859047365142	15.466864324156912	52	-1	0	-145.125	9	1	0
+22.781976172025548	14.583691634742554	62	-1	0	-147.375	9	1	0
+23.33696514069927	13.678031949874484	4	-1	0	-149.62499999999997	9	1	0
+23.855970200623005	12.751281731143237	4	-1	0	-151.875	9	1	0
+24.338191083612589	11.804869960213901	92	-1	0	-154.12499999999997	9	1	0
+24.782884240018525	10.840255935439961	4	-1	0	-156.37500000000003	9	1	0
+20.580370185868329	19.787644200677903	13	-1	0	-136.125	9	1	0
+21.341362731927141	18.964407102367094	4	-1	0	0	8	1	0
+22.06944844350614	18.111928262872077	4	-1	0	-140.625	9	1	0
+22.763504665210785	17.231522142774459	4	-1	0	-142.875	9	1	0
+23.42246121265341	16.324546264498327	53	-1	0	-145.12499999999997	9	1	0
+24.04530202259998	15.392399119109054	63	-1	0	-147.375	8	1	0
+24.631066719665956	14.436518009941461	4	-1	0	0	8	1	0
+25.178852097145533	13.45837683638223	4	-1	0	0	8	1	0
+25.687813509690923	12.459483821223918	93	-1	0	0	8	1	0
+26.157166175694229	11.441379185094673	4	-1	0	-156.37500000000003	9	1	0
+21.661650580922707	20.827275244496356	4	-1	0	0	8	1	0
+22.462625222221032	19.960785759234014	4	-1	0	-138.375	9	1	0
+23.228964123550249	19.063518189117548	4	-1	0	-140.625	9	1	0
+23.959485645869851	18.136856055704818	4	-1	0	-142.875	9	1	0
+24.653063377941685	17.182228204839745	4	-1	0	0	8	1	0
+25.308627873174409	16.201106603475555	64	-1	0	-147.375	8	1	0
+25.925168298632645	15.195004070008437	4	-1	0	0	8	1	0
+26.501733993668068	14.165471941621227	84	-1	0	0	8	1	0
+27.037435935769256	13.114097682233931	94	-1	0	0	8	1	0
+27.531448111369933	12.042502434749386	4	-1	0	0	8	1	0

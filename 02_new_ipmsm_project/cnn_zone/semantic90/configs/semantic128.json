@@ -1,0 +1,20 @@
+{
+  "image_size": 128,
+  "input_channels": [
+    "design_air",
+    "design_pm_inward",
+    "design_pm_outward",
+    "design_iron",
+    "fixed_air",
+    "fixed_iron",
+    "winding",
+    "geometry_mask"
+  ],
+  "boundary_channel": false,
+  "dataset_mode": "corrected_physical_clean",
+  "targets": ["Tavg", "DeltaT"],
+  "render_location": "after_batching_in_memory_or_gpu",
+  "save_training_images": false,
+  "random_seed": 20260821
+}
+

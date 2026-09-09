@@ -1,0 +1,23 @@
+{
+  "model_id": "logical10/resnet20",
+  "epochs": 10,
+  "best_epoch": 8,
+  "best_validation_loss": 0.11263258306185404,
+  "test_standardized_mse": 0.10391252275307973,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.07794425636529922,
+      "rmse": 0.11362024396657944,
+      "r2": 0.9698634147644043
+    },
+    "delta_t": {
+      "mae": 0.0740869864821434,
+      "rmse": 0.1285853534936905,
+      "r2": 0.8099690079689026
+    }
+  },
+  "elapsed_seconds": 20.362009800002852,
+  "peak_cuda_memory_mb": 74.1494140625,
+  "parameter_count": 345938,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\test_11700\\logical10\\resnet20\\best_checkpoint.pt"
+}

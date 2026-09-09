@@ -1,0 +1,5465 @@
+{
+  "fem_path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_zone\\models\\IPMSM.fem",
+  "fem_header_and_counts": {
+    "Format": 4.0,
+    "Frequency": 0.0,
+    "Precision": 1e-08,
+    "MinAngle": 30.0,
+    "Depth": 36.0,
+    "Coordinates": "cartesian",
+    "ProblemType": "planar",
+    "BdryProps": 19,
+    "BlockProps": 104,
+    "CircuitProps": 3,
+    "NumPoints": 512,
+    "NumSegments": 470,
+    "NumArcSegments": 447,
+    "NumHoles": 1,
+    "NumBlockLabels": 411
+  },
+  "workspace_material_position_shape": [
+    100,
+    8
+  ],
+  "mapped_gene_cells": 100,
+  "mapped_fem_block_labels": 400,
+  "all_four_copies_found_exactly": true,
+  "example_physical_class_counts": {
+    "iron": 62,
+    "permanent_magnet": 20,
+    "air": 18
+  },
+  "cell_order": "cell=(angular_index*10 + radial_index)+1",
+  "base_copy": "MaterialPosition columns 7-8, spanning 1.125°..21.375°",
+  "history_comparison": {
+    "raw_pre_repair": {
+      "source_variable": "population_noChange_all",
+      "exact_match_found": false,
+      "minimum_cell_mismatches": 32,
+      "best_simple_mapping_code_to_class": {
+        "0": "iron",
+        "1": "permanent_magnet",
+        "2": "iron",
+        "3": "iron"
+      },
+      "nearest_state_index_0based": 276,
+      "nearest_population_row_0based": 314
+    },
+    "corrected_femm_input": {
+      "source_variable": "population_all",
+      "exact_match_found": false,
+      "minimum_cell_mismatches": 32,
+      "best_simple_mapping_code_to_class": {
+        "0": "iron",
+        "1": "permanent_magnet",
+        "2": "iron",
+        "3": "iron"
+      },
+      "nearest_state_index_0based": 276,
+      "nearest_population_row_0based": 314
+    },
+    "interpretation": "The reference FEM is not an exact saved historical chromosome. Material identity therefore relies on VolumePM plus the corrected one-topology FEMM replay, not on an exact-reference-genome match."
+  },
+  "cells": [
+    {
+      "cell_index_1based": 1,
+      "angular_index_0based": 0,
+      "radial_index_0based": 0,
+      "base_angle_deg": 1.1249999999999967,
+      "base_radius_mm": 16.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 12,
+          "x_mm": 0.3249376102233984,
+          "y_mm": 16.546809829978173,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 112,
+          "x_mm": 11.470595850130273,
+          "y_mm": 11.930127025433306,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 312,
+          "x_mm": 11.930127025433306,
+          "y_mm": 11.470595850130273,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 212,
+          "x_mm": 16.546809829978173,
+          "y_mm": 0.3249376102233984,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 2,
+      "angular_index_0based": 0,
+      "radial_index_0based": 1,
+      "base_angle_deg": 1.1249999999999991,
+      "base_radius_mm": 18.05,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 22,
+          "x_mm": 0.35438814891434084,
+          "y_mm": 18.04652069070127,
+          "block_type_1based": 6,
+          "block_name": "c2",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 88.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 122,
+          "x_mm": 12.510226893948728,
+          "y_mm": 13.011407420487688,
+          "block_type_1based": 6,
+          "block_name": "c2",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 46.125000000000014,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 322,
+          "x_mm": 13.011407420487688,
+          "y_mm": 12.510226893948728,
+          "block_type_1based": 6,
+          "block_name": "c2",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -136.125,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 222,
+          "x_mm": 18.04652069070127,
+          "y_mm": 0.35438814891434084,
+          "block_type_1based": 6,
+          "block_name": "c2",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 181.125,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 3,
+      "angular_index_0based": 0,
+      "radial_index_0based": 2,
+      "base_angle_deg": 1.124999999999996,
+      "base_radius_mm": 19.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 32,
+          "x_mm": 0.3838386876052833,
+          "y_mm": 19.546231551424366,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 132,
+          "x_mm": 13.549857937767179,
+          "y_mm": 14.09268781554206,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 332,
+          "x_mm": 14.09268781554206,
+          "y_mm": 13.549857937767179,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 232,
+          "x_mm": 19.546231551424366,
+          "y_mm": 0.3838386876052833,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 4,
+      "angular_index_0based": 0,
+      "radial_index_0based": 3,
+      "base_angle_deg": 1.1250000000000027,
+      "base_radius_mm": 21.05000000000001,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 42,
+          "x_mm": 0.4132892262962257,
+          "y_mm": 21.045942412147465,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 142,
+          "x_mm": 14.589488981585632,
+          "y_mm": 15.173968210596437,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 342,
+          "x_mm": 15.173968210596437,
+          "y_mm": 14.589488981585632,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 242,
+          "x_mm": 21.045942412147465,
+          "y_mm": 0.4132892262962257,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 5,
+      "angular_index_0based": 0,
+      "radial_index_0based": 4,
+      "base_angle_deg": 1.1249999999999956,
+      "base_radius_mm": 22.55,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 52,
+          "x_mm": 0.4427397649871682,
+          "y_mm": 22.545653272870563,
+          "block_type_1based": 9,
+          "block_name": "c5",
+          "physical_class": "air",
+          "magnetization_deg": 88.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 152,
+          "x_mm": 15.629120025404088,
+          "y_mm": 16.25524860565082,
+          "block_type_1based": 9,
+          "block_name": "c5",
+          "physical_class": "air",
+          "magnetization_deg": 46.125000000000014,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 352,
+          "x_mm": 16.25524860565082,
+          "y_mm": 15.629120025404088,
+          "block_type_1based": 9,
+          "block_name": "c5",
+          "physical_class": "air",
+          "magnetization_deg": -136.125,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 252,
+          "x_mm": 22.545653272870563,
+          "y_mm": 0.4427397649871682,
+          "block_type_1based": 9,
+          "block_name": "c5",
+          "physical_class": "air",
+          "magnetization_deg": 181.125,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 6,
+      "angular_index_0based": 0,
+      "radial_index_0based": 5,
+      "base_angle_deg": 1.1249999999999936,
+      "base_radius_mm": 24.049999999999994,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 62,
+          "x_mm": 0.47219030367811066,
+          "y_mm": 24.045364133593658,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 162,
+          "x_mm": 16.66875106922254,
+          "y_mm": 17.336529000705195,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 362,
+          "x_mm": 17.336529000705195,
+          "y_mm": 16.66875106922254,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 262,
+          "x_mm": 24.045364133593658,
+          "y_mm": 0.47219030367811066,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 7,
+      "angular_index_0based": 0,
+      "radial_index_0based": 6,
+      "base_angle_deg": 1.1249999999999991,
+      "base_radius_mm": 25.550000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 72,
+          "x_mm": 0.501640842369053,
+          "y_mm": 25.545074994316757,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 172,
+          "x_mm": 17.708382113040994,
+          "y_mm": 18.417809395759573,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 372,
+          "x_mm": 18.417809395759573,
+          "y_mm": 17.708382113040994,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 272,
+          "x_mm": 25.545074994316757,
+          "y_mm": 0.501640842369053,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 8,
+      "angular_index_0based": 0,
+      "radial_index_0based": 7,
+      "base_angle_deg": 1.1249999999999971,
+      "base_radius_mm": 27.050000000000004,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 82,
+          "x_mm": 0.5310913810599955,
+          "y_mm": 27.044785855039855,
+          "block_type_1based": 12,
+          "block_name": "c8",
+          "physical_class": "air",
+          "magnetization_deg": 88.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 182,
+          "x_mm": 18.74801315685945,
+          "y_mm": 19.499089790813954,
+          "block_type_1based": 12,
+          "block_name": "c8",
+          "physical_class": "air",
+          "magnetization_deg": 46.125000000000014,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 382,
+          "x_mm": 19.499089790813954,
+          "y_mm": 18.74801315685945,
+          "block_type_1based": 12,
+          "block_name": "c8",
+          "physical_class": "air",
+          "magnetization_deg": -136.125,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 282,
+          "x_mm": 27.044785855039855,
+          "y_mm": 0.5310913810599955,
+          "block_type_1based": 12,
+          "block_name": "c8",
+          "physical_class": "air",
+          "magnetization_deg": 181.125,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 9,
+      "angular_index_0based": 0,
+      "radial_index_0based": 8,
+      "base_angle_deg": 1.1249999999999987,
+      "base_radius_mm": 28.55,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 92,
+          "x_mm": 0.560541919750938,
+          "y_mm": 28.54449671576295,
+          "block_type_1based": 13,
+          "block_name": "c9",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 88.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 192,
+          "x_mm": 19.787644200677903,
+          "y_mm": 20.58037018586833,
+          "block_type_1based": 13,
+          "block_name": "c9",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 46.125000000000014,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 392,
+          "x_mm": 20.58037018586833,
+          "y_mm": 19.787644200677903,
+          "block_type_1based": 13,
+          "block_name": "c9",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -136.125,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 292,
+          "x_mm": 28.54449671576295,
+          "y_mm": 0.560541919750938,
+          "block_type_1based": 13,
+          "block_name": "c9",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 181.125,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 10,
+      "angular_index_0based": 0,
+      "radial_index_0based": 9,
+      "base_angle_deg": 1.1250000000000033,
+      "base_radius_mm": 30.050000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 102,
+          "x_mm": 0.5899924584418804,
+          "y_mm": 30.04420757648605,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 202,
+          "x_mm": 20.827275244496356,
+          "y_mm": 21.661650580922707,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 402,
+          "x_mm": 21.661650580922707,
+          "y_mm": 20.827275244496356,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 302,
+          "x_mm": 30.04420757648605,
+          "y_mm": 0.5899924584418804,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 11,
+      "angular_index_0based": 1,
+      "radial_index_0based": 0,
+      "base_angle_deg": 3.3750000000000004,
+      "base_radius_mm": 16.550000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 13,
+          "x_mm": 0.9743118004271786,
+          "y_mm": 16.52129584855705,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 113,
+          "x_mm": 10.993377847431711,
+          "y_mm": 12.371262809575976,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 313,
+          "x_mm": 12.371262809575976,
+          "y_mm": 10.993377847431711,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 213,
+          "x_mm": 16.52129584855705,
+          "y_mm": 0.9743118004271786,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 12,
+      "angular_index_0based": 1,
+      "radial_index_0based": 1,
+      "base_angle_deg": 3.3749999999999996,
+      "base_radius_mm": 18.050000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 23,
+          "x_mm": 1.062618005903962,
+          "y_mm": 18.018694263834124,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 123,
+          "x_mm": 11.989756504298636,
+          "y_mm": 13.492525299869873,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 323,
+          "x_mm": 13.492525299869873,
+          "y_mm": 11.989756504298636,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 223,
+          "x_mm": 18.018694263834124,
+          "y_mm": 1.062618005903962,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 13,
+      "angular_index_0based": 1,
+      "radial_index_0based": 2,
+      "base_angle_deg": 3.375000000000005,
+      "base_radius_mm": 19.550000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 33,
+          "x_mm": 1.1509242113807456,
+          "y_mm": 19.516092679111196,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 133,
+          "x_mm": 12.986135161165556,
+          "y_mm": 14.61378779016377,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 333,
+          "x_mm": 14.61378779016377,
+          "y_mm": 12.986135161165556,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 233,
+          "x_mm": 19.516092679111196,
+          "y_mm": 1.1509242113807456,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 14,
+      "angular_index_0based": 1,
+      "radial_index_0based": 3,
+      "base_angle_deg": 3.3749999999999942,
+      "base_radius_mm": 21.050000000000004,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 43,
+          "x_mm": 1.2392304168575292,
+          "y_mm": 21.01349109438827,
+          "block_type_1based": 18,
+          "block_name": "c14",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 86.625,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 143,
+          "x_mm": 13.98251381803248,
+          "y_mm": 15.735050280457664,
+          "block_type_1based": 18,
+          "block_name": "c14",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 48.375000000000014,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 343,
+          "x_mm": 15.735050280457664,
+          "y_mm": 13.98251381803248,
+          "block_type_1based": 18,
+          "block_name": "c14",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -138.375,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 243,
+          "x_mm": 21.01349109438827,
+          "y_mm": 1.2392304168575292,
+          "block_type_1based": 18,
+          "block_name": "c14",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 183.375,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 15,
+      "angular_index_0based": 1,
+      "radial_index_0based": 4,
+      "base_angle_deg": 3.3749999999999996,
+      "base_radius_mm": 22.549999999999997,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 53,
+          "x_mm": 1.3275366223343128,
+          "y_mm": 22.510889509665343,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 153,
+          "x_mm": 14.978892474899402,
+          "y_mm": 16.856312770751558,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 353,
+          "x_mm": 16.856312770751558,
+          "y_mm": 14.978892474899402,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 253,
+          "x_mm": 22.510889509665343,
+          "y_mm": 1.3275366223343128,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 16,
+      "angular_index_0based": 1,
+      "radial_index_0based": 5,
+      "base_angle_deg": 3.374999999999998,
+      "base_radius_mm": 24.050000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 63,
+          "x_mm": 1.4158428278110964,
+          "y_mm": 24.00828792494242,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 163,
+          "x_mm": 15.975271131766325,
+          "y_mm": 17.977575261045452,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 363,
+          "x_mm": 17.977575261045452,
+          "y_mm": 15.975271131766325,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 263,
+          "x_mm": 24.00828792494242,
+          "y_mm": 1.4158428278110964,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 17,
+      "angular_index_0based": 1,
+      "radial_index_0based": 6,
+      "base_angle_deg": 3.374999999999998,
+      "base_radius_mm": 25.550000000000008,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 73,
+          "x_mm": 1.5041490332878797,
+          "y_mm": 25.505686340219494,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 173,
+          "x_mm": 16.97164978863325,
+          "y_mm": 19.09883775133935,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 373,
+          "x_mm": 19.09883775133935,
+          "y_mm": 16.97164978863325,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 273,
+          "x_mm": 25.505686340219494,
+          "y_mm": 1.5041490332878797,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 18,
+      "angular_index_0based": 1,
+      "radial_index_0based": 7,
+      "base_angle_deg": 3.375000000000001,
+      "base_radius_mm": 27.050000000000008,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 83,
+          "x_mm": 1.5924552387646633,
+          "y_mm": 27.003084755496566,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 183,
+          "x_mm": 17.96802844550017,
+          "y_mm": 20.220100241633244,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 383,
+          "x_mm": 20.220100241633244,
+          "y_mm": 17.96802844550017,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 283,
+          "x_mm": 27.003084755496566,
+          "y_mm": 1.5924552387646633,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 19,
+      "angular_index_0based": 1,
+      "radial_index_0based": 8,
+      "base_angle_deg": 3.3749999999999942,
+      "base_radius_mm": 28.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 93,
+          "x_mm": 1.680761444241447,
+          "y_mm": 28.50048317077364,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 193,
+          "x_mm": 18.964407102367094,
+          "y_mm": 21.34136273192714,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 393,
+          "x_mm": 21.34136273192714,
+          "y_mm": 18.964407102367094,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 293,
+          "x_mm": 28.50048317077364,
+          "y_mm": 1.680761444241447,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 20,
+      "angular_index_0based": 1,
+      "radial_index_0based": 9,
+      "base_angle_deg": 3.3749999999999973,
+      "base_radius_mm": 30.050000000000004,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 103,
+          "x_mm": 1.7690676497182305,
+          "y_mm": 29.997881586050713,
+          "block_type_1based": 24,
+          "block_name": "c20",
+          "physical_class": "air",
+          "magnetization_deg": 86.625,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 203,
+          "x_mm": 19.960785759234014,
+          "y_mm": 22.462625222221032,
+          "block_type_1based": 24,
+          "block_name": "c20",
+          "physical_class": "air",
+          "magnetization_deg": 48.375000000000014,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 403,
+          "x_mm": 22.462625222221032,
+          "y_mm": 19.960785759234014,
+          "block_type_1based": 24,
+          "block_name": "c20",
+          "physical_class": "air",
+          "magnetization_deg": -138.375,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 303,
+          "x_mm": 29.997881586050713,
+          "y_mm": 1.7690676497182305,
+          "block_type_1based": 24,
+          "block_name": "c20",
+          "physical_class": "air",
+          "magnetization_deg": 183.375,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 21,
+      "angular_index_0based": 2,
+      "radial_index_0based": 0,
+      "base_angle_deg": 5.624999999999994,
+      "base_radius_mm": 16.55,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 14,
+          "x_mm": 1.622183672454228,
+          "y_mm": 16.47030722642486,
+          "block_type_1based": 25,
+          "block_name": "c21",
+          "physical_class": "air",
+          "magnetization_deg": 84.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 114,
+          "x_mm": 10.499208852908334,
+          "y_mm": 12.793323003153299,
+          "block_type_1based": 25,
+          "block_name": "c21",
+          "physical_class": "air",
+          "magnetization_deg": 50.62500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 314,
+          "x_mm": 12.793323003153299,
+          "y_mm": 10.499208852908334,
+          "block_type_1based": 25,
+          "block_name": "c21",
+          "physical_class": "air",
+          "magnetization_deg": -140.625,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 214,
+          "x_mm": 16.47030722642486,
+          "y_mm": 1.622183672454228,
+          "block_type_1based": 25,
+          "block_name": "c21",
+          "physical_class": "air",
+          "magnetization_deg": 185.625,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 22,
+      "angular_index_0based": 2,
+      "radial_index_0based": 1,
+      "base_angle_deg": 5.625,
+      "base_radius_mm": 18.05,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 24,
+          "x_mm": 1.7692093829485689,
+          "y_mm": 17.963084316433154,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 124,
+          "x_mm": 11.4507987791538,
+          "y_mm": 13.952838683197403,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 324,
+          "x_mm": 13.952838683197403,
+          "y_mm": 11.4507987791538,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 224,
+          "x_mm": 17.963084316433154,
+          "y_mm": 1.7692093829485689,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 23,
+      "angular_index_0based": 2,
+      "radial_index_0based": 2,
+      "base_angle_deg": 5.6250000000000115,
+      "base_radius_mm": 19.550000000000008,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 34,
+          "x_mm": 1.9162350934429098,
+          "y_mm": 19.45586140644145,
+          "block_type_1based": 27,
+          "block_name": "c23",
+          "physical_class": "air",
+          "magnetization_deg": 84.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 134,
+          "x_mm": 12.402388705399268,
+          "y_mm": 15.112354363241508,
+          "block_type_1based": 27,
+          "block_name": "c23",
+          "physical_class": "air",
+          "magnetization_deg": 50.62500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 334,
+          "x_mm": 15.112354363241508,
+          "y_mm": 12.402388705399268,
+          "block_type_1based": 27,
+          "block_name": "c23",
+          "physical_class": "air",
+          "magnetization_deg": -140.625,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 234,
+          "x_mm": 19.45586140644145,
+          "y_mm": 1.9162350934429098,
+          "block_type_1based": 27,
+          "block_name": "c23",
+          "physical_class": "air",
+          "magnetization_deg": 185.625,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 24,
+      "angular_index_0based": 2,
+      "radial_index_0based": 3,
+      "base_angle_deg": 5.624999999999998,
+      "base_radius_mm": 21.050000000000004,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 44,
+          "x_mm": 2.0632608039372506,
+          "y_mm": 20.948638496449746,
+          "block_type_1based": 28,
+          "block_name": "c24",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 84.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 144,
+          "x_mm": 13.35397863164474,
+          "y_mm": 16.271870043285617,
+          "block_type_1based": 28,
+          "block_name": "c24",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 50.62500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 344,
+          "x_mm": 16.271870043285617,
+          "y_mm": 13.35397863164474,
+          "block_type_1based": 28,
+          "block_name": "c24",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -140.625,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 244,
+          "x_mm": 20.948638496449746,
+          "y_mm": 2.0632608039372506,
+          "block_type_1based": 28,
+          "block_name": "c24",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 185.625,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 25,
+      "angular_index_0based": 2,
+      "radial_index_0based": 4,
+      "base_angle_deg": 5.624999999999997,
+      "base_radius_mm": 22.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 54,
+          "x_mm": 2.2102865144315915,
+          "y_mm": 22.441415586458042,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 154,
+          "x_mm": 14.305568557890204,
+          "y_mm": 17.43138572332972,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 354,
+          "x_mm": 17.43138572332972,
+          "y_mm": 14.305568557890204,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 254,
+          "x_mm": 22.441415586458042,
+          "y_mm": 2.2102865144315915,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 26,
+      "angular_index_0based": 2,
+      "radial_index_0based": 5,
+      "base_angle_deg": 5.624999999999999,
+      "base_radius_mm": 24.050000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 64,
+          "x_mm": 2.3573122249259324,
+          "y_mm": 23.93419267646634,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 164,
+          "x_mm": 15.257158484135676,
+          "y_mm": 18.590901403373827,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 364,
+          "x_mm": 18.590901403373827,
+          "y_mm": 15.257158484135676,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 264,
+          "x_mm": 23.93419267646634,
+          "y_mm": 2.3573122249259324,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 27,
+      "angular_index_0based": 2,
+      "radial_index_0based": 6,
+      "base_angle_deg": 5.625000000000001,
+      "base_radius_mm": 25.550000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 74,
+          "x_mm": 2.5043379354202733,
+          "y_mm": 25.42696976647463,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 174,
+          "x_mm": 16.20874841038114,
+          "y_mm": 19.75041708341793,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 374,
+          "x_mm": 19.75041708341793,
+          "y_mm": 16.20874841038114,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 274,
+          "x_mm": 25.42696976647463,
+          "y_mm": 2.5043379354202733,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 28,
+      "angular_index_0based": 2,
+      "radial_index_0based": 7,
+      "base_angle_deg": 5.625000000000001,
+      "base_radius_mm": 27.05000000000001,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 84,
+          "x_mm": 2.6513636459146146,
+          "y_mm": 26.919746856482927,
+          "block_type_1based": 32,
+          "block_name": "c28",
+          "physical_class": "air",
+          "magnetization_deg": 84.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 184,
+          "x_mm": 17.16033833662661,
+          "y_mm": 20.909932763462034,
+          "block_type_1based": 32,
+          "block_name": "c28",
+          "physical_class": "air",
+          "magnetization_deg": 50.62500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 384,
+          "x_mm": 20.909932763462034,
+          "y_mm": 17.16033833662661,
+          "block_type_1based": 32,
+          "block_name": "c28",
+          "physical_class": "air",
+          "magnetization_deg": -140.625,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 284,
+          "x_mm": 26.919746856482927,
+          "y_mm": 2.6513636459146146,
+          "block_type_1based": 32,
+          "block_name": "c28",
+          "physical_class": "air",
+          "magnetization_deg": 185.625,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 29,
+      "angular_index_0based": 2,
+      "radial_index_0based": 8,
+      "base_angle_deg": 5.624999999999994,
+      "base_radius_mm": 28.550000000000004,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 94,
+          "x_mm": 2.7983893564089555,
+          "y_mm": 28.412523946491223,
+          "block_type_1based": 33,
+          "block_name": "c29",
+          "physical_class": "air",
+          "magnetization_deg": 84.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 194,
+          "x_mm": 18.111928262872077,
+          "y_mm": 22.06944844350614,
+          "block_type_1based": 33,
+          "block_name": "c29",
+          "physical_class": "air",
+          "magnetization_deg": 50.62500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 394,
+          "x_mm": 22.06944844350614,
+          "y_mm": 18.111928262872077,
+          "block_type_1based": 33,
+          "block_name": "c29",
+          "physical_class": "air",
+          "magnetization_deg": -140.625,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 294,
+          "x_mm": 28.412523946491223,
+          "y_mm": 2.7983893564089555,
+          "block_type_1based": 33,
+          "block_name": "c29",
+          "physical_class": "air",
+          "magnetization_deg": 185.625,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 30,
+      "angular_index_0based": 2,
+      "radial_index_0based": 9,
+      "base_angle_deg": 5.624999999999998,
+      "base_radius_mm": 30.050000000000008,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 104,
+          "x_mm": 2.9454150669032964,
+          "y_mm": 29.90530103649952,
+          "block_type_1based": 34,
+          "block_name": "c30",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 84.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 204,
+          "x_mm": 19.06351818911755,
+          "y_mm": 23.22896412355025,
+          "block_type_1based": 34,
+          "block_name": "c30",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 50.62500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 404,
+          "x_mm": 23.22896412355025,
+          "y_mm": 19.06351818911755,
+          "block_type_1based": 34,
+          "block_name": "c30",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -140.625,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 304,
+          "x_mm": 29.90530103649952,
+          "y_mm": 2.9454150669032964,
+          "block_type_1based": 34,
+          "block_name": "c30",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 185.625,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 31,
+      "angular_index_0based": 3,
+      "radial_index_0based": 0,
+      "base_angle_deg": 7.8749999999999964,
+      "base_radius_mm": 16.55,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 15,
+          "x_mm": 2.2675542548365715,
+          "y_mm": 16.393922584341205,
+          "block_type_1based": 35,
+          "block_name": "c31",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 82.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 115,
+          "x_mm": 9.988850839331608,
+          "y_mm": 13.195656819938304,
+          "block_type_1based": 35,
+          "block_name": "c31",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 52.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 315,
+          "x_mm": 13.195656819938304,
+          "y_mm": 9.988850839331608,
+          "block_type_1based": 35,
+          "block_name": "c31",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -142.875,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 215,
+          "x_mm": 16.393922584341205,
+          "y_mm": 2.2675542548365715,
+          "block_type_1based": 35,
+          "block_name": "c31",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 187.875,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 32,
+      "angular_index_0based": 3,
+      "radial_index_0based": 1,
+      "base_angle_deg": 7.874999999999992,
+      "base_radius_mm": 18.049999999999997,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 25,
+          "x_mm": 2.473072767359523,
+          "y_mm": 17.87977659500657,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 125,
+          "x_mm": 10.894184752261964,
+          "y_mm": 14.391637800597364,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 325,
+          "x_mm": 14.391637800597364,
+          "y_mm": 10.894184752261964,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 225,
+          "x_mm": 17.87977659500657,
+          "y_mm": 2.473072767359523,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 33,
+      "angular_index_0based": 3,
+      "radial_index_0based": 2,
+      "base_angle_deg": 7.875000000000004,
+      "base_radius_mm": 19.550000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 35,
+          "x_mm": 2.6785912798824754,
+          "y_mm": 19.365630605671935,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 135,
+          "x_mm": 11.79951866519232,
+          "y_mm": 15.587618781256422,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 335,
+          "x_mm": 15.587618781256422,
+          "y_mm": 11.79951866519232,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 235,
+          "x_mm": 19.365630605671935,
+          "y_mm": 2.6785912798824754,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 34,
+      "angular_index_0based": 3,
+      "radial_index_0based": 3,
+      "base_angle_deg": 7.8749999999999964,
+      "base_radius_mm": 21.050000000000008,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 45,
+          "x_mm": 2.8841097924054275,
+          "y_mm": 20.851484616337302,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 145,
+          "x_mm": 12.704852578122676,
+          "y_mm": 16.783599761915486,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 345,
+          "x_mm": 16.783599761915486,
+          "y_mm": 12.704852578122676,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 245,
+          "x_mm": 20.851484616337302,
+          "y_mm": 2.8841097924054275,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 35,
+      "angular_index_0based": 3,
+      "radial_index_0based": 4,
+      "base_angle_deg": 7.875000000000002,
+      "base_radius_mm": 22.550000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 55,
+          "x_mm": 3.0896283049283797,
+          "y_mm": 22.33733862700267,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 155,
+          "x_mm": 13.610186491053037,
+          "y_mm": 17.979580742574548,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 355,
+          "x_mm": 17.979580742574548,
+          "y_mm": 13.610186491053037,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 255,
+          "x_mm": 22.33733862700267,
+          "y_mm": 3.0896283049283797,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 36,
+      "angular_index_0based": 3,
+      "radial_index_0based": 5,
+      "base_angle_deg": 7.875,
+      "base_radius_mm": 24.050000000000008,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 65,
+          "x_mm": 3.2951468174513314,
+          "y_mm": 23.823192637668033,
+          "block_type_1based": 40,
+          "block_name": "c36",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 82.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 165,
+          "x_mm": 14.515520403983391,
+          "y_mm": 19.17556172323361,
+          "block_type_1based": 40,
+          "block_name": "c36",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 52.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 365,
+          "x_mm": 19.17556172323361,
+          "y_mm": 14.515520403983391,
+          "block_type_1based": 40,
+          "block_name": "c36",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -142.875,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 265,
+          "x_mm": 23.823192637668033,
+          "y_mm": 3.2951468174513314,
+          "block_type_1based": 40,
+          "block_name": "c36",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 187.875,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 37,
+      "angular_index_0based": 3,
+      "radial_index_0based": 6,
+      "base_angle_deg": 7.875,
+      "base_radius_mm": 25.550000000000008,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 75,
+          "x_mm": 3.5006653299742836,
+          "y_mm": 25.3090466483334,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 175,
+          "x_mm": 15.420854316913749,
+          "y_mm": 20.371542703892665,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 375,
+          "x_mm": 20.371542703892665,
+          "y_mm": 15.420854316913749,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 275,
+          "x_mm": 25.3090466483334,
+          "y_mm": 3.5006653299742836,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 38,
+      "angular_index_0based": 3,
+      "radial_index_0based": 7,
+      "base_angle_deg": 7.8750000000000036,
+      "base_radius_mm": 27.050000000000008,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 85,
+          "x_mm": 3.7061838424972358,
+          "y_mm": 26.794900658998767,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 185,
+          "x_mm": 16.326188229844107,
+          "y_mm": 21.56752368455173,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 385,
+          "x_mm": 21.56752368455173,
+          "y_mm": 16.326188229844107,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 285,
+          "x_mm": 26.794900658998767,
+          "y_mm": 3.7061838424972358,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 39,
+      "angular_index_0based": 3,
+      "radial_index_0based": 8,
+      "base_angle_deg": 7.875000000000002,
+      "base_radius_mm": 28.549999999999997,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 95,
+          "x_mm": 3.911702355020188,
+          "y_mm": 28.28075466966413,
+          "block_type_1based": 43,
+          "block_name": "c39",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 82.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 195,
+          "x_mm": 17.23152214277446,
+          "y_mm": 22.763504665210785,
+          "block_type_1based": 43,
+          "block_name": "c39",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 52.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 395,
+          "x_mm": 22.763504665210785,
+          "y_mm": 17.23152214277446,
+          "block_type_1based": 43,
+          "block_name": "c39",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -142.875,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 295,
+          "x_mm": 28.28075466966413,
+          "y_mm": 3.911702355020188,
+          "block_type_1based": 43,
+          "block_name": "c39",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 187.875,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 40,
+      "angular_index_0based": 3,
+      "radial_index_0based": 9,
+      "base_angle_deg": 7.8749999999999964,
+      "base_radius_mm": 30.050000000000008,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 105,
+          "x_mm": 4.11722086754314,
+          "y_mm": 29.766608680329497,
+          "block_type_1based": 44,
+          "block_name": "c40",
+          "physical_class": "air",
+          "magnetization_deg": 82.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 205,
+          "x_mm": 18.13685605570482,
+          "y_mm": 23.95948564586985,
+          "block_type_1based": 44,
+          "block_name": "c40",
+          "physical_class": "air",
+          "magnetization_deg": 52.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 405,
+          "x_mm": 23.95948564586985,
+          "y_mm": 18.13685605570482,
+          "block_type_1based": 44,
+          "block_name": "c40",
+          "physical_class": "air",
+          "magnetization_deg": -142.875,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 305,
+          "x_mm": 29.766608680329497,
+          "y_mm": 4.11722086754314,
+          "block_type_1based": 44,
+          "block_name": "c40",
+          "physical_class": "air",
+          "magnetization_deg": 187.875,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 41,
+      "angular_index_0based": 4,
+      "radial_index_0based": 0,
+      "base_angle_deg": 10.125000000000004,
+      "base_radius_mm": 16.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 16,
+          "x_mm": 2.9094284329135673,
+          "y_mm": 16.292259701887705,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 116,
+          "x_mm": 9.463090741766981,
+          "y_mm": 13.577643890347249,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 316,
+          "x_mm": 13.577643890347249,
+          "y_mm": 9.463090741766981,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 216,
+          "x_mm": 16.292259701887705,
+          "y_mm": 2.9094284329135673,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 42,
+      "angular_index_0based": 4,
+      "radial_index_0based": 1,
+      "base_angle_deg": 10.125000000000007,
+      "base_radius_mm": 18.050000000000008,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 26,
+          "x_mm": 3.173122852815099,
+          "y_mm": 17.768899554022543,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 126,
+          "x_mm": 10.320772682108402,
+          "y_mm": 14.808246055635523,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 326,
+          "x_mm": 14.808246055635523,
+          "y_mm": 10.320772682108402,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 226,
+          "x_mm": 17.768899554022543,
+          "y_mm": 3.173122852815099,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 43,
+      "angular_index_0based": 4,
+      "radial_index_0based": 2,
+      "base_angle_deg": 10.125,
+      "base_radius_mm": 19.550000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 36,
+          "x_mm": 3.4368172727166306,
+          "y_mm": 19.24553940615738,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 136,
+          "x_mm": 11.178454622449818,
+          "y_mm": 16.03884822092379,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 336,
+          "x_mm": 16.03884822092379,
+          "y_mm": 11.178454622449818,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 236,
+          "x_mm": 19.24553940615738,
+          "y_mm": 3.4368172727166306,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 44,
+      "angular_index_0based": 4,
+      "radial_index_0based": 3,
+      "base_angle_deg": 10.125000000000005,
+      "base_radius_mm": 21.05000000000001,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 46,
+          "x_mm": 3.7005116926181625,
+          "y_mm": 20.72217925829222,
+          "block_type_1based": 48,
+          "block_name": "c44",
+          "physical_class": "air",
+          "magnetization_deg": 79.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 146,
+          "x_mm": 12.036136562791235,
+          "y_mm": 17.26945038621206,
+          "block_type_1based": 48,
+          "block_name": "c44",
+          "physical_class": "air",
+          "magnetization_deg": 55.125000000000014,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 346,
+          "x_mm": 17.26945038621206,
+          "y_mm": 12.036136562791235,
+          "block_type_1based": 48,
+          "block_name": "c44",
+          "physical_class": "air",
+          "magnetization_deg": -145.12499999999997,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 246,
+          "x_mm": 20.72217925829222,
+          "y_mm": 3.7005116926181625,
+          "block_type_1based": 48,
+          "block_name": "c44",
+          "physical_class": "air",
+          "magnetization_deg": 190.125,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 45,
+      "angular_index_0based": 4,
+      "radial_index_0based": 4,
+      "base_angle_deg": 10.124999999999996,
+      "base_radius_mm": 22.549999999999997,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 56,
+          "x_mm": 3.9642061125196943,
+          "y_mm": 22.198819110427056,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 156,
+          "x_mm": 12.893818503132657,
+          "y_mm": 18.500052551500332,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 356,
+          "x_mm": 18.500052551500332,
+          "y_mm": 12.893818503132657,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 256,
+          "x_mm": 22.198819110427056,
+          "y_mm": 3.9642061125196943,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 46,
+      "angular_index_0based": 4,
+      "radial_index_0based": 5,
+      "base_angle_deg": 10.125000000000002,
+      "base_radius_mm": 24.050000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 66,
+          "x_mm": 4.227900532421226,
+          "y_mm": 23.675458962561894,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 166,
+          "x_mm": 13.751500443474075,
+          "y_mm": 19.730654716788603,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 366,
+          "x_mm": 19.730654716788603,
+          "y_mm": 13.751500443474075,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 266,
+          "x_mm": 23.675458962561894,
+          "y_mm": 4.227900532421226,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 47,
+      "angular_index_0based": 4,
+      "radial_index_0based": 6,
+      "base_angle_deg": 10.124999999999998,
+      "base_radius_mm": 25.55000000000001,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 76,
+          "x_mm": 4.491594952322758,
+          "y_mm": 25.152098814696732,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 176,
+          "x_mm": 14.60918238381549,
+          "y_mm": 20.961256882076874,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 376,
+          "x_mm": 20.961256882076874,
+          "y_mm": 14.60918238381549,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 276,
+          "x_mm": 25.152098814696732,
+          "y_mm": 4.491594952322758,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 48,
+      "angular_index_0based": 4,
+      "radial_index_0based": 7,
+      "base_angle_deg": 10.125000000000005,
+      "base_radius_mm": 27.05000000000001,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 86,
+          "x_mm": 4.75528937222429,
+          "y_mm": 26.62873866683157,
+          "block_type_1based": 52,
+          "block_name": "c48",
+          "physical_class": "air",
+          "magnetization_deg": 79.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 186,
+          "x_mm": 15.466864324156912,
+          "y_mm": 22.191859047365142,
+          "block_type_1based": 52,
+          "block_name": "c48",
+          "physical_class": "air",
+          "magnetization_deg": 55.125000000000014,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 386,
+          "x_mm": 22.191859047365142,
+          "y_mm": 15.466864324156912,
+          "block_type_1based": 52,
+          "block_name": "c48",
+          "physical_class": "air",
+          "magnetization_deg": -145.12499999999997,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 286,
+          "x_mm": 26.62873866683157,
+          "y_mm": 4.75528937222429,
+          "block_type_1based": 52,
+          "block_name": "c48",
+          "physical_class": "air",
+          "magnetization_deg": 190.125,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 49,
+      "angular_index_0based": 4,
+      "radial_index_0based": 8,
+      "base_angle_deg": 10.125000000000004,
+      "base_radius_mm": 28.550000000000004,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 96,
+          "x_mm": 5.018983792125821,
+          "y_mm": 28.105378518966404,
+          "block_type_1based": 53,
+          "block_name": "c49",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 79.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 196,
+          "x_mm": 16.324546264498327,
+          "y_mm": 23.42246121265341,
+          "block_type_1based": 53,
+          "block_name": "c49",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 55.125000000000014,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 396,
+          "x_mm": 23.42246121265341,
+          "y_mm": 16.324546264498327,
+          "block_type_1based": 53,
+          "block_name": "c49",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -145.12499999999997,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 296,
+          "x_mm": 28.105378518966404,
+          "y_mm": 5.018983792125821,
+          "block_type_1based": 53,
+          "block_name": "c49",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 190.125,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 50,
+      "angular_index_0based": 4,
+      "radial_index_0based": 9,
+      "base_angle_deg": 10.125,
+      "base_radius_mm": 30.05,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 106,
+          "x_mm": 5.282678212027353,
+          "y_mm": 29.582018371101242,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 206,
+          "x_mm": 17.182228204839745,
+          "y_mm": 24.653063377941685,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 406,
+          "x_mm": 24.653063377941685,
+          "y_mm": 17.182228204839745,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 306,
+          "x_mm": 29.582018371101242,
+          "y_mm": 5.282678212027353,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 51,
+      "angular_index_0based": 5,
+      "radial_index_0based": 0,
+      "base_angle_deg": 12.374999999999998,
+      "base_radius_mm": 16.550000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 17,
+          "x_mm": 3.54681648322659,
+          "y_mm": 16.16547533586044,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 117,
+          "x_mm": 8.922739244177054,
+          "y_mm": 13.938695218004542,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 317,
+          "x_mm": 13.938695218004542,
+          "y_mm": 8.922739244177054,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 217,
+          "x_mm": 16.16547533586044,
+          "y_mm": 3.54681648322659,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 52,
+      "angular_index_0based": 5,
+      "radial_index_0based": 1,
+      "base_angle_deg": 12.375,
+      "base_radius_mm": 18.050000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 27,
+          "x_mm": 3.8682802128241662,
+          "y_mm": 17.630624157841748,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 127,
+          "x_mm": 9.731446728543553,
+          "y_mm": 15.20202106857897,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 327,
+          "x_mm": 15.20202106857897,
+          "y_mm": 9.731446728543553,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 227,
+          "x_mm": 17.630624157841748,
+          "y_mm": 3.8682802128241662,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 53,
+      "angular_index_0based": 5,
+      "radial_index_0based": 2,
+      "base_angle_deg": 12.374999999999998,
+      "base_radius_mm": 19.55,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 37,
+          "x_mm": 4.189743942421742,
+          "y_mm": 19.095772979823057,
+          "block_type_1based": 57,
+          "block_name": "c53",
+          "physical_class": "air",
+          "magnetization_deg": 77.625,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 137,
+          "x_mm": 10.540154212910053,
+          "y_mm": 16.4653469191534,
+          "block_type_1based": 57,
+          "block_name": "c53",
+          "physical_class": "air",
+          "magnetization_deg": 57.37500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 337,
+          "x_mm": 16.4653469191534,
+          "y_mm": 10.540154212910053,
+          "block_type_1based": 57,
+          "block_name": "c53",
+          "physical_class": "air",
+          "magnetization_deg": -147.375,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 237,
+          "x_mm": 19.095772979823057,
+          "y_mm": 4.189743942421742,
+          "block_type_1based": 57,
+          "block_name": "c53",
+          "physical_class": "air",
+          "magnetization_deg": 192.375,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 54,
+      "angular_index_0based": 5,
+      "radial_index_0based": 3,
+      "base_angle_deg": 12.374999999999995,
+      "base_radius_mm": 21.050000000000004,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 47,
+          "x_mm": 4.511207672019318,
+          "y_mm": 20.560921801804366,
+          "block_type_1based": 58,
+          "block_name": "c54",
+          "physical_class": "air",
+          "magnetization_deg": 77.625,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 147,
+          "x_mm": 11.348861697276554,
+          "y_mm": 17.728672769727833,
+          "block_type_1based": 58,
+          "block_name": "c54",
+          "physical_class": "air",
+          "magnetization_deg": 57.37500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 347,
+          "x_mm": 17.728672769727833,
+          "y_mm": 11.348861697276554,
+          "block_type_1based": 58,
+          "block_name": "c54",
+          "physical_class": "air",
+          "magnetization_deg": -147.375,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 247,
+          "x_mm": 20.560921801804366,
+          "y_mm": 4.511207672019318,
+          "block_type_1based": 58,
+          "block_name": "c54",
+          "physical_class": "air",
+          "magnetization_deg": 192.375,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 55,
+      "angular_index_0based": 5,
+      "radial_index_0based": 4,
+      "base_angle_deg": 12.374999999999996,
+      "base_radius_mm": 22.549999999999997,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 57,
+          "x_mm": 4.832671401616895,
+          "y_mm": 22.026070623785674,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 157,
+          "x_mm": 12.157569181643055,
+          "y_mm": 18.99199862030226,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 357,
+          "x_mm": 18.99199862030226,
+          "y_mm": 12.157569181643055,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 257,
+          "x_mm": 22.026070623785674,
+          "y_mm": 4.832671401616895,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 56,
+      "angular_index_0based": 5,
+      "radial_index_0based": 5,
+      "base_angle_deg": 12.375000000000002,
+      "base_radius_mm": 24.050000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 67,
+          "x_mm": 5.1541351312144705,
+          "y_mm": 23.49121944576698,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 167,
+          "x_mm": 12.966276666009552,
+          "y_mm": 20.25532447087669,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 367,
+          "x_mm": 20.25532447087669,
+          "y_mm": 12.966276666009552,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 267,
+          "x_mm": 23.49121944576698,
+          "y_mm": 5.1541351312144705,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 57,
+      "angular_index_0based": 5,
+      "radial_index_0based": 6,
+      "base_angle_deg": 12.374999999999996,
+      "base_radius_mm": 25.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 77,
+          "x_mm": 5.475598860812046,
+          "y_mm": 24.95636826774829,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 177,
+          "x_mm": 13.774984150376053,
+          "y_mm": 21.51865032145112,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 377,
+          "x_mm": 21.51865032145112,
+          "y_mm": 13.774984150376053,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 277,
+          "x_mm": 24.95636826774829,
+          "y_mm": 5.475598860812046,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 58,
+      "angular_index_0based": 5,
+      "radial_index_0based": 7,
+      "base_angle_deg": 12.374999999999998,
+      "base_radius_mm": 27.049999999999994,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 87,
+          "x_mm": 5.797062590409623,
+          "y_mm": 26.421517089729598,
+          "block_type_1based": 62,
+          "block_name": "c58",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 77.625,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 187,
+          "x_mm": 14.583691634742554,
+          "y_mm": 22.781976172025548,
+          "block_type_1based": 62,
+          "block_name": "c58",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 57.37500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 387,
+          "x_mm": 22.781976172025548,
+          "y_mm": 14.583691634742554,
+          "block_type_1based": 62,
+          "block_name": "c58",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -147.375,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 287,
+          "x_mm": 26.421517089729598,
+          "y_mm": 5.797062590409623,
+          "block_type_1based": 62,
+          "block_name": "c58",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 192.375,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 59,
+      "angular_index_0based": 5,
+      "radial_index_0based": 8,
+      "base_angle_deg": 12.375000000000002,
+      "base_radius_mm": 28.550000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 97,
+          "x_mm": 6.118526320007199,
+          "y_mm": 27.886665911710907,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 197,
+          "x_mm": 15.392399119109054,
+          "y_mm": 24.04530202259998,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 397,
+          "x_mm": 24.04530202259998,
+          "y_mm": 15.392399119109054,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 297,
+          "x_mm": 27.886665911710907,
+          "y_mm": 6.118526320007199,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 60,
+      "angular_index_0based": 5,
+      "radial_index_0based": 9,
+      "base_angle_deg": 12.374999999999995,
+      "base_radius_mm": 30.049999999999997,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 107,
+          "x_mm": 6.439990049604775,
+          "y_mm": 29.351814733692215,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 207,
+          "x_mm": 16.201106603475555,
+          "y_mm": 25.30862787317441,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 407,
+          "x_mm": 25.30862787317441,
+          "y_mm": 16.201106603475555,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 307,
+          "x_mm": 29.351814733692215,
+          "y_mm": 6.439990049604775,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 61,
+      "angular_index_0based": 6,
+      "radial_index_0based": 0,
+      "base_angle_deg": 14.625,
+      "base_radius_mm": 16.55,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 18,
+          "x_mm": 4.178735599600865,
+          "y_mm": 16.0137649785623,
+          "block_type_1based": 65,
+          "block_name": "c61",
+          "physical_class": "air",
+          "magnetization_deg": 75.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 118,
+          "x_mm": 8.368629529405645,
+          "y_mm": 14.278254087932455,
+          "block_type_1based": 65,
+          "block_name": "c61",
+          "physical_class": "air",
+          "magnetization_deg": 59.62500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 318,
+          "x_mm": 14.278254087932455,
+          "y_mm": 8.368629529405645,
+          "block_type_1based": 65,
+          "block_name": "c61",
+          "physical_class": "air",
+          "magnetization_deg": -149.62499999999997,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 218,
+          "x_mm": 16.0137649785623,
+          "y_mm": 4.178735599600865,
+          "block_type_1based": 65,
+          "block_name": "c61",
+          "physical_class": "air",
+          "magnetization_deg": 194.625,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 62,
+      "angular_index_0based": 6,
+      "radial_index_0based": 1,
+      "base_angle_deg": 14.625,
+      "base_radius_mm": 18.05,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 28,
+          "x_mm": 4.557472965123601,
+          "y_mm": 17.46516361710269,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 128,
+          "x_mm": 9.12711558947262,
+          "y_mm": 15.572355666899139,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 328,
+          "x_mm": 15.572355666899139,
+          "y_mm": 9.12711558947262,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 228,
+          "x_mm": 17.46516361710269,
+          "y_mm": 4.557472965123601,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 63,
+      "angular_index_0based": 6,
+      "radial_index_0based": 2,
+      "base_angle_deg": 14.625,
+      "base_radius_mm": 19.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 38,
+          "x_mm": 4.936210330646338,
+          "y_mm": 18.91656225564308,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 138,
+          "x_mm": 9.885601649539598,
+          "y_mm": 16.866457245865828,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 338,
+          "x_mm": 16.866457245865828,
+          "y_mm": 9.885601649539598,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 238,
+          "x_mm": 18.91656225564308,
+          "y_mm": 4.936210330646338,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 64,
+      "angular_index_0based": 6,
+      "radial_index_0based": 3,
+      "base_angle_deg": 14.625000000000004,
+      "base_radius_mm": 21.050000000000004,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 48,
+          "x_mm": 5.314947696169075,
+          "y_mm": 20.36796089418347,
+          "block_type_1based": 68,
+          "block_name": "c64",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 75.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 148,
+          "x_mm": 10.644087709606575,
+          "y_mm": 18.160558824832517,
+          "block_type_1based": 68,
+          "block_name": "c64",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 59.62500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 348,
+          "x_mm": 18.160558824832517,
+          "y_mm": 10.644087709606575,
+          "block_type_1based": 68,
+          "block_name": "c64",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -149.62499999999997,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 248,
+          "x_mm": 20.36796089418347,
+          "y_mm": 5.314947696169075,
+          "block_type_1based": 68,
+          "block_name": "c64",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 194.625,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 65,
+      "angular_index_0based": 6,
+      "radial_index_0based": 4,
+      "base_angle_deg": 14.624999999999996,
+      "base_radius_mm": 22.550000000000008,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 58,
+          "x_mm": 5.693685061691812,
+          "y_mm": 21.81935953272386,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 158,
+          "x_mm": 11.402573769673548,
+          "y_mm": 19.454660403799203,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 358,
+          "x_mm": 19.454660403799203,
+          "y_mm": 11.402573769673548,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 258,
+          "x_mm": 21.81935953272386,
+          "y_mm": 5.693685061691812,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 66,
+      "angular_index_0based": 6,
+      "radial_index_0based": 5,
+      "base_angle_deg": 14.624999999999996,
+      "base_radius_mm": 24.05,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 68,
+          "x_mm": 6.072422427214549,
+          "y_mm": 23.270758171264248,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 168,
+          "x_mm": 12.161059829740529,
+          "y_mm": 20.748761982765892,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 368,
+          "x_mm": 20.748761982765892,
+          "y_mm": 12.161059829740529,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 268,
+          "x_mm": 23.270758171264248,
+          "y_mm": 6.072422427214549,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 67,
+      "angular_index_0based": 6,
+      "radial_index_0based": 6,
+      "base_angle_deg": 14.625000000000007,
+      "base_radius_mm": 25.550000000000008,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 78,
+          "x_mm": 6.451159792737286,
+          "y_mm": 24.722156809804638,
+          "block_type_1based": 71,
+          "block_name": "c67",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 75.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 178,
+          "x_mm": 12.919545889807505,
+          "y_mm": 22.042863561732577,
+          "block_type_1based": 71,
+          "block_name": "c67",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 59.62500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 378,
+          "x_mm": 22.042863561732577,
+          "y_mm": 12.919545889807505,
+          "block_type_1based": 71,
+          "block_name": "c67",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -149.62499999999997,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 278,
+          "x_mm": 24.722156809804638,
+          "y_mm": 6.451159792737286,
+          "block_type_1based": 71,
+          "block_name": "c67",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 194.625,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 68,
+      "angular_index_0based": 6,
+      "radial_index_0based": 7,
+      "base_angle_deg": 14.624999999999993,
+      "base_radius_mm": 27.050000000000004,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 88,
+          "x_mm": 6.829897158260023,
+          "y_mm": 26.173555448345027,
+          "block_type_1based": 72,
+          "block_name": "c68",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 75.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 188,
+          "x_mm": 13.678031949874484,
+          "y_mm": 23.33696514069927,
+          "block_type_1based": 72,
+          "block_name": "c68",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 59.62500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 388,
+          "x_mm": 23.33696514069927,
+          "y_mm": 13.678031949874484,
+          "block_type_1based": 72,
+          "block_name": "c68",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -149.62499999999997,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 288,
+          "x_mm": 26.173555448345027,
+          "y_mm": 6.829897158260023,
+          "block_type_1based": 72,
+          "block_name": "c68",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 194.625,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 69,
+      "angular_index_0based": 6,
+      "radial_index_0based": 8,
+      "base_angle_deg": 14.624999999999996,
+      "base_radius_mm": 28.550000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 98,
+          "x_mm": 7.208634523782759,
+          "y_mm": 27.624954086885417,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 198,
+          "x_mm": 14.43651800994146,
+          "y_mm": 24.631066719665956,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 398,
+          "x_mm": 24.631066719665956,
+          "y_mm": 14.43651800994146,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 298,
+          "x_mm": 27.624954086885417,
+          "y_mm": 7.208634523782759,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 70,
+      "angular_index_0based": 6,
+      "radial_index_0based": 9,
+      "base_angle_deg": 14.624999999999996,
+      "base_radius_mm": 30.05,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 108,
+          "x_mm": 7.587371889305497,
+          "y_mm": 29.076352725425807,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 208,
+          "x_mm": 15.195004070008437,
+          "y_mm": 25.925168298632645,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 408,
+          "x_mm": 25.925168298632645,
+          "y_mm": 15.195004070008437,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 308,
+          "x_mm": 29.076352725425807,
+          "y_mm": 7.587371889305497,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 71,
+      "angular_index_0based": 7,
+      "radial_index_0based": 0,
+      "base_angle_deg": 16.875,
+      "base_radius_mm": 16.550000000000004,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 19,
+          "x_mm": 4.804211408561352,
+          "y_mm": 15.837362556368056,
+          "block_type_1based": 75,
+          "block_name": "c71",
+          "physical_class": "air",
+          "magnetization_deg": 73.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 119,
+          "x_mm": 7.80161599447026,
+          "y_mm": 14.595796924965278,
+          "block_type_1based": 75,
+          "block_name": "c71",
+          "physical_class": "air",
+          "magnetization_deg": 61.87500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 319,
+          "x_mm": 14.595796924965278,
+          "y_mm": 7.80161599447026,
+          "block_type_1based": 75,
+          "block_name": "c71",
+          "physical_class": "air",
+          "magnetization_deg": -151.875,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 219,
+          "x_mm": 15.837362556368056,
+          "y_mm": 4.804211408561352,
+          "block_type_1based": 75,
+          "block_name": "c71",
+          "physical_class": "air",
+          "magnetization_deg": 196.875,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 72,
+      "angular_index_0based": 7,
+      "radial_index_0based": 1,
+      "base_angle_deg": 16.874999999999993,
+      "base_radius_mm": 18.050000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 29,
+          "x_mm": 5.239638424443046,
+          "y_mm": 17.27277305996637,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 129,
+          "x_mm": 8.508711099709254,
+          "y_mm": 15.918678821487806,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 329,
+          "x_mm": 15.918678821487806,
+          "y_mm": 8.508711099709254,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 229,
+          "x_mm": 17.27277305996637,
+          "y_mm": 5.239638424443046,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 73,
+      "angular_index_0based": 7,
+      "radial_index_0based": 2,
+      "base_angle_deg": 16.875,
+      "base_radius_mm": 19.550000000000004,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 39,
+          "x_mm": 5.67506544032474,
+          "y_mm": 18.708183563564685,
+          "block_type_1based": 77,
+          "block_name": "c73",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 73.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 139,
+          "x_mm": 9.215806204948255,
+          "y_mm": 17.241560718010344,
+          "block_type_1based": 77,
+          "block_name": "c73",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 61.87500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 339,
+          "x_mm": 17.241560718010344,
+          "y_mm": 9.215806204948255,
+          "block_type_1based": 77,
+          "block_name": "c73",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -151.875,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 239,
+          "x_mm": 18.708183563564685,
+          "y_mm": 5.67506544032474,
+          "block_type_1based": 77,
+          "block_name": "c73",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 196.875,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 74,
+      "angular_index_0based": 7,
+      "radial_index_0based": 3,
+      "base_angle_deg": 16.874999999999993,
+      "base_radius_mm": 21.049999999999997,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 49,
+          "x_mm": 6.110492456206433,
+          "y_mm": 20.143594067162997,
+          "block_type_1based": 78,
+          "block_name": "c74",
+          "physical_class": "air",
+          "magnetization_deg": 73.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 149,
+          "x_mm": 9.92290131018725,
+          "y_mm": 18.564442614532872,
+          "block_type_1based": 78,
+          "block_name": "c74",
+          "physical_class": "air",
+          "magnetization_deg": 61.87500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 349,
+          "x_mm": 18.564442614532872,
+          "y_mm": 9.92290131018725,
+          "block_type_1based": 78,
+          "block_name": "c74",
+          "physical_class": "air",
+          "magnetization_deg": -151.875,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 249,
+          "x_mm": 20.143594067162997,
+          "y_mm": 6.110492456206433,
+          "block_type_1based": 78,
+          "block_name": "c74",
+          "physical_class": "air",
+          "magnetization_deg": 196.875,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 75,
+      "angular_index_0based": 7,
+      "radial_index_0based": 4,
+      "base_angle_deg": 16.874999999999996,
+      "base_radius_mm": 22.550000000000004,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 59,
+          "x_mm": 6.545919472088127,
+          "y_mm": 21.57900457076131,
+          "block_type_1based": 79,
+          "block_name": "c75",
+          "physical_class": "air",
+          "magnetization_deg": 73.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 159,
+          "x_mm": 10.629996415426247,
+          "y_mm": 19.887324511055407,
+          "block_type_1based": 79,
+          "block_name": "c75",
+          "physical_class": "air",
+          "magnetization_deg": 61.87500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 359,
+          "x_mm": 19.887324511055407,
+          "y_mm": 10.629996415426247,
+          "block_type_1based": 79,
+          "block_name": "c75",
+          "physical_class": "air",
+          "magnetization_deg": -151.875,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 259,
+          "x_mm": 21.57900457076131,
+          "y_mm": 6.545919472088127,
+          "block_type_1based": 79,
+          "block_name": "c75",
+          "physical_class": "air",
+          "magnetization_deg": 196.875,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 76,
+      "angular_index_0based": 7,
+      "radial_index_0based": 5,
+      "base_angle_deg": 16.875,
+      "base_radius_mm": 24.05000000000001,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 69,
+          "x_mm": 6.98134648796982,
+          "y_mm": 23.014415074359622,
+          "block_type_1based": 80,
+          "block_name": "c76",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 73.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 169,
+          "x_mm": 11.33709152066524,
+          "y_mm": 21.210206407577935,
+          "block_type_1based": 80,
+          "block_name": "c76",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 61.87500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 369,
+          "x_mm": 21.210206407577935,
+          "y_mm": 11.33709152066524,
+          "block_type_1based": 80,
+          "block_name": "c76",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -151.875,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 269,
+          "x_mm": 23.014415074359622,
+          "y_mm": 6.98134648796982,
+          "block_type_1based": 80,
+          "block_name": "c76",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 196.875,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 77,
+      "angular_index_0based": 7,
+      "radial_index_0based": 6,
+      "base_angle_deg": 16.874999999999996,
+      "base_radius_mm": 25.55,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 79,
+          "x_mm": 7.416773503851514,
+          "y_mm": 24.449825577957935,
+          "block_type_1based": 81,
+          "block_name": "c77",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 73.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 179,
+          "x_mm": 12.044186625904238,
+          "y_mm": 22.533088304100474,
+          "block_type_1based": 81,
+          "block_name": "c77",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 61.87500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 379,
+          "x_mm": 22.533088304100474,
+          "y_mm": 12.044186625904238,
+          "block_type_1based": 81,
+          "block_name": "c77",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -151.875,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 279,
+          "x_mm": 24.449825577957935,
+          "y_mm": 7.416773503851514,
+          "block_type_1based": 81,
+          "block_name": "c77",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 196.875,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 78,
+      "angular_index_0based": 7,
+      "radial_index_0based": 7,
+      "base_angle_deg": 16.874999999999993,
+      "base_radius_mm": 27.050000000000004,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 89,
+          "x_mm": 7.852200519733207,
+          "y_mm": 25.88523608155625,
+          "block_type_1based": 82,
+          "block_name": "c78",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 73.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 189,
+          "x_mm": 12.751281731143237,
+          "y_mm": 23.855970200623005,
+          "block_type_1based": 82,
+          "block_name": "c78",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 61.87500000000001,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 389,
+          "x_mm": 23.855970200623005,
+          "y_mm": 12.751281731143237,
+          "block_type_1based": 82,
+          "block_name": "c78",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -151.875,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 289,
+          "x_mm": 25.88523608155625,
+          "y_mm": 7.852200519733207,
+          "block_type_1based": 82,
+          "block_name": "c78",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 196.875,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 79,
+      "angular_index_0based": 7,
+      "radial_index_0based": 8,
+      "base_angle_deg": 16.875,
+      "base_radius_mm": 28.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 99,
+          "x_mm": 8.2876275356149,
+          "y_mm": 27.320646585154563,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 199,
+          "x_mm": 13.45837683638223,
+          "y_mm": 25.178852097145533,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 399,
+          "x_mm": 25.178852097145533,
+          "y_mm": 13.45837683638223,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 299,
+          "x_mm": 27.320646585154563,
+          "y_mm": 8.2876275356149,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 80,
+      "angular_index_0based": 7,
+      "radial_index_0based": 9,
+      "base_angle_deg": 16.875000000000004,
+      "base_radius_mm": 30.05000000000001,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 109,
+          "x_mm": 8.723054551496595,
+          "y_mm": 28.756057088752875,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 209,
+          "x_mm": 14.165471941621227,
+          "y_mm": 26.50173399366807,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 409,
+          "x_mm": 26.50173399366807,
+          "y_mm": 14.165471941621227,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 309,
+          "x_mm": 28.756057088752875,
+          "y_mm": 8.723054551496595,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 81,
+      "angular_index_0based": 8,
+      "radial_index_0based": 0,
+      "base_angle_deg": 19.124999999999993,
+      "base_radius_mm": 16.550000000000004,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 20,
+          "x_mm": 5.422279471746028,
+          "y_mm": 15.636540069026832,
+          "block_type_1based": 85,
+          "block_name": "c81",
+          "physical_class": "air",
+          "magnetization_deg": 70.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 120,
+          "x_mm": 7.222572933143812,
+          "y_mm": 14.890834101064266,
+          "block_type_1based": 85,
+          "block_name": "c81",
+          "physical_class": "air",
+          "magnetization_deg": 64.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 320,
+          "x_mm": 14.890834101064266,
+          "y_mm": 7.222572933143812,
+          "block_type_1based": 85,
+          "block_name": "c81",
+          "physical_class": "air",
+          "magnetization_deg": -154.12499999999997,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 220,
+          "x_mm": 15.636540069026832,
+          "y_mm": 5.422279471746028,
+          "block_type_1based": 85,
+          "block_name": "c81",
+          "physical_class": "air",
+          "magnetization_deg": 199.125,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 82,
+      "angular_index_0based": 8,
+      "radial_index_0based": 1,
+      "base_angle_deg": 19.124999999999996,
+      "base_radius_mm": 18.05,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 30,
+          "x_mm": 5.913724741088568,
+          "y_mm": 17.05374913872715,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 130,
+          "x_mm": 7.877186794153824,
+          "y_mm": 16.240456527142598,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 330,
+          "x_mm": 16.240456527142598,
+          "y_mm": 7.877186794153824,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 230,
+          "x_mm": 17.05374913872715,
+          "y_mm": 5.913724741088568,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 83,
+      "angular_index_0based": 8,
+      "radial_index_0based": 2,
+      "base_angle_deg": 19.124999999999996,
+      "base_radius_mm": 19.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 40,
+          "x_mm": 6.405170010431108,
+          "y_mm": 18.470958208427465,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 140,
+          "x_mm": 8.531800655163837,
+          "y_mm": 17.590078953220928,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 340,
+          "x_mm": 17.590078953220928,
+          "y_mm": 8.531800655163837,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 240,
+          "x_mm": 18.470958208427465,
+          "y_mm": 6.405170010431108,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 84,
+      "angular_index_0based": 8,
+      "radial_index_0based": 3,
+      "base_angle_deg": 19.125,
+      "base_radius_mm": 21.05000000000001,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 50,
+          "x_mm": 6.896615279773648,
+          "y_mm": 19.888167278127785,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 150,
+          "x_mm": 9.186414516173853,
+          "y_mm": 18.93970137929926,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 350,
+          "x_mm": 18.93970137929926,
+          "y_mm": 9.186414516173853,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 250,
+          "x_mm": 19.888167278127785,
+          "y_mm": 6.896615279773648,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 85,
+      "angular_index_0based": 8,
+      "radial_index_0based": 4,
+      "base_angle_deg": 19.124999999999993,
+      "base_radius_mm": 22.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 60,
+          "x_mm": 7.388060549116188,
+          "y_mm": 21.3053763478281,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 160,
+          "x_mm": 9.841028377183864,
+          "y_mm": 20.289323805377595,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 360,
+          "x_mm": 20.289323805377595,
+          "y_mm": 9.841028377183864,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 260,
+          "x_mm": 21.3053763478281,
+          "y_mm": 7.388060549116188,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 86,
+      "angular_index_0based": 8,
+      "radial_index_0based": 5,
+      "base_angle_deg": 19.125,
+      "base_radius_mm": 24.050000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 70,
+          "x_mm": 7.879505818458728,
+          "y_mm": 22.722585417528418,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 170,
+          "x_mm": 10.495642238193877,
+          "y_mm": 21.638946231455925,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 370,
+          "x_mm": 21.638946231455925,
+          "y_mm": 10.495642238193877,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 270,
+          "x_mm": 22.722585417528418,
+          "y_mm": 7.879505818458728,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 87,
+      "angular_index_0based": 8,
+      "radial_index_0based": 6,
+      "base_angle_deg": 19.125,
+      "base_radius_mm": 25.550000000000004,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 80,
+          "x_mm": 8.370951087801268,
+          "y_mm": 24.139794487228734,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 180,
+          "x_mm": 11.15025609920389,
+          "y_mm": 22.98856865753426,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 380,
+          "x_mm": 22.98856865753426,
+          "y_mm": 11.15025609920389,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 280,
+          "x_mm": 24.139794487228734,
+          "y_mm": 8.370951087801268,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 88,
+      "angular_index_0based": 8,
+      "radial_index_0based": 7,
+      "base_angle_deg": 19.125,
+      "base_radius_mm": 27.050000000000008,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 90,
+          "x_mm": 8.86239635714381,
+          "y_mm": 25.55700355692905,
+          "block_type_1based": 92,
+          "block_name": "c88",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 70.875,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 190,
+          "x_mm": 11.804869960213901,
+          "y_mm": 24.33819108361259,
+          "block_type_1based": 92,
+          "block_name": "c88",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 64.125,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 390,
+          "x_mm": 24.33819108361259,
+          "y_mm": 11.804869960213901,
+          "block_type_1based": 92,
+          "block_name": "c88",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -154.12499999999997,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 290,
+          "x_mm": 25.55700355692905,
+          "y_mm": 8.86239635714381,
+          "block_type_1based": 92,
+          "block_name": "c88",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 199.125,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 89,
+      "angular_index_0based": 8,
+      "radial_index_0based": 8,
+      "base_angle_deg": 19.124999999999993,
+      "base_radius_mm": 28.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 100,
+          "x_mm": 9.35384162648635,
+          "y_mm": 26.97421262662937,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 200,
+          "x_mm": 12.459483821223918,
+          "y_mm": 25.687813509690923,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 400,
+          "x_mm": 25.687813509690923,
+          "y_mm": 12.459483821223918,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 300,
+          "x_mm": 26.97421262662937,
+          "y_mm": 9.35384162648635,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 90,
+      "angular_index_0based": 8,
+      "radial_index_0based": 9,
+      "base_angle_deg": 19.124999999999996,
+      "base_radius_mm": 30.050000000000008,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 110,
+          "x_mm": 9.84528689582889,
+          "y_mm": 28.391421696329687,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 210,
+          "x_mm": 13.11409768223393,
+          "y_mm": 27.037435935769256,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 410,
+          "x_mm": 27.037435935769256,
+          "y_mm": 13.11409768223393,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 310,
+          "x_mm": 28.391421696329687,
+          "y_mm": 9.84528689582889,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 91,
+      "angular_index_0based": 9,
+      "radial_index_0based": 0,
+      "base_angle_deg": 21.374999999999996,
+      "base_radius_mm": 16.55,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 21,
+          "x_mm": 6.031986772999927,
+          "y_mm": 15.4116071702582,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 121,
+          "x_mm": 6.632393187856984,
+          "y_mm": 15.1629106902886,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 321,
+          "x_mm": 15.1629106902886,
+          "y_mm": 6.632393187856984,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 221,
+          "x_mm": 15.4116071702582,
+          "y_mm": 6.031986772999927,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 92,
+      "angular_index_0based": 9,
+      "radial_index_0based": 1,
+      "base_angle_deg": 21.375,
+      "base_radius_mm": 18.050000000000008,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 31,
+          "x_mm": 6.578692522818652,
+          "y_mm": 16.808429572396406,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 131,
+          "x_mm": 7.233516437511694,
+          "y_mm": 16.537192625964302,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 331,
+          "x_mm": 16.537192625964302,
+          "y_mm": 7.233516437511694,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 231,
+          "x_mm": 16.808429572396406,
+          "y_mm": 6.578692522818652,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 93,
+      "angular_index_0based": 9,
+      "radial_index_0based": 2,
+      "base_angle_deg": 21.374999999999996,
+      "base_radius_mm": 19.550000000000008,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 41,
+          "x_mm": 7.1253982726373755,
+          "y_mm": 18.20525197453461,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 141,
+          "x_mm": 7.8346396871664075,
+          "y_mm": 17.91147456164001,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 341,
+          "x_mm": 17.91147456164001,
+          "y_mm": 7.8346396871664075,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 241,
+          "x_mm": 18.20525197453461,
+          "y_mm": 7.1253982726373755,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 94,
+      "angular_index_0based": 9,
+      "radial_index_0based": 3,
+      "base_angle_deg": 21.374999999999996,
+      "base_radius_mm": 21.050000000000008,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 51,
+          "x_mm": 7.6721040224561,
+          "y_mm": 19.602074376672817,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 151,
+          "x_mm": 8.43576293682112,
+          "y_mm": 19.285756497315713,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 351,
+          "x_mm": 19.285756497315713,
+          "y_mm": 8.43576293682112,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 251,
+          "x_mm": 19.602074376672817,
+          "y_mm": 7.6721040224561,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 95,
+      "angular_index_0based": 9,
+      "radial_index_0based": 4,
+      "base_angle_deg": 21.37499999999999,
+      "base_radius_mm": 22.549999999999997,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 61,
+          "x_mm": 8.218809772274824,
+          "y_mm": 20.99889677881102,
+          "block_type_1based": 99,
+          "block_name": "c95",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 68.625,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 161,
+          "x_mm": 9.03688618647583,
+          "y_mm": 20.660038432991414,
+          "block_type_1based": 99,
+          "block_name": "c95",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 66.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 361,
+          "x_mm": 20.660038432991414,
+          "y_mm": 9.03688618647583,
+          "block_type_1based": 99,
+          "block_name": "c95",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -156.37500000000003,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 261,
+          "x_mm": 20.99889677881102,
+          "y_mm": 8.218809772274824,
+          "block_type_1based": 99,
+          "block_name": "c95",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 201.375,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 96,
+      "angular_index_0based": 9,
+      "radial_index_0based": 5,
+      "base_angle_deg": 21.374999999999996,
+      "base_radius_mm": 24.049999999999994,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 71,
+          "x_mm": 8.76551552209355,
+          "y_mm": 22.395719180949225,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 171,
+          "x_mm": 9.63800943613054,
+          "y_mm": 22.034320368667117,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 371,
+          "x_mm": 22.034320368667117,
+          "y_mm": 9.63800943613054,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 271,
+          "x_mm": 22.395719180949225,
+          "y_mm": 8.76551552209355,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 97,
+      "angular_index_0based": 9,
+      "radial_index_0based": 6,
+      "base_angle_deg": 21.374999999999996,
+      "base_radius_mm": 25.549999999999994,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 81,
+          "x_mm": 9.312221271912273,
+          "y_mm": 23.79254158308743,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 181,
+          "x_mm": 10.23913268578525,
+          "y_mm": 23.408602304342825,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 381,
+          "x_mm": 23.408602304342825,
+          "y_mm": 10.23913268578525,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 281,
+          "x_mm": 23.79254158308743,
+          "y_mm": 9.312221271912273,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 98,
+      "angular_index_0based": 9,
+      "radial_index_0based": 7,
+      "base_angle_deg": 21.375000000000007,
+      "base_radius_mm": 27.05000000000001,
+      "physical_class": "permanent_magnet",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 91,
+          "x_mm": 9.858927021730999,
+          "y_mm": 25.189363985225636,
+          "block_type_1based": 102,
+          "block_name": "c98",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 68.625,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 191,
+          "x_mm": 10.840255935439961,
+          "y_mm": 24.782884240018525,
+          "block_type_1based": 102,
+          "block_name": "c98",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 66.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 391,
+          "x_mm": 24.782884240018525,
+          "y_mm": 10.840255935439961,
+          "block_type_1based": 102,
+          "block_name": "c98",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": -156.37500000000003,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 291,
+          "x_mm": 25.189363985225636,
+          "y_mm": 9.858927021730999,
+          "block_type_1based": 102,
+          "block_name": "c98",
+          "physical_class": "permanent_magnet",
+          "magnetization_deg": 201.375,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 99,
+      "angular_index_0based": 9,
+      "radial_index_0based": 8,
+      "base_angle_deg": 21.374999999999996,
+      "base_radius_mm": 28.549999999999997,
+      "physical_class": "air",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 101,
+          "x_mm": 10.405632771549723,
+          "y_mm": 26.586186387363842,
+          "block_type_1based": 103,
+          "block_name": "c99",
+          "physical_class": "air",
+          "magnetization_deg": 68.625,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 201,
+          "x_mm": 11.441379185094673,
+          "y_mm": 26.15716617569423,
+          "block_type_1based": 103,
+          "block_name": "c99",
+          "physical_class": "air",
+          "magnetization_deg": 66.375,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 401,
+          "x_mm": 26.15716617569423,
+          "y_mm": 11.441379185094673,
+          "block_type_1based": 103,
+          "block_name": "c99",
+          "physical_class": "air",
+          "magnetization_deg": -156.37500000000003,
+          "group": 9
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 301,
+          "x_mm": 26.586186387363842,
+          "y_mm": 10.405632771549723,
+          "block_type_1based": 103,
+          "block_name": "c99",
+          "physical_class": "air",
+          "magnetization_deg": 201.375,
+          "group": 9
+        }
+      ]
+    },
+    {
+      "cell_index_1based": 100,
+      "angular_index_0based": 9,
+      "radial_index_0based": 9,
+      "base_angle_deg": 21.375,
+      "base_radius_mm": 30.05000000000001,
+      "physical_class": "iron",
+      "copies": [
+        {
+          "copy_index_1based": 1,
+          "label_index_1based": 111,
+          "x_mm": 10.952338521368446,
+          "y_mm": 27.983008789502048,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 2,
+          "label_index_1based": 211,
+          "x_mm": 12.042502434749386,
+          "y_mm": 27.531448111369933,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 3,
+          "label_index_1based": 411,
+          "x_mm": 27.531448111369933,
+          "y_mm": 12.042502434749386,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        },
+        {
+          "copy_index_1based": 4,
+          "label_index_1based": 311,
+          "x_mm": 27.983008789502048,
+          "y_mm": 10.952338521368446,
+          "block_type_1based": 4,
+          "block_name": "Pure Iron",
+          "physical_class": "iron",
+          "magnetization_deg": 0.0,
+          "group": 8
+        }
+      ]
+    }
+  ]
+}

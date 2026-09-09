@@ -1,0 +1,79 @@
+{
+  "status": "complete",
+  "candidate_id": "candidate_002",
+  "mapping": "air0",
+  "angles_mechanical_deg": [
+    3.0,
+    6.0,
+    9.0,
+    12.0,
+    15.0,
+    18.0,
+    21.0,
+    24.0,
+    27.0,
+    30.0
+  ],
+  "reused_angles_deg": [
+    3.0,
+    6.0,
+    9.0,
+    12.0,
+    15.0
+  ],
+  "new_femm_angles_deg": [
+    18.0,
+    21.0,
+    24.0,
+    27.0,
+    30.0
+  ],
+  "tasks": {
+    "angle_003": {
+      "status": "reused",
+      "source": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\generated_fem\\candidate_002\\air0\\angle_003\\result.json"
+    },
+    "angle_006": {
+      "status": "reused",
+      "source": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\generated_fem\\candidate_002\\air0\\angle_006\\result.json"
+    },
+    "angle_009": {
+      "status": "reused",
+      "source": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\generated_fem\\candidate_002\\air0\\angle_009\\result.json"
+    },
+    "angle_012": {
+      "status": "reused",
+      "source": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\generated_fem\\candidate_002\\air0\\angle_012\\result.json"
+    },
+    "angle_015": {
+      "status": "reused",
+      "source": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\generated_fem\\candidate_002\\air0\\angle_015\\result.json"
+    },
+    "angle_018": {
+      "status": "complete",
+      "torque_nm": -1.331789288069166,
+      "updated_at_epoch": 1787271574.5409257
+    },
+    "angle_021": {
+      "status": "complete",
+      "torque_nm": -1.455881937275677,
+      "updated_at_epoch": 1787271574.8054438
+    },
+    "angle_024": {
+      "status": "complete",
+      "torque_nm": -1.834938641010658,
+      "updated_at_epoch": 1787271577.528953
+    },
+    "angle_027": {
+      "status": "complete",
+      "torque_nm": -1.797737218701104,
+      "updated_at_epoch": 1787271710.6767294
+    },
+    "angle_030": {
+      "status": "complete",
+      "torque_nm": -2.710844456925023,
+      "updated_at_epoch": 1787271716.0891194
+    }
+  },
+  "summary": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_6point_validation\\extended_30deg\\analysis_summary.json"
+}

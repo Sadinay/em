@@ -1,0 +1,23 @@
+{
+  "model_id": "logical10/small_cnn",
+  "epochs": 10,
+  "best_epoch": 7,
+  "best_validation_loss": 0.11201067193349203,
+  "test_standardized_mse": 0.10523213139176368,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.06452394276857376,
+      "rmse": 0.09494056552648544,
+      "r2": 0.978958010673523
+    },
+    "delta_t": {
+      "mae": 0.07762305438518524,
+      "rmse": 0.132798969745636,
+      "r2": 0.7973106503486633
+    }
+  },
+  "elapsed_seconds": 7.798468699998921,
+  "peak_cuda_memory_mb": 76.95556640625,
+  "parameter_count": 503458,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\cnn_zone\\models\\test_11700\\logical10\\small_cnn\\best_checkpoint.pt"
+}

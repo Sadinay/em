@@ -1,0 +1,70 @@
+{
+  "status": "generated_and_structurally_validated",
+  "femm_solve_performed": false,
+  "mapping_mode": "inferred_three_material_v1",
+  "mapping_evidence_status": "strongly inferred; matching MATLAB assignment source is absent",
+  "code_mapping": {
+    "0": "air",
+    "1": "permanent_magnet",
+    "2": "iron",
+    "3": "iron"
+  },
+  "grid_axes": "[radial_index, angular_index]",
+  "symmetry": "each of 100 cells is written to four audited FEM block-label coordinates",
+  "genotype_sha256": "8b0c9f1f6e0efd34dc1a60da46d36253c8e837bb36e6564ed642ae139103f421",
+  "physical_topology_sha256": "5ad8699fea6f44a6a9fd9764c979f432898bf3619de4c540d040193b19c3d4b9",
+  "template": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\femm_zone\\models\\IPMSM.fem",
+    "sha256": "696e68c9f0cbedc7c82ba621f10496fef031b292ff69d4c969b4642ebb515e82"
+  },
+  "material_position_source": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\data_zone\\raw\\workspace_600.mat",
+    "sha256": "26b1dc59b72c4b856b75f9a92358d60d1b26093c9f634a44426df98a82271193"
+  },
+  "provenance": {
+    "kind": "mat_history",
+    "mat_path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\data_zone\\raw\\workspace_600.mat",
+    "mat_sha256": "26b1dc59b72c4b856b75f9a92358d60d1b26093c9f634a44426df98a82271193",
+    "state_index_0based": 600,
+    "generation_interpretation": "0=initial, 1..600=GA generations",
+    "population_row_0based": 494,
+    "stored_results": {
+      "t_avg_nm": 2.3205486761815255,
+      "delta_t": 0.6155435799871329,
+      "fitness": 5.080519980519422
+    }
+  },
+  "material_code_counts": {
+    "0": 11,
+    "1": 27,
+    "2": 36,
+    "3": 26
+  },
+  "validation": {
+    "mapped_cells": 100,
+    "mapped_design_labels": 400,
+    "four_copy_material_consistency": true,
+    "physical_class_counts": {
+      "air": 11,
+      "permanent_magnet": 27,
+      "iron": 62
+    },
+    "all_expected_materials_match": true
+  },
+  "files": {
+    "model": "model.fem",
+    "original_gene": "gene_bits.txt",
+    "canonical_three_material_gene": "canonical_physical_bits.txt",
+    "material_code_grid": "material_codes_10x10.csv",
+    "physical_class_grid": "physical_classes_10x10.csv",
+    "cell_copy_mapping": "gene_to_fem_mapping.csv",
+    "topology_preview": "topology_preview.png"
+  },
+  "mesh_validation": {
+    "status": "passed",
+    "mode": "hidden FEMM open + mi_createmesh; no solve",
+    "femm_open_seconds": 0.12366649999967194,
+    "mesh_seconds": 1.6557735999995202,
+    "mesh_return_value": 99936
+  }
+}

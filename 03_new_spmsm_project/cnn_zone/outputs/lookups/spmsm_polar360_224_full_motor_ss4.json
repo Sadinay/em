@@ -1,0 +1,42 @@
+{
+  "status": "ready",
+  "lookup_path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\outputs\\lookups\\spmsm_polar360_224_full_motor_ss4.npz",
+  "coordinate_system": "polar360",
+  "image_shape": [
+    224,
+    224
+  ],
+  "coverage": "complete 0-360 degree motor reconstructed from the audited 0-90 degree FEM quadrant",
+  "coordinate_bounds": {
+    "theta_deg": [
+      0.0,
+      360.0
+    ],
+    "radius_mm": [
+      0.0,
+      64.0
+    ]
+  },
+  "angular_pixel_width_deg": 1.6071428571428572,
+  "supersampling": [
+    4,
+    4
+  ],
+  "subpixel_angular_width_deg": 0.4017857142857143,
+  "source_quadrant_mapping": "theta_query = theta_full mod 90 degrees",
+  "symmetry_note": "material geometry is rotationally repeated; the FEM source uses anti-periodic boundary pairs",
+  "fractional_channels": true,
+  "mapped_gene_count": 120,
+  "physical_gene_copies_in_full_circle": 16,
+  "minimum_subpixel_samples_per_gene": 224,
+  "maximum_subpixel_samples_per_gene": 336,
+  "raw_centre_sampling_warning": "224 angular pixels are coarser than one angular gene cell; 4x4 area sampling is used to reduce aliasing",
+  "source": {
+    "fem": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem",
+    "fem_sha256": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5",
+    "mat": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+    "mat_sha256": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+    "ans_mesh": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\history_replay_validation_minangle25\\final_high_tavg\\angle_0\\model.ans",
+    "ans_mesh_sha256": "0fcf40ad278d792bb36f419f6dadd6b51748ebd7e5c4a0a7afba0f5f967b5bcb"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "mode": "band_supplement_v1",
+  "random_seed": 20260818,
+  "target_new_physics_samples": 300,
+  "population_per_band": 10,
+  "offspring_per_band_generation": {
+    "B2": 4,
+    "B3": 3,
+    "B4": 6,
+    "B5": 8,
+    "B6": 3,
+    "B7": 6
+  },
+  "offspring_per_campaign_generation": 5,
+  "elite_count": 2,
+  "minimum_completed_generations": 0,
+  "maximum_generations": 1000,
+  "maximum_proposals": 100000,
+  "parent_rank_pressure": 2.0,
+  "b7_parent_minimum_torque_ratio": 0.98,
+  "total_dataset_band_targets": {
+    "B2": 120,
+    "B3": 120,
+    "B4": 140,
+    "B5": 170,
+    "B6": 180,
+    "B7": 100
+  },
+  "eligible_parent_bands": {
+    "B2": ["B2", "B1", "B3"],
+    "B3": ["B3", "B2", "B4"],
+    "B4": ["B4", "B3", "B5"],
+    "B5": ["B5", "B4", "B6"],
+    "B6": ["B6", "B5"],
+    "B7": ["B7", "B6"]
+  },
+  "scale_probabilities": {
+    "B2": {"small": 0.35, "medium": 0.50, "large": 0.15},
+    "B3": {"small": 0.35, "medium": 0.50, "large": 0.15},
+    "B4": {"small": 0.35, "medium": 0.50, "large": 0.15},
+    "B5": {"small": 0.45, "medium": 0.45, "large": 0.10},
+    "B6": {"small": 0.60, "medium": 0.35, "large": 0.05},
+    "B7": {"small": 0.75, "medium": 0.23, "large": 0.02}
+  },
+  "hamming_admission": {
+    "small": {"minimum_archive_distance": 1, "maximum_parent_distance": 12},
+    "medium": {"minimum_archive_distance": 3, "maximum_parent_distance": 30},
+    "large": {"minimum_archive_distance": 6, "maximum_parent_distance": 60}
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "status": "prepared",
+  "angles_mechanical_deg": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    15
+  ],
+  "min_angle_deg": 15,
+  "pole_pairs": 4,
+  "amplitude_a": 3.5,
+  "fixed_currents_a": {
+    "A": 0.0,
+    "B": 0.0,
+    "C": 0.0
+  },
+  "fixed_current_phase_electrical_deg": null,
+  "outer_angle_deg": 0,
+  "torque_multiplier": -2,
+  "multiplier_source": "previous mean-torque validation; not refitted",
+  "mat_unused_current_parameters": {
+    "Id": 5.0,
+    "Iq": 0.0,
+    "Ia": 0.0,
+    "Ib": 0.0,
+    "Ic": 0.0
+  },
+  "input_sha256": {
+    "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+    "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+  },
+  "candidates": [
+    {
+      "candidate_id": "low_tavg",
+      "state_index_0based": 0,
+      "population_row_0based": 338,
+      "pm_cells": 45,
+      "historical_tavg_nm": 1.6172313314639906,
+      "historical_delta_t": 0.35074853072759105,
+      "before_after_identical": true
+    },
+    {
+      "candidate_id": "median_tavg",
+      "state_index_0based": 31,
+      "population_row_0based": 190,
+      "pm_cells": 80,
+      "historical_tavg_nm": 3.183132769850227,
+      "historical_delta_t": 0.454533168517397,
+      "before_after_identical": true
+    },
+    {
+      "candidate_id": "high_tavg",
+      "state_index_0based": 193,
+      "population_row_0based": 258,
+      "pm_cells": 100,
+      "historical_tavg_nm": 3.9186576845750505,
+      "historical_delta_t": 0.21329158923616598,
+      "before_after_identical": true
+    },
+    {
+      "candidate_id": "final_low_tavg",
+      "state_index_0based": 200,
+      "population_row_0based": 491,
+      "pm_cells": 82,
+      "historical_tavg_nm": 3.155745847366145,
+      "historical_delta_t": 0.18494258054991697,
+      "before_after_identical": true
+    },
+    {
+      "candidate_id": "final_high_tavg",
+      "state_index_0based": 200,
+      "population_row_0based": 33,
+      "pm_cells": 99,
+      "historical_tavg_nm": 3.8501566605986075,
+      "historical_delta_t": 0.4947766516831762,
+      "before_after_identical": true
+    }
+  ],
+  "current_source": "literal inp.Ia / inp.Ib / inp.Ic; no inferred phase",
+  "material_scenario": "mat_linear_iron"
+}

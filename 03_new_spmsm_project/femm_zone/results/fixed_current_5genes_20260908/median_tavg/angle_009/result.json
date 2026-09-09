@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "candidate_id": "median_tavg",
+  "angle_mechanical_deg": 9,
+  "current_phase_electrical_deg": 0,
+  "torque_nm_raw": 0.2644263612217086,
+  "torque_nm_historical_scale": -0.5288527224434172,
+  "verified_input": {
+    "headers": {
+      "Frequency": 0.0,
+      "Precision": 1e-08,
+      "MinAngle": 15.0,
+      "DoSmartMesh": 1.0,
+      "Depth": 36.0
+    },
+    "inner_angle_deg": 9,
+    "outer_angle_deg": 0,
+    "fixed_currents_a": {
+      "A": 3.5,
+      "B": -1.75,
+      "C": -1.75
+    },
+    "fem_sha256": "46959b084dd85bd9b71a342a09b9ed5bad0dfb8f6e3c9834e08190d7ae363cec"
+  },
+  "elapsed_seconds": 4.679740400002629,
+  "ans_path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\fixed_current_5genes_20260908\\median_tavg\\angle_009\\model.ans",
+  "fresh_solve": true
+}

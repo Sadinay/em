@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "interpretation": "six non-duplicated uniform samples over one 15-degree torque period",
+  "angles_mechanical_deg": [
+    0.0,
+    2.5,
+    5.0,
+    7.5,
+    10.0,
+    12.5
+  ],
+  "pole_pairs": 4,
+  "current_amplitude_a": 3.5,
+  "torque_multiplier": -2,
+  "tavg_method": "arithmetic mean of six periodic samples",
+  "delta_t_method": "absolute peak-to-peak",
+  "mean_relative_error_tavg": 0.011900183751222254,
+  "mean_relative_error_delta_t": 1.4834973214476317,
+  "candidates": [
+    {
+      "candidate_id": "low_tavg",
+      "state_index_0based": 0,
+      "population_row_0based": 338,
+      "pm_cells": 45,
+      "historical_tavg_nm": 1.6172313314639906,
+      "recomputed_tavg_nm": 1.7075331392713873,
+      "relative_error_tavg": 0.05583728564400954,
+      "historical_delta_t_nm": 0.35074853072759105,
+      "recomputed_delta_t_nm": 0.6743776500796803,
+      "relative_error_delta_t": 0.9226813257941654,
+      "raw_femm_torques_nm": [
+        -0.8223799305304841,
+        -1.016176843382779,
+        -0.8312418693671474,
+        -0.8998361493771672,
+        -0.8739766068136452,
+        -0.6789880183429388
+      ],
+      "full_machine_sign_corrected_torques_nm": [
+        1.6447598610609682,
+        2.032353686765558,
+        1.6624837387342948,
+        1.7996722987543343,
+        1.7479532136272904,
+        1.3579760366858775
+      ]
+    },
+    {
+      "candidate_id": "median_tavg",
+      "state_index_0based": 31,
+      "population_row_0based": 190,
+      "pm_cells": 80,
+      "historical_tavg_nm": 3.183132769850227,
+      "recomputed_tavg_nm": 3.156974272314844,
+      "relative_error_tavg": 0.008217846827863876,
+      "historical_delta_t_nm": 0.454533168517397,
+      "recomputed_delta_t_nm": 0.4219262770963641,
+      "relative_error_delta_t": 0.07173710012712722,
+      "raw_femm_torques_nm": [
+        -1.724849996763385,
+        -1.532145807835028,
+        -1.513886858215203,
+        -1.543380838444093,
+        -1.515397829062086,
+        -1.641261486624737
+      ],
+      "full_machine_sign_corrected_torques_nm": [
+        3.44969999352677,
+        3.064291615670056,
+        3.027773716430406,
+        3.086761676888186,
+        3.030795658124172,
+        3.282522973249474
+      ]
+    },
+    {
+      "candidate_id": "high_tavg",
+      "state_index_0based": 193,
+      "population_row_0based": 258,
+      "pm_cells": 100,
+      "historical_tavg_nm": 3.9186576845750505,
+      "recomputed_tavg_nm": 3.9118995634921316,
+      "relative_error_tavg": 0.0017246010309909764,
+      "historical_delta_t_nm": 0.21329158923616598,
+      "recomputed_delta_t_nm": 0.3948325790460321,
+      "relative_error_delta_t": 0.8511399369285763,
+      "raw_femm_torques_nm": [
+        -2.023162703904393,
+        -2.020028592641722,
+        -2.018823246526627,
+        -1.939012497151665,
+        -1.825746414381377,
+        -1.90892523587061
+      ],
+      "full_machine_sign_corrected_torques_nm": [
+        4.046325407808786,
+        4.040057185283444,
+        4.037646493053254,
+        3.87802499430333,
+        3.651492828762754,
+        3.81785047174122
+      ]
+    },
+    {
+      "candidate_id": "final_low_tavg",
+      "state_index_0based": 200,
+      "population_row_0based": 491,
+      "pm_cells": 82,
+      "historical_tavg_nm": 3.155745847366145,
+      "recomputed_tavg_nm": 3.161176437889076,
+      "relative_error_tavg": 0.0017208580112570014,
+      "historical_delta_t_nm": 0.18494258054991697,
+      "recomputed_delta_t_nm": 0.7934357586573779,
+      "relative_error_delta_t": 3.2901735030307173,
+      "raw_femm_torques_nm": [
+        -1.571436870476116,
+        -1.799690721435194,
+        -1.470321765090207,
+        -1.524440908050756,
+        -1.71466620650845,
+        -1.402972842106505
+      ],
+      "full_machine_sign_corrected_torques_nm": [
+        3.142873740952232,
+        3.599381442870388,
+        2.940643530180414,
+        3.048881816101512,
+        3.4293324130169,
+        2.80594568421301
+      ]
+    },
+    {
+      "candidate_id": "final_median_tavg",
+      "state_index_0based": 200,
+      "population_row_0based": 395,
+      "pm_cells": 91,
+      "historical_tavg_nm": 3.5257538657943965,
+      "recomputed_tavg_nm": 3.5280965930139865,
+      "relative_error_tavg": 0.0006644613630912379,
+      "historical_delta_t_nm": 0.474898358160591,
+      "recomputed_delta_t_nm": 1.01694276176186,
+      "relative_error_delta_t": 1.141390350770537,
+      "raw_femm_torques_nm": [
+        -1.654883876795567,
+        -1.995094990187875,
+        -1.901342836238171,
+        -1.851901956264638,
+        -1.694442510248765,
+        -1.486623609306945
+      ],
+      "full_machine_sign_corrected_torques_nm": [
+        3.309767753591134,
+        3.99018998037575,
+        3.802685672476342,
+        3.703803912529276,
+        3.38888502049753,
+        2.97324721861389
+      ]
+    },
+    {
+      "candidate_id": "final_high_tavg",
+      "state_index_0based": 200,
+      "population_row_0based": 33,
+      "pm_cells": 99,
+      "historical_tavg_nm": 3.8501566605986075,
+      "recomputed_tavg_nm": 3.862615958636045,
+      "relative_error_tavg": 0.003236049630120893,
+      "historical_delta_t_nm": 0.4947766516831762,
+      "recomputed_delta_t_nm": 1.7930021640433744,
+      "relative_error_delta_t": 2.6238617120346657,
+      "raw_femm_torques_nm": [
+        -1.803789205191064,
+        -2.332155881580986,
+        -2.100417496720956,
+        -2.003670060648255,
+        -1.912160432207575,
+        -1.435654799559299
+      ],
+      "full_machine_sign_corrected_torques_nm": [
+        3.607578410382128,
+        4.664311763161972,
+        4.200834993441912,
+        4.00734012129651,
+        3.82432086441515,
+        2.871309599118598
+      ]
+    }
+  ]
+}

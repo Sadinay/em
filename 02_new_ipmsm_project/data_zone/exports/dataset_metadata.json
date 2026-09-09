@@ -1,0 +1,58 @@
+{
+  "source": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\data_zone\\raw\\workspace_600.mat",
+    "sha256": "26b1dc59b72c4b856b75f9a92358d60d1b26093c9f634a44426df98a82271193",
+    "matlab_header": "MATLAB 5.0 MAT-file, Platform: PCWIN64, Created on: Mon Jul  6 13:26:59 2026"
+  },
+  "dimensions": {
+    "chromosome_bits": 200,
+    "material_cells": 100,
+    "grid_radial_by_angular": [
+      10,
+      10
+    ],
+    "population_size": 504,
+    "completed_generations": 600,
+    "saved_states_including_initial": 601,
+    "historical_records_with_repetition": 302904,
+    "unique_corrected_historical_chromosomes": 159921
+  },
+  "encoding": {
+    "bit_pair_order": "adjacent, most-significant bit first",
+    "formula": "material_code = 2 * bit[2*i] + bit[2*i+1]",
+    "mapping": {
+      "00": 0,
+      "01": 1,
+      "10": 2,
+      "11": 3
+    },
+    "vector_order": "angular-major; every ten entries traverse radius inner-to-outer",
+    "cnn_grid_axes": "[radial_index, angular_index]",
+    "cnn_one_hot_example": "np.eye(4, dtype=np.float32)[grid].transpose(2, 0, 1)"
+  },
+  "material_identity_status": {
+    "code_0": "Air; supported by the reference FEM mapping and corrected FEMM replay",
+    "code_1": "N38 permanent magnet; independently verified by VolumePM",
+    "codes_2_and_3": "Pure Iron in FEMM; both map to the same physical material",
+    "recommended_cnn_encoding": "collapse codes 2/3 and use three physical one-hot channels; retain four-state data for audit/ablation"
+  },
+  "stored_files": {
+    "current_generation.npz": "504 final-state samples; raw and corrected input plus scalar targets",
+    "generation_best.npz": "one corrected best individual for each of generations 1..600",
+    "full_history.npz": "all 601x504 records"
+  },
+  "ga_parameters_observed": {
+    "pcrossover": 0.5,
+    "pmutation": 0.1,
+    "nmax": 495,
+    "generationnmax": 600
+  },
+  "motor_parameters_observed": {
+    "steps": 6,
+    "stps": 72,
+    "poles_or_parameter_P": 4,
+    "rotor_outer_diameter_mm": 61.6,
+    "stator_inner_diameter_mm": 63.0,
+    "stack_depth_mm": 36.0
+  }
+}

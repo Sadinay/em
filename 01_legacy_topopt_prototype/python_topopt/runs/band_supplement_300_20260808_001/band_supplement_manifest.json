@@ -1,0 +1,198 @@
+{
+  "base_band_counts": {
+    "B1": 733,
+    "B2": 33,
+    "B3": 65,
+    "B4": 30,
+    "B5": 19,
+    "B6": 118,
+    "B7": 2
+  },
+  "dataset_config_hash": "15da216552b4cfea918047a7df61cbefcef1478be37754a079fdc1a1303a6d55",
+  "mutation_config": {
+    "campaign_count": 6,
+    "constraints": {
+      "fixed_cells": {},
+      "minimum_copper_island_cells": 4,
+      "theta_periodic": false
+    },
+    "initial_parent_reuse": false,
+    "lineage": {
+      "maximum_parents_per_generation_lineage": 60,
+      "topology_family_candidate_distance": 20
+    },
+    "mode": "improved_dataset_sampling",
+    "parent_archive_target": 60,
+    "parents_per_campaign": 10,
+    "parents_per_cluster": 5,
+    "physics": {
+      "formula_version": "historical_six_angle_v1",
+      "reference_t_avg_nm": 0.8707406437252049,
+      "source_config_path": "C:\\Users\\26096\\Desktop\\em\\python_topopt\\configs\\dataset_merged_v5.json",
+      "source_config_sha256": "f18b26cec31861eb763ac2c0500d3832779dd39cb27d4f58c59382f0d1c5f4a3"
+    },
+    "proposal": {
+      "checkpoint_every_proposal": true,
+      "hamming_admission_mode": "observe_only",
+      "maximum_proposals": 100000,
+      "operator_weights": {
+        "boundary_growth": 0.3,
+        "connected_region_repaint": 0.55,
+        "rectangular_patch": 0.15
+      },
+      "scales": {
+        "large": {
+          "maximum_cells": 40,
+          "maximum_parent_distance": 180,
+          "minimum_archive_distance": 0,
+          "minimum_cells": 16,
+          "probability": 0.2
+        },
+        "medium": {
+          "maximum_cells": 15,
+          "maximum_parent_distance": 180,
+          "minimum_archive_distance": 0,
+          "minimum_cells": 5,
+          "probability": 0.35
+        },
+        "small": {
+          "maximum_cells": 4,
+          "maximum_parent_distance": 180,
+          "minimum_archive_distance": 0,
+          "minimum_cells": 1,
+          "probability": 0.45
+        }
+      },
+      "selection_window": 50
+    },
+    "random_seed": 20260807,
+    "repair": {
+      "floating_iron_strategy": "remove",
+      "maximum_iterations": 8,
+      "maximum_repair_hamming": 40,
+      "small_copper_island_strategy": "remove"
+    },
+    "schema_version": 1,
+    "seed": {
+      "chromosome_sha256": "00435b1e344f7280618f320a984a2ee6526a0debe44967d6f071d8662a6ceac3",
+      "mat_path": "C:\\Users\\26096\\Desktop\\em\\FP\\CLONALG\\seed_bits_fine.mat",
+      "mat_sha256": "2665708b95df13c525483463ec0d836bc9f1bee73e93f53fc29a7762d4b208e7",
+      "mat_variable": "seed_bits"
+    },
+    "topology_cluster_target": 12
+  },
+  "mutation_config_hash": "4091d21853362e8b7c3c0ca2021790336d4098d44a3b0532175ba776e17e4d5e",
+  "physics_identity_hash": "23d9eed5f09cbe7e2b1e27e7e7b02b188bcec9324dd147dcd5cbc48086a1f52f",
+  "runner_kind": "band_supplement_v1",
+  "schema_version": 1,
+  "source_config_hash": "f18b26cec31861eb763ac2c0500d3832779dd39cb27d4f58c59382f0d1c5f4a3",
+  "source_database_sha256": "a016ec8ccd73e9349ed8032a03ca9fccf1db574f3cd453797cc3199828bb2a81",
+  "source_run": "C:\\Users\\26096\\Desktop\\em\\python_topopt\\runs\\improved_dataset_1000_20260807_001",
+  "supplement_config": {
+    "b7_parent_minimum_torque_ratio": 0.98,
+    "eligible_parent_bands": {
+      "B2": [
+        "B2",
+        "B1",
+        "B3"
+      ],
+      "B3": [
+        "B3",
+        "B2",
+        "B4"
+      ],
+      "B4": [
+        "B4",
+        "B3",
+        "B5"
+      ],
+      "B5": [
+        "B5",
+        "B4",
+        "B6"
+      ],
+      "B6": [
+        "B6",
+        "B5"
+      ],
+      "B7": [
+        "B7",
+        "B6"
+      ]
+    },
+    "elite_count": 2,
+    "hamming_admission": {
+      "large": {
+        "maximum_parent_distance": 60,
+        "minimum_archive_distance": 6
+      },
+      "medium": {
+        "maximum_parent_distance": 30,
+        "minimum_archive_distance": 3
+      },
+      "small": {
+        "maximum_parent_distance": 12,
+        "minimum_archive_distance": 1
+      }
+    },
+    "maximum_generations": 1000,
+    "maximum_proposals": 100000,
+    "minimum_completed_generations": 0,
+    "mode": "band_supplement_v1",
+    "offspring_per_band_generation": {
+      "B2": 4,
+      "B3": 3,
+      "B4": 6,
+      "B5": 8,
+      "B6": 3,
+      "B7": 6
+    },
+    "offspring_per_campaign_generation": 5,
+    "parent_rank_pressure": 2.0,
+    "population_per_band": 10,
+    "random_seed": 20260818,
+    "scale_probabilities": {
+      "B2": {
+        "large": 0.15,
+        "medium": 0.5,
+        "small": 0.35
+      },
+      "B3": {
+        "large": 0.15,
+        "medium": 0.5,
+        "small": 0.35
+      },
+      "B4": {
+        "large": 0.15,
+        "medium": 0.5,
+        "small": 0.35
+      },
+      "B5": {
+        "large": 0.1,
+        "medium": 0.45,
+        "small": 0.45
+      },
+      "B6": {
+        "large": 0.05,
+        "medium": 0.35,
+        "small": 0.6
+      },
+      "B7": {
+        "large": 0.02,
+        "medium": 0.23,
+        "small": 0.75
+      }
+    },
+    "schema_version": 1,
+    "target_new_physics_samples": 300,
+    "total_dataset_band_targets": {
+      "B2": 120,
+      "B3": 120,
+      "B4": 140,
+      "B5": 170,
+      "B6": 180,
+      "B7": 100
+    }
+  },
+  "supplement_config_hash": "9fcaecccc7b0d43821e3e3a4cad954ad892c9e6106d7402b8a7d1a130cc93d83"
+}

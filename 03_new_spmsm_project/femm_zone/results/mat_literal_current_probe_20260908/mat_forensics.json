@@ -1,0 +1,531 @@
+{
+  "current_fields": {
+    "Ia": 0.0,
+    "Ib": 0.0,
+    "Ic": 0.0,
+    "Id": 5.0,
+    "Iq": 0.0,
+    "Is_amp": 3.5
+  },
+  "timing_fields": {
+    "P": 4.0,
+    "Nrpm": 6000.0,
+    "F": 400.0,
+    "T": 0.0025,
+    "wmech": 628.3185307179587,
+    "steps": 6.0,
+    "stps": 72.0,
+    "period": 1.0
+  },
+  "timing_consistency": {
+    "F_equals_P_times_rpm_div60": true,
+    "T_equals_inverse_F": true,
+    "period_mechanical_degrees": 90.0,
+    "T_over_stps_seconds": 3.472222222222222e-05,
+    "corresponding_mechanical_step_degrees": 1.25
+  },
+  "snapshot_checks": {
+    "population_equals_history_last": true,
+    "Tavg_equals_history_last": true,
+    "DeltaT_equals_history_last": true,
+    "Fitvalue_equals_history_last": true,
+    "VolumePM_equals_history_last": true,
+    "Material_equals_raw_final": true,
+    "Material_change_equals_corrected_final": true
+  },
+  "duplicate_gene_checks": [
+    {
+      "candidate_id": "low_tavg",
+      "count": 1,
+      "row_generation_positions": [
+        [
+          338,
+          0
+        ]
+      ],
+      "Tavg_range": [
+        1.6172313314639906,
+        1.6172313314639906
+      ],
+      "DeltaT_range": [
+        0.35074853072759105,
+        0.35074853072759105
+      ]
+    },
+    {
+      "candidate_id": "median_tavg",
+      "count": 5,
+      "row_generation_positions": [
+        [
+          30,
+          33
+        ],
+        [
+          190,
+          31
+        ],
+        [
+          280,
+          34
+        ],
+        [
+          534,
+          32
+        ],
+        [
+          574,
+          32
+        ]
+      ],
+      "Tavg_range": [
+        3.183132769850227,
+        3.183132769850227
+      ],
+      "DeltaT_range": [
+        0.454533168517397,
+        0.454533168517397
+      ]
+    },
+    {
+      "candidate_id": "high_tavg",
+      "count": 1,
+      "row_generation_positions": [
+        [
+          258,
+          193
+        ]
+      ],
+      "Tavg_range": [
+        3.9186576845750505,
+        3.9186576845750505
+      ],
+      "DeltaT_range": [
+        0.21329158923616598,
+        0.21329158923616598
+      ]
+    },
+    {
+      "candidate_id": "final_low_tavg",
+      "count": 7,
+      "row_generation_positions": [
+        [
+          41,
+          199
+        ],
+        [
+          270,
+          200
+        ],
+        [
+          303,
+          198
+        ],
+        [
+          308,
+          199
+        ],
+        [
+          397,
+          198
+        ],
+        [
+          432,
+          197
+        ],
+        [
+          491,
+          200
+        ]
+      ],
+      "Tavg_range": [
+        3.155745847366145,
+        3.155745847366145
+      ],
+      "DeltaT_range": [
+        0.18494258054991697,
+        0.18494258054991697
+      ]
+    },
+    {
+      "candidate_id": "final_high_tavg",
+      "count": 4,
+      "row_generation_positions": [
+        [
+          33,
+          200
+        ],
+        [
+          56,
+          199
+        ],
+        [
+          63,
+          200
+        ],
+        [
+          451,
+          198
+        ]
+      ],
+      "Tavg_range": [
+        3.8501566605986075,
+        3.8501566605986075
+      ],
+      "DeltaT_range": [
+        0.4947766516831762,
+        0.4947766516831762
+      ]
+    }
+  ],
+  "function_subsystem": {
+    "byte_count": 1200,
+    "ascii_strings": [
+      "MCOS",
+      "MCOS",
+      "FileWrapper__",
+      "function_handle_workspace",
+      "MCOS"
+    ],
+    "decoded_records": [
+      {
+        "name": "",
+        "shape": [
+          1,
+          1
+        ],
+        "mclass": 2,
+        "decoded": {
+          "MCOS": {
+            "_TypeSystem": [
+              "MCOS"
+            ],
+            "_Class": [
+              "FileWrapper__"
+            ],
+            "_ObjectMetadata": [
+              [
+                [
+                  4,
+                  0,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  72,
+                  0,
+                  0,
+                  0,
+                  104,
+                  0,
+                  0,
+                  0,
+                  128,
+                  0,
+                  0,
+                  0,
+                  176,
+                  0,
+                  0,
+                  0,
+                  184,
+                  0,
+                  0,
+                  0,
+                  184,
+                  0,
+                  0,
+                  0,
+                  184,
+                  0,
+                  0,
+                  0,
+                  192,
+                  0,
+                  0,
+                  0,
+                  97,
+                  110,
+                  121,
+                  0,
+                  102,
+                  117,
+                  110,
+                  99,
+                  116,
+                  105,
+                  111,
+                  110,
+                  95,
+                  104,
+                  97,
+                  110,
+                  100,
+                  108,
+                  101,
+                  95,
+                  119,
+                  111,
+                  114,
+                  107,
+                  115,
+                  112,
+                  97,
+                  99,
+                  101,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                [],
+                [
+                  [
+                    3707764736,
+                    2,
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  {}
+                ],
+                [
+                  [],
+                  []
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  [],
+                  []
+                ]
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "name": "",
+        "shape": [
+          1,
+          88
+        ],
+        "mclass": 9,
+        "decoded": [
+          0,
+          1,
+          73,
+          77,
+          0,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          72,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          4,
+          0,
+          5,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          77,
+          67,
+          79,
+          83,
+          0,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "limitation": "Traversable MCOS records decoded; undocumented object metadata not claimed to be a full MATLAB runtime deserialization. No current formula or waveform found."
+  }
+}

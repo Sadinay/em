@@ -1,0 +1,108 @@
+{
+  "candidate_id": "candidate_002",
+  "mapping": "air0",
+  "torque_sign_multiplier_for_history_comparison": -1,
+  "angles_mechanical_deg": [
+    3.0,
+    6.0,
+    9.0,
+    12.0,
+    15.0,
+    18.0,
+    21.0,
+    24.0,
+    27.0,
+    30.0
+  ],
+  "raw_femm_torques_nm": [
+    -1.829447201691962,
+    -1.841430494302021,
+    -2.015857533101308,
+    -1.097015077240964,
+    -1.012584320144235,
+    -1.331789288069166,
+    -1.455881937275677,
+    -1.834938641010658,
+    -1.797737218701104,
+    -2.710844456925023
+  ],
+  "sign_reversed_torques_nm": [
+    1.829447201691962,
+    1.841430494302021,
+    2.015857533101308,
+    1.097015077240964,
+    1.012584320144235,
+    1.331789288069166,
+    1.455881937275677,
+    1.834938641010658,
+    1.797737218701104,
+    2.710844456925023
+  ],
+  "historical_tavg_nm": 2.858312027674773,
+  "historical_delta_t": 1.067494754869203,
+  "tavg_candidates_nm": {
+    "mean_10_points_3_to_30": 1.692752616846212,
+    "mean_first_5_points_3_to_15": 1.559266925296098,
+    "mean_second_5_points_18_to_30": 1.8262383083963258,
+    "trapz_3_to_30": 1.628597815461514
+  },
+  "tavg_relative_errors": {
+    "mean_10_points_3_to_30": 0.4077789267033731,
+    "mean_first_5_points_3_to_15": 0.45447980829281387,
+    "mean_second_5_points_18_to_30": 0.3610780451139323,
+    "trapz_3_to_30": 0.43022392247834024
+  },
+  "delta_candidates": {
+    "peak_to_peak_10_points": 1.698260136780788,
+    "peak_to_peak_first_5": 1.003273212957073,
+    "peak_to_peak_second_5": 1.379055168855857
+  },
+  "delta_relative_errors": {
+    "peak_to_peak_10_points": 0.5908838231143071,
+    "peak_to_peak_first_5": 0.0601609905989646,
+    "peak_to_peak_second_5": 0.29186130663923354
+  },
+  "fifteen_degree_periodicity": {
+    "pairs_deg": [
+      [
+        3,
+        18
+      ],
+      [
+        6,
+        21
+      ],
+      [
+        9,
+        24
+      ],
+      [
+        12,
+        27
+      ],
+      [
+        15,
+        30
+      ]
+    ],
+    "signed_pair_differences_nm": [
+      -0.4976579136227961,
+      -0.38554855702634394,
+      -0.18091889209064993,
+      0.7007221414601401,
+      1.698260136780788
+    ],
+    "absolute_pair_differences_nm": [
+      0.4976579136227961,
+      0.38554855702634394,
+      0.18091889209064993,
+      0.7007221414601401,
+      1.698260136780788
+    ],
+    "mean_absolute_pair_difference_nm": 0.6926215281961436,
+    "max_absolute_pair_difference_nm": 1.698260136780788,
+    "rmse_pair_difference_nm": 0.8722547501782932,
+    "rmse_normalized_by_10_point_range": 0.5136166899799781,
+    "periodic_within_1_percent_of_range_all_pairs": false
+  }
+}

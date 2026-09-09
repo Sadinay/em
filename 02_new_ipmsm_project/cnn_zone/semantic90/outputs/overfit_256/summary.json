@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "same_sample_indices_for_all_modes": true,
+  "target_scaler_uses_only_selected_training_samples": true,
+  "results": [
+    {
+      "mode": "logical10",
+      "samples": 256,
+      "epochs_completed": 60,
+      "elapsed_seconds": 7.693261599997641,
+      "parameter_count": 911346,
+      "best_training_loss": 0.002894580946303904,
+      "best_evaluation_objective": 0.07739645077406461,
+      "metrics_on_same_256_training_samples": {
+        "tavg": {
+          "mae": 0.01633514277637005,
+          "rmse": 0.02255847305059433,
+          "r2": 0.9987120032310486
+        },
+        "delta_t": {
+          "mae": 0.008324408903717995,
+          "rmse": 0.012978728860616684,
+          "r2": 0.9982734322547913
+        }
+      },
+      "purpose": "pipeline/memorization check only; not a generalization result"
+    },
+    {
+      "mode": "semantic224",
+      "samples": 256,
+      "epochs_completed": 130,
+      "elapsed_seconds": 110.1855407999974,
+      "parameter_count": 990706,
+      "best_training_loss": 0.0036677783355116844,
+      "best_evaluation_objective": 0.11049512671445375,
+      "metrics_on_same_256_training_samples": {
+        "tavg": {
+          "mae": 0.020784003660082817,
+          "rmse": 0.027631310746073723,
+          "r2": 0.9980675578117371
+        },
+        "delta_t": {
+          "mae": 0.01477774791419506,
+          "rmse": 0.020821714773774147,
+          "r2": 0.9955562949180603
+        }
+      },
+      "purpose": "pipeline/memorization check only; not a generalization result"
+    }
+  ]
+}

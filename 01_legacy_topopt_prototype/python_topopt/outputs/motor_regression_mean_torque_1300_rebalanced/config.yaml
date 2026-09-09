@@ -1,0 +1,56 @@
+schema_version: 1
+data:
+  runs:
+  - runs/improved_dataset_1000_20260807_001
+  - runs/band_supplement_300_20260808_001
+  material_categories:
+  - 0
+  - 1
+  - 2
+  stored_matrix_shape:
+  - 18
+  - 10
+  network_matrix_shape:
+  - 18
+  - 10
+  one_hot: true
+  resize: false
+  interpolation: false
+  augmentation: none
+  targets:
+  - name: mean_torque
+    column: t_avg
+split:
+  group_by: topology_family
+  train_fraction: 0.7
+  val_fraction: 0.15
+  test_fraction: 0.15
+  random_seed: 20260809
+  topology_family_hamming_threshold: 12
+  reuse_from: outputs/motor_regression_ripple_1300_rebalanced/data_split.json
+  target_stratification_bins: 10
+  band_balance_weight: 4.0
+  target_balance_weight: 1.0
+  search_restarts: 128
+model:
+  primary: resnet20
+  circular_width_padding: false
+  dropout: 0.0
+training:
+  optimizer: AdamW
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  batch_size: 32
+  loss: MSELoss
+  max_epochs: 300
+  early_stopping_patience: 30
+  scheduler:
+    name: ReduceLROnPlateau
+    factor: 0.5
+    patience: 10
+    min_lr: 1.0e-06
+  random_seed: 20260809
+  device: auto
+  data_loader_workers: 0
+output:
+  directory: outputs/motor_regression_mean_torque_1300_rebalanced

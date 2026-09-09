@@ -1,0 +1,99 @@
+{
+  "status": "selection_ready_for_review_no_training_started",
+  "selected_models": {
+    "logical10": "logical10/mini_inception_v2",
+    "semantic224": "semantic224/vgg16_v2",
+    "selection_metric": "lowest three-seed mean test standardized MSE within each input family"
+  },
+  "sample_counts": {
+    "full_scheme_a_train_pool": 117160,
+    "retained_v2_train": 11700,
+    "newly_added": 18300,
+    "v3_train": 30000,
+    "v3_stratified_validation": 5000,
+    "retained_v2_validation": 1500,
+    "core_test_for_v2_comparison": 1500,
+    "full_scheme_a_validation_for_final_audit": 14656,
+    "full_scheme_a_test_for_final_evaluation": 14655
+  },
+  "sampling": {
+    "seed": 20260823,
+    "method": "retain V2 train; enforce fixed Tavg and DeltaT marginal quotas; use smoothed V2 held-out error to distribute quota within the 7x6 joint cells; random sample without replacement inside each cell",
+    "tavg_labels": [
+      "<0.5",
+      "0.5-1.0",
+      "1.0-1.5",
+      "1.5-2.0",
+      "2.0-2.5",
+      "2.5-3.0",
+      ">=3.0"
+    ],
+    "tavg_targets": [
+      1800,
+      3000,
+      4000,
+      5500,
+      8000,
+      7161,
+      539
+    ],
+    "delta_t_labels": [
+      "<0.5",
+      "0.5-0.75",
+      "0.75-1.0",
+      "1.0-1.5",
+      "1.5-2.0",
+      ">=2.0"
+    ],
+    "delta_t_targets": [
+      6000,
+      7000,
+      9000,
+      5384,
+      2110,
+      506
+    ],
+    "rare_tail_policy": "select every Scheme-A training sample with DeltaT >= 1.5 N m or Tavg >= 3.0 N m"
+  },
+  "proposed_training": {
+    "random_seeds": [
+      20260823,
+      20260824
+    ],
+    "logical10_model": "Logical10MiniInceptionV2 architecture, V3 training run",
+    "logical10_max_epochs": 100,
+    "semantic224_model": "Semantic90VGG16V2 architecture, V3 training run",
+    "semantic224_max_epochs": 35,
+    "other_training_settings": "unchanged from the corresponding V2 model",
+    "validation_policy": "retain the V2 validation subset and extend to 5,000 by deterministic proportional stratification over the 7x6 Tavg-DeltaT cells",
+    "evaluation_policy": "early stopping on the 5,000-sample validation set; report the original 1,500-sample core test for V2 comparability; final audit on all 14,656 Scheme-A validation and all 14,655 Scheme-A test samples",
+    "training_started": false
+  },
+  "integrity": {
+    "train_unique": true,
+    "all_v2_training_samples_retained": true,
+    "all_v3_samples_from_scheme_a_train_pool": true,
+    "all_v2_validation_samples_retained": true,
+    "all_v3_validation_from_scheme_a_validation_pool": true,
+    "core_test_is_original_v2_test": true,
+    "full_test_is_complete_scheme_a_test": true,
+    "train_validation_overlap": 0,
+    "train_core_test_overlap": 0,
+    "train_full_test_overlap": 0,
+    "validation_full_test_overlap": 0,
+    "joint_quota_exact": true,
+    "validation_joint_quota_exact": true
+  },
+  "artifacts": {
+    "fixed_split": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\reports\\v3_30000_selection\\fixed_v3_split_30000_5000_1500_full14655.npz",
+    "marginal_figure": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\reports\\v3_30000_selection\\v3_marginal_training_distribution.png",
+    "joint_figure": "C:\\Users\\26096\\Desktop\\em\\02_new_ipmsm_project\\reports\\v3_30000_selection\\v3_joint_training_distribution.png"
+  },
+  "index_hashes_sha256": {
+    "train": "4507a8cf3f839813a467038159df86b68605c3affe392f61259806d3b2d332d7",
+    "validation": "d9252cab156904453857245204121e2f035da4d32df333fa447991f3bf071c24",
+    "core_test": "2015c384a34f8da39e268a4a1e972f6eb5dad13937eb1786149c3c60a5c12c90",
+    "full_validation": "3acd5aba46ba1c4a934859c82f80a85835a0d5806298e0304dcdf24cb52ca57e",
+    "full_test": "774f5449d72572530e98a8a42d8411763d43f0fc70a2e4ec99c753f35e514d65"
+  }
+}

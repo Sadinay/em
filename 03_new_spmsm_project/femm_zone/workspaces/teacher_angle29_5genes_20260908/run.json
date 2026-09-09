@@ -1,0 +1,492 @@
+{
+  "status": "solved",
+  "config": {
+    "mat_file": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+    "template_file": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem",
+    "input_sha256": {
+      "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+      "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+    },
+    "current": {
+      "amplitude_a": 3.5,
+      "pole_pairs": 4,
+      "omega_e_rad_s": 2513.2741228718346,
+      "omega_m_rad_s": 628.3185307179587
+    },
+    "current_source": "导师cos(omega*t)公式；MAT inp.Is_amp、F、wmech、P。t=deg2rad(ANG_R)/wmech。",
+    "problem": {
+      "Frequency": 0,
+      "Precision": 1e-08,
+      "MinAngle": 15,
+      "DoSmartMesh": 1,
+      "Depth": 36.0,
+      "LengthUnits": "millimeters",
+      "ProblemType": "planar",
+      "Coordinates": "cartesian",
+      "ACSolver": 0,
+      "PrevType": 0,
+      "PrevSoln": ""
+    },
+    "airgap": {
+      "name": "sliding_airgap",
+      "boundary_type": 6,
+      "outer_angle_deg": 0,
+      "initial_inner_angle_deg": 29.0
+    },
+    "angle_source": "导师补充ang_0=29°；用户指定ANG_R=0:3:15°。原脚本T/ANG_R生成部分未提供。",
+    "rotor_travel_angles_deg": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15
+    ],
+    "inner_angles_deg": [
+      29.0,
+      32.0,
+      35.0,
+      38.0,
+      41.0,
+      44.0
+    ],
+    "initial_phases_deg": [
+      0.0
+    ],
+    "gene_source": "population_all",
+    "genes": [
+      {
+        "id": "G1",
+        "state": 0,
+        "row": 338
+      },
+      {
+        "id": "G2",
+        "state": 31,
+        "row": 190
+      },
+      {
+        "id": "G3",
+        "state": 193,
+        "row": 258
+      },
+      {
+        "id": "G4",
+        "state": 200,
+        "row": 491
+      },
+      {
+        "id": "G5",
+        "state": 200,
+        "row": 33
+      }
+    ],
+    "torque_multiplier": 1.0,
+    "comparison_note": "六点算术平均；DeltaT暂按相对峰峰值比较。旧-2经验换算另存对照，非已知历史公式。",
+    "material_source": "几何、绕组和材料BH曲线来自FEM模板；基因只切换设计区Air/N38。"
+  },
+  "genes": [
+    {
+      "id": "G1",
+      "state": 0,
+      "row": 338,
+      "pm_cells": 45,
+      "reference_tavg_nm": 1.6172313314639906,
+      "reference_delta_t": 0.35074853072759105
+    },
+    {
+      "id": "G2",
+      "state": 31,
+      "row": 190,
+      "pm_cells": 80,
+      "reference_tavg_nm": 3.183132769850227,
+      "reference_delta_t": 0.454533168517397
+    },
+    {
+      "id": "G3",
+      "state": 193,
+      "row": 258,
+      "pm_cells": 100,
+      "reference_tavg_nm": 3.9186576845750505,
+      "reference_delta_t": 0.21329158923616598
+    },
+    {
+      "id": "G4",
+      "state": 200,
+      "row": 491,
+      "pm_cells": 82,
+      "reference_tavg_nm": 3.155745847366145,
+      "reference_delta_t": 0.18494258054991697
+    },
+    {
+      "id": "G5",
+      "state": 200,
+      "row": 33,
+      "pm_cells": 99,
+      "reference_tavg_nm": 3.8501566605986075,
+      "reference_delta_t": 0.4947766516831762
+    }
+  ],
+  "cases": [
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 29.0,
+      "model": "G1\\phase_0\\angle_29\\model.fem",
+      "currents_a": {
+        "A": 3.5,
+        "B": -1.7499999999999991,
+        "C": -1.7500000000000016
+      },
+      "prepared_sha256": "23accb10faa9ffb8b64a07908da10518728a488dbde654e047dd750ea789450e"
+    },
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 32.0,
+      "model": "G1\\phase_0\\angle_32\\model.fem",
+      "currents_a": {
+        "A": 3.42351660256832,
+        "B": -1.081559480312315,
+        "C": -2.3419571222560047
+      },
+      "prepared_sha256": "135bc4e12b859e4d80ed674ca4e4f534b660e4b5cd75adc9fc636847de7a83da"
+    },
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 35.0,
+      "model": "G1\\phase_0\\angle_35\\model.fem",
+      "currents_a": {
+        "A": 3.197409101749103,
+        "B": -0.3658496214367867,
+        "C": -2.8315594803123174
+      },
+      "prepared_sha256": "13e602875684cf1eb19c21204d1ac7b24bdda90466ff234870c3105e4f01fdcf"
+    },
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 38.0,
+      "model": "G1\\phase_0\\angle_38\\model.fem",
+      "currents_a": {
+        "A": 2.831559480312316,
+        "B": 0.3658496214367879,
+        "C": -3.1974091017491038
+      },
+      "prepared_sha256": "78370c5a84e3be9542704591eb7b81ae7c9b2d65bc623c467f6644bfde193073"
+    },
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 41.0,
+      "model": "G1\\phase_0\\angle_41\\model.fem",
+      "currents_a": {
+        "A": 2.341957122256004,
+        "B": 1.081559480312316,
+        "C": -3.42351660256832
+      },
+      "prepared_sha256": "36bf86536783a26c37201419a86f913b4387967d1c3c2c6de8d065186b7b92ba"
+    },
+    {
+      "gene_id": "G1",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 44.0,
+      "model": "G1\\phase_0\\angle_44\\model.fem",
+      "currents_a": {
+        "A": 1.7500000000000004,
+        "B": 1.7500000000000004,
+        "C": -3.5
+      },
+      "prepared_sha256": "ed72f34988ab4ddb392ad4d299fc527033bc8b76bd25f2ebd819f8321a5c6931"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 29.0,
+      "model": "G2\\phase_0\\angle_29\\model.fem",
+      "currents_a": {
+        "A": 3.5,
+        "B": -1.7499999999999991,
+        "C": -1.7500000000000016
+      },
+      "prepared_sha256": "e982c01a1a090b1b784d710a182e0c32a0a38ef5c4729a5a74f2cd670c71741a"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 32.0,
+      "model": "G2\\phase_0\\angle_32\\model.fem",
+      "currents_a": {
+        "A": 3.42351660256832,
+        "B": -1.081559480312315,
+        "C": -2.3419571222560047
+      },
+      "prepared_sha256": "9dd06b12a89fec792063cc0c32cfa1e8afc1ea01ddbb74fb730dfc04cd473a12"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 35.0,
+      "model": "G2\\phase_0\\angle_35\\model.fem",
+      "currents_a": {
+        "A": 3.197409101749103,
+        "B": -0.3658496214367867,
+        "C": -2.8315594803123174
+      },
+      "prepared_sha256": "61c7878091b26a324c9f2cc0284c7a2ba85e3de9b68147e59c7454507928cb61"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 38.0,
+      "model": "G2\\phase_0\\angle_38\\model.fem",
+      "currents_a": {
+        "A": 2.831559480312316,
+        "B": 0.3658496214367879,
+        "C": -3.1974091017491038
+      },
+      "prepared_sha256": "376914686e677755d63a52c69326ef82d872dc1e79dedebd4af95cc2e69f9794"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 41.0,
+      "model": "G2\\phase_0\\angle_41\\model.fem",
+      "currents_a": {
+        "A": 2.341957122256004,
+        "B": 1.081559480312316,
+        "C": -3.42351660256832
+      },
+      "prepared_sha256": "e64aa7128330b7aa94308c7ec19a962bdd9b6ec399122ab9588b07e528d045bc"
+    },
+    {
+      "gene_id": "G2",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 44.0,
+      "model": "G2\\phase_0\\angle_44\\model.fem",
+      "currents_a": {
+        "A": 1.7500000000000004,
+        "B": 1.7500000000000004,
+        "C": -3.5
+      },
+      "prepared_sha256": "725242e60f3fd5c15a3ef689a395328506f6b0042910545740080f8eca9a79d3"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 29.0,
+      "model": "G3\\phase_0\\angle_29\\model.fem",
+      "currents_a": {
+        "A": 3.5,
+        "B": -1.7499999999999991,
+        "C": -1.7500000000000016
+      },
+      "prepared_sha256": "5586719763476ed85f3588cfda0ece59e3cb0ccb266c40ebbf6b134da277e367"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 32.0,
+      "model": "G3\\phase_0\\angle_32\\model.fem",
+      "currents_a": {
+        "A": 3.42351660256832,
+        "B": -1.081559480312315,
+        "C": -2.3419571222560047
+      },
+      "prepared_sha256": "29aaa72f2f0fd7387cb2515e01d0489eba3bbb643d44c1115d2c420157dbadcc"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 35.0,
+      "model": "G3\\phase_0\\angle_35\\model.fem",
+      "currents_a": {
+        "A": 3.197409101749103,
+        "B": -0.3658496214367867,
+        "C": -2.8315594803123174
+      },
+      "prepared_sha256": "15382ce0afd5b21de5d941e168a6201d5a8130ae50b1d930a7341374cbbbe530"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 38.0,
+      "model": "G3\\phase_0\\angle_38\\model.fem",
+      "currents_a": {
+        "A": 2.831559480312316,
+        "B": 0.3658496214367879,
+        "C": -3.1974091017491038
+      },
+      "prepared_sha256": "250791afa59a88e263ad295111ec6f0c8c40abfa02c53ba837b7dcd4f634b9ff"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 41.0,
+      "model": "G3\\phase_0\\angle_41\\model.fem",
+      "currents_a": {
+        "A": 2.341957122256004,
+        "B": 1.081559480312316,
+        "C": -3.42351660256832
+      },
+      "prepared_sha256": "ab39732b89ebfeaa6b4d264589a5f0e464b57117874674bd6c2cfee749d1098e"
+    },
+    {
+      "gene_id": "G3",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 44.0,
+      "model": "G3\\phase_0\\angle_44\\model.fem",
+      "currents_a": {
+        "A": 1.7500000000000004,
+        "B": 1.7500000000000004,
+        "C": -3.5
+      },
+      "prepared_sha256": "54761a9d7892cb2f2272701ee66a0b6f6859e7b299c55a8e399cb907ee337ea7"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 29.0,
+      "model": "G4\\phase_0\\angle_29\\model.fem",
+      "currents_a": {
+        "A": 3.5,
+        "B": -1.7499999999999991,
+        "C": -1.7500000000000016
+      },
+      "prepared_sha256": "643b8e2ce40f4650c02abd7b70ec08079cca6d95242695cd8f83df983209d344"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 32.0,
+      "model": "G4\\phase_0\\angle_32\\model.fem",
+      "currents_a": {
+        "A": 3.42351660256832,
+        "B": -1.081559480312315,
+        "C": -2.3419571222560047
+      },
+      "prepared_sha256": "6bb870d89ff10ef2be4d08e171fe99a015c0a6d08c0f7feff43824cea35ef7b4"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 35.0,
+      "model": "G4\\phase_0\\angle_35\\model.fem",
+      "currents_a": {
+        "A": 3.197409101749103,
+        "B": -0.3658496214367867,
+        "C": -2.8315594803123174
+      },
+      "prepared_sha256": "95c8997d7ee169e0dba60e235bdfa8b0200f298e4e4686e8b45b13c33250eb91"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 38.0,
+      "model": "G4\\phase_0\\angle_38\\model.fem",
+      "currents_a": {
+        "A": 2.831559480312316,
+        "B": 0.3658496214367879,
+        "C": -3.1974091017491038
+      },
+      "prepared_sha256": "abfd3d757fa320f62c3ebdc7878c9769c4fb47b7c2e13795c62c0c9fc17afed4"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 41.0,
+      "model": "G4\\phase_0\\angle_41\\model.fem",
+      "currents_a": {
+        "A": 2.341957122256004,
+        "B": 1.081559480312316,
+        "C": -3.42351660256832
+      },
+      "prepared_sha256": "5cf81c6ad6533e8f0292aba6df607889ea713dcceb1b50a83dbd789cf0f57d24"
+    },
+    {
+      "gene_id": "G4",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 44.0,
+      "model": "G4\\phase_0\\angle_44\\model.fem",
+      "currents_a": {
+        "A": 1.7500000000000004,
+        "B": 1.7500000000000004,
+        "C": -3.5
+      },
+      "prepared_sha256": "e07730b3a3fad1c5bba5e893b6e2c06818b951fb1e68dc1149245a004a9e1fe7"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 29.0,
+      "model": "G5\\phase_0\\angle_29\\model.fem",
+      "currents_a": {
+        "A": 3.5,
+        "B": -1.7499999999999991,
+        "C": -1.7500000000000016
+      },
+      "prepared_sha256": "3910a052e3cb935af308a88871c093382ade7d00d29178166c8a4962f4f9404e"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 32.0,
+      "model": "G5\\phase_0\\angle_32\\model.fem",
+      "currents_a": {
+        "A": 3.42351660256832,
+        "B": -1.081559480312315,
+        "C": -2.3419571222560047
+      },
+      "prepared_sha256": "7087d7c1d982e15c33ad2d63297790c317d55b5fe3ce3f9dc38a27f3b16f8524"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 35.0,
+      "model": "G5\\phase_0\\angle_35\\model.fem",
+      "currents_a": {
+        "A": 3.197409101749103,
+        "B": -0.3658496214367867,
+        "C": -2.8315594803123174
+      },
+      "prepared_sha256": "f238afe7a03c92331c641d6caf38780aee22a2188a2f79b60ef74412ec9c3df7"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 38.0,
+      "model": "G5\\phase_0\\angle_38\\model.fem",
+      "currents_a": {
+        "A": 2.831559480312316,
+        "B": 0.3658496214367879,
+        "C": -3.1974091017491038
+      },
+      "prepared_sha256": "66f80f9c2008db530ff7ffdc0abd6a8cbc0d9df9df2b2c431ec008ba1e525420"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 41.0,
+      "model": "G5\\phase_0\\angle_41\\model.fem",
+      "currents_a": {
+        "A": 2.341957122256004,
+        "B": 1.081559480312316,
+        "C": -3.42351660256832
+      },
+      "prepared_sha256": "543be176815aaf2e1b4fc99103d584ccdd3b8efa23b015f456749251fda6519b"
+    },
+    {
+      "gene_id": "G5",
+      "initial_phase_deg": 0.0,
+      "inner_angle_deg": 44.0,
+      "model": "G5\\phase_0\\angle_44\\model.fem",
+      "currents_a": {
+        "A": 1.7500000000000004,
+        "B": 1.7500000000000004,
+        "C": -3.5
+      },
+      "prepared_sha256": "b18153e1e342ff15f7e32e05d5aa43db0a82015e9c3e213bf21ba24f35ea0980"
+    }
+  ]
+}

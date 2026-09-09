@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "mode": "improved_dataset_campaigns",
+  "random_seed": 20260817,
+  "target_valid_unique_samples": 1000,
+  "offspring_per_campaign_generation": 5,
+  "elite_count": 2,
+  "minimum_completed_generations": 30,
+  "maximum_generations": 1000,
+  "maximum_proposals": 100000,
+  "parent_selection": {
+    "objective_exploitation_probability": 0.70,
+    "objective_rank_pressure": 2.0,
+    "band_deficit_guidance": true,
+    "maximum_band_weight": 4.0
+  },
+  "hamming_admission": {
+    "small": {"minimum_archive_distance": 1, "maximum_parent_distance": 12},
+    "medium": {"minimum_archive_distance": 3, "maximum_parent_distance": 30},
+    "large": {"minimum_archive_distance": 6, "maximum_parent_distance": 60}
+  },
+  "selection": {
+    "metric": "historical_j",
+    "direction": "minimize",
+    "remaining_slots": "greedy_maximum_hamming_with_objective_tiebreak"
+  }
+}

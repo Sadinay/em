@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "mode": "improved_dataset_sampling",
+  "random_seed": 20260807,
+  "parent_archive_target": 60,
+  "campaign_count": 6,
+  "parents_per_campaign": 10,
+  "initial_parent_reuse": false,
+  "topology_cluster_target": 12,
+  "parents_per_cluster": 5,
+  "seed": {
+    "mat_path": "C:\\Users\\26096\\Desktop\\em\\FP\\CLONALG\\seed_bits_fine.mat",
+    "mat_variable": "seed_bits",
+    "mat_sha256": "2665708b95df13c525483463ec0d836bc9f1bee73e93f53fc29a7762d4b208e7",
+    "chromosome_sha256": "00435b1e344f7280618f320a984a2ee6526a0debe44967d6f071d8662a6ceac3"
+  },
+  "physics": {
+    "source_config_path": "C:\\Users\\26096\\Desktop\\em\\python_topopt\\configs\\dataset_merged_v5.json",
+    "source_config_sha256": "f18b26cec31861eb763ac2c0500d3832779dd39cb27d4f58c59382f0d1c5f4a3",
+    "reference_t_avg_nm": 0.8707406437252049,
+    "formula_version": "historical_six_angle_v1"
+  },
+  "constraints": {
+    "minimum_copper_island_cells": 4,
+    "theta_periodic": false,
+    "fixed_cells": {}
+  },
+  "proposal": {
+    "selection_window": 50,
+    "maximum_proposals": 100000,
+    "checkpoint_every_proposal": true,
+    "operator_weights": {
+      "connected_region_repaint": 0.55,
+      "boundary_growth": 0.30,
+      "rectangular_patch": 0.15
+    },
+    "scales": {
+      "small": {
+        "probability": 0.45,
+        "minimum_cells": 1,
+        "maximum_cells": 4,
+        "minimum_archive_distance": 0,
+        "maximum_parent_distance": 180
+      },
+      "medium": {
+        "probability": 0.35,
+        "minimum_cells": 5,
+        "maximum_cells": 15,
+        "minimum_archive_distance": 0,
+        "maximum_parent_distance": 180
+      },
+      "large": {
+        "probability": 0.20,
+        "minimum_cells": 16,
+        "maximum_cells": 40,
+        "minimum_archive_distance": 0,
+        "maximum_parent_distance": 180
+      }
+    },
+    "hamming_admission_mode": "observe_only"
+  },
+  "repair": {
+    "floating_iron_strategy": "remove",
+    "small_copper_island_strategy": "remove",
+    "maximum_iterations": 8,
+    "maximum_repair_hamming": 40
+  },
+  "lineage": {
+    "maximum_parents_per_generation_lineage": 60,
+    "topology_family_candidate_distance": 20
+  }
+}

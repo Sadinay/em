@@ -1,0 +1,172 @@
+{
+  "mat_parameters": {
+    "P": 4.0,
+    "Is_amp": 3.5,
+    "Id": 5.0,
+    "Iq": 0.0,
+    "Ia": 0.0,
+    "Ib": 0.0,
+    "Ic": 0.0,
+    "steps": 6.0,
+    "rotorschift": 22.5,
+    "PM2schiftangle": 67.5
+  },
+  "angles_mechanical_deg": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    15
+  ],
+  "outer_angle_deg": 0,
+  "min_angle_deg": 15,
+  "input_sha256": {
+    "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+    "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+  },
+  "torque_multiplier": -2.0,
+  "torque_scale_note": "Retain prior empirical -2*gap torque for comparison; physical/history scale NOT established; no fitting in this run.",
+  "ripple_definition": "(max(T)-min(T))/abs(mean(T)); six-point arithmetic mean; interpreting historical DeltaT this way remains a hypothesis.",
+  "current_formula": "theta_e=P*inner_angle+phase_offset; ABC=Is_amp*cos(theta_e+[0,-120,120] deg)",
+  "current_convention_note": "The requested initial electrical phases are listed explicitly in scenarios and applied in common to all five genes. The scan varies phase only; it does not alter amplitude, current direction, torque scale, or genes. No per-gene phase fitting.",
+  "material_note": "Original 03 FEM nonlinear Pure Iron/N38 and unchanged geometry/magnetization; only mapped genes, Inner Angle, and currents differ.",
+  "sources": [
+    "https://www.mathworks.com/help/mcb/ref/surfacemountpmsm.html",
+    "https://www.femm.info/doku/doku.php?id=rotormotion"
+  ],
+  "candidates": [
+    {
+      "gene_label": "G1",
+      "candidate_id": "low_tavg",
+      "state_index_0based": 0,
+      "population_row_0based": 338,
+      "pm_cells": 45,
+      "historical_tavg_nm": 1.6172313314639906,
+      "historical_delta_t": 0.35074853072759105
+    },
+    {
+      "gene_label": "G2",
+      "candidate_id": "median_tavg",
+      "state_index_0based": 31,
+      "population_row_0based": 190,
+      "pm_cells": 80,
+      "historical_tavg_nm": 3.183132769850227,
+      "historical_delta_t": 0.454533168517397
+    },
+    {
+      "gene_label": "G3",
+      "candidate_id": "high_tavg",
+      "state_index_0based": 193,
+      "population_row_0based": 258,
+      "pm_cells": 100,
+      "historical_tavg_nm": 3.9186576845750505,
+      "historical_delta_t": 0.21329158923616598
+    },
+    {
+      "gene_label": "G4",
+      "candidate_id": "final_low_tavg",
+      "state_index_0based": 200,
+      "population_row_0based": 491,
+      "pm_cells": 82,
+      "historical_tavg_nm": 3.155745847366145,
+      "historical_delta_t": 0.18494258054991697
+    },
+    {
+      "gene_label": "G5",
+      "candidate_id": "final_high_tavg",
+      "state_index_0based": 200,
+      "population_row_0based": 33,
+      "pm_cells": 99,
+      "historical_tavg_nm": 3.8501566605986075,
+      "historical_delta_t": 0.4947766516831762
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "phase_p2",
+      "source": "Is_amp",
+      "angle_factor": 1,
+      "phase_offset_electrical_deg": 2.0,
+      "label": "Is_amp=3.5; initial electrical phase=2 deg"
+    },
+    {
+      "id": "phase_p119",
+      "source": "Is_amp",
+      "angle_factor": 1,
+      "phase_offset_electrical_deg": 119.0,
+      "label": "Is_amp=3.5; initial electrical phase=119 deg"
+    },
+    {
+      "id": "phase_p121",
+      "source": "Is_amp",
+      "angle_factor": 1,
+      "phase_offset_electrical_deg": 121.0,
+      "label": "Is_amp=3.5; initial electrical phase=121 deg"
+    },
+    {
+      "id": "phase_p121p6",
+      "source": "Is_amp",
+      "angle_factor": 1,
+      "phase_offset_electrical_deg": 121.6,
+      "label": "Is_amp=3.5; initial electrical phase=121.6 deg"
+    },
+    {
+      "id": "phase_p122",
+      "source": "Is_amp",
+      "angle_factor": 1,
+      "phase_offset_electrical_deg": 122.0,
+      "label": "Is_amp=3.5; initial electrical phase=122 deg"
+    },
+    {
+      "id": "phase_p123",
+      "source": "Is_amp",
+      "angle_factor": 1,
+      "phase_offset_electrical_deg": 123.0,
+      "label": "Is_amp=3.5; initial electrical phase=123 deg"
+    },
+    {
+      "id": "phase_p124",
+      "source": "Is_amp",
+      "angle_factor": 1,
+      "phase_offset_electrical_deg": 124.0,
+      "label": "Is_amp=3.5; initial electrical phase=124 deg"
+    },
+    {
+      "id": "phase_p125",
+      "source": "Is_amp",
+      "angle_factor": 1,
+      "phase_offset_electrical_deg": 125.0,
+      "label": "Is_amp=3.5; initial electrical phase=125 deg"
+    },
+    {
+      "id": "phase_p358",
+      "source": "Is_amp",
+      "angle_factor": 1,
+      "phase_offset_electrical_deg": 358.0,
+      "label": "Is_amp=3.5; initial electrical phase=358 deg"
+    },
+    {
+      "id": "phase_p359p8",
+      "source": "Is_amp",
+      "angle_factor": 1,
+      "phase_offset_electrical_deg": 359.8,
+      "label": "Is_amp=3.5; initial electrical phase=359.8 deg"
+    }
+  ],
+  "requested_initial_phases_degrees": [
+    2.0,
+    119.0,
+    121.0,
+    121.6,
+    122.0,
+    123.0,
+    124.0,
+    125.0,
+    358.0,
+    359.8
+  ],
+  "baseline_path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\current_modes_5genes_20260908",
+  "baseline_scenario": "is35_plus",
+  "mat_angle_evidence_note": "MAT rotorschift=22.5 and PM2schiftangle=67.5 describe geometry-related saved fields; neither is demonstrated to be the current offset. No explicit saved initial current phase was identified."
+}
