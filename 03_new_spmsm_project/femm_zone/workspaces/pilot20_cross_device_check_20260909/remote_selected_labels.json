@@ -1,0 +1,34 @@
+[
+  {
+    "gene_id": "b31089763d9003ea03c8955b45acbf4d41d7316c1c0cfdd6847e05b5901cad73",
+    "split_role": "test",
+    "source": "U",
+    "experiment_groups": "G-S;F-S;G-E;F-E",
+    "magnet_cells": "120",
+    "magnet_area_sector_mm2": "114.15083020868641",
+    "magnet_area_full_motor_mm2": "456.60332083474566",
+    "condition_fingerprint": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+    "status": "succeeded",
+    "successful_angles": "6",
+    "tavg_nm": "4.423606910641781",
+    "delta_t_nm": "0.839858464542476",
+    "elapsed_seconds_successful_attempts": "41.226848899999595",
+    "errors": ""
+  },
+  {
+    "gene_id": "05389c43608d9c9aa9c06f61fec2fc929402bc9b0f2de7d9f81adcdb8f106d27",
+    "split_role": "train",
+    "source": "L",
+    "experiment_groups": "G-S;G-E;F-S;F-E",
+    "magnet_cells": "67",
+    "magnet_area_sector_mm2": "63.304037622982705",
+    "magnet_area_full_motor_mm2": "253.21615049193082",
+    "condition_fingerprint": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+    "status": "succeeded",
+    "successful_angles": "6",
+    "tavg_nm": "2.51374112286973",
+    "delta_t_nm": "1.8089742910873787",
+    "elapsed_seconds_successful_attempts": "36.44830739999952",
+    "errors": ""
+  }
+]

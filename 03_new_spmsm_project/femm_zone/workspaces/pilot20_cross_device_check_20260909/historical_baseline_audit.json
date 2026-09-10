@@ -1,0 +1,41 @@
+{
+  "physical_fields_identical_to_successful_historical_run": [
+    "current",
+    "problem",
+    "airgap",
+    "rotor_travel_angles_deg",
+    "inner_angles_deg",
+    "initial_phases_deg",
+    "torque_multiplier",
+    "input_sha256"
+  ],
+  "historical_cases_checked": 24,
+  "historical_files_hash_verified": 48,
+  "historical_results": [
+    {
+      "gene": "G2",
+      "angles": 6,
+      "mean_error_vs_mat_nm": 1.092459456231154e-13,
+      "ripple_error_vs_mat_nm": 4.1300296516055823e-13
+    },
+    {
+      "gene": "G3",
+      "angles": 6,
+      "mean_error_vs_mat_nm": 1.0258460747536446e-13,
+      "ripple_error_vs_mat_nm": 1.2514433933574765e-12
+    },
+    {
+      "gene": "G4",
+      "angles": 6,
+      "mean_error_vs_mat_nm": 8.881784197001252e-15,
+      "ripple_error_vs_mat_nm": 1.5898393712632242e-13
+    },
+    {
+      "gene": "G5",
+      "angles": 6,
+      "mean_error_vs_mat_nm": 2.0250467969162855e-13,
+      "ripple_error_vs_mat_nm": 5.209166431541234e-13
+    }
+  ],
+  "note": "Read-only verification of existing G2-G5 baseline; no new historical solves."
+}

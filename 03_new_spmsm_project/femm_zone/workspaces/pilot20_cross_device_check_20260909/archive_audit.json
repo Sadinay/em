@@ -1,0 +1,150 @@
+{
+  "archive": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\outputs\\pilot20_results_20260909.zip",
+  "archive_sha256": "ac2a6def9f9db99e08f564da78bf6a92577c399e76bb81906a895e7764d6d8ef",
+  "archive_files": 431,
+  "checksums_verified": 429,
+  "unlisted_files": [
+    "TRANSFER_README.txt"
+  ],
+  "frozen_manifests_identical": [
+    "pilot20.csv",
+    "femm_queue.csv",
+    "train_G.csv",
+    "train_F.csv",
+    "dev_common.csv",
+    "test_common.csv",
+    "memberships.csv"
+  ],
+  "local_source_hashes": {
+    "template_sha256": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5",
+    "mat_sha256": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+    "mapping_source_sha256": "12947026bb7e7601c7d4bfcf2839d71fe6f00c082a61be2266cc979bf7d076e0",
+    "physical_source_sha256": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f"
+  },
+  "solver": {
+    "executable": "c:\\femm42\\bin\\femm.exe",
+    "binary_sha256": "5e83cf0899cabae2017868ddcce338e3ba4ac25d1bf8e511eac77eda2bc92a21",
+    "file_version": [
+      1,
+      0,
+      0,
+      1
+    ]
+  },
+  "physical": {
+    "mat_file": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+    "template_file": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem",
+    "input_sha256": {
+      "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+      "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+    },
+    "current": {
+      "amplitude_a": 3.5,
+      "pole_pairs": 4,
+      "omega_e_rad_s": 2513.2741228718346,
+      "omega_m_rad_s": 628.3185307179587
+    },
+    "current_source": "导师cos(omega*t)公式；MAT inp.Is_amp、F、wmech、P。t=deg2rad(ANG_R)/wmech。",
+    "problem": {
+      "Frequency": 0,
+      "Precision": 1e-08,
+      "MinAngle": 15,
+      "DoSmartMesh": 1,
+      "Depth": 36.0,
+      "LengthUnits": "millimeters",
+      "ProblemType": "planar",
+      "Coordinates": "cartesian",
+      "ACSolver": 0,
+      "PrevType": 0,
+      "PrevSoln": ""
+    },
+    "airgap": {
+      "name": "sliding_airgap",
+      "boundary_type": 6,
+      "outer_angle_deg": 0,
+      "initial_inner_angle_deg": 29.0
+    },
+    "angle_source": "导师补充ang_0=29°；用户指定ANG_R=0:3:15°。原脚本T/ANG_R生成部分未提供。",
+    "rotor_travel_angles_deg": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15
+    ],
+    "inner_angles_deg": [
+      29.0,
+      32.0,
+      35.0,
+      38.0,
+      41.0,
+      44.0
+    ],
+    "initial_phases_deg": [
+      0.0
+    ],
+    "torque_multiplier": 1.0,
+    "comparison_note": "六点算术平均；MAT DeltaT按峰峰转矩差(N·m)比较。旧-2经验换算另存对照。",
+    "material_source": "几何、绕组和材料BH曲线来自FEM模板；基因只切换设计区Air/N38。"
+  },
+  "remote_condition_fingerprint": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+  "verified_genes": 20,
+  "verified_angles": 120,
+  "max_remote_aggregation_error_nm": 8.881784197001252e-16,
+  "selection_rule": "Maximum remote mean torque and maximum remote peak-to-peak ripple, chosen before rerun",
+  "selected_genes": [
+    {
+      "gene_id": "b31089763d9003ea03c8955b45acbf4d41d7316c1c0cfdd6847e05b5901cad73",
+      "bits": "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+      "source": "U",
+      "family_id": "U/test/field_00053/attempt_0/params_68b8d1b0456e4fc4",
+      "split_role": "test",
+      "generator_parameters": "{\"attempt\": 0, \"m\": 117}",
+      "seed": "3862549395330453298",
+      "parent_old_index": "",
+      "parameter_regime": "parameter_holdout",
+      "selection_method": "",
+      "selection_rank": "",
+      "selection_distance_squared": "",
+      "display_region_id": "",
+      "experiment_groups": "G-S;F-S;G-E;F-E",
+      "magnet_cells": "120",
+      "raw_bits": "101111111111111111111110111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+      "raw_gene_id": "17ddf7629b34f321d09015f2ab84129fb17f102de63da5d73aa2f923d6cc679b",
+      "repair_changed_cells": "3",
+      "repair_passes": "1",
+      "nearest_old_train_hamming": "19",
+      "magnet_area_sector_mm2": "114.15083020868641",
+      "magnet_area_full_motor_mm2": "456.60332083474566",
+      "status": "pending"
+    },
+    {
+      "gene_id": "05389c43608d9c9aa9c06f61fec2fc929402bc9b0f2de7d9f81adcdb8f106d27",
+      "bits": "100011100011010011010111010110010100110100100110100110101110101010101000111000111000111000111000111000111001111111111111",
+      "source": "L",
+      "family_id": "L/pool/field_04017/attempt_0/params_9c3ecb8c2357da6f",
+      "split_role": "train",
+      "generator_parameters": "{\"attempt\": 0, \"m\": 66, \"scale\": [0.5, 2]}",
+      "seed": "13349480423077743689",
+      "parent_old_index": "",
+      "parameter_regime": "same_range",
+      "selection_method": "G;F",
+      "selection_rank": "G:1003;F:991",
+      "selection_distance_squared": "see train_G.csv and train_F.csv",
+      "display_region_id": "G:7;F:8",
+      "experiment_groups": "G-S;G-E;F-S;F-E",
+      "magnet_cells": "67",
+      "raw_bits": "100011100011010011010111010110010100110100100110100110101110101010101000111000111000111000111000111000111001111111111011",
+      "raw_gene_id": "3ee8eb4d9f9f3954cd1ae2d2d8af0a505580ff118872b7cafbdc4ea897df8e5d",
+      "repair_changed_cells": "1",
+      "repair_passes": "1",
+      "nearest_old_train_hamming": "38",
+      "magnet_area_sector_mm2": "63.304037622982705",
+      "magnet_area_full_motor_mm2": "253.21615049193082",
+      "status": "pending"
+    }
+  ],
+  "absolute_tolerance_nm": 1e-06,
+  "limitation": "Remote FEM/ANS files are absent; checked hash-linked receipts and reconstructed all 120 prepared FEM hashes. Fresh solves cover only the two selected genes."
+}
