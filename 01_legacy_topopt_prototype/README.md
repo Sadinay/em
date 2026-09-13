@@ -19,7 +19,7 @@
 - 可恢复的 FEMM 批处理与改进式数据采样；
 - 1,000个主样本和300个适应度带补充样本；
 - 转矩波动率和平均转矩的 ResNet-20、MLP、Small CNN 回归实验；
-- SQLite、训练模型、预测CSV和展示报告；原始参考模型保留，批量生成的FEM及ANS已清理；逐角度JSON和运行checkpoint压缩保存在`run_details.zip`。
+- SQLite 数据归档、预测 CSV 和展示报告；原始参考模型保留，批量生成的 FEM 及 ANS 已清理；逐角度 JSON 和运行 checkpoint 压缩保存在 `run_details.zip`。旧训练权重已于 2026-09-13 删除。
 
 Python 项目入口：
 
@@ -34,6 +34,10 @@ python_topopt/showoutput/README.md
 ```
 
 ## 归档状态
+
+2026-09-13 按“不再考虑重启，仅保存结果”进一步精简：约 **296.51 MiB → 192.83 MiB**。删除完全重复的图片/文档、旧训练权重和少量临时文件；预测结果、指标、图表、MAT、FEM 和源码保留。5 个数据库无损压缩为原目录下的 `*.sqlite.zip`，查看前需先解压。重复文件保留位置及核验清单见[本次精简记录](../maintenance/legacy_trim_20260913/README.md)。旧训练/推理、断点恢复入口不再维护。
+
+### 2026-09-09 首次清理记录（历史状态）
 
 清理前包含70,277个文件、35.13 GB数据；清理后约0.31 GB，具体核验数字见[清理记录](../maintenance/cleanup_20260909/README.md)。
 
