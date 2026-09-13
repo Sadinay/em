@@ -1,0 +1,54 @@
+{
+  "reference": "history.json epoch 39 validation (not test)",
+  "reference_metrics": {
+    "tavg": {
+      "mae": 0.006412123795598745,
+      "rmse": 0.011521878652274609,
+      "r2": 0.9989432096481323,
+      "bias": 0.0016038453904911876,
+      "absolute_error_p95": 0.017270565032958984
+    },
+    "delta_t": {
+      "mae": 0.01152037177234888,
+      "rmse": 0.0185434240847826,
+      "r2": 0.9908267259597778,
+      "bias": -0.000847957911901176,
+      "absolute_error_p95": 0.03004857525229454
+    }
+  },
+  "recomputed_metrics": {
+    "tavg": {
+      "mae": 0.006412123795598745,
+      "rmse": 0.011521878652274609,
+      "r2": 0.9989432096481323,
+      "bias": 0.0016038453904911876,
+      "absolute_error_p95": 0.017270565032958984
+    },
+    "delta_t": {
+      "mae": 0.01152037177234888,
+      "rmse": 0.0185434240847826,
+      "r2": 0.9908267259597778,
+      "bias": -0.000847957911901176,
+      "absolute_error_p95": 0.03004857525229454
+    }
+  },
+  "differences": {
+    "tavg": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "bias": 0.0,
+      "absolute_error_p95": 0.0
+    },
+    "delta_t": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "bias": 0.0,
+      "absolute_error_p95": 0.0
+    }
+  },
+  "max_physical_metric_difference_nm": 0.0,
+  "reference_standardized_mse": 0.005224786694759922,
+  "recomputed_standardized_mse": 0.005224786694759922,
+  "metric_tolerance_nm": 1e-05,
+  "passed": true
+}

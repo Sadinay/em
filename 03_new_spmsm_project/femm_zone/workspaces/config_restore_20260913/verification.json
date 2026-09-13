@@ -1,0 +1,151 @@
+{
+  "verified_utc": "2026-09-13T22:03:46.659798+00:00",
+  "femm_solves": 0,
+  "inference_or_training": false,
+  "restored_source_sha256": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+  "seed_manifest_passed": true,
+  "frozen_seed_file_count": 17,
+  "queue_genes": 3299,
+  "received_condition_fingerprint": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+  "physical_contract_matches_excluding_device_paths": true,
+  "configured_inner_angles_deg": [
+    29.0,
+    32.0,
+    35.0,
+    38.0,
+    41.0,
+    44.0
+  ],
+  "initial_phase_deg": 0,
+  "current_amplitude_a": 3.5,
+  "pole_pairs": 4,
+  "min_angle_deg": 15,
+  "torque_multiplier": 1,
+  "prepared_cases_matching_received_records": [
+    {
+      "gene_id": "b31089763d9003ea03c8955b45acbf4d41d7316c1c0cfdd6847e05b5901cad73",
+      "inner_angle_deg": 29.0,
+      "prepared_sha256": "9990d2ac08c7d545063b904df9a5a7acf2c51286de01a2e7592c0543508d20e4",
+      "matches_received_record": true
+    },
+    {
+      "gene_id": "b31089763d9003ea03c8955b45acbf4d41d7316c1c0cfdd6847e05b5901cad73",
+      "inner_angle_deg": 32.0,
+      "prepared_sha256": "1994520d1ac844fa37b7a6be5157b80268dcfba8d850c5023f57036eb481feb0",
+      "matches_received_record": true
+    },
+    {
+      "gene_id": "b31089763d9003ea03c8955b45acbf4d41d7316c1c0cfdd6847e05b5901cad73",
+      "inner_angle_deg": 35.0,
+      "prepared_sha256": "4c090301b06262c70da7d3104b3138587968ff1c6db784e60651ef5e78601787",
+      "matches_received_record": true
+    },
+    {
+      "gene_id": "b31089763d9003ea03c8955b45acbf4d41d7316c1c0cfdd6847e05b5901cad73",
+      "inner_angle_deg": 38.0,
+      "prepared_sha256": "81b5d1c2b80a39e1ca8ec593ab56ebdd3ca8524a9b4dcfc74b7f1398e533ba50",
+      "matches_received_record": true
+    },
+    {
+      "gene_id": "b31089763d9003ea03c8955b45acbf4d41d7316c1c0cfdd6847e05b5901cad73",
+      "inner_angle_deg": 41.0,
+      "prepared_sha256": "9e6524ed08636ec7a4deb804016f9553f05cc3efb540abc69fdd618b15dd59ae",
+      "matches_received_record": true
+    },
+    {
+      "gene_id": "b31089763d9003ea03c8955b45acbf4d41d7316c1c0cfdd6847e05b5901cad73",
+      "inner_angle_deg": 44.0,
+      "prepared_sha256": "c32ab619539bc2d16e15422ce11acb3e9d69ed6edfee2f195cebb3106c7781b8",
+      "matches_received_record": true
+    },
+    {
+      "gene_id": "05389c43608d9c9aa9c06f61fec2fc929402bc9b0f2de7d9f81adcdb8f106d27",
+      "inner_angle_deg": 29.0,
+      "prepared_sha256": "19550c2658e2bee9c57432ca7d3cf8681e6b1d8fbae2f8c1afd6a5ed6e3dc50d",
+      "matches_received_record": true
+    },
+    {
+      "gene_id": "05389c43608d9c9aa9c06f61fec2fc929402bc9b0f2de7d9f81adcdb8f106d27",
+      "inner_angle_deg": 32.0,
+      "prepared_sha256": "bf731d85caf8fedcee86477409cab47b7e6b0804046187f132fc36b24bb3cd1f",
+      "matches_received_record": true
+    },
+    {
+      "gene_id": "05389c43608d9c9aa9c06f61fec2fc929402bc9b0f2de7d9f81adcdb8f106d27",
+      "inner_angle_deg": 35.0,
+      "prepared_sha256": "82ca043c539f0c2138a7d9d5797fc9e4234e88c187266ae64c5f0668447f5b47",
+      "matches_received_record": true
+    },
+    {
+      "gene_id": "05389c43608d9c9aa9c06f61fec2fc929402bc9b0f2de7d9f81adcdb8f106d27",
+      "inner_angle_deg": 38.0,
+      "prepared_sha256": "4c1beaff5a89483216c2e88f566ec98cca4f57b900873b95a929f0941460a348",
+      "matches_received_record": true
+    },
+    {
+      "gene_id": "05389c43608d9c9aa9c06f61fec2fc929402bc9b0f2de7d9f81adcdb8f106d27",
+      "inner_angle_deg": 41.0,
+      "prepared_sha256": "b496cfa6dd279a857c63ab868955c9d5768a5e52b2a455106b6196659b7b5852",
+      "matches_received_record": true
+    },
+    {
+      "gene_id": "05389c43608d9c9aa9c06f61fec2fc929402bc9b0f2de7d9f81adcdb8f106d27",
+      "inner_angle_deg": 44.0,
+      "prepared_sha256": "22e99a167a14a6d24ab65be8558aabfe4b8de2323735d0206e6cfdf007bc37c1",
+      "matches_received_record": true
+    }
+  ],
+  "retained_history_regression": [
+    {
+      "gene_id": "G2",
+      "tavg_nm": 3.183132769850118,
+      "delta_t_nm": 0.454533168516984,
+      "reference_tavg_nm": 3.183132769850227,
+      "reference_delta_t_nm": 0.454533168517397,
+      "tavg_error_nm": -1.092459456231154e-13,
+      "delta_t_error_nm": -4.1300296516055823e-13,
+      "six_fem_ans_hash_pairs_verified": true
+    },
+    {
+      "gene_id": "G3",
+      "tavg_nm": 3.918657684574948,
+      "delta_t_nm": 0.21329158923491454,
+      "reference_tavg_nm": 3.9186576845750505,
+      "reference_delta_t_nm": 0.21329158923616598,
+      "tavg_error_nm": -1.0258460747536446e-13,
+      "delta_t_error_nm": -1.2514433933574765e-12,
+      "six_fem_ans_hash_pairs_verified": true
+    },
+    {
+      "gene_id": "G4",
+      "tavg_nm": 3.1557458473661537,
+      "delta_t_nm": 0.18494258054975798,
+      "reference_tavg_nm": 3.155745847366145,
+      "reference_delta_t_nm": 0.18494258054991697,
+      "tavg_error_nm": 8.881784197001252e-15,
+      "delta_t_error_nm": -1.5898393712632242e-13,
+      "six_fem_ans_hash_pairs_verified": true
+    },
+    {
+      "gene_id": "G5",
+      "tavg_nm": 3.85015666059881,
+      "delta_t_nm": 0.4947766516826553,
+      "reference_tavg_nm": 3.8501566605986075,
+      "reference_delta_t_nm": 0.4947766516831762,
+      "tavg_error_nm": 2.0250467969162855e-13,
+      "delta_t_error_nm": -5.209166431541234e-13,
+      "six_fem_ans_hash_pairs_verified": true
+    }
+  ],
+  "pytest": {
+    "command": "python -m pytest 03_new_spmsm_project/femm_zone/tests/test_femm_workflow.py -q",
+    "passed": 20,
+    "reported_seconds": 2.07,
+    "femm_started": false
+  },
+  "changed_core_file_sha256": {
+    "femm_zone\\femm_config.py": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+    "femm_zone\\run_femm.py": "6ab9a0798842e4a0bab2ee861cb08548ecb52e27bdd1effc2b595dc8e5b4e714",
+    "femm_zone\\tests\\test_femm_workflow.py": "3d25a6b1ace7c891d118c919bc681a283dfb508efcb26da7d20b907a4b62d4a1"
+  }
+}

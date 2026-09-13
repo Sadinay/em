@@ -25,7 +25,9 @@ python 03_new_spmsm_project/femm_zone/run_femm.py solve --name run01
 python 03_new_spmsm_project/femm_zone/run_femm.py report --name run01
 ```
 
-运行目录为 `workspaces/<名称>/`。`prepare`把当前配置冻结到`run.json`，并把全部参数写入每个`model.fem`；`solve`使用这份已审查的输入，不从历史结果继承配置。修改参数后请换一个名称重新`prepare`，程序不覆盖旧目录，也不自动续跑中断任务。求解使用独立FEMM实例，普通Ctrl+C中断会清理该实例。
+运行目录为 `workspaces/<名称>/`。`prepare`把当前配置冻结到`run.json`，并把全部参数写入每个`model.fem`；`solve`启动FEMM前会核对其物理设置与当前统一配置，电流、问题定义、气隙、角度或转矩倍率不一致便拒绝求解。因此旧的0°/−2准备目录不能直接续用。修改参数后请换一个名称重新`prepare`，程序不覆盖旧目录，也不自动续跑中断任务。求解使用独立FEMM实例，普通Ctrl+C中断会清理该实例。
+
+配置已从已核验结果包逐字节恢复为29°初始内角/转矩倍率1，修复和离线检查见[配置恢复记录](workspaces/config_restore_20260913/README.md)。历史报告保留各自当时的配置记录。
 
 当前按导师补充代码：`ang_0=29°`，转过的机械角`ANG_R=0:3:15°`，实际内角为29、32、35、38、41、44°；外角0°、Min Angle=15°、电流初相位0°。时间由`ANG_R/wmech`确定，电流使用`Is_amp*cos(omega*t)`及−120°、−240°相移；MAT提供3.5 A、400 Hz及机械角速度。29°来自补充代码，采样范围来自用户要求；原始T/ANG_R生成代码未提供。**没有自动启动整圈筛选**。
 

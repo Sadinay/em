@@ -1,0 +1,30 @@
+{
+  "historical_unique_excluded": 71054,
+  "history_variables_rows": {
+    "population": 612,
+    "population_all": 123012,
+    "population_noChange_all": 123012
+  },
+  "exact_new_unique": 20600,
+  "collisions_regenerated": {
+    "pool/B": 4,
+    "pool/P": 2,
+    "test/U": 186
+  },
+  "random_streams": {
+    "pool": 13349480423077743689,
+    "dev": 5722876337384258552,
+    "test": 3862549395330453298,
+    "anchors": 13125606191248499607,
+    "audit": 2145505506785977173,
+    "parents": 5900928531816609610
+  },
+  "file_sha256": {
+    "parent_families.json": "4f9669be9fd7537c59825498b69ae9e7e8716fac511a65cfa1dc0783397757b9",
+    "old_anchors.csv": "36ef2ad85922889a46c6659f81521ae705099e36103fd1663c1192b6c7d2e682",
+    "candidates_train.csv": "9eeed1c337b7ced89de35f8f76874041140ab8abdaeeccc1ee713c6889da52c6",
+    "dev_common.csv": "5b9177519c2c4ec2af981985ed0bb6a93a8b1e174a2391922aae665a746e6dea",
+    "test_common.csv": "7ab78c326afed8bc8994612bb6f90ccbdbb3e758423e8c24724689cf713cab99"
+  },
+  "P_note": "New split families use disjoint old-train parents; those parents remain old training data."
+}

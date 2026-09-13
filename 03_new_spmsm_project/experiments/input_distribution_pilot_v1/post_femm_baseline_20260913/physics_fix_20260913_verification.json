@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "new_training_views": [
+    1400,
+    1400
+  ],
+  "dev_count": 200,
+  "sealed_test_count": 400,
+  "prediction_count": 9382,
+  "metric_denominators_verified": true,
+  "test_guards_passed": true,
+  "original_package_unchanged": true,
+  "physical_source": {
+    "historical_import_actual_sha256": "17bcee0c96180595f323f698d65891d844f1beff7c24069dae294574fd279264",
+    "frozen_expected_sha256": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+    "current_sha256": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+    "matches_frozen_expected": true,
+    "restored_since_import": true,
+    "other_frozen_local_inputs_unchanged": true
+  },
+  "historical_outputs_unchanged_except_current_entry_files": true,
+  "historical_output_changes": {},
+  "current_entry_files": {
+    "baseline.py": {
+      "historical_sha256": "38edfcf5353cd3071c825d8c28b6c414067ff7920dc9fa5a520a796f0674b880",
+      "current_sha256": "61d2fcc85ae657a07083a84fc98e33e0c7a40cc3d2dc28e9a33079a99088d4eb"
+    },
+    "README.md": {
+      "historical_sha256": "2cb126d3650ee79eaef43e85e8f038a22336869f3809f64f5b38eb590316342c",
+      "current_sha256": "e1094b6be13e9df2a0689fb926e0859a4d10b62af8b918df0ff8c417f8f8f097"
+    }
+  },
+  "historical_output_checksums_sha256": "b6c989f8578244ffa87d17313557a4909f59eb19c917688f67ad0105266019ad",
+  "new_femm_calls": 0,
+  "new_inference_calls": 0,
+  "note": "This verification reads existing evidence without re-running inference or replacing historical output_verification.json/OUTPUT_CHECKSUMS.json. See physics_fix_20260913.md.",
+  "mocked_historical_metric_change_rejected": true
+}

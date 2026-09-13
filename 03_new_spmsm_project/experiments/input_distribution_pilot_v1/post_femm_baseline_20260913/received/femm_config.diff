@@ -1,0 +1,83 @@
+--- current_local/femm_zone/femm_config.py
++++ received_snapshot/femm_zone/femm_config.py
+@@ -13,10 +13,12 @@
+ TEMPLATE_FILE = ZONE / "models/SPMSM_discrete.fem"
+ RUN_ROOT = ZONE / "workspaces"
+ 
+-# 修改试验时只改这里；角度单位均为度。扫描已停止，默认仅初相位 0°。
+-INNER_ANGLES = (0, 3, 6, 9, 12, 15)       # 气隙内角：机械角
+-INITIAL_PHASES = (0.0,)                  # 电流初始电角度；整圈粗筛可用 tuple(range(0, 360, 30))
++# 修改试验时只改这里；角度单位均为度。本次只复现5个基因，不恢复整圈筛选。
++INITIAL_INNER_ANGLE = 29.0               # 导师补充代码 ang_0；不是从MAT读取
++ROTOR_TRAVEL_ANGLES = (0, 3, 6, 9, 12, 15)  # ANG_R：从初始位置转过的机械角
++INITIAL_PHASES = (0.0,)                  # t=0时的电流电角度
+ GENES = ((0, 338), (31, 190), (193, 258), (200, 491), (200, 33))  # MAT 的代/行，均为0-based
++REFERENCE_DELTA_T_METRIC = "peak_to_peak_nm"  # 29°重算：4个基因与MAT DeltaT逐一符合至1e-12 N·m
+ 
+ 
+ def sha256(path: Path) -> str:
+@@ -24,13 +26,14 @@
+ 
+ 
+ def load_config() -> dict:
+-    
++    """直接读取原始 MAT，不继承旧试验的 run_spec.json。"""
+     inp = loadmat(MAT_FILE, variable_names=["inp"], squeeze_me=True, struct_as_record=False)["inp"]
+     cfg = {
+         "mat_file": str(MAT_FILE), "template_file": str(TEMPLATE_FILE),
+         "input_sha256": {str(p): sha256(p) for p in (MAT_FILE, TEMPLATE_FILE)},
+-        "current": {"amplitude_a": float(inp.Is_amp), "pole_pairs": int(inp.P)},
+-        "current_source": "MAT inp.Is_amp、inp.P；本方案不使用 Id/Iq 或保存的零值 Ia/Ib/Ic。",
++        "current": {"amplitude_a": float(inp.Is_amp), "pole_pairs": int(inp.P),
++                    "omega_e_rad_s": 2 * math.pi * float(inp.F), "omega_m_rad_s": float(inp.wmech)},
++        "current_source": "导师cos(omega*t)公式；MAT inp.Is_amp、F、wmech、P。t=deg2rad(ANG_R)/wmech。",
+         "problem": {
+             "Frequency": 0,              # 静磁求解；不是 MAT 中运行频率 F=400 Hz
+             "Precision": 1e-8,
+@@ -40,12 +43,16 @@
+             "LengthUnits": "millimeters", "ProblemType": "planar",
+             "Coordinates": "cartesian", "ACSolver": 0, "PrevType": 0, "PrevSoln": "",
+         },
+-        "airgap": {"name": "sliding_airgap", "boundary_type": 6, "outer_angle_deg": 0},
+-        "inner_angles_deg": list(INNER_ANGLES), "initial_phases_deg": list(INITIAL_PHASES),
++        "airgap": {"name": "sliding_airgap", "boundary_type": 6, "outer_angle_deg": 0,
++                   "initial_inner_angle_deg": INITIAL_INNER_ANGLE},
++        "angle_source": "导师补充ang_0=29°；用户指定ANG_R=0:3:15°。原脚本T/ANG_R生成部分未提供。",
++        "rotor_travel_angles_deg": list(ROTOR_TRAVEL_ANGLES),
++        "inner_angles_deg": [INITIAL_INNER_ANGLE + a for a in ROTOR_TRAVEL_ANGLES],
++        "initial_phases_deg": list(INITIAL_PHASES),
+         "gene_source": "population_all",
+         "genes": [{"id": f"G{i}", "state": state, "row": row} for i, (state, row) in enumerate(GENES, 1)],
+-        "torque_multiplier": -2.0,       # 沿用以前的经验比较尺度，历史物理依据尚未确认
+-        "comparison_note": "六点算术平均；DeltaT暂按相对峰峰值比较，历史公式尚未确认。",
++        "torque_multiplier": 1.0,        # 直接报告FEMM原始气隙积分；不拟合倍率或符号
++        "comparison_note": "六点算术平均；MAT DeltaT按峰峰转矩差(N·m)比较。旧-2经验换算另存对照。",
+         "material_source": "几何、绕组和材料BH曲线来自FEM模板；基因只切换设计区Air/N38。",
+     }
+     for key in ("inner_angles_deg", "initial_phases_deg"):
+@@ -58,15 +65,21 @@
+         raise ValueError("至少配置一个基因")
+     if float(inp.P) != cfg["current"]["pole_pairs"] or inp.P <= 0 or not math.isfinite(inp.Is_amp) or inp.Is_amp <= 0:
+         raise ValueError("MAT 中的极对数/电流幅值无效")
++    current = cfg["current"]
++    if not (current["omega_m_rad_s"] > 0 and math.isfinite(current["omega_m_rad_s"]) and
++            math.isclose(current["omega_e_rad_s"], inp.P * current["omega_m_rad_s"], rel_tol=1e-12)):
++        raise ValueError("MAT电频率、机械角速度与极对数不一致")
+     return cfg
+ 
+ 
+ def phase_currents(cfg: dict, inner_deg: float, initial_deg: float) -> dict[str, float]:
+-    """正向同步：θe=P×θinner+φ0；A/B/C依次相差0°、−120°、+120°。"""
+-    theta = cfg["current"]["pole_pairs"] * inner_deg + initial_deg
++    """导师公式：t=ANG_R/wmech，θe=omega*t；29°只加到滑动气隙内角。"""
++    travel = inner_deg - cfg["airgap"]["initial_inner_angle_deg"]
++    time_s = math.radians(travel) / cfg["current"]["omega_m_rad_s"]
++    theta = cfg["current"]["omega_e_rad_s"] * time_s + math.radians(initial_deg)
+     amp = cfg["current"]["amplitude_a"]
+-    return {name: amp * math.cos(math.radians(theta + shift))
+-            for name, shift in (("A", 0), ("B", -120), ("C", 120))}
++    return {name: amp * math.cos(theta + shift)
++            for name, shift in (("A", 0), ("B", -2*math.pi/3), ("C", -4*math.pi/3))}
+ 
+ 
+ def _set(text: str, pattern: str, value: str) -> str:

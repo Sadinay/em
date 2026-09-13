@@ -1,0 +1,79 @@
+{
+  "status": "passed_real_femm_pilot_and_results_only_resume",
+  "date_local": "2026-09-09",
+  "python": "3.13.14 (main, Jun 23 2026, 15:19:27) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Alexander\\Desktop\\03_new_spmsm_project\\.venv-femm\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+    "numpy": "2.4.2",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.1",
+    "pyfemm": "0.1.3",
+    "pywin32": "312",
+    "psutil": "7.2.2"
+  },
+  "solver": {
+    "executable": "c:\\femm42\\bin\\femm.exe",
+    "binary_sha256": "5e83cf0899cabae2017868ddcce338e3ba4ac25d1bf8e511eac77eda2bc92a21",
+    "file_version": [
+      1,
+      0,
+      0,
+      1
+    ]
+  },
+  "condition_fingerprint": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+  "run_directory": "femm_runs\\97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+  "runner_file_sha256": "d7c6d4bacac05a840409c86831d4188375c0332c474768a252e487d569148e67",
+  "frozen_inputs_verified": true,
+  "historical_G2_G5": "reused after hash/condition/reference checks; no new historical solve",
+  "successful_genes": 20,
+  "successful_angles": 120,
+  "final_run_angle_attempts": 120,
+  "final_run_failures": 0,
+  "workers": 6,
+  "worker_pids": [
+    10032,
+    12252,
+    12692,
+    15952,
+    18128,
+    18648
+  ],
+  "solve_wall_seconds": 143.16884389999996,
+  "runtime_regression_tests_passed": 9,
+  "parallel_selftest": "passed_mock_execution_only",
+  "independent_six_point_metrics_verified": true,
+  "max_torque_difference_from_pre_cleanup_revision_nm": 0,
+  "retained_work_files": 0,
+  "resume_reused_genes": 20,
+  "resume_submitted_genes": 0,
+  "remaining_solver_processes": [],
+  "remaining_queue_genes": 3279,
+  "all_scope_started": false,
+  "report": {
+    "complete_genes": 20,
+    "incomplete_genes": 3279,
+    "attempted_genes": 20,
+    "failed_gene_attempts": 0,
+    "median_seconds_per_gene": 37.49767394999992,
+    "p90_seconds_per_gene": 40.23853956999992,
+    "measured_workers": 6,
+    "successful_genes_per_hour": 502.90271289953483,
+    "remaining_seconds_estimate_from_throughput": 23472.531957404994,
+    "timing_note": "Throughput uses coordinator wall time at the same worker count, including worker startup and retries; not the sum of concurrent gene durations.",
+    "no_time_estimate_before_measured_success": true
+  },
+  "run_size_bytes": 1648417,
+  "free_disk_bytes": 143411601408,
+  "prior_runs": [
+    {
+      "fingerprint": "92e8fb2ef0c8296bd2bd2e486ab020dcd0b4b72e831dc998d4932a55c5e0a369",
+      "outcome": "paused after three genes failed with pyfemm file-transport NameError; five angles completed; failure records preserved"
+    },
+    {
+      "fingerprint": "470589a6297481fbdd7d504db98260733183098c64d01305b0f514d0896a479b",
+      "outcome": "COM fix verified: 20 genes and 120 angles succeeded before storage change; successful work files subsequently pruned with receipts"
+    }
+  ]
+}

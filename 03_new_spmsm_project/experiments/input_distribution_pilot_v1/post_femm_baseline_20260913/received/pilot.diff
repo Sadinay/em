@@ -1,0 +1,197 @@
+--- current_local/experiments/input_distribution_pilot_v1/pilot.py
++++ received_snapshot/experiments/input_distribution_pilot_v1/pilot.py
+@@ -73,12 +73,24 @@
+     return json.loads(Path(path).read_text(encoding="utf-8"))
+ 
+ 
++def retry_file_access(operation, path):
++    """Bounded retries for transient Windows file locks; never truncate the live result."""
++    for attempt in range(12):
++        try:
++            return operation()
++        except PermissionError as exc:
++            if attempt == 11:
++                raise PermissionError(exc.errno, f"File access failed after 12 attempts: {path}; {exc}") from exc
++            time.sleep(min(0.05 * 2**attempt, 1.0))
++
++
+ def save(path, value):
+     path = Path(path)
+     path.parent.mkdir(parents=True, exist_ok=True)
+     tmp = path.with_suffix(path.suffix + ".tmp")
+-    tmp.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8")
+-    tmp.replace(path)
++    content = json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False)
++    retry_file_access(lambda: tmp.write_text(content, encoding="utf-8"), tmp)
++    retry_file_access(lambda: tmp.replace(path), path)
+ 
+ 
+ def csv_read(path):
+@@ -92,11 +104,13 @@
+     require(bool(rows) or columns, f"Empty CSV requires columns: {path}")
+     columns = columns or list(dict.fromkeys(k for row in rows for k in row))
+     tmp = path.with_suffix(path.suffix + ".tmp")
+-    with tmp.open("w", encoding="utf-8-sig", newline="") as f:
+-        w = csv.DictWriter(f, fieldnames=columns, extrasaction="raise")
+-        w.writeheader()
+-        w.writerows(rows)
+-    tmp.replace(path)
++    def write_tmp():
++        with tmp.open("w", encoding="utf-8-sig", newline="") as f:
++            w = csv.DictWriter(f, fieldnames=columns, extrasaction="raise")
++            w.writeheader()
++            w.writerows(rows)
++    retry_file_access(write_tmp, tmp)
++    retry_file_access(lambda: tmp.replace(path), path)
+ 
+ 
+ def bits_of(rows):
+@@ -819,7 +833,8 @@
+             "mapping_source_sha256": sha(mapping.__file__), "physical_source_sha256": sha(physical.__file__),
+             "runner_source_sha256": hashlib.sha256("\n".join(inspect.getsource(fn) for fn in
+                                       (prepare_cases, validate_model_settings, validate_success, solve_angle, solve_gene,
+-                                       worker_init, dispatch_genes, failure_limit, solve_queue, aggregate_results)).encode()).hexdigest(),
++                                       artifact_receipt, prune_success, worker_init, dispatch_genes, failure_limit,
++                                       solve_queue, aggregate_results)).encode()).hexdigest(),
+             "solver": solver_identity(), "pyfemm_version": importlib.metadata.version("pyfemm")}
+ 
+ 
+@@ -881,7 +896,7 @@
+                 state = read(state_path)
+                 require(all(state.get(k) == v for k, v in identity.items()), f"Existing angle identity differs: {folder}")
+                 if state["status"] == "succeeded":
+-                    validate_success(folder, identity)
++                    prune_success(folder, identity)
+                 else:
+                     # FEMM may normalize failed/running inputs: validate against recorded hash, never assume validity.
+                     require(model.exists() and sha(model) in (state["prepared_sha256"], state.get("last_fem_sha256")), f"Changed pending/failed FEM input: {folder}")
+@@ -918,24 +933,64 @@
+     require(actual_currents.keys() == expected.keys() and all(math.isclose(actual_currents[k], v, abs_tol=1e-12, rel_tol=1e-12) for k, v in expected.items()), "Phase current changed")
+ 
+ 
++def artifact_receipt(result, result_sha256):
++    return {"policy": "results_only_v1", "result_sha256": result_sha256,
++            "condition_fingerprint": result["condition_fingerprint"], "gene_id": result["gene_id"],
++            "inner_angle_deg": result["inner_angle_deg"], "model_settings_verified": True,
++            "fem_sha256": result["fem_sha256"], "ans_sha256": result["ans_sha256"]}
++
++
+ def validate_success(folder, expected):
+     state = read(folder / "state.json"); result = read(folder / "result.json")
+     require(state["status"] == "succeeded", "Angle is not successful")
+     for key, value in expected.items():
+         require(state.get(key) == value and result.get(key) == value, f"Cached angle identity mismatch: {key}")
+     require(sha(folder / "result.json") == state["result_sha256"], "Result JSON hash mismatch")
++    pruned = "artifact_retention_sha256" in state
++    if pruned:
++        receipt = folder / "artifact_retention.json"
++        require(sha(receipt) == state["artifact_retention_sha256"], "Artifact retention receipt hash mismatch")
++        require(read(receipt) == artifact_receipt(result, state["result_sha256"]), "Artifact retention receipt differs from result")
+     for ext in ("fem", "ans"):
+-        require(sha(folder / f"model.{ext}") == result[f"{ext}_sha256"], f"Cached {ext} hash mismatch")
++        path = folder / f"model.{ext}"
++        if path.exists():
++            require(sha(path) == result[f"{ext}_sha256"], f"Cached {ext} hash mismatch")
++        else:
++            require(pruned, f"Cached {ext} missing without a verified cleanup receipt")
+     contract = read(folder.parents[1] / "contract.json")
+     require(digest(contract) == expected["condition_fingerprint"], "Cached condition contract changed")
+-    validate_model_settings(folder / "model.fem", contract["physical"], expected["inner_angle_deg"])
++    if (folder / "model.fem").exists():
++        validate_model_settings(folder / "model.fem", contract["physical"], expected["inner_angle_deg"])
+     require(isinstance(result["raw_torque_nm"], (int, float)) and math.isfinite(result["raw_torque_nm"]), "Invalid cached torque")
+     return result
+ 
+ 
++def prune_success(folder, expected):
++    """Validate first, commit a hash-linked receipt, then remove only regenerable work files."""
++    folder = Path(folder).resolve()
++    require(folder.is_relative_to((HERE / "femm_runs").resolve()), "Cleanup outside pilot run directory")
++    result = validate_success(folder, expected)
++    parents = [folder] + [p for p in folder.glob("attempt_*") if p.is_dir() and p.name[8:].isdigit()]
++    paths = [parent / f"model.{ext}" for parent in parents
++             for ext in ("fem", "ans", "node", "ele", "edge", "poly", "pbc")]
++    for path in paths:
++        require(path.resolve().is_relative_to(folder), f"Cleanup target leaves angle directory: {path}")
++    state = read(folder / "state.json")
++    receipt = folder / "artifact_retention.json"
++    save(receipt, artifact_receipt(result, state["result_sha256"]))
++    state["artifact_retention_sha256"] = sha(receipt)
++    save(folder / "state.json", state)
++    # The receipt is durable before deletion, so an interrupted cleanup can resume.
++    for path in paths:
++        path.unlink(missing_ok=True)
++    return result
++
++
+ def solve_angle(folder, contract):
++    # Import COM explicitly first: pyfemm otherwise swallows import failures and
++    # silently falls back to its Wine file transport (undefined ifile/ofile).
++    import win32com.client
+     import femm
+-    import win32com.client
+     state_path = folder / "state.json"; state = read(state_path)
+     keys = ("gene_id", "bits", "inner_angle_deg", "rotor_travel_deg", "currents_a", "condition_fingerprint", "prepared_sha256")
+     identity = {k: state[k] for k in keys}
+@@ -964,6 +1019,7 @@
+         state["attempts"].append(attempt); state["status"] = "running"; save(state_path, state)
+         try:
+             femm.HandleToFEMM = win32com.client.DispatchEx("femm.ActiveFEMM"); connected = True
++            femm.windowsOS = True  # This runner has just connected an isolated Windows COM instance.
+             femm.main_minimize(); femm.opendocument(str(model)); femm.mi_analyze(1); femm.mi_loadsolution()
+             raw = complex(femm.mo_gapintegral("sliding_airgap", 0))
+             require(abs(raw.imag) <= 1e-10 and math.isfinite(raw.real), f"Invalid FEMM torque: {raw}")
+@@ -1014,6 +1070,12 @@
+             if solve_angle(folder / f"angle_{inner:g}", contract) is None:
+                 outcome.update(status="failed", error=f"angle {inner}: automatic attempts exhausted")
+                 break
++            # solve_angle has released its FEMM instance before work files are removed.
++            angle_folder = folder / f"angle_{inner:g}"
++            state = read(angle_folder / "state.json")
++            identity = {k: state[k] for k in ("gene_id", "bits", "inner_angle_deg", "rotor_travel_deg", "currents_a",
++                                             "condition_fingerprint", "prepared_sha256")}
++            prune_success(angle_folder, identity)
+         else:
+             outcome["status"] = "succeeded"
+         record = aggregate_results(root, [row], contract, write_tables=False)[0]
+@@ -1347,6 +1409,31 @@
+     print("Selftest passed: exact WL kernel, independent LCMD, isolated-cell repair, encoding/current checks.", flush=True)
+ 
+ 
++def solve_from_cli(scope, workers):
++    """Show the preflight and preserve full diagnostics without changing the solve contract."""
++    try:
++        print("正在校验冻结输入、已完成结果和待算模型；全量续跑前的检查可能需要数分钟。"
++              "校验期间不会启动 FEMM，请等待 Prepared 输出。", flush=True)
++        solve_queue(scope, workers)
++    except KeyboardInterrupt:
++        print("收到中断信号，已停止启动检查；已保存结果保留。再次执行原命令可继续。", file=sys.stderr, flush=True)
++        raise SystemExit(130) from None
++    except Exception as exc:
++        import traceback
++        path = HERE / "failure_diagnostics" / f"{time.time_ns()}_{os.getpid()}.json"
++        record = {"scope": scope, "workers": workers, "pid": os.getpid(),
++                  "error": repr(exc), "error_type": type(exc).__name__,
++                  "errno": getattr(exc, "errno", None), "winerror": getattr(exc, "winerror", None),
++                  "filename": getattr(exc, "filename", None), "filename2": getattr(exc, "filename2", None),
++                  "traceback": traceback.format_exc()}
++        try:
++            save(path, record)
++            print(f"完整错误记录：{path}", file=sys.stderr, flush=True)
++        except Exception as diagnostic_error:
++            print(f"错误记录写入失败：{diagnostic_error}", file=sys.stderr, flush=True)
++        raise
++
++
+ def main():
+     for stream in (sys.stdout, sys.stderr):
+         if hasattr(stream, "reconfigure"):
+@@ -1386,7 +1473,7 @@
+     elif args.command == "prepare":
+         prepare_cases(args.scope)
+     elif args.command == "solve":
+-        solve_queue(args.scope, args.workers)
++        solve_from_cli(args.scope, args.workers)
+     elif args.command == "report":
+         report_results()
+ 

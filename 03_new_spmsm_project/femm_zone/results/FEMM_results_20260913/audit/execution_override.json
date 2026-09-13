@@ -1,0 +1,11 @@
+{
+  "reason": "用户要求改为6个worker起步，由用户在自己的电脑手动开始求解",
+  "default_workers": 6,
+  "backend": "ProcessPoolExecutor with Windows spawn",
+  "task_unit": "one gene per process job, six sequential angles",
+  "femm_instance_policy": "process-local DispatchEx; independent gene/angle directory",
+  "seed_config_policy": "pilot_config.json retains the original seed-stage registration; this authorized execution override changes scheduling only",
+  "worker_count_affects_physical_cache_key": false,
+  "stop_policy": "stop submitting jobs at the failure threshold; in-flight jobs save their current angle then pause",
+  "actual_femm_execution": "manual solve command only"
+}

@@ -9,3 +9,6 @@
 *.sqlite -text
 *.pt -text
 *.zip -text
+
+# The frozen 03 physical-config hash must survive Windows Git checkouts.
+03_new_spmsm_project/femm_zone/femm_config.py text eol=lf

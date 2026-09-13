@@ -1,5 +1,9 @@
 # 03 下一步：四组输入分布种子
 
+**2026-09-13 最新状态：**3299个基因的全量FEMM结果已取回，19794个角度记录和输入哈希全部核验通过；冻结旧CNN基线已完成，最终test未评估。训练兼容数据入口和结果见[post_femm_baseline_20260913](post_femm_baseline_20260913/README.md)。下文pending/未求解是09-09选种子阶段的历史说明，不代表最新标签状态。
+
+导入时发现的 `femm_config.py` 版本差异已修复：现已逐字节恢复为结果包的 **29°初始内角/转矩倍率1** 配置，并重新核验冻结种子入口。详见[配置恢复记录](../../femm_zone/workspaces/config_restore_20260913/README.md)。3299个基因已有有效结果；下方命令保留为运行说明，本次修复未启动重算。
+
 新增代码集中在 [pilot.py](pilot.py)。它复用原来的 `femm_config.py`、基因映射和 CNN 输入转换，不改历史五基因配置。依据为 [四组方案](../../data_zone/SPMSM_Input_Distribution_Pilot_4Groups.md)，本次按用户要求只完成选种子和运行入口，**不启动 FEMM 或训练**。
 
 种子清单与实际数量见 [selection_audit.md](selection_audit.md)。`train_G.csv` / `train_F.csv` 各 1400；公共 `dev_common.csv` 200、`test_common.csv` 400。G-S/G-E 共用 G，F-S/F-E 共用 F；`memberships.csv` 记录归属，`femm_queue.csv` 是去重计算队列。

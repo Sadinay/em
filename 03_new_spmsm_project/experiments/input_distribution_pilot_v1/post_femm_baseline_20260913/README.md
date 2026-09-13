@@ -1,0 +1,23 @@
+# 03 FEMM 接收与冻结 f0 基线
+
+数据源：`../../../femm_zone/results/FEMM_results_20260913/`，原包保持不变。执行依据为同级 results 中的 `Codex_SPMSM_FEMM_Import_and_Baseline.md`。
+
+从 em 根目录只读复核已有数据和基线（不重新推理）：
+
+```powershell
+python ./03_new_spmsm_project/experiments/input_distribution_pilot_v1/post_femm_baseline_20260913/baseline.py verify
+```
+
+`verify` 把当前核验状态写入 `physics_fix_20260913_verification.json`，保留历史 `output_verification.json` 和 `OUTPUT_CHECKSUMS.json`。`audit`、`evaluate`、`report` 及 `all` 用于重新生成对应输出，会改写已有导入证据或基线，日常复核使用 `verify`。脚本不训练、不调用FEMM、不执行结果包里的脚本。
+
+结果入口：`BASELINE_REPORT.md`；数据核验 `data_audit.md/.json`；来源 `import_manifest.json`；模型 `model_manifest.json`；旧验证一致性 `old_validation_consistency.json`；完整预测及指标 `baseline_predictions.csv`、`baseline_metrics.csv/.json`。
+
+`data/train_G`、`data/train_F`、`data/dev_common` 各含 `topology_bits.npy`（N,6,20）、`targets_tavg_delta.npy`（N,2）、`gene_ids.npy` 和 `manifest.csv`，与现有 SPMSMGeneDataset 兼容。目标顺序Tavg、DeltaT，单位N·m；标签CSV保存原始双精度，训练数组沿用float32。G/F共享标签来自同一已核验底层版本。
+
+导入本脚本后，`load_view('train_G')`、`load_view('train_F')`、`load_view('dev_common')`、`load_view('old_validation')` 返回原Dataset和索引。它显式拒绝test角色。最终test位于独立 `data/sealed_test/`，本阶段没有预测或误差分析。
+
+`received/full_run_records.zip` 是原始记录归档的逐字节副本；每条记录在内存解包核验，避免落盘66000个小文件；核心contract和冻结清单另存于received。引用格式 `received/full_run_records.zip!/<完整gene_id>/angle_29/result.json`。
+
+当前配置已恢复为冻结的 29° 初始内角、倍率 1、电流 3.5 A 从电角 0° 同步推进。输入重建直接调用唯一的 `femm_zone/femm_config.py`，额外覆盖电流的临时补丁已删除。详见 [配置修复与历史证据说明](physics_fix_20260913.md)。
+
+原 `import_manifest.json`、`data_audit.md/.json`、`BASELINE_REPORT.md` 与 `received/femm_config.diff` 保留首次导入时的事实，其中“当前是0°/−2、尚待修复”指修复前状态。数据、预测、指标、原始校验清单均未因修复重写；原 `OUTPUT_CHECKSUMS.json` 中 `baseline.py` 和本 README 的哈希对应历史版本，新版本哈希记录在独立修复核验文件中。

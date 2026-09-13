@@ -1,0 +1,261 @@
+{
+  "source_package": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\results\\FEMM_results_20260913",
+  "package_identity": "739e916a53c1b452668a50af0be232c7fc939925509b2a301349d1d50853c70c",
+  "package_files": {
+    "audit/entry_validation.json": "68fb237692a9c7f0180f00da5024be7d55c20bb48eb273f5744f70e8c7b9e5cb",
+    "audit/execution_override.json": "c90bf53858acd6ab362a627c80256adfa7a02eb3f23cf0d212fdf73454ecb62c",
+    "audit/feature_scaler.json": "59420136692ccbf8e5da1c8561b48b7e43ddb981ac37bb46ccb8ed4fc2931bae",
+    "audit/femm_entry.json": "d93dd8a8041ea1c52da0dd5ee72ff43259a3de92902adb4e08f03dd4a39d7ca6",
+    "audit/generation_validation.json": "7d37e9ccfb5ceabf0c44f8828d8f99e1f9eba79c3f79b83774610df626c436b0",
+    "audit/io_recovery_20260910.json": "ea95f373b17d84c684fb106704203d2428d9ee6f9a75fbc58a021c46c8cc7743",
+    "audit/machine_validation.json": "b58b3ac2e280843f059012ca14606eee65f0c37a41fa228526c0b623d55292a6",
+    "audit/machine_validation.md": "6bf31564019d058a63a7d2a5040276136d8603b23e0a8f2dbc202bb7b07b97e4",
+    "audit/parallel_validation.json": "6fcab6d82a93b02897e125b1553d85014b87ef7ebd2ef63dd6d86273b1e4b74e",
+    "audit/parent_families.json": "4f9669be9fd7537c59825498b69ae9e7e8716fac511a65cfa1dc0783397757b9",
+    "audit/pilot_config.json": "a610c32961e22f8dad72f5c526661d4d477a2a874dff54ef63f73df955bc1f3f",
+    "audit/provenance.json": "f22273ddff1af4494a93fa285b7675ce92b6d7df18021247f6e8b2367ded4b02",
+    "audit/README.md": "4a8edbf36b489881098d07d67e34682cfb6eb6ab3ef3f347d867e45deb04b13b",
+    "audit/region_graph.json": "e9d50cf8d3da4baff092d6ce26377fdd711da69d07978fbb8552d367adcda84c",
+    "audit/regression_validation.json": "194550a7ac32146937ba562d4168383e7ce675d1208a37f0461eec0d0724b597",
+    "audit/seed_validation.json": "eacb88c013d6e4c515e35df33e96d09c0b9ae305737a22e04c29f55dabd2e0e8",
+    "audit/selection_audit.md": "5bd7d763bbc17ed030ef0232edb56d97d023bf67e7161d9091dcac0984bb2f3e",
+    "audit/selection_F.json": "2c20aefac4b6fbf4778ad6173f6732de06f78a3b01bae80a46e54e7a340bf888",
+    "audit/selection_G.json": "7e82f3cac5aa09574ee7444f859264107a8c20e363a31bc4656a915df9c2b1f9",
+    "full_run_records.zip": "4c62d68b163b57a8b5a7fa37a9ec016fc107fb1f04e8a335d4db3044cccf042e",
+    "manifests/candidates_train.csv": "9eeed1c337b7ced89de35f8f76874041140ab8abdaeeccc1ee713c6889da52c6",
+    "manifests/dev_common.csv": "5b9177519c2c4ec2af981985ed0bb6a93a8b1e174a2391922aae665a746e6dea",
+    "manifests/display_regions_F.csv": "bde53a49062295dc15412df7e47118a8f40f3b0e565b0e9edecbdd8af8406b3f",
+    "manifests/display_regions_G.csv": "89fa9508eb4f813e819878159cd67b52c9408f792827867bdff07596f0d3ec9b",
+    "manifests/femm_queue.csv": "bfbe9a9458ff9912894c66fb1e461a5d4336ee7d6fbba04722a01f8dbb812642",
+    "manifests/memberships.csv": "cecd2b8bbd0461ce300cfc6410f2d4390b27c05c78161f75085f1843d4905ba3",
+    "manifests/old_anchors.csv": "36ef2ad85922889a46c6659f81521ae705099e36103fd1663c1192b6c7d2e682",
+    "manifests/pilot20.csv": "603a2ce9cb35354a0920aab25f7c68f1c57290f528ac79a1b24768e7c6e2f4c9",
+    "manifests/test_common.csv": "7ab78c326afed8bc8994612bb6f90ccbdbb3e758423e8c24724689cf713cab99",
+    "manifests/train_F.csv": "b3553ea22c32782c2e918ca8ef50be5293290789f08ee169d68d322446f6e6ce",
+    "manifests/train_G.csv": "84ce670d7e93f4e9b2bd5ac2573145a9de5ebf210708eaf8c2178ad0f2d4d95c",
+    "package_summary.json": "7c6459df910637b4f956bb8969fa14541f69430e0acda8d4786d8d4a57b50f6c",
+    "README.md": "5aff64567c9cf652df8fb3037c39a602a7b8dc3f909754d2c4fdabc0d7e16bc9",
+    "region_previews/examples_F.json": "7f2f81e513fdf1d21bc5a71f3cf48f44e8b186a718770cf88e4b82e96280fccd",
+    "region_previews/examples_G.json": "52766b1d3607f9810b8aa41d6be50df68f7d457271e0692cbfeb8be0cec3b69b",
+    "region_previews/regions_F.png": "7b5064367c03b42077d12cd9fc5037d083057beb6a8ce03b1acb837290339d93",
+    "region_previews/regions_G.png": "02c8f1f5ee14012763ecbab9abd8185afe92610a1cb710219d9a29f437a3b1e7",
+    "source_snapshot/cnn_zone/src/fem_mesh.py": "77f1d056186ffbe69c5e0ddd00c788f2d1d277a500ae03856f3b8c14725f1e41",
+    "source_snapshot/cnn_zone/src/models_v2.py": "7fa9316b20a5b109d319a288ed44019ee15fedd6a2d6f897c24552a46ae73954",
+    "source_snapshot/cnn_zone/src/training.py": "e33bbd02e82c51bd93384acf2b62af94fd62162a34d3b32d02fcf2a9a5cae069",
+    "source_snapshot/cnn_zone/src/training_inputs.py": "e4d5f14e4a7a394cad8c6867dea5936c49e7e53a13f97a0fcfe698426ee7d443",
+    "source_snapshot/data_zone/raw/workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+    "source_snapshot/data_zone/SPMSM_Input_Distribution_Pilot_4Groups.md": "f49ceaf80efe3efff811d7f5e00756e4152147918afa514413b64461b4478e6a",
+    "source_snapshot/experiments/input_distribution_pilot_v1/pilot.py": "c7133d044cbf8a0b8f4c15a1109219f99afa3ac76803f446195590381e549409",
+    "source_snapshot/experiments/input_distribution_pilot_v1/requirements-femm.txt": "a67a0770780b2804e673a34ed5f4dec022d8055f1b91d4580958edb21c0c7328",
+    "source_snapshot/experiments/input_distribution_pilot_v1/test_runtime.py": "92c9591383dc3668eea141e53269625dbbd8df44940c1a48a94d135670a48014",
+    "source_snapshot/export_completed_20260913.py": "71a7b64ef21f25b54eb16b9e0f30d0de2093b994998398fc4dc189b3208c4b6d",
+    "source_snapshot/femm_zone/femm_config.py": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+    "source_snapshot/femm_zone/models/SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5",
+    "source_snapshot/femm_zone/scripts/spmsm_mapping.py": "12947026bb7e7601c7d4bfcf2839d71fe6f00c082a61be2266cc979bf7d076e0",
+    "tables/dataset_all.csv": "e5c1f28eefa5498dbc53bfe4c79411467244242ea0bc9d8f46100ffc0baa7c5d",
+    "tables/dev_common_labeled.csv": "ea88e22fbdb59069d4e208b8a20525115e84fe4fe029623aa3f2ca4668b53f4c",
+    "tables/labels.csv": "1cccc340c7ff24224d9af3a23076dae822d01c16abd85dc17c2a36e5475ca2c6",
+    "tables/report.json": "ce9c08f1ba31985fc589e05ece46d6f2c9e1fb06393fa095bdcf02d0de45fea1",
+    "tables/test_common_labeled.csv": "521ebc8e47b6af17f7b580747883b7e509b51666625e31613403bcdaba78d38a",
+    "tables/train_F_labeled.csv": "02672089c8de51c0c0d2f14d1ceb68010fc41354050a049ae8375c990d776e6e",
+    "tables/train_G_labeled.csv": "d4ab55788b20c990e3eaee52f2555b048418590676b6b588e12aaed0551e0898",
+    "tables/waveforms.csv": "90ce6d1628964552ac750a84a56a31a992bc3707a527e83e10a5bf25316c629c",
+    "verify_package.py": "f5ddd63f1976f48bbfa00035bb2db437927fb15f0e313da5de52091e922d2f77"
+  },
+  "original_checksums_sha256": "16e127ded31333dc9a42aa03085741cf2dabe93023ff7b32158d697010a08c4e",
+  "received_zip_sha256": "4c62d68b163b57a8b5a7fa37a9ec016fc107fb1f04e8a335d4db3044cccf042e",
+  "source_device": {
+    "exported_local": "2026-09-13T23:24:19.602486+02:00",
+    "status": "completed_results_export",
+    "condition_fingerprint": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+    "source_run_directory": "C:\\Users\\Alexander\\Desktop\\03_new_spmsm_project\\experiments\\input_distribution_pilot_v1\\femm_runs\\97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+    "complete_genes": 3299,
+    "successful_angles": 19794,
+    "incomplete_genes": 0,
+    "failed_gene_attempts": 0,
+    "final_workers": 6,
+    "archived_source_files": 65990,
+    "final_report": {
+      "complete_genes": 3299,
+      "incomplete_genes": 0,
+      "attempted_genes": 3303,
+      "failed_gene_attempts": 0,
+      "median_seconds_per_gene": 35.465622200001235,
+      "p90_seconds_per_gene": 37.3384511000022,
+      "measured_workers": 6,
+      "successful_genes_per_hour": 611.4249640086633,
+      "remaining_seconds_estimate_from_throughput": 0.0,
+      "timing_note": "Throughput uses coordinator wall time at the same worker count, including worker startup and retries; not the sum of concurrent gene durations.",
+      "no_time_estimate_before_measured_success": true
+    },
+    "result_policy": "Results and hash-linked receipts retained; successful FEM/ANS work files were removed after validation.",
+    "historical_audit_note": "audit/machine_validation and io_recovery describe earlier pilot/stoppage snapshots; tables/report.json is the final report.",
+    "original_files_copied_without_move_or_delete": true
+  },
+  "actual_git_commit": "834fe314d9d9c427b8760d382bb2ff1acd06fe1c",
+  "git_worktree_status": "?? experiments/input_distribution_pilot_v1/post_femm_baseline_20260913/\n?? femm_zone/results/Codex_SPMSM_FEMM_Import_and_Baseline.md\n?? femm_zone/results/FEMM_results_20260913/\n",
+  "contract": {
+    "physical": {
+      "mat_file": "C:\\Users\\Alexander\\Desktop\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+      "template_file": "C:\\Users\\Alexander\\Desktop\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem",
+      "input_sha256": {
+        "C:\\Users\\Alexander\\Desktop\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+        "C:\\Users\\Alexander\\Desktop\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+      },
+      "current": {
+        "amplitude_a": 3.5,
+        "pole_pairs": 4,
+        "omega_e_rad_s": 2513.2741228718346,
+        "omega_m_rad_s": 628.3185307179587
+      },
+      "current_source": "导师cos(omega*t)公式；MAT inp.Is_amp、F、wmech、P。t=deg2rad(ANG_R)/wmech。",
+      "problem": {
+        "Frequency": 0,
+        "Precision": 1e-08,
+        "MinAngle": 15,
+        "DoSmartMesh": 1,
+        "Depth": 36.0,
+        "LengthUnits": "millimeters",
+        "ProblemType": "planar",
+        "Coordinates": "cartesian",
+        "ACSolver": 0,
+        "PrevType": 0,
+        "PrevSoln": ""
+      },
+      "airgap": {
+        "name": "sliding_airgap",
+        "boundary_type": 6,
+        "outer_angle_deg": 0,
+        "initial_inner_angle_deg": 29.0
+      },
+      "angle_source": "导师补充ang_0=29°；用户指定ANG_R=0:3:15°。原脚本T/ANG_R生成部分未提供。",
+      "rotor_travel_angles_deg": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15
+      ],
+      "inner_angles_deg": [
+        29.0,
+        32.0,
+        35.0,
+        38.0,
+        41.0,
+        44.0
+      ],
+      "initial_phases_deg": [
+        0.0
+      ],
+      "torque_multiplier": 1.0,
+      "comparison_note": "六点算术平均；MAT DeltaT按峰峰转矩差(N·m)比较。旧-2经验换算另存对照。",
+      "material_source": "几何、绕组和材料BH曲线来自FEM模板；基因只切换设计区Air/N38。"
+    },
+    "template_sha256": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5",
+    "mat_sha256": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+    "mapping_source_sha256": "12947026bb7e7601c7d4bfcf2839d71fe6f00c082a61be2266cc979bf7d076e0",
+    "physical_source_sha256": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+    "runner_source_sha256": "99bb5cb1211e973c4de46fb49f66a2f6ae4d4fd74a63e0272d3b73c32c4859d3",
+    "solver": {
+      "executable": "c:\\femm42\\bin\\femm.exe",
+      "binary_sha256": "5e83cf0899cabae2017868ddcce338e3ba4ac25d1bf8e511eac77eda2bc92a21",
+      "file_version": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    "pyfemm_version": "0.1.3"
+  },
+  "frozen_local_inputs": {
+    "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt": {
+      "expected": "34cdee2e373e36ecd40e82197de5ea34941397bafea5f586cb00eb87dbfe58ba",
+      "actual": "34cdee2e373e36ecd40e82197de5ea34941397bafea5f586cb00eb87dbfe58ba",
+      "matches": true
+    },
+    "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\config.json": {
+      "expected": "130bafef8b5c93178dc988c20ba3136869b5b32a2e841c2df47775888c1895b6",
+      "actual": "130bafef8b5c93178dc988c20ba3136869b5b32a2e841c2df47775888c1895b6",
+      "matches": true
+    },
+    "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\result.json": {
+      "expected": "720b4dc9d4be74dcb6644230fa96af8e56e164fd152730fcc3b008f236690294",
+      "actual": "720b4dc9d4be74dcb6644230fa96af8e56e164fd152730fcc3b008f236690294",
+      "matches": true
+    },
+    "cnn_zone\\outputs\\lookups\\spmsm_polar90_224_full_motor.npz": {
+      "expected": "6f49f46729c2567e3523da71760c54f3f002f18996c988361d2b3f4495dc5c21",
+      "actual": "6f49f46729c2567e3523da71760c54f3f002f18996c988361d2b3f4495dc5c21",
+      "matches": true
+    },
+    "data_zone\\processed\\spmsm_topology_dataset\\training_corrected_binary\\topology_bits.npy": {
+      "expected": "cbbf1562f59d44bd18067fc8acd9cfcd4c46ffb443054b08fc4da6b0d0f59f84",
+      "actual": "cbbf1562f59d44bd18067fc8acd9cfcd4c46ffb443054b08fc4da6b0d0f59f84",
+      "matches": true
+    },
+    "data_zone\\processed\\spmsm_topology_dataset\\training_corrected_binary\\targets_tavg_delta.npy": {
+      "expected": "90fe5a8526d76b5d813ee7e18ed0731aba6c96390717c2d407502f044fe1881b",
+      "actual": "90fe5a8526d76b5d813ee7e18ed0731aba6c96390717c2d407502f044fe1881b",
+      "matches": true
+    },
+    "cnn_zone\\outputs\\splits\\scheme_a_tavg_bands_train40000_val6483_test6483.npz": {
+      "expected": "de499be640b68e3aac7f8ce48e6169139896178e43b781c2a8cca8853df7d826",
+      "actual": "de499be640b68e3aac7f8ce48e6169139896178e43b781c2a8cca8853df7d826",
+      "matches": true
+    },
+    "data_zone\\raw\\workspace_200.mat": {
+      "expected": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+      "actual": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+      "matches": true
+    },
+    "femm_zone\\models\\SPMSM_discrete.fem": {
+      "expected": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5",
+      "actual": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5",
+      "matches": true
+    },
+    "femm_zone\\workspaces\\teacher_angle29_5genes_20260908\\G2\\phase_0\\angle_29\\model.ans": {
+      "expected": "b79e1ad74ced8aade2cdbf75dedef9d67b7ec0089325d7f12833e2e01ee1d7ac",
+      "actual": "b79e1ad74ced8aade2cdbf75dedef9d67b7ec0089325d7f12833e2e01ee1d7ac",
+      "matches": true
+    },
+    "cnn_zone\\src\\training.py": {
+      "expected": "e33bbd02e82c51bd93384acf2b62af94fd62162a34d3b32d02fcf2a9a5cae069",
+      "actual": "e33bbd02e82c51bd93384acf2b62af94fd62162a34d3b32d02fcf2a9a5cae069",
+      "matches": true
+    },
+    "cnn_zone\\src\\training_inputs.py": {
+      "expected": "e4d5f14e4a7a394cad8c6867dea5936c49e7e53a13f97a0fcfe698426ee7d443",
+      "actual": "e4d5f14e4a7a394cad8c6867dea5936c49e7e53a13f97a0fcfe698426ee7d443",
+      "matches": true
+    },
+    "cnn_zone\\src\\models_v2.py": {
+      "expected": "7fa9316b20a5b109d319a288ed44019ee15fedd6a2d6f897c24552a46ae73954",
+      "actual": "7fa9316b20a5b109d319a288ed44019ee15fedd6a2d6f897c24552a46ae73954",
+      "matches": true
+    },
+    "cnn_zone\\src\\fem_mesh.py": {
+      "expected": "77f1d056186ffbe69c5e0ddd00c788f2d1d277a500ae03856f3b8c14725f1e41",
+      "actual": "77f1d056186ffbe69c5e0ddd00c788f2d1d277a500ae03856f3b8c14725f1e41",
+      "matches": true
+    },
+    "femm_zone\\femm_config.py": {
+      "expected": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+      "actual": "17bcee0c96180595f323f698d65891d844f1beff7c24069dae294574fd279264",
+      "matches": false
+    },
+    "femm_zone\\scripts\\spmsm_mapping.py": {
+      "expected": "12947026bb7e7601c7d4bfcf2839d71fe6f00c082a61be2266cc979bf7d076e0",
+      "actual": "12947026bb7e7601c7d4bfcf2839d71fe6f00c082a61be2266cc979bf7d076e0",
+      "matches": true
+    }
+  },
+  "instruction_sha256": "a22ad2afe2fff44142331bbe773ce5d730e67ad33c09a5646501a3918c6fe996",
+  "prior_cross_device_audit_sha256": "d0e3d45956a063a773f87ff6d318de976c732cb18d6db0801fcfa9e5f0348ee1",
+  "raw_record_files_verified": 65990,
+  "femm_executed": false,
+  "foreign_scripts_executed": false,
+  "runner_difference": "COM/results-only receipts plus bounded Windows PermissionError retry and CLI diagnostics; physics contract unchanged.",
+  "record_layout": "Byte-identical received ZIP; records decompressed and verified in memory; core manifest/contract files also saved under received."
+}

@@ -43,6 +43,17 @@ def check_inputs(cfg: dict) -> None:
             raise ValueError(f"原始输入已变化：{path}；请用新目录重新prepare")
 
 
+def check_solve_config(cfg: dict) -> None:
+    """Reject obsolete prepared physics before opening any FEMM instance."""
+    current = config.load_config()
+    keys = ("current", "problem", "airgap", "rotor_travel_angles_deg",
+            "inner_angles_deg", "initial_phases_deg", "torque_multiplier")
+    changed = [key for key in keys if cfg.get(key) != current.get(key)]
+    if changed:
+        raise ValueError("准备目录的物理配置与当前统一配置不一致：" + ", ".join(changed)
+                         + "；拒绝求解，请使用新名称重新prepare，保留旧结果。")
+
+
 def prepare(name: str) -> dict:
     cfg, output = config.load_config(), run_path(name)
     output.mkdir(parents=True, exist_ok=False)  # 不覆盖已有运行
@@ -83,6 +94,7 @@ def solve(name: str) -> None:
         raise ValueError("solve只接受prepared目录；已有/中断的运行请保留并用新名称prepare")
     cfg = manifest["config"]
     check_inputs(cfg)
+    check_solve_config(cfg)
     for case in manifest["cases"]:
         model = output / case["model"]
         if config.sha256(model) != case["prepared_sha256"] or (model.parent / "result.json").exists():

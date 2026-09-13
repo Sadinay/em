@@ -1,0 +1,96 @@
+{
+  "checked_local": "2026-09-10T00:56:54.630080+02:00",
+  "original_execution": {
+    "execution_id": "1788984407768744500_2428",
+    "coordinator_pid": 2428,
+    "scope": "all",
+    "status": "failed",
+    "workers": 6,
+    "scope_genes": 3299,
+    "pending_at_start": 3279,
+    "reused_complete_genes": 20,
+    "new_successes": 1626,
+    "new_failures": 0,
+    "paused_genes": 4,
+    "worker_pids": [
+      1180,
+      5496,
+      8500,
+      9052,
+      15348,
+      22164
+    ],
+    "elapsed_seconds": 9616.5991385,
+    "error": "PermissionError(13, '拒绝访问。')",
+    "successful_genes_per_hour": 608.6975151709449
+  },
+  "confirmed_error": "PermissionError(13, '拒绝访问。')",
+  "exact_failed_path_known": false,
+  "suspected_cause": "Transient Windows file access denial during coordinator persistence; original log has no traceback/path, so the exact operation and locking process are unconfirmed.",
+  "change": "Bounded PermissionError retries around JSON/CSV temporary-file writes and atomic replacement; persistent denial includes the target path in the recorded exception.",
+  "maximum_attempts_per_file_operation": 12,
+  "maximum_backoff_seconds_per_file_operation": 7.55,
+  "finite_element_retry_policy_unchanged": true,
+  "previous_result_never_truncated_in_place": true,
+  "tests_passed": 15,
+  "real_windows_file_sharing_lock_test_passed": true,
+  "current_source_sha256": "8671bbabc532072737416983d8b5aeba951ba3e33f025f4aa2f67c718dcd1367",
+  "condition_fingerprint": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+  "condition_unchanged": true,
+  "complete_genes_verified": 1646,
+  "successful_angles_verified": 9885,
+  "remaining_genes": 1653,
+  "partial_genes": [
+    {
+      "gene_id": "7d6d9381de6793f0207498ed6ed37b52c6fc2ff245126f099362b69317f6bab2",
+      "successful_angles": "4",
+      "errors": "angle 41.0: pending; angle 44.0: pending"
+    },
+    {
+      "gene_id": "7d731be53054a85ead8a7cc8a3719f30ca1fa6d08f404f233d6af6104517441f",
+      "successful_angles": "2",
+      "errors": "angle 35.0: pending; angle 38.0: pending; angle 41.0: pending; angle 44.0: pending"
+    },
+    {
+      "gene_id": "7d8db1415c2da19c79f3b65cc6961ccdf1dfbaa18782ca027866c2be4a8086e5",
+      "successful_angles": "2",
+      "errors": "angle 35.0: pending; angle 38.0: pending; angle 41.0: pending; angle 44.0: pending"
+    },
+    {
+      "gene_id": "7d9bd55e129397eea4c0f6d1800c5fb470da5d922d67ccf2700d0a87c7b9f0d0",
+      "successful_angles": "1",
+      "errors": "angle 32.0: pending; angle 35.0: pending; angle 38.0: pending; angle 41.0: pending; angle 44.0: pending"
+    }
+  ],
+  "full_prepare_recovery_preflight": "passed: 3299 genes x 6 angles; no FEMM started",
+  "failure_threshold_reached": false,
+  "batch_lock_absent": true,
+  "original_failure_record_preserved": true,
+  "full_solve_restarted": false,
+  "disk_free_gib": 121.33,
+  "report": {
+    "complete_genes": 1646,
+    "incomplete_genes": 1653,
+    "attempted_genes": 1650,
+    "failed_gene_attempts": 0,
+    "median_seconds_per_gene": 35.671813550000024,
+    "p90_seconds_per_gene": 37.55955420000009,
+    "measured_workers": 6,
+    "successful_genes_per_hour": 607.1455807848877,
+    "remaining_seconds_estimate_from_throughput": 9801.273678558446,
+    "timing_note": "Throughput uses coordinator wall time at the same worker count, including worker startup and retries; not the sum of concurrent gene durations.",
+    "no_time_estimate_before_measured_success": true
+  },
+  "subsequent_restart_diagnosis": {
+    "source": "user-supplied complete traceback",
+    "exception": "KeyboardInterrupt",
+    "stage": "prepare_cases -> prune_success -> validate_success -> sha(artifact_retention.json)",
+    "checksum_mismatch_reported": false,
+    "interpretation": "Process received an interruption during preflight hashing. This is separate from the earlier PermissionError.",
+    "earlier_permission_error_exact_cause_known": false
+  },
+  "startup_prompt_added": true,
+  "full_failure_traceback_logging_added": true,
+  "current_runtime_tests_passed": 17,
+  "latest_source_sha256": "c7133d044cbf8a0b8f4c15a1109219f99afa3ac76803f446195590381e549409"
+}

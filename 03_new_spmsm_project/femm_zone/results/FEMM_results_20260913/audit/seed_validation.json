@@ -1,0 +1,87 @@
+{
+  "status": "seeds_ready_no_new_femm_solve",
+  "candidate_count": 20000,
+  "train_G": 1400,
+  "train_F": 1400,
+  "dev": 200,
+  "test": 400,
+  "training_intersection": 101,
+  "unique_femm_queue": 3299,
+  "new_angle_solve_count": 19794,
+  "historical_regression": "four verified existing cases reused",
+  "source_counts": {
+    "G": {
+      "B": 51,
+      "U": 680,
+      "L": 617,
+      "P": 52
+    },
+    "F": {
+      "B": 567,
+      "L": 355,
+      "U": 281,
+      "P": 197
+    },
+    "dev": {
+      "U": 50,
+      "L": 50,
+      "B": 50,
+      "P": 50
+    },
+    "test": {
+      "U": 100,
+      "L": 100,
+      "B": 100,
+      "P": 100
+    }
+  },
+  "nearest_old_train_hamming": {
+    "minimum": 4,
+    "median": 38.0,
+    "maximum": 46
+  },
+  "all_new_exactly_excluded_from_history": true,
+  "encoding_and_480_label_mapping_verified": true,
+  "isolated_single_cells_remaining": 0,
+  "repaired_queue_genes": 2261,
+  "families_disjoint": true,
+  "four_group_counts": {
+    "G-S": 2000,
+    "G-E": 2000,
+    "F-S": 2000,
+    "F-E": 2000
+  },
+  "pilot20_source_counts": {
+    "U": 5,
+    "L": 5,
+    "B": 5,
+    "P": 5
+  },
+  "pilot20_membership_counts": {
+    "G": 4,
+    "F": 7,
+    "G;F": 4,
+    "": 5
+  },
+  "graph_sha256": "e9d50cf8d3da4baff092d6ce26377fdd711da69d07978fbb8552d367adcda84c",
+  "pilot_source_sha256": "b1e5d3aab1916548b31549b8e96c7e5bf873d2d6c18758f4dd75bd1b53e12924",
+  "file_sha256": {
+    "pilot_config.json": "a610c32961e22f8dad72f5c526661d4d477a2a874dff54ef63f73df955bc1f3f",
+    "provenance.json": "f22273ddff1af4494a93fa285b7675ce92b6d7df18021247f6e8b2367ded4b02",
+    "candidates_train.csv": "9eeed1c337b7ced89de35f8f76874041140ab8abdaeeccc1ee713c6889da52c6",
+    "old_anchors.csv": "36ef2ad85922889a46c6659f81521ae705099e36103fd1663c1192b6c7d2e682",
+    "parent_families.json": "4f9669be9fd7537c59825498b69ae9e7e8716fac511a65cfa1dc0783397757b9",
+    "train_G.csv": "84ce670d7e93f4e9b2bd5ac2573145a9de5ebf210708eaf8c2178ad0f2d4d95c",
+    "train_F.csv": "b3553ea22c32782c2e918ca8ef50be5293290789f08ee169d68d322446f6e6ce",
+    "dev_common.csv": "5b9177519c2c4ec2af981985ed0bb6a93a8b1e174a2391922aae665a746e6dea",
+    "test_common.csv": "7ab78c326afed8bc8994612bb6f90ccbdbb3e758423e8c24724689cf713cab99",
+    "femm_queue.csv": "bfbe9a9458ff9912894c66fb1e461a5d4336ee7d6fbba04722a01f8dbb812642",
+    "memberships.csv": "cecd2b8bbd0461ce300cfc6410f2d4390b27c05c78161f75085f1843d4905ba3",
+    "pilot20.csv": "603a2ce9cb35354a0920aab25f7c68f1c57290f528ac79a1b24768e7c6e2f4c9",
+    "region_graph.json": "e9d50cf8d3da4baff092d6ce26377fdd711da69d07978fbb8552d367adcda84c",
+    "feature_scaler.json": "59420136692ccbf8e5da1c8561b48b7e43ddb981ac37bb46ccb8ed4fc2931bae",
+    "selection_G.json": "7e82f3cac5aa09574ee7444f859264107a8c20e363a31bc4656a915df9c2b1f9",
+    "selection_F.json": "2c20aefac4b6fbf4778ad6173f6732de06f78a3b01bae80a46e54e7a340bf888",
+    "regression_validation.json": "194550a7ac32146937ba562d4168383e7ce675d1208a37f0461eec0d0724b597"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "expected_genes": 3299,
+  "valid_genes": 3299,
+  "missing_or_conflicting_genes": 0,
+  "failures": [],
+  "failed_genes": 0,
+  "queue_missing": [],
+  "queue_extra": [],
+  "duplicate_summary_records": 0,
+  "complete_angles": 19794,
+  "prepared_input_hashes_verified": 19794,
+  "max_aggregate_difference_nm": 8.881784197001252e-16,
+  "absolute_tolerance_nm": 1e-06,
+  "source_counts": {
+    "train_G": {
+      "B": 51,
+      "U": 680,
+      "L": 617,
+      "P": 52
+    },
+    "train_F": {
+      "B": 567,
+      "L": 355,
+      "U": 281,
+      "P": 197
+    },
+    "dev_common": {
+      "U": 50,
+      "L": 50,
+      "B": 50,
+      "P": 50
+    },
+    "test_common": {
+      "U": 100,
+      "L": 100,
+      "B": 100,
+      "P": 100
+    }
+  },
+  "role_counts": {
+    "train_G": 1400,
+    "train_F": 1400,
+    "dev_common": 200,
+    "test_common": 400
+  },
+  "training_intersection": 101,
+  "train_dev_test_disjoint": true,
+  "families_disjoint": true,
+  "P_parents_from_old_train": true,
+  "history_unique_genotypes": 71054,
+  "history_population_counts": {
+    "population": 612,
+    "population_all": 123012,
+    "population_noChange_all": 123012
+  },
+  "new_history_exact_overlap": 0,
+  "angle_attempt_status_counts": {
+    "succeeded": 19794
+  },
+  "original_FEM_ANS_present": false,
+  "evidence": "All retained records/checksums and reconstructed prepared inputs; prior independent FEMM replay covered two pilot genes only.",
+  "ready": {
+    "train_G": true,
+    "train_F": true,
+    "dev_common": true,
+    "test_common": true
+  },
+  "local_physical_source_drift": {
+    "femm_zone\\femm_config.py": {
+      "expected": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+      "actual": "17bcee0c96180595f323f698d65891d844f1beff7c24069dae294574fd279264",
+      "matches": false
+    }
+  },
+  "new_FEMM_solves": 0,
+  "elapsed_seconds": 40.66504900000109
+}

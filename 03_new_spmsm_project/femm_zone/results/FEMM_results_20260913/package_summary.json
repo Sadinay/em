@@ -1,0 +1,28 @@
+{
+  "exported_local": "2026-09-13T23:24:19.602486+02:00",
+  "status": "completed_results_export",
+  "condition_fingerprint": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+  "source_run_directory": "C:\\Users\\Alexander\\Desktop\\03_new_spmsm_project\\experiments\\input_distribution_pilot_v1\\femm_runs\\97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+  "complete_genes": 3299,
+  "successful_angles": 19794,
+  "incomplete_genes": 0,
+  "failed_gene_attempts": 0,
+  "final_workers": 6,
+  "archived_source_files": 65990,
+  "final_report": {
+    "complete_genes": 3299,
+    "incomplete_genes": 0,
+    "attempted_genes": 3303,
+    "failed_gene_attempts": 0,
+    "median_seconds_per_gene": 35.465622200001235,
+    "p90_seconds_per_gene": 37.3384511000022,
+    "measured_workers": 6,
+    "successful_genes_per_hour": 611.4249640086633,
+    "remaining_seconds_estimate_from_throughput": 0.0,
+    "timing_note": "Throughput uses coordinator wall time at the same worker count, including worker startup and retries; not the sum of concurrent gene durations.",
+    "no_time_estimate_before_measured_success": true
+  },
+  "result_policy": "Results and hash-linked receipts retained; successful FEM/ANS work files were removed after validation.",
+  "historical_audit_note": "audit/machine_validation and io_recovery describe earlier pilot/stoppage snapshots; tables/report.json is the final report.",
+  "original_files_copied_without_move_or_delete": true
+}

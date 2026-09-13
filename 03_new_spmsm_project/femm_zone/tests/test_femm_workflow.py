@@ -1,5 +1,7 @@
 """离线验证重构；这些测试不会启动FEMM或新的参数筛选。"""
+import builtins
 import copy
+import math
 import re
 import shutil
 import sys
@@ -12,6 +14,8 @@ ZONE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ZONE))
 import femm_config as config
 import run_femm as runner
+
+TEACHER_RUN = ZONE / "workspaces/teacher_angle29_5genes_20260908"
 
 
 def field(text, name, header=False):
@@ -77,7 +81,7 @@ def test_interrupt_closes_only_the_private_femm_instance(tmp_path, monkeypatch):
     output = tmp_path / "interrupt"
     output.mkdir()
     model = output / "model.fem"
-    model.write_text(config.configure_fem(config.TEMPLATE_FILE.read_text(), cfg, 0, 0))
+    model.write_text(config.configure_fem(config.TEMPLATE_FILE.read_text(), cfg, 29, 0))
     runner.save(output / "run.json", {"status": "prepared", "config": cfg,
                                       "cases": [{"model": "model.fem", "prepared_sha256": config.sha256(model)}]})
     calls = []
@@ -98,33 +102,27 @@ def test_interrupt_closes_only_the_private_femm_instance(tmp_path, monkeypatch):
 def test_report_reuses_real_saved_answers_without_femm(tmp_path, monkeypatch):
     """用已有真实解验证报告链路，既不模拟转矩，也不启动求解器。"""
     cfg = config.load_config()
-    cfg["airgap"]["initial_inner_angle_deg"] = 0
-    cfg["inner_angles_deg"] = [0, 3, 6, 9, 12, 15]
-    cfg["torque_multiplier"] = -2
     monkeypatch.setattr(config, "RUN_ROOT", tmp_path)
     monkeypatch.setitem(sys.modules, "femm", None)
-    old = runner.read(ZONE / "results/current_modes_5genes_20260908/summary.json")
-    row = next(r for r in old["results"] if r["scenario_id"] == "is35_plus" and r["candidate_id"] == "median_tavg")
-    gene = {"id": "G2", "state": 31, "row": 190, "pm_cells": row["pm_cells"],
-            "reference_tavg_nm": row["historical_tavg_nm"], "reference_delta_t": row["historical_delta_t"]}
+    saved = runner.read(TEACHER_RUN / "run.json")
+    gene = next(g for g in saved["genes"] if g["id"] == "G2")
     output = tmp_path / "saved_answers"
     cases = []
     for inner in cfg["inner_angles_deg"]:
-        source = ZONE / "results/current_modes_5genes_20260908/is35_plus/median_tavg" / f"angle_{inner:03d}"
-        target = output / f"angle_{inner}"
+        source = TEACHER_RUN / "G2/phase_0" / f"angle_{inner:g}"
+        target = output / f"angle_{inner:g}"
         target.mkdir(parents=True)
-        for name in ("model.fem", "model.ans"):
+        for name in ("model.fem", "model.ans", "result.json"):
             shutil.copy2(source / name, target / name)
-        record = runner.read(source / "result.json")
-        runner.save(target / "result.json", {"raw_torque_nm": record["raw_gap_torque_nm"],
-                                             "fem_sha256": config.sha256(target / "model.fem"),
-                                             "ans_sha256": config.sha256(target / "model.ans")})
         cases.append({"gene_id": "G2", "initial_phase_deg": 0, "inner_angle_deg": inner,
                       "model": str((target / "model.fem").relative_to(output))})
     runner.save(output / "run.json", {"status": "solved", "config": cfg, "genes": [gene], "cases": cases})
     report = runner.report("saved_answers")
-    assert report["rows"][0]["tavg_nm"] == pytest.approx(row["tavg_nm"], abs=1e-12)
-    assert report["rows"][0]["ripple_relative"] == pytest.approx(row["ripple_relative"], abs=1e-12)
+    actual = report["rows"][0]
+    assert actual["tavg_nm"] == pytest.approx(gene["reference_tavg_nm"], rel=0, abs=1e-12)
+    assert actual["peak_to_peak_nm"] == pytest.approx(gene["reference_delta_t"], rel=0, abs=1e-12)
+    assert report["report_definition"]["reference_delta_t_metric"] == "peak_to_peak_nm"
+    assert actual["comparison_torques_nm"] == actual["raw_torques_nm"]
     assert (output / "comparison_phase_0.png").is_file()
 
 
@@ -135,3 +133,82 @@ def test_teacher_initial_offset_does_not_enter_current_phase(inner, expected):
     currents = config.phase_currents(cfg, inner, 0)
     assert tuple(currents.values()) == pytest.approx(expected, abs=1e-12)
     assert cfg["torque_multiplier"] == 1
+
+
+def test_six_angle_config_and_written_currents_match_verified_teacher_run():
+    """核对冻结的真实六角度工况，并独立按电角度 4×机械行程计算三相电流。"""
+    cfg = config.load_config()
+    saved = runner.read(TEACHER_RUN / "run.json")
+    for key in ("current", "problem", "airgap", "rotor_travel_angles_deg",
+                "inner_angles_deg", "initial_phases_deg", "torque_multiplier"):
+        assert cfg[key] == saved["config"][key], key
+    assert cfg["rotor_travel_angles_deg"] == [0, 3, 6, 9, 12, 15]
+    assert cfg["inner_angles_deg"] == [29, 32, 35, 38, 41, 44]
+    assert cfg["initial_phases_deg"] == [0]
+    assert cfg["torque_multiplier"] == 1
+    template = config.TEMPLATE_FILE.read_text(encoding="utf-8")
+    cases = [case for case in saved["cases"] if case["gene_id"] == "G2"]
+    for travel, inner, case in zip(cfg["rotor_travel_angles_deg"], cfg["inner_angles_deg"], cases, strict=True):
+        expected = {name: 3.5 * math.cos(math.radians(4 * travel - phase))
+                    for name, phase in (("A", 0), ("B", 120), ("C", 240))}
+        assert config.phase_currents(cfg, inner, 0) == pytest.approx(expected, rel=0, abs=1e-12)
+        assert case["currents_a"] == pytest.approx(expected, rel=0, abs=1e-12)
+        model = config.configure_fem(template, cfg, inner, 0)
+        for key in ("Frequency", "Precision", "MinAngle", "DoSmartMesh", "Depth", "ACSolver", "PrevType"):
+            assert field(model, key, True) == cfg["problem"][key]
+        gap = next(b for b in re.findall(r"<BeginBdry>.*?<EndBdry>", model, re.S) if '"sliding_airgap"' in b)
+        assert field(gap, "BdryType") == 6
+        assert field(gap, "innerangle") == inner
+        assert field(gap, "outerangle") == 0
+        circuits = re.findall(r"<BeginCircuit>.*?<EndCircuit>", model, re.S)
+        assert len(circuits) == 3
+        for block in circuits:
+            name = re.search(r'<CircuitName>\s*=\s*"([ABC])"', block)[1]
+            assert field(block, "TotalAmps_re") == pytest.approx(expected[name], rel=0, abs=1e-12)
+            assert field(block, "TotalAmps_im") == 0
+
+
+@pytest.mark.parametrize("drift", ["legacy_0_minus2", "current", "problem", "airgap",
+                                  "rotor_travel_angles_deg", "inner_angles_deg",
+                                  "initial_phases_deg", "torque_multiplier", "missing_field"])
+def test_solve_rejects_stale_prepared_physics_before_femm_import(tmp_path, monkeypatch, drift):
+    cfg = copy.deepcopy(config.load_config())
+    if drift == "legacy_0_minus2":
+        cfg["airgap"]["initial_inner_angle_deg"] = 0
+        cfg["inner_angles_deg"] = [0, 3, 6, 9, 12, 15]
+        cfg["torque_multiplier"] = -2
+    elif drift == "current":
+        cfg["current"]["amplitude_a"] = 5
+    elif drift == "problem":
+        cfg["problem"]["MinAngle"] = 30
+    elif drift == "airgap":
+        cfg["airgap"]["outer_angle_deg"] = 3
+    elif drift == "rotor_travel_angles_deg":
+        cfg[drift] = [0, 5, 10, 15]
+    elif drift == "inner_angles_deg":
+        cfg[drift] = [29, 34, 39, 44]
+    elif drift == "initial_phases_deg":
+        cfg[drift] = [120]
+    elif drift == "torque_multiplier":
+        cfg[drift] = -2
+    else:
+        del cfg["rotor_travel_angles_deg"]
+    monkeypatch.setattr(config, "RUN_ROOT", tmp_path)
+    output = tmp_path / "stale"
+    output.mkdir()
+    manifest = {"status": "prepared", "config": cfg, "cases": []}
+    runner.save(output / "run.json", manifest)
+    original_import = builtins.__import__
+    def reject_solver_import(name, *args, **kwargs):
+        if name.split(".")[0] in {"femm", "win32com"}:
+            pytest.fail(f"Stale physics reached solver import: {name}")
+        return original_import(name, *args, **kwargs)
+    monkeypatch.setattr(builtins, "__import__", reject_solver_import)
+    with pytest.raises(ValueError):
+        runner.solve("stale")
+    assert runner.read(output / "run.json") == manifest
+
+
+def test_solve_config_accepts_verified_physics_without_requiring_historical_notes():
+    saved = runner.read(TEACHER_RUN / "run.json")["config"]
+    runner.check_solve_config(saved)

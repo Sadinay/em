@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "figures": {
+    "dev_source_errors.png": "5c51e235e6febaab1007c0454fb1b73646f6cadabad742470864de4e9a517920",
+    "GF_structure_distributions.png": "1264e722534e0b671635b45a8fdce0ec140c3cdad2b0be9c86eb4eee542f2f31",
+    "large_error_structures.png": "1c452686bb278b09d7b0a64529f7bbd55991569bcae789450c7e97e6190a7816",
+    "truth_prediction.png": "29b2583bf35fb33e214d1949b2a7c91f4b585690ee29708397acf0c5d2eab7de"
+  },
+  "checks": [
+    "Axis labels, units, sample counts and legends readable",
+    "No clipping or overlapping result annotations",
+    "Common G/F histogram bins",
+    "Examples selected only from train/dev; no final test cases"
+  ]
+}

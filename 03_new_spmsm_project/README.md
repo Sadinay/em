@@ -2,6 +2,10 @@
 
 本项目按 `02_new_ipmsm_project` 的功能区规格独立组织，用于 `SPMSM_discrete.fem` 与 `workspace_200.mat` 所代表的第三类基因和电机结构。03 与 01、02 的基因编码、FEMM 几何映射、GA 配置、数据库、CNN 模型及实验结果不得混用。
 
+2026-09-13 更新：已接收并核验另一台设备的全部 **3299 个基因 / 19794 个角度**，完成冻结旧 CNN 的基线评估。G/F 各1400及公共dev/test数据入口见[接收与评估说明](experiments/input_distribution_pilot_v1/post_femm_baseline_20260913/README.md)，结论见[基线报告](experiments/input_distribution_pilot_v1/post_femm_baseline_20260913/BASELINE_REPORT.md)。尚未启动补样训练或最终test评估。
+
+导入时发现本机 `femm_zone/femm_config.py` 回退到内角0°起步/转矩−2；现已逐字节恢复为已核验结果包的 **29°起步/倍率1** 配置。求解入口新增检查，旧准备目录的物理设置不一致时拒绝启动 FEMM，需换名称重新 `prepare`。修复及离线验证见[配置恢复记录](femm_zone/workspaces/config_restore_20260913/README.md)。下文部分“种子待算”说明为此前阶段记录。
+
 FEMM配置统一到 [femm_config.py](femm_zone/femm_config.py)，历史五基因复现使用 [run_femm.py](femm_zone/run_femm.py)。默认仅显示配置；准备、求解和出图用法见 [FEMM说明](femm_zone/README.md)。旧试验脚本已归档。
 
 下一步四组输入分布试验使用独立的 [pilot.py](experiments/input_distribution_pilot_v1/pilot.py)，新增选种子、孤立单格修正和批量 FEMM 入口集中在此文件，沿用上述物理配置。种子清单、审计和之后手动启动 FEMM 的命令见 [试验说明](experiments/input_distribution_pilot_v1/README.md)。本次只准备种子，不启动新 FEMM 求解或四组训练。
