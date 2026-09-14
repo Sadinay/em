@@ -5,7 +5,8 @@
 - [平均转矩：真实值与预测值](01_平均转矩_真实值与预测值.png)
 - [转矩波动：真实值与预测值](02_转矩波动_真实值与预测值.png)
 - [相对训练前 f0 的 MAE 变化](03_新旧基因_MAE变化.png)
-- [完整数值](性能指标.csv)，物理单位均为 N·m；同名 PDF 可用于导出。
+- [仅新基因：老模型与更新模型叠加对比](04_仅新基因_老模型与更新模型对比.png)：蓝色为老模型，橙色为更新模型；两行分别为平均转矩、转矩波动，两列分别为 G-S、F-S。
+- [完整数值](性能指标.csv)，物理单位均为 N·m；图像仅保存 PNG。
 
 展示实际更新后的新验证最优候选：G-S 第 2,000 步、F-S 第 1,500 步（各自的 `best_unconstrained.pt`），不是最后第 2,500 步，也不是按约束回退选用的 f0。两者均未满足旧验证双目标 MAE 不超过 f0 的 1.05 倍，因此不能称为已通过验收的替代模型。
 
@@ -15,6 +16,7 @@
 
 ```powershell
 python ./03_new_spmsm_project/experiments/cnn_replay_update_v1/report/diagnostics.py --overlay
+python ./03_new_spmsm_project/experiments/cnn_replay_update_v1/report/diagnostics.py --new-gene-overlay
 ```
 
 `图表核验.json` 记录本次使用的验证 CSV、绘图源代码及输出哈希。实验根目录 `ARTIFACT_CHECKSUMS.json` 保留上次实验完成时的历史快照，本次绘图扩展不改写该快照。

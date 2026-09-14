@@ -1,0 +1,54 @@
+{
+  "role": "dev_common",
+  "n": 200,
+  "candidate_steps": {
+    "G-S": 2000,
+    "F-S": 1500
+  },
+  "metrics": {
+    "f0": {
+      "tavg": {
+        "mae": 0.19154534722618188,
+        "rmse": 0.33201282100803675
+      },
+      "delta_t": {
+        "mae": 0.09616322302572643,
+        "rmse": 0.17507261911815414
+      }
+    },
+    "G-S": {
+      "tavg": {
+        "mae": 0.04105476820286908,
+        "rmse": 0.06070193873939331
+      },
+      "delta_t": {
+        "mae": 0.03386374393693682,
+        "rmse": 0.05017574513735982
+      }
+    },
+    "F-S": {
+      "tavg": {
+        "mae": 0.02164085351382765,
+        "rmse": 0.029713023269824345
+      },
+      "delta_t": {
+        "mae": 0.030231208200109938,
+        "rmse": 0.0407983781207449
+      }
+    }
+  },
+  "input_prediction_sha256": {
+    "baseline\\dev_common_predictions.csv": "da8b065f3aefd71182f450414ab28af70399ebe6afd7e40039f51258dcd3ceae",
+    "runs\\G-S\\step02000\\dev_common_predictions.csv": "9156bc51b560bd4c1aab5205017d9606ba799f247f09a7a71cc21fbfa3a8b895",
+    "runs\\F-S\\step01500\\dev_common_predictions.csv": "3934dd83773abb0d6a70459e32fb2e6284ecc2e8f3e15619a457220c29023a61"
+  },
+  "metrics_verified_against_saved_evaluation": true,
+  "new_inference": false,
+  "test_used": false,
+  "command": "diagnostics.py --new-gene-overlay",
+  "source_sha256": "7cf386eb9cac573bf5815cbd16310aaa594515a576de557d3f4bb994960e7a9b",
+  "outputs_sha256": {
+    "04_仅新基因_老模型与更新模型对比.png": "b8ceedeb3c1f37c141825ea8273efc890b888d47aa1b285413457a8058319ed0"
+  },
+  "pdf_removed_at_user_request": true
+}

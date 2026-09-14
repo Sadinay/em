@@ -221,8 +221,7 @@ def overlay():
                  "展示实际训练后的无约束候选；两模型均未通过旧分布双目标各自 5% 的容限。最终测试集未使用。",
                  ha="center", va="bottom", fontsize=10, color="#505050", linespacing=1.7)
         filename = f"{index:02d}_{'平均转矩' if target=='tavg' else '转矩波动'}_真实值与预测值"
-        for extension in ("png", "pdf"):
-            fig.savefig(destination / (filename+"."+extension), dpi=200)
+        fig.savefig(destination / (filename+".png"), dpi=200)
         plt.close(fig)
     fig, axes = plt.subplots(1, 2, figsize=(12, 5.2))
     fig.subplots_adjust(top=.78, bottom=.20, wspace=.22)
@@ -243,22 +242,98 @@ def overlay():
     fig.text(.5,.86,"上方正值：误差增加，性能下降    |    下方负值：误差减少，性能改善",ha="center",fontsize=11)
     fig.text(.5,.045,"旧验证 n=6,483；新验证 n=200。灰色点线为旧分布 +5% 容限；两组均未通过双目标约束。",
              ha="center",fontsize=10,color="#505050")
-    for extension in ("png","pdf"):
-        fig.savefig(destination / ("03_新旧基因_MAE变化."+extension),dpi=200)
+    fig.savefig(destination / "03_新旧基因_MAE变化.png", dpi=200)
     plt.close(fig)
     manifest = {"models": {g:{"checkpoint_step":c["step"], "checkpoint":"best_unconstrained.pt"} for g,c in candidates.items()},
                 "roles": {"old_validation":6483,"dev_common":200},"input_prediction_sha256":inputs,
                 "metrics_verified_against_saved_evaluation":True,"new_inference":False,"test_used":False,
                 "plot_source":"../diagnostics.py --overlay", "plot_source_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-                "outputs_sha256":{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in destination.iterdir() if p.suffix in (".png",".pdf",".csv")}}
+                "outputs_sha256":{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in destination.iterdir() if p.suffix in (".png",".csv")}}
     (destination/"图表核验.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf8")
     print("Old/new overlay plots written: " + str(destination))
+
+
+def new_gene_overlay():
+    """Compare frozen and updated models on the same 200 new validation genes."""
+    plt.rcParams.update({"font.sans-serif": ["Microsoft YaHei", "DejaVu Sans"], "axes.unicode_minus": False})
+    destination = OUT / "新旧基因性能对比"
+    destination.mkdir(exist_ok=True)
+    folders = {"f0": ROOT / "baseline"}
+    steps = {}
+    for group in ("G-S", "F-S"):
+        result = read(ROOT / "runs" / group / "result.json")
+        steps[group] = result["best"]["unconstrained_step"]
+        folders[group] = ROOT / "runs" / group / f"step{steps[group]:05d}"
+    data, metrics, inputs = {}, {}, {}
+    for name, folder in folders.items():
+        path = folder / "dev_common_predictions.csv"
+        values = rows(path)
+        assert len(values) == len({v["gene_id"] for v in values}) == 200
+        data[name] = values
+        assert [v["gene_id"] for v in values] == [v["gene_id"] for v in data["f0"]]
+        inputs[str(path.relative_to(ROOT))] = hashlib.sha256(path.read_bytes()).hexdigest()
+        saved = read(folder / "metrics.json")["dev_common"]["metrics"]
+        metrics[name] = {}
+        for target in TARGETS:
+            truth = np.array([float(v[target+"_true_nm"]) for v in values])
+            pred = np.array([float(v[target+"_pred_nm"]) for v in values])
+            assert np.isfinite(truth).all() and np.isfinite(pred).all()
+            assert np.array_equal(truth, [float(v[target+"_true_nm"]) for v in data["f0"]])
+            error = pred-truth
+            metrics[name][target] = {"mae": float(np.abs(error).mean()),
+                                     "rmse": float(np.sqrt(np.mean(error**2)))}
+            for key, value in metrics[name][target].items():
+                assert abs(value-saved[target][key]) < 1e-12
+    fig, axes = plt.subplots(2, 2, figsize=(13.5, 11.5))
+    fig.subplots_adjust(left=.08, right=.98, bottom=.10, top=.86, hspace=.34, wspace=.22)
+    colors = ("#2478b5", "#eb861b")
+    for row, (target, title) in enumerate((("tavg", "平均转矩 Tavg"), ("delta_t", "转矩波动 DeltaT"))):
+        numbers = [float(v[target+suffix]) for values in data.values() for v in values
+                   for suffix in ("_true_nm", "_pred_nm")]
+        low, high = min(numbers), max(numbers)
+        pad = max((high-low)*.055, .001)
+        for col, group in enumerate(("G-S", "F-S")):
+            ax = axes[row, col]
+            for name, color, label in (("f0", colors[0], "老模型 f0"), (group, colors[1], "更新模型")):
+                values = data[name]
+                ax.scatter([float(v[target+"_true_nm"]) for v in values],
+                           [float(v[target+"_pred_nm"]) for v in values], s=26, alpha=.75,
+                           c=color, edgecolors="white", linewidths=.3, label=label, rasterized=True)
+            ax.plot([low-pad, high+pad], [low-pad, high+pad], "--", color="#c74440", lw=1.2, label="理想预测 y=x", zorder=1)
+            ax.set(xlim=(low-pad, high+pad), ylim=(low-pad, high+pad),
+                   xlabel=f"FEMM 真实值（N·m）", ylabel="CNN 预测值（N·m）")
+            ax.set_title(f"{group} · {title}", fontsize=13, pad=12)
+            ax.grid(alpha=.18)
+            for j, name in enumerate(("f0", group)):
+                m = metrics[name][target]
+                ax.text(.035, .95-j*.07, f"{'老模型 f0' if name=='f0' else '更新 '+group}：MAE {m['mae']:.5f}  |  RMSE {m['rmse']:.5f}",
+                        transform=ax.transAxes, va="top", fontsize=9.5, color=colors[j],
+                        bbox={"facecolor":"white", "alpha":.88, "edgecolor":"none", "pad":2})
+    handles, labels = axes[0, 0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(.5,.925), ncol=3, frameon=False, fontsize=12)
+    fig.suptitle("仅新基因：老模型与更新模型的预测对比", fontsize=19, y=.979)
+    fig.text(.5, .942, "同一批共同新验证基因 n=200；每个基因分别由老模型与更新模型预测", ha="center", fontsize=11)
+    fig.text(.5, .029, f"G-S：第 {steps['G-S']:,} 步；F-S：第 {steps['F-S']:,} 步。采用各组新验证最优的无约束检查点。\n"
+             "同一目标统一坐标范围；点越接近红色虚线，预测越准确。两更新模型未通过旧分布 5% 容限；最终测试集未使用。",
+             ha="center", fontsize=10, color="#505050", linespacing=1.7)
+    outputs = [destination / "04_仅新基因_老模型与更新模型对比.png"]
+    fig.savefig(outputs[0], dpi=200)
+    plt.close(fig)
+    manifest = {"role":"dev_common", "n":200, "candidate_steps":steps, "metrics":metrics,
+                "input_prediction_sha256":inputs, "metrics_verified_against_saved_evaluation":True,
+                "new_inference":False, "test_used":False, "command":"diagnostics.py --new-gene-overlay",
+                "source_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                "outputs_sha256":{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in outputs}}
+    (destination / "04_图表核验.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf8")
+    print("New-gene model comparison written: " + str(outputs[0]))
 
 
 if __name__ == '__main__':
     if sys.argv[1:] == ["--overlay"]:
         overlay()
+    elif sys.argv[1:] == ["--new-gene-overlay"]:
+        new_gene_overlay()
     elif len(sys.argv) == 1:
         run()
     else:
-        raise SystemExit("Usage: diagnostics.py [--overlay]")
+        raise SystemExit("Usage: diagnostics.py [--overlay | --new-gene-overlay]")
