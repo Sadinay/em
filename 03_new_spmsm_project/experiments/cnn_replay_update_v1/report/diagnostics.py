@@ -130,5 +130,135 @@ def run():
     print('Candidate diagnostics written; no model inference or test access')
 
 
+def overlay():
+    """Two colors for old/new validation, one panel per trained candidate."""
+    plt.rcParams.update({"font.sans-serif": ["Microsoft YaHei", "DejaVu Sans"], "axes.unicode_minus": False})
+    destination = OUT / "新旧基因性能对比"
+    destination.mkdir(exist_ok=True)
+    colors = {"old_validation": "#2478b5", "dev_common": "#eb861b"}
+    names = {"old_validation": "旧验证基因", "dev_common": "新验证基因"}
+    baseline = {role: rows(ROOT / "baseline" / (role + "_predictions.csv")) for role in ROLES}
+    inputs = {str((ROOT / "baseline" / (r + "_predictions.csv")).relative_to(ROOT)):
+              hashlib.sha256((ROOT / "baseline" / (r + "_predictions.csv")).read_bytes()).hexdigest() for r in ROLES}
+    candidates, summaries, records = {}, {}, []
+    for group in ("G-S", "F-S"):
+        result = read(ROOT / "runs" / group / "result.json")
+        step = result["best"]["unconstrained_step"]
+        folder = ROOT / "runs" / group / f"step{step:05d}"
+        candidates[group] = {"step": step, "data": {}}
+        saved = read(folder / "metrics.json")
+        summaries[group] = {}
+        for role, count in (("old_validation", 6483), ("dev_common", 200)):
+            path = folder / (role + "_predictions.csv")
+            values = rows(path)
+            assert len(values) == len({v["gene_id"] for v in values}) == count
+            assert [v["gene_id"] for v in values] == [v["gene_id"] for v in baseline[role]]
+            candidates[group]["data"][role] = values
+            inputs[str(path.relative_to(ROOT))] = hashlib.sha256(path.read_bytes()).hexdigest()
+            summaries[group][role] = {}
+            for target in TARGETS:
+                truth = np.array([float(v[target+"_true_nm"]) for v in values])
+                prediction = np.array([float(v[target+"_pred_nm"]) for v in values])
+                original_truth = np.array([float(v[target+"_true_nm"]) for v in baseline[role]])
+                assert np.array_equal(truth, original_truth) and np.isfinite(prediction).all()
+                errors = prediction-truth
+                base_errors = np.array([float(v[target+"_pred_nm"])-float(v[target+"_true_nm"]) for v in baseline[role]])
+                mae, original_mae = np.abs(errors).mean(), np.abs(base_errors).mean()
+                metric = {"mae": float(mae), "rmse": float(np.sqrt(np.mean(errors**2))),
+                          "absolute_error_p95": float(np.percentile(np.abs(errors), 95)),
+                          "f0_mae": float(original_mae), "mae_change_percent": float(100*(mae/original_mae-1))}
+                assert all(abs(metric[k]-saved[role]["metrics"][target][k]) < 1e-12
+                           for k in ("mae", "rmse", "absolute_error_p95"))
+                summaries[group][role][target] = metric
+                records.append({"model": group, "checkpoint_step": step, "role": role, "n": count,
+                                "target": target, "unit": "N*m", **metric})
+    write_table(destination / "性能指标.csv", records)
+    for index, (target, label) in enumerate((("tavg", "平均转矩 Tavg"), ("delta_t", "转矩波动 DeltaT")), 1):
+        fig, axes = plt.subplots(1, 2, figsize=(15, 7.8))
+        fig.subplots_adjust(left=.065, right=.98, bottom=.28, top=.84, wspace=.17)
+        all_numbers = [float(v[target+suffix]) for c in candidates.values() for values in c["data"].values()
+                       for v in values for suffix in ("_true_nm", "_pred_nm")]
+        low, high = min(all_numbers), max(all_numbers)
+        pad = (high-low)*.045
+        for ax, (group, candidate) in zip(axes, candidates.items()):
+            for role in ROLES:
+                values = candidate["data"][role]
+                x = [float(v[target+"_true_nm"]) for v in values]
+                y = [float(v[target+"_pred_nm"]) for v in values]
+                old = role == "old_validation"
+                ax.scatter(x, y, s=6 if old else 24, alpha=.25 if old else .9,
+                           c=colors[role], edgecolors="none" if old else "white", linewidths=0 if old else .35,
+                           zorder=2 if old else 3, label=f"{names[role]}（n={len(values):,}）", rasterized=True)
+            ax.plot([low-pad, high+pad], [low-pad, high+pad], "--", color="#ce3f3b", lw=1.35, label="理想预测 y=x", zorder=1)
+            ax.set(xlim=(low-pad,high+pad), ylim=(low-pad,high+pad),
+                   xlabel=f"真实{label}（N·m）", ylabel=f"预测{label}（N·m）")
+            ax.set_title(f"{group} 更新模型 · 新验证最优检查点（{candidate['step']}步）", fontsize=12, pad=11)
+            ax.grid(alpha=.18)
+            legend = ax.legend(loc="upper left", fontsize=9, framealpha=.95)
+            for handle in legend.legend_handles:
+                if hasattr(handle, "set_alpha"):
+                    handle.set_alpha(1)
+            table_values = []
+            for role in ROLES:
+                m = summaries[group][role][target]
+                table_values.append([names[role], f"{m['mae']:.5f}", f"{m['f0_mae']:.5f}",
+                                     f"{m['rmse']:.5f}", f"{m['absolute_error_p95']:.5f}", f"{m['mae_change_percent']:+.1f}%"])
+            table = ax.table(cellText=table_values,
+                             colLabels=["样本", "当前MAE", "f0 MAE", "RMSE", "误差P95", "MAE变化"],
+                             colWidths=[.20,.16,.16,.16,.16,.16], cellLoc="center", bbox=[0,-.335,1,.215])
+            table.auto_set_font_size(False); table.set_fontsize(9)
+            for (row, col), cell in table.get_celld().items():
+                cell.set_edgecolor("#dddddd"); cell.set_linewidth(.6)
+                if row == 0:
+                    cell.set_facecolor("#f0f2f4"); cell.set_text_props(weight="bold")
+                else:
+                    cell.set_facecolor("#edf5fb" if row == 1 else "#fff4e7")
+                    cell.get_text().set_color(colors[ROLES[row-1]])
+        fig.suptitle(f"{label}：训练后模型对旧、新基因的预测性能", fontsize=18, y=.97)
+        fig.text(.5,.912,"蓝色：旧验证基因 6,483 个     橙色：共同新验证基因 200 个     红虚线：真实值 = 预测值",
+                 ha="center", fontsize=11)
+        fig.text(.5,.031,"MAE变化与同一验证集上的训练前 f0 比较：正值为误差增加，负值为误差减少。误差单位均为 N·m。\n"
+                 "展示实际训练后的无约束候选；两模型均未通过旧分布双目标各自 5% 的容限。最终测试集未使用。",
+                 ha="center", va="bottom", fontsize=10, color="#505050", linespacing=1.7)
+        filename = f"{index:02d}_{'平均转矩' if target=='tavg' else '转矩波动'}_真实值与预测值"
+        for extension in ("png", "pdf"):
+            fig.savefig(destination / (filename+"."+extension), dpi=200)
+        plt.close(fig)
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5.2))
+    fig.subplots_adjust(top=.78, bottom=.20, wspace=.22)
+    for ax, (target, label) in zip(axes, (("tavg", "平均转矩 Tavg"), ("delta_t", "转矩波动 DeltaT"))):
+        for shift, role in zip((-.18,.18), ROLES):
+            changes = [summaries[g][role][target]["mae_change_percent"] for g in candidates]
+            bars = ax.bar(np.arange(2)+shift, changes, .33, label=names[role], color=colors[role])
+            for bar, value in zip(bars, changes):
+                ax.text(bar.get_x()+bar.get_width()/2, value+(3 if value >= 0 else -3), f"{value:+.1f}%",
+                        ha="center", va="bottom" if value>=0 else "top", fontsize=11, color=colors[role])
+        ax.axhline(0, color="#555555", lw=1)
+        ax.axhline(5, color="#777777", lw=.9, ls=":")
+        ax.set(xticks=np.arange(2),xticklabels=list(candidates),title=label,
+               ylabel="MAE相对 f0 的变化（%）",ylim=(-110,65))
+        ax.grid(axis="y",alpha=.2);ax.set_axisbelow(True)
+    axes[0].legend(loc="lower left",fontsize=9)
+    fig.suptitle("新基因是否改善、旧基因是否退化？",fontsize=17,y=.965)
+    fig.text(.5,.86,"上方正值：误差增加，性能下降    |    下方负值：误差减少，性能改善",ha="center",fontsize=11)
+    fig.text(.5,.045,"旧验证 n=6,483；新验证 n=200。灰色点线为旧分布 +5% 容限；两组均未通过双目标约束。",
+             ha="center",fontsize=10,color="#505050")
+    for extension in ("png","pdf"):
+        fig.savefig(destination / ("03_新旧基因_MAE变化."+extension),dpi=200)
+    plt.close(fig)
+    manifest = {"models": {g:{"checkpoint_step":c["step"], "checkpoint":"best_unconstrained.pt"} for g,c in candidates.items()},
+                "roles": {"old_validation":6483,"dev_common":200},"input_prediction_sha256":inputs,
+                "metrics_verified_against_saved_evaluation":True,"new_inference":False,"test_used":False,
+                "plot_source":"../diagnostics.py --overlay", "plot_source_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                "outputs_sha256":{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in destination.iterdir() if p.suffix in (".png",".pdf",".csv")}}
+    (destination/"图表核验.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf8")
+    print("Old/new overlay plots written: " + str(destination))
+
+
 if __name__ == '__main__':
-    run()
+    if sys.argv[1:] == ["--overlay"]:
+        overlay()
+    elif len(sys.argv) == 1:
+        run()
+    else:
+        raise SystemExit("Usage: diagnostics.py [--overlay]")
