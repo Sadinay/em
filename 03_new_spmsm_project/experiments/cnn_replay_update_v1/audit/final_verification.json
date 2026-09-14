@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "runs": {
+    "G-S": {
+      "optimizer_updates_verified": 2500,
+      "optimizer_parameter_states": 47,
+      "trace_records": 2500,
+      "evaluation_steps": [
+        0,
+        500,
+        1000,
+        1500,
+        2000,
+        2500
+      ],
+      "candidate_step": 2000,
+      "reloaded_candidate_validation_metrics_exact_match": true,
+      "checkpoint_hashes_passed": true,
+      "accepted_updated_checkpoint_exists": false,
+      "f0_fallback_correct": true
+    },
+    "F-S": {
+      "optimizer_updates_verified": 2500,
+      "optimizer_parameter_states": 47,
+      "trace_records": 2500,
+      "evaluation_steps": [
+        0,
+        500,
+        1000,
+        1500,
+        2000,
+        2500
+      ],
+      "candidate_step": 1500,
+      "reloaded_candidate_validation_metrics_exact_match": true,
+      "checkpoint_hashes_passed": true,
+      "accepted_updated_checkpoint_exists": false,
+      "f0_fallback_correct": true
+    }
+  },
+  "initialization_records_identical": true,
+  "f0_file_unchanged": true,
+  "training_finished_no_lock": true,
+  "test_predictions": 0,
+  "test_target_rows_accessed": 0,
+  "accepted_data_audit_rechecked": true,
+  "source_snapshot_matches": true,
+  "total_successful_updates": 5000,
+  "total_old_draws": 240000,
+  "total_new_draws": 80000,
+  "prediction_files_checked_for_test_isolation": 26,
+  "prediction_rows_checked": 86879,
+  "all_report_metrics_recomputed_from_validation_predictions": true,
+  "report_target_units": "N*m",
+  "visual_qa_passed": true
+}

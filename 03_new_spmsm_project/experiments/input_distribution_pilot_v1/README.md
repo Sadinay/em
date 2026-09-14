@@ -1,5 +1,7 @@
 # 03 下一步：四组输入分布种子
 
+**2026-09-14 训练阶段已完成：**G-S / F-S 的首轮热启动＋75:25旧样本回放各运行2500步，均未通过旧分布5%容限，详见[结果解释](../cnn_replay_update_v1/report/interpretation.md)。独立实验入口为 [cnn_replay_update_v1](../cnn_replay_update_v1/README.md)，训练源码集中在其 [update.py](../cnn_replay_update_v1/update.py)。本目录继续保存已冻结的种子、membership和FEMM标签，最终test保持封存。
+
 **2026-09-13 最新状态：**3299个基因的全量FEMM结果已取回，19794个角度记录和输入哈希全部核验通过；冻结旧CNN基线已完成，最终test未评估。训练兼容数据入口和结果见[post_femm_baseline_20260913](post_femm_baseline_20260913/README.md)。下文pending/未求解是09-09选种子阶段的历史说明，不代表最新标签状态。
 
 导入时发现的 `femm_config.py` 版本差异已修复：现已逐字节恢复为结果包的 **29°初始内角/转矩倍率1** 配置，并重新核验冻结种子入口。详见[配置恢复记录](../../femm_zone/workspaces/config_restore_20260913/README.md)。3299个基因已有有效结果；下方命令保留为运行说明，本次修复未启动重算。

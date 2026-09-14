@@ -2,7 +2,9 @@
 
 本项目按 `02_new_ipmsm_project` 的功能区规格独立组织，用于 `SPMSM_discrete.fem` 与 `workspace_200.mat` 所代表的第三类基因和电机结构。03 与 01、02 的基因编码、FEMM 几何映射、GA 配置、数据库、CNN 模型及实验结果不得混用。
 
-2026-09-13 更新：已接收并核验另一台设备的全部 **3299 个基因 / 19794 个角度**，完成冻结旧 CNN 的基线评估。G/F 各1400及公共dev/test数据入口见[接收与评估说明](experiments/input_distribution_pilot_v1/post_femm_baseline_20260913/README.md)，结论见[基线报告](experiments/input_distribution_pilot_v1/post_femm_baseline_20260913/BASELINE_REPORT.md)。尚未启动补样训练或最终test评估。
+2026-09-14 更新：**G-S / F-S 首轮 CNN 补样回放训练已完成**，两组各2500步，合计约32分钟。新结构预测显著改善，但都未通过旧分布双目标各自5%的容限；详见[结果解释](experiments/cnn_replay_update_v1/report/interpretation.md)。本阶段训练源码集中在 [update.py](experiments/cnn_replay_update_v1/update.py)，配置、检查点、恢复命令和图表均在独立的 [cnn_replay_update_v1](experiments/cnn_replay_update_v1/README.md)。最终test继续封存。
+
+此前已接收并核验另一台设备的全部 **3299 个基因 / 19794 个角度**，完成冻结旧 CNN 的基线评估。G/F 各1400及公共dev/test数据入口见[接收与评估说明](experiments/input_distribution_pilot_v1/post_femm_baseline_20260913/README.md)，原基线结论见[基线报告](experiments/input_distribution_pilot_v1/post_femm_baseline_20260913/BASELINE_REPORT.md)。
 
 导入时发现本机 `femm_zone/femm_config.py` 回退到内角0°起步/转矩−2；现已逐字节恢复为已核验结果包的 **29°起步/倍率1** 配置。求解入口新增检查，旧准备目录的物理设置不一致时拒绝启动 FEMM，需换名称重新 `prepare`。修复及离线验证见[配置恢复记录](femm_zone/workspaces/config_restore_20260913/README.md)。下文部分“种子待算”说明为此前阶段记录。
 

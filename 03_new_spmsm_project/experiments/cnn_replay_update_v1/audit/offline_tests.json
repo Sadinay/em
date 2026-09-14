@@ -1,0 +1,13 @@
+{
+  "command": "python -m pytest 03_new_spmsm_project/experiments/cnn_replay_update_v1/tests/test_update.py -q",
+  "passed": 8,
+  "seconds": 1.99,
+  "test_source_sha256": "84efa4f0a4f6da5ddaa5a74f76b5011abbcec61f68d95d4688eb62b60ae69bd1",
+  "coverage": [
+    "replay count and full shuffled cycles",
+    "resume sample prefix",
+    "DataLoader restart does not consume dropout RNG",
+    "both-target 5 percent boundary",
+    "sealed-role guard"
+  ]
+}

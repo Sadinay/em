@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "images": {
+    "candidate_dev_common_truth_prediction.png": "31e75e8c60fe66bb9a30c64562dfcad748f17fd0f2e6b48e341c7377dacb6673",
+    "candidate_old_validation_truth_prediction.png": "a84fe9a5d002f75a57a7fe83455e62c2458737ebe9d1c1349b5b773dfaf4a55c",
+    "candidate_source_mae.png": "dac929fd1dc5a85491efc4da9cf0eb2bd2cdbba91606291ba1ce05c4aafe34f3",
+    "dev_common_truth_prediction.png": "994312d93926373577ffce96837d74097cfbda784ee760708d017e455dfab054",
+    "old_validation_truth_prediction.png": "865db96dc073918df1660b780d9652087ce81658d4d3a8fb1bd934f5d7f10261",
+    "standardized_loss_curves.png": "109f2ee6d7c53541cedc12fa18359ab6fd32515b70318b0776483b5de2fe9399",
+    "training_curves.png": "76525bca0ff034d0c19accf6199775840a845b7f245d12ae43ff75cf6f0cf2ac"
+  },
+  "checks": [
+    "all 7 PNGs visually inspected",
+    "Chinese labels legible and no clipping",
+    "candidate plots use shared axes per target",
+    "units and fallback labels explicit",
+    "no test plots"
+  ]
+}

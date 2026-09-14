@@ -1,0 +1,95 @@
+{
+  "experiment": "cnn_replay_update_v1",
+  "seed": 20260914,
+  "groups": [
+    "G-S",
+    "F-S"
+  ],
+  "initialization": "same frozen f0 weights independently; new optimizer/scheduler/AMP states",
+  "initial_checkpoint": "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt",
+  "initial_checkpoint_sha256": "34cdee2e373e36ecd40e82197de5ea34941397bafea5f586cb00eb87dbfe58ba",
+  "model_class": "cnn_zone.src.models_v2.Semantic224VGG16V2",
+  "input_shape": [
+    8,
+    224,
+    224
+  ],
+  "baseline_config": {
+    "experiment_id": "polar90_224/vgg16_v2",
+    "input_mode": "polar90_224",
+    "architecture": "vgg16_v2",
+    "lookup": "cnn_zone/outputs/lookups/spmsm_polar90_224_full_motor.npz",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "max_epochs": 40,
+    "minimum_epochs": 30,
+    "early_stopping_patience": 8,
+    "scheduler_patience": 3,
+    "physical_batch_size": 8,
+    "effective_batch_size": 64,
+    "circular_angular_padding": false,
+    "seed": 20260903,
+    "train_samples": 40000,
+    "validation_samples": 6483,
+    "test_samples": 6483,
+    "target_mean": [
+      3.099832773208618,
+      0.4043262302875519
+    ],
+    "target_std": [
+      0.35699909925460815,
+      0.191180020570755
+    ],
+    "target_scaler_source": "training set only",
+    "parameter_count": 18917122,
+    "optimizer": "AdamW",
+    "loss": "mean MSE over independently standardized Tavg and DeltaT",
+    "best_checkpoint_selection": "validation standardized MSE only"
+  },
+  "target_order": [
+    "tavg",
+    "delta_t"
+  ],
+  "target_mean": [
+    3.099832773208618,
+    0.4043262302875519
+  ],
+  "target_std": [
+    0.35699909925460815,
+    0.191180020570755
+  ],
+  "target_scaler_policy": "frozen f0 old-training scaler; never recomputed",
+  "loss": "mean squared error over two independently standardized targets",
+  "optimizer": "AdamW",
+  "initial_learning_rate": 1e-05,
+  "weight_decay": 0.0001,
+  "effective_batch_size": 64,
+  "physical_batch_size": 8,
+  "old_per_update": 48,
+  "new_per_update": 16,
+  "max_updates": 10000,
+  "validate_every": 500,
+  "checkpoint_every": 100,
+  "minimum_updates": 2000,
+  "early_stopping_patience": 5,
+  "improvement_epsilon": 1e-12,
+  "old_mae_limit_multiplier": 1.05,
+  "selection": "both old MAEs <= 1.05*f0; then minimize new-dev dual-target mean standardized MSE",
+  "early_stop": "at >=2000 successful optimizer updates, 5 consecutive validations without improving constrained incumbent (includes f0)",
+  "scheduler": {
+    "class": "ReduceLROnPlateau",
+    "monitor": "new_dev_standardized_mse",
+    "factor": 0.5,
+    "patience": 3,
+    "min_lr": 1e-06
+  },
+  "amp": "CUDA float16",
+  "grad_scaler_init_scale": 128.0,
+  "clip_grad_norm": 100.0,
+  "train_all_parameters": true,
+  "num_workers": 0,
+  "cpu_threads": 4,
+  "randomness": "shared shuffled old/new index plans; same initialization/seed/dropout RNG; deterministic algorithms warn_only like baseline; CUDA AMP/device nondeterminism remains possible",
+  "settings_source": "user first-round defaults; scheduler type/factor/patience/min_lr, optimizer, loss, AMP and microbatch inherited from baseline",
+  "test_policy": "test identities/membership only; no test target access or prediction"
+}
