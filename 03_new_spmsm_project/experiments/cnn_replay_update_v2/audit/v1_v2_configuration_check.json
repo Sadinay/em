@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "differences": {
+    "settings_source": {
+      "v1": "user first-round defaults; scheduler type/factor/patience/min_lr, optimizer, loss, AMP and microbatch inherited from baseline",
+      "v2": "v1 settings retained except 56:8 replay and fixed 5000 updates; user-prespecified development experiment"
+    },
+    "max_updates": {
+      "v1": 10000,
+      "v2": 5000
+    },
+    "early_stopping_patience": {
+      "v1": 5,
+      "v2": null
+    },
+    "early_stop": {
+      "v1": "at >=2000 successful optimizer updates, 5 consecutive validations without improving constrained incumbent (includes f0)",
+      "v2": "disabled; complete 5000 successful optimizer updates unless an abnormal failure occurs"
+    },
+    "experiment": {
+      "v1": "cnn_replay_update_v1",
+      "v2": "cnn_replay_update_v2"
+    },
+    "old_per_update": {
+      "v1": 48,
+      "v2": 56
+    },
+    "fixed_budget": {
+      "v1": null,
+      "v2": true
+    },
+    "minimum_updates": {
+      "v1": 2000,
+      "v2": null
+    },
+    "gradient_accumulation_steps": {
+      "v1": null,
+      "v2": 8
+    },
+    "new_per_update": {
+      "v1": 16,
+      "v2": 8
+    }
+  },
+  "same_data_versions_scaler_seed_and_f0": true,
+  "offline_tests": "10 passed in 3.21s"
+}

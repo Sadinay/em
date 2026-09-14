@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "group": "G-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 5000,
+      "full_validation_metrics_exact_match": true
+    },
+    {
+      "group": "F-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 4000,
+      "full_validation_metrics_exact_match": true
+    },
+    {
+      "group": "F-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 5000,
+      "full_validation_metrics_exact_match": true
+    }
+  ],
+  "G_final_same_weights_as_best_candidate": true,
+  "test_used": false
+}

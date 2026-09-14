@@ -1,0 +1,17 @@
+{
+  "file": "report/interpretation.md",
+  "original_sha256": "be1df36b0b54fd04a4c1c89bf9fad32fbf78e94aab4afe91f834ca8788d7ddfa",
+  "restored_sha256": "ca156643019ba73175c8d9cf56c161e58e7b7985d711976a5367d5036a3f2098",
+  "original_literal_question_marks": 2135,
+  "reason": "Chinese text replaced by literal ASCII question marks; reconstructed from saved v1 validation metrics/results/history only",
+  "sources": [
+    "baseline/metrics.json",
+    "runs/G-S/result.json",
+    "runs/F-S/result.json",
+    "runs/G-S/step02000/metrics.json",
+    "runs/F-S/step01500/metrics.json",
+    "runs/G-S/history.json",
+    "runs/F-S/history.json"
+  ],
+  "models_data_config_modified": false
+}

@@ -1,0 +1,64 @@
+{
+  "sha256": {
+    "config.json": "34424ee1006d7d2287797efc3abfb59efbe170c35e757861c87d05458f92a285",
+    "update.py": "632c641ec8f9ee7950a3209ed4bb5d1bf73d4b6a1adac9f8bc2cc1bd0e2874d1",
+    "baseline/metrics.json": "de1c2c6cc31e15a063812241055197ebe2c5c2a57ea57021dbd4cc8600a69724",
+    "runs/G-S/result.json": "e796cedbc9903bf7f03e582177770a3513cfafaa68ce66babaaa34e30724d274",
+    "runs/F-S/result.json": "2ae944fc64a4f5999c60a0b8eee4312e12eda8ebbc1c23720ae34fce39f43cbb",
+    "runs/G-S/history.json": "99746ea185c4ffb87144231c63f81750d45fa673fa0ab78379a0c78df422b3d7",
+    "runs/F-S/history.json": "873b47949de9adb7fd20ff38d401ff459b0beca9939d759bf4880107a073b3d9",
+    "README.md": "96bbce7bade1e3c1557587bed99f45ee8ec5580bf551c1b83ce885680052d8d0",
+    "report/REPORT.md": "de3e4997a34e672d20f528ca3c9c8737b2006e03fe38fe1971f95f44b7a7d6a5",
+    "report/interpretation.md": "be1df36b0b54fd04a4c1c89bf9fad32fbf78e94aab4afe91f834ca8788d7ddfa"
+  },
+  "results": {
+    "G-S": {
+      "updates": 2500,
+      "stop_reason": "early_stopping_no_constrained_improvement",
+      "best": {
+        "feasible_score": null,
+        "feasible_step": null,
+        "unconstrained_score": 0.04889650586992502,
+        "unconstrained_step": 2000,
+        "constrained_incumbent": 0.8517562425509095
+      },
+      "final_learning_rate": 1e-05,
+      "sampled": {
+        "old_draws": 120000,
+        "new_draws": 40000,
+        "amp_skipped_attempts": 0
+      }
+    },
+    "F-S": {
+      "updates": 2500,
+      "stop_reason": "early_stopping_no_constrained_improvement",
+      "best": {
+        "feasible_score": null,
+        "feasible_step": null,
+        "unconstrained_score": 0.026234016427770256,
+        "unconstrained_step": 1500,
+        "constrained_incumbent": 0.8517562425509095
+      },
+      "final_learning_rate": 1e-05,
+      "sampled": {
+        "old_draws": 120000,
+        "new_draws": 40000,
+        "amp_skipped_attempts": 0
+      }
+    }
+  },
+  "chinese_encoding_check": {
+    "README.md": {
+      "strict_utf8": true,
+      "replacement_characters": 0
+    },
+    "report/REPORT.md": {
+      "strict_utf8": true,
+      "replacement_characters": 0
+    },
+    "report/interpretation.md": {
+      "strict_utf8": true,
+      "replacement_characters": 0
+    }
+  }
+}

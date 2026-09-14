@@ -1,5 +1,7 @@
 # 新 SPMSM 遗传优化项目（第三类基因）
 
+2026-09-15 更新：**v2 高旧回放比例实验已完成**，G-S/F-S各5000次更新；两组仍未同时通过旧分布双目标5%容限。源码、模型和对比报告集中在 [cnn_replay_update_v2](experiments/cnn_replay_update_v2/README.md)，先看[本轮结果](experiments/cnn_replay_update_v2/report/REPORT.md)。
+
 本项目按 `02_new_ipmsm_project` 的功能区规格独立组织，用于 `SPMSM_discrete.fem` 与 `workspace_200.mat` 所代表的第三类基因和电机结构。03 与 01、02 的基因编码、FEMM 几何映射、GA 配置、数据库、CNN 模型及实验结果不得混用。
 
 2026-09-14 更新：**G-S / F-S 首轮 CNN 补样回放训练已完成**，两组各2500步，合计约32分钟。新结构预测显著改善，但都未通过旧分布双目标各自5%的容限；详见[结果解释](experiments/cnn_replay_update_v1/report/interpretation.md)。本阶段训练源码集中在 [update.py](experiments/cnn_replay_update_v1/update.py)，配置、检查点、恢复命令和图表均在独立的 [cnn_replay_update_v1](experiments/cnn_replay_update_v1/README.md)。最终test继续封存。

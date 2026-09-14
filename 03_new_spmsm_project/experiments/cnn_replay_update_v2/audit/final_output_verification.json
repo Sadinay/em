@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "v1_configs_results_checkpoints_unchanged": true,
+  "v1_report_restoration_verified": true,
+  "f0_unchanged": true,
+  "training_source_matches_snapshot": true,
+  "checkpoint_steps": {
+    "G-S": {
+      "last": 5000,
+      "optimizer_state_tensors": 47,
+      "optimizer_steps": [
+        5000
+      ]
+    },
+    "F-S": {
+      "last": 5000,
+      "optimizer_state_tensors": 47,
+      "optimizer_steps": [
+        5000
+      ]
+    }
+  },
+  "validation_rows_checked": {
+    "G-S_old_validation": 71313,
+    "G-S_dev_common": 2200,
+    "F-S_old_validation": 71313,
+    "F-S_dev_common": 2200
+  },
+  "all_prediction_ids_and_truth_match_allowed_baseline": true,
+  "all_mae_rmse_p95_recomputed": true,
+  "acceptance_and_fallback_recomputed": true,
+  "test_used": false
+}

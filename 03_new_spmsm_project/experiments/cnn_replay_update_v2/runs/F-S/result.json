@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "group": "F-S",
+  "stop_reason": "fixed_5000_successful_updates",
+  "updates": 5000,
+  "elapsed_seconds": 1870.3132480999993,
+  "best": {
+    "feasible_score": null,
+    "feasible_step": null,
+    "unconstrained_score": 0.020921676754951476,
+    "unconstrained_step": 4000,
+    "constrained_incumbent": 0.8517562425509095
+  },
+  "success": false,
+  "conclusion": "本轮未找到满足条件的改善模型",
+  "selected_step": 0,
+  "selected_checkpoint": "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt",
+  "fallback_to_f0": true,
+  "final_checkpoint": "last_checkpoint.pt",
+  "final_checkpoint_step": 5000,
+  "sampled": {
+    "old_draws": 280000,
+    "new_draws": 40000,
+    "amp_skipped_attempts": 0
+  },
+  "old_unique_covered": 40000,
+  "new_unique_covered": 1400,
+  "successful_update_old_draws": 280000,
+  "successful_update_new_draws": 40000,
+  "final_learning_rate": 1e-05,
+  "test_predictions": 0,
+  "checkpoint_sha256": {
+    "best_unconstrained.pt": "9612f9892e76bc354ca6c6e885a57b29f865da8b84d0f3b67b195befc6980346",
+    "last_checkpoint.pt": "21574504c8467cb8297c0285613b22d5671f113a231051cbf70c22ce9f262ae1"
+  }
+}
