@@ -1,0 +1,86 @@
+{
+  "v1_G-S": {
+    "path_base": "cnn_replay_update_v1",
+    "best_unconstrained": {
+      "path": "runs/G-S/best_unconstrained.pt",
+      "step": 2000,
+      "sha256": "21351d457dfa92a1889a1b53a3b647a28b3882bdfd767566493264f24d716934"
+    },
+    "best_feasible": null,
+    "final": {
+      "path": "runs/G-S/last_checkpoint.pt",
+      "step": 2500,
+      "sha256": "2a836d02dbeb703302c540273f477391f6de248da6cd78e5d5492abfa5c7dc06",
+      "contains_resume_state": true
+    },
+    "accepted": {
+      "path": "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt",
+      "step": 0,
+      "path_base": "03_new_spmsm_project",
+      "fallback_to_f0": true
+    }
+  },
+  "v1_F-S": {
+    "path_base": "cnn_replay_update_v1",
+    "best_unconstrained": {
+      "path": "runs/F-S/best_unconstrained.pt",
+      "step": 1500,
+      "sha256": "fa3adead53d6d31ebfaa8384917143950ab28705011f5318b8236fd90aa60c03"
+    },
+    "best_feasible": null,
+    "final": {
+      "path": "runs/F-S/last_checkpoint.pt",
+      "step": 2500,
+      "sha256": "7a23bb3376af9f22885466e5f2b7ef2ccf6c58a2d934586215744b89efbc3606",
+      "contains_resume_state": true
+    },
+    "accepted": {
+      "path": "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt",
+      "step": 0,
+      "path_base": "03_new_spmsm_project",
+      "fallback_to_f0": true
+    }
+  },
+  "v2_G-S": {
+    "path_base": "cnn_replay_update_v2",
+    "best_unconstrained": {
+      "path": "runs/G-S/best_unconstrained.pt",
+      "step": 5000,
+      "sha256": "8c2b481f620b757dcf2a27825c1b374495dbbe38b914c0bed82157839e38dc2b"
+    },
+    "best_feasible": null,
+    "final": {
+      "path": "runs/G-S/last_checkpoint.pt",
+      "step": 5000,
+      "sha256": "e2a06167838625244d1d1ad409838343e28a4fb3289e19aa7d5bc692a59cfd03",
+      "contains_resume_state": true
+    },
+    "accepted": {
+      "path": "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt",
+      "step": 0,
+      "path_base": "03_new_spmsm_project",
+      "fallback_to_f0": true
+    }
+  },
+  "v2_F-S": {
+    "path_base": "cnn_replay_update_v2",
+    "best_unconstrained": {
+      "path": "runs/F-S/best_unconstrained.pt",
+      "step": 4000,
+      "sha256": "9612f9892e76bc354ca6c6e885a57b29f865da8b84d0f3b67b195befc6980346"
+    },
+    "best_feasible": null,
+    "final": {
+      "path": "runs/F-S/last_checkpoint.pt",
+      "step": 5000,
+      "sha256": "21574504c8467cb8297c0285613b22d5671f113a231051cbf70c22ce9f262ae1",
+      "contains_resume_state": true
+    },
+    "accepted": {
+      "path": "cnn_zone\\models\\v3_40000_6runs\\polar90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt",
+      "step": 0,
+      "path_base": "03_new_spmsm_project",
+      "fallback_to_f0": true
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "experiment_model": "v2 · SmallCNN V2",
+  "accepted_status": "G-S：图中为最佳无约束候选第 15500 步；实际接受第 11500 步（best_feasible.pt）。 F-S：图中为最佳无约束候选第 9500 步；实际回退自身f0。",
+  "models": {
+    "G-S": {
+      "checkpoint_step": 15500,
+      "checkpoint": "best_unconstrained.pt"
+    },
+    "F-S": {
+      "checkpoint_step": 9500,
+      "checkpoint": "best_unconstrained.pt"
+    }
+  },
+  "roles": {
+    "old_validation": 6483,
+    "dev_common": 200
+  },
+  "input_prediction_sha256": {
+    "baseline\\old_validation_predictions.csv": "a39b6d9ff4538d8a0e9ed98868da3a765545b9488c7bfd3bddfe0f3792f2ccc1",
+    "baseline\\dev_common_predictions.csv": "97026888eaef58ce48be9cb8546128566019664f0eb01445607c933b7eddd353",
+    "runs\\G-S\\step15500\\old_validation_predictions.csv": "04354d0f36780ca831f35f8bd52a6cf4024243ecd1715bc3ad9c4ae749989d37",
+    "runs\\G-S\\step15500\\dev_common_predictions.csv": "fca4693d215a9c72fb7bcd64410c5e5561d7b765b92cad3ad2c394bcdc5d1962",
+    "runs\\F-S\\step09500\\old_validation_predictions.csv": "480fc679d73bdab69d433f01e6f38219d557ee55862b973ea8c078e951492e4e",
+    "runs\\F-S\\step09500\\dev_common_predictions.csv": "45cdfa3a3136b72b116b25f8774dc277dc25819482c9f445c2d11cfecca147bf"
+  },
+  "metrics_verified_against_saved_evaluation": true,
+  "new_inference": false,
+  "test_used": false,
+  "plot_source": "../../../plot_performance.py",
+  "plot_source_sha256": "0dcd05fb16e72a03f0fc73cbea85b1283efe4784901ee0f3acc49c4ebc28d18f",
+  "outputs_sha256": {
+    "01_平均转矩_真实值与预测值.png": "526fcbad66db45d685a8ab919956ce75e9258d377ac2aee27440a73a8424e8c5",
+    "02_转矩波动_真实值与预测值.png": "dcf0bb341fa66262f4438154a0dfb993755f9a24904da1c2b3bc98679cb90387",
+    "03_新旧基因_MAE变化.png": "8cf372f95f6f2988ac2031f5fa2298cc803fd400a081bbf80c541405582bdd5d",
+    "04_仅新基因_老模型与更新模型对比.png": "c85dc0d60411f61bd3624bfaab817502341e8d2cb9558e4658e31b3016ec521b",
+    "性能指标.csv": "bf936ef403ca38be118905a85dbb317cd6989af4deb248422d2a8a4a7ae07b09"
+  },
+  "render_source_sha256": "73a28333194e058b249c5d7a9814fd6e76a782c0d901138ecfbcae86ff1e8009",
+  "source_change_note": "Only Markdown embedding changed; PNGs and metrics unchanged."
+}

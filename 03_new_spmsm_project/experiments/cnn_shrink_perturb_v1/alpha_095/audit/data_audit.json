@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "counts": {
+    "old_train": 40000,
+    "old_validation": 6483,
+    "train_G": 1400,
+    "train_F": 1400,
+    "dev_common": 200
+  },
+  "sealed_new_test_ids": 400,
+  "old_split_counts": {
+    "train": 40000,
+    "validation": 6483,
+    "test": 6483,
+    "unused_train_pool": 11838
+  },
+  "gf_intersection": 101,
+  "new_training_union": 2699,
+  "unique_new": 3299,
+  "all_memberships_disjoint_except_gf_train": true,
+  "old_repair_families_disjoint": true,
+  "labels_finite_and_conflict_free": true,
+  "condition_fingerprint": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+  "physical_definition": "Tavg = mean of 6 torques; DeltaT = max-min of 6 torques; both N*m; 29:3:44 inner angle; multiplier 1",
+  "old_exception_policy": "retained as the same initial-state source audit exception used in project 02; Tavg/DeltaT are aligned to population_all and the mismatch does not occur after state 0",
+  "old_dataset_exceptions_retained": 538,
+  "old_deduplication": {
+    "key": "exact corrected 120-bit chromosome from population_all",
+    "historical_records": 123012,
+    "unique_chromosomes": 65702,
+    "removed_duplicate_records": 57310,
+    "duplicate_groups": 24320,
+    "maximum_occurrence_count": 30,
+    "quarantined_label_conflicts": 898,
+    "clean_unique_chromosomes": 64804,
+    "label_conflict_atol": 1e-06,
+    "repeated_label_policy": "median only when repeated labels agree within tolerance; otherwise quarantine"
+  },
+  "samples_removed_or_relabeled_this_run": 0,
+  "fresh_old_allowed_slice_hashes": {
+    "old_train": {
+      "bits_sha256": "e379b70c11463ee761b0278b303bbbc5d90995e6b1a06aa59d9eec3ef952a173",
+      "target_float32_sha256": "af6c8734f99f4950a8c820c7481303e1022291414872c359b12030c12a6bd8b7"
+    },
+    "old_validation": {
+      "bits_sha256": "6f1c1fb1079f5aa078fbe28a1d989a94ebf38025904ba49c32815ac6d8e36985",
+      "target_float32_sha256": "49a9dbf1583916014fd45d5d7b0c0ead28de383d89a22e56da83608c06d68c4d"
+    }
+  },
+  "old_full_target_hash_from_accepted_provenance_only": "90fe5a8526d76b5d813ee7e18ed0731aba6c96390717c2d407502f044fe1881b",
+  "test_target_rows_accessed": 0,
+  "new_test_files_opened": 0,
+  "test_identity_read_method": "new: memberships.csv only; old: split indices and first 3 ID columns only; old targets mmap indexed solely by train/validation",
+  "versions": {
+    "cnn_zone/models/v3_40000_6runs/polar90_224/vgg16_v2/seed_20260903/best_checkpoint.pt": "34cdee2e373e36ecd40e82197de5ea34941397bafea5f586cb00eb87dbfe58ba",
+    "cnn_zone/models/v3_40000_6runs/polar90_224/vgg16_v2/seed_20260903/config.json": "130bafef8b5c93178dc988c20ba3136869b5b32a2e841c2df47775888c1895b6",
+    "cnn_zone/outputs/lookups/spmsm_polar90_224_full_motor.npz": "6f49f46729c2567e3523da71760c54f3f002f18996c988361d2b3f4495dc5c21",
+    "cnn_zone/outputs/splits/scheme_a_tavg_bands_train40000_val6483_test6483.npz": "de499be640b68e3aac7f8ce48e6169139896178e43b781c2a8cca8853df7d826",
+    "cnn_zone/src/training.py": "e33bbd02e82c51bd93384acf2b62af94fd62162a34d3b32d02fcf2a9a5cae069",
+    "cnn_zone/src/training_inputs.py": "e4d5f14e4a7a394cad8c6867dea5936c49e7e53a13f97a0fcfe698426ee7d443",
+    "cnn_zone/src/models_v2.py": "7fa9316b20a5b109d319a288ed44019ee15fedd6a2d6f897c24552a46ae73954",
+    "cnn_zone/src/fem_mesh.py": "77f1d056186ffbe69c5e0ddd00c788f2d1d277a500ae03856f3b8c14725f1e41",
+    "femm_zone/femm_config.py": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+    "experiments\\input_distribution_pilot_v1\\train_G.csv": "84ce670d7e93f4e9b2bd5ac2573145a9de5ebf210708eaf8c2178ad0f2d4d95c",
+    "experiments\\input_distribution_pilot_v1\\train_F.csv": "b3553ea22c32782c2e918ca8ef50be5293290789f08ee169d68d322446f6e6ce",
+    "experiments\\input_distribution_pilot_v1\\dev_common.csv": "5b9177519c2c4ec2af981985ed0bb6a93a8b1e174a2391922aae665a746e6dea",
+    "experiments\\input_distribution_pilot_v1\\memberships.csv": "cecd2b8bbd0461ce300cfc6410f2d4390b27c05c78161f75085f1843d4905ba3",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\labels_train_dev.csv": "9336d99035ebe7786ae437a873996cb7b0d57a16899ae841b2b001a9f2097e5a",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\waveforms_train_dev.csv": "f8aed225a706e5c73ba74d8e5f2a3119e55b2ca6e41378024eba2e9e2ca701a7",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\dev_common\\gene_ids.npy": "ebc15f985db7dc1c4e77668f2a9aef8c7794417448805baa74cfabb6e8743506",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\dev_common\\manifest.csv": "6f5a1fa41b7aeddc646cd5a9f7c269cc15a38135a3ab52f8a613fbbf7f07c379",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\dev_common\\targets_tavg_delta.npy": "a2fe68183dab685fed68ff089b6d65eee2f012e1587206ab79f20abaa4c79a60",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\dev_common\\topology_bits.npy": "5edbd8f5d3b452ea45e45ecd7165f7f4616cd30263b9020374caeb0a8a295939",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\train_F\\gene_ids.npy": "9cfad9524643a49afd5a82ba97ebe8403fd83e3cc54749e88ef9e4266a120067",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\train_F\\manifest.csv": "40857f8b7bd9a2952dde28687e357bf4386ed14777f6efa1301d3dd064376fdc",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\train_F\\targets_tavg_delta.npy": "8fcdf951a0473e6e81b77a1aa31b96b83ac9b3f0a810850339297f841d746697",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\train_F\\topology_bits.npy": "922bef75aa6e0ab93a394cc87b20f26adb53eac0811f19e1021ff3c5faef3c37",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\train_G\\gene_ids.npy": "404d887e6f794e43e9454cff4d9ee8bf2ea8da06060af40562bacf3c62202680",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\train_G\\manifest.csv": "99de944b24645bb0d96a365331020b9c165f97d236e3f432b26bdc3a71dba842",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\train_G\\targets_tavg_delta.npy": "c16c112c55d5c0b5f21b45ad2da3b131c83218528fdecbdce5bdb313af81fd0e",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\train_G\\topology_bits.npy": "3e3430bf0a045a83ca292ca821cf805ca58ecc8f0ec05d7efbc38ebf4d8dc35f"
+  },
+  "git_commit": "d20519fd0ab4cdd111d19abf06374758746a4014",
+  "checkpoint_epoch": 40,
+  "checkpoint_sha256": "5e50973958fcf8baad986e9b9f69879e1b766223674c8ef5e90aaad791f48126",
+  "source_sha256": "de6c4cf533c95855e153c2ad3d47f7b0d261c63518991862d686113ebcf5722d"
+}

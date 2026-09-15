@@ -1,0 +1,798 @@
+{
+  "mat_path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\data_zone\\raw\\workspace_200.mat",
+  "mat_size_bytes": 7952177,
+  "mat_sha256": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+  "mat_header": "MATLAB 5.0 MAT-file, Platform: PCWIN64, Created on: Wed Aug 26 06:12:22 2026",
+  "scipy_version": "1.18.0",
+  "load_warnings": [],
+  "top_level_names": [
+    "Bestfitness",
+    "Bestpopulation",
+    "BitLength",
+    "DeltaT",
+    "DeltaT_all",
+    "Fitvalue",
+    "Fitvalue_all",
+    "Generation",
+    "Generationnmax",
+    "IndividualMaterial",
+    "MMaterialConectivity_Eisen_all",
+    "Material",
+    "MaterialConectivity",
+    "MaterialConectivity_all",
+    "MaterialPosition",
+    "Material_change",
+    "Rectangularity_PM",
+    "Rectangularity_PM_all",
+    "Tavg",
+    "Tavg_all",
+    "VolumePM",
+    "VolumePM_all",
+    "ans",
+    "basePath",
+    "cumsump",
+    "draw",
+    "fileNames",
+    "filePath",
+    "filename_workspace",
+    "fit",
+    "fmax",
+    "fmean",
+    "i",
+    "inp",
+    "j",
+    "k",
+    "nmax",
+    "pcrossover",
+    "pmutation",
+    "popsize",
+    "population",
+    "population_all",
+    "population_noChange_all",
+    "scnew",
+    "scro",
+    "seln",
+    "sigmoid_func",
+    "smnew",
+    "worker",
+    "x",
+    "y",
+    "ymax",
+    "ymean"
+  ],
+  "inp_field_names": [
+    "PMnumber",
+    "rotor_PM",
+    "P",
+    "rotorschift",
+    "Is_amp",
+    "steps",
+    "phases",
+    "slots",
+    "Nc",
+    "kf",
+    "Tc",
+    "g1",
+    "Lfe",
+    "PM_th2",
+    "PM_w",
+    "RotorOD",
+    "PMnumber_l",
+    "PM_th",
+    "PM_h",
+    "PM_d",
+    "shaftOD",
+    "PM_PM_1",
+    "PM_PM_2",
+    "PM_PM_3",
+    "PM_PM_4",
+    "PM_PM_5",
+    "PM_PM_6",
+    "PM_PM_7",
+    "PM_PM_8",
+    "StatorID",
+    "s_h",
+    "so_w",
+    "so_h",
+    "sl_w",
+    "sl_h",
+    "sh_w",
+    "sh_h",
+    "sel_l",
+    "seh_l",
+    "y_h",
+    "t_w",
+    "isolation_w",
+    "StatorOD",
+    "RotorID",
+    "Ry_th",
+    "shaft",
+    "PM_PM_uneven",
+    "PM_PM_even",
+    "PM_PM_OD",
+    "Rslotmiddle",
+    "Rteeth",
+    "slot_winding_factor",
+    "slot_winding_y",
+    "slot_winding_x",
+    "PM_angle",
+    "PM_point_N",
+    "PM_point_N_center",
+    "PM_w_fan",
+    "PM_point_S",
+    "PM_point_S_center",
+    "toothangle",
+    "slotangle_e",
+    "slotangle_h",
+    "slotangle_l",
+    "slotinnerangle",
+    "PMangle",
+    "windingangle",
+    "PM2schiftangle",
+    "PM_fan_angle",
+    "PM_PM_angle",
+    "PM_PM_polangle_uneven",
+    "PM_PM_polangle_even",
+    "PM_m",
+    "Id",
+    "Iq",
+    "Ia",
+    "Ib",
+    "Ic",
+    "Nrpm",
+    "period",
+    "stps",
+    "F",
+    "T",
+    "wmech",
+    "Redundant_group",
+    "M27Steel_rotor_group",
+    "rotorPM_group",
+    "air_rotorloch",
+    "air_PM_group",
+    "air_airgap_low_group",
+    "air_hol",
+    "rotorID",
+    "M27Steel_stator_group",
+    "slot_group",
+    "air_stator_outside_group",
+    "air_airgap_up_group",
+    "Bond_Air_group",
+    "Bond_PM_N_group",
+    "Bond_PM_S_group",
+    "x",
+    "y",
+    "theta",
+    "r",
+    "EleNum",
+    "CoeffT",
+    "CoeffDeltaT",
+    "CoeffVpm",
+    "Conectivity",
+    "mu_Eisen",
+    "mu_PM",
+    "Hc",
+    "eCon_Eisen",
+    "eCon_PM",
+    "angle_tmp"
+  ],
+  "draw_field_names": [
+    "mN",
+    "mS",
+    "ceil_r",
+    "ceil_a",
+    "basePath",
+    "fileNames",
+    "filePath"
+  ],
+  "field_paths": [
+    "draw.mN",
+    "draw.mS",
+    "draw.ceil_r",
+    "draw.ceil_a",
+    "draw.basePath",
+    "draw.fileNames",
+    "draw.filePath",
+    "fit.fsum",
+    "fit.Pperpopulation",
+    "inp.PMnumber",
+    "inp.rotor_PM",
+    "inp.P",
+    "inp.rotorschift",
+    "inp.Is_amp",
+    "inp.steps",
+    "inp.phases",
+    "inp.slots",
+    "inp.Nc",
+    "inp.kf",
+    "inp.Tc",
+    "inp.g1",
+    "inp.Lfe",
+    "inp.PM_th2",
+    "inp.PM_w",
+    "inp.RotorOD",
+    "inp.PMnumber_l",
+    "inp.PM_th",
+    "inp.PM_h",
+    "inp.PM_d",
+    "inp.shaftOD",
+    "inp.PM_PM_1",
+    "inp.PM_PM_2",
+    "inp.PM_PM_3",
+    "inp.PM_PM_4",
+    "inp.PM_PM_5",
+    "inp.PM_PM_6",
+    "inp.PM_PM_7",
+    "inp.PM_PM_8",
+    "inp.StatorID",
+    "inp.s_h",
+    "inp.so_w",
+    "inp.so_h",
+    "inp.sl_w",
+    "inp.sl_h",
+    "inp.sh_w",
+    "inp.sh_h",
+    "inp.sel_l",
+    "inp.seh_l",
+    "inp.y_h",
+    "inp.t_w",
+    "inp.isolation_w",
+    "inp.StatorOD",
+    "inp.RotorID",
+    "inp.Ry_th",
+    "inp.shaft",
+    "inp.PM_PM_uneven",
+    "inp.PM_PM_even",
+    "inp.PM_PM_OD",
+    "inp.Rslotmiddle",
+    "inp.Rteeth",
+    "inp.slot_winding_factor",
+    "inp.slot_winding_y",
+    "inp.slot_winding_x",
+    "inp.PM_angle",
+    "inp.PM_point_N",
+    "inp.PM_point_N_center",
+    "inp.PM_w_fan",
+    "inp.PM_point_S",
+    "inp.PM_point_S_center",
+    "inp.toothangle",
+    "inp.slotangle_e",
+    "inp.slotangle_h",
+    "inp.slotangle_l",
+    "inp.slotinnerangle",
+    "inp.PMangle",
+    "inp.windingangle",
+    "inp.PM2schiftangle",
+    "inp.PM_fan_angle",
+    "inp.PM_PM_angle",
+    "inp.PM_PM_polangle_uneven",
+    "inp.PM_PM_polangle_even",
+    "inp.PM_m",
+    "inp.Id",
+    "inp.Iq",
+    "inp.Ia",
+    "inp.Ib",
+    "inp.Ic",
+    "inp.Nrpm",
+    "inp.period",
+    "inp.stps",
+    "inp.F",
+    "inp.T",
+    "inp.wmech",
+    "inp.Redundant_group",
+    "inp.M27Steel_rotor_group",
+    "inp.rotorPM_group",
+    "inp.air_rotorloch",
+    "inp.air_PM_group",
+    "inp.air_airgap_low_group",
+    "inp.air_hol",
+    "inp.rotorID",
+    "inp.M27Steel_stator_group",
+    "inp.slot_group",
+    "inp.air_stator_outside_group",
+    "inp.air_airgap_up_group",
+    "inp.Bond_Air_group",
+    "inp.Bond_PM_N_group",
+    "inp.Bond_PM_S_group",
+    "inp.x",
+    "inp.y",
+    "inp.theta",
+    "inp.r",
+    "inp.EleNum",
+    "inp.CoeffT",
+    "inp.CoeffDeltaT",
+    "inp.CoeffVpm",
+    "inp.Conectivity",
+    "inp.mu_Eisen",
+    "inp.mu_PM",
+    "inp.Hc",
+    "inp.eCon_Eisen",
+    "inp.eCon_PM",
+    "inp.angle_tmp",
+    "sigmoid_func[0].matlabroot",
+    "sigmoid_func[0].separator",
+    "sigmoid_func[0].sentinel",
+    "sigmoid_func[0].function_handle",
+    "sigmoid_func[0].function_handle.function",
+    "sigmoid_func[0].function_handle.type",
+    "sigmoid_func[0].function_handle.file",
+    "sigmoid_func[0].function_handle.within_file_path",
+    "sigmoid_func[0].function_handle.workspace",
+    "sigmoid_func[0].function_handle.workspace[0]._TypeSystem",
+    "sigmoid_func[0].function_handle.workspace[0]._Class",
+    "sigmoid_func[0].function_handle.workspace[0]._ObjectMetadata",
+    "function_subsystem.record0.MCOS",
+    "function_subsystem.record0.MCOS[0]._TypeSystem",
+    "function_subsystem.record0.MCOS[0]._Class",
+    "function_subsystem.record0.MCOS[0]._ObjectMetadata",
+    "function_subsystem.record1.record0.MCOS"
+  ],
+  "angle_related_fields": [
+    {
+      "path": "inp.rotorschift",
+      "value": 22.5
+    },
+    {
+      "path": "inp.PM_angle",
+      "value": 37.20505163187163
+    },
+    {
+      "path": "inp.toothangle",
+      "value": 30
+    },
+    {
+      "path": "inp.slotangle_e",
+      "value": 26.725955456395297
+    },
+    {
+      "path": "inp.slotangle_h",
+      "value": 16.90250399567287
+    },
+    {
+      "path": "inp.slotangle_l",
+      "value": 8.24632081446853
+    },
+    {
+      "path": "inp.slotinnerangle",
+      "value": 7.048290336926794
+    },
+    {
+      "path": "inp.PMangle",
+      "value": 18.844615443895965
+    },
+    {
+      "path": "inp.windingangle",
+      "value": 82.9517096630732
+    },
+    {
+      "path": "inp.PM2schiftangle",
+      "value": 67.5
+    },
+    {
+      "path": "inp.PM_fan_angle",
+      "value": 45
+    },
+    {
+      "path": "inp.PM_PM_angle",
+      "value": 0
+    },
+    {
+      "path": "inp.PM_PM_polangle_uneven",
+      "value": [
+        6.510884035577536,
+        13.021768071155073,
+        19.53265210673261,
+        13.021768071155073,
+        7.441010326374327,
+        14.882020652748654,
+        21.578929946485548,
+        14.882020652748654
+      ]
+    },
+    {
+      "path": "inp.PM_PM_polangle_even",
+      "value": 13.858881732872185
+    },
+    {
+      "path": "inp.theta",
+      "value": 0.9301262907967909
+    },
+    {
+      "path": "inp.angle_tmp",
+      "value": 3.8974741840641833
+    }
+  ],
+  "numeric_29_matches": [],
+  "function_handles": [
+    "sigmoid_func"
+  ],
+  "opaque_objects": [
+    "sigmoid_func[0].function_handle.workspace",
+    "function_subsystem.record0.MCOS"
+  ],
+  "unsupported": [],
+  "function_subsystem": {
+    "bytes": 1200,
+    "sha256": "c6cdc48d14175d35bda08fdc4a301e1c847744c9150312cd12e1055acb2d000e",
+    "records": [
+      {
+        "name": "",
+        "mclass": 2
+      },
+      {
+        "name": "",
+        "mclass": 9,
+        "nested_records": [
+          {
+            "name": "",
+            "mclass": 2
+          }
+        ]
+      }
+    ],
+    "printable_strings": [
+      "MCOS",
+      "MCOS",
+      "FileWrapper__",
+      "function_handle_workspace",
+      "MCOS"
+    ],
+    "limitation": "MCOS containers and nested MAT records inspected; no claim of full MATLAB runtime deserialization."
+  },
+  "sigmoid_handle": {
+    "function": "sf%1@(x)1./(1+exp(-50*(x-0.99)))",
+    "type": "anonymous",
+    "file": "W:\\Documents\\DFG-Projekt_Topologieoptimierung_ressourceneffiziente_Maschinen\\08_Software\\MATLAB\\GA\\GA Code\\zelle 100_SPMSM\\fitness_GA5_SPMSM.m"
+  },
+  "raw_record_audit": {
+    "record_count": 54,
+    "reached_exact_file_end": true,
+    "uncompressed_bytes_total": 35196984,
+    "token_hits": {
+      "ang_0": 0,
+      "ang0": 0,
+      "ang_r": 0,
+      "innerangle": 1,
+      "inner_angle": 0,
+      "initial_rotor": 0,
+      "sliding_airgap": 0,
+      "mi_modifyboundprop": 0,
+      "rotorschift": 1
+    },
+    "records": [
+      {
+        "file_offset": 128,
+        "tag": 15,
+        "uncompressed_bytes": 1672,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 1345,
+        "tag": 15,
+        "uncompressed_bytes": 24072,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 4471,
+        "tag": 15,
+        "uncompressed_bytes": 72,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 4524,
+        "tag": 15,
+        "uncompressed_bytes": 4960,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 8805,
+        "tag": 15,
+        "uncompressed_bytes": 984168,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 776544,
+        "tag": 15,
+        "uncompressed_bytes": 4960,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 780739,
+        "tag": 15,
+        "uncompressed_bytes": 984168,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 1537547,
+        "tag": 15,
+        "uncompressed_bytes": 72,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 1537601,
+        "tag": 15,
+        "uncompressed_bytes": 72,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 1537660,
+        "tag": 15,
+        "uncompressed_bytes": 14480,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 1537787,
+        "tag": 15,
+        "uncompressed_bytes": 61904,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 1538096,
+        "tag": 15,
+        "uncompressed_bytes": 73504,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 1547162,
+        "tag": 15,
+        "uncompressed_bytes": 4976,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 1549513,
+        "tag": 15,
+        "uncompressed_bytes": 984176,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 2143149,
+        "tag": 15,
+        "uncompressed_bytes": 7752,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 2148049,
+        "tag": 15,
+        "uncompressed_bytes": 73512,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 2157132,
+        "tag": 15,
+        "uncompressed_bytes": 4976,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 2159482,
+        "tag": 15,
+        "uncompressed_bytes": 984176,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 2753117,
+        "tag": 15,
+        "uncompressed_bytes": 4952,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 2757305,
+        "tag": 15,
+        "uncompressed_bytes": 984160,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3511648,
+        "tag": 15,
+        "uncompressed_bytes": 680,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3512062,
+        "tag": 15,
+        "uncompressed_bytes": 123088,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3584709,
+        "tag": 15,
+        "uncompressed_bytes": 72,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3584773,
+        "tag": 15,
+        "uncompressed_bytes": 176,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3584930,
+        "tag": 15,
+        "uncompressed_bytes": 4960,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3589641,
+        "tag": 15,
+        "uncompressed_bytes": 50152,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3592508,
+        "tag": 15,
+        "uncompressed_bytes": 49024,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3594614,
+        "tag": 15,
+        "uncompressed_bytes": 200,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3594789,
+        "tag": 15,
+        "uncompressed_bytes": 208,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3594964,
+        "tag": 15,
+        "uncompressed_bytes": 5112,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3599245,
+        "tag": 15,
+        "uncompressed_bytes": 64,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3599296,
+        "tag": 15,
+        "uncompressed_bytes": 72,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3599350,
+        "tag": 15,
+        "uncompressed_bytes": 56,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3599397,
+        "tag": 15,
+        "uncompressed_bytes": 9984,
+        "token_hits": {
+          "innerangle": 1,
+          "rotorschift": 1
+        }
+      },
+      {
+        "file_offset": 3600936,
+        "tag": 15,
+        "uncompressed_bytes": 56,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3600979,
+        "tag": 15,
+        "uncompressed_bytes": 56,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3601026,
+        "tag": 15,
+        "uncompressed_bytes": 56,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3601072,
+        "tag": 15,
+        "uncompressed_bytes": 80,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3601127,
+        "tag": 15,
+        "uncompressed_bytes": 80,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3601184,
+        "tag": 15,
+        "uncompressed_bytes": 64,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3601237,
+        "tag": 15,
+        "uncompressed_bytes": 73512,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 3610312,
+        "tag": 15,
+        "uncompressed_bytes": 14761520,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 5770091,
+        "tag": 15,
+        "uncompressed_bytes": 14761528,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 7930217,
+        "tag": 15,
+        "uncompressed_bytes": 73504,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 7939246,
+        "tag": 15,
+        "uncompressed_bytes": 296,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 7939354,
+        "tag": 15,
+        "uncompressed_bytes": 56,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 7939403,
+        "tag": 15,
+        "uncompressed_bytes": 1120,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 7939869,
+        "tag": 15,
+        "uncompressed_bytes": 73504,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 7948929,
+        "tag": 15,
+        "uncompressed_bytes": 64,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 7948979,
+        "tag": 15,
+        "uncompressed_bytes": 176,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 7949050,
+        "tag": 15,
+        "uncompressed_bytes": 104,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 7949117,
+        "tag": 15,
+        "uncompressed_bytes": 1656,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 7950325,
+        "tag": 15,
+        "uncompressed_bytes": 1664,
+        "token_hits": {}
+      },
+      {
+        "file_offset": 7951901,
+        "tag": 15,
+        "uncompressed_bytes": 1256,
+        "token_hits": {}
+      }
+    ]
+  },
+  "original_fem": {
+    "path": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\femm_zone\\models\\SPMSM_discrete.fem",
+    "sha256": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5",
+    "innerangle": 0.0,
+    "outerangle": 0.0
+  }
+}

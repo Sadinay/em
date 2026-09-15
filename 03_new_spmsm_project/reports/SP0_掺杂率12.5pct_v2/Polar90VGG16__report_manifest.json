@@ -1,0 +1,20 @@
+{
+  "source_sha256": "8658ff4e183d581de9401b3b865ca933eef4113a7a5b70da8ac025016fb42a1c",
+  "input_prediction_sha256": {
+    "cnn_replay_update_v2\\baseline\\dev_common_predictions.csv": "da8b065f3aefd71182f450414ab28af70399ebe6afd7e40039f51258dcd3ceae",
+    "cnn_replay_update_v1\\runs\\G-S\\step02000\\dev_common_predictions.csv": "9156bc51b560bd4c1aab5205017d9606ba799f247f09a7a71cc21fbfa3a8b895",
+    "cnn_replay_update_v2\\runs\\G-S\\step05000\\dev_common_predictions.csv": "f14d22008a73b0c200d2f0617a01d00321ffae79bf6aa798a70343866a839daf",
+    "cnn_replay_update_v1\\runs\\F-S\\step01500\\dev_common_predictions.csv": "3934dd83773abb0d6a70459e32fb2e6284ecc2e8f3e15619a457220c29023a61",
+    "cnn_replay_update_v2\\runs\\F-S\\step04000\\dev_common_predictions.csv": "2611b8c48bfdb9aa361761833126042bcb1875f0d6b05275da51e19e3322b72d"
+  },
+  "test_used": false,
+  "new_inference": false,
+  "outputs_sha256": {
+    "01_验证误差与学习率.png": "a2bba030213cc50ab598714901609b52f3bd86dc054dbd292a69c023040f1347",
+    "02_新基因预测对比.png": "37295db975089b40b2accd81d5f6bce52bba2b042fa4cf03734702260953d4d9",
+    "REPORT.md": "279efa9bf1ea8c854886063c55fcd59946e416a38023d94bb0c331552d2e092f",
+    "training_budgets.csv": "f7834dccdd98c0053723db0c961cbc9baaceb39a608e98e7f438a4207002a572",
+    "validation_curves.csv": "7642f9706053a482ee0bdb5e825f221dd4f03c3f9740a6e72c961395dfc2900b",
+    "validation_metrics.csv": "998903a3cd1beeb096bae0e0804bceddbc136d41621755d5f0f4f638dcae0cc6"
+  }
+}

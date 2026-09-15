@@ -1,0 +1,179 @@
+{
+  "status": "all_forward_checks_passed",
+  "experiment_count": 9,
+  "v2_weight_transfer_allowed": false,
+  "logical_adaptation": "input changed from V2 3x10x10 to binary 2x6x20; adaptive feature grid is 3x10",
+  "models": [
+    {
+      "experiment": "logical6x20/mini_inception_v2",
+      "input_shape": [
+        1,
+        2,
+        6,
+        20
+      ],
+      "output_shape": [
+        1,
+        2
+      ],
+      "trainable_parameters": 1095698,
+      "predicts": [
+        "Tavg",
+        "DeltaT"
+      ],
+      "forward_check": true
+    },
+    {
+      "experiment": "logical6x20/resnet20_v2",
+      "input_shape": [
+        1,
+        2,
+        6,
+        20
+      ],
+      "output_shape": [
+        1,
+        2
+      ],
+      "trainable_parameters": 763714,
+      "predicts": [
+        "Tavg",
+        "DeltaT"
+      ],
+      "forward_check": true
+    },
+    {
+      "experiment": "logical6x20/small_cnn_v2",
+      "input_shape": [
+        1,
+        2,
+        6,
+        20
+      ],
+      "output_shape": [
+        1,
+        2
+      ],
+      "trainable_parameters": 1224450,
+      "predicts": [
+        "Tavg",
+        "DeltaT"
+      ],
+      "forward_check": true
+    },
+    {
+      "experiment": "xy224/mini_inception_v2",
+      "input_shape": [
+        1,
+        8,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        2
+      ],
+      "trainable_parameters": 1036466,
+      "predicts": [
+        "Tavg",
+        "DeltaT"
+      ],
+      "forward_check": true
+    },
+    {
+      "experiment": "xy224/resnet18_v2",
+      "input_shape": [
+        1,
+        8,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        2
+      ],
+      "trainable_parameters": 3845570,
+      "predicts": [
+        "Tavg",
+        "DeltaT"
+      ],
+      "forward_check": true
+    },
+    {
+      "experiment": "xy224/vgg16_v2",
+      "input_shape": [
+        1,
+        8,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        2
+      ],
+      "trainable_parameters": 18917122,
+      "predicts": [
+        "Tavg",
+        "DeltaT"
+      ],
+      "forward_check": true
+    },
+    {
+      "experiment": "polar90_224/mini_inception_v2",
+      "input_shape": [
+        1,
+        8,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        2
+      ],
+      "trainable_parameters": 1036466,
+      "predicts": [
+        "Tavg",
+        "DeltaT"
+      ],
+      "forward_check": true
+    },
+    {
+      "experiment": "polar90_224/resnet18_v2",
+      "input_shape": [
+        1,
+        8,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        2
+      ],
+      "trainable_parameters": 3845570,
+      "predicts": [
+        "Tavg",
+        "DeltaT"
+      ],
+      "forward_check": true
+    },
+    {
+      "experiment": "polar90_224/vgg16_v2",
+      "input_shape": [
+        1,
+        8,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        2
+      ],
+      "trainable_parameters": 18917122,
+      "predicts": [
+        "Tavg",
+        "DeltaT"
+      ],
+      "forward_check": true
+    }
+  ]
+}

@@ -1,0 +1,1798 @@
+{
+  "files": [
+    {
+      "source": "reports\\delta_t_reinterpretation_comparison.csv",
+      "destination": "reports\\other\\历史FEMM映射和DeltaT诊断散件__delta_t_reinterpretation_comparison.csv",
+      "source_sha256": "72789bd8828afb328be76152def2639d52e767f096f28bc0a64d54382f8a85cd",
+      "archive_sha256": "72789bd8828afb328be76152def2639d52e767f096f28bc0a64d54382f8a85cd",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\DELTAT_MISMATCH_DIAGNOSIS.md",
+      "destination": "reports\\other\\历史FEMM映射和DeltaT诊断散件__DELTAT_MISMATCH_DIAGNOSIS.md",
+      "source_sha256": "22dad981b62a22250099578a43877689bc78c9dc3c9fc3e1b8092260788eabfd",
+      "archive_sha256": "2e3ab9467a754e1cd15ecc40db0b62e6381d348a89f33793b0962a2397e73b1c",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\femm_6gene_results.csv",
+      "destination": "reports\\other\\历史FEMM映射和DeltaT诊断散件__femm_6gene_results.csv",
+      "source_sha256": "58786ca438243d80daf0939e9b116963dae6692aa4aefc071276711cb8f83418",
+      "archive_sha256": "58786ca438243d80daf0939e9b116963dae6692aa4aefc071276711cb8f83418",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\gene_to_structure_mapping.png",
+      "destination": "reports\\other\\历史FEMM映射和DeltaT诊断散件__gene_to_structure_mapping.png",
+      "source_sha256": "d6cc979a62420e43c65d2c0a2063f75ddc3e0d0dd2ccc936395358e83619e0cb",
+      "archive_sha256": "d6cc979a62420e43c65d2c0a2063f75ddc3e0d0dd2ccc936395358e83619e0cb",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\MAT_FEM_MAPPING_VALIDATION.md",
+      "destination": "reports\\other\\历史FEMM映射和DeltaT诊断散件__MAT_FEM_MAPPING_VALIDATION.md",
+      "source_sha256": "93177c87d4d19349d00128e070b352bb093ee6df85440fd877b4ecb841cd2e4d",
+      "archive_sha256": "78d3cb37c0a5a154130e4385224fb4e5aba84364e4ef9a9d9128e741aee28113",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\MINANGLE_15_VS_25_1DEG_COMPARISON.md",
+      "destination": "reports\\other\\历史FEMM映射和DeltaT诊断散件__MINANGLE_15_VS_25_1DEG_COMPARISON.md",
+      "source_sha256": "daf05663881754407e38c334a8e665948b9b342360e564b1b039ba205c4fe13a",
+      "archive_sha256": "d2c8041530d158c62d80035a6e2c262128c4d117dd37cae1937c97406d684c54",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\spmsm_topology_dataset\\README.md",
+      "destination": "reports\\other\\历史拓扑数据整理报告__README.md",
+      "source_sha256": "cc04c983ad01d188c2b4765c5d4ae69d9a1482aa69b875590ffbd33f5023a183",
+      "archive_sha256": "cc04c983ad01d188c2b4765c5d4ae69d9a1482aa69b875590ffbd33f5023a183",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\spmsm_topology_dataset\\selection_summary.json",
+      "destination": "reports\\other\\历史拓扑数据整理报告__selection_summary.json",
+      "source_sha256": "ae8d1826f2d8955ba95bbffde6fbe7228f1b43c487e5de59d8feb2ba93903ddb",
+      "archive_sha256": "ae8d1826f2d8955ba95bbffde6fbe7228f1b43c487e5de59d8feb2ba93903ddb",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_topology_dataset\\tavg_band_split_distribution.csv",
+      "destination": "reports\\other\\历史拓扑数据整理报告__tavg_band_split_distribution.csv",
+      "source_sha256": "9457328d15a7c751d99c5f4ba61fe3df2240f158545838bb4654510159ad8cbb",
+      "archive_sha256": "9457328d15a7c751d99c5f4ba61fe3df2240f158545838bb4654510159ad8cbb",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_topology_dataset\\tavg_band_split_distribution.png",
+      "destination": "reports\\other\\历史拓扑数据整理报告__tavg_band_split_distribution.png",
+      "source_sha256": "e2fd15537c52d3f3cd32df80c027e043c723f944720640e7c8b456dfa1669485",
+      "archive_sha256": "e2fd15537c52d3f3cd32df80c027e043c723f944720640e7c8b456dfa1669485",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_topology_dataset\\train40000_summary.json",
+      "destination": "reports\\other\\历史拓扑数据整理报告__train40000_summary.json",
+      "source_sha256": "368d9af5f5de636b347d383797aa1b8dfb86937b139a55a84245db7ae80700a6",
+      "archive_sha256": "368d9af5f5de636b347d383797aa1b8dfb86937b139a55a84245db7ae80700a6",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_topology_dataset\\train40000_tavg_band_allocation.csv",
+      "destination": "reports\\other\\历史拓扑数据整理报告__train40000_tavg_band_allocation.csv",
+      "source_sha256": "f50882de11b8803424697c2fcce1993fc7fe6a448afcf4c0ab907e88d710e3bd",
+      "archive_sha256": "f50882de11b8803424697c2fcce1993fc7fe6a448afcf4c0ab907e88d710e3bd",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\input_representation_preview.png",
+      "destination": "reports\\other\\历史输入编码报告__input_representation_preview.png",
+      "source_sha256": "dbcf82f8fd248b7097246f6a37fdef4de92f510b2d6c0d8b8aafa8141e608bdc",
+      "archive_sha256": "dbcf82f8fd248b7097246f6a37fdef4de92f510b2d6c0d8b8aafa8141e608bdc",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\model_matrix_audit.json",
+      "destination": "reports\\other\\历史输入编码报告__model_matrix_audit.json",
+      "source_sha256": "ba23c47ba74ec9d8ba602051a96ac85a9b4b309bd34c32e58c421fdea8b3a1af",
+      "archive_sha256": "ba23c47ba74ec9d8ba602051a96ac85a9b4b309bd34c32e58c421fdea8b3a1af",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\polar360_224_input.png",
+      "destination": "reports\\other\\历史输入编码报告__polar360_224_input.png",
+      "source_sha256": "968ca0f443ea8164f4717cb4b851518316c13c6cbcc6d812d77ab7872731ee8c",
+      "archive_sha256": "968ca0f443ea8164f4717cb4b851518316c13c6cbcc6d812d77ab7872731ee8c",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\polar90_224_input.png",
+      "destination": "reports\\other\\历史输入编码报告__polar90_224_input.png",
+      "source_sha256": "9e11615aee9b193ff4a2c473ed91ba83fdedd17975899086188bc4b33f859ca3",
+      "archive_sha256": "9e11615aee9b193ff4a2c473ed91ba83fdedd17975899086188bc4b33f859ca3",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\README.md",
+      "destination": "reports\\other\\历史输入编码报告__README.md",
+      "source_sha256": "f53df2d5639303a5a924a46549dbd29ed1d61e0aab3edc46eea3762f05150b06",
+      "archive_sha256": "845c12e4cab5b5561664c018a9d89eda65e5e11eeba9abc48fd5b9b4b7ccb64b",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\spmsm_inputs\\xy360_224_fractional_composite.png",
+      "destination": "reports\\other\\历史输入编码报告__xy360_224_fractional_composite.png",
+      "source_sha256": "26751d05342cc52b0349e65dedd21520f1e253fb3b495ae07143205942939753",
+      "archive_sha256": "26751d05342cc52b0349e65dedd21520f1e253fb3b495ae07143205942939753",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\xy360_224_input.png",
+      "destination": "reports\\other\\历史输入编码报告__xy360_224_input.png",
+      "source_sha256": "154ed39fad75c12db21318e6df92c0650d5c2d82c74119b49fe20355b30f1080",
+      "archive_sha256": "154ed39fad75c12db21318e6df92c0650d5c2d82c74119b49fe20355b30f1080",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\xy360_224_input_nearest4x.png",
+      "destination": "reports\\other\\历史输入编码报告__xy360_224_input_nearest4x.png",
+      "source_sha256": "15d41ee575a4608608244504d2074cc1db2db0ad9d57497929f1a99fefad176d",
+      "archive_sha256": "15d41ee575a4608608244504d2074cc1db2db0ad9d57497929f1a99fefad176d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\xy360_fem_geometry_native896_audit.png",
+      "destination": "reports\\other\\历史输入编码报告__xy360_fem_geometry_native896_audit.png",
+      "source_sha256": "f397c679560e47d0dc5567ba6960b6fcd3723f5fc9609a7ed6c38d3774481b57",
+      "archive_sha256": "f397c679560e47d0dc5567ba6960b6fcd3723f5fc9609a7ed6c38d3774481b57",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\xy360_hd_3072_all_regions_and_gene_grid.json",
+      "destination": "reports\\other\\历史输入编码报告__xy360_hd_3072_all_regions_and_gene_grid.json",
+      "source_sha256": "aa27fc560d4f2bcaf6cb544c4386ee4ad8a2cc9b4520a26dc2c7a9ae66be3fd7",
+      "archive_sha256": "aa27fc560d4f2bcaf6cb544c4386ee4ad8a2cc9b4520a26dc2c7a9ae66be3fd7",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\xy360_hd_3072_all_regions_and_gene_grid.png",
+      "destination": "reports\\other\\历史输入编码报告__xy360_hd_3072_all_regions_and_gene_grid.png",
+      "source_sha256": "e7a6c192ff14f786d76cbd2ce8af497facac7bd0794f223b10641fdc814a8c02",
+      "archive_sha256": "e7a6c192ff14f786d76cbd2ce8af497facac7bd0794f223b10641fdc814a8c02",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\xy360_hd_3072_with_gene_grid.json",
+      "destination": "reports\\other\\历史输入编码报告__xy360_hd_3072_with_gene_grid.json",
+      "source_sha256": "1323046df8310f63c6fb8beba13e85c3eff889b08e20b47a4c9b3665750f3850",
+      "archive_sha256": "1323046df8310f63c6fb8beba13e85c3eff889b08e20b47a4c9b3665750f3850",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\xy360_hd_3072_with_gene_grid.png",
+      "destination": "reports\\other\\历史输入编码报告__xy360_hd_3072_with_gene_grid.png",
+      "source_sha256": "249d6c0a03178700c5d4abf80924f35e076851e12d1d9026d7d369124f404231",
+      "archive_sha256": "249d6c0a03178700c5d4abf80924f35e076851e12d1d9026d7d369124f404231",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\spmsm_inputs\\xy90_224_input.png",
+      "destination": "reports\\other\\历史输入编码报告__xy90_224_input.png",
+      "source_sha256": "f3bad421e1cd2d1559c4f1b2fa9612008554129326ea34350e6177a1e0f43990",
+      "archive_sha256": "f3bad421e1cd2d1559c4f1b2fa9612008554129326ea34350e6177a1e0f43990",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\angle_settings_audit_20260908\\evidence.json",
+      "destination": "reports\\other\\20260908角度设置审计__evidence.json",
+      "source_sha256": "4e873aaa29e884d3694cf97c77d9c328dcca639ae0e80971bd88c7694e887bd2",
+      "archive_sha256": "4e873aaa29e884d3694cf97c77d9c328dcca639ae0e80971bd88c7694e887bd2",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\angle_settings_audit_20260908\\角度设置对比.md",
+      "destination": "reports\\other\\20260908角度设置审计__角度设置对比.md",
+      "source_sha256": "a3f305d5e4ade079f4dd40a7ccf4c5eb29ce09da28162280039767d3b263c075",
+      "archive_sha256": "e14f22da18dd63cd5749cd7785334356c8709c05adfd17c717ddb9341161f808",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\initial_angle_29_audit_20260908\\evidence.json",
+      "destination": "reports\\other\\20260908初始内角29°审计__evidence.json",
+      "source_sha256": "18315ed48f486f8b2ff031556cf6fa50429ae1b81191e23806cede766a84d354",
+      "archive_sha256": "18315ed48f486f8b2ff031556cf6fa50429ae1b81191e23806cede766a84d354",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\initial_angle_29_audit_20260908\\核查结论.md",
+      "destination": "reports\\other\\20260908初始内角29°审计__核查结论.md",
+      "source_sha256": "e68cd749ff973903e14835c81e2ccd8be4618dfe78c4da6f1305ae0c48f21ca0",
+      "archive_sha256": "a7a35ac457b6ea0197fadffa2253081fc24769527b6df2ea854c165d6c61ed34",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "femm_zone\\workspaces\\pilot20_cross_device_check_20260909\\torque_comparison.pdf",
+      "destination": "reports\\other\\20260909跨设备pilot20核验__torque_comparison.pdf",
+      "source_sha256": "77328b78aa15933dc86b49328306361378859274c20adb2941caa9271d15a334",
+      "archive_sha256": "77328b78aa15933dc86b49328306361378859274c20adb2941caa9271d15a334",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "femm_zone\\workspaces\\pilot20_cross_device_check_20260909\\torque_comparison.png",
+      "destination": "reports\\other\\20260909跨设备pilot20核验__torque_comparison.png",
+      "source_sha256": "0d243d4c37445e8ee6afa7ba626ac92c8d64dc6203f7b1b33ff2a7a1a2eebb34",
+      "archive_sha256": "0d243d4c37445e8ee6afa7ba626ac92c8d64dc6203f7b1b33ff2a7a1a2eebb34",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "femm_zone\\workspaces\\pilot20_cross_device_check_20260909\\核验报告.md",
+      "destination": "reports\\other\\20260909跨设备pilot20核验__核验报告.md",
+      "source_sha256": "509c23e88e215cac216829ffb23622e25431a1547b435a6f1d3ef42f607cbf26",
+      "archive_sha256": "a42fac807fe03c7f6fcb4ed570dfdf4260b1e9115e41b4812785886fffd90dce",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\BASELINE_REPORT.md",
+      "destination": "reports\\other\\20260913补样标注验收与冻结基线__BASELINE_REPORT.md",
+      "source_sha256": "2ab6ddbb2b2583614399d7c37bb40ee3180b69958835449d17489c5f02318238",
+      "archive_sha256": "f1636ac993fbe40dc1054f5e8bfc619d25e4d358f18b3ea818934628b5b13ff1",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data_audit.md",
+      "destination": "reports\\other\\20260913补样标注验收与冻结基线__data_audit.md",
+      "source_sha256": "f2035007a6be1a1a5a88cd0eab677ee17333d7001b3671ebff40555683009268",
+      "archive_sha256": "f2035007a6be1a1a5a88cd0eab677ee17333d7001b3671ebff40555683009268",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\physics_fix_20260913.md",
+      "destination": "reports\\other\\20260913补样标注验收与冻结基线__physics_fix_20260913.md",
+      "source_sha256": "527954ccaaea7ea33810a2ab5498bd0e2ed6cdbcafb0fdac2cb1b53c2ca7143e",
+      "archive_sha256": "23dfcfdd6ec911b0a330f0a56db7a0d1f9802b32b8af9723f02818582db1a6da",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\README.md",
+      "destination": "reports\\other\\20260913补样标注验收与冻结基线__README.md",
+      "source_sha256": "e1094b6be13e9df2a0689fb926e0859a4d10b62af8b918df0ff8c417f8f8f097",
+      "archive_sha256": "4a1418d903b4caa3d976cb0db419e2a434b7776ed11c6004bc00bd54803e62b0",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "femm_zone\\results\\fixed_current_5genes_20260908\\REPORT.md",
+      "destination": "reports\\other\\20260908固定电流五基因核验__REPORT.md",
+      "source_sha256": "6eab58a5b181126e4d9494e18194f3ecf2192d5b1e1b29303977b642db26f376",
+      "archive_sha256": "79788fa3a454992c0e02f9ff0eb5ea9a41bd134bbd3ad29fa1f5b03976e98bf9",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "femm_zone\\results\\fixed_current_5genes_20260908\\torque_comparison.png",
+      "destination": "reports\\other\\20260908固定电流五基因核验__torque_comparison.png",
+      "source_sha256": "b22e750c5a3fa225ccaf497fc066d46a38064f2109df04da329be1f5b6193b13",
+      "archive_sha256": "b22e750c5a3fa225ccaf497fc066d46a38064f2109df04da329be1f5b6193b13",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "femm_zone\\results\\initial_current_phase_20260908\\phase_comparison.png",
+      "destination": "reports\\other\\20260908初始电流相位核验__phase_comparison.png",
+      "source_sha256": "2c76ec7f3f629d444cbbe3b6c2eddac9dcd9bf3437ad89fecd8df270524c058c",
+      "archive_sha256": "2c76ec7f3f629d444cbbe3b6c2eddac9dcd9bf3437ad89fecd8df270524c058c",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "femm_zone\\results\\initial_current_phase_20260908\\REPORT.md",
+      "destination": "reports\\other\\20260908初始电流相位核验__REPORT.md",
+      "source_sha256": "b86c7515b1ac84ceb9ba5e065529361062a2e4da21edca9b8a12b0304a7dc353",
+      "archive_sha256": "f37a2679067a3f0f8fd0c9ddafbf14b601d8bb49e052013e06e74311180042d9",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "femm_zone\\results\\current_modes_5genes_20260908\\comparison.png",
+      "destination": "reports\\other\\20260908电流模式五基因核验__comparison.png",
+      "source_sha256": "26cec7b750f33b12ddd392f2e66dc25d79e2aab8df741d6d10c7832383f430e3",
+      "archive_sha256": "26cec7b750f33b12ddd392f2e66dc25d79e2aab8df741d6d10c7832383f430e3",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "femm_zone\\results\\current_modes_5genes_20260908\\phase_currents.png",
+      "destination": "reports\\other\\20260908电流模式五基因核验__phase_currents.png",
+      "source_sha256": "8bb29b7f4fb07cd3102a9762868ccacf189df5da8c3ef68fa1bef9a6a419ff5a",
+      "archive_sha256": "8bb29b7f4fb07cd3102a9762868ccacf189df5da8c3ef68fa1bef9a6a419ff5a",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "femm_zone\\results\\current_modes_5genes_20260908\\REPORT.md",
+      "destination": "reports\\other\\20260908电流模式五基因核验__REPORT.md",
+      "source_sha256": "384c9cb500568c0a15fbc11c9b022a9e83939d2e0cd68400d315d57dd4216dd7",
+      "archive_sha256": "c5f7f11874efe15256aea9d54f2d0c5fe67e1566c417b608fe162c1be374428f",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "femm_zone\\results\\current_modes_5genes_20260908\\torque_curves.png",
+      "destination": "reports\\other\\20260908电流模式五基因核验__torque_curves.png",
+      "source_sha256": "e302f9cfe934cfe7c78f79e60bf4a34b2a4530d27245c3fcd4f9696d9dde3738",
+      "archive_sha256": "e302f9cfe934cfe7c78f79e60bf4a34b2a4530d27245c3fcd4f9696d9dde3738",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "femm_zone\\results\\mat_literal_current_probe_20260908\\INVESTIGATION.md",
+      "destination": "reports\\other\\20260908MAT字面电流核验__INVESTIGATION.md",
+      "source_sha256": "be1d5cadcdd835a48e4c86f29ebf929ad501a150b02827d9f3a4f05784bad21a",
+      "archive_sha256": "f9cadb3d4e57ff303ed99bfe5be439b97040a8c22684f9867415a5ef64b05f6b",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "femm_zone\\results\\mat_literal_current_probe_20260908\\REPORT.md",
+      "destination": "reports\\other\\20260908MAT字面电流核验__REPORT.md",
+      "source_sha256": "75406194a58664ce529b98bd18b28eace76eb1dc96362841069a2749c495959f",
+      "archive_sha256": "3ac499de4695bd4f496883dbda73735c433c8874e9dbbd322fceda78758883b5",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\V3\\01_结果图\\00_图片索引.md",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__01_结果图__00_图片索引.md",
+      "source_sha256": "e13415da1a4bd8bc045a8266795529f8a028d106a8c201ea5266413a2fafbc3f",
+      "archive_sha256": "a5003f8dfdd01f1fc67b8d17c1f3ff9ae74847842163cc629085545c3e43c0ec",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\V3\\01_结果图\\01_六模型测试误差对比.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__01_结果图__01_六模型测试误差对比.png",
+      "source_sha256": "ef51b3d311323f055de6fe775dd9b95226dab06a718e66d09295abcc2e119854",
+      "archive_sha256": "ef51b3d311323f055de6fe775dd9b95226dab06a718e66d09295abcc2e119854",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\01_结果图\\02_六模型训练验证曲线.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__01_结果图__02_六模型训练验证曲线.png",
+      "source_sha256": "fb220a05ceaa2140c3db021113fcf19a7736c993c89157fe648248ed80ff9411",
+      "archive_sha256": "fb220a05ceaa2140c3db021113fcf19a7736c993c89157fe648248ed80ff9411",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\01_结果图\\03_平均转矩_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__01_结果图__03_平均转矩_真实值与预测值.png",
+      "source_sha256": "5b40720faf77dad684239fc45ff6efb9b8dcbeafcc7011766fcfba5a99df7852",
+      "archive_sha256": "5b40720faf77dad684239fc45ff6efb9b8dcbeafcc7011766fcfba5a99df7852",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\01_结果图\\04_平均转矩_残差分布.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__01_结果图__04_平均转矩_残差分布.png",
+      "source_sha256": "19bc94e5cb665f45685c0a7036e417f6f01a1f46475b9f4602a594be649c1a54",
+      "archive_sha256": "19bc94e5cb665f45685c0a7036e417f6f01a1f46475b9f4602a594be649c1a54",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\01_结果图\\05_转矩波动_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__01_结果图__05_转矩波动_真实值与预测值.png",
+      "source_sha256": "28b727dc774e8d7d676017d0120ceffb1ec40768b49aebfdbd468b00f2ffe947",
+      "archive_sha256": "28b727dc774e8d7d676017d0120ceffb1ec40768b49aebfdbd468b00f2ffe947",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\01_结果图\\06_转矩波动_残差分布.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__01_结果图__06_转矩波动_残差分布.png",
+      "source_sha256": "4605e096200c49934d8a71652c5b6de44936c05f88fa60e8b6ba850e34e121ec",
+      "archive_sha256": "4605e096200c49934d8a71652c5b6de44936c05f88fa60e8b6ba850e34e121ec",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\01_结果图\\07_FEMM误差与模型分歧.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__01_结果图__07_FEMM误差与模型分歧.png",
+      "source_sha256": "fa03db0bba714a75a4877f7054b4602f7341030761b1967f3450ee537641b2fe",
+      "archive_sha256": "fa03db0bba714a75a4877f7054b4602f7341030761b1967f3450ee537641b2fe",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\01_结果图\\08_最终训练验证测试样本分布.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__01_结果图__08_最终训练验证测试样本分布.png",
+      "source_sha256": "e8567151945be1645919a548cb04e8eba666c24a3ec8b6fc96fa2c653e421d4d",
+      "archive_sha256": "e8567151945be1645919a548cb04e8eba666c24a3ec8b6fc96fa2c653e421d4d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\01_结果图\\09_七模型测试误差对比.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__01_结果图__09_七模型测试误差对比.png",
+      "source_sha256": "37bf5c73c7558f91cf8323e3d814b20e7ccd5686d8bc5c7dd3aa98fb25db5f09",
+      "archive_sha256": "37bf5c73c7558f91cf8323e3d814b20e7ccd5686d8bc5c7dd3aa98fb25db5f09",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\01_结果图\\10_6x20_ResNet20训练与预测.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__01_结果图__10_6x20_ResNet20训练与预测.png",
+      "source_sha256": "accda283b5be0a3bc81a58f8e6b11dfbb939b0f318b9cf37e5a95a83f0cac0a7",
+      "archive_sha256": "accda283b5be0a3bc81a58f8e6b11dfbb939b0f318b9cf37e5a95a83f0cac0a7",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\00_结果摘要.md",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__00_结果摘要.md",
+      "source_sha256": "ac93b143a4671497722390ccfe0db6d7e19e4508ebd6f4c350ab15682f3bc15e",
+      "archive_sha256": "9333f14d53903b1fb863802188e5fffaf422d901203cd96853be63c3118614e2",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\01_审核说明.md",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__01_审核说明.md",
+      "source_sha256": "676b31d536791bd36a416ab6a4635e9d3267ea23b4f06354d4543f901e0c128b",
+      "archive_sha256": "416ceb633327e07fee0e32431ed874ce99ccd76a2ca79d127a569ffd7877a671",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\02_完整指标.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__02_完整指标.csv",
+      "source_sha256": "9a0da9850a01684792cd672163dcee9b222e15b7c93d1c219060d27b874a9f3a",
+      "archive_sha256": "9a0da9850a01684792cd672163dcee9b222e15b7c93d1c219060d27b874a9f3a",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\03_完整指标.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__03_完整指标.json",
+      "source_sha256": "be697eeb088d9adff1b3edecd32dfec3951ab6a9cf03af1a49894d05584bcff8",
+      "archive_sha256": "be697eeb088d9adff1b3edecd32dfec3951ab6a9cf03af1a49894d05584bcff8",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\04_切分与近邻审计.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__04_切分与近邻审计.json",
+      "source_sha256": "6b81f9714307b85ccf8c438775b659df5a46bc034c682ec51640dd4f679b3937",
+      "archive_sha256": "6b81f9714307b85ccf8c438775b659df5a46bc034c682ec51640dd4f679b3937",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\05_目标标准化参数.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__05_目标标准化参数.json",
+      "source_sha256": "9ccc436a5731692b6e29dfb68c32c436f609fc69afc042c698d9a052b250574e",
+      "archive_sha256": "9ccc436a5731692b6e29dfb68c32c436f609fc69afc042c698d9a052b250574e",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\06_平均转矩分布.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__06_平均转矩分布.csv",
+      "source_sha256": "ff49a22a9f266b701c7b9ec5f5fb75b9a9d1fca657e79f0a61f54e57236595b2",
+      "archive_sha256": "ff49a22a9f266b701c7b9ec5f5fb75b9a9d1fca657e79f0a61f54e57236595b2",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\07_转矩波动分布.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__07_转矩波动分布.csv",
+      "source_sha256": "c5c3d0c85f49594dc79b120d8059e94896612203edabd64dd8bec43bd21981f0",
+      "archive_sha256": "c5c3d0c85f49594dc79b120d8059e94896612203edabd64dd8bec43bd21981f0",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\08_联合分布.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__08_联合分布.csv",
+      "source_sha256": "bf6149e76e7356c5c5f4701f57c11c425f6f3272f7eb13a6dac2313329614ec1",
+      "archive_sha256": "bf6149e76e7356c5c5f4701f57c11c425f6f3272f7eb13a6dac2313329614ec1",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\09_验证测试集分布.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__09_验证测试集分布.csv",
+      "source_sha256": "3b219740985fb29bf3ffe14382ae7cbbdad69796678cb5415ba6565692e37952",
+      "archive_sha256": "3b219740985fb29bf3ffe14382ae7cbbdad69796678cb5415ba6565692e37952",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\10_1000基因模型分歧.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__10_1000基因模型分歧.json",
+      "source_sha256": "df65946ed2cb18e2220120d3c900d8d225199c50d57a6253ba7477b074bd09dc",
+      "archive_sha256": "df65946ed2cb18e2220120d3c900d8d225199c50d57a6253ba7477b074bd09dc",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\11_训练运行汇总.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__11_训练运行汇总.json",
+      "source_sha256": "cdad09cd4c1337858dafb83a3aee785769ffa2f983991869217d4a0ea0a895d1",
+      "archive_sha256": "cdad09cd4c1337858dafb83a3aee785769ffa2f983991869217d4a0ea0a895d1",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\12_训练集选取说明.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__12_训练集选取说明.json",
+      "source_sha256": "368d9af5f5de636b347d383797aa1b8dfb86937b139a55a84245db7ae80700a6",
+      "archive_sha256": "368d9af5f5de636b347d383797aa1b8dfb86937b139a55a84245db7ae80700a6",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\13_ResNet20补充结果.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__13_ResNet20补充结果.json",
+      "source_sha256": "c43abe53f007b7add513265c420fcbfcbb343ff2836b1b5250c24d90577c2ad0",
+      "archive_sha256": "c43abe53f007b7add513265c420fcbfcbb343ff2836b1b5250c24d90577c2ad0",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\02_汇总数据\\14_七模型测试指标.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__02_汇总数据__14_七模型测试指标.csv",
+      "source_sha256": "0af80efaffb6f5818b46f6de6e31c0c105d036731c5449f5063726dd5e29749d",
+      "archive_sha256": "0af80efaffb6f5818b46f6de6e31c0c105d036731c5449f5063726dd5e29749d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\AUDIT_GUIDE.md",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__AUDIT_GUIDE.md",
+      "source_sha256": "676b31d536791bd36a416ab6a4635e9d3267ea23b4f06354d4543f901e0c128b",
+      "archive_sha256": "416ceb633327e07fee0e32431ed874ce99ccd76a2ca79d127a569ffd7877a671",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\disagreement_analysis\\v3_six_model_disagreement_1000_analysis.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__disagreement_analysis__v3_six_model_disagreement_1000_analysis.json",
+      "source_sha256": "df65946ed2cb18e2220120d3c900d8d225199c50d57a6253ba7477b074bd09dc",
+      "archive_sha256": "df65946ed2cb18e2220120d3c900d8d225199c50d57a6253ba7477b074bd09dc",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\logical6x20\\mini_inception_v2\\seed_20260903\\config.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__logical6x20__mini_inception_v2__seed_20260903__config.json",
+      "source_sha256": "57596a2402a99c2a33e9c6291701dcfe774de7344a905a26ea1b0f87bfbab6b1",
+      "archive_sha256": "57596a2402a99c2a33e9c6291701dcfe774de7344a905a26ea1b0f87bfbab6b1",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\logical6x20\\mini_inception_v2\\seed_20260903\\full_test_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__logical6x20__mini_inception_v2__seed_20260903__full_test_result.json",
+      "source_sha256": "c992419bc1544bd95d138f7e27589621eb0185915cedb8374dfe6af4309f40e2",
+      "archive_sha256": "c992419bc1544bd95d138f7e27589621eb0185915cedb8374dfe6af4309f40e2",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\logical6x20\\mini_inception_v2\\seed_20260903\\full_validation_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__logical6x20__mini_inception_v2__seed_20260903__full_validation_result.json",
+      "source_sha256": "ad83a06b50e53fd71b1c2d29c76c69a5fb8cb29e0dbeec8119f88306211288a7",
+      "archive_sha256": "ad83a06b50e53fd71b1c2d29c76c69a5fb8cb29e0dbeec8119f88306211288a7",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\logical6x20\\mini_inception_v2\\seed_20260903\\history.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__logical6x20__mini_inception_v2__seed_20260903__history.json",
+      "source_sha256": "8e4927af4b283f725a0b798ac90e0944132fa7094a78b06947c02d9c0a99c76b",
+      "archive_sha256": "8e4927af4b283f725a0b798ac90e0944132fa7094a78b06947c02d9c0a99c76b",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\logical6x20\\mini_inception_v2\\seed_20260903\\result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__logical6x20__mini_inception_v2__seed_20260903__result.json",
+      "source_sha256": "3d412246f74eaae48b39575881af165f7d241172c7a9a124d4f53c1ad632eee7",
+      "archive_sha256": "3d412246f74eaae48b39575881af165f7d241172c7a9a124d4f53c1ad632eee7",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\logical6x20\\small_cnn_v2\\seed_20260903\\config.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__logical6x20__small_cnn_v2__seed_20260903__config.json",
+      "source_sha256": "dcc4488081c171e8411777a3c6a7cd39c3a60746ce0579b725ccfb3af8de3ceb",
+      "archive_sha256": "dcc4488081c171e8411777a3c6a7cd39c3a60746ce0579b725ccfb3af8de3ceb",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\logical6x20\\small_cnn_v2\\seed_20260903\\full_test_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__logical6x20__small_cnn_v2__seed_20260903__full_test_result.json",
+      "source_sha256": "63c6778a3a7515226a369571bc31fb56c9b062e4f185ca382fcb7aaef192665c",
+      "archive_sha256": "63c6778a3a7515226a369571bc31fb56c9b062e4f185ca382fcb7aaef192665c",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\logical6x20\\small_cnn_v2\\seed_20260903\\full_validation_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__logical6x20__small_cnn_v2__seed_20260903__full_validation_result.json",
+      "source_sha256": "a5d2d527fccccad7856f8b80987d804aee7ca2614256c9a14a57db284138bc3f",
+      "archive_sha256": "a5d2d527fccccad7856f8b80987d804aee7ca2614256c9a14a57db284138bc3f",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\logical6x20\\small_cnn_v2\\seed_20260903\\history.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__logical6x20__small_cnn_v2__seed_20260903__history.json",
+      "source_sha256": "87cc1403dd6e1ddbe2d313bebe87582000a199a8d716b4cdfa93d5340523ff70",
+      "archive_sha256": "87cc1403dd6e1ddbe2d313bebe87582000a199a8d716b4cdfa93d5340523ff70",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\logical6x20\\small_cnn_v2\\seed_20260903\\result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__logical6x20__small_cnn_v2__seed_20260903__result.json",
+      "source_sha256": "19afc651d13f7f9777dbfd00a20f52e1df427906c6a1f8059832d885e5769051",
+      "archive_sha256": "19afc651d13f7f9777dbfd00a20f52e1df427906c6a1f8059832d885e5769051",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\polar360_224\\vgg16_v2\\seed_20260903\\config.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__polar360_224__vgg16_v2__seed_20260903__config.json",
+      "source_sha256": "3f74cf7e16253cd86b6b834ae284afdd8b255890b57d79bff95b15bb21c78d2a",
+      "archive_sha256": "3f74cf7e16253cd86b6b834ae284afdd8b255890b57d79bff95b15bb21c78d2a",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\polar360_224\\vgg16_v2\\seed_20260903\\full_test_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__polar360_224__vgg16_v2__seed_20260903__full_test_result.json",
+      "source_sha256": "829bb8c77380cbff208ede7e27c99b3b9294795e34f0435b6868445d34055a6a",
+      "archive_sha256": "829bb8c77380cbff208ede7e27c99b3b9294795e34f0435b6868445d34055a6a",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\polar360_224\\vgg16_v2\\seed_20260903\\full_validation_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__polar360_224__vgg16_v2__seed_20260903__full_validation_result.json",
+      "source_sha256": "d2b2dbca5f1996f87b577391cb357b2c59733f84cf55c405d7124ecdfd6de022",
+      "archive_sha256": "d2b2dbca5f1996f87b577391cb357b2c59733f84cf55c405d7124ecdfd6de022",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\polar360_224\\vgg16_v2\\seed_20260903\\history.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__polar360_224__vgg16_v2__seed_20260903__history.json",
+      "source_sha256": "0314fa00dc7f385daddddb2429eeffd5dd8934e3c42d2c698b7fbb4b6aef3546",
+      "archive_sha256": "0314fa00dc7f385daddddb2429eeffd5dd8934e3c42d2c698b7fbb4b6aef3546",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\polar360_224\\vgg16_v2\\seed_20260903\\result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__polar360_224__vgg16_v2__seed_20260903__result.json",
+      "source_sha256": "db579ad2f651287ccccb5fd1b32e7638a5bdc2545c3f5ee247cbbed1bc055160",
+      "archive_sha256": "db579ad2f651287ccccb5fd1b32e7638a5bdc2545c3f5ee247cbbed1bc055160",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\polar90_224\\vgg16_v2\\seed_20260903\\config.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__polar90_224__vgg16_v2__seed_20260903__config.json",
+      "source_sha256": "130bafef8b5c93178dc988c20ba3136869b5b32a2e841c2df47775888c1895b6",
+      "archive_sha256": "130bafef8b5c93178dc988c20ba3136869b5b32a2e841c2df47775888c1895b6",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\polar90_224\\vgg16_v2\\seed_20260903\\full_test_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__polar90_224__vgg16_v2__seed_20260903__full_test_result.json",
+      "source_sha256": "57839e268e52772947b0e6d45d78000f7b0eae2c512caa79623b5fc19613409b",
+      "archive_sha256": "57839e268e52772947b0e6d45d78000f7b0eae2c512caa79623b5fc19613409b",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\polar90_224\\vgg16_v2\\seed_20260903\\full_validation_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__polar90_224__vgg16_v2__seed_20260903__full_validation_result.json",
+      "source_sha256": "d9bcc79612504230a74a8fa7a7f8c69e488d31391f0241295890d4c72374ff25",
+      "archive_sha256": "d9bcc79612504230a74a8fa7a7f8c69e488d31391f0241295890d4c72374ff25",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\polar90_224\\vgg16_v2\\seed_20260903\\history.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__polar90_224__vgg16_v2__seed_20260903__history.json",
+      "source_sha256": "275b301b3b3377cb7c59a0d0afc3520c8f59b9f49b951c11a05a196a5ac1263a",
+      "archive_sha256": "275b301b3b3377cb7c59a0d0afc3520c8f59b9f49b951c11a05a196a5ac1263a",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\polar90_224\\vgg16_v2\\seed_20260903\\result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__polar90_224__vgg16_v2__seed_20260903__result.json",
+      "source_sha256": "720b4dc9d4be74dcb6644230fa96af8e56e164fd152730fcc3b008f236690294",
+      "archive_sha256": "720b4dc9d4be74dcb6644230fa96af8e56e164fd152730fcc3b008f236690294",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\xy360_224\\vgg16_v2\\seed_20260903\\config.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__xy360_224__vgg16_v2__seed_20260903__config.json",
+      "source_sha256": "48db8d24c6bb943d293d9005fc1e9c5e15443b47b1d036d34d91c4b1aecf0237",
+      "archive_sha256": "48db8d24c6bb943d293d9005fc1e9c5e15443b47b1d036d34d91c4b1aecf0237",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\xy360_224\\vgg16_v2\\seed_20260903\\full_test_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__xy360_224__vgg16_v2__seed_20260903__full_test_result.json",
+      "source_sha256": "d242345bebdf03eefe9fc2430d447d9c8ffbc4b892b030db26c873b12bbebfd8",
+      "archive_sha256": "d242345bebdf03eefe9fc2430d447d9c8ffbc4b892b030db26c873b12bbebfd8",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\xy360_224\\vgg16_v2\\seed_20260903\\full_validation_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__xy360_224__vgg16_v2__seed_20260903__full_validation_result.json",
+      "source_sha256": "6f5ac8f061662ebc9e9604144525a3985177c72314c3c6fb5374a941c9acf7d1",
+      "archive_sha256": "6f5ac8f061662ebc9e9604144525a3985177c72314c3c6fb5374a941c9acf7d1",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\xy360_224\\vgg16_v2\\seed_20260903\\history.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__xy360_224__vgg16_v2__seed_20260903__history.json",
+      "source_sha256": "26cfb75ba0ac8801ce4f7260c6496ed0204c3e9731aebc1f10089939466b92bf",
+      "archive_sha256": "26cfb75ba0ac8801ce4f7260c6496ed0204c3e9731aebc1f10089939466b92bf",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\xy360_224\\vgg16_v2\\seed_20260903\\result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__xy360_224__vgg16_v2__seed_20260903__result.json",
+      "source_sha256": "ed3442a5dbe25ea5473e2142ac805516b8907efe8be679c5b9fd95fc44444ede",
+      "archive_sha256": "ed3442a5dbe25ea5473e2142ac805516b8907efe8be679c5b9fd95fc44444ede",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\xy90_224\\vgg16_v2\\seed_20260903\\config.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__xy90_224__vgg16_v2__seed_20260903__config.json",
+      "source_sha256": "8ce409b45a83dc2e6cca453b7d36120349bf54366784027822fe3619df21a641",
+      "archive_sha256": "8ce409b45a83dc2e6cca453b7d36120349bf54366784027822fe3619df21a641",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\xy90_224\\vgg16_v2\\seed_20260903\\full_test_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__xy90_224__vgg16_v2__seed_20260903__full_test_result.json",
+      "source_sha256": "75b6c2d1e1d46d72d7546fabd124e716c9676c358306415897187e2dc4e28f04",
+      "archive_sha256": "75b6c2d1e1d46d72d7546fabd124e716c9676c358306415897187e2dc4e28f04",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\xy90_224\\vgg16_v2\\seed_20260903\\full_validation_result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__xy90_224__vgg16_v2__seed_20260903__full_validation_result.json",
+      "source_sha256": "bfe42f2140e9c8528e87664b4ca66436e190b0feec02bc3fd3c002ad5fa47193",
+      "archive_sha256": "bfe42f2140e9c8528e87664b4ca66436e190b0feec02bc3fd3c002ad5fa47193",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\xy90_224\\vgg16_v2\\seed_20260903\\history.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__xy90_224__vgg16_v2__seed_20260903__history.json",
+      "source_sha256": "28af616a9a0dc0c0c03855c191755b06592827065c7834b7f61a77dc4acb0fc6",
+      "archive_sha256": "28af616a9a0dc0c0c03855c191755b06592827065c7834b7f61a77dc4acb0fc6",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\per_run_test_results\\xy90_224\\vgg16_v2\\seed_20260903\\result.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__per_run_test_results__xy90_224__vgg16_v2__seed_20260903__result.json",
+      "source_sha256": "2121e043f9edc2f32c55e57f1636e3b58d110fd334a9129b930773651631caca",
+      "archive_sha256": "2121e043f9edc2f32c55e57f1636e3b58d110fd334a9129b930773651631caca",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\aggregate_metrics.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__aggregate_metrics.json",
+      "source_sha256": "be697eeb088d9adff1b3edecd32dfec3951ab6a9cf03af1a49894d05584bcff8",
+      "archive_sha256": "be697eeb088d9adff1b3edecd32dfec3951ab6a9cf03af1a49894d05584bcff8",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\delta_t_band_distribution.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__delta_t_band_distribution.csv",
+      "source_sha256": "c5c3d0c85f49594dc79b120d8059e94896612203edabd64dd8bec43bd21981f0",
+      "archive_sha256": "c5c3d0c85f49594dc79b120d8059e94896612203edabd64dd8bec43bd21981f0",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\delta_t_residual_six_v3.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__delta_t_residual_six_v3.png",
+      "source_sha256": "4605e096200c49934d8a71652c5b6de44936c05f88fa60e8b6ba850e34e121ec",
+      "archive_sha256": "4605e096200c49934d8a71652c5b6de44936c05f88fa60e8b6ba850e34e121ec",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\evaluation_split_distribution.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__evaluation_split_distribution.csv",
+      "source_sha256": "3b219740985fb29bf3ffe14382ae7cbbdad69796678cb5415ba6565692e37952",
+      "archive_sha256": "3b219740985fb29bf3ffe14382ae7cbbdad69796678cb5415ba6565692e37952",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\femm_error_vs_model_disagreement_v3.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__femm_error_vs_model_disagreement_v3.png",
+      "source_sha256": "fa03db0bba714a75a4877f7054b4602f7341030761b1967f3450ee537641b2fe",
+      "archive_sha256": "fa03db0bba714a75a4877f7054b4602f7341030761b1967f3450ee537641b2fe",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\input_representation_test_mae.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__input_representation_test_mae.png",
+      "source_sha256": "ef51b3d311323f055de6fe775dd9b95226dab06a718e66d09295abcc2e119854",
+      "archive_sha256": "ef51b3d311323f055de6fe775dd9b95226dab06a718e66d09295abcc2e119854",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\joint_tavg_delta_distribution.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__joint_tavg_delta_distribution.csv",
+      "source_sha256": "bf6149e76e7356c5c5f4701f57c11c425f6f3272f7eb13a6dac2313329614ec1",
+      "archive_sha256": "bf6149e76e7356c5c5f4701f57c11c425f6f3272f7eb13a6dac2313329614ec1",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\README.md",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__README.md",
+      "source_sha256": "ac93b143a4671497722390ccfe0db6d7e19e4508ebd6f4c350ab15682f3bc15e",
+      "archive_sha256": "9333f14d53903b1fb863802188e5fffaf422d901203cd96853be63c3118614e2",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\run_summary.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__run_summary.json",
+      "source_sha256": "cdad09cd4c1337858dafb83a3aee785769ffa2f983991869217d4a0ea0a895d1",
+      "archive_sha256": "cdad09cd4c1337858dafb83a3aee785769ffa2f983991869217d4a0ea0a895d1",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\selection_summary.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__selection_summary.json",
+      "source_sha256": "368d9af5f5de636b347d383797aa1b8dfb86937b139a55a84245db7ae80700a6",
+      "archive_sha256": "368d9af5f5de636b347d383797aa1b8dfb86937b139a55a84245db7ae80700a6",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\split_novelty_audit.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__split_novelty_audit.json",
+      "source_sha256": "6b81f9714307b85ccf8c438775b659df5a46bc034c682ec51640dd4f679b3937",
+      "archive_sha256": "6b81f9714307b85ccf8c438775b659df5a46bc034c682ec51640dd4f679b3937",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\target_scaler.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__target_scaler.json",
+      "source_sha256": "9ccc436a5731692b6e29dfb68c32c436f609fc69afc042c698d9a052b250574e",
+      "archive_sha256": "9ccc436a5731692b6e29dfb68c32c436f609fc69afc042c698d9a052b250574e",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\tavg_band_distribution.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__tavg_band_distribution.csv",
+      "source_sha256": "ff49a22a9f266b701c7b9ec5f5fb75b9a9d1fca657e79f0a61f54e57236595b2",
+      "archive_sha256": "ff49a22a9f266b701c7b9ec5f5fb75b9a9d1fca657e79f0a61f54e57236595b2",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\tavg_residual_six_v3.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__tavg_residual_six_v3.png",
+      "source_sha256": "19bc94e5cb665f45685c0a7036e417f6f01a1f46475b9f4602a594be649c1a54",
+      "archive_sha256": "19bc94e5cb665f45685c0a7036e417f6f01a1f46475b9f4602a594be649c1a54",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\training_validation_curves_six_v3.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__training_validation_curves_six_v3.png",
+      "source_sha256": "fb220a05ceaa2140c3db021113fcf19a7736c993c89157fe648248ed80ff9411",
+      "archive_sha256": "fb220a05ceaa2140c3db021113fcf19a7736c993c89157fe648248ed80ff9411",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\原始审核包\\summary_reports\\v3_metrics_mean_std.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__原始审核包__summary_reports__v3_metrics_mean_std.csv",
+      "source_sha256": "9a0da9850a01684792cd672163dcee9b222e15b7c93d1c219060d27b874a9f3a",
+      "archive_sha256": "9a0da9850a01684792cd672163dcee9b222e15b7c93d1c219060d27b874a9f3a",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\旧20次方案试跑记录\\batch_probe.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__旧20次方案试跑记录__batch_probe.json",
+      "source_sha256": "34aa6a1ee1c373332090c77f79de5767b58c4edd0b3d47ec55792f1c20fbabcf",
+      "archive_sha256": "34aa6a1ee1c373332090c77f79de5767b58c4edd0b3d47ec55792f1c20fbabcf",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\旧20次方案试跑记录\\run_summary.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__旧20次方案试跑记录__run_summary.json",
+      "source_sha256": "17e2a7a4ee70424dc10f17a77fc5971673974bdf8f7d01ae226a4da5de050771",
+      "archive_sha256": "17e2a7a4ee70424dc10f17a77fc5971673974bdf8f7d01ae226a4da5de050771",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\旧20次方案试跑记录\\training_plan.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__旧20次方案试跑记录__training_plan.json",
+      "source_sha256": "8b179f5ab5ab3d636d6df4ee09f72c82ad8889c8c8e162bf8cb86d37044a9275",
+      "archive_sha256": "8b179f5ab5ab3d636d6df4ee09f72c82ad8889c8c8e162bf8cb86d37044a9275",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\训练过程记录\\batch_probe.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__训练过程记录__batch_probe.json",
+      "source_sha256": "56420773212a90dd9de1747d16b8aea25b901d68693cfe01d6509a521ddbab45",
+      "archive_sha256": "56420773212a90dd9de1747d16b8aea25b901d68693cfe01d6509a521ddbab45",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\训练过程记录\\result_report\\best_model_parity.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__训练过程记录__result_report__best_model_parity.png",
+      "source_sha256": "7a5f403f057f882dca9dc021cefb94afe50ef8fc3941172c9e51859a6e8ad204",
+      "archive_sha256": "7a5f403f057f882dca9dc021cefb94afe50ef8fc3941172c9e51859a6e8ad204",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\训练过程记录\\result_report\\metrics_summary.csv",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__训练过程记录__result_report__metrics_summary.csv",
+      "source_sha256": "19ca84cbc831d6b9b9c78c2a8e35a081bd42c7adb5fa06379831eb9140ee554c",
+      "archive_sha256": "19ca84cbc831d6b9b9c78c2a8e35a081bd42c7adb5fa06379831eb9140ee554c",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\训练过程记录\\result_report\\model_comparison.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__训练过程记录__result_report__model_comparison.png",
+      "source_sha256": "a0f01b511d617f959b28ee50beecdd0b0735e8f4a86bbbac25931bba0996f2d3",
+      "archive_sha256": "a0f01b511d617f959b28ee50beecdd0b0735e8f4a86bbbac25931bba0996f2d3",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\训练过程记录\\result_report\\REPORT.md",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__训练过程记录__result_report__REPORT.md",
+      "source_sha256": "136875fd10c85253cd8118052562fec859ff747cc857fc1c13bb8d23e902d0e6",
+      "archive_sha256": "136875fd10c85253cd8118052562fec859ff747cc857fc1c13bb8d23e902d0e6",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\训练过程记录\\result_report\\validation_learning_curves.png",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__训练过程记录__result_report__validation_learning_curves.png",
+      "source_sha256": "f9a3456f24af6c7cf271714cd3e14a10734b8b9942f177838ded9fc86cdd09e4",
+      "archive_sha256": "f9a3456f24af6c7cf271714cd3e14a10734b8b9942f177838ded9fc86cdd09e4",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\训练过程记录\\run_summary.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__训练过程记录__run_summary.json",
+      "source_sha256": "45f2e42ffeaf3d451cc0cb9daa4781138469a990077961dc6f842a5ef16bc34d",
+      "archive_sha256": "45f2e42ffeaf3d451cc0cb9daa4781138469a990077961dc6f842a5ef16bc34d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "reports\\V3\\03_完整审核资料\\训练过程记录\\training_plan.json",
+      "destination": "reports\\SP0_掺杂率0pct_v0\\V3__03_完整审核资料__训练过程记录__training_plan.json",
+      "source_sha256": "5223db30708e2da7ca9e8bc666e0d8f57ee09e289c9f00116fa1d84954cd8341",
+      "archive_sha256": "5223db30708e2da7ca9e8bc666e0d8f57ee09e289c9f00116fa1d84954cd8341",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\candidate_source_mae.pdf",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__candidate_source_mae.pdf",
+      "source_sha256": "d0102ab096f7cd2447d320fbcad5ab81001f884b0efd73293baa7bcf1e9d195c",
+      "archive_sha256": "d0102ab096f7cd2447d320fbcad5ab81001f884b0efd73293baa7bcf1e9d195c",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\candidate_source_mae.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__candidate_source_mae.png",
+      "source_sha256": "dac929fd1dc5a85491efc4da9cf0eb2bd2cdbba91606291ba1ce05c4aafe34f3",
+      "archive_sha256": "dac929fd1dc5a85491efc4da9cf0eb2bd2cdbba91606291ba1ce05c4aafe34f3",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\candidate_validation_metrics.csv",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__candidate_validation_metrics.csv",
+      "source_sha256": "0b9ea22d906e8d4e6069c7b830835228febbd864c8a7f7f179b623033e08c3c6",
+      "archive_sha256": "0b9ea22d906e8d4e6069c7b830835228febbd864c8a7f7f179b623033e08c3c6",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\comparison.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__comparison.json",
+      "source_sha256": "058731827df9e5264b68ffafb1b9f86dcd89a8bff70633283d6662d188ec8536",
+      "archive_sha256": "058731827df9e5264b68ffafb1b9f86dcd89a8bff70633283d6662d188ec8536",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\diagnostics_manifest.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__diagnostics_manifest.json",
+      "source_sha256": "c4875eb2713fb04e6f88884bcc5ba44c93416489ea964f96c78e25748899d1d6",
+      "archive_sha256": "c4875eb2713fb04e6f88884bcc5ba44c93416489ea964f96c78e25748899d1d6",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\interpretation.md",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__interpretation.md",
+      "source_sha256": "ca156643019ba73175c8d9cf56c161e58e7b7985d711976a5367d5036a3f2098",
+      "archive_sha256": "6546c2231f893d64eab6d64c1bf32c8158a7aaef55ed94b6d52cc11e53f8c636",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\model_registry.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__model_registry.json",
+      "source_sha256": "07b35250335e4661fd898bd0bbc6cfbfbea3a3197dc20624b6e20b25f6cd0ca4",
+      "archive_sha256": "07b35250335e4661fd898bd0bbc6cfbfbea3a3197dc20624b6e20b25f6cd0ca4",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\REPORT.md",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__REPORT.md",
+      "source_sha256": "de3e4997a34e672d20f528ca3c9c8737b2006e03fe38fe1971f95f44b7a7d6a5",
+      "archive_sha256": "273839334ae40593ebbe1193408e826e1823cc82e3a3fb98e0957d11a75c6898",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\standardized_loss_curves.pdf",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__standardized_loss_curves.pdf",
+      "source_sha256": "05454a6056e085de4072c8711f7c0b7113f1526917ed13869beedb0dafe463f8",
+      "archive_sha256": "05454a6056e085de4072c8711f7c0b7113f1526917ed13869beedb0dafe463f8",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\standardized_loss_curves.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__standardized_loss_curves.png",
+      "source_sha256": "109f2ee6d7c53541cedc12fa18359ab6fd32515b70318b0776483b5de2fe9399",
+      "archive_sha256": "109f2ee6d7c53541cedc12fa18359ab6fd32515b70318b0776483b5de2fe9399",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\training_curves.pdf",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__training_curves.pdf",
+      "source_sha256": "8f1c830487ef9057172d4186fc1dd429e146da2cf423d37c302e0b2ee7460518",
+      "archive_sha256": "8f1c830487ef9057172d4186fc1dd429e146da2cf423d37c302e0b2ee7460518",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\training_curves.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__training_curves.png",
+      "source_sha256": "76525bca0ff034d0c19accf6199775840a845b7f245d12ae43ff75cf6f0cf2ac",
+      "archive_sha256": "76525bca0ff034d0c19accf6199775840a845b7f245d12ae43ff75cf6f0cf2ac",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\validation_metrics.csv",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__validation_metrics.csv",
+      "source_sha256": "1a2fd458f9177f14902602ee8351464b9930e8799f126099a32c82c45ebed1ef",
+      "archive_sha256": "1a2fd458f9177f14902602ee8351464b9930e8799f126099a32c82c45ebed1ef",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\新旧基因性能对比\\01_平均转矩_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__新旧基因性能对比__01_平均转矩_真实值与预测值.png",
+      "source_sha256": "cf9516fdc99efecb7c2818d682acbc50dd37e003eb798e0bb06795cad15a9f3f",
+      "archive_sha256": "cf9516fdc99efecb7c2818d682acbc50dd37e003eb798e0bb06795cad15a9f3f",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\新旧基因性能对比\\02_转矩波动_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__新旧基因性能对比__02_转矩波动_真实值与预测值.png",
+      "source_sha256": "f02f404393253eee656fa58ba5e9edb39ce4518fcd2826976125e9ceaa8bc2d1",
+      "archive_sha256": "f02f404393253eee656fa58ba5e9edb39ce4518fcd2826976125e9ceaa8bc2d1",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\新旧基因性能对比\\03_新旧基因_MAE变化.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__新旧基因性能对比__03_新旧基因_MAE变化.png",
+      "source_sha256": "dec0b6ea58db474b7995752eed4b8e62bc82401e2f8ae634098936262d393e31",
+      "archive_sha256": "dec0b6ea58db474b7995752eed4b8e62bc82401e2f8ae634098936262d393e31",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\新旧基因性能对比\\04_仅新基因_老模型与更新模型对比.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__新旧基因性能对比__04_仅新基因_老模型与更新模型对比.png",
+      "source_sha256": "b8ceedeb3c1f37c141825ea8273efc890b888d47aa1b285413457a8058319ed0",
+      "archive_sha256": "b8ceedeb3c1f37c141825ea8273efc890b888d47aa1b285413457a8058319ed0",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\新旧基因性能对比\\04_图表核验.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__新旧基因性能对比__04_图表核验.json",
+      "source_sha256": "150ebdd5fd11bf5b36c6fe24ee137df64bee4208c2868d01737237a29e93b623",
+      "archive_sha256": "150ebdd5fd11bf5b36c6fe24ee137df64bee4208c2868d01737237a29e93b623",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\新旧基因性能对比\\README.md",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__新旧基因性能对比__README.md",
+      "source_sha256": "c3c9f67cc6ac9e6904e73a68eb6401efbc4b4df71ed4e10c99a8bd3d1f5e3f61",
+      "archive_sha256": "683de08c862221f506cf32ffbcaa4e45273e0f2c0acc8ece16caf47c49c656d9",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\新旧基因性能对比\\图表核验.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__新旧基因性能对比__图表核验.json",
+      "source_sha256": "8f0db08ca58b40a10996164ddc8f1f05f4ce8d2cf121bd25979be460d07e7910",
+      "archive_sha256": "8f0db08ca58b40a10996164ddc8f1f05f4ce8d2cf121bd25979be460d07e7910",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\report\\新旧基因性能对比\\性能指标.csv",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\Polar90VGG16__新旧基因性能对比__性能指标.csv",
+      "source_sha256": "3e71531dcee648d7946755668bfa3750bd73e0661676c5b1e1d8b630167afe2c",
+      "archive_sha256": "3e71531dcee648d7946755668bfa3750bd73e0661676c5b1e1d8b630167afe2c",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\01_训练验证曲线.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__01_训练验证曲线.png",
+      "source_sha256": "029104dfaf8f59cb666649dd0ad75945dc0c775a918edcdc10a0a2acace4353b",
+      "archive_sha256": "029104dfaf8f59cb666649dd0ad75945dc0c775a918edcdc10a0a2acace4353b",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\02_新基因预测性能.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__02_新基因预测性能.png",
+      "source_sha256": "c030dfb9e24f4c2865861a23c824d4f517a11e5f2bcf2aeb47fa3fd92d29664a",
+      "archive_sha256": "c030dfb9e24f4c2865861a23c824d4f517a11e5f2bcf2aeb47fa3fd92d29664a",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\manifest.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__manifest.json",
+      "source_sha256": "8eecd20e97dfdc8b0b1e5b7f7f7301e1895b44cb1e6e414745240205dddb5102",
+      "archive_sha256": "8eecd20e97dfdc8b0b1e5b7f7f7301e1895b44cb1e6e414745240205dddb5102",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\01_平均转矩_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__mini_inception_v2__新旧基因性能对比__01_平均转矩_真实值与预测值.png",
+      "source_sha256": "6b1c15735a5290b2bcf0e59aab1e7f845df22b6ba8fefcc088a9686da0cace26",
+      "archive_sha256": "6b1c15735a5290b2bcf0e59aab1e7f845df22b6ba8fefcc088a9686da0cace26",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\02_转矩波动_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__mini_inception_v2__新旧基因性能对比__02_转矩波动_真实值与预测值.png",
+      "source_sha256": "d86fe382a2daa4a11ff4ac651eaeb104000b2c20dafd0fc912c96888111923be",
+      "archive_sha256": "d86fe382a2daa4a11ff4ac651eaeb104000b2c20dafd0fc912c96888111923be",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\03_新旧基因_MAE变化.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__mini_inception_v2__新旧基因性能对比__03_新旧基因_MAE变化.png",
+      "source_sha256": "22643a3b4b2ff6c9d37c5cf5ebdffdc39dc2f5c4b7491dbaeca07ac17a4a57f7",
+      "archive_sha256": "22643a3b4b2ff6c9d37c5cf5ebdffdc39dc2f5c4b7491dbaeca07ac17a4a57f7",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\04_仅新基因_老模型与更新模型对比.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__mini_inception_v2__新旧基因性能对比__04_仅新基因_老模型与更新模型对比.png",
+      "source_sha256": "a34a34d3f151434c47df10f53ed240f5c3ce3b25d30b5a1a32b64664e8ca8f85",
+      "archive_sha256": "a34a34d3f151434c47df10f53ed240f5c3ce3b25d30b5a1a32b64664e8ca8f85",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\04_图表核验.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__mini_inception_v2__新旧基因性能对比__04_图表核验.json",
+      "source_sha256": "d0ae928a7ad6751165d6d8648f77ea326bc4d0dd2fa72d8d276bb69f4321558f",
+      "archive_sha256": "d0ae928a7ad6751165d6d8648f77ea326bc4d0dd2fa72d8d276bb69f4321558f",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\README.md",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__mini_inception_v2__新旧基因性能对比__README.md",
+      "source_sha256": "f1658a6ddd10eb338225f9610da6b3c62b193d1b2cbeb39f5b4b7db8455c1ae0",
+      "archive_sha256": "e4866fbd7f685cede8ba9edbfc62c25136bec73666919fefd5bb7702f738fb24",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\图表核验.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__mini_inception_v2__新旧基因性能对比__图表核验.json",
+      "source_sha256": "e996906a4e31e1fd3ccef209ce7612fcdef44882dec40a9c06702a97fa10893c",
+      "archive_sha256": "e996906a4e31e1fd3ccef209ce7612fcdef44882dec40a9c06702a97fa10893c",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\性能指标.csv",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__mini_inception_v2__新旧基因性能对比__性能指标.csv",
+      "source_sha256": "4aacb510e9d2f27e65535a15e857f4e407a0625344c1cc8a1885dd41a1962659",
+      "archive_sha256": "4aacb510e9d2f27e65535a15e857f4e407a0625344c1cc8a1885dd41a1962659",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\model_registry.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__model_registry.json",
+      "source_sha256": "6b1db10144bbd8581c41342b29650babbe5dd6102c9bce5ad1bcb47d868fb7f1",
+      "archive_sha256": "6b1db10144bbd8581c41342b29650babbe5dd6102c9bce5ad1bcb47d868fb7f1",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\REPORT.md",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__REPORT.md",
+      "source_sha256": "4ae2676d8323718ab0bde0d33c69b318bdb01be194d8efa18689a4833bee8e49",
+      "archive_sha256": "6a438a1bd6ec2f927ae2fd28d4fdf55cec4f41b859677641f67c6a7da88897d4",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\01_平均转矩_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__resnet20_v2__新旧基因性能对比__01_平均转矩_真实值与预测值.png",
+      "source_sha256": "42b4390baec0273dae187b2721420bced807ef3538aa9e394aa3636446b95d23",
+      "archive_sha256": "42b4390baec0273dae187b2721420bced807ef3538aa9e394aa3636446b95d23",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\02_转矩波动_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__resnet20_v2__新旧基因性能对比__02_转矩波动_真实值与预测值.png",
+      "source_sha256": "c51facb465c30a750200c5318d2483cd68c96058b7dae6860c14bfdfd9a89ecd",
+      "archive_sha256": "c51facb465c30a750200c5318d2483cd68c96058b7dae6860c14bfdfd9a89ecd",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\03_新旧基因_MAE变化.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__resnet20_v2__新旧基因性能对比__03_新旧基因_MAE变化.png",
+      "source_sha256": "840b21265e794c818af573ac74853bdeec395abedb071afca299200d27695a3d",
+      "archive_sha256": "840b21265e794c818af573ac74853bdeec395abedb071afca299200d27695a3d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\04_仅新基因_老模型与更新模型对比.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__resnet20_v2__新旧基因性能对比__04_仅新基因_老模型与更新模型对比.png",
+      "source_sha256": "d0700e7a06d1add1954e199c75b4b2abdf71362cc6b32ad8a5e1e484adef9801",
+      "archive_sha256": "d0700e7a06d1add1954e199c75b4b2abdf71362cc6b32ad8a5e1e484adef9801",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\04_图表核验.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__resnet20_v2__新旧基因性能对比__04_图表核验.json",
+      "source_sha256": "aa97c033e91642f2dc04ea6d769d879111246bc1b610c46e3328a423c07f527d",
+      "archive_sha256": "aa97c033e91642f2dc04ea6d769d879111246bc1b610c46e3328a423c07f527d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\README.md",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__resnet20_v2__新旧基因性能对比__README.md",
+      "source_sha256": "8646df3fc43cbd00682758a027dcf5b28570f44126130723a254dd441c1e0ffb",
+      "archive_sha256": "ef688b3956a10ef13f2f25e623af01829dec26d0657b99531fc42e331b690e61",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\图表核验.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__resnet20_v2__新旧基因性能对比__图表核验.json",
+      "source_sha256": "8e39bcc16c4a18ad0ad3f0f51962bb1f1a6971eec3a4555bbe4fe695f61e551d",
+      "archive_sha256": "8e39bcc16c4a18ad0ad3f0f51962bb1f1a6971eec3a4555bbe4fe695f61e551d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\性能指标.csv",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__resnet20_v2__新旧基因性能对比__性能指标.csv",
+      "source_sha256": "f3fa6df9bf928c329461651837a1e68c6daf8ce306ecc32968f0351d8fd21418",
+      "archive_sha256": "f3fa6df9bf928c329461651837a1e68c6daf8ce306ecc32968f0351d8fd21418",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\01_平均转矩_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__small_cnn_v2__新旧基因性能对比__01_平均转矩_真实值与预测值.png",
+      "source_sha256": "66d78123b9df49285651d742008de8ca1a48d7b6f549a05c38204834dd3d12b0",
+      "archive_sha256": "66d78123b9df49285651d742008de8ca1a48d7b6f549a05c38204834dd3d12b0",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\02_转矩波动_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__small_cnn_v2__新旧基因性能对比__02_转矩波动_真实值与预测值.png",
+      "source_sha256": "7d13432518c684410a7696831a0152386aec00851db3e898836bdd46fc7c54ce",
+      "archive_sha256": "7d13432518c684410a7696831a0152386aec00851db3e898836bdd46fc7c54ce",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\03_新旧基因_MAE变化.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__small_cnn_v2__新旧基因性能对比__03_新旧基因_MAE变化.png",
+      "source_sha256": "4224b18fd5008119ac429d73d71843446a28a316463ea97d84c6377744c4b0c1",
+      "archive_sha256": "4224b18fd5008119ac429d73d71843446a28a316463ea97d84c6377744c4b0c1",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\04_仅新基因_老模型与更新模型对比.png",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__small_cnn_v2__新旧基因性能对比__04_仅新基因_老模型与更新模型对比.png",
+      "source_sha256": "f5f69791c2f51eae7f4e3939a693249081fbdd49774821b9e8166a3cde0c4bf6",
+      "archive_sha256": "f5f69791c2f51eae7f4e3939a693249081fbdd49774821b9e8166a3cde0c4bf6",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\04_图表核验.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__small_cnn_v2__新旧基因性能对比__04_图表核验.json",
+      "source_sha256": "211f833b7694c8faaad9b04e51343d454b2b214081603a666c46f4ad4bbbd682",
+      "archive_sha256": "211f833b7694c8faaad9b04e51343d454b2b214081603a666c46f4ad4bbbd682",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\README.md",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__small_cnn_v2__新旧基因性能对比__README.md",
+      "source_sha256": "9132e26dc099b34587e66728136e08c9be7690e0255569085653a1ad46bef11d",
+      "archive_sha256": "074ffdbc87424a771733e11a3cbd78ea9ae4364ffffccda6c7f9fd79cf94aa97",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\图表核验.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__small_cnn_v2__新旧基因性能对比__图表核验.json",
+      "source_sha256": "739368192af9aaa6b784e52574ae44036753acfa01ee281dfcf9d15ac0d722d0",
+      "archive_sha256": "739368192af9aaa6b784e52574ae44036753acfa01ee281dfcf9d15ac0d722d0",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\性能指标.csv",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__small_cnn_v2__新旧基因性能对比__性能指标.csv",
+      "source_sha256": "e10b97f5b1f57096eed38ad377994bcd618b7ebf776110bb5f9049fce27863b5",
+      "archive_sha256": "e10b97f5b1f57096eed38ad377994bcd618b7ebf776110bb5f9049fce27863b5",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\training_budgets.csv",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__training_budgets.csv",
+      "source_sha256": "9411d44a2674c722df6db139596a70fa3956a33f833c78b7bd4619d9cf4cde7f",
+      "archive_sha256": "9411d44a2674c722df6db139596a70fa3956a33f833c78b7bd4619d9cf4cde7f",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\validation_metrics.csv",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__validation_metrics.csv",
+      "source_sha256": "bff039ab979c0228dfc9be764f143c46f544d9bad2f1b39f28d07791eb5640ad",
+      "archive_sha256": "bff039ab979c0228dfc9be764f143c46f544d9bad2f1b39f28d07791eb5640ad",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\verification.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__verification.json",
+      "source_sha256": "45157f7aa765ac8af7c5c97342bbf074215204ae6a088e35c3679186808eebd8",
+      "archive_sha256": "45157f7aa765ac8af7c5c97342bbf074215204ae6a088e35c3679186808eebd8",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\性能图核验.json",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__性能图核验.json",
+      "source_sha256": "a7968e52030849c36628757df9324b458f2bec1cd8d79611121a2c13e251379c",
+      "archive_sha256": "a7968e52030849c36628757df9324b458f2bec1cd8d79611121a2c13e251379c",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v1\\logical6x20\\report\\性能图索引.md",
+      "destination": "reports\\SP0_掺杂率25pct_v1\\6x20__性能图索引.md",
+      "source_sha256": "6a2a4660c26d532c2736ba670f9714d08a23bf74d37036720188ce4110f934cd",
+      "archive_sha256": "1668e41b60bda8acd2e0e083599c904869f6fc92910f9da64efbc6673544be8b",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\report\\01_验证误差与学习率.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\Polar90VGG16__01_验证误差与学习率.png",
+      "source_sha256": "a2bba030213cc50ab598714901609b52f3bd86dc054dbd292a69c023040f1347",
+      "archive_sha256": "a2bba030213cc50ab598714901609b52f3bd86dc054dbd292a69c023040f1347",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\report\\02_新基因预测对比.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\Polar90VGG16__02_新基因预测对比.png",
+      "source_sha256": "37295db975089b40b2accd81d5f6bce52bba2b042fa4cf03734702260953d4d9",
+      "archive_sha256": "37295db975089b40b2accd81d5f6bce52bba2b042fa4cf03734702260953d4d9",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\report\\comparison_summary.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\Polar90VGG16__comparison_summary.json",
+      "source_sha256": "f1c511f180acb6e2015ea761b5d427e43c1cbdeb3426c90cd42d58148e20ce91",
+      "archive_sha256": "f1c511f180acb6e2015ea761b5d427e43c1cbdeb3426c90cd42d58148e20ce91",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\report\\model_registry.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\Polar90VGG16__model_registry.json",
+      "source_sha256": "9602327c32a1d1e3889c1ca9dbf0f651dd69482a89cab357024ade70e71d63d8",
+      "archive_sha256": "9602327c32a1d1e3889c1ca9dbf0f651dd69482a89cab357024ade70e71d63d8",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\report\\REPORT.md",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\Polar90VGG16__REPORT.md",
+      "source_sha256": "279efa9bf1ea8c854886063c55fcd59946e416a38023d94bb0c331552d2e092f",
+      "archive_sha256": "1e4eb4624260ef9547ef6649c3edf151206525cc5d9178dd58109e45f8a5b442",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\report\\report_manifest.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\Polar90VGG16__report_manifest.json",
+      "source_sha256": "2c93fff278921fbc198952d212433daeb56b37bd763f3a5dd9298dcda3e87a9d",
+      "archive_sha256": "2c93fff278921fbc198952d212433daeb56b37bd763f3a5dd9298dcda3e87a9d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\report\\training_budgets.csv",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\Polar90VGG16__training_budgets.csv",
+      "source_sha256": "f7834dccdd98c0053723db0c961cbc9baaceb39a608e98e7f438a4207002a572",
+      "archive_sha256": "f7834dccdd98c0053723db0c961cbc9baaceb39a608e98e7f438a4207002a572",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\report\\validation_curves.csv",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\Polar90VGG16__validation_curves.csv",
+      "source_sha256": "7642f9706053a482ee0bdb5e825f221dd4f03c3f9740a6e72c961395dfc2900b",
+      "archive_sha256": "7642f9706053a482ee0bdb5e825f221dd4f03c3f9740a6e72c961395dfc2900b",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\report\\validation_metrics.csv",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\Polar90VGG16__validation_metrics.csv",
+      "source_sha256": "998903a3cd1beeb096bae0e0804bceddbc136d41621755d5f0f4f638dcae0cc6",
+      "archive_sha256": "998903a3cd1beeb096bae0e0804bceddbc136d41621755d5f0f4f638dcae0cc6",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\01_训练验证曲线.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__01_训练验证曲线.png",
+      "source_sha256": "f6cdb9e81268f076153638d36ca017c6d6b7d0e3c99570064dd4ed4d32dc41a2",
+      "archive_sha256": "f6cdb9e81268f076153638d36ca017c6d6b7d0e3c99570064dd4ed4d32dc41a2",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\02_新基因预测性能.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__02_新基因预测性能.png",
+      "source_sha256": "e7795e71930b2a6386b2f223bd25e6587b30243d8491b4cda57d19a1f363bdf1",
+      "archive_sha256": "e7795e71930b2a6386b2f223bd25e6587b30243d8491b4cda57d19a1f363bdf1",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\manifest.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__manifest.json",
+      "source_sha256": "1005ea0422bd6ca023eafaaf6b93ab96b91943e756ea2a91650ec8abfb94632e",
+      "archive_sha256": "1005ea0422bd6ca023eafaaf6b93ab96b91943e756ea2a91650ec8abfb94632e",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\01_平均转矩_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__mini_inception_v2__新旧基因性能对比__01_平均转矩_真实值与预测值.png",
+      "source_sha256": "019da499e6cd88d6b5f1593e464d1fb2d16e0b0729d9e110378c0611d8b26351",
+      "archive_sha256": "019da499e6cd88d6b5f1593e464d1fb2d16e0b0729d9e110378c0611d8b26351",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\02_转矩波动_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__mini_inception_v2__新旧基因性能对比__02_转矩波动_真实值与预测值.png",
+      "source_sha256": "3b68a5a4760dc12018ef8b78a928a2ba98fcf1264c343bccf4355157156bfdba",
+      "archive_sha256": "3b68a5a4760dc12018ef8b78a928a2ba98fcf1264c343bccf4355157156bfdba",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\03_新旧基因_MAE变化.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__mini_inception_v2__新旧基因性能对比__03_新旧基因_MAE变化.png",
+      "source_sha256": "e77c57dda55a9bb83dec01f585c76360f6e6d7a93edafc4c41e8c40bc84a2431",
+      "archive_sha256": "e77c57dda55a9bb83dec01f585c76360f6e6d7a93edafc4c41e8c40bc84a2431",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\04_仅新基因_老模型与更新模型对比.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__mini_inception_v2__新旧基因性能对比__04_仅新基因_老模型与更新模型对比.png",
+      "source_sha256": "429e7d37f73344d4132a99c859d05bf11832784b6e7aec951bdcdff3e200d06b",
+      "archive_sha256": "429e7d37f73344d4132a99c859d05bf11832784b6e7aec951bdcdff3e200d06b",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\04_图表核验.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__mini_inception_v2__新旧基因性能对比__04_图表核验.json",
+      "source_sha256": "2aca818e7726ca33ec71878b5b555436e5e43ae89bf9edd27f0cf005556b7c0d",
+      "archive_sha256": "2aca818e7726ca33ec71878b5b555436e5e43ae89bf9edd27f0cf005556b7c0d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\README.md",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__mini_inception_v2__新旧基因性能对比__README.md",
+      "source_sha256": "915498dd8ae869d491fc3b98ed15138a622b752eb2f9adde9927bafb3b967e9e",
+      "archive_sha256": "5e2131865944efdea3d3f06e6d3b1a772479bbdc57ee68a1708781c1acded788",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\图表核验.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__mini_inception_v2__新旧基因性能对比__图表核验.json",
+      "source_sha256": "d69455a855d7a138198a6be31752f779ffbc0a85ba2404cca835d99f9fadaf5a",
+      "archive_sha256": "d69455a855d7a138198a6be31752f779ffbc0a85ba2404cca835d99f9fadaf5a",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\mini_inception_v2\\新旧基因性能对比\\性能指标.csv",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__mini_inception_v2__新旧基因性能对比__性能指标.csv",
+      "source_sha256": "bf7b6126c3d91b262cf46b8cf4131846a690875bfc431d1cfd9c131e302a5c51",
+      "archive_sha256": "bf7b6126c3d91b262cf46b8cf4131846a690875bfc431d1cfd9c131e302a5c51",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\model_registry.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__model_registry.json",
+      "source_sha256": "146439ffca8bdd1e2c1b954911ce364267a375f0bb37dd5201895d11f9338084",
+      "archive_sha256": "146439ffca8bdd1e2c1b954911ce364267a375f0bb37dd5201895d11f9338084",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\REPORT.md",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__REPORT.md",
+      "source_sha256": "3020f5bc2b54c35b6a0101ad60622fed3a980d33900b97d2f1594ae0cbd94bb2",
+      "archive_sha256": "747e0f3febddc0adaa3c974bcd4472f7ebec133e9c8d3105a09007390dd4d394",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\01_平均转矩_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__resnet20_v2__新旧基因性能对比__01_平均转矩_真实值与预测值.png",
+      "source_sha256": "758d09ed42a6246a403c0f17d6ee3ea1419b5ef94ef101f5fbc44726b81f2e1c",
+      "archive_sha256": "758d09ed42a6246a403c0f17d6ee3ea1419b5ef94ef101f5fbc44726b81f2e1c",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\02_转矩波动_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__resnet20_v2__新旧基因性能对比__02_转矩波动_真实值与预测值.png",
+      "source_sha256": "250cafae66ebbafffb7194b50568b66b7b4a3b25b3ad6f6c7b18ce8215f692dc",
+      "archive_sha256": "250cafae66ebbafffb7194b50568b66b7b4a3b25b3ad6f6c7b18ce8215f692dc",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\03_新旧基因_MAE变化.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__resnet20_v2__新旧基因性能对比__03_新旧基因_MAE变化.png",
+      "source_sha256": "04ebdb3d847e0c3cdc678b0a7eceed65530f4da4c77d5fb17804f839e6f043cc",
+      "archive_sha256": "04ebdb3d847e0c3cdc678b0a7eceed65530f4da4c77d5fb17804f839e6f043cc",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\04_仅新基因_老模型与更新模型对比.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__resnet20_v2__新旧基因性能对比__04_仅新基因_老模型与更新模型对比.png",
+      "source_sha256": "83c526563c408e7bf19cdc612d5efd28be26d7829ca00c4c78634c8732119c50",
+      "archive_sha256": "83c526563c408e7bf19cdc612d5efd28be26d7829ca00c4c78634c8732119c50",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\04_图表核验.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__resnet20_v2__新旧基因性能对比__04_图表核验.json",
+      "source_sha256": "992d2b61089254df908b94204d71ef2f208c934c3cc7a88a2c6a10273c79c278",
+      "archive_sha256": "992d2b61089254df908b94204d71ef2f208c934c3cc7a88a2c6a10273c79c278",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\README.md",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__resnet20_v2__新旧基因性能对比__README.md",
+      "source_sha256": "d76a6400282ed88eb4219d7fe5afc248991360046d44dd6b8afed9db152d0bb5",
+      "archive_sha256": "e416ad2f88f92a004fb8f620333abfe70cfc4f9aec9ea3b7a4c374f2d93f5437",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\图表核验.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__resnet20_v2__新旧基因性能对比__图表核验.json",
+      "source_sha256": "f478487ee5b5fb6ddcc33269cfba17cbdccc9874ffd9dd4c1f4937ba8dbfb275",
+      "archive_sha256": "f478487ee5b5fb6ddcc33269cfba17cbdccc9874ffd9dd4c1f4937ba8dbfb275",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\resnet20_v2\\新旧基因性能对比\\性能指标.csv",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__resnet20_v2__新旧基因性能对比__性能指标.csv",
+      "source_sha256": "588d57e416d2da91e442166d1200bb41c4d084a44cb9c72ae3468d6b51d43e6c",
+      "archive_sha256": "588d57e416d2da91e442166d1200bb41c4d084a44cb9c72ae3468d6b51d43e6c",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\01_平均转矩_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__small_cnn_v2__新旧基因性能对比__01_平均转矩_真实值与预测值.png",
+      "source_sha256": "526fcbad66db45d685a8ab919956ce75e9258d377ac2aee27440a73a8424e8c5",
+      "archive_sha256": "526fcbad66db45d685a8ab919956ce75e9258d377ac2aee27440a73a8424e8c5",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\02_转矩波动_真实值与预测值.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__small_cnn_v2__新旧基因性能对比__02_转矩波动_真实值与预测值.png",
+      "source_sha256": "dcf0bb341fa66262f4438154a0dfb993755f9a24904da1c2b3bc98679cb90387",
+      "archive_sha256": "dcf0bb341fa66262f4438154a0dfb993755f9a24904da1c2b3bc98679cb90387",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\03_新旧基因_MAE变化.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__small_cnn_v2__新旧基因性能对比__03_新旧基因_MAE变化.png",
+      "source_sha256": "8cf372f95f6f2988ac2031f5fa2298cc803fd400a081bbf80c541405582bdd5d",
+      "archive_sha256": "8cf372f95f6f2988ac2031f5fa2298cc803fd400a081bbf80c541405582bdd5d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\04_仅新基因_老模型与更新模型对比.png",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__small_cnn_v2__新旧基因性能对比__04_仅新基因_老模型与更新模型对比.png",
+      "source_sha256": "c85dc0d60411f61bd3624bfaab817502341e8d2cb9558e4658e31b3016ec521b",
+      "archive_sha256": "c85dc0d60411f61bd3624bfaab817502341e8d2cb9558e4658e31b3016ec521b",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\04_图表核验.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__small_cnn_v2__新旧基因性能对比__04_图表核验.json",
+      "source_sha256": "0ac32e85cd70522033fddddbd701853a5c59044778fe17d1d27bc9e10e02a686",
+      "archive_sha256": "0ac32e85cd70522033fddddbd701853a5c59044778fe17d1d27bc9e10e02a686",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\README.md",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__small_cnn_v2__新旧基因性能对比__README.md",
+      "source_sha256": "60b93eb6293c86ccb6a867ea01d35895007234ce8298f38f63956f330168fe94",
+      "archive_sha256": "c7e04f16cd05e5cd2d7f2ecff3efe95ef239cbde7953e8cba641260b29ec3cf8",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\图表核验.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__small_cnn_v2__新旧基因性能对比__图表核验.json",
+      "source_sha256": "3501c74fd98b2eb7122b17dec15039673a7a7ac9bbbf3dc1b19958133539b074",
+      "archive_sha256": "3501c74fd98b2eb7122b17dec15039673a7a7ac9bbbf3dc1b19958133539b074",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\small_cnn_v2\\新旧基因性能对比\\性能指标.csv",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__small_cnn_v2__新旧基因性能对比__性能指标.csv",
+      "source_sha256": "bf936ef403ca38be118905a85dbb317cd6989af4deb248422d2a8a4a7ae07b09",
+      "archive_sha256": "bf936ef403ca38be118905a85dbb317cd6989af4deb248422d2a8a4a7ae07b09",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\training_budgets.csv",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__training_budgets.csv",
+      "source_sha256": "2bc837266e5f9b98ec8dc1fc83bf3fe7f2b5880af3708da4e9fef251ae2191ce",
+      "archive_sha256": "2bc837266e5f9b98ec8dc1fc83bf3fe7f2b5880af3708da4e9fef251ae2191ce",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\v1_v2_comparison.csv",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__v1_v2_comparison.csv",
+      "source_sha256": "0798e254341b9387c887fa409789b801f3020a8152d084e296cb05c1f6ff5194",
+      "archive_sha256": "0798e254341b9387c887fa409789b801f3020a8152d084e296cb05c1f6ff5194",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\validation_metrics.csv",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__validation_metrics.csv",
+      "source_sha256": "d338abb293ffbcbb6f41400b9fe148a93d240d249c83b1cdffaaa13bf94ce38c",
+      "archive_sha256": "d338abb293ffbcbb6f41400b9fe148a93d240d249c83b1cdffaaa13bf94ce38c",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\verification.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__verification.json",
+      "source_sha256": "fd84e53ebbc4fd9081fe9475086605b5ef5cc959420f4062f1db3878b3c8a6f2",
+      "archive_sha256": "fd84e53ebbc4fd9081fe9475086605b5ef5cc959420f4062f1db3878b3c8a6f2",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\性能图核验.json",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__性能图核验.json",
+      "source_sha256": "b6c256fac5275cd0f542608d7f03e39a41c02aec253b4bdb36260524247945b7",
+      "archive_sha256": "b6c256fac5275cd0f542608d7f03e39a41c02aec253b4bdb36260524247945b7",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_replay_update_v2\\logical6x20\\report\\性能图索引.md",
+      "destination": "reports\\SP0_掺杂率12.5pct_v2\\6x20__性能图索引.md",
+      "source_sha256": "320dd2eb88718d613b1e8df665bb348e22458543d480e1a7a554fb1e2f643097",
+      "archive_sha256": "f790c7c0e10ca2a490d090f5ffc800a75ccd460b960bcaf3f01248df398a62fc",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\01_验证与学习率曲线.png",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\01_验证与学习率曲线.png",
+      "source_sha256": "05c7461bd75ae3e51b6ee3415cfeb9a69b86fa9d53da3f57ba62cdd9cf60a479",
+      "archive_sha256": "05c7461bd75ae3e51b6ee3415cfeb9a69b86fa9d53da3f57ba62cdd9cf60a479",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\02_新旧精度取舍.png",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\02_新旧精度取舍.png",
+      "source_sha256": "4c6235d284903f81ffecbe84794145108dfd7d504a4bbcb3471bedd36a55adf2",
+      "archive_sha256": "4c6235d284903f81ffecbe84794145108dfd7d504a4bbcb3471bedd36a55adf2",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\03_分来源误差变化.png",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\03_分来源误差变化.png",
+      "source_sha256": "355f80026a33517843d3d586bbd2d1ccbd6232f1979a023eddcf22c143ecd5f4",
+      "archive_sha256": "355f80026a33517843d3d586bbd2d1ccbd6232f1979a023eddcf22c143ecd5f4",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\04_新旧基因_MSE训练过程.png",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\04_新旧基因_MSE训练过程.png",
+      "source_sha256": "4652c2f9a3bf4a37f7bc38b5f493cae6edb2d59490ac4cee1119db7257b79bf4",
+      "archive_sha256": "4652c2f9a3bf4a37f7bc38b5f493cae6edb2d59490ac4cee1119db7257b79bf4",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\05_新旧基因_MSE_最终模型.png",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\05_新旧基因_MSE_最终模型.png",
+      "source_sha256": "9a6a42f4bdb73ecf46e6447bceaeda95205a0d3a7fbc50c36e1fe90617f13fda",
+      "archive_sha256": "9a6a42f4bdb73ecf46e6447bceaeda95205a0d3a7fbc50c36e1fe90617f13fda",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\06_新旧基因_MSE_最佳候选与合格模型.png",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\06_新旧基因_MSE_最佳候选与合格模型.png",
+      "source_sha256": "69481f140ec15a22d07a648d8b996a0a6f5c86ef530907541b31e201ae739dd5",
+      "archive_sha256": "69481f140ec15a22d07a648d8b996a0a6f5c86ef530907541b31e201ae739dd5",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\6pct容限_模型索引.json",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\6pct容限_模型索引.json",
+      "source_sha256": "a37ce7f732547faad6cb9831f9b06126deb99957a2f685e63a6df7aa5c6f3b24",
+      "archive_sha256": "a37ce7f732547faad6cb9831f9b06126deb99957a2f685e63a6df7aa5c6f3b24",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\6pct容限_物理误差.csv",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\6pct容限_物理误差.csv",
+      "source_sha256": "2c42479d29f87aafe647c09beccbd28f555c93f1ade830e38b64317ec47f4695",
+      "archive_sha256": "2c42479d29f87aafe647c09beccbd28f555c93f1ade830e38b64317ec47f4695",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\6pct容限复核.md",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\6pct容限复核.md",
+      "source_sha256": "fb46a38acefaa598bd28a94991fb7c1856958588335c868ec5fb726e658152b3",
+      "archive_sha256": "fb46a38acefaa598bd28a94991fb7c1856958588335c868ec5fb726e658152b3",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\initialization.csv",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\initialization.csv",
+      "source_sha256": "368a75a3253d646ee8fa552297e43aa7f060443d8628418bd2c929e739eda420",
+      "archive_sha256": "368a75a3253d646ee8fa552297e43aa7f060443d8628418bd2c929e739eda420",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\model_registry.json",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\model_registry.json",
+      "source_sha256": "6597761e98d812e6d0bfc45205e801caa57f7e208c41a918dc2e0e345d5f268e",
+      "archive_sha256": "6597761e98d812e6d0bfc45205e801caa57f7e208c41a918dc2e0e345d5f268e",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\MSE图核验.json",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\MSE图核验.json",
+      "source_sha256": "eef1a83152e70aca8e58682afc4da02b659271f5d1740e9c8a8d31ccf702b659",
+      "archive_sha256": "eef1a83152e70aca8e58682afc4da02b659271f5d1740e9c8a8d31ccf702b659",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\MSE对比说明.md",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\MSE对比说明.md",
+      "source_sha256": "2c978a5cf5e3d17fdb68743412aa7e6fa4b5f3bc7c4f34c4cf2f7fc0318951e8",
+      "archive_sha256": "d0e9ec519eb15adfbb16206f6618eec772a0fe47d3eee2612ab74b0c0119776c",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\REPORT.md",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\REPORT.md",
+      "source_sha256": "599b510d8ddd8c6067ccf8e4839a482f70a11e10a83e210053c6f575ee0a7a18",
+      "archive_sha256": "d13b839a892a22ea19884a3d5cd91dcc8791795b28c753a30fec416300e186e7",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\training_budgets.csv",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\training_budgets.csv",
+      "source_sha256": "b28cc0c5b4ea8a09a30f264d2905d8e343e21976a443ccdc48ad4eb231c17ad0",
+      "archive_sha256": "b28cc0c5b4ea8a09a30f264d2905d8e343e21976a443ccdc48ad4eb231c17ad0",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\validation_curves.csv",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\validation_curves.csv",
+      "source_sha256": "5ca7ea46589f8aa0a6181cc640da89eb77521535c57dd1673150e5f90317cd5d",
+      "archive_sha256": "5ca7ea46589f8aa0a6181cc640da89eb77521535c57dd1673150e5f90317cd5d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\validation_metrics.csv",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\validation_metrics.csv",
+      "source_sha256": "3c155e8d49c65fb0ad7c11b1f003eed051a8381e91617b0b49eddfa4295d414e",
+      "archive_sha256": "3c155e8d49c65fb0ad7c11b1f003eed051a8381e91617b0b49eddfa4295d414e",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\verification.json",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\verification.json",
+      "source_sha256": "1d6d54d013ad8bcf519b4265957cfb3a845d91852be715bac2d0cb8aefa8a090",
+      "archive_sha256": "1d6d54d013ad8bcf519b4265957cfb3a845d91852be715bac2d0cb8aefa8a090",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\容限复核核验.json",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\容限复核核验.json",
+      "source_sha256": "41d3d1b4cedf03158693388d56f8f8a796afd25c8a09f64f6b74f084003677f0",
+      "archive_sha256": "41d3d1b4cedf03158693388d56f8f8a796afd25c8a09f64f6b74f084003677f0",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\容限敏感性.csv",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\容限敏感性.csv",
+      "source_sha256": "e970eac1958c55db6dd73d6be194deb8e4aca0e50d821109d1458c58cf2a05dc",
+      "archive_sha256": "e970eac1958c55db6dd73d6be194deb8e4aca0e50d821109d1458c58cf2a05dc",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_shrink_perturb_v1\\report\\新旧基因_MSE对比.csv",
+      "destination": "reports\\SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1\\新旧基因_MSE对比.csv",
+      "source_sha256": "afe68d58873914bd3aeecb4bbd732b685a60a462607b0b77d11aa29fa8cafc9e",
+      "archive_sha256": "afe68d58873914bd3aeecb4bbd732b685a60a462607b0b77d11aa29fa8cafc9e",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_test_smallcnn_sp080_v1\\report\\01_测试集真实值与预测值.png",
+      "destination": "reports\\SPα0.80_β0.01_掺杂率12.5pct_v1\\01_测试集真实值与预测值.png",
+      "source_sha256": "b6221e41855670508e186ec1ab08b5f44894ad384771eacd29e4fb98bf80662d",
+      "archive_sha256": "b6221e41855670508e186ec1ab08b5f44894ad384771eacd29e4fb98bf80662d",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_test_smallcnn_sp080_v1\\report\\REPORT.md",
+      "destination": "reports\\SPα0.80_β0.01_掺杂率12.5pct_v1\\REPORT.md",
+      "source_sha256": "553e78f81354570e25f9cc9d06912d29f91ff7cc6b10423c5ef93f3cffe505cb",
+      "archive_sha256": "5b6eb334c2d634afa8d40e5d7d8dd20db96206fc7269a11c9f0dfd2fc5221048",
+      "markdown_links_rebased": true
+    },
+    {
+      "source": "experiments\\cnn_test_smallcnn_sp080_v1\\report\\report_manifest.json",
+      "destination": "reports\\SPα0.80_β0.01_掺杂率12.5pct_v1\\report_manifest.json",
+      "source_sha256": "55ee5a7083dc4037663d26dc1c15c6111715c4abc9264828fec43dfd14654dd4",
+      "archive_sha256": "55ee5a7083dc4037663d26dc1c15c6111715c4abc9264828fec43dfd14654dd4",
+      "markdown_links_rebased": false
+    },
+    {
+      "source": "experiments\\cnn_test_smallcnn_sp080_v1\\report\\test_metrics.csv",
+      "destination": "reports\\SPα0.80_β0.01_掺杂率12.5pct_v1\\test_metrics.csv",
+      "source_sha256": "c72abbc9a386ce14c70ee6b9c77f5f6a61d2ac88077f4ffddadf2725369bb2a2",
+      "archive_sha256": "c72abbc9a386ce14c70ee6b9c77f5f6a61d2ac88077f4ffddadf2725369bb2a2",
+      "markdown_links_rebased": false
+    }
+  ],
+  "models_or_data_copied": false,
+  "original_reports_preserved": true
+}

@@ -1,0 +1,42 @@
+{
+  "success_groups": [],
+  "closest_old_constraint_nodes": {
+    "G-S": {
+      "v1": {
+        "step": 2500,
+        "old_mae_changes_pct": {
+          "tavg": 8.10988771124077,
+          "delta_t": 15.555290367284357
+        },
+        "new_mse": 0.05012410777620971
+      },
+      "v2": {
+        "step": 1000,
+        "old_mae_changes_pct": {
+          "tavg": 29.2764538347857,
+          "delta_t": 5.302172056317267
+        },
+        "new_mse": 0.10606455666944385
+      }
+    },
+    "F-S": {
+      "v1": {
+        "step": 1500,
+        "old_mae_changes_pct": {
+          "tavg": 37.72596235459507,
+          "delta_t": 21.698337426334202
+        },
+        "new_mse": 0.026234016427770256
+      },
+      "v2": {
+        "step": 1500,
+        "old_mae_changes_pct": {
+          "tavg": 21.20408411127357,
+          "delta_t": 16.812535479623026
+        },
+        "new_mse": 0.030097513012588024
+      }
+    }
+  },
+  "test_used": false
+}

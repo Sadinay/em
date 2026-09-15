@@ -1,0 +1,190 @@
+{
+  "f0_sha256": "5e50973958fcf8baad986e9b9f69879e1b766223674c8ef5e90aaad791f48126",
+  "weights_equal_f0": false,
+  "sp": {
+    "alpha": 0.95,
+    "beta": 0.01,
+    "random_seed": 20261914,
+    "applications": 1,
+    "f0_parameter_sha256": "a028c5207e7ad8861d096f28479fd98e7a5166609d1d2c08073503f1ee5f597c",
+    "random_parameter_sha256": "575e8aa015c3f2c726ffb3a179da3834c9dec7453b05963aa509ab7d245283a0",
+    "start_parameter_sha256": "c9a8b5afb11025250a71154f2d2c62242413e150052339b37ed5b4305296ae2d",
+    "buffers_sha256": "f54a9d80418c75c5fb38b488c1234c6aeb40fe6ca166291681b4846a726febce",
+    "buffers_exactly_f0": true,
+    "training_rng_unchanged": true,
+    "cpu_rng_sha256": "3c6108d3c83c5f364f57a457259c1562dd3706921ba07cd2512343809128e6e6",
+    "cuda_rng_sha256": [
+      "309266e4ac404b66ef943a793cdcca3e658e9333d6d13549a6c30a43c6e833ff"
+    ],
+    "delta_l2": 2.479123420746615,
+    "relative_delta_l2": 0.04898531549279128,
+    "parameter_count": 1224450,
+    "by_parameter": [
+      {
+        "name": "features.0.0.weight",
+        "numel": 576,
+        "f0_l2": 4.026472816077029,
+        "random_l2": 3.292237348059854,
+        "delta_l2": 0.20383289160332,
+        "relative_delta_l2": 0.050623188312472776
+      },
+      {
+        "name": "features.0.1.weight",
+        "numel": 32,
+        "f0_l2": 5.5898226498579655,
+        "random_l2": 5.656854249492381,
+        "delta_l2": 0.22336453791101188,
+        "relative_delta_l2": 0.03995914573724221
+      },
+      {
+        "name": "features.0.1.bias",
+        "numel": 32,
+        "f0_l2": 0.7035946746251144,
+        "random_l2": 0.0,
+        "delta_l2": 0.03517974101364173,
+        "relative_delta_l2": 0.05000001035025743
+      },
+      {
+        "name": "features.1.0.weight",
+        "numel": 18432,
+        "f0_l2": 12.226959232642264,
+        "random_l2": 4.616686972177728,
+        "delta_l2": 0.6131814652020471,
+        "relative_delta_l2": 0.050149955809539216
+      },
+      {
+        "name": "features.1.1.weight",
+        "numel": 64,
+        "f0_l2": 7.963437237037498,
+        "random_l2": 8.0,
+        "delta_l2": 0.31878022221989055,
+        "relative_delta_l2": 0.0400304809005415
+      },
+      {
+        "name": "features.1.1.bias",
+        "numel": 64,
+        "f0_l2": 0.8819626024763608,
+        "random_l2": 0.0,
+        "delta_l2": 0.04409814239042552,
+        "relative_delta_l2": 0.05000001390830795
+      },
+      {
+        "name": "features.3.0.weight",
+        "numel": 73728,
+        "f0_l2": 21.54616059965009,
+        "random_l2": 6.5204452154716215,
+        "delta_l2": 1.0795277011623354,
+        "relative_delta_l2": 0.050103019336998116
+      },
+      {
+        "name": "features.3.1.weight",
+        "numel": 128,
+        "f0_l2": 9.48279763322901,
+        "random_l2": 11.313708498984761,
+        "delta_l2": 0.361516171386695,
+        "relative_delta_l2": 0.03812336668662983
+      },
+      {
+        "name": "features.3.1.bias",
+        "numel": 128,
+        "f0_l2": 2.5513839375158094,
+        "random_l2": 0.0,
+        "delta_l2": 0.1275692213639619,
+        "relative_delta_l2": 0.05000000959799545
+      },
+      {
+        "name": "delta_features.0.weight",
+        "numel": 147456,
+        "f0_l2": 31.205335521294117,
+        "random_l2": 6.523875181415564,
+        "delta_l2": 1.561554226164211,
+        "relative_delta_l2": 0.05004125737083091
+      },
+      {
+        "name": "delta_features.1.weight",
+        "numel": 128,
+        "f0_l2": 9.907622194580055,
+        "random_l2": 11.313708498984761,
+        "delta_l2": 0.38324361800159673,
+        "relative_delta_l2": 0.03868169480778641
+      },
+      {
+        "name": "delta_features.1.bias",
+        "numel": 128,
+        "f0_l2": 3.5910039813281998,
+        "random_l2": 0.0,
+        "delta_l2": 0.17955025062804583,
+        "relative_delta_l2": 0.05000001435855714
+      },
+      {
+        "name": "head_tavg.0.weight",
+        "numel": 491520,
+        "f0_l2": 14.327111130315764,
+        "random_l2": 6.534524225359667,
+        "delta_l2": 0.7192387667654098,
+        "relative_delta_l2": 0.05020124156387122
+      },
+      {
+        "name": "head_tavg.0.bias",
+        "numel": 128,
+        "f0_l2": 0.16502946930417506,
+        "random_l2": 0.11081420730280275,
+        "delta_l2": 0.008271716531823077,
+        "relative_delta_l2": 0.0501226633443086
+      },
+      {
+        "name": "head_tavg.3.weight",
+        "numel": 128,
+        "f0_l2": 0.4711688153042086,
+        "random_l2": 0.6243456119124576,
+        "delta_l2": 0.024901580512628415,
+        "relative_delta_l2": 0.05285065501746076
+      },
+      {
+        "name": "head_tavg.3.bias",
+        "numel": 1,
+        "f0_l2": 0.08399052172899246,
+        "random_l2": 0.04414618760347366,
+        "delta_l2": 0.003758065402507782,
+        "relative_delta_l2": 0.04474392258966699
+      },
+      {
+        "name": "head_delta_t.0.weight",
+        "numel": 491520,
+        "f0_l2": 21.173911245367844,
+        "random_l2": 6.53059625268677,
+        "delta_l2": 1.0607055910973309,
+        "relative_delta_l2": 0.050094929501009335
+      },
+      {
+        "name": "head_delta_t.0.bias",
+        "numel": 128,
+        "f0_l2": 0.17142436159433053,
+        "random_l2": 0.10481616726061907,
+        "delta_l2": 0.00861802555050731,
+        "relative_delta_l2": 0.0502730502850088
+      },
+      {
+        "name": "head_delta_t.3.weight",
+        "numel": 128,
+        "f0_l2": 0.5179670421769282,
+        "random_l2": 0.5613421348687745,
+        "delta_l2": 0.025759252035875847,
+        "relative_delta_l2": 0.04973144995406281
+      },
+      {
+        "name": "head_delta_t.3.bias",
+        "numel": 1,
+        "f0_l2": 0.15326768159866333,
+        "random_l2": 0.03430774807929993,
+        "delta_l2": 0.008006468415260315,
+        "relative_delta_l2": 0.05223846496370661
+      }
+    ]
+  },
+  "new_optimizer_state_empty": true,
+  "all_parameters_trainable": true,
+  "seed": 20260914,
+  "old_plan_sha256": "52adfbae213c280b64ad7dac5755ed5105b8d9dbb3c0869c9514f4ef6c7a901b",
+  "new_plan_sha256": "5939dafad1226fee723df4d86626a1b16cdb1764ce476b855b2891b6bec3b6dd"
+}

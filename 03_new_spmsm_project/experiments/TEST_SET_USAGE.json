@@ -1,0 +1,26 @@
+{
+  "new_test_n": 400,
+  "old_test_n": 6483,
+  "new_test_used_for_fixed_model_evaluation": true,
+  "used_for_training": false,
+  "evaluation": "cnn_test_smallcnn_sp080_v1",
+  "models": {
+    "baseline": {
+      "checkpoint": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\small_cnn_v2\\seed_20260903\\best_checkpoint.pt",
+      "sha256": "5e50973958fcf8baad986e9b9f69879e1b766223674c8ef5e90aaad791f48126"
+    },
+    "candidate": {
+      "class": "cnn_zone.src.models_v2.Logical6x20SmallCNNV2",
+      "group": "F-S",
+      "alpha": 0.8,
+      "beta": 0.01,
+      "new_sample_fraction": 0.125,
+      "step": 9500,
+      "checkpoint": "experiments\\cnn_shrink_perturb_v1\\alpha_080\\runs\\F-S\\best_unconstrained.pt",
+      "sha256": "03e68bdb0c9da8ae3db6bc6768ea5c0a88927e3086111ae15ebce17ba7b7bfc2"
+    }
+  },
+  "plan_fixed_before_labels_read": true,
+  "test_results_not_used_to_change_selection": true,
+  "note": "New test outcomes now observed; future adaptive model development must acknowledge this exposure. Historical old V3 test reports already existed."
+}

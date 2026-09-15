@@ -1,0 +1,71 @@
+{
+  "status": "complete",
+  "seed": 20260903,
+  "split": {
+    "train": 40000,
+    "validation": 6483,
+    "test": 6483
+  },
+  "resnet20_result": {
+    "status": "complete",
+    "experiment_id": "logical6x20/resnet20_v2",
+    "seed": 20260903,
+    "epochs_completed": 89,
+    "best_epoch": 77,
+    "best_validation_standardized_mse": 0.008838327430601237,
+    "test_standardized_mse": 0.010036999900161199,
+    "test_metrics": {
+      "tavg": {
+        "mae": 0.011195925064384937,
+        "rmse": 0.016094233840703964,
+        "r2": 0.9979601502418518,
+        "bias": -0.0018809097819030285,
+        "absolute_error_p95": 0.029106641188263893
+      },
+      "delta_t": {
+        "mae": 0.017263464629650116,
+        "rmse": 0.025679122656583786,
+        "r2": 0.9822024703025818,
+        "bias": 0.0017556569073349237,
+        "absolute_error_p95": 0.04528646916151047
+      }
+    },
+    "elapsed_seconds": 746.155737000001,
+    "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\logical6x20\\resnet20_v2\\seed_20260903\\best_checkpoint.pt"
+  },
+  "high_tavg_tail_comparison": {
+    "mini_inception": {
+      "threshold_actual_tavg": 3.5,
+      "sample_count": 643,
+      "actual_range": [
+        3.500143527984619,
+        3.889500617980957
+      ],
+      "predicted_range": [
+        3.470428466796875,
+        3.486814260482788
+      ],
+      "mae": 0.10206990256836032,
+      "bias": -0.10206990256836032,
+      "linear_slope_predicted_vs_actual": 0.0025750622215171435,
+      "linear_intercept": 3.4774125798436772
+    },
+    "resnet20": {
+      "threshold_actual_tavg": 3.5,
+      "sample_count": 643,
+      "actual_range": [
+        3.500143527984619,
+        3.889500617980957
+      ],
+      "predicted_range": [
+        3.4787957668304443,
+        3.8835573196411133
+      ],
+      "mae": 0.008648359200817244,
+      "bias": -0.005535764234433092,
+      "linear_slope_predicted_vs_actual": 0.987913250774999,
+      "linear_intercept": 0.03784023879248105
+    }
+  },
+  "delta_t_warning": "DeltaT remains the historical dataset label; its exact physical replay definition is unresolved."
+}

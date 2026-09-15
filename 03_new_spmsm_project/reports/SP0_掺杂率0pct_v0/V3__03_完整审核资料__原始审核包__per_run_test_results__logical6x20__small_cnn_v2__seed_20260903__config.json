@@ -1,0 +1,32 @@
+{
+  "experiment_id": "logical6x20/small_cnn_v2",
+  "input_mode": "logical6x20",
+  "architecture": "small_cnn_v2",
+  "lookup": null,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "max_epochs": 100,
+  "minimum_epochs": 20,
+  "early_stopping_patience": 12,
+  "scheduler_patience": 3,
+  "physical_batch_size": 64,
+  "effective_batch_size": 64,
+  "circular_angular_padding": false,
+  "seed": 20260903,
+  "train_samples": 40000,
+  "validation_samples": 6483,
+  "test_samples": 6483,
+  "target_mean": [
+    3.099832773208618,
+    0.4043262302875519
+  ],
+  "target_std": [
+    0.35699909925460815,
+    0.191180020570755
+  ],
+  "target_scaler_source": "training set only",
+  "parameter_count": 1224450,
+  "optimizer": "AdamW",
+  "loss": "mean MSE over independently standardized Tavg and DeltaT",
+  "best_checkpoint_selection": "validation standardized MSE only"
+}

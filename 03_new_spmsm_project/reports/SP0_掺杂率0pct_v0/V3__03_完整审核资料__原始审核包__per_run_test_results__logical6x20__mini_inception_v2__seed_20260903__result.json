@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "experiment_id": "logical6x20/mini_inception_v2",
+  "seed": 20260903,
+  "epochs_completed": 46,
+  "best_epoch": 34,
+  "best_validation_standardized_mse": 0.026937286504970258,
+  "test_standardized_mse": 0.028121433130444042,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.019685344770550728,
+      "rmse": 0.04205639660358429,
+      "r2": 0.9860709309577942,
+      "bias": -0.008659937418997288,
+      "absolute_error_p95": 0.08805994689464569
+    },
+    "delta_t": {
+      "mae": 0.029308831319212914,
+      "rmse": 0.03935001417994499,
+      "r2": 0.9582083225250244,
+      "bias": 0.003842779668048024,
+      "absolute_error_p95": 0.07818584889173508
+    }
+  },
+  "elapsed_seconds": 483.82385950000025,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\logical6x20\\mini_inception_v2\\seed_20260903\\best_checkpoint.pt"
+}

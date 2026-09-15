@@ -1,0 +1,1430 @@
+{
+  "seed_count": 1,
+  "seeds": [
+    20260903
+  ],
+  "models": {
+    "logical6x20/small_cnn_v2": {
+      "seeds": [
+        20260903
+      ],
+      "sets": {
+        "full_validation": {
+          "standardized_mse": {
+            "mean": 0.018038361892276537,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.009255197830498219,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.01380886510014534,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9984820485115051,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.004489338491111994,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.0015571893891319633,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9872834218141009,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.04096288123941639,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.006737947463989258,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.018706750124692917,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.02463841438293457,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.987505784359093,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.999074502545118,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.026349470019340515,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.03555154427886009,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9662819504737854,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.016613611951470375,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.0025466105435043573,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9367738721232821,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.0283947020340958,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.02038636803627014,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.05695140361785889,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.07118640840053558,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.8653401203146691,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9871972852074656,
+                "std": 0.0
+              }
+            }
+          }
+        },
+        "full_test": {
+          "standardized_mse": {
+            "mean": 0.019566634024187055,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.009256134094986745,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.014450388047612787,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9983555645138382,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.00438074842973574,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.0017798686862341255,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9887339036440107,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.03669800439172684,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.006529092788696289,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.01872725486755372,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.025695610046386715,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.987505784359093,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9983032546660496,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.027189958917608274,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.03701930943244038,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9630123726797074,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.019674877576336625,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.003428296409127853,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9356200176921765,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.029580930795008828,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.020735204219818115,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.05834760069847108,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.07425864338874816,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.8563936449174765,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9844207928428197,
+                "std": 0.0
+              }
+            }
+          }
+        }
+      },
+      "training": {
+        "best_epoch": {
+          "mean": 40.0,
+          "std": 0.0
+        },
+        "epochs_completed": {
+          "mean": 52.0,
+          "std": 0.0
+        },
+        "elapsed_seconds": {
+          "mean": 196.17963500000042,
+          "std": 0.0
+        }
+      }
+    },
+    "logical6x20/mini_inception_v2": {
+      "seeds": [
+        20260903
+      ],
+      "sets": {
+        "full_validation": {
+          "standardized_mse": {
+            "mean": 0.026937286504970258,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.01960853487253189,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.042131207883358,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.985869824886322,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.009511342272162437,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": -0.009091162122786045,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9466546432232323,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.1562135817494242,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.008859634399414062,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.03992118686437607,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.08827812969684601,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9156254820299244,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9566558691963597,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.02885146252810955,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.03821069002151489,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9610493183135986,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.0181911438703537,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.0030846872832626104,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9336564650439748,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.030207236661722845,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.022556304931640625,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.06019177287817001,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.07496243715286255,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.8361869504858862,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.984266543267006,
+                "std": 0.0
+              }
+            }
+          }
+        },
+        "full_test": {
+          "standardized_mse": {
+            "mean": 0.028121429490859363,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.019685344785778276,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.042056398932265135,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9860709342671607,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.009316691220561701,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": -0.008659937527744965,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9465454071831648,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.15701721160011653,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.008881568908691406,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.04092478752136231,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.08805994987487789,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9133117383927194,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.957427117075428,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.029308833811071834,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.03935001371711249,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9582083398888995,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.021208112850975867,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.003842779652569078,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9322665107522482,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.03135768593984827,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.022876203060150146,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.06188853979110718,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.07818584963679309,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.8334104581212401,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9780965602344593,
+                "std": 0.0
+              }
+            }
+          }
+        }
+      },
+      "training": {
+        "best_epoch": {
+          "mean": 34.0,
+          "std": 0.0
+        },
+        "epochs_completed": {
+          "mean": 46.0,
+          "std": 0.0
+        },
+        "elapsed_seconds": {
+          "mean": 483.82385950000025,
+          "std": 0.0
+        }
+      }
+    },
+    "xy90_224/vgg16_v2": {
+      "seeds": [
+        20260903
+      ],
+      "sets": {
+        "full_validation": {
+          "standardized_mse": {
+            "mean": 0.00613121250175289,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.008243782445788383,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.013532067649066448,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.998542308807373,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.0039987401105463505,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.003648729994893074,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9832432445418202,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.0555739832031206,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.0054705142974853516,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.01668705977499485,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.022991180419921875,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9839580441153787,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.999074502545118,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.012865190394222736,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.01989157311618328,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.989444375038147,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.00811163429170847,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": -0.0014210568042472005,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9828686153585326,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.005582592094103655,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.009547069668769836,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.02548828162252903,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.03272117301821709,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9822612987814283,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9942927656948943,
+                "std": 0.0
+              }
+            }
+          }
+        },
+        "full_test": {
+          "standardized_mse": {
+            "mean": 0.00725425016090662,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.008474296264289504,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.013892159442464809,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.998480161859596,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.004010719774793286,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.0038258800825807173,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9836103331564082,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.05462400863827345,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.005641937255859375,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.017301654815673834,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.02470707893371582,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9864260373283974,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9983032546660496,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.013302492857848203,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.02179303267532958,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9871815596418129,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.009625793081605655,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": -0.0007113972140070135,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9816295643160203,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.0067510976598706566,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.00957643985748291,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.026155459880828867,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.033545225858688354,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9804103038716644,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.993521517815826,
+                "std": 0.0
+              }
+            }
+          }
+        }
+      },
+      "training": {
+        "best_epoch": {
+          "mean": 39.0,
+          "std": 0.0
+        },
+        "epochs_completed": {
+          "mean": 40.0,
+          "std": 0.0
+        },
+        "elapsed_seconds": {
+          "mean": 9350.442799000004,
+          "std": 0.0
+        }
+      }
+    },
+    "polar90_224/vgg16_v2": {
+      "seeds": [
+        20260903
+      ],
+      "sets": {
+        "full_validation": {
+          "standardized_mse": {
+            "mean": 0.005224786694759922,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.006412123795598745,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.011521878652274609,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9989432096481323,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.003110273275524378,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.0016038453904911876,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9962616014539555,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.013188265311470364,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.0041790008544921875,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.011897278018295765,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.017270565032958984,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.988431281813975,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9987660033934906,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.01152037177234888,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.0185434240847826,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9908267259597778,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.007263712584972382,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": -0.000847957911901176,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9852602719587106,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.005177934497972121,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.008270800113677979,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.023124385625123978,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.03004857525229454,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.984729291994447,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.993984266543267,
+                "std": 0.0
+              }
+            }
+          }
+        },
+        "full_test": {
+          "standardized_mse": {
+            "mean": 0.006491925872930022,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.006515256990423619,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.01204536067238548,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9988573915335063,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.003083544548644954,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.0016485692431267335,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.99713154063645,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.010539071344050894,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.004191398620605469,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.01207728385925293,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.017833685874938963,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.988894030541416,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.998611753817677,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.011925505085476346,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.020807399895384646,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9883148181668123,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.008629393420700545,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": -0.000127759057187784,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9844501352521677,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.006188954817561583,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.008233748376369476,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.023367947340011602,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.030222347378730762,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9808730525991054,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9932130186641986,
+                "std": 0.0
+              }
+            }
+          }
+        }
+      },
+      "training": {
+        "best_epoch": {
+          "mean": 39.0,
+          "std": 0.0
+        },
+        "epochs_completed": {
+          "mean": 40.0,
+          "std": 0.0
+        },
+        "elapsed_seconds": {
+          "mean": 9174.165467700004,
+          "std": 0.0
+        }
+      }
+    },
+    "xy360_224/vgg16_v2": {
+      "seeds": [
+        20260903
+      ],
+      "sets": {
+        "full_validation": {
+          "standardized_mse": {
+            "mean": 0.007097358157426997,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.008526617661118507,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.0136946439743042,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9985070824623108,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.004135932307690382,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.0024985114578157663,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9841102852384379,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.051737009231857076,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.0058329105377197266,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.01706070825457573,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.02313990518450737,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.985192040721888,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9983032546660496,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.014386368915438652,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.021564558148384094,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9875941276550293,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.009070753119885921,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.002017596270889044,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9906786754594085,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.005828337995998639,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.010547146201133728,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.02893994376063347,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.03792668506503105,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9765540644763226,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.994447015270708,
+                "std": 0.0
+              }
+            }
+          }
+        },
+        "full_test": {
+          "standardized_mse": {
+            "mean": 0.008647084591423304,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.008709568310239958,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.014148356706472808,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9984235876738877,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.0041220694630412546,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.0027884863674429196,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9843001783840666,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.05144850882906087,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.005833148956298828,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.017577362060546876,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.0248969793319702,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9850377911460744,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9984575042418633,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.015002761393574015,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.023972728354681228,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9844891793746205,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.010856121357888505,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.0029896657041068725,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9924322728681526,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.006063851090878121,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.010574817657470703,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.02993624806404114,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.04014597982168197,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9705383310195898,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9924417707851303,
+                "std": 0.0
+              }
+            }
+          }
+        }
+      },
+      "training": {
+        "best_epoch": {
+          "mean": 40.0,
+          "std": 0.0
+        },
+        "epochs_completed": {
+          "mean": 40.0,
+          "std": 0.0
+        },
+        "elapsed_seconds": {
+          "mean": 9243.6369414,
+          "std": 0.0
+        }
+      }
+    },
+    "polar360_224/vgg16_v2": {
+      "seeds": [
+        20260903
+      ],
+      "sets": {
+        "full_validation": {
+          "standardized_mse": {
+            "mean": 0.028316147291589516,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.015221652574837208,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.02047445997595787,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9966629147529602,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.007383435033261776,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": -0.00532254483550787,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9882101115324158,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.031211553701838562,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.012202024459838867,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.030668258666992188,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.0388336181640625,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9780965602344593,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.997686256362795,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.03340353071689606,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.04415517300367355,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9479873776435852,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.02106126956641674,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.0053667169995605946,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9608483174948327,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.021372699918638507,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.026307225227355957,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.07029973715543747,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.08816945552825928,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.7783433595557612,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9688415856856394,
+                "std": 0.0
+              }
+            }
+          }
+        },
+        "full_test": {
+          "standardized_mse": {
+            "mean": 0.029834284403226503,
+            "std": 0.0
+          },
+          "targets": {
+            "tavg": {
+              "mae": {
+                "mean": 0.01577020020612169,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.02135777670852774,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9964077222847145,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.007463729358350958,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": -0.005638528583631937,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.987820031968332,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.032112060722507704,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.012656927108764648,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.032259845733642586,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.0400569438934326,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.9790220576893414,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9972235076353541,
+                "std": 0.0
+              }
+            },
+            "delta_t": {
+              "mae": {
+                "mean": 0.03371152203210007,
+                "std": 0.0
+              },
+              "rmse": {
+                "mean": 0.04527756258884542,
+                "std": 0.0
+              },
+              "r2": {
+                "mean": 0.9446693303746824,
+                "std": 0.0
+              },
+              "normalized_mae_by_actual_range": {
+                "mean": 0.024393934205763315,
+                "std": 0.0
+              },
+              "bias": {
+                "mean": 0.005337093966680784,
+                "std": 0.0
+              },
+              "calibration_slope_predicted_vs_actual": {
+                "mean": 0.9537947219109558,
+                "std": 0.0
+              },
+              "calibration_intercept_nm": {
+                "mean": 0.024106744116365417,
+                "std": 0.0
+              },
+              "absolute_error_p50": {
+                "mean": 0.026418618857860565,
+                "std": 0.0
+              },
+              "absolute_error_p90": {
+                "mean": 0.07165977954864503,
+                "std": 0.0
+              },
+              "absolute_error_p95": {
+                "mean": 0.08966650664806361,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_05_nm": {
+                "mean": 0.7788061082832022,
+                "std": 0.0
+              },
+              "fraction_absolute_error_le_0_10_nm": {
+                "mean": 0.9642140984112294,
+                "std": 0.0
+              }
+            }
+          }
+        }
+      },
+      "training": {
+        "best_epoch": {
+          "mean": 37.0,
+          "std": 0.0
+        },
+        "epochs_completed": {
+          "mean": 40.0,
+          "std": 0.0
+        },
+        "elapsed_seconds": {
+          "mean": 12816.694576599999,
+          "std": 0.0
+        }
+      }
+    }
+  }
+}

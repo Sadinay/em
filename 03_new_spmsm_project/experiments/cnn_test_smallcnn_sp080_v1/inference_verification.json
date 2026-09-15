@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "models": {
+    "baseline": {
+      "state_sha256_before": "1ad53a141b2d119bc64f51dfaae7f4c2dc4443331468c7df62e1dfb4cbd718b2",
+      "state_sha256_after": "1ad53a141b2d119bc64f51dfaae7f4c2dc4443331468c7df62e1dfb4cbd718b2",
+      "unchanged_parameters_and_buffers": true,
+      "eval_mode": true,
+      "inference_mode": true,
+      "gradients_none": true
+    },
+    "candidate": {
+      "state_sha256_before": "05ff548e71ef8b397b686d34d52640dfde53b04de03ecd0bd65bfb03436dd8ca",
+      "state_sha256_after": "05ff548e71ef8b397b686d34d52640dfde53b04de03ecd0bd65bfb03436dd8ca",
+      "unchanged_parameters_and_buffers": true,
+      "eval_mode": true,
+      "inference_mode": true,
+      "gradients_none": true
+    }
+  },
+  "backward_calls": 0,
+  "optimizer_steps": 0,
+  "SP_applications": 0,
+  "elapsed_seconds": 0.7678486000004341,
+  "source_sha256": "51e7da2ba8147133d0805583745a42300d62888f585baabcf8a11c37f3bc575a",
+  "plan_sha256": "99f811dd2abc46d8024759ae0871c9c82112a6fdf5a40408c381225d27093312",
+  "torch": "2.13.0+cu132",
+  "gpu": "NVIDIA GeForce RTX 5070"
+}

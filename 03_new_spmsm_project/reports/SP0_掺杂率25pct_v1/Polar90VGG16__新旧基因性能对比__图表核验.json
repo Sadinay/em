@@ -1,0 +1,36 @@
+{
+  "models": {
+    "G-S": {
+      "checkpoint_step": 2000,
+      "checkpoint": "best_unconstrained.pt"
+    },
+    "F-S": {
+      "checkpoint_step": 1500,
+      "checkpoint": "best_unconstrained.pt"
+    }
+  },
+  "roles": {
+    "old_validation": 6483,
+    "dev_common": 200
+  },
+  "input_prediction_sha256": {
+    "baseline\\old_validation_predictions.csv": "66c9c16bd66ecfbda1a60d7e42caf0bf1f0653b0cc7dd09bb4d579728565881b",
+    "baseline\\dev_common_predictions.csv": "da8b065f3aefd71182f450414ab28af70399ebe6afd7e40039f51258dcd3ceae",
+    "runs\\G-S\\step02000\\old_validation_predictions.csv": "b3bddddd8560dcddd8d0cfe6c9c5b6c22cca8534b5d5a2512427f916159864c8",
+    "runs\\G-S\\step02000\\dev_common_predictions.csv": "9156bc51b560bd4c1aab5205017d9606ba799f247f09a7a71cc21fbfa3a8b895",
+    "runs\\F-S\\step01500\\old_validation_predictions.csv": "0c60d748cbbde2c06642d3457b74b192436904c3067c420a9021a024d3badedd",
+    "runs\\F-S\\step01500\\dev_common_predictions.csv": "3934dd83773abb0d6a70459e32fb2e6284ecc2e8f3e15619a457220c29023a61"
+  },
+  "metrics_verified_against_saved_evaluation": true,
+  "new_inference": false,
+  "test_used": false,
+  "plot_source": "../diagnostics.py --overlay",
+  "plot_source_sha256": "a7626e248c76d7b8543e3e20d433013db0dd9f01e6207d5cdeae28e073d52762",
+  "outputs_sha256": {
+    "01_平均转矩_真实值与预测值.png": "cf9516fdc99efecb7c2818d682acbc50dd37e003eb798e0bb06795cad15a9f3f",
+    "02_转矩波动_真实值与预测值.png": "f02f404393253eee656fa58ba5e9edb39ce4518fcd2826976125e9ceaa8bc2d1",
+    "03_新旧基因_MAE变化.png": "dec0b6ea58db474b7995752eed4b8e62bc82401e2f8ae634098936262d393e31",
+    "性能指标.csv": "3e71531dcee648d7946755668bfa3750bd73e0661676c5b1e1d8b630167afe2c"
+  },
+  "pdf_removed_at_user_request": true
+}

@@ -1,0 +1,14 @@
+{
+  "new_training": false,
+  "test_used": false,
+  "values_source": "saved metrics.json and history.json",
+  "metric": "existing dual-target standardized MSE; physical target MSE = saved RMSE squared",
+  "source_sha256": "87c4016fe8964f05d34dd996a1e4d62c3704b24b4078104384e56fe0649a9615",
+  "outputs_sha256": {
+    "04_新旧基因_MSE训练过程.png": "4652c2f9a3bf4a37f7bc38b5f493cae6edb2d59490ac4cee1119db7257b79bf4",
+    "05_新旧基因_MSE_最终模型.png": "9a6a42f4bdb73ecf46e6447bceaeda95205a0d3a7fbc50c36e1fe90617f13fda",
+    "06_新旧基因_MSE_最佳候选与合格模型.png": "69481f140ec15a22d07a648d8b996a0a6f5c86ef530907541b31e201ae739dd5",
+    "MSE对比说明.md": "2c978a5cf5e3d17fdb68743412aa7e6fa4b5f3bc7c4f34c4cf2f7fc0318951e8",
+    "新旧基因_MSE对比.csv": "afe68d58873914bd3aeecb4bbd732b685a60a462607b0b77d11aa29fa8cafc9e"
+  }
+}

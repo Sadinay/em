@@ -1,0 +1,48 @@
+# G-S / F-S 首轮 CNN 回放更新
+
+本轮固定一个随机种子20260914，使用同一冻结f0独立热启动、全网络更新、旧/新样本48:16回放。最终测试未解封。
+
+| 组别 | 实际更新 | 用时(min) | 可接受改善 | 选用步数 | 无约束最优步数 | 旧/新累计抽取 | 旧覆盖 |
+|---|---:|---:|---|---:|---:|---|---:|
+| G-S | 2500 | 16.42 | 本轮未找到满足条件的改善模型 | 0 | 2000 | 120000/40000 | 40000/40000 |
+| F-S | 2500 | 15.62 | 本轮未找到满足条件的改善模型 | 0 | 1500 | 120000/40000 | 40000/40000 |
+
+选用步数0表示继续保留f0，不能解释为更新训练成功。最后权重和无约束最优权重仍保存，便于检查精度取舍。
+
+| 模型 | 验证集 | 目标 | MAE | RMSE | 绝对误差P95 | MAE相对f0变化 |
+|---|---|---|---:|---:|---:|---:|
+| f0 | old_validation | tavg | 0.006412 | 0.011522 | 0.017271 | +0.00% |
+| f0 | old_validation | delta_t | 0.011520 | 0.018543 | 0.030049 | +0.00% |
+| f0 | dev_common | tavg | 0.191545 | 0.332013 | 0.808113 | +0.00% |
+| f0 | dev_common | delta_t | 0.096163 | 0.175073 | 0.392445 | +0.00% |
+| f_G | old_validation | tavg | 0.006412 | 0.011522 | 0.017271 | +0.00% |
+| f_G | old_validation | delta_t | 0.011520 | 0.018543 | 0.030049 | +0.00% |
+| f_G | dev_common | tavg | 0.191545 | 0.332013 | 0.808113 | +0.00% |
+| f_G | dev_common | delta_t | 0.096163 | 0.175073 | 0.392445 | +0.00% |
+| f_F | old_validation | tavg | 0.006412 | 0.011522 | 0.017271 | +0.00% |
+| f_F | old_validation | delta_t | 0.011520 | 0.018543 | 0.030049 | +0.00% |
+| f_F | dev_common | tavg | 0.191545 | 0.332013 | 0.808113 | +0.00% |
+| f_F | dev_common | delta_t | 0.096163 | 0.175073 | 0.392445 | +0.00% |
+
+误差单位均为N·m。负变化表示改善。U/L/B/P各50例的逐目标MAE、RMSE、P95及改善比例见 [validation_metrics.csv](<Polar90VGG16__validation_metrics.csv>)。
+
+## 未加约束模型的取舍
+
+- G-S无约束最优在2000步：新验证Tavg/DeltaT MAE改善78.57%/64.79%；旧验证MAE变化+45.51%/+8.76%，不满足双目标各自5%容限。
+- F-S无约束最优在1500步：新验证Tavg/DeltaT MAE改善88.70%/68.56%；旧验证MAE变化+37.73%/+21.70%，不满足双目标各自5%容限。
+
+详细取舍见 [checkpoint_tradeoffs.csv](<../../experiments/cnn_replay_update_v1/report/checkpoint_tradeoffs.csv>)。训练曲线及旧/新验证真实值—预测图分别为本目录PNG/PDF。
+
+## 设置、证据与边界
+
+AdamW初始学习率1e−5、weight_decay=1e−4；ReduceLROnPlateau监控新验证标准化MSE，factor=0.5、patience=3、最低1e−6。microbatch=8，每批6旧+2新，累积8批；sum-MSE除以64×2，沿用AMP、梯度裁剪100和冻结旧目标尺度。
+
+每500步分别验证旧6483和新200，旧两目标MAE均不超过f0×1.05时才参加受约束选择；不按数据量合并验证集。至少2000步且连续5次验证无受约束改善时早停，否则上限10000步。没有根据结果改变比例、门槛或训练预算。
+
+旧完整40000样本打乱轮换，新1400样本循环；两组共享相同索引抽取计划和随机种子。AMP若溢出会降低scale并重试同一有效批次，仅成功optimizer.step计入更新预算，累计抽取另记实际尝试。CPU线程4、DataLoader worker0；Dropout和CUDA AMP仍可能带来设备相关随机差异。
+
+旧数据原有898组冲突隔离、538条初始代磁体数量异常保留策略沿用，不删除样本、不修改标签。旧标签历史质量限制仍存在，本次结论针对已验收的六点均值与峰峰差口径。
+
+源码：[../update.py](<../../experiments/cnn_replay_update_v1/update.py>)；冻结配置：[../config.json](<../../experiments/cnn_replay_update_v1/config.json>)；数据来源和隔离：[../audit/data_audit.json](<../../experiments/cnn_replay_update_v1/audit/data_audit.json>)；GPU/恢复检查：[../audit/preflight.json](<../../experiments/cnn_replay_update_v1/audit/preflight.json>)。每组runs下保存日志、验证预测、检查点和哈希。
+
+这是单种子验证；不能证明G稳定优于F，也不能声称优于同预算随机补样。过拟合、来源不足与下一步建议见随后基于实测结果补充的 [interpretation.md](<Polar90VGG16__interpretation.md>)。

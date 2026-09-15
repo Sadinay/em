@@ -1,0 +1,85 @@
+{
+  "status": "ready_no_training_started",
+  "policy": "keep validation/test unchanged; retain both rare edge Tavg bands; proportionally sample central bands",
+  "seed": 20260903,
+  "source_train": 51838,
+  "selected_train": 40000,
+  "unused_train_pool": 11838,
+  "validation": 6483,
+  "test": 6483,
+  "index_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "validation_unchanged": true,
+  "test_unchanged": true,
+  "index_hashes_sha256": {
+    "train": "ade8379a3c0c72ed4a4127ac60efce2dc0799de9a95c8df5d0d0d61e38db596f",
+    "validation": "4756d67211e62be0bea21c22e1e773e107b612a9de5090c8ef678f019332c190",
+    "test": "7e037e82c2c26fd2953519336c14b52b668c3cc8efd3f4debf824ba52f79c9fa",
+    "unused_train_pool": "eb75915c7b309a07b89d3f0f37d498dedcab9786419a41266403ab98c0e12ad6"
+  },
+  "bands": [
+    {
+      "tavg_band": "<2.0",
+      "source_train": 132,
+      "selected_train": 132,
+      "unused_train_pool": 0,
+      "retention_percent": 100.0,
+      "selection_policy": "retain_all_rare_edge_band"
+    },
+    {
+      "tavg_band": "2.0-2.5",
+      "source_train": 3812,
+      "selected_train": 2936,
+      "unused_train_pool": 876,
+      "retention_percent": 77.02,
+      "selection_policy": "proportional_seeded_sample"
+    },
+    {
+      "tavg_band": "2.5-3.0",
+      "source_train": 13291,
+      "selected_train": 10236,
+      "unused_train_pool": 3055,
+      "retention_percent": 77.015,
+      "selection_policy": "proportional_seeded_sample"
+    },
+    {
+      "tavg_band": "3.0-3.25",
+      "source_train": 13804,
+      "selected_train": 10631,
+      "unused_train_pool": 3173,
+      "retention_percent": 77.014,
+      "selection_policy": "proportional_seeded_sample"
+    },
+    {
+      "tavg_band": "3.25-3.5",
+      "source_train": 15660,
+      "selected_train": 12061,
+      "unused_train_pool": 3599,
+      "retention_percent": 77.018,
+      "selection_policy": "proportional_seeded_sample"
+    },
+    {
+      "tavg_band": "3.5-3.75",
+      "source_train": 4940,
+      "selected_train": 3805,
+      "unused_train_pool": 1135,
+      "retention_percent": 77.024,
+      "selection_policy": "proportional_seeded_sample"
+    },
+    {
+      "tavg_band": ">=3.75",
+      "source_train": 199,
+      "selected_train": 199,
+      "unused_train_pool": 0,
+      "retention_percent": 100.0,
+      "selection_policy": "retain_all_rare_edge_band"
+    }
+  ],
+  "artifacts": {
+    "split_npz": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\outputs\\splits\\scheme_a_tavg_bands_train40000_val6483_test6483.npz",
+    "allocation_csv": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\reports\\spmsm_topology_dataset\\train40000_tavg_band_allocation.csv"
+  }
+}

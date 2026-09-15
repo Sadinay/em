@@ -1,0 +1,7 @@
+﻿time,order,experiment,folder,models,sp,new_fraction,report_files,source_folders
+历史杂项,00,其他历史图表和说明,other,FEMM核验、数据处理、输入表示等历史杂项,—,—,47,reports; reports/spmsm_topology_dataset; reports/spmsm_inputs; reports/angle_settings_audit_20260908; reports/initial_angle_29_audit_20260908; femm_zone/workspaces/pilot20_cross_device_check_20260909; experiments/input_distribution_pilot_v1/post_femm_baseline_20260913; femm_zone/results/fixed_current_5genes_20260908; femm_zone/results/initial_current_phase_20260908; femm_zone/results/current_modes_5genes_20260908; femm_zone/results/mat_literal_current_probe_20260908
+2026-09-03起，后续补齐,03,v0：40000旧数据冻结基线（历史V3）,SP0_掺杂率0pct_v0,SmallCNN V2、Mini-Inception V2、ResNet20 V2；VGG16四输入视图,0,0%,85,reports/V3
+2026-09-14；小模型扩展09-15,12,普通热启动回放v1及6×20扩展,SP0_掺杂率25pct_v1,Polar90 VGG16；SmallCNN、Mini-Inception、ResNet20,0,25%,55,experiments/cnn_replay_update_v1/report; experiments/cnn_replay_update_v1/logical6x20/report
+2026-09-15,13,普通热启动回放v2及6×20扩展,SP0_掺杂率12.5pct_v2,Polar90 VGG16；SmallCNN、Mini-Inception、ResNet20,0,12.5%,44,experiments/cnn_replay_update_v2/report; experiments/cnn_replay_update_v2/logical6x20/report
+2026-09-15，当前轮,14,一次性SP＋回放首轮α筛选,SPα0.95-0.80-0.50_β0.01_掺杂率12.5pct_v1,Logical6x20SmallCNNV2；原生2×6×20,α=.95/.80/.50；β=.01,12.5%,21,experiments/cnn_shrink_perturb_v1/report
+2026-09-15，固定模型测试,15,固定模型测试：SP F-S与原始f0,SPα0.80_β0.01_掺杂率12.5pct_v1,SmallCNN V2；F-S SP α=.80，9500步；原始f0,α=.80；β=.01,12.5%,4,experiments/cnn_test_smallcnn_sp080_v1/report

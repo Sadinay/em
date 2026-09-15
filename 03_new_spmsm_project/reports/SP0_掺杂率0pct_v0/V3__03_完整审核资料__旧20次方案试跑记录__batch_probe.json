@@ -1,0 +1,126 @@
+{
+  "status": "all_passed",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "results": [
+    {
+      "experiment_id": "logical6x20/small_cnn_v2",
+      "physical_batch_size": 64,
+      "parameter_count": 1224450,
+      "output_shape": [
+        64,
+        2
+      ],
+      "loss": 0.028655048459768295,
+      "peak_allocated_mb": 80.01123046875,
+      "status": "passed"
+    },
+    {
+      "experiment_id": "logical6x20/mini_inception_v2",
+      "physical_batch_size": 64,
+      "parameter_count": 1095698,
+      "output_shape": [
+        64,
+        2
+      ],
+      "loss": 0.09790784865617752,
+      "peak_allocated_mb": 94.68310546875,
+      "status": "passed"
+    },
+    {
+      "experiment_id": "xy90_224/vgg16_v2",
+      "physical_batch_size": 8,
+      "parameter_count": 18917122,
+      "output_shape": [
+        8,
+        2
+      ],
+      "loss": 0.055902961641550064,
+      "peak_allocated_mb": 1260.068359375,
+      "status": "passed"
+    },
+    {
+      "experiment_id": "xy90_224/mini_inception_v2",
+      "physical_batch_size": 16,
+      "parameter_count": 1036466,
+      "output_shape": [
+        16,
+        2
+      ],
+      "loss": 0.11034056544303894,
+      "peak_allocated_mb": 3095.3642578125,
+      "status": "passed"
+    },
+    {
+      "experiment_id": "polar90_224/vgg16_v2",
+      "physical_batch_size": 8,
+      "parameter_count": 18917122,
+      "output_shape": [
+        8,
+        2
+      ],
+      "loss": 0.04567761719226837,
+      "peak_allocated_mb": 1260.068359375,
+      "status": "passed"
+    },
+    {
+      "experiment_id": "polar90_224/mini_inception_v2",
+      "physical_batch_size": 16,
+      "parameter_count": 1036466,
+      "output_shape": [
+        16,
+        2
+      ],
+      "loss": 0.22141098976135254,
+      "peak_allocated_mb": 3095.3642578125,
+      "status": "passed"
+    },
+    {
+      "experiment_id": "xy360_224/vgg16_v2",
+      "physical_batch_size": 8,
+      "parameter_count": 18917122,
+      "output_shape": [
+        8,
+        2
+      ],
+      "loss": 0.03465021774172783,
+      "peak_allocated_mb": 1266.30859375,
+      "status": "passed"
+    },
+    {
+      "experiment_id": "xy360_224/mini_inception_v2",
+      "physical_batch_size": 16,
+      "parameter_count": 1036466,
+      "output_shape": [
+        16,
+        2
+      ],
+      "loss": 0.14930930733680725,
+      "peak_allocated_mb": 3101.5419921875,
+      "status": "passed"
+    },
+    {
+      "experiment_id": "polar360_224/vgg16_v2",
+      "physical_batch_size": 8,
+      "parameter_count": 18917122,
+      "output_shape": [
+        8,
+        2
+      ],
+      "loss": 0.0325019545853138,
+      "peak_allocated_mb": 1274.912109375,
+      "status": "passed"
+    },
+    {
+      "experiment_id": "polar360_224/mini_inception_v2",
+      "physical_batch_size": 16,
+      "parameter_count": 1036466,
+      "output_shape": [
+        16,
+        2
+      ],
+      "loss": 0.2363775074481964,
+      "peak_allocated_mb": 3109.509765625,
+      "status": "passed"
+    }
+  ]
+}

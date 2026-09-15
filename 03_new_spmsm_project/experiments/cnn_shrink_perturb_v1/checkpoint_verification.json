@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "test_used": false,
+  "checks": [
+    {
+      "variant": "alpha_095",
+      "group": "G-S",
+      "checkpoint": "best_feasible.pt",
+      "step": 15500,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_095",
+      "group": "G-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 15500,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_095",
+      "group": "G-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_095",
+      "group": "F-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 12500,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_095",
+      "group": "F-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_080",
+      "group": "G-S",
+      "checkpoint": "best_feasible.pt",
+      "step": 13500,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_080",
+      "group": "G-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 13500,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_080",
+      "group": "G-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_080",
+      "group": "F-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 9500,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_080",
+      "group": "F-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_050",
+      "group": "G-S",
+      "checkpoint": "best_feasible.pt",
+      "step": 15000,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_050",
+      "group": "G-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 10000,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_050",
+      "group": "G-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_050",
+      "group": "F-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 9000,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    },
+    {
+      "variant": "alpha_050",
+      "group": "F-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_exact": true,
+      "bn_successful_update_count_exact": true
+    }
+  ]
+}

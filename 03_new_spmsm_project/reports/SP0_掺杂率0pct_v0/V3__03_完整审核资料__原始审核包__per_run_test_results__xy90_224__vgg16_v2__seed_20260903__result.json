@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "experiment_id": "xy90_224/vgg16_v2",
+  "seed": 20260903,
+  "epochs_completed": 40,
+  "best_epoch": 39,
+  "best_validation_standardized_mse": 0.00613121250175289,
+  "test_standardized_mse": 0.007254250107744495,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.008474296890199184,
+      "rmse": 0.013892159797251225,
+      "r2": 0.9984801411628723,
+      "bias": 0.0038258801214396954,
+      "absolute_error_p95": 0.02470707893371582
+    },
+    "delta_t": {
+      "mae": 0.013302493840456009,
+      "rmse": 0.021793032065033913,
+      "r2": 0.987181544303894,
+      "bias": -0.0007113972096703947,
+      "absolute_error_p95": 0.033545225858688354
+    }
+  },
+  "elapsed_seconds": 9350.442799000004,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\cnn_zone\\models\\v3_40000_6runs\\xy90_224\\vgg16_v2\\seed_20260903\\best_checkpoint.pt"
+}

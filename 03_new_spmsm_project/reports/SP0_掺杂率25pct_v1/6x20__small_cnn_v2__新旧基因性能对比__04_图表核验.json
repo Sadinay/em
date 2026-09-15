@@ -1,0 +1,57 @@
+{
+  "experiment_model": "v1 · SmallCNN V2",
+  "accepted_status": "G-S：图中为最佳无约束候选第 9000 步；实际回退自身f0。 F-S：图中为最佳无约束候选第 3500 步；实际回退自身f0。",
+  "role": "dev_common",
+  "n": 200,
+  "candidate_steps": {
+    "G-S": 9000,
+    "F-S": 3500
+  },
+  "metrics": {
+    "f0": {
+      "tavg": {
+        "mae": 0.07648475372002426,
+        "rmse": 0.11730248337466528
+      },
+      "delta_t": {
+        "mae": 0.08121747325806541,
+        "rmse": 0.10638990668290359
+      }
+    },
+    "G-S": {
+      "tavg": {
+        "mae": 0.017940332009937776,
+        "rmse": 0.023314072887398653
+      },
+      "delta_t": {
+        "mae": 0.049899390746739124,
+        "rmse": 0.06201098849781765
+      }
+    },
+    "F-S": {
+      "tavg": {
+        "mae": 0.016907649608065855,
+        "rmse": 0.021433701890245797
+      },
+      "delta_t": {
+        "mae": 0.043655326964853344,
+        "rmse": 0.054181250648227416
+      }
+    }
+  },
+  "input_prediction_sha256": {
+    "baseline\\dev_common_predictions.csv": "97026888eaef58ce48be9cb8546128566019664f0eb01445607c933b7eddd353",
+    "runs\\G-S\\step09000\\dev_common_predictions.csv": "bc5fe1b0a8c2299c3b28ebca078363d92159a8d8fa7c3425ef0daee663d7d0fe",
+    "runs\\F-S\\step03500\\dev_common_predictions.csv": "3028d1921e67951689921b6ee1f42f9d05e704afc11006e34e0e665cd3f4254e"
+  },
+  "metrics_verified_against_saved_evaluation": true,
+  "new_inference": false,
+  "test_used": false,
+  "command": "plot_performance.py",
+  "source_sha256": "0dcd05fb16e72a03f0fc73cbea85b1283efe4784901ee0f3acc49c4ebc28d18f",
+  "outputs_sha256": {
+    "04_仅新基因_老模型与更新模型对比.png": "f5f69791c2f51eae7f4e3939a693249081fbdd49774821b9e8166a3cde0c4bf6"
+  },
+  "render_source_sha256": "73a28333194e058b249c5d7a9814fd6e76a782c0d901138ecfbcae86ff1e8009",
+  "source_change_note": "Only Markdown embedding changed; PNGs and metrics unchanged."
+}

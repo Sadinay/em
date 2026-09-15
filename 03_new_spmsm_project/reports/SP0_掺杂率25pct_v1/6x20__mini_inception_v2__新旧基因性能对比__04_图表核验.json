@@ -1,0 +1,57 @@
+{
+  "experiment_model": "v1 · Mini-Inception V2",
+  "accepted_status": "G-S：图中为最佳无约束候选第 5000 步；实际回退自身f0。 F-S：图中为最佳无约束候选第 7000 步；实际回退自身f0。",
+  "role": "dev_common",
+  "n": 200,
+  "candidate_steps": {
+    "G-S": 5000,
+    "F-S": 7000
+  },
+  "metrics": {
+    "f0": {
+      "tavg": {
+        "mae": 0.1599851499378006,
+        "rmse": 0.23744080271707263
+      },
+      "delta_t": {
+        "mae": 0.08348071312377961,
+        "rmse": 0.11280433759593667
+      }
+    },
+    "G-S": {
+      "tavg": {
+        "mae": 0.0915391307776545,
+        "rmse": 0.17679839776991008
+      },
+      "delta_t": {
+        "mae": 0.056941594586204396,
+        "rmse": 0.07321065484792638
+      }
+    },
+    "F-S": {
+      "tavg": {
+        "mae": 0.07727084397257204,
+        "rmse": 0.16347885158003503
+      },
+      "delta_t": {
+        "mae": 0.054765558253669556,
+        "rmse": 0.06905710351019018
+      }
+    }
+  },
+  "input_prediction_sha256": {
+    "baseline\\dev_common_predictions.csv": "9af0b385733571f707350249036b4ee4bdeda80d656b3c6649650806c42a1c02",
+    "runs\\G-S\\step05000\\dev_common_predictions.csv": "3e1edc8c2bd28c1731939fecf5f7575f9bdadb21694983f77534f94c2d2c2f7f",
+    "runs\\F-S\\step07000\\dev_common_predictions.csv": "a0f697071fe99763522f7c1a1d33e4cd546b61262c1d3f796af47f648bc4be15"
+  },
+  "metrics_verified_against_saved_evaluation": true,
+  "new_inference": false,
+  "test_used": false,
+  "command": "plot_performance.py",
+  "source_sha256": "0dcd05fb16e72a03f0fc73cbea85b1283efe4784901ee0f3acc49c4ebc28d18f",
+  "outputs_sha256": {
+    "04_仅新基因_老模型与更新模型对比.png": "a34a34d3f151434c47df10f53ed240f5c3ce3b25d30b5a1a32b64664e8ca8f85"
+  },
+  "render_source_sha256": "73a28333194e058b249c5d7a9814fd6e76a782c0d901138ecfbcae86ff1e8009",
+  "source_change_note": "Only Markdown embedding changed; PNGs and metrics unchanged."
+}

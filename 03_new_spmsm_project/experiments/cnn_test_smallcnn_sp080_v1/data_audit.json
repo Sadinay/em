@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "new_test_n": 400,
+  "old_test_n": 6483,
+  "no_training_validation_overlap": true,
+  "old_repair_families_disjoint": true,
+  "accepted_test_hashes": {
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\sealed_test\\gene_ids.npy": "e8a28636125b8c01478542e44574c17b81d4aa513ff57c2b1930a65925e758fb",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\sealed_test\\labels.csv": "8750863dcb9dd7148f6c44dd030869022295ebb334be29332f5fa32bdadd6bed",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\sealed_test\\manifest.csv": "9e0142e0304d4c98c7c53feedc9e5f13a40bc731656cc46eb64d5e2ebc0ccfa4",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\sealed_test\\targets_tavg_delta.npy": "a5c286bad84adb0addb9bff6a05d67632e1620f3776c8b3fb9d69bcbe4c6db2b",
+    "experiments\\input_distribution_pilot_v1\\post_femm_baseline_20260913\\data\\sealed_test\\topology_bits.npy": "a0d53f0c7a5fd99e0a8c3eec20483c72e143126452865fd352be832aa0e907d1"
+  },
+  "old_test_bits_sha256": "cab33d7aaa32e2a59641e3ff88cec88bf6713ac7dc8e4af133b34eb33292469b",
+  "old_test_targets_sha256": "5bb5fa0d9005b50c2c9a405e6799f1310e9b5edacbea224414aecd40872d3636",
+  "target_policy": "unchanged accepted six-angle Tavg mean and DeltaT range, both N*m; no samples removed/relabelled",
+  "test_unsealed_with_user_authorization": true,
+  "new_source_counts": {
+    "U": 100,
+    "L": 100,
+    "B": 100,
+    "P": 100
+  },
+  "plan_sha256": "99f811dd2abc46d8024759ae0871c9c82112a6fdf5a40408c381225d27093312"
+}

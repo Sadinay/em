@@ -1,0 +1,48 @@
+{
+  "unchanged_functions": [
+    "load_data",
+    "audit",
+    "plans",
+    "cycle_plan",
+    "ReplaySampler",
+    "perform_update",
+    "evaluation",
+    "admissible",
+    "improvement_eligible",
+    "pack_state",
+    "restore",
+    "save_weights",
+    "allowed_dataset"
+  ],
+  "v2_checks_reused": {
+    "status": "passed",
+    "pytest_tests": 6,
+    "seconds": 3.06,
+    "both_replay_versions_tested": true,
+    "budget_approved": {
+      "v1": 10000,
+      "v2": 20000
+    },
+    "test_used": false
+  },
+  "control_frozen_files": {
+    "experiments\\cnn_replay_update_v2\\logical6x20\\update.py": "68a640d6d3d41738e4c52f6add5eae67d161dd13d4b3fc6429f60329378116c3",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\test_update.py": "372d67be0da0a3705489fee7e8034db054e4298aa614bc960151b9f6d67d272c",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\offline_checks.json": "236d053fb614bbed53d112825afa0a709e3579336734e44e699653e978b3d300",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\config.json": "e7619761fb3ce4c4fd8a675b26f63c91f2b956a660000e9fc9326a242353c1d8",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\baseline\\metrics.json": "5f02b9b924d3f6936e06a5163e3af9b507c3380c25178654bcdea4d5cede5a38",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\audit\\data_audit.json": "f95e92c18a91cc4ef45932d5d1a8df760a75e3788130308289cd8c3787ea4ac3",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\runs\\G-S\\result.json": "d2800438efccfaa8dc2f28aee140f041bf87d344d40e424eec33d5d683ef744d",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\runs\\G-S\\history.json": "62cecfa44daa617359b4ae25eec861f493ddbaecae0e977c9ae0523e2a6fe4bb",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\runs\\G-S\\initialization.json": "dc81f51eff01d635c829f23e3b7988b75d8eee97a8ea47b909421c39b0cfe3eb",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\runs\\G-S\\best_feasible.pt": "6daf1905395b18d0a6b6677cb5fed4d243c1328219f6208cc04e73b026101d1f",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\runs\\G-S\\best_unconstrained.pt": "c818d8a4bf417fe511f0d2dc1498dfa9df5c184e19702ca085981e9dbd45f96b",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\runs\\G-S\\last_checkpoint.pt": "8e9c87a2ceaeab3b9920ddaa7debdcc93a7568c53042db0667264ca590b9105d",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\runs\\F-S\\result.json": "31ac89a07dfc493b71fce75a4d543d2d1cdf436e4ca96f093fe21a9830c9a680",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\runs\\F-S\\history.json": "41fc24941d2797d74ae8a4c6824c7a1ccbeb2a201c2c0f15c7a00792169a6a21",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\runs\\F-S\\initialization.json": "dc81f51eff01d635c829f23e3b7988b75d8eee97a8ea47b909421c39b0cfe3eb",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\runs\\F-S\\best_unconstrained.pt": "cef42b40342d0b3c44c94ba1e09dcac2fd07276f8a4c113bbaaf881387ed3c4e",
+    "experiments\\cnn_replay_update_v2\\logical6x20\\small_cnn_v2\\runs\\F-S\\last_checkpoint.pt": "af29dbd6a9ff79d4d580353f4fcd0ebdb0feed691f8d4c121982d2655f501780"
+  },
+  "new_source_sha256": "de6c4cf533c95855e153c2ad3d47f7b0d261c63518991862d686113ebcf5722d"
+}

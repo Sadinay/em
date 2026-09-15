@@ -1,5 +1,9 @@
 # 新 SPMSM 遗传优化项目（第三类基因）
 
+**测试集使用状态：**400个新测试基因及6483个旧测试基因已用于固定SmallCNN F-S SP模型与原f0的纯推理比较；未更新权重。[测试报告](reports/SPα0.80_β0.01_掺杂率12.5pct_v1/REPORT.md)。
+
+**集中报告入口：**[按时间查看实验报告（最新在下）](reports/实验索引.md)。新报告目录仅用SP、掺杂率和轮次命名；模型信息在索引和报告正文中。历史原件保留。
+
 2026-09-15 小模型补充：**三个6×20网络的v1/v2共12组训练已完成**，合计约45分钟。v2 SmallCNN G-S与Mini-Inception G-S通过各自旧模型5%容限。源码与结果位于 [v1小模型](experiments/cnn_replay_update_v1/logical6x20/README.md)、[v2小模型及两版比较](experiments/cnn_replay_update_v2/logical6x20/README.md)。原VGG16实验保留。
 
 2026-09-15 更新：**v2 高旧回放比例实验已完成**，G-S/F-S各5000次更新；两组仍未同时通过旧分布双目标5%容限。源码、模型和对比报告集中在 [cnn_replay_update_v2](experiments/cnn_replay_update_v2/README.md)，先看[本轮结果](experiments/cnn_replay_update_v2/report/REPORT.md)。
