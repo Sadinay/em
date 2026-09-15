@@ -1,0 +1,40 @@
+{
+  "experiment_model": "v1 · ResNet20 V2",
+  "accepted_status": "G-S：图中为最佳无约束候选第 3500 步；实际回退自身f0。 F-S：图中为最佳无约束候选第 9500 步；实际回退自身f0。",
+  "models": {
+    "G-S": {
+      "checkpoint_step": 3500,
+      "checkpoint": "best_unconstrained.pt"
+    },
+    "F-S": {
+      "checkpoint_step": 9500,
+      "checkpoint": "best_unconstrained.pt"
+    }
+  },
+  "roles": {
+    "old_validation": 6483,
+    "dev_common": 200
+  },
+  "input_prediction_sha256": {
+    "baseline\\old_validation_predictions.csv": "9e1a452e13011acdf8b70ad17bf6a875214126d68c56b21136af8713b9628ce9",
+    "baseline\\dev_common_predictions.csv": "e1fdaef39baa70dac420bdb34ebdd29dc05c6675aa9b7b9454309de6c90ad5e6",
+    "runs\\G-S\\step03500\\old_validation_predictions.csv": "9013ca1fd680f456b64569b73d60c1a61847bda271f211dd495ff320ebc51175",
+    "runs\\G-S\\step03500\\dev_common_predictions.csv": "5dda2813e3bae6390deb5229820b78d310a556dcd3ad382c8dd3f65f0a194092",
+    "runs\\F-S\\step09500\\old_validation_predictions.csv": "85fe6969213d07c5f978719d795d333ee05e1e1435fbd7122a19ae785c689355",
+    "runs\\F-S\\step09500\\dev_common_predictions.csv": "14321b83e5c9e01c8c9f5aef60c14dff3f2bd4bbde34fb8c221c0a6a8b99944f"
+  },
+  "metrics_verified_against_saved_evaluation": true,
+  "new_inference": false,
+  "test_used": false,
+  "plot_source": "../../../plot_performance.py",
+  "plot_source_sha256": "0dcd05fb16e72a03f0fc73cbea85b1283efe4784901ee0f3acc49c4ebc28d18f",
+  "outputs_sha256": {
+    "01_平均转矩_真实值与预测值.png": "42b4390baec0273dae187b2721420bced807ef3538aa9e394aa3636446b95d23",
+    "02_转矩波动_真实值与预测值.png": "c51facb465c30a750200c5318d2483cd68c96058b7dae6860c14bfdfd9a89ecd",
+    "03_新旧基因_MAE变化.png": "840b21265e794c818af573ac74853bdeec395abedb071afca299200d27695a3d",
+    "04_仅新基因_老模型与更新模型对比.png": "d0700e7a06d1add1954e199c75b4b2abdf71362cc6b32ad8a5e1e484adef9801",
+    "性能指标.csv": "f3fa6df9bf928c329461651837a1e68c6daf8ce306ecc32968f0351d8fd21418"
+  },
+  "render_source_sha256": "73a28333194e058b249c5d7a9814fd6e76a782c0d901138ecfbcae86ff1e8009",
+  "source_change_note": "Only Markdown embedding changed; PNGs and metrics unchanged."
+}

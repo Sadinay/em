@@ -1,0 +1,57 @@
+{
+  "experiment_model": "v1 · ResNet20 V2",
+  "accepted_status": "G-S：图中为最佳无约束候选第 3500 步；实际回退自身f0。 F-S：图中为最佳无约束候选第 9500 步；实际回退自身f0。",
+  "role": "dev_common",
+  "n": 200,
+  "candidate_steps": {
+    "G-S": 3500,
+    "F-S": 9500
+  },
+  "metrics": {
+    "f0": {
+      "tavg": {
+        "mae": 0.05686935861455718,
+        "rmse": 0.0823448136222276
+      },
+      "delta_t": {
+        "mae": 0.08433155404040814,
+        "rmse": 0.11773282417129807
+      }
+    },
+    "G-S": {
+      "tavg": {
+        "mae": 0.02481097091605273,
+        "rmse": 0.03136653226589367
+      },
+      "delta_t": {
+        "mae": 0.03679204574557314,
+        "rmse": 0.047590975654051515
+      }
+    },
+    "F-S": {
+      "tavg": {
+        "mae": 0.021577222726370016,
+        "rmse": 0.026734133992506005
+      },
+      "delta_t": {
+        "mae": 0.03218173136053437,
+        "rmse": 0.04174906162639774
+      }
+    }
+  },
+  "input_prediction_sha256": {
+    "baseline\\dev_common_predictions.csv": "e1fdaef39baa70dac420bdb34ebdd29dc05c6675aa9b7b9454309de6c90ad5e6",
+    "runs\\G-S\\step03500\\dev_common_predictions.csv": "5dda2813e3bae6390deb5229820b78d310a556dcd3ad382c8dd3f65f0a194092",
+    "runs\\F-S\\step09500\\dev_common_predictions.csv": "14321b83e5c9e01c8c9f5aef60c14dff3f2bd4bbde34fb8c221c0a6a8b99944f"
+  },
+  "metrics_verified_against_saved_evaluation": true,
+  "new_inference": false,
+  "test_used": false,
+  "command": "plot_performance.py",
+  "source_sha256": "0dcd05fb16e72a03f0fc73cbea85b1283efe4784901ee0f3acc49c4ebc28d18f",
+  "outputs_sha256": {
+    "04_仅新基因_老模型与更新模型对比.png": "d0700e7a06d1add1954e199c75b4b2abdf71362cc6b32ad8a5e1e484adef9801"
+  },
+  "render_source_sha256": "73a28333194e058b249c5d7a9814fd6e76a782c0d901138ecfbcae86ff1e8009",
+  "source_change_note": "Only Markdown embedding changed; PNGs and metrics unchanged."
+}

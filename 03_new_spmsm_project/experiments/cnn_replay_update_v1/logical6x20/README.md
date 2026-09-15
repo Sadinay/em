@@ -53,3 +53,7 @@ python ./03_new_spmsm_project/experiments/cnn_replay_update_v1/logical6x20/updat
 执行布局记录：小模型沿用本次回放入口的channels_last内存布局，并在同一执行布局下重算自身冻结f0作为基线；原模型权重及BatchNorm状态逐张量核验一致。该布局不改变2×6×20编码或网络结构，CUDA/AMP仍可能有数值非确定性。
 
 训练完成后可重新加载候选、最终及合格模型验证完整指标：`python ./03_new_spmsm_project/experiments/cnn_replay_update_v1/logical6x20/report_results.py --verify`。该命令需要GPU，训练期间不要同时运行。
+
+## 单模型性能图
+
+[按网络查看四类性能图](report/性能图索引.md)：新旧基因散点、MAE变化及仅新基因的新老模型对比。绘图源码为 `plot_performance.py`，只读取已保存验证预测；不加载测试集。
