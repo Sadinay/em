@@ -1,5 +1,7 @@
 # 首轮 CNN 补样回放更新：G-S / F-S
 
+**6×20 小模型扩展：** SmallCNN、Mini-Inception、ResNet20 的 G/F 更新位于 [logical6x20](logical6x20/README.md)。用户已批准 v1 每组10000步、v2每组20000步；原VGG16实验保留。
+
 **已完成：**G-S/F-S各2500次更新，分别用时16.42/15.62分钟，均按预定规则早停。两组新结构误差显著下降，但均未通过旧验证两个目标各自5%的容限，因此没有合格的替代f0模型。先看[结果解释与候选对比](report/interpretation.md)，完整记录见[主报告](report/REPORT.md)。
 
 **本阶段训练、核验、恢复和主报告代码集中在 [update.py](update.py)。** 它复用 `cnn_zone/src` 的原模型、输入渲染、数据接口、AMP损失和验证函数。补充展示无约束候选的短脚本为 [report/diagnostics.py](report/diagnostics.py)，只读取已有验证结果出图，不加载模型。原来的选种子/FEMM入口仍位于 `input_distribution_pilot_v1`。

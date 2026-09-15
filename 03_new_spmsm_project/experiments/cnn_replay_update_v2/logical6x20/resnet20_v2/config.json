@@ -1,0 +1,95 @@
+{
+  "experiment": "cnn_replay_update_v2/logical6x20/resnet20_v2",
+  "seed": 20260914,
+  "groups": [
+    "G-S",
+    "F-S"
+  ],
+  "initialization": "same frozen f0 weights independently; new optimizer/scheduler/AMP states",
+  "initial_checkpoint": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\resnet20_v2\\seed_20260903\\best_checkpoint.pt",
+  "initial_checkpoint_sha256": "7ae9772b953a02a2e4b20bb9afde965b8e3ceab38d3d7838a6be4758f9a8054b",
+  "model_class": "cnn_zone.src.models_v2.Logical6x20ResNet20V2",
+  "input_shape": [
+    2,
+    6,
+    20
+  ],
+  "baseline_config": {
+    "experiment_id": "logical6x20/resnet20_v2",
+    "input_mode": "logical6x20",
+    "architecture": "resnet20_v2",
+    "lookup": null,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "max_epochs": 100,
+    "minimum_epochs": 20,
+    "early_stopping_patience": 12,
+    "scheduler_patience": 3,
+    "physical_batch_size": 64,
+    "effective_batch_size": 64,
+    "circular_angular_padding": false,
+    "seed": 20260903,
+    "train_samples": 40000,
+    "validation_samples": 6483,
+    "test_samples": 6483,
+    "target_mean": [
+      3.099832773208618,
+      0.4043262302875519
+    ],
+    "target_std": [
+      0.35699909925460815,
+      0.191180020570755
+    ],
+    "target_scaler_source": "training set only",
+    "parameter_count": 763714,
+    "optimizer": "AdamW",
+    "loss": "mean MSE over independently standardized Tavg and DeltaT",
+    "best_checkpoint_selection": "validation standardized MSE only"
+  },
+  "target_order": [
+    "tavg",
+    "delta_t"
+  ],
+  "target_mean": [
+    3.099832773208618,
+    0.4043262302875519
+  ],
+  "target_std": [
+    0.35699909925460815,
+    0.191180020570755
+  ],
+  "target_scaler_policy": "frozen f0 old-training scaler; never recomputed",
+  "loss": "mean squared error over two independently standardized targets",
+  "optimizer": "AdamW",
+  "initial_learning_rate": 2.9999999999999997e-05,
+  "weight_decay": 0.0001,
+  "effective_batch_size": 64,
+  "physical_batch_size": 64,
+  "old_per_update": 56,
+  "new_per_update": 8,
+  "max_updates": 20000,
+  "validate_every": 500,
+  "checkpoint_every": 100,
+  "fixed_budget": true,
+  "gradient_accumulation_steps": 1,
+  "improvement_epsilon": 1e-12,
+  "old_mae_limit_multiplier": 1.05,
+  "selection": "both old MAEs <= 1.05*f0; then minimize new-dev dual-target mean standardized MSE",
+  "early_stop": "disabled; fixed user-approved 10000 (v1) / 20000 (v2) successful updates",
+  "scheduler": {
+    "class": "ReduceLROnPlateau",
+    "monitor": "new_dev_standardized_mse",
+    "factor": 0.5,
+    "patience": 3,
+    "min_lr": 1e-06
+  },
+  "amp": "CUDA float16",
+  "grad_scaler_init_scale": 128.0,
+  "clip_grad_norm": 100.0,
+  "train_all_parameters": true,
+  "num_workers": 0,
+  "cpu_threads": 4,
+  "randomness": "shared shuffled old/new index plans; same initialization/seed/dropout RNG; deterministic algorithms warn_only like baseline; CUDA AMP/device nondeterminism remains possible",
+  "settings_source": "user-approved logical extension: v1 10000/v2 20000; baseline physical batch64 retained for BatchNorm; own baseline learning rate x0.1; replay/selection rules retained",
+  "test_policy": "test identities/membership only; no test target access or prediction"
+}

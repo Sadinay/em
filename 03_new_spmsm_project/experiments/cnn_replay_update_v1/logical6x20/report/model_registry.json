@@ -1,0 +1,152 @@
+{
+  "small_cnn_v2/G-S": {
+    "original_f0": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\small_cnn_v2\\seed_20260903\\best_checkpoint.pt",
+    "original_f0_sha256": "5e50973958fcf8baad986e9b9f69879e1b766223674c8ef5e90aaad791f48126",
+    "path_base": "experiments\\cnn_replay_update_v1\\logical6x20",
+    "best_unconstrained": {
+      "path": "small_cnn_v2/runs/G-S/best_unconstrained.pt",
+      "step": 9000
+    },
+    "best_feasible": null,
+    "final": {
+      "path": "small_cnn_v2/runs/G-S/last_checkpoint.pt",
+      "step": 10000,
+      "full_resume_state": true
+    },
+    "accepted": {
+      "path": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\small_cnn_v2\\seed_20260903\\best_checkpoint.pt",
+      "step": 0,
+      "path_base": "03_new_spmsm_project"
+    },
+    "fallback_to_f0": true,
+    "checkpoint_sha256": {
+      "best_unconstrained.pt": "f490e5ccf0acf5c1a5c2f4faad1c035b348fd88e2b524f96c5355a6b85efb368",
+      "last_checkpoint.pt": "5f8cb8adc4665369c8f75bb1026d591835405f6ab8657d703305ca4dd4d176a4"
+    }
+  },
+  "small_cnn_v2/F-S": {
+    "original_f0": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\small_cnn_v2\\seed_20260903\\best_checkpoint.pt",
+    "original_f0_sha256": "5e50973958fcf8baad986e9b9f69879e1b766223674c8ef5e90aaad791f48126",
+    "path_base": "experiments\\cnn_replay_update_v1\\logical6x20",
+    "best_unconstrained": {
+      "path": "small_cnn_v2/runs/F-S/best_unconstrained.pt",
+      "step": 3500
+    },
+    "best_feasible": null,
+    "final": {
+      "path": "small_cnn_v2/runs/F-S/last_checkpoint.pt",
+      "step": 10000,
+      "full_resume_state": true
+    },
+    "accepted": {
+      "path": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\small_cnn_v2\\seed_20260903\\best_checkpoint.pt",
+      "step": 0,
+      "path_base": "03_new_spmsm_project"
+    },
+    "fallback_to_f0": true,
+    "checkpoint_sha256": {
+      "best_unconstrained.pt": "4d0789e03e986ec448212451812fb10271ccc68d2937889debdfe792acb2a25a",
+      "last_checkpoint.pt": "9d6f896e909a892c9c486625f8dfddc4b9ce7de145c5bbc94a42fc95186b3275"
+    }
+  },
+  "mini_inception_v2/G-S": {
+    "original_f0": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\mini_inception_v2\\seed_20260903\\best_checkpoint.pt",
+    "original_f0_sha256": "ecb2d1671d4725b1cff2fadac768b97210dc33b8d401f7b8e6654030d77ace75",
+    "path_base": "experiments\\cnn_replay_update_v1\\logical6x20",
+    "best_unconstrained": {
+      "path": "mini_inception_v2/runs/G-S/best_unconstrained.pt",
+      "step": 5000
+    },
+    "best_feasible": null,
+    "final": {
+      "path": "mini_inception_v2/runs/G-S/last_checkpoint.pt",
+      "step": 10000,
+      "full_resume_state": true
+    },
+    "accepted": {
+      "path": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\mini_inception_v2\\seed_20260903\\best_checkpoint.pt",
+      "step": 0,
+      "path_base": "03_new_spmsm_project"
+    },
+    "fallback_to_f0": true,
+    "checkpoint_sha256": {
+      "best_unconstrained.pt": "75fbdfa7c43b437e83ce25270f45ee9f1f2f5e822577ad122c9255232cc9e482",
+      "last_checkpoint.pt": "6d112fa733a12ddd0f861afa8e46376535b0b40a187349b357e4ddcce2954b60"
+    }
+  },
+  "mini_inception_v2/F-S": {
+    "original_f0": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\mini_inception_v2\\seed_20260903\\best_checkpoint.pt",
+    "original_f0_sha256": "ecb2d1671d4725b1cff2fadac768b97210dc33b8d401f7b8e6654030d77ace75",
+    "path_base": "experiments\\cnn_replay_update_v1\\logical6x20",
+    "best_unconstrained": {
+      "path": "mini_inception_v2/runs/F-S/best_unconstrained.pt",
+      "step": 7000
+    },
+    "best_feasible": null,
+    "final": {
+      "path": "mini_inception_v2/runs/F-S/last_checkpoint.pt",
+      "step": 10000,
+      "full_resume_state": true
+    },
+    "accepted": {
+      "path": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\mini_inception_v2\\seed_20260903\\best_checkpoint.pt",
+      "step": 0,
+      "path_base": "03_new_spmsm_project"
+    },
+    "fallback_to_f0": true,
+    "checkpoint_sha256": {
+      "best_unconstrained.pt": "682c97c08fbb1e700141414acb4b6f147c69b8b4cab46f21650d128df524fb98",
+      "last_checkpoint.pt": "346ef7d13c3afb7cf1c26e15ca651978004634ddb66c463544661baa50b31b3b"
+    }
+  },
+  "resnet20_v2/G-S": {
+    "original_f0": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\resnet20_v2\\seed_20260903\\best_checkpoint.pt",
+    "original_f0_sha256": "7ae9772b953a02a2e4b20bb9afde965b8e3ceab38d3d7838a6be4758f9a8054b",
+    "path_base": "experiments\\cnn_replay_update_v1\\logical6x20",
+    "best_unconstrained": {
+      "path": "resnet20_v2/runs/G-S/best_unconstrained.pt",
+      "step": 3500
+    },
+    "best_feasible": null,
+    "final": {
+      "path": "resnet20_v2/runs/G-S/last_checkpoint.pt",
+      "step": 10000,
+      "full_resume_state": true
+    },
+    "accepted": {
+      "path": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\resnet20_v2\\seed_20260903\\best_checkpoint.pt",
+      "step": 0,
+      "path_base": "03_new_spmsm_project"
+    },
+    "fallback_to_f0": true,
+    "checkpoint_sha256": {
+      "best_unconstrained.pt": "2923a4042ba43889b62d2e3376d93adcc15242533e69cdbca04afe3a0ece4e70",
+      "last_checkpoint.pt": "15c6a82dc974ae902ef252aa9a6260ecfc2cb51ce49c12390a1a5869bbac6879"
+    }
+  },
+  "resnet20_v2/F-S": {
+    "original_f0": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\resnet20_v2\\seed_20260903\\best_checkpoint.pt",
+    "original_f0_sha256": "7ae9772b953a02a2e4b20bb9afde965b8e3ceab38d3d7838a6be4758f9a8054b",
+    "path_base": "experiments\\cnn_replay_update_v1\\logical6x20",
+    "best_unconstrained": {
+      "path": "resnet20_v2/runs/F-S/best_unconstrained.pt",
+      "step": 9500
+    },
+    "best_feasible": null,
+    "final": {
+      "path": "resnet20_v2/runs/F-S/last_checkpoint.pt",
+      "step": 10000,
+      "full_resume_state": true
+    },
+    "accepted": {
+      "path": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\resnet20_v2\\seed_20260903\\best_checkpoint.pt",
+      "step": 0,
+      "path_base": "03_new_spmsm_project"
+    },
+    "fallback_to_f0": true,
+    "checkpoint_sha256": {
+      "best_unconstrained.pt": "3da6d26ddf79a721e433748041e2a1017d806d72377d45d7bb8c16a8bcb67636",
+      "last_checkpoint.pt": "435f0bbd3b96151faf6cd800fcc60ded37ed743ba8235cfd6ba0350741a761e7"
+    }
+  }
+}

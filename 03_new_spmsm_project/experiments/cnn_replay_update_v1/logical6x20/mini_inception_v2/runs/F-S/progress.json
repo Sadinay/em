@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "group": "F-S",
+  "stop_reason": "fixed_10000_successful_updates",
+  "updates": 10000,
+  "elapsed_seconds": 197.37405740000395,
+  "best": {
+    "feasible_score": null,
+    "feasible_step": null,
+    "unconstrained_score": 0.17008582949638368,
+    "unconstrained_step": 7000,
+    "constrained_incumbent": 0.3952553763985634
+  },
+  "success": false,
+  "conclusion": "本轮未找到满足条件的改善模型",
+  "selected_step": 0,
+  "selected_checkpoint": "cnn_zone\\models\\v3_40000_6runs\\logical6x20\\mini_inception_v2\\seed_20260903\\best_checkpoint.pt",
+  "fallback_to_f0": true,
+  "final_checkpoint": "last_checkpoint.pt",
+  "final_checkpoint_step": 10000,
+  "sampled": {
+    "old_draws": 480000,
+    "new_draws": 160000,
+    "amp_skipped_attempts": 0
+  },
+  "old_unique_covered": 40000,
+  "new_unique_covered": 1400,
+  "successful_update_old_draws": 480000,
+  "successful_update_new_draws": 160000,
+  "final_learning_rate": 2.5e-05,
+  "test_predictions": 0,
+  "checkpoint_sha256": {
+    "best_unconstrained.pt": "682c97c08fbb1e700141414acb4b6f147c69b8b4cab46f21650d128df524fb98",
+    "last_checkpoint.pt": "346ef7d13c3afb7cf1c26e15ca651978004634ddb66c463544661baa50b31b3b"
+  }
+}

@@ -1,0 +1,7 @@
+﻿architecture,group,updates,minutes,old_draws,new_draws,amp_skipped_attempts,successful_old_draws,successful_new_draws,old_unique,new_unique,final_lr,stop_reason
+small_cnn_v2,G-S,20000,2.879374643333358,1120224,160032,4,1120000,160000,40000,1400,1.5625e-06,fixed_20000_successful_updates
+small_cnn_v2,F-S,20000,2.8669356383333553,1120280,160040,5,1120000,160000,40000,1400,1e-06,fixed_20000_successful_updates
+mini_inception_v2,G-S,20000,6.943517683333387,1120224,160032,4,1120000,160000,40000,1400,1e-06,fixed_20000_successful_updates
+mini_inception_v2,F-S,20000,6.988496840000031,1120224,160032,4,1120000,160000,40000,1400,1.5625e-06,fixed_20000_successful_updates
+resnet20_v2,G-S,20000,5.357203078333381,1120112,160016,2,1120000,160000,40000,1400,1e-06,fixed_20000_successful_updates
+resnet20_v2,F-S,20000,5.378563479999987,1120168,160024,3,1120000,160000,40000,1400,1e-06,fixed_20000_successful_updates

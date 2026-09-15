@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "group": "G-S",
+  "stop_reason": "fixed_20000_successful_updates",
+  "updates": 20000,
+  "elapsed_seconds": 172.7624786000015,
+  "best": {
+    "feasible_score": 0.05720778688788414,
+    "feasible_step": 11500,
+    "unconstrained_score": 0.05643099755048752,
+    "unconstrained_step": 15500,
+    "constrained_incumbent": 0.05720778688788414
+  },
+  "success": true,
+  "conclusion": "found constrained improvement",
+  "selected_step": 11500,
+  "selected_checkpoint": "runs\\G-S\\best_feasible.pt",
+  "fallback_to_f0": false,
+  "final_checkpoint": "last_checkpoint.pt",
+  "final_checkpoint_step": 20000,
+  "sampled": {
+    "old_draws": 1120224,
+    "new_draws": 160032,
+    "amp_skipped_attempts": 4
+  },
+  "old_unique_covered": 40000,
+  "new_unique_covered": 1400,
+  "successful_update_old_draws": 1120000,
+  "successful_update_new_draws": 160000,
+  "final_learning_rate": 1.5625e-06,
+  "test_predictions": 0,
+  "checkpoint_sha256": {
+    "best_feasible.pt": "6daf1905395b18d0a6b6677cb5fed4d243c1328219f6208cc04e73b026101d1f",
+    "best_unconstrained.pt": "c818d8a4bf417fe511f0d2dc1498dfa9df5c184e19702ca085981e9dbd45f96b",
+    "last_checkpoint.pt": "8e9c87a2ceaeab3b9920ddaa7debdcc93a7568c53042db0667264ca590b9105d"
+  }
+}

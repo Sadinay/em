@@ -1,0 +1,43 @@
+{
+  "checked_runs": [
+    {
+      "architecture": "small_cnn_v2",
+      "group": "G-S",
+      "selection_recomputed": true,
+      "checkpoint_hashes_match": true
+    },
+    {
+      "architecture": "small_cnn_v2",
+      "group": "F-S",
+      "selection_recomputed": true,
+      "checkpoint_hashes_match": true
+    },
+    {
+      "architecture": "mini_inception_v2",
+      "group": "G-S",
+      "selection_recomputed": true,
+      "checkpoint_hashes_match": true
+    },
+    {
+      "architecture": "mini_inception_v2",
+      "group": "F-S",
+      "selection_recomputed": true,
+      "checkpoint_hashes_match": true
+    },
+    {
+      "architecture": "resnet20_v2",
+      "group": "G-S",
+      "selection_recomputed": true,
+      "checkpoint_hashes_match": true
+    },
+    {
+      "architecture": "resnet20_v2",
+      "group": "F-S",
+      "selection_recomputed": true,
+      "checkpoint_hashes_match": true
+    }
+  ],
+  "prediction_tables_checked": 34,
+  "mae_rmse_p95_recomputed": true,
+  "test_used": false
+}

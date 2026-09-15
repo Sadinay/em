@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "architecture": "small_cnn_v2",
+      "group": "G-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "f6e8bcf65c0e0e76588361f9facbd84c9e2132b160dd92bb075612e72b21e58f"
+    },
+    {
+      "architecture": "small_cnn_v2",
+      "group": "G-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 15500,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "51a902badd8d9b8c900ef48b4436f7a9823858bb17392a4d221dad55d9d8adc7"
+    },
+    {
+      "architecture": "small_cnn_v2",
+      "group": "G-S",
+      "checkpoint": "best_feasible.pt",
+      "step": 11500,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "d5bfc6a2c38909019774cfb16c359c6ad0371f99fcbad169f34220078bc1666d"
+    },
+    {
+      "architecture": "small_cnn_v2",
+      "group": "F-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "39de38cb07d861de9734d353e2185effc599841a91a07431b1cef0eee3c14c74"
+    },
+    {
+      "architecture": "small_cnn_v2",
+      "group": "F-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 9500,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "280c722d21be79322e078c1f9efecb029da9293683498894be0b7a72207615aa"
+    },
+    {
+      "architecture": "mini_inception_v2",
+      "group": "G-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "4fbb63367381f3abec8a6b30be8522440dba82e5b84a29bc3d6859eb4a711089"
+    },
+    {
+      "architecture": "mini_inception_v2",
+      "group": "G-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 7000,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "a8e7def6bc7f0115a301bf1d10bac0ad66eab568b1bd8abbe106e00b1d916c12"
+    },
+    {
+      "architecture": "mini_inception_v2",
+      "group": "G-S",
+      "checkpoint": "best_feasible.pt",
+      "step": 10500,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "eb0921287a3ebb4b852e0cb1687dcb5ce4b0a52de45372715786da278366d705"
+    },
+    {
+      "architecture": "mini_inception_v2",
+      "group": "F-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "7dca78b657655b7888e9ffe1575595ae87213ee50a2b0771a13ad2301b9b9c88"
+    },
+    {
+      "architecture": "mini_inception_v2",
+      "group": "F-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 16000,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "3f9b89ae2bf72e1e5fe041ba670325d5afb8e1fa0df0b690e64bdda8a2b54fc6"
+    },
+    {
+      "architecture": "resnet20_v2",
+      "group": "G-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "a75704165aeb76f540acdebf8b8da2dbc05e89777abcf6c23608f59bee803703"
+    },
+    {
+      "architecture": "resnet20_v2",
+      "group": "G-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 15500,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "aae89f6d123cdd2585e72549ad8b0340a396b649bed03f9e0cb65a2706435e96"
+    },
+    {
+      "architecture": "resnet20_v2",
+      "group": "F-S",
+      "checkpoint": "last_checkpoint.pt",
+      "step": 20000,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "6b456072e5ecd39525f9f2745b2d7ffd93757c90aa01365c140c4b841efba9cc"
+    },
+    {
+      "architecture": "resnet20_v2",
+      "group": "F-S",
+      "checkpoint": "best_unconstrained.pt",
+      "step": 10000,
+      "full_validation_metrics_exact_match": true,
+      "model_state_sha256": "29427ad91b989776450b0318ba949578c8ff6b89bcd436df7e45da6fa02a3491"
+    }
+  ],
+  "original_vgg_artifacts_unchanged": true,
+  "original_logical_f0_hashes_verified": true,
+  "full_optimizer_update_counts_verified": true,
+  "batchnorm_counters_match_successful_updates": true,
+  "test_used": false
+}

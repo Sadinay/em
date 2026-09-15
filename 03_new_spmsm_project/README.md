@@ -1,5 +1,7 @@
 # 新 SPMSM 遗传优化项目（第三类基因）
 
+2026-09-15 小模型补充：**三个6×20网络的v1/v2共12组训练已完成**，合计约45分钟。v2 SmallCNN G-S与Mini-Inception G-S通过各自旧模型5%容限。源码与结果位于 [v1小模型](experiments/cnn_replay_update_v1/logical6x20/README.md)、[v2小模型及两版比较](experiments/cnn_replay_update_v2/logical6x20/README.md)。原VGG16实验保留。
+
 2026-09-15 更新：**v2 高旧回放比例实验已完成**，G-S/F-S各5000次更新；两组仍未同时通过旧分布双目标5%容限。源码、模型和对比报告集中在 [cnn_replay_update_v2](experiments/cnn_replay_update_v2/README.md)，先看[本轮结果](experiments/cnn_replay_update_v2/report/REPORT.md)。
 
 本项目按 `02_new_ipmsm_project` 的功能区规格独立组织，用于 `SPMSM_discrete.fem` 与 `workspace_200.mat` 所代表的第三类基因和电机结构。03 与 01、02 的基因编码、FEMM 几何映射、GA 配置、数据库、CNN 模型及实验结果不得混用。
