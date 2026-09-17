@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "prepared_inputs_verified": 120,
+  "pending_angles": 120,
+  "solve_attempts": 0,
+  "all_test_solve_requires_successful_pilot": true,
+  "portable_relocation_prepare_passed": true,
+  "runtime_fingerprint_equal_after_relocation": true,
+  "runtime_fingerprint": "c04d9ad27775eed9cb1354a5feb277a8358064c6f1a8db913bdfb5147b157286",
+  "reused_solver_functions": {
+    "prepare_cases": "3ba90824431d02e41a68b6f043fda84627c2110701a8c2562fd15a0996bcedf0",
+    "validate_model_settings": "858de14148bbd7ce5afbafafc16e005014524c46787e87df268c4cd4380c803c",
+    "validate_success": "81740d4d436289ab62c0bc68c75eaddb3f27e6623545501a0f43126d77a5caed",
+    "solve_angle": "2e98b14c52832fb4e977dbcda92610a066121100039816edb1900829bd1955c6",
+    "solve_gene": "54273b5c030aabccc8dbf47a9d9c98445dc9bcb2d27224050054d8de4c5e1ba1",
+    "worker_init": "c3b53ccf2196ba3e039c475ae1df1007c56b8b6656e2001496284cb8759ece19",
+    "dispatch_genes": "90d4498ac59ade1dae5fb785ab9c991c1c32b152b9cfd5c3385ed1164e547114",
+    "failure_limit": "460f84e984c6942bd2a8763e04968e8417197f91c84a4afab92fa9048caaa60a",
+    "solve_queue": "c341d5e8cc36e64182ab7c634908c8b68aba626feeb72fef03667508119f4c87",
+    "aggregate_results": "de73d6408ea479ea061ca26a4ec0f927cffee7396d8c78921dd58a591eefb890"
+  },
+  "adapter_changes": [
+    "short isolated work paths for Windows MAX_PATH",
+    "train_dev and sealed_test output partitions",
+    "normalize machine paths in physics contract; retain solver binary fingerprint",
+    "accepted-source identity check replaces deleted historical ANS lookup; actual pilot mandatory"
+  ]
+}

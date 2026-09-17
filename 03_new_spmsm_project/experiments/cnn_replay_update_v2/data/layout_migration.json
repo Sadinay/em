@@ -1,0 +1,191 @@
+{
+  "purpose": "Path-only layout migration; original frozen source identities validated by new source hashes; historical records and model/config bytes preserved.",
+  "rules": [
+    [
+      "logical6x20/final_checkpoint_verification.json",
+      "models/final_checkpoint_verification.json"
+    ],
+    [
+      "logical6x20/original_vgg_artifacts.json",
+      "models/original_vgg_artifacts.json"
+    ],
+    [
+      "logical6x20/ARTIFACT_CHECKSUMS.json",
+      "models/ARTIFACT_CHECKSUMS.json"
+    ],
+    [
+      "logical6x20/mini_inception_v2/audit",
+      "data/mini_inception_v2/audit"
+    ],
+    [
+      "logical6x20/offline_checks.json",
+      "models/offline_checks.json"
+    ],
+    [
+      "logical6x20/plot_performance.py",
+      "models/plot_performance.py"
+    ],
+    [
+      "logical6x20/suite_progress.json",
+      "models/suite_progress.json"
+    ],
+    [
+      "logical6x20/small_cnn_v2/audit",
+      "data/small_cnn_v2/audit"
+    ],
+    [
+      "logical6x20/mini_inception_v2",
+      "models/mini_inception_v2"
+    ],
+    [
+      "logical6x20/report_results.py",
+      "models/report_results.py"
+    ],
+    [
+      "logical6x20/resnet20_v2/audit",
+      "data/resnet20_v2/audit"
+    ],
+    [
+      "logical6x20/test_update.py",
+      "models/test_update.py"
+    ],
+    [
+      "logical6x20/visual_qa.json",
+      "models/visual_qa.json"
+    ],
+    [
+      "logical6x20/small_cnn_v2",
+      "models/small_cnn_v2"
+    ],
+    [
+      "ARTIFACT_CHECKSUMS.json",
+      "models/vgg16/ARTIFACT_CHECKSUMS.json"
+    ],
+    [
+      "logical6x20/resnet20_v2",
+      "models/resnet20_v2"
+    ],
+    [
+      "logical6x20/STATUS.json",
+      "models/STATUS.json"
+    ],
+    [
+      "logical6x20/__pycache__",
+      "models/__pycache__"
+    ],
+    [
+      "logical6x20/README.md",
+      "models/README.md"
+    ],
+    [
+      "logical6x20/update.py",
+      "models/update.py"
+    ],
+    [
+      "logical6x20/report",
+      "reports/logical6x20"
+    ],
+    [
+      "report_results.py",
+      "models/vgg16/report_results.py"
+    ],
+    [
+      "logical6x20/logs",
+      "models/logs"
+    ],
+    [
+      "source_snapshot",
+      "models/vgg16/source_snapshot"
+    ],
+    [
+      "config.json",
+      "models/vgg16/config.json"
+    ],
+    [
+      "__pycache__",
+      "models/vgg16/__pycache__"
+    ],
+    [
+      "README.md",
+      "models/vgg16/README.md"
+    ],
+    [
+      "STATUS.md",
+      "models/vgg16/STATUS.md"
+    ],
+    [
+      "update.py",
+      "models/vgg16/update.py"
+    ],
+    [
+      "baseline",
+      "models/vgg16/baseline"
+    ],
+    [
+      "report",
+      "reports/vgg16"
+    ],
+    [
+      "audit",
+      "models/vgg16/audit"
+    ],
+    [
+      "tests",
+      "models/vgg16/tests"
+    ],
+    [
+      "audit",
+      "data/vgg16/audit"
+    ],
+    [
+      "logs",
+      "models/vgg16/logs"
+    ],
+    [
+      "runs",
+      "models/vgg16/runs"
+    ]
+  ],
+  "relocated_sources": {
+    "models/plot_performance.py": {
+      "original_sha256": "0dcd05fb16e72a03f0fc73cbea85b1283efe4784901ee0f3acc49c4ebc28d18f",
+      "current_sha256": "83e543376f8e98cc4f6fb95b0ad9ecc01dc964da1b0c6601143ee72ae0806173"
+    },
+    "models/report_results.py": {
+      "original_sha256": "2acae435af468c8fc7d992ce7757633bf77d706fd7121e5426bd9c0f7a5262eb",
+      "current_sha256": "f3295fb010fa095c877dd1f81d06389de98cb7df3eeee4ca96e1ab152c5f5a06"
+    },
+    "models/test_update.py": {
+      "original_sha256": "372d67be0da0a3705489fee7e8034db054e4298aa614bc960151b9f6d67d272c",
+      "current_sha256": "c14852e4d2251cae6361cbf6a858d5401e6a6287c36fa64e5efc1ea1a42ebf38"
+    },
+    "models/update.py": {
+      "original_sha256": "68a640d6d3d41738e4c52f6add5eae67d161dd13d4b3fc6429f60329378116c3",
+      "current_sha256": "503254f53247052d3d064e4fd77a878e662ca317db11582ea2e8a9a546dfc06c"
+    },
+    "models/vgg16/report_results.py": {
+      "original_sha256": "8658ff4e183d581de9401b3b865ca933eef4113a7a5b70da8ac025016fb42a1c",
+      "current_sha256": "cbb4c2375b27d13694b473a43b04ec8e246b5d1f258e491b5d9a8ba29a60851f"
+    },
+    "models/vgg16/tests/test_update.py": {
+      "original_sha256": "b5882b3f6ee28f80b165c2fc8f22fea783e4b6e8cecb06631e6437969ebf4d8c",
+      "current_sha256": "2ded4f96b4ff9b7fb4383a9582bd599ab33c71b7b963e5854a6af282bb3acb1f"
+    },
+    "models/vgg16/update.py": {
+      "original_sha256": "dc8f0cd5657a78140eb8781dcf21e2b30a17102549d7127421e309c8888f03aa",
+      "current_sha256": "2985b087fc7d017351aa0f0202eb7aef22f6168c111370af27f43793f8e00991"
+    },
+    "data/vgg16/audit/v1_interpretation_before_restore.md": {
+      "original_sha256": "be1df36b0b54fd04a4c1c89bf9fad32fbf78e94aab4afe91f834ca8788d7ddfa",
+      "current_sha256": "d3a9d54cae296dcfad9e270dff70d7188abc8bb70bf9695abb7bc30d6eff6036"
+    },
+    "models/README.md": {
+      "original_sha256": "d653f8cce88e1320185437237336f866e3cdc5252432f0e925d82364bc43ce92",
+      "current_sha256": "ab12fcc1c4e46eb19f3cdeaf0fd17fd6f025d8d30caf1ad81b404d937630c505"
+    },
+    "models/vgg16/README.md": {
+      "original_sha256": "caa25e1ea0d70471e4089c3097611f9c69bf7c8eb5d00f4349e70b261d2a0d4e",
+      "current_sha256": "9545a6f2d14805a62e2d26d25de675a218c59556d651743ecef260b7f89fbb4c"
+    }
+  }
+}

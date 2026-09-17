@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "reference_count": 54537,
+  "candidate_count": 100000,
+  "train": 8000,
+  "validation": 1000,
+  "new_test": 1000,
+  "unique_final_genes": 10000,
+  "nominal_angle_tasks": 60000,
+  "pilot_genes": 20,
+  "pilot_included_in_train": true,
+  "source_counts": {
+    "candidate_train": {
+      "U": 25000,
+      "L": 25000,
+      "B": 25000,
+      "P": 25000
+    },
+    "dev": {
+      "U": 250,
+      "L": 250,
+      "B": 250,
+      "P": 250
+    },
+    "test": {
+      "U": 250,
+      "L": 250,
+      "B": 250,
+      "P": 250
+    }
+  },
+  "all_generated_unique": 102000,
+  "all_known_excluded": true,
+  "family_and_parent_sets_disjoint": true,
+  "repair_recomputed_for_all_generated": true,
+  "holdout_parameters_not_in_train": true,
+  "test_labels_read": 0,
+  "test_features_extracted": false,
+  "reference_scaler_manifest_matches": true,
+  "model_state_invariant": true,
+  "generation_function_sha256": "1cdc54b89029228fcfeacbd77d8437868be56bc542eabb9b5ed2b6eb87e55506",
+  "generator_and_repair_source_sha256": "216c13fc16674ded805196b97f689bacdbdf17c8564638fa8e08426a1cef191a",
+  "source_code_sha256": "7deb65cbfec90117e107918743ae86a9a4d4a6cfda36cfc95c120e07ba3c4946",
+  "git_head": "f75d1c3d1ac5222509a28c665c594a5b91ac059e"
+}

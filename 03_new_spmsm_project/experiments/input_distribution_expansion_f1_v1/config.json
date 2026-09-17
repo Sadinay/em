@@ -1,0 +1,114 @@
+{
+  "seed": 20260916,
+  "streams": {
+    "pool": 15017052084535604351,
+    "dev": 15767888198601995702,
+    "test": 3043927880164158447,
+    "parents": 5673000364427966516,
+    "random_anchors": 6886472434462313142
+  },
+  "candidates_per_source": 25000,
+  "dev_per_source": 250,
+  "test_per_source_regular": 125,
+  "test_per_source_holdout": 125,
+  "magnet_count_range": [
+    12,
+    108
+  ],
+  "held_U_counts": [
+    3,
+    6,
+    114,
+    117
+  ],
+  "scales": {
+    "L": [
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.5,
+        2
+      ],
+      [
+        1.5,
+        0.5
+      ],
+      [
+        1.5,
+        2
+      ]
+    ],
+    "B": [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        8
+      ]
+    ]
+  },
+  "held_scales": {
+    "L": [
+      [
+        0.75,
+        1
+      ],
+      [
+        1,
+        1.5
+      ]
+    ],
+    "B": [
+      [
+        1,
+        8
+      ],
+      [
+        4,
+        2
+      ]
+    ]
+  },
+  "rectangles_regular": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "rectangles_held": [
+    [
+      4,
+      10
+    ],
+    [
+      6,
+      8
+    ]
+  ],
+  "regular_P_rectangles": 2,
+  "held_P_rectangles": 1,
+  "repair": "original synchronous 8-neighbor isolated-cell flip; finite 6x20 no wrap; reject cycles",
+  "parent_policy": "same historical role-reserved parent sets; legal old-training parents only; not unseen-parent generalization",
+  "feature_model_sha256": "9612f9892e76bc354ca6c6e885a57b29f865da8b84d0f3b67b195befc6980346",
+  "femm_config_sha256": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f"
+}

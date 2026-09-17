@@ -1,0 +1,4115 @@
+{
+  "contract": {
+    "values_sha256": "a8563e254ce0f6bc692d3560163c447f7d7ffd78cd814dd2b2f9f81566682c68",
+    "ids_sha256": "01269ebed039a1a5e1f797f9ca5c9e7f7b0b5b38609033cb7dc62db73cdfeafb",
+    "candidate_count": 54537,
+    "select_count": 512,
+    "initial": [
+      35058
+    ],
+    "algorithm_sha256": "e0e2e9e34c6b3cf79ead800101a7ef3724b5ce68dc46794723eeaa49af593e72",
+    "dtype": "float64",
+    "distance": "direct squared differences; row blocks8192"
+  },
+  "trace": [
+    {
+      "rank": 1,
+      "index": 35058,
+      "gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a",
+      "distance_squared": 0.0,
+      "cluster_sum": 0.0,
+      "initial_mean_nearest": true
+    },
+    {
+      "rank": 2,
+      "index": 28078,
+      "gene_id": "8314ecebaa022ebbb775a94c97211181472cb39c1532c1d0ac6e6f3fb1ab6f5f",
+      "distance_squared": 90.1342986878237,
+      "cluster_sum": 64698.37648625399,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 3,
+      "index": 18917,
+      "gene_id": "58314f306ae21c4bc88d02daa27b1337ffb621029d7e218efa679b05bb75cc58",
+      "distance_squared": 31.330462823845547,
+      "cluster_sum": 60084.625183345925,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 4,
+      "index": 31922,
+      "gene_id": "957dc1c741bb2e3e387951fd25a14e3e00804c68f81dd04cd580b86dd9ad35af",
+      "distance_squared": 17.356653835303614,
+      "cluster_sum": 53007.738556507495,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 5,
+      "index": 46214,
+      "gene_id": "d92bec9347c656c7352b3c1fa188cd4d93e51f054cf9974fbff2e13f9b108d3c",
+      "distance_squared": 17.126854274375773,
+      "cluster_sum": 50670.91992823484,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 6,
+      "index": 47079,
+      "gene_id": "dcfe381ca1ad7dd4859751e9378c15c6e8d7abf39905f23c1d23f7e2284f6947",
+      "distance_squared": 7.833828569619977,
+      "cluster_sum": 44687.00727600612,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 7,
+      "index": 10842,
+      "gene_id": "323d91dc840ebdc95c63bea16fc9a2af321e7816b7f76ff046dc84985bdccd5f",
+      "distance_squared": 6.573480203015569,
+      "cluster_sum": 39425.08050446439,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 8,
+      "index": 35217,
+      "gene_id": "a52da61abf05979150d37cafaecf518f02e60f1d3a37750c27e013c20bae8a1b",
+      "distance_squared": 4.76506598787811,
+      "cluster_sum": 38788.70599642037,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 9,
+      "index": 22202,
+      "gene_id": "67f48ea3589769849d35234cdde33d79ff91815f8188e92b5df704f175a3046b",
+      "distance_squared": 3.981966224253397,
+      "cluster_sum": 31595.884438228266,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 10,
+      "index": 21129,
+      "gene_id": "62ecb22c006d966be6423f4978dd7ad54d492ae89e8c44f2ea1faf4fb44ffaaf",
+      "distance_squared": 3.309671678868045,
+      "cluster_sum": 26661.046846016652,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 11,
+      "index": 25543,
+      "gene_id": "77144e662ee547d21e18add13786bc76ab71ff5135104ac7e0c08229ae3248e7",
+      "distance_squared": 2.4509668867617465,
+      "cluster_sum": 24610.40355336715,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 12,
+      "index": 33811,
+      "gene_id": "9e8bcfcd1ffdb84441c3e59fdcc99e52a2e7fbacd8b2fc16bc5135fd01f299a7",
+      "distance_squared": 2.266030543515022,
+      "cluster_sum": 20313.734428811447,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 13,
+      "index": 7005,
+      "gene_id": "2041e9c30b0f2f7bcea964434c31182cfc5434a96cc759ea93bf258b78e478ef",
+      "distance_squared": 1.7648292642326273,
+      "cluster_sum": 13621.333669380943,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 14,
+      "index": 21829,
+      "gene_id": "662aa6e778fc8ce136a73ae75c70cfae165c59a63a7e9ccf232fcffe735d6e3f",
+      "distance_squared": 1.2836518298098492,
+      "cluster_sum": 11970.58421050764,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 15,
+      "index": 3362,
+      "gene_id": "0f465fbc8d938d3c21f2456aca73de373789deb90ff3781ab2d957e129117e04",
+      "distance_squared": 1.1160613484251818,
+      "cluster_sum": 9384.905627365244,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 16,
+      "index": 1033,
+      "gene_id": "04b565f3589a8aaf6bb37cd40f485272153e63bd3e947a38efd5fb6a07071493",
+      "distance_squared": 1.115487412860163,
+      "cluster_sum": 8106.596719598671,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 17,
+      "index": 36168,
+      "gene_id": "a9c2e5e7fc247e2b12210ef82f83e31bc1c13a33c3a47edc44e62296ef3b0d98",
+      "distance_squared": 0.7817392042402758,
+      "cluster_sum": 4780.739759972867,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 18,
+      "index": 34739,
+      "gene_id": "a329f94133ee798fba81e8ed51046f12e2662c3be7670f21affc0dfe78295e05",
+      "distance_squared": 0.6759379662123027,
+      "cluster_sum": 4436.188912016377,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 19,
+      "index": 6215,
+      "gene_id": "1ca01d54815a9cd75dae04e6b7dfadad986aa2ded5b699804d23e9582395dc48",
+      "distance_squared": 0.6457324911751519,
+      "cluster_sum": 3556.526032345299,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 20,
+      "index": 3267,
+      "gene_id": "0ee44c77b44ca943dd8978da3742f7d2e97eaa8c3d989bef7f3bf9fdace31806",
+      "distance_squared": 0.558862371030484,
+      "cluster_sum": 2190.3401160825138,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 21,
+      "index": 21948,
+      "gene_id": "66ab187a497463d077dd3a65b2df46bab033fafd31acade651d96636c4e69c7f",
+      "distance_squared": 0.34058584995165375,
+      "cluster_sum": 1619.0305458460732,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 22,
+      "index": 2249,
+      "gene_id": "0a2db15eae78f1ecb5eba765c6e98387fcdcbe074cf835c30db2dff0a92365cb",
+      "distance_squared": 0.33094586824232414,
+      "cluster_sum": 1225.9475970481437,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 23,
+      "index": 20782,
+      "gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c",
+      "distance_squared": 0.32009680814984337,
+      "cluster_sum": 1020.9473958041333,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 24,
+      "index": 5228,
+      "gene_id": "17ee4cefed9d0879f5baf6967705ceacdf284cb6bff0239b1af788cdadd3c24d",
+      "distance_squared": 1.130676187416056,
+      "cluster_sum": 778.4300896392374,
+      "region_center_gene_id": "662aa6e778fc8ce136a73ae75c70cfae165c59a63a7e9ccf232fcffe735d6e3f"
+    },
+    {
+      "rank": 25,
+      "index": 31051,
+      "gene_id": "9137c009da1fb665bdd47a605587461e60681a35a5c34abd79b0de17233f87e9",
+      "distance_squared": 0.48759860799991855,
+      "cluster_sum": 626.9287304792313,
+      "region_center_gene_id": "04b565f3589a8aaf6bb37cd40f485272153e63bd3e947a38efd5fb6a07071493"
+    },
+    {
+      "rank": 26,
+      "index": 47373,
+      "gene_id": "de57d75451a4eada1687f322d91ba16127bbd0400b1182cb384367f85f3c04b3",
+      "distance_squared": 6.172755819348454,
+      "cluster_sum": 606.9977709484809,
+      "region_center_gene_id": "dcfe381ca1ad7dd4859751e9378c15c6e8d7abf39905f23c1d23f7e2284f6947"
+    },
+    {
+      "rank": 27,
+      "index": 37691,
+      "gene_id": "b112e31ca037fefad583ce47f41f730e0c2e938e23753c3a1187faa6235bb59e",
+      "distance_squared": 0.29967504551630286,
+      "cluster_sum": 580.4833147894498,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 28,
+      "index": 23416,
+      "gene_id": "6d5dc619ce37f8117b40a46ee78ae0952f25d4da585e2c4bbb623b3b9d5f49ff",
+      "distance_squared": 0.5968371526800513,
+      "cluster_sum": 572.9738245492878,
+      "region_center_gene_id": "662aa6e778fc8ce136a73ae75c70cfae165c59a63a7e9ccf232fcffe735d6e3f"
+    },
+    {
+      "rank": 29,
+      "index": 17800,
+      "gene_id": "52cf756f35c47f69d6aee220cea1572c9708d251e4590c0ba7fb9d2d0b930399",
+      "distance_squared": 0.4566114971419147,
+      "cluster_sum": 541.4902188005686,
+      "region_center_gene_id": "04b565f3589a8aaf6bb37cd40f485272153e63bd3e947a38efd5fb6a07071493"
+    },
+    {
+      "rank": 30,
+      "index": 43519,
+      "gene_id": "cc3092898a909956e4e83ab86a45731a1a1ad2005f5d192102ecb2c7c395f526",
+      "distance_squared": 4.635981320744423,
+      "cluster_sum": 475.8180529785951,
+      "region_center_gene_id": "dcfe381ca1ad7dd4859751e9378c15c6e8d7abf39905f23c1d23f7e2284f6947"
+    },
+    {
+      "rank": 31,
+      "index": 37991,
+      "gene_id": "b26a38328c161eeebbea63c2a1a18dda3a810ebdeb11175323391868c5743e02",
+      "distance_squared": 0.25832309270957,
+      "cluster_sum": 471.017732680872,
+      "region_center_gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c"
+    },
+    {
+      "rank": 32,
+      "index": 1128,
+      "gene_id": "05162b8d0564140da65292fdd2becfd857d63d07fb491fe5fdd48125a8b03982",
+      "distance_squared": 0.4456479713375938,
+      "cluster_sum": 447.3053409119879,
+      "region_center_gene_id": "662aa6e778fc8ce136a73ae75c70cfae165c59a63a7e9ccf232fcffe735d6e3f"
+    },
+    {
+      "rank": 33,
+      "index": 6724,
+      "gene_id": "1ef80c33fa432897e83dd7cf7f36535d55bf7413480cef7901c018d1c6b86bd0",
+      "distance_squared": 0.20947781588940503,
+      "cluster_sum": 443.9406945200685,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 34,
+      "index": 15970,
+      "gene_id": "4a0caaeced095a9e07148eff867b531681a17b24ef4809746add5e7e49169604",
+      "distance_squared": 0.18567044971478708,
+      "cluster_sum": 384.53562144298644,
+      "region_center_gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c"
+    },
+    {
+      "rank": 35,
+      "index": 3109,
+      "gene_id": "0e25b4dc5376d5d4ee96f0b05aa8ca8f731516dc352dbdac26682237526edc50",
+      "distance_squared": 0.913523610142469,
+      "cluster_sum": 321.64425337308586,
+      "region_center_gene_id": "0f465fbc8d938d3c21f2456aca73de373789deb90ff3781ab2d957e129117e04"
+    },
+    {
+      "rank": 36,
+      "index": 50735,
+      "gene_id": "ee446043c5f12fadba4881482a383e1d2d8d118103de80f9b7af6af3e55df137",
+      "distance_squared": 0.21805185943203848,
+      "cluster_sum": 307.82825534399586,
+      "region_center_gene_id": "66ab187a497463d077dd3a65b2df46bab033fafd31acade651d96636c4e69c7f"
+    },
+    {
+      "rank": 37,
+      "index": 33800,
+      "gene_id": "9e7b8d4395a1567cbea91c2dbb86f6e6592fe48bfc3b0661ea55264af792d0a1",
+      "distance_squared": 2.0242125845809604,
+      "cluster_sum": 302.61120847432665,
+      "region_center_gene_id": "17ee4cefed9d0879f5baf6967705ceacdf284cb6bff0239b1af788cdadd3c24d"
+    },
+    {
+      "rank": 38,
+      "index": 50994,
+      "gene_id": "ef78675925372064162bb94a2afdf5064d1d62002a9ac3663c399875849b84b1",
+      "distance_squared": 0.26409475798885085,
+      "cluster_sum": 284.8063561650604,
+      "region_center_gene_id": "1ca01d54815a9cd75dae04e6b7dfadad986aa2ded5b699804d23e9582395dc48"
+    },
+    {
+      "rank": 39,
+      "index": 52412,
+      "gene_id": "f6034fdd582ff31c571bbc7253ea11fd788f63d36a790f03b768919d9039ec82",
+      "distance_squared": 8.152347164373982,
+      "cluster_sum": 276.40571252079803,
+      "region_center_gene_id": "de57d75451a4eada1687f322d91ba16127bbd0400b1182cb384367f85f3c04b3"
+    },
+    {
+      "rank": 40,
+      "index": 38535,
+      "gene_id": "b50ddf8f21ee2c3232b501c104c2d9de46faa5aad07ef50ab847945ea63e9f25",
+      "distance_squared": 0.1731593696682579,
+      "cluster_sum": 260.180424536667,
+      "region_center_gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c"
+    },
+    {
+      "rank": 41,
+      "index": 7842,
+      "gene_id": "245467c521873c4c2091df70a78db0c144ef1a65597fad8d1b51bcd8fe6e8ab2",
+      "distance_squared": 0.16658600352324102,
+      "cluster_sum": 253.863485791544,
+      "region_center_gene_id": "66ab187a497463d077dd3a65b2df46bab033fafd31acade651d96636c4e69c7f"
+    },
+    {
+      "rank": 42,
+      "index": 28488,
+      "gene_id": "84ecd52c1da122a041a6baf2eed281c03c5052a6f0394b2aa6d3cdb1185be879",
+      "distance_squared": 3.1771188996942037,
+      "cluster_sum": 233.4056402391225,
+      "region_center_gene_id": "62ecb22c006d966be6423f4978dd7ad54d492ae89e8c44f2ea1faf4fb44ffaaf"
+    },
+    {
+      "rank": 43,
+      "index": 47778,
+      "gene_id": "e0383ecc4bf409c79aa253c96b29a059eef7e6d0758e1b8bccdbae7b8b68f6eb",
+      "distance_squared": 1.6124235312143234,
+      "cluster_sum": 226.69267733968988,
+      "region_center_gene_id": "77144e662ee547d21e18add13786bc76ab71ff5135104ac7e0c08229ae3248e7"
+    },
+    {
+      "rank": 44,
+      "index": 40033,
+      "gene_id": "bbcce5661afa2dc9a0006ddf0ed2bfaa4b3fcef8f3b279460d5991a2f155de68",
+      "distance_squared": 0.3815789093493229,
+      "cluster_sum": 192.57440227331747,
+      "region_center_gene_id": "0f465fbc8d938d3c21f2456aca73de373789deb90ff3781ab2d957e129117e04"
+    },
+    {
+      "rank": 45,
+      "index": 44259,
+      "gene_id": "cf9e386339e8d64984d4f38d3c094554610902084c7095405bb78bd4f55a0c49",
+      "distance_squared": 0.6497856852102977,
+      "cluster_sum": 184.85655477685887,
+      "region_center_gene_id": "77144e662ee547d21e18add13786bc76ab71ff5135104ac7e0c08229ae3248e7"
+    },
+    {
+      "rank": 46,
+      "index": 12087,
+      "gene_id": "38071711e0b4e05423373242350c14387deacc0de57e28c83a11a7f13a12e8dd",
+      "distance_squared": 0.29681934191073245,
+      "cluster_sum": 181.44698028700407,
+      "region_center_gene_id": "b26a38328c161eeebbea63c2a1a18dda3a810ebdeb11175323391868c5743e02"
+    },
+    {
+      "rank": 47,
+      "index": 29175,
+      "gene_id": "87f879bf8b5a4a047125735c3aec7e6a4fe90621f1897bd746a0c6d07e3654c6",
+      "distance_squared": 0.3822520545178898,
+      "cluster_sum": 180.98580431761835,
+      "region_center_gene_id": "662aa6e778fc8ce136a73ae75c70cfae165c59a63a7e9ccf232fcffe735d6e3f"
+    },
+    {
+      "rank": 48,
+      "index": 9585,
+      "gene_id": "2c49b5fedbd1faf02380a8be4d6d3edd4ceed9c4328c4d5ee4baa44a54e11400",
+      "distance_squared": 0.37642893586700993,
+      "cluster_sum": 149.32294027924263,
+      "region_center_gene_id": "0f465fbc8d938d3c21f2456aca73de373789deb90ff3781ab2d957e129117e04"
+    },
+    {
+      "rank": 49,
+      "index": 22112,
+      "gene_id": "6784cbc635df350385f43bf0beee59f18c2f34c20a5aa3245a5f855b16ff0bd4",
+      "distance_squared": 0.1750544012282258,
+      "cluster_sum": 146.92000733119056,
+      "region_center_gene_id": "1ca01d54815a9cd75dae04e6b7dfadad986aa2ded5b699804d23e9582395dc48"
+    },
+    {
+      "rank": 50,
+      "index": 18993,
+      "gene_id": "587f3fe94144c230b50f67c440fb4743b2e620bd8bc668e3b4e086e14f5b3e2b",
+      "distance_squared": 0.12688528350923445,
+      "cluster_sum": 135.14947407998204,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 51,
+      "index": 27675,
+      "gene_id": "81312fce26b3a01192bd8d34be6fd349f8b116428595df8786f075474619841e",
+      "distance_squared": 0.24037793516366746,
+      "cluster_sum": 133.5084287450126,
+      "region_center_gene_id": "0ee44c77b44ca943dd8978da3742f7d2e97eaa8c3d989bef7f3bf9fdace31806"
+    },
+    {
+      "rank": 52,
+      "index": 29215,
+      "gene_id": "882937064d61d220bcab24e6c8e16410ff4867f44767cca7c8dfe04424efe410",
+      "distance_squared": 0.20267351929215174,
+      "cluster_sum": 133.44840093963074,
+      "region_center_gene_id": "04b565f3589a8aaf6bb37cd40f485272153e63bd3e947a38efd5fb6a07071493"
+    },
+    {
+      "rank": 53,
+      "index": 43803,
+      "gene_id": "cd8deb0bfc23fcbeef960bb66471355ad89cffcc21805dd00dd49108b9e50d25",
+      "distance_squared": 0.13717393087910484,
+      "cluster_sum": 129.64942390869393,
+      "region_center_gene_id": "b26a38328c161eeebbea63c2a1a18dda3a810ebdeb11175323391868c5743e02"
+    },
+    {
+      "rank": 54,
+      "index": 30284,
+      "gene_id": "8d70abc859c783a784a0850409400562441c5e2c578a9f8fd05d48f3da039aaa",
+      "distance_squared": 0.11536247796658913,
+      "cluster_sum": 128.28150163092528,
+      "region_center_gene_id": "245467c521873c4c2091df70a78db0c144ef1a65597fad8d1b51bcd8fe6e8ab2"
+    },
+    {
+      "rank": 55,
+      "index": 45647,
+      "gene_id": "d681ecae18f256bf904b7968e074029f84c310fe5cc8b41de6b40c7a412ce2a2",
+      "distance_squared": 1.7870679950031103,
+      "cluster_sum": 121.06711250744355,
+      "region_center_gene_id": "9e7b8d4395a1567cbea91c2dbb86f6e6592fe48bfc3b0661ea55264af792d0a1"
+    },
+    {
+      "rank": 56,
+      "index": 45057,
+      "gene_id": "d38ea293463a982cf0fc9d52e229e5cea1185fcacd3b15ef83c49bdca9025da4",
+      "distance_squared": 0.09672582379201052,
+      "cluster_sum": 118.34298316441097,
+      "region_center_gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c"
+    },
+    {
+      "rank": 57,
+      "index": 30120,
+      "gene_id": "8c8f6d2b65d5eee90c877e9636866e867e3e4a2a355013bd2b365fd78fcb42bf",
+      "distance_squared": 5.740126229218674,
+      "cluster_sum": 112.49742455290344,
+      "region_center_gene_id": "de57d75451a4eada1687f322d91ba16127bbd0400b1182cb384367f85f3c04b3"
+    },
+    {
+      "rank": 58,
+      "index": 19557,
+      "gene_id": "5b367f788e9b290e8db530c3bcd7e51d1c21ba8a042f18f16c07e58829c80427",
+      "distance_squared": 0.09009780347610905,
+      "cluster_sum": 112.22256319150591,
+      "region_center_gene_id": "4a0caaeced095a9e07148eff867b531681a17b24ef4809746add5e7e49169604"
+    },
+    {
+      "rank": 59,
+      "index": 27655,
+      "gene_id": "811b4a80c66e93cb13e218fb41f92597c7b3a68a6eed242869bfac3a20907c7d",
+      "distance_squared": 2.0770782721781598,
+      "cluster_sum": 110.65309920806132,
+      "region_center_gene_id": "dcfe381ca1ad7dd4859751e9378c15c6e8d7abf39905f23c1d23f7e2284f6947"
+    },
+    {
+      "rank": 60,
+      "index": 12111,
+      "gene_id": "382264b694388e8ee941e6a7e78eb55c6e224cb9497207c0892d3ac4b0f9c0a0",
+      "distance_squared": 1.7012107499605822,
+      "cluster_sum": 109.66103438534283,
+      "region_center_gene_id": "62ecb22c006d966be6423f4978dd7ad54d492ae89e8c44f2ea1faf4fb44ffaaf"
+    },
+    {
+      "rank": 61,
+      "index": 3856,
+      "gene_id": "11a207034cec2a2793a69c159ae3f673cf9ce5ae2f04eb094d0fb7b406fb7738",
+      "distance_squared": 0.1271821831534474,
+      "cluster_sum": 104.7186240859672,
+      "region_center_gene_id": "04b565f3589a8aaf6bb37cd40f485272153e63bd3e947a38efd5fb6a07071493"
+    },
+    {
+      "rank": 62,
+      "index": 45274,
+      "gene_id": "d4ac93658cdcb2209d4140892e2ad43202bd0f0e6d86b1741878b2902055a86a",
+      "distance_squared": 1.044663806877045,
+      "cluster_sum": 99.53227522644936,
+      "region_center_gene_id": "9e7b8d4395a1567cbea91c2dbb86f6e6592fe48bfc3b0661ea55264af792d0a1"
+    },
+    {
+      "rank": 63,
+      "index": 35483,
+      "gene_id": "a6724e6b2f26991b88c8272567d9702e6f75a246451184fb5b3699ba46ee669b",
+      "distance_squared": 0.26556994392540123,
+      "cluster_sum": 94.03304716406276,
+      "region_center_gene_id": "05162b8d0564140da65292fdd2becfd857d63d07fb491fe5fdd48125a8b03982"
+    },
+    {
+      "rank": 64,
+      "index": 46673,
+      "gene_id": "db49023cb906c36e62479ca34f64e8be94ccf4c947515438238fa9a6cb8f7d2a",
+      "distance_squared": 0.12215420452725972,
+      "cluster_sum": 90.57328240296809,
+      "region_center_gene_id": "66ab187a497463d077dd3a65b2df46bab033fafd31acade651d96636c4e69c7f"
+    },
+    {
+      "rank": 65,
+      "index": 28571,
+      "gene_id": "854cda11d2c279828fc6f1b774409cb6517ddcf1ef6d75a9b9f0029d04e469d8",
+      "distance_squared": 0.08940772757149465,
+      "cluster_sum": 86.64334101670335,
+      "region_center_gene_id": "4a0caaeced095a9e07148eff867b531681a17b24ef4809746add5e7e49169604"
+    },
+    {
+      "rank": 66,
+      "index": 47059,
+      "gene_id": "dceea4e1032a32090c7799aead0f4cd204bea1cd3165cf11a3e0825896456f6b",
+      "distance_squared": 0.16669366156980941,
+      "cluster_sum": 84.70117087874387,
+      "region_center_gene_id": "05162b8d0564140da65292fdd2becfd857d63d07fb491fe5fdd48125a8b03982"
+    },
+    {
+      "rank": 67,
+      "index": 42651,
+      "gene_id": "c81903df0861c51c5a9f150b8de297583e4f25fe8173ffb0da424062125985c6",
+      "distance_squared": 0.34976749394360807,
+      "cluster_sum": 82.5423932929398,
+      "region_center_gene_id": "0f465fbc8d938d3c21f2456aca73de373789deb90ff3781ab2d957e129117e04"
+    },
+    {
+      "rank": 68,
+      "index": 48749,
+      "gene_id": "e4e5af37065678ef6ecdf0d40071d1e050bd72c39cba9128e3530b45c5203fc9",
+      "distance_squared": 0.12482559694959343,
+      "cluster_sum": 81.9275320939312,
+      "region_center_gene_id": "b50ddf8f21ee2c3232b501c104c2d9de46faa5aad07ef50ab847945ea63e9f25"
+    },
+    {
+      "rank": 69,
+      "index": 52342,
+      "gene_id": "f5b9f989a309eef64976ece7cfb430def6a7ad2d1f4fbb47291542b6b37445ed",
+      "distance_squared": 0.1512792473329425,
+      "cluster_sum": 78.65946708462955,
+      "region_center_gene_id": "1ef80c33fa432897e83dd7cf7f36535d55bf7413480cef7901c018d1c6b86bd0"
+    },
+    {
+      "rank": 70,
+      "index": 48821,
+      "gene_id": "e5432766332bae6509a7a5c444cfcb79d9412a2726ea94d7c4eeb17318fe0b6c",
+      "distance_squared": 3.2746533895205854,
+      "cluster_sum": 78.52124088940145,
+      "region_center_gene_id": "84ecd52c1da122a041a6baf2eed281c03c5052a6f0394b2aa6d3cdb1185be879"
+    },
+    {
+      "rank": 71,
+      "index": 27825,
+      "gene_id": "81ef4a01adbf8330ad92af2a1dbc52226143158973fac30b8c1a32683f0fffdd",
+      "distance_squared": 0.09139896880345626,
+      "cluster_sum": 78.24629070402065,
+      "region_center_gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c"
+    },
+    {
+      "rank": 72,
+      "index": 42054,
+      "gene_id": "c53bc63133180b4cf49e75346d088cdfdaed64ed88a83adf20b4f45d94216a5e",
+      "distance_squared": 0.8608199297795789,
+      "cluster_sum": 70.77450471209879,
+      "region_center_gene_id": "a9c2e5e7fc247e2b12210ef82f83e31bc1c13a33c3a47edc44e62296ef3b0d98"
+    },
+    {
+      "rank": 73,
+      "index": 7501,
+      "gene_id": "22ab1b3abb0bba028cd8beec06ce33a517c3a7eda162cc59acf1c81eb0d02a01",
+      "distance_squared": 1.0782754069720453,
+      "cluster_sum": 65.5360073283404,
+      "region_center_gene_id": "84ecd52c1da122a041a6baf2eed281c03c5052a6f0394b2aa6d3cdb1185be879"
+    },
+    {
+      "rank": 74,
+      "index": 6332,
+      "gene_id": "1d2b62e6fb2a556f6b9fd1d9e626a55cb40ce3a9855a86531b7b89c14a6a8eec",
+      "distance_squared": 0.09413436524476174,
+      "cluster_sum": 64.49832320449961,
+      "region_center_gene_id": "66ab187a497463d077dd3a65b2df46bab033fafd31acade651d96636c4e69c7f"
+    },
+    {
+      "rank": 75,
+      "index": 52260,
+      "gene_id": "f56352d38436bf60133a2109504348943f45b8be2e9c782259cd939d110beef2",
+      "distance_squared": 0.7331868158440065,
+      "cluster_sum": 63.006994640726845,
+      "region_center_gene_id": "9e7b8d4395a1567cbea91c2dbb86f6e6592fe48bfc3b0661ea55264af792d0a1"
+    },
+    {
+      "rank": 76,
+      "index": 12507,
+      "gene_id": "39e3cd9a8166f52d048662c922a49ec14c3120c7f6420770870d0434ecf2eeda",
+      "distance_squared": 0.16266099785344837,
+      "cluster_sum": 62.95766618910319,
+      "region_center_gene_id": "05162b8d0564140da65292fdd2becfd857d63d07fb491fe5fdd48125a8b03982"
+    },
+    {
+      "rank": 77,
+      "index": 27657,
+      "gene_id": "811d4fea87f466ef2c85d6d28d4e9f3ecc34fd770eadf2a39c1b1e1a173bdf0f",
+      "distance_squared": 0.13397774068655308,
+      "cluster_sum": 56.89436422347034,
+      "region_center_gene_id": "0a2db15eae78f1ecb5eba765c6e98387fcdcbe074cf835c30db2dff0a92365cb"
+    },
+    {
+      "rank": 78,
+      "index": 2728,
+      "gene_id": "0c5a6379f493a04d6cb2d8a916b54d9f58d1a1c432842acbe8bd122cf70a3109",
+      "distance_squared": 0.07357187056460643,
+      "cluster_sum": 56.50853554623347,
+      "region_center_gene_id": "4a0caaeced095a9e07148eff867b531681a17b24ef4809746add5e7e49169604"
+    },
+    {
+      "rank": 79,
+      "index": 46687,
+      "gene_id": "db5afe056678a52232913e485eb191a9f4bb0d2dfd41f46d8b0650a9ebf31741",
+      "distance_squared": 0.08971996533537023,
+      "cluster_sum": 54.036279409656025,
+      "region_center_gene_id": "245467c521873c4c2091df70a78db0c144ef1a65597fad8d1b51bcd8fe6e8ab2"
+    },
+    {
+      "rank": 80,
+      "index": 33109,
+      "gene_id": "9b69af840db70b5de3fabcb2df62581ffb66da63753d394d5588c6499495ee8b",
+      "distance_squared": 0.08321528075089775,
+      "cluster_sum": 53.387880246375396,
+      "region_center_gene_id": "b50ddf8f21ee2c3232b501c104c2d9de46faa5aad07ef50ab847945ea63e9f25"
+    },
+    {
+      "rank": 81,
+      "index": 53655,
+      "gene_id": "fbe317d05bdda0002bd0647029b4d181e96ad1f9e1b625e34d0ea5aa81164917",
+      "distance_squared": 0.2900820253563027,
+      "cluster_sum": 52.78999124744852,
+      "region_center_gene_id": "a329f94133ee798fba81e8ed51046f12e2662c3be7670f21affc0dfe78295e05"
+    },
+    {
+      "rank": 82,
+      "index": 15441,
+      "gene_id": "47a6ad4c49432c2e99d7c8b9dd39ec575e5ea2362ed85dc352ab012fafdc7d82",
+      "distance_squared": 0.17175723088615763,
+      "cluster_sum": 51.60838925597337,
+      "region_center_gene_id": "662aa6e778fc8ce136a73ae75c70cfae165c59a63a7e9ccf232fcffe735d6e3f"
+    },
+    {
+      "rank": 83,
+      "index": 21788,
+      "gene_id": "65f6344c4a11f186ffe87b4c2fc317932e14ecdef7ff8e65543e291e7ddcce46",
+      "distance_squared": 0.06243282556799049,
+      "cluster_sum": 50.46378752489528,
+      "region_center_gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c"
+    },
+    {
+      "rank": 84,
+      "index": 41193,
+      "gene_id": "c1411a966a086596d009b90b317a76ac6bea9ffd267e6ac61b880988be057dde",
+      "distance_squared": 0.28381125968456206,
+      "cluster_sum": 47.33111021096902,
+      "region_center_gene_id": "a9c2e5e7fc247e2b12210ef82f83e31bc1c13a33c3a47edc44e62296ef3b0d98"
+    },
+    {
+      "rank": 85,
+      "index": 36493,
+      "gene_id": "ab404bd777dcce3ce51824f83cbc5c87b50c3f63c102d6f999dc6e0f20d23152",
+      "distance_squared": 0.11832475127455835,
+      "cluster_sum": 47.2037282180947,
+      "region_center_gene_id": "ee446043c5f12fadba4881482a383e1d2d8d118103de80f9b7af6af3e55df137"
+    },
+    {
+      "rank": 86,
+      "index": 8903,
+      "gene_id": "29598ddfa76e723f9d3285250075d290d185cb8eedcb35261014ae1432f47867",
+      "distance_squared": 0.627125693495971,
+      "cluster_sum": 46.1606203948058,
+      "region_center_gene_id": "9e7b8d4395a1567cbea91c2dbb86f6e6592fe48bfc3b0661ea55264af792d0a1"
+    },
+    {
+      "rank": 87,
+      "index": 36650,
+      "gene_id": "ac00d7ef7094b0b39622d9eed329eb01fcdb87f0390013e3c4bd920cdf8853cf",
+      "distance_squared": 0.1105590077405634,
+      "cluster_sum": 45.352636051805675,
+      "region_center_gene_id": "b26a38328c161eeebbea63c2a1a18dda3a810ebdeb11175323391868c5743e02"
+    },
+    {
+      "rank": 88,
+      "index": 13217,
+      "gene_id": "3d144b25c6297be5557a579d3e05bff84a60469916e3aee0e191412696994817",
+      "distance_squared": 0.18359421326768163,
+      "cluster_sum": 43.112453566325925,
+      "region_center_gene_id": "b112e31ca037fefad583ce47f41f730e0c2e938e23753c3a1187faa6235bb59e"
+    },
+    {
+      "rank": 89,
+      "index": 43456,
+      "gene_id": "cbe672ec6b30e1f04fa133205924ffcacaac758f8ea3a29d772a3ee6f79aa3b5",
+      "distance_squared": 0.06175857504010705,
+      "cluster_sum": 42.1379070176462,
+      "region_center_gene_id": "8d70abc859c783a784a0850409400562441c5e2c578a9f8fd05d48f3da039aaa"
+    },
+    {
+      "rank": 90,
+      "index": 11332,
+      "gene_id": "34803955edb0290870773e916714fa11fca885d3f21cb1179cc58dea19790387",
+      "distance_squared": 0.8348227175039887,
+      "cluster_sum": 39.01961720760382,
+      "region_center_gene_id": "e0383ecc4bf409c79aa253c96b29a059eef7e6d0758e1b8bccdbae7b8b68f6eb"
+    },
+    {
+      "rank": 91,
+      "index": 2700,
+      "gene_id": "0c3571ec5057f12e6ed828e169ac97e9452299b738f20de41c425e7f8e897e6e",
+      "distance_squared": 0.052022532847219104,
+      "cluster_sum": 37.883132192285636,
+      "region_center_gene_id": "245467c521873c4c2091df70a78db0c144ef1a65597fad8d1b51bcd8fe6e8ab2"
+    },
+    {
+      "rank": 92,
+      "index": 20231,
+      "gene_id": "5e621a5d92fcff239ef59409e2b3613bee1b8219d34418a7d6e8f6702a1357b0",
+      "distance_squared": 2.272910299142289,
+      "cluster_sum": 37.11140592291378,
+      "region_center_gene_id": "de57d75451a4eada1687f322d91ba16127bbd0400b1182cb384367f85f3c04b3"
+    },
+    {
+      "rank": 93,
+      "index": 19437,
+      "gene_id": "5ab2ab8ecb32454c9f79ed21321f4d369e091ab7aa3210c490cd7ea99a21b221",
+      "distance_squared": 0.7515747248656135,
+      "cluster_sum": 36.53482044792116,
+      "region_center_gene_id": "62ecb22c006d966be6423f4978dd7ad54d492ae89e8c44f2ea1faf4fb44ffaaf"
+    },
+    {
+      "rank": 94,
+      "index": 46977,
+      "gene_id": "dc9778f2afdd6fc89f6b79ef6c223c5b7d10e6ef00c94250bba16d764bb64c3b",
+      "distance_squared": 0.11157621498780851,
+      "cluster_sum": 36.46991673836711,
+      "region_center_gene_id": "0a2db15eae78f1ecb5eba765c6e98387fcdcbe074cf835c30db2dff0a92365cb"
+    },
+    {
+      "rank": 95,
+      "index": 31514,
+      "gene_id": "93791e4a3259304ca7185c2678555484505420ab2add004bc12b2df84d0e07bb",
+      "distance_squared": 0.5685027444461176,
+      "cluster_sum": 36.43595467815674,
+      "region_center_gene_id": "9e7b8d4395a1567cbea91c2dbb86f6e6592fe48bfc3b0661ea55264af792d0a1"
+    },
+    {
+      "rank": 96,
+      "index": 11161,
+      "gene_id": "33ae0d1d92682a0f7523cfa43d3ff5e4c621a41d06e3d1fca4b931a4f95b84a8",
+      "distance_squared": 0.16081908086494234,
+      "cluster_sum": 33.99979605105216,
+      "region_center_gene_id": "a329f94133ee798fba81e8ed51046f12e2662c3be7670f21affc0dfe78295e05"
+    },
+    {
+      "rank": 97,
+      "index": 16264,
+      "gene_id": "4b7027ba8a134332f97b8fd745ccd1486acfd8277971600ea421c06ce3bf904e",
+      "distance_squared": 0.6031341000278891,
+      "cluster_sum": 33.838945497813434,
+      "region_center_gene_id": "0e25b4dc5376d5d4ee96f0b05aa8ca8f731516dc352dbdac26682237526edc50"
+    },
+    {
+      "rank": 98,
+      "index": 49608,
+      "gene_id": "e91568019ce12b216ff9df825b7c1e55627504390113fc905c5723a04025f394",
+      "distance_squared": 0.049319669068423944,
+      "cluster_sum": 33.55575645736462,
+      "region_center_gene_id": "854cda11d2c279828fc6f1b774409cb6517ddcf1ef6d75a9b9f0029d04e469d8"
+    },
+    {
+      "rank": 99,
+      "index": 14836,
+      "gene_id": "44d129cf6d10b2edbb0cf93fa5bc45fe32d8971548d8836808fda08c826b241b",
+      "distance_squared": 0.07778731547508753,
+      "cluster_sum": 32.73305175831229,
+      "region_center_gene_id": "b26a38328c161eeebbea63c2a1a18dda3a810ebdeb11175323391868c5743e02"
+    },
+    {
+      "rank": 100,
+      "index": 32512,
+      "gene_id": "9888cbfc0ae93c513cd27067585b9f2437bac7f87068337fb89414f6dc3bf090",
+      "distance_squared": 0.06581264829455431,
+      "cluster_sum": 31.10318608738332,
+      "region_center_gene_id": "1ca01d54815a9cd75dae04e6b7dfadad986aa2ded5b699804d23e9582395dc48"
+    },
+    {
+      "rank": 101,
+      "index": 52768,
+      "gene_id": "f7bcdfc21e30df65bb9e2ef0915052d5926e05251df6dcccccd4561c24174daf",
+      "distance_squared": 0.07702150649542908,
+      "cluster_sum": 30.829142174623513,
+      "region_center_gene_id": "ee446043c5f12fadba4881482a383e1d2d8d118103de80f9b7af6af3e55df137"
+    },
+    {
+      "rank": 102,
+      "index": 11503,
+      "gene_id": "353a4e0ee43fd8d20687a466848207d226f7efc2bccdba07e8cce4ac6297e19d",
+      "distance_squared": 0.055457562139408376,
+      "cluster_sum": 30.647383731864853,
+      "region_center_gene_id": "81ef4a01adbf8330ad92af2a1dbc52226143158973fac30b8c1a32683f0fffdd"
+    },
+    {
+      "rank": 103,
+      "index": 29668,
+      "gene_id": "8a5f2ac120b6ae88e6cc0b4da55e07760cb8c7e9e1fb1a671f01468e9bf4a364",
+      "distance_squared": 0.1771226401728833,
+      "cluster_sum": 29.268662730081758,
+      "region_center_gene_id": "2c49b5fedbd1faf02380a8be4d6d3edd4ceed9c4328c4d5ee4baa44a54e11400"
+    },
+    {
+      "rank": 104,
+      "index": 54162,
+      "gene_id": "fe51028310f76435b5e901a68f8f1b6a916cacbf8ab4f95c654216cd29dd7f88",
+      "distance_squared": 0.08895069636358371,
+      "cluster_sum": 28.457001724454482,
+      "region_center_gene_id": "0a2db15eae78f1ecb5eba765c6e98387fcdcbe074cf835c30db2dff0a92365cb"
+    },
+    {
+      "rank": 105,
+      "index": 39195,
+      "gene_id": "b817655d6388f812268081603b1971d0ed320b9d8b45c42c4c43a7c5b304b81c",
+      "distance_squared": 0.05165512445321563,
+      "cluster_sum": 28.39558759617283,
+      "region_center_gene_id": "d38ea293463a982cf0fc9d52e229e5cea1185fcacd3b15ef83c49bdca9025da4"
+    },
+    {
+      "rank": 106,
+      "index": 41500,
+      "gene_id": "c2911aeaaf5bc7eab2155c73fbbfd11a0f7f648bb58846e42c8ffd43791d390f",
+      "distance_squared": 0.3017903221333602,
+      "cluster_sum": 27.791427013365478,
+      "region_center_gene_id": "77144e662ee547d21e18add13786bc76ab71ff5135104ac7e0c08229ae3248e7"
+    },
+    {
+      "rank": 107,
+      "index": 24465,
+      "gene_id": "7216c673f0e269c56571d2e404798c4a61418ce3d5d6d471e4da8d965c016343",
+      "distance_squared": 0.10558991792788847,
+      "cluster_sum": 26.08474502158331,
+      "region_center_gene_id": "81312fce26b3a01192bd8d34be6fd349f8b116428595df8786f075474619841e"
+    },
+    {
+      "rank": 108,
+      "index": 22809,
+      "gene_id": "6a93646980088e13e24e0a1bd8ff7398cefa66743dc4940e2885a2b6479a64cb",
+      "distance_squared": 0.08125962602323786,
+      "cluster_sum": 25.304395686144087,
+      "region_center_gene_id": "587f3fe94144c230b50f67c440fb4743b2e620bd8bc668e3b4e086e14f5b3e2b"
+    },
+    {
+      "rank": 109,
+      "index": 16000,
+      "gene_id": "4a39120909aac5b3814ae47a58f72ac0b4f2d38bd223c2f6bac49e246566ee6c",
+      "distance_squared": 0.05337579747891968,
+      "cluster_sum": 25.17049000014352,
+      "region_center_gene_id": "b50ddf8f21ee2c3232b501c104c2d9de46faa5aad07ef50ab847945ea63e9f25"
+    },
+    {
+      "rank": 110,
+      "index": 27333,
+      "gene_id": "7f894c37fac0a804da7f7af5c8ada0b84b1e6411795b081276afa6b9c0ff1002",
+      "distance_squared": 0.04371067498326715,
+      "cluster_sum": 24.95848226692502,
+      "region_center_gene_id": "8d70abc859c783a784a0850409400562441c5e2c578a9f8fd05d48f3da039aaa"
+    },
+    {
+      "rank": 111,
+      "index": 38399,
+      "gene_id": "b47bc6eaa80684f3cecfd6638469f28188e3ce3e797d45c0600ab04bf7ea62f4",
+      "distance_squared": 1.4733345357022873,
+      "cluster_sum": 24.837404164894856,
+      "region_center_gene_id": "811b4a80c66e93cb13e218fb41f92597c7b3a68a6eed242869bfac3a20907c7d"
+    },
+    {
+      "rank": 112,
+      "index": 1877,
+      "gene_id": "08817a4f469f7848832a9d8a7e3c2cdd19c87af8c6c72dafea1f74dc15a71e01",
+      "distance_squared": 0.5079533838397454,
+      "cluster_sum": 24.34377066286781,
+      "region_center_gene_id": "d4ac93658cdcb2209d4140892e2ad43202bd0f0e6d86b1741878b2902055a86a"
+    },
+    {
+      "rank": 113,
+      "index": 49957,
+      "gene_id": "eaa79df44318675909daa6af8e8ac2a19df4f4e91fad3b5aff2891d6ea7c465c",
+      "distance_squared": 0.0692035515351149,
+      "cluster_sum": 23.86388479030451,
+      "region_center_gene_id": "0ee44c77b44ca943dd8978da3742f7d2e97eaa8c3d989bef7f3bf9fdace31806"
+    },
+    {
+      "rank": 114,
+      "index": 15256,
+      "gene_id": "46bb2f3834efe79feeb6b9897f2487f39cc40eaaf96d920de3d34bbc01ea8288",
+      "distance_squared": 0.04751465732504726,
+      "cluster_sum": 23.718231727131684,
+      "region_center_gene_id": "81ef4a01adbf8330ad92af2a1dbc52226143158973fac30b8c1a32683f0fffdd"
+    },
+    {
+      "rank": 115,
+      "index": 31172,
+      "gene_id": "91d127ac5545012e9f4e5274865537c1222e9f56f3fca2ac07ac0e753ba2e560",
+      "distance_squared": 0.20311192934139333,
+      "cluster_sum": 23.365535486611336,
+      "region_center_gene_id": "c81903df0861c51c5a9f150b8de297583e4f25fe8173ffb0da424062125985c6"
+    },
+    {
+      "rank": 116,
+      "index": 38081,
+      "gene_id": "b2d64d9640c1ec08647107983798d4840110ffd0874583878a2c0856bf93afba",
+      "distance_squared": 0.06168067931195724,
+      "cluster_sum": 23.239124061669155,
+      "region_center_gene_id": "1ef80c33fa432897e83dd7cf7f36535d55bf7413480cef7901c018d1c6b86bd0"
+    },
+    {
+      "rank": 117,
+      "index": 22020,
+      "gene_id": "671876c04d2598bf19f64b164d257f949d244993b86a430d0e52b2d11b2c92e6",
+      "distance_squared": 0.16221535628919576,
+      "cluster_sum": 22.666102374974056,
+      "region_center_gene_id": "47a6ad4c49432c2e99d7c8b9dd39ec575e5ea2362ed85dc352ab012fafdc7d82"
+    },
+    {
+      "rank": 118,
+      "index": 40795,
+      "gene_id": "bf5f93484e77c5fce2d255632f0d0b0e0f1cc8e6d8b9e819745751ad2a00a98d",
+      "distance_squared": 0.0492248813326108,
+      "cluster_sum": 22.398928469980085,
+      "region_center_gene_id": "d38ea293463a982cf0fc9d52e229e5cea1185fcacd3b15ef83c49bdca9025da4"
+    },
+    {
+      "rank": 119,
+      "index": 3974,
+      "gene_id": "121a997c1620ff4299d9d7fcbfe590d2cc5f3c1404e9d7e193401caa5b1a77cf",
+      "distance_squared": 0.17754342567461262,
+      "cluster_sum": 22.044433576852033,
+      "region_center_gene_id": "77144e662ee547d21e18add13786bc76ab71ff5135104ac7e0c08229ae3248e7"
+    },
+    {
+      "rank": 120,
+      "index": 14273,
+      "gene_id": "41f6e3c91f7c929fee88e0ac72e353f5fb9d63640aebb0c3d092fd3bc470560d",
+      "distance_squared": 0.4142846823161355,
+      "cluster_sum": 21.940364459466764,
+      "region_center_gene_id": "9e7b8d4395a1567cbea91c2dbb86f6e6592fe48bfc3b0661ea55264af792d0a1"
+    },
+    {
+      "rank": 121,
+      "index": 12230,
+      "gene_id": "38b524de490bc3d57463cc23eb3de2d6a04af291709677e2126951a16136b5ae",
+      "distance_squared": 0.10177737040102613,
+      "cluster_sum": 21.916382793210627,
+      "region_center_gene_id": "662aa6e778fc8ce136a73ae75c70cfae165c59a63a7e9ccf232fcffe735d6e3f"
+    },
+    {
+      "rank": 122,
+      "index": 30689,
+      "gene_id": "8f630f0e91aa08a07ce789a134d5c1e76f5239e2b874a90a516f094a59a53d8c",
+      "distance_squared": 0.060266199466468356,
+      "cluster_sum": 21.420971147711615,
+      "region_center_gene_id": "ee446043c5f12fadba4881482a383e1d2d8d118103de80f9b7af6af3e55df137"
+    },
+    {
+      "rank": 123,
+      "index": 47689,
+      "gene_id": "dfc8566fc96f7ddb8d6d29a1825edd2ccf990acdbf6e17683dbc2d0dd788328a",
+      "distance_squared": 0.9400949980046591,
+      "cluster_sum": 21.35263703970338,
+      "region_center_gene_id": "84ecd52c1da122a041a6baf2eed281c03c5052a6f0394b2aa6d3cdb1185be879"
+    },
+    {
+      "rank": 124,
+      "index": 5595,
+      "gene_id": "19c57f41adaa139ae00e400376a7bd53f8de9a780d99584cd1cee9b8223bb3a0",
+      "distance_squared": 0.1113951703133034,
+      "cluster_sum": 21.219794961061424,
+      "region_center_gene_id": "6784cbc635df350385f43bf0beee59f18c2f34c20a5aa3245a5f855b16ff0bd4"
+    },
+    {
+      "rank": 125,
+      "index": 45703,
+      "gene_id": "d6c7abda80363db1e041bba8056f212f444d3513bdb82a5aefa74b0e99d809fe",
+      "distance_squared": 0.038081934495948655,
+      "cluster_sum": 20.73329229997003,
+      "region_center_gene_id": "4a0caaeced095a9e07148eff867b531681a17b24ef4809746add5e7e49169604"
+    },
+    {
+      "rank": 126,
+      "index": 19506,
+      "gene_id": "5afcbc0da7d65f750531b892c6bbd708e09e80e270220e977f99212264f5c48d",
+      "distance_squared": 0.985939254903414,
+      "cluster_sum": 19.58749755775944,
+      "region_center_gene_id": "22ab1b3abb0bba028cd8beec06ce33a517c3a7eda162cc59acf1c81eb0d02a01"
+    },
+    {
+      "rank": 127,
+      "index": 52739,
+      "gene_id": "f79fd7c463a4a4deb8a3aafad375b478c47fecbd27dd65a22a1ec71108b17331",
+      "distance_squared": 0.3806530869701492,
+      "cluster_sum": 18.653783088360765,
+      "region_center_gene_id": "9e7b8d4395a1567cbea91c2dbb86f6e6592fe48bfc3b0661ea55264af792d0a1"
+    },
+    {
+      "rank": 128,
+      "index": 48484,
+      "gene_id": "e3b991d6836b731be1c48dc302cfacc903e9eaae3cf3621c8ee94b3318c20b08",
+      "distance_squared": 0.14537693724214773,
+      "cluster_sum": 18.002882047889464,
+      "region_center_gene_id": "c81903df0861c51c5a9f150b8de297583e4f25fe8173ffb0da424062125985c6"
+    },
+    {
+      "rank": 129,
+      "index": 12768,
+      "gene_id": "3b1c28de16def078c7b65133c6116211f79d1b24cd0e1360f80e1f563db5d8b0",
+      "distance_squared": 0.06929741250729171,
+      "cluster_sum": 17.414410307184156,
+      "region_center_gene_id": "04b565f3589a8aaf6bb37cd40f485272153e63bd3e947a38efd5fb6a07071493"
+    },
+    {
+      "rank": 130,
+      "index": 50693,
+      "gene_id": "ee0502d77ddec9ecb05d7174c0eeae74884773c3ca9acba211995af19fc8c76b",
+      "distance_squared": 0.05601129435614413,
+      "cluster_sum": 17.172334567921897,
+      "region_center_gene_id": "587f3fe94144c230b50f67c440fb4743b2e620bd8bc668e3b4e086e14f5b3e2b"
+    },
+    {
+      "rank": 131,
+      "index": 18002,
+      "gene_id": "5390d13ab396885d8912b8513542afaa40648c865d5ab04d5b64db66dbcf9fc4",
+      "distance_squared": 0.37260554695352793,
+      "cluster_sum": 16.93305324736306,
+      "region_center_gene_id": "17ee4cefed9d0879f5baf6967705ceacdf284cb6bff0239b1af788cdadd3c24d"
+    },
+    {
+      "rank": 132,
+      "index": 36514,
+      "gene_id": "ab5f31db6f0998820e15d3ae8748e0ce1655e21dbff647f1e22d2e323d8dce13",
+      "distance_squared": 0.1047133246869695,
+      "cluster_sum": 16.882935958927483,
+      "region_center_gene_id": "39e3cd9a8166f52d048662c922a49ec14c3120c7f6420770870d0434ecf2eeda"
+    },
+    {
+      "rank": 133,
+      "index": 47118,
+      "gene_id": "dd295ae7109c85448520e1767139ea2be44b0f9a1f724e9d7fd8246ee850755a",
+      "distance_squared": 0.042634597056808346,
+      "cluster_sum": 16.702204919397563,
+      "region_center_gene_id": "8d70abc859c783a784a0850409400562441c5e2c578a9f8fd05d48f3da039aaa"
+    },
+    {
+      "rank": 134,
+      "index": 38717,
+      "gene_id": "b5d3bcd4ef124b470b6d0af219e3da8fec15914c5df03ae27c0d9ac131cad5ab",
+      "distance_squared": 0.04522712763799077,
+      "cluster_sum": 16.664023637078905,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 135,
+      "index": 38244,
+      "gene_id": "b3bc6eb815403219d4b8c5f9a87de8531ea9b52bfa266c3d15b044f35e307c98",
+      "distance_squared": 0.051555772234955465,
+      "cluster_sum": 16.445599218278435,
+      "region_center_gene_id": "db5afe056678a52232913e485eb191a9f4bb0d2dfd41f46d8b0650a9ebf31741"
+    },
+    {
+      "rank": 136,
+      "index": 19697,
+      "gene_id": "5bc9bdc7a2d80e7dc7f4252b44d77afac8aecb9ba8b58bc6e28fa1d0a02f5308",
+      "distance_squared": 0.059968866840787574,
+      "cluster_sum": 16.421136842590084,
+      "region_center_gene_id": "0ee44c77b44ca943dd8978da3742f7d2e97eaa8c3d989bef7f3bf9fdace31806"
+    },
+    {
+      "rank": 137,
+      "index": 2779,
+      "gene_id": "0c8a315e449e258444020ce2d30eb54d858f7839bea15c64ef574320880ec410",
+      "distance_squared": 0.03782978596280919,
+      "cluster_sum": 15.980165686808652,
+      "region_center_gene_id": "4a0caaeced095a9e07148eff867b531681a17b24ef4809746add5e7e49169604"
+    },
+    {
+      "rank": 138,
+      "index": 10493,
+      "gene_id": "309d48e37427678dc9a05d67a09e167dbe1e6b301968afcf017ae2575ab57899",
+      "distance_squared": 0.931451019550263,
+      "cluster_sum": 15.823746198822725,
+      "region_center_gene_id": "34803955edb0290870773e916714fa11fca885d3f21cb1179cc58dea19790387"
+    },
+    {
+      "rank": 139,
+      "index": 38119,
+      "gene_id": "b308b2fbd1b930cec742348eaf53c7963ceaec6b43f87d08dec91a3b68308a73",
+      "distance_squared": 0.48727025752832887,
+      "cluster_sum": 15.811687540766584,
+      "region_center_gene_id": "dcfe381ca1ad7dd4859751e9378c15c6e8d7abf39905f23c1d23f7e2284f6947"
+    },
+    {
+      "rank": 140,
+      "index": 49145,
+      "gene_id": "e6efa1fa9fdcb2a436b2b0790b6ad443f3d6d4c27456b9195957196b2caa4a75",
+      "distance_squared": 0.35736699209435513,
+      "cluster_sum": 15.337900607221917,
+      "region_center_gene_id": "0e25b4dc5376d5d4ee96f0b05aa8ca8f731516dc352dbdac26682237526edc50"
+    },
+    {
+      "rank": 141,
+      "index": 37500,
+      "gene_id": "b0294986027d5dd01592658d2ddf5eb1c72213b6ce033d8284398532ca606ffe",
+      "distance_squared": 0.03711500298714449,
+      "cluster_sum": 15.248961651657968,
+      "region_center_gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c"
+    },
+    {
+      "rank": 142,
+      "index": 48183,
+      "gene_id": "e240d1160197e45ebb47c3411747858ff317bbbc14caa7fdcae17942e8ab19e6",
+      "distance_squared": 0.06267851957355572,
+      "cluster_sum": 15.15125786299599,
+      "region_center_gene_id": "662aa6e778fc8ce136a73ae75c70cfae165c59a63a7e9ccf232fcffe735d6e3f"
+    },
+    {
+      "rank": 143,
+      "index": 12934,
+      "gene_id": "3bd772fa3c18f4caef7913c6670c71e92496cfba5cb1dc86a12a386571881415",
+      "distance_squared": 0.05667891335596473,
+      "cluster_sum": 15.054911598657336,
+      "region_center_gene_id": "db49023cb906c36e62479ca34f64e8be94ccf4c947515438238fa9a6cb8f7d2a"
+    },
+    {
+      "rank": 144,
+      "index": 5519,
+      "gene_id": "195b178ce912e6563bfda1648bf1a7c021cfb014c368177b3482ba2e2b581e30",
+      "distance_squared": 0.3196512452601631,
+      "cluster_sum": 14.567570274324153,
+      "region_center_gene_id": "bbcce5661afa2dc9a0006ddf0ed2bfaa4b3fcef8f3b279460d5991a2f155de68"
+    },
+    {
+      "rank": 145,
+      "index": 34997,
+      "gene_id": "a42e64fbc0829681c26ee26b34f839f5a748bb5be7aed8dde512c2232981f609",
+      "distance_squared": 2.1919190306132763,
+      "cluster_sum": 14.486653629380601,
+      "region_center_gene_id": "5e621a5d92fcff239ef59409e2b3613bee1b8219d34418a7d6e8f6702a1357b0"
+    },
+    {
+      "rank": 146,
+      "index": 53233,
+      "gene_id": "f9f8301eeff9e880f39dd5d49e0a3bf8a7c8857c7e94449d44c0d2d56c4bb834",
+      "distance_squared": 0.07393755704418953,
+      "cluster_sum": 14.27414587590058,
+      "region_center_gene_id": "a329f94133ee798fba81e8ed51046f12e2662c3be7670f21affc0dfe78295e05"
+    },
+    {
+      "rank": 147,
+      "index": 45644,
+      "gene_id": "d67f52ffca270ccfd236d709fced75121961551fbafa9543cf4138a47d2960f5",
+      "distance_squared": 0.14465950813276904,
+      "cluster_sum": 14.225627291483404,
+      "region_center_gene_id": "c81903df0861c51c5a9f150b8de297583e4f25fe8173ffb0da424062125985c6"
+    },
+    {
+      "rank": 148,
+      "index": 40073,
+      "gene_id": "bbf789372ac9650bb8e62ff73420f4dd45529252f6118543e4e27aceb1a2483e",
+      "distance_squared": 0.036292770439961625,
+      "cluster_sum": 14.029416364340914,
+      "region_center_gene_id": "81ef4a01adbf8330ad92af2a1dbc52226143158973fac30b8c1a32683f0fffdd"
+    },
+    {
+      "rank": 149,
+      "index": 20769,
+      "gene_id": "612447461196281c58c555d8589511ed881de6898d0394a175a75fd01defe425",
+      "distance_squared": 0.05897478443719063,
+      "cluster_sum": 13.975970684921117,
+      "region_center_gene_id": "b112e31ca037fefad583ce47f41f730e0c2e938e23753c3a1187faa6235bb59e"
+    },
+    {
+      "rank": 150,
+      "index": 30427,
+      "gene_id": "8e1d4e6cc4eae28d027c12bf2d0599c19d1ebb37850ded21db597b2d8e01aafa",
+      "distance_squared": 0.37459982826305505,
+      "cluster_sum": 13.948495576206462,
+      "region_center_gene_id": "87f879bf8b5a4a047125735c3aec7e6a4fe90621f1897bd746a0c6d07e3654c6"
+    },
+    {
+      "rank": 151,
+      "index": 29430,
+      "gene_id": "893c2daec9a9d70583bfd0956136b79c53c1e620dcc42b8155798cb4c179f7fd",
+      "distance_squared": 0.11577886916375985,
+      "cluster_sum": 13.755296210913793,
+      "region_center_gene_id": "0f465fbc8d938d3c21f2456aca73de373789deb90ff3781ab2d957e129117e04"
+    },
+    {
+      "rank": 152,
+      "index": 1641,
+      "gene_id": "0779d0c339615eb11e572669a76e9d3b267163ccd94d30281f43408ec9171fee",
+      "distance_squared": 0.8862164150974114,
+      "cluster_sum": 13.495015540142205,
+      "region_center_gene_id": "84ecd52c1da122a041a6baf2eed281c03c5052a6f0394b2aa6d3cdb1185be879"
+    },
+    {
+      "rank": 153,
+      "index": 17492,
+      "gene_id": "5153da88d5204d71ce25120f81f532669561cf3e33c3dce6e707ea81beb8207d",
+      "distance_squared": 0.056886047467629465,
+      "cluster_sum": 13.297985649312853,
+      "region_center_gene_id": "9b69af840db70b5de3fabcb2df62581ffb66da63753d394d5588c6499495ee8b"
+    },
+    {
+      "rank": 154,
+      "index": 11118,
+      "gene_id": "3382ca490c35150c8b2370c4414804a55cc3627d68949ee0dae179d647558cd0",
+      "distance_squared": 0.09467511888955893,
+      "cluster_sum": 13.237464092669297,
+      "region_center_gene_id": "81312fce26b3a01192bd8d34be6fd349f8b116428595df8786f075474619841e"
+    },
+    {
+      "rank": 155,
+      "index": 23384,
+      "gene_id": "6d3e050e5ba542a6e2c5bfdfc989c7f3c2ee1b4142a79aa227b765db68faa14e",
+      "distance_squared": 0.034724105343103474,
+      "cluster_sum": 13.176190148074335,
+      "region_center_gene_id": "66ab187a497463d077dd3a65b2df46bab033fafd31acade651d96636c4e69c7f"
+    },
+    {
+      "rank": 156,
+      "index": 52193,
+      "gene_id": "f5118b2ef2499da9a1f94351811c2ceccdc8d75cdb8c81f9186714501114da4b",
+      "distance_squared": 0.05845016165281935,
+      "cluster_sum": 12.543665052248404,
+      "region_center_gene_id": "0ee44c77b44ca943dd8978da3742f7d2e97eaa8c3d989bef7f3bf9fdace31806"
+    },
+    {
+      "rank": 157,
+      "index": 24763,
+      "gene_id": "738c46121ed1d27e27dac67b222046139e668ff6889eca9f93598d2fabb1e57c",
+      "distance_squared": 0.03757078044959443,
+      "cluster_sum": 12.406564649662705,
+      "region_center_gene_id": "65f6344c4a11f186ffe87b4c2fc317932e14ecdef7ff8e65543e291e7ddcce46"
+    },
+    {
+      "rank": 158,
+      "index": 16832,
+      "gene_id": "4e3b171bc50091b8cdb531889a9570565af0bc3c2df2dd8a059c0716093ff827",
+      "distance_squared": 0.10516548145381577,
+      "cluster_sum": 12.068496489016097,
+      "region_center_gene_id": "05162b8d0564140da65292fdd2becfd857d63d07fb491fe5fdd48125a8b03982"
+    },
+    {
+      "rank": 159,
+      "index": 40516,
+      "gene_id": "be0cff1accba271dbca8db46366ba22461c00cef6f7e2cf322fcee43fe06c32a",
+      "distance_squared": 0.04378222049327581,
+      "cluster_sum": 11.97048901816178,
+      "region_center_gene_id": "04b565f3589a8aaf6bb37cd40f485272153e63bd3e947a38efd5fb6a07071493"
+    },
+    {
+      "rank": 160,
+      "index": 23211,
+      "gene_id": "6c77fc07e0c872f245202cbec02da8c2c8989bbb620a381eca8689e1b9c4a6ff",
+      "distance_squared": 0.039112699514465804,
+      "cluster_sum": 11.387367201025398,
+      "region_center_gene_id": "0c5a6379f493a04d6cb2d8a916b54d9f58d1a1c432842acbe8bd122cf70a3109"
+    },
+    {
+      "rank": 161,
+      "index": 7734,
+      "gene_id": "23bd732615d18d8f9a3f6cb73a7fabb64a1d734e74a1d682073eb1cc06c6491a",
+      "distance_squared": 0.05572375980888931,
+      "cluster_sum": 11.300618407497083,
+      "region_center_gene_id": "ab404bd777dcce3ce51824f83cbc5c87b50c3f63c102d6f999dc6e0f20d23152"
+    },
+    {
+      "rank": 162,
+      "index": 9504,
+      "gene_id": "2bee18af22fb536a22716e80b5efbc5b28bc0188290d0bdbc5bb2abb42edf84f",
+      "distance_squared": 0.060282593863743336,
+      "cluster_sum": 11.034694223466555,
+      "region_center_gene_id": "cd8deb0bfc23fcbeef960bb66471355ad89cffcc21805dd00dd49108b9e50d25"
+    },
+    {
+      "rank": 163,
+      "index": 29964,
+      "gene_id": "8bca8fdfb1a54a8ca6f4d1ca06afe154235928cf30fe9e679299af7b82e4307d",
+      "distance_squared": 0.41443675647890243,
+      "cluster_sum": 10.82530397472781,
+      "region_center_gene_id": "84ecd52c1da122a041a6baf2eed281c03c5052a6f0394b2aa6d3cdb1185be879"
+    },
+    {
+      "rank": 164,
+      "index": 47757,
+      "gene_id": "e01a3df339ef9ba981eaddaf2a820b949184af2bc88700ae03ae79c7f8d4c2f9",
+      "distance_squared": 0.07705506621641184,
+      "cluster_sum": 10.78897555444649,
+      "region_center_gene_id": "39e3cd9a8166f52d048662c922a49ec14c3120c7f6420770870d0434ecf2eeda"
+    },
+    {
+      "rank": 165,
+      "index": 44382,
+      "gene_id": "d0504f6ce8b7d489aa967cb95686d8a868a8cdc83ea0b0bad502e7062e2318cb",
+      "distance_squared": 1.2482334961362644,
+      "cluster_sum": 10.756294628817994,
+      "region_center_gene_id": "5e621a5d92fcff239ef59409e2b3613bee1b8219d34418a7d6e8f6702a1357b0"
+    },
+    {
+      "rank": 166,
+      "index": 1350,
+      "gene_id": "0622f5d8fc14c9ce45217e1b2de990a32cbdda24eb536d556d5897cd35c972e4",
+      "distance_squared": 0.6676017238786536,
+      "cluster_sum": 10.674188029584807,
+      "region_center_gene_id": "5ab2ab8ecb32454c9f79ed21321f4d369e091ab7aa3210c490cd7ea99a21b221"
+    },
+    {
+      "rank": 167,
+      "index": 23240,
+      "gene_id": "6c9b05fa5e5b13f32eed1a93d468e779ef39cc3e3114269eb3e6dba68affe8c9",
+      "distance_squared": 0.034622817628643214,
+      "cluster_sum": 10.416728031121142,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 168,
+      "index": 11328,
+      "gene_id": "347c8289484d5bffd3fa69c4ede870dbdab52c8ab923841805af8809b1dc1c48",
+      "distance_squared": 0.03417636581957925,
+      "cluster_sum": 9.8374621326217,
+      "region_center_gene_id": "66ab187a497463d077dd3a65b2df46bab033fafd31acade651d96636c4e69c7f"
+    },
+    {
+      "rank": 169,
+      "index": 12659,
+      "gene_id": "3a8cbe1ef1b161392064ff1feb80652343ca9b90341fd08705c878a9e55933b3",
+      "distance_squared": 0.12967167850671543,
+      "cluster_sum": 9.795601360402166,
+      "region_center_gene_id": "a9c2e5e7fc247e2b12210ef82f83e31bc1c13a33c3a47edc44e62296ef3b0d98"
+    },
+    {
+      "rank": 170,
+      "index": 3425,
+      "gene_id": "0f99f93e1433a4ab490aa3ffadc756e66b22d7e129918041547212cbc74052ad",
+      "distance_squared": 0.026254298797421048,
+      "cluster_sum": 9.603543448000927,
+      "region_center_gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c"
+    },
+    {
+      "rank": 171,
+      "index": 41181,
+      "gene_id": "c130c59fff95157549d6285c92c1ec72f1ad8cbf6bc2fc8a446035de84717083",
+      "distance_squared": 0.13172351178338834,
+      "cluster_sum": 9.565919967696201,
+      "region_center_gene_id": "87f879bf8b5a4a047125735c3aec7e6a4fe90621f1897bd746a0c6d07e3654c6"
+    },
+    {
+      "rank": 172,
+      "index": 50662,
+      "gene_id": "ede372ac482ea5d67238b14bbe38080c47d01a4b91b115b02a4d77e1e590b96c",
+      "distance_squared": 0.03999592601599801,
+      "cluster_sum": 9.543876088388595,
+      "region_center_gene_id": "1ca01d54815a9cd75dae04e6b7dfadad986aa2ded5b699804d23e9582395dc48"
+    },
+    {
+      "rank": 173,
+      "index": 8611,
+      "gene_id": "280f7f47d2090810783cbe7778725406c757cf424a56236cb5a63b6014f3b6ef",
+      "distance_squared": 0.27783330235622644,
+      "cluster_sum": 9.533431947139473,
+      "region_center_gene_id": "9e7b8d4395a1567cbea91c2dbb86f6e6592fe48bfc3b0661ea55264af792d0a1"
+    },
+    {
+      "rank": 174,
+      "index": 52718,
+      "gene_id": "f77e554b6c19a33ee3327b547b782dfea213bf373a21f3d8a7c00c22d08c6174",
+      "distance_squared": 0.36579289353137634,
+      "cluster_sum": 8.953603010184604,
+      "region_center_gene_id": "34803955edb0290870773e916714fa11fca885d3f21cb1179cc58dea19790387"
+    },
+    {
+      "rank": 175,
+      "index": 48894,
+      "gene_id": "e5a43001a924578c366d22f1746a506d82caf267015d5cdba240f4beef929246",
+      "distance_squared": 0.08347135584027732,
+      "cluster_sum": 8.944551933142773,
+      "region_center_gene_id": "0f465fbc8d938d3c21f2456aca73de373789deb90ff3781ab2d957e129117e04"
+    },
+    {
+      "rank": 176,
+      "index": 6825,
+      "gene_id": "1f5d520bb4acbb9953b31209c23f450c242329c3574ebe7de2da93d34e49f3dc",
+      "distance_squared": 0.03223506140061307,
+      "cluster_sum": 8.847227122738222,
+      "region_center_gene_id": "db5afe056678a52232913e485eb191a9f4bb0d2dfd41f46d8b0650a9ebf31741"
+    },
+    {
+      "rank": 177,
+      "index": 9112,
+      "gene_id": "2a2e910756677df3461b495e9ee629e8b1fa389f9a9c093d0ac28dc11fbbb65f",
+      "distance_squared": 0.050353537336072424,
+      "cluster_sum": 8.660191096572007,
+      "region_center_gene_id": "fe51028310f76435b5e901a68f8f1b6a916cacbf8ab4f95c654216cd29dd7f88"
+    },
+    {
+      "rank": 178,
+      "index": 44913,
+      "gene_id": "d2e1aebd4b398f403a843a83c49131a59d10f473c6f4d7e4c61c4cb638edd83d",
+      "distance_squared": 0.08394343649648806,
+      "cluster_sum": 8.643962763112336,
+      "region_center_gene_id": "e4e5af37065678ef6ecdf0d40071d1e050bd72c39cba9128e3530b45c5203fc9"
+    },
+    {
+      "rank": 179,
+      "index": 3569,
+      "gene_id": "104bc458521ea1c8e285da70378de935c6781fcb03a98a84ddbc41244f422b2b",
+      "distance_squared": 0.043230200256161075,
+      "cluster_sum": 8.62745108201719,
+      "region_center_gene_id": "a329f94133ee798fba81e8ed51046f12e2662c3be7670f21affc0dfe78295e05"
+    },
+    {
+      "rank": 180,
+      "index": 22853,
+      "gene_id": "6ac3cbf7a0e236ebb8dac4dd98bed14be098b5a3e435c0b1d52eb2b8963f6319",
+      "distance_squared": 0.6786778825927018,
+      "cluster_sum": 8.493225965611224,
+      "region_center_gene_id": "2041e9c30b0f2f7bcea964434c31182cfc5434a96cc759ea93bf258b78e478ef"
+    },
+    {
+      "rank": 181,
+      "index": 14800,
+      "gene_id": "44a07689cb573419bdcd6f402fad7721f13ada7ec5b0caa76993284d11d32752",
+      "distance_squared": 0.4002931850387494,
+      "cluster_sum": 8.306694892468993,
+      "region_center_gene_id": "84ecd52c1da122a041a6baf2eed281c03c5052a6f0394b2aa6d3cdb1185be879"
+    },
+    {
+      "rank": 182,
+      "index": 49250,
+      "gene_id": "e76a1a817e12bfef15ea2d0cb72fe4935844b6b0864db525f003070f98e779e9",
+      "distance_squared": 0.04579321128308108,
+      "cluster_sum": 8.267053835020848,
+      "region_center_gene_id": "39e3cd9a8166f52d048662c922a49ec14c3120c7f6420770870d0434ecf2eeda"
+    },
+    {
+      "rank": 183,
+      "index": 5952,
+      "gene_id": "1b6ad7f6ec92c6d92e2b8a03dc63ac5779ed655dbdab7930b00835472322c0ca",
+      "distance_squared": 1.067478240840682,
+      "cluster_sum": 8.265618166520213,
+      "region_center_gene_id": "e5432766332bae6509a7a5c444cfcb79d9412a2726ea94d7c4eeb17318fe0b6c"
+    },
+    {
+      "rank": 184,
+      "index": 33094,
+      "gene_id": "9b583afabe4b144b2b4b90742689ac8cd4ec423a2efc6bb1872e0039750ad257",
+      "distance_squared": 0.03144736515063523,
+      "cluster_sum": 7.993895039468816,
+      "region_center_gene_id": "353a4e0ee43fd8d20687a466848207d226f7efc2bccdba07e8cce4ac6297e19d"
+    },
+    {
+      "rank": 185,
+      "index": 26418,
+      "gene_id": "7b3917066c470cd180aded0ccabe76ce3aff30c3283cb35a826455219d835bd7",
+      "distance_squared": 0.04347657286691762,
+      "cluster_sum": 7.745218398425332,
+      "region_center_gene_id": "db49023cb906c36e62479ca34f64e8be94ccf4c947515438238fa9a6cb8f7d2a"
+    },
+    {
+      "rank": 186,
+      "index": 8639,
+      "gene_id": "282a1aa5c5b0efe67ff3bbe9af473e7ee391af3fadee5f41714be4dfa0ddb646",
+      "distance_squared": 0.08125807732483484,
+      "cluster_sum": 7.736347764572861,
+      "region_center_gene_id": "3d144b25c6297be5557a579d3e05bff84a60469916e3aee0e191412696994817"
+    },
+    {
+      "rank": 187,
+      "index": 39086,
+      "gene_id": "b78457143929203da8fddcc1be6514e9813bc76f23039eb2f27f594cc0641eec",
+      "distance_squared": 0.02390240841379373,
+      "cluster_sum": 7.564507516900419,
+      "region_center_gene_id": "65f6344c4a11f186ffe87b4c2fc317932e14ecdef7ff8e65543e291e7ddcce46"
+    },
+    {
+      "rank": 188,
+      "index": 17335,
+      "gene_id": "5090236e84f58bb6c601e45e2bff2c73556437a2d2b798de16c31a0d6b05c46a",
+      "distance_squared": 0.04100922543955529,
+      "cluster_sum": 7.555581761206365,
+      "region_center_gene_id": "ab404bd777dcce3ce51824f83cbc5c87b50c3f63c102d6f999dc6e0f20d23152"
+    },
+    {
+      "rank": 189,
+      "index": 35411,
+      "gene_id": "a618d35a9d1feaadf1814af9ad732a12c98d3cfb434e4c1e6ed4488b0d30db35",
+      "distance_squared": 0.03475380642045077,
+      "cluster_sum": 7.495624989187886,
+      "region_center_gene_id": "b50ddf8f21ee2c3232b501c104c2d9de46faa5aad07ef50ab847945ea63e9f25"
+    },
+    {
+      "rank": 190,
+      "index": 49752,
+      "gene_id": "e9c36b6c8f33bd23ed893d5cb584cdd1f98331372b3e1c1bb97a55ea90dad8e8",
+      "distance_squared": 0.2156881048258042,
+      "cluster_sum": 7.4813959122547935,
+      "region_center_gene_id": "f79fd7c463a4a4deb8a3aafad375b478c47fecbd27dd65a22a1ec71108b17331"
+    },
+    {
+      "rank": 191,
+      "index": 52107,
+      "gene_id": "f4af74fc76b892b67f4d2add6b2bc82118f4b3c98d8ee4e6f643523f373328f3",
+      "distance_squared": 0.03544354993857911,
+      "cluster_sum": 7.468448374776326,
+      "region_center_gene_id": "b26a38328c161eeebbea63c2a1a18dda3a810ebdeb11175323391868c5743e02"
+    },
+    {
+      "rank": 192,
+      "index": 14592,
+      "gene_id": "438fdea88bb48df34756971510320e99e32bb389a5778562e55471d7aafdb1ad",
+      "distance_squared": 0.12368430823110815,
+      "cluster_sum": 7.4224563019741625,
+      "region_center_gene_id": "87f879bf8b5a4a047125735c3aec7e6a4fe90621f1897bd746a0c6d07e3654c6"
+    },
+    {
+      "rank": 193,
+      "index": 34333,
+      "gene_id": "a112400e11784d29f8da3ad56ee82e73d71dcab417f364ab30b7706b63ef5482",
+      "distance_squared": 0.2138570380023765,
+      "cluster_sum": 7.37017203227994,
+      "region_center_gene_id": "5390d13ab396885d8912b8513542afaa40648c865d5ab04d5b64db66dbcf9fc4"
+    },
+    {
+      "rank": 194,
+      "index": 34846,
+      "gene_id": "a39b9b57443bff700bf24baa6ba37aabda22ecd92c4829bb940c3b4a9a4e54f7",
+      "distance_squared": 0.17412681939470587,
+      "cluster_sum": 7.307120693105333,
+      "region_center_gene_id": "0e25b4dc5376d5d4ee96f0b05aa8ca8f731516dc352dbdac26682237526edc50"
+    },
+    {
+      "rank": 195,
+      "index": 19852,
+      "gene_id": "5c7f35c7eed286c7304a63fe9cdb990931f80d4291d8607d2452676eaae965a1",
+      "distance_squared": 2.029084646151128,
+      "cluster_sum": 7.277156089656162,
+      "region_center_gene_id": "8314ecebaa022ebbb775a94c97211181472cb39c1532c1d0ac6e6f3fb1ab6f5f"
+    },
+    {
+      "rank": 196,
+      "index": 28759,
+      "gene_id": "861b5073ebbf73699c894bf41fcf3ebf5325b7ff25cb652fbcfd3baf36262fdd",
+      "distance_squared": 0.034410443076650865,
+      "cluster_sum": 7.1166051165328605,
+      "region_center_gene_id": "8f630f0e91aa08a07ce789a134d5c1e76f5239e2b874a90a516f094a59a53d8c"
+    },
+    {
+      "rank": 197,
+      "index": 10768,
+      "gene_id": "31da8b6e837cbd13adf68ffd34810ed0bf29ab198aee45733c5c63f56af407f0",
+      "distance_squared": 0.3570748266594474,
+      "cluster_sum": 7.100742560143137,
+      "region_center_gene_id": "22ab1b3abb0bba028cd8beec06ce33a517c3a7eda162cc59acf1c81eb0d02a01"
+    },
+    {
+      "rank": 198,
+      "index": 26095,
+      "gene_id": "799eda4f8ba147faf66852fdadf0c51eee3fb288a885bac5528c8e98ae38885b",
+      "distance_squared": 0.4065002515319683,
+      "cluster_sum": 7.063855443600263,
+      "region_center_gene_id": "c53bc63133180b4cf49e75346d088cdfdaed64ed88a83adf20b4f45d94216a5e"
+    },
+    {
+      "rank": 199,
+      "index": 52015,
+      "gene_id": "f4403913511c5eb06b67170410b8bf5c0110f25555f5a4881b450c9f50cc5b93",
+      "distance_squared": 0.11800279942141613,
+      "cluster_sum": 7.054316118527104,
+      "region_center_gene_id": "882937064d61d220bcab24e6c8e16410ff4867f44767cca7c8dfe04424efe410"
+    },
+    {
+      "rank": 200,
+      "index": 37968,
+      "gene_id": "b252fd75569574615a0324319665156fd6fb9cc9774ce88ae259b36386e7565a",
+      "distance_squared": 0.02450526619637743,
+      "cluster_sum": 7.028014152001802,
+      "region_center_gene_id": "854cda11d2c279828fc6f1b774409cb6517ddcf1ef6d75a9b9f0029d04e469d8"
+    },
+    {
+      "rank": 201,
+      "index": 52649,
+      "gene_id": "f724affafb4e0510bc632c4c0e0744ebfa620c5f133d99c7517608d5606a720e",
+      "distance_squared": 0.023830324516908627,
+      "cluster_sum": 6.99317553398069,
+      "region_center_gene_id": "81ef4a01adbf8330ad92af2a1dbc52226143158973fac30b8c1a32683f0fffdd"
+    },
+    {
+      "rank": 202,
+      "index": 29398,
+      "gene_id": "891162c2a340ce3387a97de47b11f1fb49af69b2817dafe6588fc9857c30d84f",
+      "distance_squared": 0.03150115665396419,
+      "cluster_sum": 6.988215281722372,
+      "region_center_gene_id": "5b367f788e9b290e8db530c3bcd7e51d1c21ba8a042f18f16c07e58829c80427"
+    },
+    {
+      "rank": 203,
+      "index": 50616,
+      "gene_id": "edac5ca7d6625a9e7adfb8ccc57191356764b28dbb97f43b9c087c569c329ecd",
+      "distance_squared": 0.07673152106137204,
+      "cluster_sum": 6.9768216682691095,
+      "region_center_gene_id": "3d144b25c6297be5557a579d3e05bff84a60469916e3aee0e191412696994817"
+    },
+    {
+      "rank": 204,
+      "index": 17713,
+      "gene_id": "525e0565602321ba51a857bdaaed4e8ec701acb4f7b2d89da96ab802bb93656a",
+      "distance_squared": 1.1086950550930421,
+      "cluster_sum": 6.830367446377239,
+      "region_center_gene_id": "5e621a5d92fcff239ef59409e2b3613bee1b8219d34418a7d6e8f6702a1357b0"
+    },
+    {
+      "rank": 205,
+      "index": 1745,
+      "gene_id": "07f9c51e60f61a73a7bcef39f8f27e90ece0cd6f8cb58d988560f31255351259",
+      "distance_squared": 0.8491781276162176,
+      "cluster_sum": 6.807737029206717,
+      "region_center_gene_id": "309d48e37427678dc9a05d67a09e167dbe1e6b301968afcf017ae2575ab57899"
+    },
+    {
+      "rank": 206,
+      "index": 4454,
+      "gene_id": "14374c34c99d2c47870f98f343b8b3de4cf0ef7351243b2563486b69fe05790a",
+      "distance_squared": 0.11580836666707545,
+      "cluster_sum": 6.750397792254502,
+      "region_center_gene_id": "ef78675925372064162bb94a2afdf5064d1d62002a9ac3663c399875849b84b1"
+    },
+    {
+      "rank": 207,
+      "index": 25509,
+      "gene_id": "76e2d5f96c495bc0301b7d5730a88b8fa4fa17a241e41d31f744d705e90884fe",
+      "distance_squared": 0.033608485043615244,
+      "cluster_sum": 6.602392071975109,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 208,
+      "index": 22644,
+      "gene_id": "69e25b15470650e24aaf1df70781f38106a76d1995af8e8318e08126b795fe7d",
+      "distance_squared": 0.03135898378401286,
+      "cluster_sum": 6.578918654306822,
+      "region_center_gene_id": "1d2b62e6fb2a556f6b9fd1d9e626a55cb40ce3a9855a86531b7b89c14a6a8eec"
+    },
+    {
+      "rank": 209,
+      "index": 25360,
+      "gene_id": "763366a60f46e2d34a22ae02a0faa0d75d5681940cbe0a719d18b982108d30bb",
+      "distance_squared": 0.029508105330447697,
+      "cluster_sum": 6.540086767205096,
+      "region_center_gene_id": "1ca01d54815a9cd75dae04e6b7dfadad986aa2ded5b699804d23e9582395dc48"
+    },
+    {
+      "rank": 210,
+      "index": 199,
+      "gene_id": "00f42c7d6aa168baa8da2fb1ca0f306fd9a8bf67ce063b33b00dec0d1d040421",
+      "distance_squared": 0.02444070948536521,
+      "cluster_sum": 6.36124309158565,
+      "region_center_gene_id": "0c8a315e449e258444020ce2d30eb54d858f7839bea15c64ef574320880ec410"
+    },
+    {
+      "rank": 211,
+      "index": 8043,
+      "gene_id": "254c35e041659772819fdcab4a1c12c094c5600a96cfe7640be11eb5ed08e347",
+      "distance_squared": 0.04257670150659881,
+      "cluster_sum": 6.353184613870895,
+      "region_center_gene_id": "0a2db15eae78f1ecb5eba765c6e98387fcdcbe074cf835c30db2dff0a92365cb"
+    },
+    {
+      "rank": 212,
+      "index": 10167,
+      "gene_id": "2f183c59eb671f566d31b497593daca87871981293e5fdf4dacc19d3deac413a",
+      "distance_squared": 0.04582088345540627,
+      "cluster_sum": 6.311239113413679,
+      "region_center_gene_id": "9b69af840db70b5de3fabcb2df62581ffb66da63753d394d5588c6499495ee8b"
+    },
+    {
+      "rank": 213,
+      "index": 53384,
+      "gene_id": "fab003530a338f79e3589dd4b068693dbdc277b6e49ada813aacdeb71b6938ee",
+      "distance_squared": 0.05689275293005389,
+      "cluster_sum": 6.304694472155594,
+      "region_center_gene_id": "f5b9f989a309eef64976ece7cfb430def6a7ad2d1f4fbb47291542b6b37445ed"
+    },
+    {
+      "rank": 214,
+      "index": 7819,
+      "gene_id": "243490a92f0f7c2010a3c77bf7b6edf50ba678a22e4397444fa4d6e842a4fabb",
+      "distance_squared": 0.07544995674167335,
+      "cluster_sum": 6.282726638549489,
+      "region_center_gene_id": "47a6ad4c49432c2e99d7c8b9dd39ec575e5ea2362ed85dc352ab012fafdc7d82"
+    },
+    {
+      "rank": 215,
+      "index": 30344,
+      "gene_id": "8dbba4c91727f2a38ea8fe443666b1c4c5aa9df7271b2e9aa11f215a8a231dc0",
+      "distance_squared": 0.19059708932071545,
+      "cluster_sum": 6.269282867642738,
+      "region_center_gene_id": "c2911aeaaf5bc7eab2155c73fbbfd11a0f7f648bb58846e42c8ffd43791d390f"
+    },
+    {
+      "rank": 216,
+      "index": 11578,
+      "gene_id": "359e76953d33a9e365b2c7823fd691e8da8a3934c65a7516038e801acaa8a784",
+      "distance_squared": 0.022810496759354464,
+      "cluster_sum": 6.169220304498656,
+      "region_center_gene_id": "0c3571ec5057f12e6ed828e169ac97e9452299b738f20de41c425e7f8e897e6e"
+    },
+    {
+      "rank": 217,
+      "index": 11444,
+      "gene_id": "34fff155ee42b470387563fda889854c3d691b3beb3add91c2c5408159c7c6b6",
+      "distance_squared": 0.03753923511514699,
+      "cluster_sum": 6.164767680619357,
+      "region_center_gene_id": "f7bcdfc21e30df65bb9e2ef0915052d5926e05251df6dcccccd4561c24174daf"
+    },
+    {
+      "rank": 218,
+      "index": 225,
+      "gene_id": "010fc94f7cc53e9fd293d5bbc8534ee06e54d6073253bde9e2000596688071d5",
+      "distance_squared": 0.1077565850432955,
+      "cluster_sum": 6.093674823868648,
+      "region_center_gene_id": "bbcce5661afa2dc9a0006ddf0ed2bfaa4b3fcef8f3b279460d5991a2f155de68"
+    },
+    {
+      "rank": 219,
+      "index": 17978,
+      "gene_id": "537f195419c709d69582e6e1a9350eeb31911db10f2572b262cee2b16e35701e",
+      "distance_squared": 0.16020881823487967,
+      "cluster_sum": 6.0643620666072175,
+      "region_center_gene_id": "0e25b4dc5376d5d4ee96f0b05aa8ca8f731516dc352dbdac26682237526edc50"
+    },
+    {
+      "rank": 220,
+      "index": 855,
+      "gene_id": "03f30bf35c67bd4de23e6ba3e3ee922e38d9cbe580a707f48876ec2377f75a37",
+      "distance_squared": 0.043845392508140894,
+      "cluster_sum": 6.045992814403995,
+      "region_center_gene_id": "fe51028310f76435b5e901a68f8f1b6a916cacbf8ab4f95c654216cd29dd7f88"
+    },
+    {
+      "rank": 221,
+      "index": 33473,
+      "gene_id": "9d0c901f5e1a9cb09b928719b1deb861ad9f2c465580bbb1341725f5169c5835",
+      "distance_squared": 0.06462297543933915,
+      "cluster_sum": 5.99907098316785,
+      "region_center_gene_id": "11a207034cec2a2793a69c159ae3f673cf9ce5ae2f04eb094d0fb7b406fb7738"
+    },
+    {
+      "rank": 222,
+      "index": 32804,
+      "gene_id": "99eea61867bb4d9a4b9bed84f828d89e953396cdb81d2e53ccae8f0961482809",
+      "distance_squared": 0.03342849522146856,
+      "cluster_sum": 5.994606899431332,
+      "region_center_gene_id": "44d129cf6d10b2edbb0cf93fa5bc45fe32d8971548d8836808fda08c826b241b"
+    },
+    {
+      "rank": 223,
+      "index": 5619,
+      "gene_id": "19dfa93ae34799c4ddeb3bd225a4f9b43a42a4a3c158e0236ada981894bce00c",
+      "distance_squared": 0.021446902002346134,
+      "cluster_sum": 5.97585781003471,
+      "region_center_gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c"
+    },
+    {
+      "rank": 224,
+      "index": 794,
+      "gene_id": "03aa0a599e0cc6f98ee8dc91a276967d8bfd09b85a37c52b1bbfb57a3ff875d1",
+      "distance_squared": 0.018362724865945684,
+      "cluster_sum": 5.811165202286045,
+      "region_center_gene_id": "738c46121ed1d27e27dac67b222046139e668ff6889eca9f93598d2fabb1e57c"
+    },
+    {
+      "rank": 225,
+      "index": 14087,
+      "gene_id": "410ae6548df43477a62c105b9f7f194a930fcdceead1b4258a56947a1ebe6af5",
+      "distance_squared": 0.058003057275261644,
+      "cluster_sum": 5.793917640304952,
+      "region_center_gene_id": "6a93646980088e13e24e0a1bd8ff7398cefa66743dc4940e2885a2b6479a64cb"
+    },
+    {
+      "rank": 226,
+      "index": 11102,
+      "gene_id": "337074005c5644a3fc6f6b670ebf37d65f8777aa19ae00a6b038a562ba39cdf2",
+      "distance_squared": 0.3606195613861628,
+      "cluster_sum": 5.772401564071916,
+      "region_center_gene_id": "e0383ecc4bf409c79aa253c96b29a059eef7e6d0758e1b8bccdbae7b8b68f6eb"
+    },
+    {
+      "rank": 227,
+      "index": 27402,
+      "gene_id": "7fdb14d77f91fc4479b84f179acfd02eb52f45136b5cad49162a6dc5179ba26b",
+      "distance_squared": 0.33334878478760804,
+      "cluster_sum": 5.5594871582755845,
+      "region_center_gene_id": "44a07689cb573419bdcd6f402fad7721f13ada7ec5b0caa76993284d11d32752"
+    },
+    {
+      "rank": 228,
+      "index": 30776,
+      "gene_id": "8fd61d618e93312c8ecb558de194c0ad7c14371e8f617ef96545e9a1129fd5f9",
+      "distance_squared": 0.036190690070839415,
+      "cluster_sum": 5.549236052032741,
+      "region_center_gene_id": "a329f94133ee798fba81e8ed51046f12e2662c3be7670f21affc0dfe78295e05"
+    },
+    {
+      "rank": 229,
+      "index": 35406,
+      "gene_id": "a60c620ad8ae4cc8e0488984ca1c8b54974008ff2c244ec7ee3929c99baa26e4",
+      "distance_squared": 0.5618481211194564,
+      "cluster_sum": 5.547639113004314,
+      "region_center_gene_id": "5afcbc0da7d65f750531b892c6bbd708e09e80e270220e977f99212264f5c48d"
+    },
+    {
+      "rank": 230,
+      "index": 2751,
+      "gene_id": "0c6fc11ec145340cee1991931d70a66cfbc37ec3819ee68d8fa916e5212def96",
+      "distance_squared": 0.024620448481463202,
+      "cluster_sum": 5.451939953322081,
+      "region_center_gene_id": "353a4e0ee43fd8d20687a466848207d226f7efc2bccdba07e8cce4ac6297e19d"
+    },
+    {
+      "rank": 231,
+      "index": 52247,
+      "gene_id": "f556ac2552f4d95d3bc11965c854430efaba989cad29406f80bcc05882065a87",
+      "distance_squared": 0.0204111733230747,
+      "cluster_sum": 5.368714436705102,
+      "region_center_gene_id": "cbe672ec6b30e1f04fa133205924ffcacaac758f8ea3a29d772a3ee6f79aa3b5"
+    },
+    {
+      "rank": 232,
+      "index": 53005,
+      "gene_id": "f8e634c9dd7b49379a5e35e841bb399610c4159222ffad02d21699cb833424fd",
+      "distance_squared": 0.037555894336769,
+      "cluster_sum": 5.363628264746957,
+      "region_center_gene_id": "ab404bd777dcce3ce51824f83cbc5c87b50c3f63c102d6f999dc6e0f20d23152"
+    },
+    {
+      "rank": 233,
+      "index": 8655,
+      "gene_id": "283c7e585410ca76ca92d91c9fd541b4b71d0ca5746f347021003995f72c7881",
+      "distance_squared": 0.01847865751203955,
+      "cluster_sum": 5.31171977364993,
+      "region_center_gene_id": "65f6344c4a11f186ffe87b4c2fc317932e14ecdef7ff8e65543e291e7ddcce46"
+    },
+    {
+      "rank": 234,
+      "index": 28850,
+      "gene_id": "867f2d6022dcc9905a6e33b2b88fe86ee99d542a7cdda602fb65b0c5d753917b",
+      "distance_squared": 0.03120313511050757,
+      "cluster_sum": 5.17153539650589,
+      "region_center_gene_id": "b2d64d9640c1ec08647107983798d4840110ffd0874583878a2c0856bf93afba"
+    },
+    {
+      "rank": 235,
+      "index": 11916,
+      "gene_id": "373b2ac3e4721d433187eca1b17cf7867b54e369840b9e6482c74bb860b242d9",
+      "distance_squared": 0.36127949303703927,
+      "cluster_sum": 5.100500817710516,
+      "region_center_gene_id": "c53bc63133180b4cf49e75346d088cdfdaed64ed88a83adf20b4f45d94216a5e"
+    },
+    {
+      "rank": 236,
+      "index": 10529,
+      "gene_id": "30c8c2aff05986eede6bf74bb6745a6371b09c26d78b9e75af41a07695cf8faf",
+      "distance_squared": 0.025749742121787975,
+      "cluster_sum": 5.044550506557724,
+      "region_center_gene_id": "5b367f788e9b290e8db530c3bcd7e51d1c21ba8a042f18f16c07e58829c80427"
+    },
+    {
+      "rank": 237,
+      "index": 14890,
+      "gene_id": "451661b43f29c814058143c38c72a1385ca6467fc9d2fc43aec78c442f673a3d",
+      "distance_squared": 0.03118065568432412,
+      "cluster_sum": 5.039253734589484,
+      "region_center_gene_id": "b3bc6eb815403219d4b8c5f9a87de8531ea9b52bfa266c3d15b044f35e307c98"
+    },
+    {
+      "rank": 238,
+      "index": 13159,
+      "gene_id": "3cd94ab931e5bfb42f1ba7ac8593fe814f61124327afffcf2fab31252b56d637",
+      "distance_squared": 0.5841371468949077,
+      "cluster_sum": 4.953510523583866,
+      "region_center_gene_id": "f56352d38436bf60133a2109504348943f45b8be2e9c782259cd939d110beef2"
+    },
+    {
+      "rank": 239,
+      "index": 8426,
+      "gene_id": "271854bfb4cb39a6c53901ab45a10d4400e1fd74be46da104c5598409c977fca",
+      "distance_squared": 0.5889244030550395,
+      "cluster_sum": 4.943763548710686,
+      "region_center_gene_id": "382264b694388e8ee941e6a7e78eb55c6e224cb9497207c0892d3ac4b0f9c0a0"
+    },
+    {
+      "rank": 240,
+      "index": 13209,
+      "gene_id": "3d10a685f3be2bbba2add31de5f4c2352a05da623ac81bbea8afe088a262492c",
+      "distance_squared": 0.04422730874844483,
+      "cluster_sum": 4.865804558594354,
+      "region_center_gene_id": "ef78675925372064162bb94a2afdf5064d1d62002a9ac3663c399875849b84b1"
+    },
+    {
+      "rank": 241,
+      "index": 15547,
+      "gene_id": "482f082fba95b8d6c5704992e0e7cc7a21ac65f8ce65d2d189972465439a21db",
+      "distance_squared": 0.47850362414354575,
+      "cluster_sum": 4.813633301677266,
+      "region_center_gene_id": "dfc8566fc96f7ddb8d6d29a1825edd2ccf990acdbf6e17683dbc2d0dd788328a"
+    },
+    {
+      "rank": 242,
+      "index": 30647,
+      "gene_id": "8f2c3ba96112392f7ee5b1c04be667aa5f6c7799e27ccdefbccbf6cd10e7c23e",
+      "distance_squared": 0.017968770898020296,
+      "cluster_sum": 4.8078282110637565,
+      "region_center_gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c"
+    },
+    {
+      "rank": 243,
+      "index": 40306,
+      "gene_id": "bd13f6dba4f63f8dd0cdd3c4071b7a25cc14c910632c309c854c79950173c81b",
+      "distance_squared": 0.023628422009331306,
+      "cluster_sum": 4.774533199068509,
+      "region_center_gene_id": "1ca01d54815a9cd75dae04e6b7dfadad986aa2ded5b699804d23e9582395dc48"
+    },
+    {
+      "rank": 244,
+      "index": 7506,
+      "gene_id": "22b54b89c5366845bd80855fb3f298c3dea148092dc7177dddb61e8e1091e434",
+      "distance_squared": 0.028598753927155655,
+      "cluster_sum": 4.725144262043962,
+      "region_center_gene_id": "5bc9bdc7a2d80e7dc7f4252b44d77afac8aecb9ba8b58bc6e28fa1d0a02f5308"
+    },
+    {
+      "rank": 245,
+      "index": 1595,
+      "gene_id": "0747d8d7cad05e0f648fc45599c23c905187336ea04cec341206b43288ed6dfe",
+      "distance_squared": 0.03228190219822911,
+      "cluster_sum": 4.723475962646084,
+      "region_center_gene_id": "44d129cf6d10b2edbb0cf93fa5bc45fe32d8971548d8836808fda08c826b241b"
+    },
+    {
+      "rank": 246,
+      "index": 41584,
+      "gene_id": "c2f8477cd4ae6d55bd496ec2962fb506bc503cf7dfeeb86731afb94ecb046809",
+      "distance_squared": 0.020794904343351503,
+      "cluster_sum": 4.660852043171234,
+      "region_center_gene_id": "0c3571ec5057f12e6ed828e169ac97e9452299b738f20de41c425e7f8e897e6e"
+    },
+    {
+      "rank": 247,
+      "index": 29256,
+      "gene_id": "88609c824bcbc8d392a44bf6710771268fe28cabf41c5c33d7d08a8ac9c04a33",
+      "distance_squared": 0.0631393368086694,
+      "cluster_sum": 4.646092836225188,
+      "region_center_gene_id": "bbcce5661afa2dc9a0006ddf0ed2bfaa4b3fcef8f3b279460d5991a2f155de68"
+    },
+    {
+      "rank": 248,
+      "index": 22484,
+      "gene_id": "692fe8ec6b74199874e058be9364070c365b41ee00665b0ff2235855db357688",
+      "distance_squared": 0.05709713702324192,
+      "cluster_sum": 4.640714568193014,
+      "region_center_gene_id": "2c49b5fedbd1faf02380a8be4d6d3edd4ceed9c4328c4d5ee4baa44a54e11400"
+    },
+    {
+      "rank": 249,
+      "index": 41341,
+      "gene_id": "c1d16bba61212469377808fb4c2c4a2404a254dfcdd00b2e5fd3bd03a8924d7d",
+      "distance_squared": 0.04046063103058923,
+      "cluster_sum": 4.602766562758944,
+      "region_center_gene_id": "fe51028310f76435b5e901a68f8f1b6a916cacbf8ab4f95c654216cd29dd7f88"
+    },
+    {
+      "rank": 250,
+      "index": 52552,
+      "gene_id": "f6bcf1bcf5cc7d906db1da83138414c4a0f8802865623c936510522b6e150d43",
+      "distance_squared": 0.3667942829892838,
+      "cluster_sum": 4.58219132597873,
+      "region_center_gene_id": "195b178ce912e6563bfda1648bf1a7c021cfb014c368177b3482ba2e2b581e30"
+    },
+    {
+      "rank": 251,
+      "index": 53346,
+      "gene_id": "fa80f95e62176580241ea76949740394e032abee8a6665ff5ff3ad5bd56e8454",
+      "distance_squared": 0.03863013875658156,
+      "cluster_sum": 4.555206019122536,
+      "region_center_gene_id": "9888cbfc0ae93c513cd27067585b9f2437bac7f87068337fb89414f6dc3bf090"
+    },
+    {
+      "rank": 252,
+      "index": 8668,
+      "gene_id": "28498568f83ced7d722c60bf557fa3cd80f4d6e8075161c9f759cd302540a875",
+      "distance_squared": 0.17700364239725414,
+      "cluster_sum": 4.536777167355973,
+      "region_center_gene_id": "5390d13ab396885d8912b8513542afaa40648c865d5ab04d5b64db66dbcf9fc4"
+    },
+    {
+      "rank": 253,
+      "index": 51901,
+      "gene_id": "f3ad30d59072b50ad7989bcdca400071d628bad825790e97dabaf9d578bde20d",
+      "distance_squared": 0.03419824408467824,
+      "cluster_sum": 4.526907988709119,
+      "region_center_gene_id": "ee446043c5f12fadba4881482a383e1d2d8d118103de80f9b7af6af3e55df137"
+    },
+    {
+      "rank": 254,
+      "index": 41148,
+      "gene_id": "c1083e898cc8d09ea1e361921d62f72e1dd05f5f60ec06e72c390fc5db1d5cdd",
+      "distance_squared": 0.6970019672980392,
+      "cluster_sum": 4.485998108814079,
+      "region_center_gene_id": "cc3092898a909956e4e83ab86a45731a1a1ad2005f5d192102ecb2c7c395f526"
+    },
+    {
+      "rank": 255,
+      "index": 1518,
+      "gene_id": "06e79a71098ba8525958fc004a323a5e228367b1b3375116c2e85053009f2d50",
+      "distance_squared": 0.04216065385960531,
+      "cluster_sum": 4.483171636075522,
+      "region_center_gene_id": "f5118b2ef2499da9a1f94351811c2ceccdc8d75cdb8c81f9186714501114da4b"
+    },
+    {
+      "rank": 256,
+      "index": 52298,
+      "gene_id": "f596b1e62eb08ef356a2ccb2020f6f0e3535d9bb9ff516cad0da9b0eb52147ca",
+      "distance_squared": 0.22853512289042172,
+      "cluster_sum": 4.480809167807879,
+      "region_center_gene_id": "22ab1b3abb0bba028cd8beec06ce33a517c3a7eda162cc59acf1c81eb0d02a01"
+    },
+    {
+      "rank": 257,
+      "index": 10526,
+      "gene_id": "30c3dbfeea096bbe81bc191c40e9539885bf259b7fc34c745c637596f9523544",
+      "distance_squared": 0.05155488059817741,
+      "cluster_sum": 4.437332552650986,
+      "region_center_gene_id": "dc9778f2afdd6fc89f6b79ef6c223c5b7d10e6ef00c94250bba16d764bb64c3b"
+    },
+    {
+      "rank": 258,
+      "index": 44826,
+      "gene_id": "d26e9f0087c9f5b28ba5574dc987d572cdff2659445364797772ce428a62b91e",
+      "distance_squared": 0.053284730028943884,
+      "cluster_sum": 4.425320789310381,
+      "region_center_gene_id": "47a6ad4c49432c2e99d7c8b9dd39ec575e5ea2362ed85dc352ab012fafdc7d82"
+    },
+    {
+      "rank": 259,
+      "index": 45211,
+      "gene_id": "d46069228c6dd24b98db5e0ee76771965642446bdd320438d7f9b12537bd0abc",
+      "distance_squared": 0.044934660579132285,
+      "cluster_sum": 4.39045875146342,
+      "region_center_gene_id": "38b524de490bc3d57463cc23eb3de2d6a04af291709677e2126951a16136b5ae"
+    },
+    {
+      "rank": 260,
+      "index": 37058,
+      "gene_id": "ae292f8b0005e00089aeefcf79aed6e3a35a8b64118d3c5c743cedee698e4828",
+      "distance_squared": 0.045654592725952785,
+      "cluster_sum": 4.37925599286799,
+      "region_center_gene_id": "3b1c28de16def078c7b65133c6116211f79d1b24cd0e1360f80e1f563db5d8b0"
+    },
+    {
+      "rank": 261,
+      "index": 43971,
+      "gene_id": "ce4f075645b9d658fae376d9ac3d045c2de868ce0e9e5f10f091d0b4c380a5cf",
+      "distance_squared": 0.12134427524664565,
+      "cluster_sum": 4.348051380754867,
+      "region_center_gene_id": "c81903df0861c51c5a9f150b8de297583e4f25fe8173ffb0da424062125985c6"
+    },
+    {
+      "rank": 262,
+      "index": 53051,
+      "gene_id": "f91f5791589e41db9bd419d6d4b644aa336d1251cea36e94097f25ceb4c9e0b7",
+      "distance_squared": 0.09466618509104258,
+      "cluster_sum": 4.291281274634812,
+      "region_center_gene_id": "77144e662ee547d21e18add13786bc76ab71ff5135104ac7e0c08229ae3248e7"
+    },
+    {
+      "rank": 263,
+      "index": 24792,
+      "gene_id": "73a951cb0eaf0ce7b0fcc381e78c176805e0e634a65561f7876f589c21425332",
+      "distance_squared": 0.3153734118042405,
+      "cluster_sum": 4.28519798838095,
+      "region_center_gene_id": "b308b2fbd1b930cec742348eaf53c7963ceaec6b43f87d08dec91a3b68308a73"
+    },
+    {
+      "rank": 264,
+      "index": 37592,
+      "gene_id": "b0a2f8a12380ac583b502fd0f0f9ec63a7292c712e095708e2eace853206292c",
+      "distance_squared": 0.016789287088565672,
+      "cluster_sum": 4.234205169337985,
+      "region_center_gene_id": "e91568019ce12b216ff9df825b7c1e55627504390113fc905c5723a04025f394"
+    },
+    {
+      "rank": 265,
+      "index": 36874,
+      "gene_id": "ad2fd8de7669069b43c092cf1c4c4e694c6583e54bfe508cbcadf49bb01e10ab",
+      "distance_squared": 0.17401038802442986,
+      "cluster_sum": 4.201783125611892,
+      "region_center_gene_id": "9e7b8d4395a1567cbea91c2dbb86f6e6592fe48bfc3b0661ea55264af792d0a1"
+    },
+    {
+      "rank": 266,
+      "index": 8150,
+      "gene_id": "25cf05735b4fbb3c4775809565af86977fffb7df00c08275bddb784e627196a6",
+      "distance_squared": 0.025804422543238042,
+      "cluster_sum": 4.162357113374661,
+      "region_center_gene_id": "8f630f0e91aa08a07ce789a134d5c1e76f5239e2b874a90a516f094a59a53d8c"
+    },
+    {
+      "rank": 267,
+      "index": 448,
+      "gene_id": "02217d86f27a2c1c657654dca880b5df448d1408f28802b92240e64d6db3bee2",
+      "distance_squared": 0.6585011597064094,
+      "cluster_sum": 4.069742813013388,
+      "region_center_gene_id": "fbe317d05bdda0002bd0647029b4d181e96ad1f9e1b625e34d0ea5aa81164917"
+    },
+    {
+      "rank": 268,
+      "index": 45343,
+      "gene_id": "d502b1d5665c0bc087864c2a1fd86f8f22b9cdd3f867b83cadaa5fa4166e0c90",
+      "distance_squared": 0.02657641351855665,
+      "cluster_sum": 4.021396663179204,
+      "region_center_gene_id": "9b69af840db70b5de3fabcb2df62581ffb66da63753d394d5588c6499495ee8b"
+    },
+    {
+      "rank": 269,
+      "index": 37684,
+      "gene_id": "b10940e4b1634ccd769d57c9f97b9f6ba2bec224713f833ed0b567dacd10125b",
+      "distance_squared": 0.16309996560556508,
+      "cluster_sum": 3.9482698993709424,
+      "region_center_gene_id": "22ab1b3abb0bba028cd8beec06ce33a517c3a7eda162cc59acf1c81eb0d02a01"
+    },
+    {
+      "rank": 270,
+      "index": 18939,
+      "gene_id": "5850c7cfe82e8e2e226d0bca6707ed4e22f06fd5f1b95f368db765f6b2943573",
+      "distance_squared": 0.030397517787875875,
+      "cluster_sum": 3.890664635297768,
+      "region_center_gene_id": "b2d64d9640c1ec08647107983798d4840110ffd0874583878a2c0856bf93afba"
+    },
+    {
+      "rank": 271,
+      "index": 1663,
+      "gene_id": "07955216b8476526097c5c03e517416baeb876ef42a758e83124a1fdb4abf6da",
+      "distance_squared": 0.04906737780521407,
+      "cluster_sum": 3.882020312275326,
+      "region_center_gene_id": "dceea4e1032a32090c7799aead0f4cd204bea1cd3165cf11a3e0825896456f6b"
+    },
+    {
+      "rank": 272,
+      "index": 42565,
+      "gene_id": "c7b670bf23281b719b0bf7f935f0d0135122325a4b700dee28d195800836765e",
+      "distance_squared": 0.9436266196765479,
+      "cluster_sum": 3.85096584580126,
+      "region_center_gene_id": "a42e64fbc0829681c26ee26b34f839f5a748bb5be7aed8dde512c2232981f609"
+    },
+    {
+      "rank": 273,
+      "index": 8286,
+      "gene_id": "2660f04d61e8e1ba08af733bb9ff452b1eaee681370f890d3bd4e95d5909e1fb",
+      "distance_squared": 0.06407196938431624,
+      "cluster_sum": 3.7843556994479504,
+      "region_center_gene_id": "ab5f31db6f0998820e15d3ae8748e0ce1655e21dbff647f1e22d2e323d8dce13"
+    },
+    {
+      "rank": 274,
+      "index": 3571,
+      "gene_id": "104edb8de0f5bc6c32f40b99f8d77e215cfd697714e9dda7ce5b09e1a4ee2fab",
+      "distance_squared": 0.02697847248239468,
+      "cluster_sum": 3.7338906686763718,
+      "region_center_gene_id": "44d129cf6d10b2edbb0cf93fa5bc45fe32d8971548d8836808fda08c826b241b"
+    },
+    {
+      "rank": 275,
+      "index": 20438,
+      "gene_id": "5f7076e96d4386a39849af84f551c37d3483eac43d1d4c331415343ce16db162",
+      "distance_squared": 0.01987708264539003,
+      "cluster_sum": 3.7030346651215456,
+      "region_center_gene_id": "cbe672ec6b30e1f04fa133205924ffcacaac758f8ea3a29d772a3ee6f79aa3b5"
+    },
+    {
+      "rank": 276,
+      "index": 20878,
+      "gene_id": "61b2b892f1d6e2054af28809f549662fa40ddefa305b6b1706069a7873095cc0",
+      "distance_squared": 0.022937776857112326,
+      "cluster_sum": 3.701885507976753,
+      "region_center_gene_id": "be0cff1accba271dbca8db46366ba22461c00cef6f7e2cf322fcee43fe06c32a"
+    },
+    {
+      "rank": 277,
+      "index": 36079,
+      "gene_id": "a95eb83ee1241da4b01d0c5a3d377c3334513d6936734623d9498c998dbc3d3b",
+      "distance_squared": 0.024527978127353717,
+      "cluster_sum": 3.6986018850137974,
+      "region_center_gene_id": "a329f94133ee798fba81e8ed51046f12e2662c3be7670f21affc0dfe78295e05"
+    },
+    {
+      "rank": 278,
+      "index": 4577,
+      "gene_id": "14be8e2c21d35e71a36ddf17876ebcce2e4bed7191db187754993cf2aeab8515",
+      "distance_squared": 0.037835178561520064,
+      "cluster_sum": 3.679970027962316,
+      "region_center_gene_id": "cd8deb0bfc23fcbeef960bb66471355ad89cffcc21805dd00dd49108b9e50d25"
+    },
+    {
+      "rank": 279,
+      "index": 34849,
+      "gene_id": "a39cbfad0e39d412b0aad8f2fa43ab7505d0e1b1a50d4a46e29efce1e0829db3",
+      "distance_squared": 0.03322866349075425,
+      "cluster_sum": 3.6720975481819926,
+      "region_center_gene_id": "6a93646980088e13e24e0a1bd8ff7398cefa66743dc4940e2885a2b6479a64cb"
+    },
+    {
+      "rank": 280,
+      "index": 39129,
+      "gene_id": "b7bd613949606d1024db712949b9709c5e6e6634caaa693b5b475523a481c956",
+      "distance_squared": 0.15802655600737858,
+      "cluster_sum": 3.6247298747112198,
+      "region_center_gene_id": "cf9e386339e8d64984d4f38d3c094554610902084c7095405bb78bd4f55a0c49"
+    },
+    {
+      "rank": 281,
+      "index": 31921,
+      "gene_id": "957c58f2a10232f1e449f4944e0cb72f1cda078884fe0e013749bffd98e46da2",
+      "distance_squared": 0.07000459632367158,
+      "cluster_sum": 3.569976496367406,
+      "region_center_gene_id": "d67f52ffca270ccfd236d709fced75121961551fbafa9543cf4138a47d2960f5"
+    },
+    {
+      "rank": 282,
+      "index": 34323,
+      "gene_id": "a107e49b742aa99c49f91fe638b0fab877a58b9ad5591513b7788c25f7ab939a",
+      "distance_squared": 0.07002470053081443,
+      "cluster_sum": 3.5460236420709874,
+      "region_center_gene_id": "33ae0d1d92682a0f7523cfa43d3ff5e4c621a41d06e3d1fca4b931a4f95b84a8"
+    },
+    {
+      "rank": 283,
+      "index": 5065,
+      "gene_id": "171f4d84111eb6a18ee2fa01a58c7acffb2abe38ad604c1dc5d87f1c31659d1b",
+      "distance_squared": 0.9034550596800838,
+      "cluster_sum": 3.5244490978197973,
+      "region_center_gene_id": "58314f306ae21c4bc88d02daa27b1337ffb621029d7e218efa679b05bb75cc58"
+    },
+    {
+      "rank": 284,
+      "index": 25018,
+      "gene_id": "74a3c0d4f58a313c929535ccce71e437a6f317aff91b525d2fdb8828e9e54b17",
+      "distance_squared": 0.04629425148961619,
+      "cluster_sum": 3.5074713406338596,
+      "region_center_gene_id": "3382ca490c35150c8b2370c4414804a55cc3627d68949ee0dae179d647558cd0"
+    },
+    {
+      "rank": 285,
+      "index": 46258,
+      "gene_id": "d960ef8d733702e9aef7c35c93bfd83a18428b99aef4726bd91d9845564b431c",
+      "distance_squared": 0.01918547012853965,
+      "cluster_sum": 3.5029163510341537,
+      "region_center_gene_id": "0c8a315e449e258444020ce2d30eb54d858f7839bea15c64ef574320880ec410"
+    },
+    {
+      "rank": 286,
+      "index": 45898,
+      "gene_id": "d792806014081be55dc549898518076519d7be03f7d66efbd12c68ec6b71cd9c",
+      "distance_squared": 0.02018350643813472,
+      "cluster_sum": 3.492423247605875,
+      "region_center_gene_id": "d6c7abda80363db1e041bba8056f212f444d3513bdb82a5aefa74b0e99d809fe"
+    },
+    {
+      "rank": 287,
+      "index": 5925,
+      "gene_id": "1b4dad9596b1d4649fa7c8a68bac7a7bd19aa7c0a4e4ef956e43847131ba661b",
+      "distance_squared": 0.020349143341591693,
+      "cluster_sum": 3.4711955374358134,
+      "region_center_gene_id": "b817655d6388f812268081603b1971d0ed320b9d8b45c42c4c43a7c5b304b81c"
+    },
+    {
+      "rank": 288,
+      "index": 52721,
+      "gene_id": "f7813305c05b133ce1b7351b0c7254a6168f6c3dd39016d0fe73c2093a786452",
+      "distance_squared": 0.01730475624275258,
+      "cluster_sum": 3.4398256070323168,
+      "region_center_gene_id": "7f894c37fac0a804da7f7af5c8ada0b84b1e6411795b081276afa6b9c0ff1002"
+    },
+    {
+      "rank": 289,
+      "index": 49143,
+      "gene_id": "e6ef887eec1f002cd09c5d193573ea5d749582a901e2bbfbca08c88e8b39e54d",
+      "distance_squared": 0.015508113084921428,
+      "cluster_sum": 3.431047708637629,
+      "region_center_gene_id": "46bb2f3834efe79feeb6b9897f2487f39cc40eaaf96d920de3d34bbc01ea8288"
+    },
+    {
+      "rank": 290,
+      "index": 7845,
+      "gene_id": "2456289a75b1c2dcf7474b1b2212a69ab10ada5e6a04c49ee7452716c8531f8e",
+      "distance_squared": 0.023792157047865074,
+      "cluster_sum": 3.3894208135569923,
+      "region_center_gene_id": "3bd772fa3c18f4caef7913c6670c71e92496cfba5cb1dc86a12a386571881415"
+    },
+    {
+      "rank": 291,
+      "index": 19848,
+      "gene_id": "5c7aa748b4cf7af4c46a874bb0f3b14acd9b69c44c264d266925220b86c7ec31",
+      "distance_squared": 0.042427084756323896,
+      "cluster_sum": 3.375394160438762,
+      "region_center_gene_id": "662aa6e778fc8ce136a73ae75c70cfae165c59a63a7e9ccf232fcffe735d6e3f"
+    },
+    {
+      "rank": 292,
+      "index": 50312,
+      "gene_id": "ec3da8d32268eba40760deba431d850440e22c793d69d364658070643039d70f",
+      "distance_squared": 0.041899037835335384,
+      "cluster_sum": 3.3574766968278613,
+      "region_center_gene_id": "612447461196281c58c555d8589511ed881de6898d0394a175a75fd01defe425"
+    },
+    {
+      "rank": 293,
+      "index": 44372,
+      "gene_id": "d0497dc95ad49d5dc4c921c5636276a0e308eea78c42bb9e53b6f8757dfd9d04",
+      "distance_squared": 0.5128786554917123,
+      "cluster_sum": 3.356141809156563,
+      "region_center_gene_id": "811b4a80c66e93cb13e218fb41f92597c7b3a68a6eed242869bfac3a20907c7d"
+    },
+    {
+      "rank": 294,
+      "index": 13981,
+      "gene_id": "4091c430a6bc687cd7411029f187e6bf082592565991bf67026f150194c1f0cb",
+      "distance_squared": 0.16267801417259345,
+      "cluster_sum": 3.3438554103193567,
+      "region_center_gene_id": "9137c009da1fb665bdd47a605587461e60681a35a5c34abd79b0de17233f87e9"
+    },
+    {
+      "rank": 295,
+      "index": 13164,
+      "gene_id": "3cdaf8503b883b6f11abe9f896243293fb88aef42527edc095da3e9d6d1e5fd6",
+      "distance_squared": 0.014914237498949691,
+      "cluster_sum": 3.3182355939446544,
+      "region_center_gene_id": "bf5f93484e77c5fce2d255632f0d0b0e0f1cc8e6d8b9e819745751ad2a00a98d"
+    },
+    {
+      "rank": 296,
+      "index": 31071,
+      "gene_id": "914fa8601cf9599cfc0637ea3e9970acfb023d426f5dd6e3ae17cb42675844bc",
+      "distance_squared": 0.028257070475322166,
+      "cluster_sum": 3.216465571940606,
+      "region_center_gene_id": "eaa79df44318675909daa6af8e8ac2a19df4f4e91fad3b5aff2891d6ea7c465c"
+    },
+    {
+      "rank": 297,
+      "index": 36165,
+      "gene_id": "a9c0fb28911c2e3d25cd69ea73c9bf1f6223865ca53a83e776ca07ab4444e6e4",
+      "distance_squared": 0.17463698603660094,
+      "cluster_sum": 3.2123902848580546,
+      "region_center_gene_id": "d4ac93658cdcb2209d4140892e2ad43202bd0f0e6d86b1741878b2902055a86a"
+    },
+    {
+      "rank": 298,
+      "index": 7106,
+      "gene_id": "20aa6eb29b721b10c4cef27ec765bc43587a684604e8ea987ade6bc1cb7df0b0",
+      "distance_squared": 0.6014152284551924,
+      "cluster_sum": 3.2013008189868413,
+      "region_center_gene_id": "e5432766332bae6509a7a5c444cfcb79d9412a2726ea94d7c4eeb17318fe0b6c"
+    },
+    {
+      "rank": 299,
+      "index": 18716,
+      "gene_id": "5726cbc2f9e00d571060aeb4fc7744a9f2885832bb783d50cd3b4ea822b20b42",
+      "distance_squared": 0.015420339291149015,
+      "cluster_sum": 3.182918194274163,
+      "region_center_gene_id": "e91568019ce12b216ff9df825b7c1e55627504390113fc905c5723a04025f394"
+    },
+    {
+      "rank": 300,
+      "index": 40676,
+      "gene_id": "bedb816bf49e48ca2fbaeb396ec3f4fe3f7dae725ed2df8aec6b7a6d7e815105",
+      "distance_squared": 0.1555173332285804,
+      "cluster_sum": 3.163703422076824,
+      "region_center_gene_id": "41f6e3c91f7c929fee88e0ac72e353f5fb9d63640aebb0c3d092fd3bc470560d"
+    },
+    {
+      "rank": 301,
+      "index": 36314,
+      "gene_id": "aa75d8a8483af545ef8ab92d8c5390263d68a66109cb23c5fa9246d9ddc28b9f",
+      "distance_squared": 0.14207300579687343,
+      "cluster_sum": 3.1599019665701884,
+      "region_center_gene_id": "c2911aeaaf5bc7eab2155c73fbbfd11a0f7f648bb58846e42c8ffd43791d390f"
+    },
+    {
+      "rank": 302,
+      "index": 34337,
+      "gene_id": "a1163617455a24d75deca8704832c81c4b7501c351d1c8ae20c3d69f5d58e132",
+      "distance_squared": 0.3436961217104785,
+      "cluster_sum": 3.151150715172168,
+      "region_center_gene_id": "5afcbc0da7d65f750531b892c6bbd708e09e80e270220e977f99212264f5c48d"
+    },
+    {
+      "rank": 303,
+      "index": 23645,
+      "gene_id": "6e77dbe2258f46b0ef138e111df8afc3f78d139626f5780f23b1a36142537eda",
+      "distance_squared": 0.16058276785738893,
+      "cluster_sum": 3.151047937385519,
+      "region_center_gene_id": "93791e4a3259304ca7185c2678555484505420ab2add004bc12b2df84d0e07bb"
+    },
+    {
+      "rank": 304,
+      "index": 25542,
+      "gene_id": "7710d733dd5b8521544d7e99ef843feb8eac1fbd3e8b5338bf581047c44000a8",
+      "distance_squared": 0.021357697244043697,
+      "cluster_sum": 3.1403458186569013,
+      "region_center_gene_id": "b50ddf8f21ee2c3232b501c104c2d9de46faa5aad07ef50ab847945ea63e9f25"
+    },
+    {
+      "rank": 305,
+      "index": 39209,
+      "gene_id": "b82be54a2ad4009f9d7174f81e01850b9187a6de4b037d0b3e47fb39f060ca12",
+      "distance_squared": 0.02252113417144688,
+      "cluster_sum": 3.1028666904165796,
+      "region_center_gene_id": "2a2e910756677df3461b495e9ee629e8b1fa389f9a9c093d0ac28dc11fbbb65f"
+    },
+    {
+      "rank": 306,
+      "index": 52245,
+      "gene_id": "f5557b004e1416c37ee453b8ff481910da881c4e88e5afd2b1fbee6787d074a6",
+      "distance_squared": 0.0800101416116807,
+      "cluster_sum": 3.0937099752846433,
+      "region_center_gene_id": "121a997c1620ff4299d9d7fcbfe590d2cc5f3c1404e9d7e193401caa5b1a77cf"
+    },
+    {
+      "rank": 307,
+      "index": 29987,
+      "gene_id": "8be572c27723d1889f2d280dd2f9027f2b758c5a1d11efd8a6bbc0671499983c",
+      "distance_squared": 0.026993678181868756,
+      "cluster_sum": 3.080801596954509,
+      "region_center_gene_id": "6784cbc635df350385f43bf0beee59f18c2f34c20a5aa3245a5f855b16ff0bd4"
+    },
+    {
+      "rank": 308,
+      "index": 53038,
+      "gene_id": "f90e5bf2d3c72521457f73b69bf57aa0b83183e215288a12fc786c9ebe966548",
+      "distance_squared": 0.02062525170115695,
+      "cluster_sum": 3.045232406041933,
+      "region_center_gene_id": "353a4e0ee43fd8d20687a466848207d226f7efc2bccdba07e8cce4ac6297e19d"
+    },
+    {
+      "rank": 309,
+      "index": 52045,
+      "gene_id": "f46203d9b7116646e5a1de1b3d59829ca2b3475b770ce73f1b36774d6f78ac5c",
+      "distance_squared": 0.18542487130033836,
+      "cluster_sum": 3.036952518293063,
+      "region_center_gene_id": "f79fd7c463a4a4deb8a3aafad375b478c47fecbd27dd65a22a1ec71108b17331"
+    },
+    {
+      "rank": 310,
+      "index": 47669,
+      "gene_id": "dfa5a63dd213783bef13857b8067ba9aa1cf8f9a00115be9ff9f49ebd030c857",
+      "distance_squared": 0.017115441346584027,
+      "cluster_sum": 3.0313501200177737,
+      "region_center_gene_id": "8d70abc859c783a784a0850409400562441c5e2c578a9f8fd05d48f3da039aaa"
+    },
+    {
+      "rank": 311,
+      "index": 24576,
+      "gene_id": "72a0762281b44bf5e574637b0c6025bdaade1e994eb4266d61889cba3f5bc5fb",
+      "distance_squared": 0.13907009746540336,
+      "cluster_sum": 3.0288920519247333,
+      "region_center_gene_id": "5390d13ab396885d8912b8513542afaa40648c865d5ab04d5b64db66dbcf9fc4"
+    },
+    {
+      "rank": 312,
+      "index": 5017,
+      "gene_id": "16e131ef8809553fff45917e085e220a37ba745336db5e84db859e874f248222",
+      "distance_squared": 0.028835565547335497,
+      "cluster_sum": 2.996659195584379,
+      "region_center_gene_id": "6a93646980088e13e24e0a1bd8ff7398cefa66743dc4940e2885a2b6479a64cb"
+    },
+    {
+      "rank": 313,
+      "index": 12449,
+      "gene_id": "399e848a0088de285f18a65e5179e62b2035d049d9f9c3fdd00ec1c72ee1555d",
+      "distance_squared": 0.22125128915952552,
+      "cluster_sum": 2.94948077301361,
+      "region_center_gene_id": "f77e554b6c19a33ee3327b547b782dfea213bf373a21f3d8a7c00c22d08c6174"
+    },
+    {
+      "rank": 314,
+      "index": 5743,
+      "gene_id": "1a7839e2e25a9ce98197c86a73509eea4e3cff30f3736dba573fa9d5a52a1b46",
+      "distance_squared": 0.05083847094835206,
+      "cluster_sum": 2.9391768628785364,
+      "region_center_gene_id": "893c2daec9a9d70583bfd0956136b79c53c1e620dcc42b8155798cb4c179f7fd"
+    },
+    {
+      "rank": 315,
+      "index": 17934,
+      "gene_id": "53525822794fb70cf3d01eb60a8538853b4e5eac9bc5f6ec6ac1e7704f6578e7",
+      "distance_squared": 0.0212826707066857,
+      "cluster_sum": 2.937783648573755,
+      "region_center_gene_id": "f5118b2ef2499da9a1f94351811c2ceccdc8d75cdb8c81f9186714501114da4b"
+    },
+    {
+      "rank": 316,
+      "index": 47977,
+      "gene_id": "e132980e2594deea6ab413f20eb01579a46456b724337f8f06a8fe03ec1aec5d",
+      "distance_squared": 0.023317385752378864,
+      "cluster_sum": 2.9303810380727526,
+      "region_center_gene_id": "587f3fe94144c230b50f67c440fb4743b2e620bd8bc668e3b4e086e14f5b3e2b"
+    },
+    {
+      "rank": 317,
+      "index": 26031,
+      "gene_id": "7953758e160e110c2a10b173e1008ea911dc39d9f8d8c15493aa95acbb4a9e74",
+      "distance_squared": 0.014291054673670029,
+      "cluster_sum": 2.8936073825334883,
+      "region_center_gene_id": "4a0caaeced095a9e07148eff867b531681a17b24ef4809746add5e7e49169604"
+    },
+    {
+      "rank": 318,
+      "index": 26596,
+      "gene_id": "7c0931446df6eb69b9d2b8bd69849658c193e73a5c41e6b497663032d584c262",
+      "distance_squared": 0.017067129052600494,
+      "cluster_sum": 2.8743612138646975,
+      "region_center_gene_id": "0c3571ec5057f12e6ed828e169ac97e9452299b738f20de41c425e7f8e897e6e"
+    },
+    {
+      "rank": 319,
+      "index": 34897,
+      "gene_id": "a3cd792a7397ddabfd68009c7a839622fd700ec56a143f381577a316d42d5eb3",
+      "distance_squared": 0.08384976581766773,
+      "cluster_sum": 2.8719701340761365,
+      "region_center_gene_id": "882937064d61d220bcab24e6c8e16410ff4867f44767cca7c8dfe04424efe410"
+    },
+    {
+      "rank": 320,
+      "index": 40299,
+      "gene_id": "bd088430f68c41c9cfea05071e8cb266c8806c209be1e7c9ba733cc486a5a600",
+      "distance_squared": 0.018508265829108795,
+      "cluster_sum": 2.8386813467192344,
+      "region_center_gene_id": "4a39120909aac5b3814ae47a58f72ac0b4f2d38bd223c2f6bac49e246566ee6c"
+    },
+    {
+      "rank": 321,
+      "index": 45852,
+      "gene_id": "d760164335d35af5fb53df348b9e1ad0fa0a81bd6cd149d73a1a3b280084f4c2",
+      "distance_squared": 1.0123534268045349,
+      "cluster_sum": 2.826221705012446,
+      "region_center_gene_id": "8314ecebaa022ebbb775a94c97211181472cb39c1532c1d0ac6e6f3fb1ab6f5f"
+    },
+    {
+      "rank": 322,
+      "index": 22376,
+      "gene_id": "68c0f3bf8205ef8a57477e937b57d0026b71fd55dd6b2f2008a531664f9fd849",
+      "distance_squared": 0.04671885132400612,
+      "cluster_sum": 2.812900846512083,
+      "region_center_gene_id": "ab5f31db6f0998820e15d3ae8748e0ce1655e21dbff647f1e22d2e323d8dce13"
+    },
+    {
+      "rank": 323,
+      "index": 14540,
+      "gene_id": "4357530c5250e0f88f55773f49edfb2dbb2b3dcf38932fddc4d657ce69c6ce42",
+      "distance_squared": 0.014811164243963166,
+      "cluster_sum": 2.8066280660221667,
+      "region_center_gene_id": "b0294986027d5dd01592658d2ddf5eb1c72213b6ce033d8284398532ca606ffe"
+    },
+    {
+      "rank": 324,
+      "index": 21840,
+      "gene_id": "66346ad42be3748acd59946838365421aa21b90547897e2ff905789c02e1eebb",
+      "distance_squared": 0.02044663368397601,
+      "cluster_sum": 2.7837931493635666,
+      "region_center_gene_id": "7b3917066c470cd180aded0ccabe76ce3aff30c3283cb35a826455219d835bd7"
+    },
+    {
+      "rank": 325,
+      "index": 41150,
+      "gene_id": "c10dc49ab4bc4b77a186d1b299e358a63671b6c4eb3d045ef1c9cb57c31c5268",
+      "distance_squared": 0.036755727887819625,
+      "cluster_sum": 2.7601803051881584,
+      "region_center_gene_id": "2bee18af22fb536a22716e80b5efbc5b28bc0188290d0bdbc5bb2abb42edf84f"
+    },
+    {
+      "rank": 326,
+      "index": 18092,
+      "gene_id": "5401749071561ed072d56e3b83d6ee4183fd3a1c14b4c2ed643a2d0891f3e1fa",
+      "distance_squared": 0.0474259864189199,
+      "cluster_sum": 2.7499562494870156,
+      "region_center_gene_id": "e5a43001a924578c366d22f1746a506d82caf267015d5cdba240f4beef929246"
+    },
+    {
+      "rank": 327,
+      "index": 44256,
+      "gene_id": "cf9ca1f997e2e4c0f185c9d7f0243bb9058eae1d85b1d9690f127159c96ed08b",
+      "distance_squared": 0.16976579358968003,
+      "cluster_sum": 2.733819891896578,
+      "region_center_gene_id": "e6efa1fa9fdcb2a436b2b0790b6ad443f3d6d4c27456b9195957196b2caa4a75"
+    },
+    {
+      "rank": 328,
+      "index": 30359,
+      "gene_id": "8dcbc2b629a52c90b69e34f176afada5febebcb30837d680de1a7a921a756ab1",
+      "distance_squared": 0.02043322139771079,
+      "cluster_sum": 2.727081928678847,
+      "region_center_gene_id": "1ef80c33fa432897e83dd7cf7f36535d55bf7413480cef7901c018d1c6b86bd0"
+    },
+    {
+      "rank": 329,
+      "index": 9696,
+      "gene_id": "2cb8610a608341fc19c88fc8418808640e25a7a737e87d10e07041e335a57f80",
+      "distance_squared": 0.23655661459475252,
+      "cluster_sum": 2.723656532366905,
+      "region_center_gene_id": "4b7027ba8a134332f97b8fd745ccd1486acfd8277971600ea421c06ce3bf904e"
+    },
+    {
+      "rank": 330,
+      "index": 17520,
+      "gene_id": "5174085d9e501eebfa4f1cc92d63965fd7ca93f906e425aac28d6e68b9075999",
+      "distance_squared": 0.01550770218525701,
+      "cluster_sum": 2.6864188750992417,
+      "region_center_gene_id": "46bb2f3834efe79feeb6b9897f2487f39cc40eaaf96d920de3d34bbc01ea8288"
+    },
+    {
+      "rank": 331,
+      "index": 42824,
+      "gene_id": "c8e76a89181a97a4d5571f58bb112fe5ab3d0f3e897c88970b7068faf9df5599",
+      "distance_squared": 0.044261609095387226,
+      "cluster_sum": 2.683815216040293,
+      "region_center_gene_id": "dceea4e1032a32090c7799aead0f4cd204bea1cd3165cf11a3e0825896456f6b"
+    },
+    {
+      "rank": 332,
+      "index": 35676,
+      "gene_id": "a759974397b0a236cb60fb6f88e8d9a40e2e427274881049bc6f5b8a899569fd",
+      "distance_squared": 0.016630208042024343,
+      "cluster_sum": 2.6800783055889026,
+      "region_center_gene_id": "1f5d520bb4acbb9953b31209c23f450c242329c3574ebe7de2da93d34e49f3dc"
+    },
+    {
+      "rank": 333,
+      "index": 28534,
+      "gene_id": "852109f77cedf0e21ea3ee9851236978d20f5f2911b3626607ed385888adc480",
+      "distance_squared": 0.38875788122234156,
+      "cluster_sum": 2.6754950534631643,
+      "region_center_gene_id": "309d48e37427678dc9a05d67a09e167dbe1e6b301968afcf017ae2575ab57899"
+    },
+    {
+      "rank": 334,
+      "index": 22341,
+      "gene_id": "68993e45d9ef80660d99efe93ec7a6507a86d65101a6599da2bf3369fcdcf713",
+      "distance_squared": 0.030055877929555372,
+      "cluster_sum": 2.6613294261072014,
+      "region_center_gene_id": "e01a3df339ef9ba981eaddaf2a820b949184af2bc88700ae03ae79c7f8d4c2f9"
+    },
+    {
+      "rank": 335,
+      "index": 32774,
+      "gene_id": "99cada3ed4f47348754531f186f74c4db51eed13123b309b3d23836aa9f85c27",
+      "distance_squared": 0.04370114334633644,
+      "cluster_sum": 2.6519652442603387,
+      "region_center_gene_id": "23bd732615d18d8f9a3f6cb73a7fabb64a1d734e74a1d682073eb1cc06c6491a"
+    },
+    {
+      "rank": 336,
+      "index": 46191,
+      "gene_id": "d903e9099c188b8d4a7ce888759bbb6a1dd109a7d5a91ae9274ec22e99c383d0",
+      "distance_squared": 0.2613693839962986,
+      "cluster_sum": 2.6123948304767626,
+      "region_center_gene_id": "337074005c5644a3fc6f6b670ebf37d65f8777aa19ae00a6b038a562ba39cdf2"
+    },
+    {
+      "rank": 337,
+      "index": 2952,
+      "gene_id": "0d61b992d1081b431b1a088f6ec1f64d647e182604bf26e22465af251fedf793",
+      "distance_squared": 0.40944647028422615,
+      "cluster_sum": 2.609216960878313,
+      "region_center_gene_id": "dfc8566fc96f7ddb8d6d29a1825edd2ccf990acdbf6e17683dbc2d0dd788328a"
+    },
+    {
+      "rank": 338,
+      "index": 32164,
+      "gene_id": "96c297e008a2f9ef47c2e70cb915f2d5ec7ba9c2740751b0705ea13096869551",
+      "distance_squared": 0.01401567538927332,
+      "cluster_sum": 2.5938395975888575,
+      "region_center_gene_id": "0c8a315e449e258444020ce2d30eb54d858f7839bea15c64ef574320880ec410"
+    },
+    {
+      "rank": 339,
+      "index": 2179,
+      "gene_id": "09e334b2a4a0e12d919c17dd761dc09638a794233d20bd21261450bd58d9dcae",
+      "distance_squared": 0.02509911646482101,
+      "cluster_sum": 2.587544741013977,
+      "region_center_gene_id": "3b1c28de16def078c7b65133c6116211f79d1b24cd0e1360f80e1f563db5d8b0"
+    },
+    {
+      "rank": 340,
+      "index": 36267,
+      "gene_id": "aa4814ba13afd692b7fb25810fe5e36edd687935d0c42963ee05bd4f9cb14588",
+      "distance_squared": 0.18470243267350872,
+      "cluster_sum": 2.57520669442138,
+      "region_center_gene_id": "8e1d4e6cc4eae28d027c12bf2d0599c19d1ebb37850ded21db597b2d8e01aafa"
+    },
+    {
+      "rank": 341,
+      "index": 20403,
+      "gene_id": "5f3b412f6d27e210a38406610b06126ca7c110707827b9c75c12a0622bc9d0b8",
+      "distance_squared": 0.014960811348751425,
+      "cluster_sum": 2.5717109137266814,
+      "region_center_gene_id": "7f894c37fac0a804da7f7af5c8ada0b84b1e6411795b081276afa6b9c0ff1002"
+    },
+    {
+      "rank": 342,
+      "index": 8125,
+      "gene_id": "25aa8834d3129a8a2336ab07192ec5edfb4d898139904c12bffbe457f9ebf114",
+      "distance_squared": 0.0214716321642293,
+      "cluster_sum": 2.5264503316317377,
+      "region_center_gene_id": "2a2e910756677df3461b495e9ee629e8b1fa389f9a9c093d0ac28dc11fbbb65f"
+    },
+    {
+      "rank": 343,
+      "index": 19144,
+      "gene_id": "59264c0c3032f3987375f57dd2848070cfdefc93be65710923985fd64ce2aa1b",
+      "distance_squared": 0.14704009500792597,
+      "cluster_sum": 2.5102479094072265,
+      "region_center_gene_id": "c53bc63133180b4cf49e75346d088cdfdaed64ed88a83adf20b4f45d94216a5e"
+    },
+    {
+      "rank": 344,
+      "index": 14589,
+      "gene_id": "438b5f72e52cf0d03acf006cc90ae058277567112bc159d1117b988d6de7ba25",
+      "distance_squared": 0.019534919130759658,
+      "cluster_sum": 2.4940837432297944,
+      "region_center_gene_id": "9888cbfc0ae93c513cd27067585b9f2437bac7f87068337fb89414f6dc3bf090"
+    },
+    {
+      "rank": 345,
+      "index": 32667,
+      "gene_id": "993e91deca0a29e3fe1ba6e22ec44a701f803ce5d352542a88c754b66b663764",
+      "distance_squared": 0.46818210244208325,
+      "cluster_sum": 2.4799137061820313,
+      "region_center_gene_id": "5e621a5d92fcff239ef59409e2b3613bee1b8219d34418a7d6e8f6702a1357b0"
+    },
+    {
+      "rank": 346,
+      "index": 30891,
+      "gene_id": "906eed436bba34c6a29391229e15457da15d969e26248f11f77707e5a9181f3f",
+      "distance_squared": 0.10234887093022556,
+      "cluster_sum": 2.4798645801686683,
+      "region_center_gene_id": "3a8cbe1ef1b161392064ff1feb80652343ca9b90341fd08705c878a9e55933b3"
+    },
+    {
+      "rank": 347,
+      "index": 21132,
+      "gene_id": "62f2784664c90bad3f23f931ca19b14fe836ff66160778ecf0d1e6ae71b25473",
+      "distance_squared": 0.03872592293479122,
+      "cluster_sum": 2.4736955734713746,
+      "region_center_gene_id": "811d4fea87f466ef2c85d6d28d4e9f3ecc34fd770eadf2a39c1b1e1a173bdf0f"
+    },
+    {
+      "rank": 348,
+      "index": 52565,
+      "gene_id": "f6d55502beabd9cabe92dfe6f0006991b8138b61eec995500f8b4926d4de6086",
+      "distance_squared": 0.0290523658034786,
+      "cluster_sum": 2.460022841503561,
+      "region_center_gene_id": "81312fce26b3a01192bd8d34be6fd349f8b116428595df8786f075474619841e"
+    },
+    {
+      "rank": 349,
+      "index": 17639,
+      "gene_id": "5201a27f037917653bebec8d826db4e76661225e1f491729a5d8f3a2841a5952",
+      "distance_squared": 0.056332159750760155,
+      "cluster_sum": 2.4472163152178075,
+      "region_center_gene_id": "33ae0d1d92682a0f7523cfa43d3ff5e4c621a41d06e3d1fca4b931a4f95b84a8"
+    },
+    {
+      "rank": 350,
+      "index": 10563,
+      "gene_id": "30ee6d45e7607e5c471aa281dace6f758510c67bc8254ce92952cca444fa3a47",
+      "distance_squared": 0.027117128764663195,
+      "cluster_sum": 2.4398219973723685,
+      "region_center_gene_id": "39e3cd9a8166f52d048662c922a49ec14c3120c7f6420770870d0434ecf2eeda"
+    },
+    {
+      "rank": 351,
+      "index": 19789,
+      "gene_id": "5c3342879fac80a35c660b5a4e327168c166b063b69f56f5e1dadc774e27a23e",
+      "distance_squared": 0.10768025979170283,
+      "cluster_sum": 2.41707123755449,
+      "region_center_gene_id": "5390d13ab396885d8912b8513542afaa40648c865d5ab04d5b64db66dbcf9fc4"
+    },
+    {
+      "rank": 352,
+      "index": 6379,
+      "gene_id": "1d72c9e4258fd5707a2dee23bf76deebe9b97466326d96952ff1966ceb60b331",
+      "distance_squared": 0.01676331218139745,
+      "cluster_sum": 2.41557705161205,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 353,
+      "index": 11098,
+      "gene_id": "336b91c6ee51e82307a9e5ba751c4a97cf4e755adb66617ec8cdfc5d04769511",
+      "distance_squared": 0.03077637523962738,
+      "cluster_sum": 2.382614166208931,
+      "region_center_gene_id": "fab003530a338f79e3589dd4b068693dbdc277b6e49ada813aacdeb71b6938ee"
+    },
+    {
+      "rank": 354,
+      "index": 46428,
+      "gene_id": "da1800095e0483275426c44b39d5177dc6592ea9371fb2bbcd06dd5b5ac7cc36",
+      "distance_squared": 0.04338731575581608,
+      "cluster_sum": 2.371075411748804,
+      "region_center_gene_id": "38b524de490bc3d57463cc23eb3de2d6a04af291709677e2126951a16136b5ae"
+    },
+    {
+      "rank": 355,
+      "index": 7857,
+      "gene_id": "24659f6401f35e5e4c35ad0657d814e97f8ba3dbc9db741d33d7f8dba9e81eed",
+      "distance_squared": 0.032382704927514334,
+      "cluster_sum": 2.3690184360140005,
+      "region_center_gene_id": "0f465fbc8d938d3c21f2456aca73de373789deb90ff3781ab2d957e129117e04"
+    },
+    {
+      "rank": 356,
+      "index": 35938,
+      "gene_id": "a89df331f5b0e6e1130186256b243335c3e7aac08bf215e559f984413272848d",
+      "distance_squared": 0.02485902010032528,
+      "cluster_sum": 2.3321915094753733,
+      "region_center_gene_id": "06e79a71098ba8525958fc004a323a5e228367b1b3375116c2e85053009f2d50"
+    },
+    {
+      "rank": 357,
+      "index": 4964,
+      "gene_id": "16a6fbc311b5588f1867fa0bf25a2eb897030b8d89e7195cf02dc2cee5187656",
+      "distance_squared": 0.014364646886354257,
+      "cluster_sum": 2.311792247030134,
+      "region_center_gene_id": "e91568019ce12b216ff9df825b7c1e55627504390113fc905c5723a04025f394"
+    },
+    {
+      "rank": 358,
+      "index": 26686,
+      "gene_id": "7c6621440bbb1c46bcc9d5cfb61cdb86273950e13acf3ec33f0c731224ad5ac9",
+      "distance_squared": 0.14730717550304961,
+      "cluster_sum": 2.309075263654237,
+      "region_center_gene_id": "9e7b8d4395a1567cbea91c2dbb86f6e6592fe48bfc3b0661ea55264af792d0a1"
+    },
+    {
+      "rank": 359,
+      "index": 3196,
+      "gene_id": "0e81c1b75a668ba958f6527c67dd12e8b5f343272222b2af3f5534ca2847ba0b",
+      "distance_squared": 0.08752964212352851,
+      "cluster_sum": 2.301116430376205,
+      "region_center_gene_id": "8a5f2ac120b6ae88e6cc0b4da55e07760cb8c7e9e1fb1a671f01468e9bf4a364"
+    },
+    {
+      "rank": 360,
+      "index": 25723,
+      "gene_id": "77c71e693f6e7d8cd6329c12f7590ccd23daed4d4386a11c4a0469599bf48b21",
+      "distance_squared": 0.023795585275528663,
+      "cluster_sum": 2.289744890753583,
+      "region_center_gene_id": "ee0502d77ddec9ecb05d7174c0eeae74884773c3ca9acba211995af19fc8c76b"
+    },
+    {
+      "rank": 361,
+      "index": 15191,
+      "gene_id": "4671fa9b6f7ac2150c6c26685e54733091989c3a0d32d3860f542f1d7520e9c1",
+      "distance_squared": 0.023761749822753718,
+      "cluster_sum": 2.2721227656068717,
+      "region_center_gene_id": "6d3e050e5ba542a6e2c5bfdfc989c7f3c2ee1b4142a79aa227b765db68faa14e"
+    },
+    {
+      "rank": 362,
+      "index": 11493,
+      "gene_id": "352efc6c38f52e7b3f6d270bbc90279195fe88aef9dbfc570e228b2e2beeec6f",
+      "distance_squared": 0.01627957292677264,
+      "cluster_sum": 2.26953551516079,
+      "region_center_gene_id": "4a39120909aac5b3814ae47a58f72ac0b4f2d38bd223c2f6bac49e246566ee6c"
+    },
+    {
+      "rank": 363,
+      "index": 26423,
+      "gene_id": "7b3ecd90fd40493b76b2f74cdee2216ddcd6fbfa387a6862b1dea294d15f293f",
+      "distance_squared": 0.021069011535715883,
+      "cluster_sum": 2.268369508533207,
+      "region_center_gene_id": "0c6fc11ec145340cee1991931d70a66cfbc37ec3819ee68d8fa916e5212def96"
+    },
+    {
+      "rank": 364,
+      "index": 28601,
+      "gene_id": "856f771af307c030e192b286bfa1648a412e2c9367d3924ec6b12d29610b7df9",
+      "distance_squared": 0.021388031392806404,
+      "cluster_sum": 2.2425555587422688,
+      "region_center_gene_id": "612447461196281c58c555d8589511ed881de6898d0394a175a75fd01defe425"
+    },
+    {
+      "rank": 365,
+      "index": 36496,
+      "gene_id": "ab43d05111335b50eeb3f46b19970bda37c55add77df302742af01c8ca060fdb",
+      "distance_squared": 0.015510595294832678,
+      "cluster_sum": 2.2401140395295784,
+      "region_center_gene_id": "b817655d6388f812268081603b1971d0ed320b9d8b45c42c4c43a7c5b304b81c"
+    },
+    {
+      "rank": 366,
+      "index": 4138,
+      "gene_id": "12bfc215d2d6e39567a60497694bd6f7d63f0c2169371cbf2bad6ef318518a23",
+      "distance_squared": 0.012958053225703642,
+      "cluster_sum": 2.2355872001929,
+      "region_center_gene_id": "d6c7abda80363db1e041bba8056f212f444d3513bdb82a5aefa74b0e99d809fe"
+    },
+    {
+      "rank": 367,
+      "index": 6986,
+      "gene_id": "202edd653860d871f9146ed2b111ee757fdbcf2ff9106a182e1d38bd5bdddc4e",
+      "distance_squared": 0.0648909415694228,
+      "cluster_sum": 2.233718063271517,
+      "region_center_gene_id": "121a997c1620ff4299d9d7fcbfe590d2cc5f3c1404e9d7e193401caa5b1a77cf"
+    },
+    {
+      "rank": 368,
+      "index": 26913,
+      "gene_id": "7d8e3d03a27201b0ae752cfb8282dec685bdd2f7af0b6cd3ff05fc079fa07fb9",
+      "distance_squared": 0.023402228106134446,
+      "cluster_sum": 2.217462198458883,
+      "region_center_gene_id": "b112e31ca037fefad583ce47f41f730e0c2e938e23753c3a1187faa6235bb59e"
+    },
+    {
+      "rank": 369,
+      "index": 32429,
+      "gene_id": "98129ec3d63913dee23122efa938d43bea41263436eb72ecf6d75e52f86ce7cf",
+      "distance_squared": 0.023314068854126763,
+      "cluster_sum": 2.2057392999791583,
+      "region_center_gene_id": "f7bcdfc21e30df65bb9e2ef0915052d5926e05251df6dcccccd4561c24174daf"
+    },
+    {
+      "rank": 370,
+      "index": 14310,
+      "gene_id": "421c5b50285ac60a64f78d0453676b7c6eb25414bcd7faf55f548ca11b11561e",
+      "distance_squared": 0.021639947579319935,
+      "cluster_sum": 2.204345421138927,
+      "region_center_gene_id": "3bd772fa3c18f4caef7913c6670c71e92496cfba5cb1dc86a12a386571881415"
+    },
+    {
+      "rank": 371,
+      "index": 50416,
+      "gene_id": "ecb5d0afc97b70050f03a3a68e1916f11d4b4282ae30fef61a85b1e87cfd7f46",
+      "distance_squared": 0.014609237161964491,
+      "cluster_sum": 2.2028627264797533,
+      "region_center_gene_id": "76e2d5f96c495bc0301b7d5730a88b8fa4fa17a241e41d31f744d705e90884fe"
+    },
+    {
+      "rank": 372,
+      "index": 46780,
+      "gene_id": "dbc66dfcb8d56adc05a998df22457caffbb82a25074c1f78f5aba47b7158f05e",
+      "distance_squared": 0.018698511087578376,
+      "cluster_sum": 2.2020948616028293,
+      "region_center_gene_id": "5b367f788e9b290e8db530c3bcd7e51d1c21ba8a042f18f16c07e58829c80427"
+    },
+    {
+      "rank": 373,
+      "index": 52118,
+      "gene_id": "f4bc2ab86ae282490047c4d9a2709eed580dbea45d9eb524305b3a979e24a8bc",
+      "distance_squared": 0.23234821768572972,
+      "cluster_sum": 2.177520840965076,
+      "region_center_gene_id": "382264b694388e8ee941e6a7e78eb55c6e224cb9497207c0892d3ac4b0f9c0a0"
+    },
+    {
+      "rank": 374,
+      "index": 44815,
+      "gene_id": "d261a58d1830994cce2449ddbfa07d271cea7aa398bed551bea8eb83dc227f3d",
+      "distance_squared": 0.013290555441395062,
+      "cluster_sum": 2.1659754228169863,
+      "region_center_gene_id": "0f99f93e1433a4ab490aa3ffadc756e66b22d7e129918041547212cbc74052ad"
+    },
+    {
+      "rank": 375,
+      "index": 673,
+      "gene_id": "03216f26d30fe52fd8ba7e2bb5a0f756eb1030f174bc3736b0d4252002daf630",
+      "distance_squared": 0.016221038754867006,
+      "cluster_sum": 2.1188022591263715,
+      "region_center_gene_id": "dd295ae7109c85448520e1767139ea2be44b0f9a1f724e9d7fd8246ee850755a"
+    },
+    {
+      "rank": 376,
+      "index": 39110,
+      "gene_id": "b7a9319aaed2092cd0fc9be0553b191a00ccb13d98952fe2efbd69afec7c6f0b",
+      "distance_squared": 0.24388468468589547,
+      "cluster_sum": 2.109713400817509,
+      "region_center_gene_id": "84ecd52c1da122a041a6baf2eed281c03c5052a6f0394b2aa6d3cdb1185be879"
+    },
+    {
+      "rank": 377,
+      "index": 24850,
+      "gene_id": "73e5dfcd06824f37d9ea08cd28eafed4eebd595350be782d7fb30ee952f481a4",
+      "distance_squared": 0.030876780151485192,
+      "cluster_sum": 2.0947989011982333,
+      "region_center_gene_id": "fe51028310f76435b5e901a68f8f1b6a916cacbf8ab4f95c654216cd29dd7f88"
+    },
+    {
+      "rank": 378,
+      "index": 43226,
+      "gene_id": "cad169d11a6a7edbb3f57152b39c5fa9c774b48ec57b87d25c3edcd21d46a738",
+      "distance_squared": 0.14744677599144546,
+      "cluster_sum": 2.0918337492772405,
+      "region_center_gene_id": "f77e554b6c19a33ee3327b547b782dfea213bf373a21f3d8a7c00c22d08c6174"
+    },
+    {
+      "rank": 379,
+      "index": 32399,
+      "gene_id": "97e902c1f88fa15ce36d8b254735dcaca6299c6503d87548bd08674bf80da839",
+      "distance_squared": 0.495784393399722,
+      "cluster_sum": 2.085122471948691,
+      "region_center_gene_id": "d681ecae18f256bf904b7968e074029f84c310fe5cc8b41de6b40c7a412ce2a2"
+    },
+    {
+      "rank": 380,
+      "index": 42310,
+      "gene_id": "c67f3e71624e4cd7d1d2cbcc8ceb99a511b77122b0cbbd44eefb31ed3d545406",
+      "distance_squared": 0.019870314148682153,
+      "cluster_sum": 2.06107451747695,
+      "region_center_gene_id": "867f2d6022dcc9905a6e33b2b88fe86ee99d542a7cdda602fb65b0c5d753917b"
+    },
+    {
+      "rank": 381,
+      "index": 12658,
+      "gene_id": "3a8cbc2b53a38816ce098a2eb797b0cd6a4d3f76e7a6aeee32e1e684ff0d0057",
+      "distance_squared": 0.19296067207061396,
+      "cluster_sum": 2.0396777255190712,
+      "region_center_gene_id": "f56352d38436bf60133a2109504348943f45b8be2e9c782259cd939d110beef2"
+    },
+    {
+      "rank": 382,
+      "index": 20515,
+      "gene_id": "5fca708ff1d44e458347c9832b37a74614feb1a8378ea5db1702d22685d45123",
+      "distance_squared": 0.019063352911702535,
+      "cluster_sum": 2.0199182583085684,
+      "region_center_gene_id": "04b565f3589a8aaf6bb37cd40f485272153e63bd3e947a38efd5fb6a07071493"
+    },
+    {
+      "rank": 383,
+      "index": 53865,
+      "gene_id": "fd0147e3586b7b8ad3e70ff784daefaa9285f5d95ca94a2f78ef92ac592dcb37",
+      "distance_squared": 0.021471168361578016,
+      "cluster_sum": 2.0149297054859887,
+      "region_center_gene_id": "e240d1160197e45ebb47c3411747858ff317bbbc14caa7fdcae17942e8ab19e6"
+    },
+    {
+      "rank": 384,
+      "index": 11731,
+      "gene_id": "3656d76ebf088c20983a85e88ff902286913bdae7890c58830bcaa99308b2a3a",
+      "distance_squared": 0.4567175062902875,
+      "cluster_sum": 2.0117316037399475,
+      "region_center_gene_id": "5e621a5d92fcff239ef59409e2b3613bee1b8219d34418a7d6e8f6702a1357b0"
+    },
+    {
+      "rank": 385,
+      "index": 42461,
+      "gene_id": "c74104c78438b39df94e38c334c10ee6943c878124e81224f488696c4e135acb",
+      "distance_squared": 0.014687940268148958,
+      "cluster_sum": 1.9976446486689632,
+      "region_center_gene_id": "db5afe056678a52232913e485eb191a9f4bb0d2dfd41f46d8b0650a9ebf31741"
+    },
+    {
+      "rank": 386,
+      "index": 27006,
+      "gene_id": "7df0514b28dea2a4d76a8511c1a81d954080b4e456f46652f74fb825d0de37fe",
+      "distance_squared": 0.02319851549831906,
+      "cluster_sum": 1.9944607421655485,
+      "region_center_gene_id": "22b54b89c5366845bd80855fb3f298c3dea148092dc7177dddb61e8e1091e434"
+    },
+    {
+      "rank": 387,
+      "index": 33440,
+      "gene_id": "9ce26cef58a1a8e648b4eec39e3787866b78bcb2a935e1c4f51e30620972eafb",
+      "distance_squared": 0.15624289001710323,
+      "cluster_sum": 1.9891568868089389,
+      "region_center_gene_id": "373b2ac3e4721d433187eca1b17cf7867b54e369840b9e6482c74bb860b242d9"
+    },
+    {
+      "rank": 388,
+      "index": 49278,
+      "gene_id": "e78b863e76764c34cb246d41ea1bd0c050ae653e5f142b95b422791530a24a75",
+      "distance_squared": 0.014789636573311928,
+      "cluster_sum": 1.975917228213722,
+      "region_center_gene_id": "8d70abc859c783a784a0850409400562441c5e2c578a9f8fd05d48f3da039aaa"
+    },
+    {
+      "rank": 389,
+      "index": 50866,
+      "gene_id": "eee299f94fa6c940b54852c33046dafcc60aa30ef55207ec8f1ddd74a2c8676f",
+      "distance_squared": 0.021200595070235466,
+      "cluster_sum": 1.9567606937384787,
+      "region_center_gene_id": "f5118b2ef2499da9a1f94351811c2ceccdc8d75cdb8c81f9186714501114da4b"
+    },
+    {
+      "rank": 390,
+      "index": 50644,
+      "gene_id": "edd1475cde22f9fa7cd36e755176391d5be2746be9e23f4379ba45a8fd83a4a8",
+      "distance_squared": 0.05969263290573827,
+      "cluster_sum": 1.9485974004362376,
+      "region_center_gene_id": "d67f52ffca270ccfd236d709fced75121961551fbafa9543cf4138a47d2960f5"
+    },
+    {
+      "rank": 391,
+      "index": 6765,
+      "gene_id": "1f2244dfc8156a8a3f054bc9dd4f9a6d664e163ca44cd84c385f063e69bc8f88",
+      "distance_squared": 0.03190082523068543,
+      "cluster_sum": 1.9453381962211231,
+      "region_center_gene_id": "7216c673f0e269c56571d2e404798c4a61418ce3d5d6d471e4da8d965c016343"
+    },
+    {
+      "rank": 392,
+      "index": 23874,
+      "gene_id": "6f6a085c1522d812e85ac0a3232e841ed36a9f864feafc5a32709aedf246852a",
+      "distance_squared": 0.24861070352362713,
+      "cluster_sum": 1.941283661947514,
+      "region_center_gene_id": "811b4a80c66e93cb13e218fb41f92597c7b3a68a6eed242869bfac3a20907c7d"
+    },
+    {
+      "rank": 393,
+      "index": 36940,
+      "gene_id": "ad826cefacaa6aeb7ff9cf505ed19c8a9cd03986310a5a619fd9150095e1ba64",
+      "distance_squared": 0.44027915787439076,
+      "cluster_sum": 1.9375007717620805,
+      "region_center_gene_id": "e5432766332bae6509a7a5c444cfcb79d9412a2726ea94d7c4eeb17318fe0b6c"
+    },
+    {
+      "rank": 394,
+      "index": 6588,
+      "gene_id": "1e56957c8fd9910ab5b5fb40af949de1f773405572883884604b678b0654ca99",
+      "distance_squared": 0.02010533189023753,
+      "cluster_sum": 1.9139644250119194,
+      "region_center_gene_id": "7b3917066c470cd180aded0ccabe76ce3aff30c3283cb35a826455219d835bd7"
+    },
+    {
+      "rank": 395,
+      "index": 7808,
+      "gene_id": "2421f04092124e7381a47d260c87365aac234c5697790ec919ba770542173830",
+      "distance_squared": 0.01799444301063121,
+      "cluster_sum": 1.9135685625736079,
+      "region_center_gene_id": "891162c2a340ce3387a97de47b11f1fb49af69b2817dafe6588fc9857c30d84f"
+    },
+    {
+      "rank": 396,
+      "index": 42334,
+      "gene_id": "c69977cfb2890f9159451efc8b47185c42428d18820fd5a78054818c511f5352",
+      "distance_squared": 0.1427331262139272,
+      "cluster_sum": 1.9065432866087035,
+      "region_center_gene_id": "537f195419c709d69582e6e1a9350eeb31911db10f2572b262cee2b16e35701e"
+    },
+    {
+      "rank": 397,
+      "index": 38165,
+      "gene_id": "b3479868cee157dda9d57bd1edab82e98b7db78d4f4012f5e14a4c7defd3262a",
+      "distance_squared": 0.015106938559191381,
+      "cluster_sum": 1.8964823133695419,
+      "region_center_gene_id": "be0cff1accba271dbca8db46366ba22461c00cef6f7e2cf322fcee43fe06c32a"
+    },
+    {
+      "rank": 398,
+      "index": 2370,
+      "gene_id": "0aaadd39e3ec62e20ddd2c2621db64d6d30361cf65688952505dcc3050a2d103",
+      "distance_squared": 0.012453805396714309,
+      "cluster_sum": 1.883669619046778,
+      "region_center_gene_id": "d6c7abda80363db1e041bba8056f212f444d3513bdb82a5aefa74b0e99d809fe"
+    },
+    {
+      "rank": 399,
+      "index": 48112,
+      "gene_id": "e1dbb693ea8f44d6974013ffc8793690a608ce6e803884be81124d1a74ff0d47",
+      "distance_squared": 0.013116045029724912,
+      "cluster_sum": 1.8739524142615578,
+      "region_center_gene_id": "7f894c37fac0a804da7f7af5c8ada0b84b1e6411795b081276afa6b9c0ff1002"
+    },
+    {
+      "rank": 400,
+      "index": 33685,
+      "gene_id": "9e05c0d1058ff42eaf00432b311951607ee4ccf888ea6409e66bf2aeb4c08679",
+      "distance_squared": 0.037026537245764615,
+      "cluster_sum": 1.863340991734763,
+      "region_center_gene_id": "87f879bf8b5a4a047125735c3aec7e6a4fe90621f1897bd746a0c6d07e3654c6"
+    },
+    {
+      "rank": 401,
+      "index": 30398,
+      "gene_id": "8df418fb0bb8b08da3d902a82945f2abc878dc23c0b16395921f5bd057a319b2",
+      "distance_squared": 0.0156333045840307,
+      "cluster_sum": 1.852310682021842,
+      "region_center_gene_id": "ede372ac482ea5d67238b14bbe38080c47d01a4b91b115b02a4d77e1e590b96c"
+    },
+    {
+      "rank": 402,
+      "index": 9790,
+      "gene_id": "2d23226f02a2f7f1b0944282e910256999b0c32c7810227b32b1bd0d10e87138",
+      "distance_squared": 0.6754447910050682,
+      "cluster_sum": 1.8335215962560165,
+      "region_center_gene_id": "8c8f6d2b65d5eee90c877e9636866e867e3e4a2a355013bd2b365fd78fcb42bf"
+    },
+    {
+      "rank": 403,
+      "index": 48510,
+      "gene_id": "e3d99dc7e7ff0e346f23e81dcdcd1cc63ceb1f45a34c4d18542b73ea9c6b7e43",
+      "distance_squared": 0.07996309249575519,
+      "cluster_sum": 1.8233286319970083,
+      "region_center_gene_id": "a6724e6b2f26991b88c8272567d9702e6f75a246451184fb5b3699ba46ee669b"
+    },
+    {
+      "rank": 404,
+      "index": 11631,
+      "gene_id": "35e648b4a7a683d2e9d7842bc812bef45a5e27d9e6899feb34fac1429adc1a6c",
+      "distance_squared": 0.08150905442967747,
+      "cluster_sum": 1.8179508122664179,
+      "region_center_gene_id": "91d127ac5545012e9f4e5274865537c1222e9f56f3fca2ac07ac0e753ba2e560"
+    },
+    {
+      "rank": 405,
+      "index": 40986,
+      "gene_id": "c03fb73134b5d137fe336e18dab23d910a416ee65e2f1c5cc8f1cfa2c830a714",
+      "distance_squared": 0.014962416027337553,
+      "cluster_sum": 1.8114094957681033,
+      "region_center_gene_id": "6c77fc07e0c872f245202cbec02da8c2c8989bbb620a381eca8689e1b9c4a6ff"
+    },
+    {
+      "rank": 406,
+      "index": 52282,
+      "gene_id": "f582d0d513e9401adb8f2eccc1f8315fceb2034adf9092536978bfb67975f936",
+      "distance_squared": 0.08232048128485814,
+      "cluster_sum": 1.8044338140432188,
+      "region_center_gene_id": "a112400e11784d29f8da3ad56ee82e73d71dcab417f364ab30b7706b63ef5482"
+    },
+    {
+      "rank": 407,
+      "index": 2017,
+      "gene_id": "091ef5bba4bfa92b546316cad6505349ee8c9932c84e2f0184301ff7af303712",
+      "distance_squared": 0.013476095823654381,
+      "cluster_sum": 1.8025120748331356,
+      "region_center_gene_id": "d38ea293463a982cf0fc9d52e229e5cea1185fcacd3b15ef83c49bdca9025da4"
+    },
+    {
+      "rank": 408,
+      "index": 40863,
+      "gene_id": "bfb023e94f1a012bafbadee57d7418cee85f4260c929513f88ee656eb85e8181",
+      "distance_squared": 0.037215304531578314,
+      "cluster_sum": 1.793154823607187,
+      "region_center_gene_id": "38b524de490bc3d57463cc23eb3de2d6a04af291709677e2126951a16136b5ae"
+    },
+    {
+      "rank": 409,
+      "index": 35988,
+      "gene_id": "a8df6c9783cba73353bce9bb64664d3d99710bceec91a99371083e6b30229e0e",
+      "distance_squared": 0.06053791952752118,
+      "cluster_sum": 1.7927654006267177,
+      "region_center_gene_id": "e3b991d6836b731be1c48dc302cfacc903e9eaae3cf3621c8ee94b3318c20b08"
+    },
+    {
+      "rank": 410,
+      "index": 23622,
+      "gene_id": "6e59b69876607d18788ef7c077dc26ca9688591b505e8482e1e61e6b7448c6b1",
+      "distance_squared": 0.21502707569004598,
+      "cluster_sum": 1.7912925022394515,
+      "region_center_gene_id": "02217d86f27a2c1c657654dca880b5df448d1408f28802b92240e64d6db3bee2"
+    },
+    {
+      "rank": 411,
+      "index": 43757,
+      "gene_id": "cd54192407483120ea35d57104ee52c3369ef63c17e2083c11548f40c47f1550",
+      "distance_squared": 0.01696061708402175,
+      "cluster_sum": 1.7834541130074495,
+      "region_center_gene_id": "1ef80c33fa432897e83dd7cf7f36535d55bf7413480cef7901c018d1c6b86bd0"
+    },
+    {
+      "rank": 412,
+      "index": 9405,
+      "gene_id": "2b7a32800bde4be28e19bdae1fc8883acf0d0f42235d695aa20432d8e0fb3d9e",
+      "distance_squared": 0.030485889419979834,
+      "cluster_sum": 1.772834129299978,
+      "region_center_gene_id": "0f465fbc8d938d3c21f2456aca73de373789deb90ff3781ab2d957e129117e04"
+    },
+    {
+      "rank": 413,
+      "index": 28633,
+      "gene_id": "858ccd1884b9768155420fa5a014c43bce81ed8c8b315f5636cec3cd2b202d6b",
+      "distance_squared": 0.0186582202378742,
+      "cluster_sum": 1.768503614087172,
+      "region_center_gene_id": "3bd772fa3c18f4caef7913c6670c71e92496cfba5cb1dc86a12a386571881415"
+    },
+    {
+      "rank": 414,
+      "index": 20050,
+      "gene_id": "5d7ee3d8501e94917c1639cc35a84c7002da88f992559e85a18ec44f7cb159af",
+      "distance_squared": 0.010355921773242242,
+      "cluster_sum": 1.7636689804303163,
+      "region_center_gene_id": "0f99f93e1433a4ab490aa3ffadc756e66b22d7e129918041547212cbc74052ad"
+    },
+    {
+      "rank": 415,
+      "index": 45400,
+      "gene_id": "d541e397a40d199691cd0c3945d384188d0bcd90cc3e9e2d1b7a23dbd22c6b14",
+      "distance_squared": 0.029229804231552303,
+      "cluster_sum": 1.7557052652905047,
+      "region_center_gene_id": "882937064d61d220bcab24e6c8e16410ff4867f44767cca7c8dfe04424efe410"
+    },
+    {
+      "rank": 416,
+      "index": 44187,
+      "gene_id": "cf59043c6c285d9222c03b6b56870721130832a0a15ff693c2f2b6ece6114c88",
+      "distance_squared": 0.034657565198515955,
+      "cluster_sum": 1.7532139028491924,
+      "region_center_gene_id": "2bee18af22fb536a22716e80b5efbc5b28bc0188290d0bdbc5bb2abb42edf84f"
+    },
+    {
+      "rank": 417,
+      "index": 49553,
+      "gene_id": "e8cbab83b1ff1feaa95e45d6b8d05534bd38df316cdecf50d2195d25559b9908",
+      "distance_squared": 0.014650278215218127,
+      "cluster_sum": 1.7528284129942175,
+      "region_center_gene_id": "353a4e0ee43fd8d20687a466848207d226f7efc2bccdba07e8cce4ac6297e19d"
+    },
+    {
+      "rank": 418,
+      "index": 31786,
+      "gene_id": "94e369497137d84564101a7c4577dd72b64094ea9182125178c3ac7666cbb602",
+      "distance_squared": 0.01288463151713264,
+      "cluster_sum": 1.7515273668866107,
+      "region_center_gene_id": "76e2d5f96c495bc0301b7d5730a88b8fa4fa17a241e41d31f744d705e90884fe"
+    },
+    {
+      "rank": 419,
+      "index": 22861,
+      "gene_id": "6ac9dee354611c59df99cfa7c9d86251f0f436e700e39011d654408a1c5a5e06",
+      "distance_squared": 0.042742861967090456,
+      "cluster_sum": 1.7441125904451174,
+      "region_center_gene_id": "3382ca490c35150c8b2370c4414804a55cc3627d68949ee0dae179d647558cd0"
+    },
+    {
+      "rank": 420,
+      "index": 37047,
+      "gene_id": "ae1138f0b3ac60838a92162ce969707c7df7e959cfb2e7812e816ae198f39840",
+      "distance_squared": 0.3823826755147286,
+      "cluster_sum": 1.7269530206312174,
+      "region_center_gene_id": "de57d75451a4eada1687f322d91ba16127bbd0400b1182cb384367f85f3c04b3"
+    },
+    {
+      "rank": 421,
+      "index": 41032,
+      "gene_id": "c07aaf161e6bd85e356128f1d01700769796232f335ba1869bdc7b0b28b6299a",
+      "distance_squared": 0.03416321035385762,
+      "cluster_sum": 1.7065688407031108,
+      "region_center_gene_id": "03f30bf35c67bd4de23e6ba3e3ee922e38d9cbe580a707f48876ec2377f75a37"
+    },
+    {
+      "rank": 422,
+      "index": 7338,
+      "gene_id": "21cf2567530afb617298f4674246fcdff08bb07d8e076e97826897d6c4f48bf2",
+      "distance_squared": 0.24590747700834373,
+      "cluster_sum": 1.6926729584238869,
+      "region_center_gene_id": "811b4a80c66e93cb13e218fb41f92597c7b3a68a6eed242869bfac3a20907c7d"
+    },
+    {
+      "rank": 423,
+      "index": 21750,
+      "gene_id": "65c441d577be9d050dd990814a390af9762a74c355ebeb1b406e559e023e1e6e",
+      "distance_squared": 0.19560690665637398,
+      "cluster_sum": 1.6925497134230965,
+      "region_center_gene_id": "382264b694388e8ee941e6a7e78eb55c6e224cb9497207c0892d3ac4b0f9c0a0"
+    },
+    {
+      "rank": 424,
+      "index": 25333,
+      "gene_id": "760bc9f2ed80cdf1d260a71a0ac2e24ef27fae4ac7408753392603d574547358",
+      "distance_squared": 0.01582068136537619,
+      "cluster_sum": 1.6898966537288256,
+      "region_center_gene_id": "a618d35a9d1feaadf1814af9ad732a12c98d3cfb434e4c1e6ed4488b0d30db35"
+    },
+    {
+      "rank": 425,
+      "index": 22668,
+      "gene_id": "6a0479d6439a2ea3c2129d23fa1a7d083d02c19ba5ba24b6f37a0e6cf8b8d6ab",
+      "distance_squared": 0.33427125608911845,
+      "cluster_sum": 1.6885688397010594,
+      "region_center_gene_id": "d0504f6ce8b7d489aa967cb95686d8a868a8cdc83ea0b0bad502e7062e2318cb"
+    },
+    {
+      "rank": 426,
+      "index": 13198,
+      "gene_id": "3cfe7acedf7ac9e0a6cc6c497e7c8d239266a2900462ad8c52d564d1c7f43f40",
+      "distance_squared": 0.00999203363464599,
+      "cluster_sum": 1.6578885273801747,
+      "region_center_gene_id": "00f42c7d6aa168baa8da2fb1ca0f306fd9a8bf67ce063b33b00dec0d1d040421"
+    },
+    {
+      "rank": 427,
+      "index": 21870,
+      "gene_id": "6650c4d2d07e1202838d28ac00d332230b7b36c52332904928f3072c458fbd10",
+      "distance_squared": 0.0585243048604306,
+      "cluster_sum": 1.6410513455489342,
+      "region_center_gene_id": "9137c009da1fb665bdd47a605587461e60681a35a5c34abd79b0de17233f87e9"
+    },
+    {
+      "rank": 428,
+      "index": 6076,
+      "gene_id": "1bf8542386586a4ee7d8b54126964625e92ef8ed60dedd9f876aaf6036ae90e7",
+      "distance_squared": 0.018435323245694357,
+      "cluster_sum": 1.6376179905305999,
+      "region_center_gene_id": "9888cbfc0ae93c513cd27067585b9f2437bac7f87068337fb89414f6dc3bf090"
+    },
+    {
+      "rank": 429,
+      "index": 20410,
+      "gene_id": "5f46f3f4e9653e4ddbfb3355a46358baf3348cabc42ba9efc2ba2a52abbec18c",
+      "distance_squared": 0.012465986822816279,
+      "cluster_sum": 1.6340668159883802,
+      "region_center_gene_id": "81ef4a01adbf8330ad92af2a1dbc52226143158973fac30b8c1a32683f0fffdd"
+    },
+    {
+      "rank": 430,
+      "index": 38320,
+      "gene_id": "b418512dfb346727d80f84f0bb913692e1d75b22ff94bae1f2a6ba512d4252b3",
+      "distance_squared": 0.05003688293819699,
+      "cluster_sum": 1.6303378289855655,
+      "region_center_gene_id": "a9c2e5e7fc247e2b12210ef82f83e31bc1c13a33c3a47edc44e62296ef3b0d98"
+    },
+    {
+      "rank": 431,
+      "index": 42020,
+      "gene_id": "c501fe5ef02ca29a159dce115ab26b3de9b9b9d3493aa1a1b1ece4ee092d4c3e",
+      "distance_squared": 0.012133069604877433,
+      "cluster_sum": 1.6292064617869326,
+      "region_center_gene_id": "347c8289484d5bffd3fa69c4ede870dbdab52c8ab923841805af8809b1dc1c48"
+    },
+    {
+      "rank": 432,
+      "index": 23481,
+      "gene_id": "6da5c7795f7a536564565dbf144c0ee1f04ca66451a5f630b8e6b46a26e05727",
+      "distance_squared": 0.013474885185227254,
+      "cluster_sum": 1.6249334781319993,
+      "region_center_gene_id": "b0a2f8a12380ac583b502fd0f0f9ec63a7292c712e095708e2eace853206292c"
+    },
+    {
+      "rank": 433,
+      "index": 30932,
+      "gene_id": "909f4d63c6e3c77464f94c299240fed6f6d7150c3e76af6f4258cff50c266328",
+      "distance_squared": 0.1464596703904572,
+      "cluster_sum": 1.6239133591604493,
+      "region_center_gene_id": "280f7f47d2090810783cbe7778725406c757cf424a56236cb5a63b6014f3b6ef"
+    },
+    {
+      "rank": 434,
+      "index": 17008,
+      "gene_id": "4f023b394b17e815ce9e47316f83307d961efc98a7a00567c304c2cd8476fba3",
+      "distance_squared": 0.09829542249534548,
+      "cluster_sum": 1.614437796303862,
+      "region_center_gene_id": "8dbba4c91727f2a38ea8fe443666b1c4c5aa9df7271b2e9aa11f215a8a231dc0"
+    },
+    {
+      "rank": 435,
+      "index": 29117,
+      "gene_id": "87af5d04c653a8b5651806cc99c027128618e5e3e5b7a07abe7d7d3a81d87589",
+      "distance_squared": 0.15412261047570677,
+      "cluster_sum": 1.6020337267217832,
+      "region_center_gene_id": "373b2ac3e4721d433187eca1b17cf7867b54e369840b9e6482c74bb860b242d9"
+    },
+    {
+      "rank": 436,
+      "index": 26221,
+      "gene_id": "7a5b53ec57cc1701b217b1c8358e119b4310c8e3d91faf299d6c714f84ed10df",
+      "distance_squared": 0.012442483183543029,
+      "cluster_sum": 1.600718252559691,
+      "region_center_gene_id": "a47009ff3bd454d0eb8781bcc5815e1c3159b7cab7a41e9926bb49abee7e911a"
+    },
+    {
+      "rank": 437,
+      "index": 2659,
+      "gene_id": "0bfe7904c6b5dcbf84383935514ac3e62d3f3bcd9b4bfa80a25c64b62b5fe83a",
+      "distance_squared": 0.015192425165548112,
+      "cluster_sum": 1.581800770322339,
+      "region_center_gene_id": "db49023cb906c36e62479ca34f64e8be94ccf4c947515438238fa9a6cb8f7d2a"
+    },
+    {
+      "rank": 438,
+      "index": 9171,
+      "gene_id": "2a72e070b931caee8c33670a2ad15bf56b23933ed5e89e480ca0b48865aab463",
+      "distance_squared": 0.013209214087467676,
+      "cluster_sum": 1.5764699987525999,
+      "region_center_gene_id": "db5afe056678a52232913e485eb191a9f4bb0d2dfd41f46d8b0650a9ebf31741"
+    },
+    {
+      "rank": 439,
+      "index": 16736,
+      "gene_id": "4dc89d83ade401e8118f3d76ad4ec932adb5c6bd6f7470c6520e9c25e9714fdb",
+      "distance_squared": 0.055462327307425285,
+      "cluster_sum": 1.5754094603207724,
+      "region_center_gene_id": "671876c04d2598bf19f64b164d257f949d244993b86a430d0e52b2d11b2c92e6"
+    },
+    {
+      "rank": 440,
+      "index": 33717,
+      "gene_id": "9e28fce88e8f11d38fc4e56c500ad67e8e3a5a5737386d70ed22e84fec054da9",
+      "distance_squared": 0.0932880612196107,
+      "cluster_sum": 1.5680495386121378,
+      "region_center_gene_id": "195b178ce912e6563bfda1648bf1a7c021cfb014c368177b3482ba2e2b581e30"
+    },
+    {
+      "rank": 441,
+      "index": 26186,
+      "gene_id": "7a2e33ff681e0d1e6afe90626f58d493a253dc5d78585a82c816bf60d4617cd7",
+      "distance_squared": 0.1426041543692245,
+      "cluster_sum": 1.5551188576975188,
+      "region_center_gene_id": "f77e554b6c19a33ee3327b547b782dfea213bf373a21f3d8a7c00c22d08c6174"
+    },
+    {
+      "rank": 442,
+      "index": 5328,
+      "gene_id": "186e93c7e30a684a557cd3bcf35bb38ff0b6da16fcfcbd6f2c20cc27e58d03ca",
+      "distance_squared": 0.014089285206935611,
+      "cluster_sum": 1.548665717648956,
+      "region_center_gene_id": "25cf05735b4fbb3c4775809565af86977fffb7df00c08275bddb784e627196a6"
+    },
+    {
+      "rank": 443,
+      "index": 13321,
+      "gene_id": "3da912fae2d8246438a4a3c992f57a369773adefe10923ceb10fa3a96c6d18bb",
+      "distance_squared": 0.05423267277304441,
+      "cluster_sum": 1.5283731961817864,
+      "region_center_gene_id": "0e25b4dc5376d5d4ee96f0b05aa8ca8f731516dc352dbdac26682237526edc50"
+    },
+    {
+      "rank": 444,
+      "index": 32470,
+      "gene_id": "9856c13af429e6195555b13b946962a1c52595cc637d287cf84c0d3a4a76ee4a",
+      "distance_squared": 0.01200188902039391,
+      "cluster_sum": 1.525265946837708,
+      "region_center_gene_id": "8f2c3ba96112392f7ee5b1c04be667aa5f6c7799e27ccdefbccbf6cd10e7c23e"
+    },
+    {
+      "rank": 445,
+      "index": 11181,
+      "gene_id": "33c5302267b90600dba8ddd095bf2bc153eb008dfe60d7c1dae7c9851fa8c919",
+      "distance_squared": 0.19769458503933235,
+      "cluster_sum": 1.5240724481976355,
+      "region_center_gene_id": "cc3092898a909956e4e83ab86a45731a1a1ad2005f5d192102ecb2c7c395f526"
+    },
+    {
+      "rank": 446,
+      "index": 36186,
+      "gene_id": "a9e03297f19e6aad04865ae366c150a3f274bb9f462a7f6f6b232c015d1573b5",
+      "distance_squared": 0.011113835089166,
+      "cluster_sum": 1.5155742200677178,
+      "region_center_gene_id": "763366a60f46e2d34a22ae02a0faa0d75d5681940cbe0a719d18b982108d30bb"
+    },
+    {
+      "rank": 447,
+      "index": 44677,
+      "gene_id": "d1bc3e441dfb990ddabb9f992d71360db58eafd4eec0ae6282e757c216989a78",
+      "distance_squared": 0.03225342298345217,
+      "cluster_sum": 1.5143820497598797,
+      "region_center_gene_id": "dc9778f2afdd6fc89f6b79ef6c223c5b7d10e6ef00c94250bba16d764bb64c3b"
+    },
+    {
+      "rank": 448,
+      "index": 11968,
+      "gene_id": "377192bad76f1979aef321138bf36fdefb9bca1de043330b919a0da34446eaeb",
+      "distance_squared": 0.03955229290565403,
+      "cluster_sum": 1.5079846124618792,
+      "region_center_gene_id": "f9f8301eeff9e880f39dd5d49e0a3bf8a7c8857c7e94449d44c0d2d56c4bb834"
+    },
+    {
+      "rank": 449,
+      "index": 27530,
+      "gene_id": "8085a43e2268ec16705e6bd5a698e5df7199523d5677be0365490cdbf17a306d",
+      "distance_squared": 0.025969198388894322,
+      "cluster_sum": 1.5004807783925613,
+      "region_center_gene_id": "05162b8d0564140da65292fdd2becfd857d63d07fb491fe5fdd48125a8b03982"
+    },
+    {
+      "rank": 450,
+      "index": 26358,
+      "gene_id": "7af4344731cb86b1dfe526f3d3ee9eae5ea62ce2c84aa63b075887f6f4951980",
+      "distance_squared": 0.018302309232888166,
+      "cluster_sum": 1.4780717639527345,
+      "region_center_gene_id": "11a207034cec2a2793a69c159ae3f673cf9ce5ae2f04eb094d0fb7b406fb7738"
+    },
+    {
+      "rank": 451,
+      "index": 48479,
+      "gene_id": "e3abfe3c2581a1e9d4bea40f45ef22fc7c648759da9451917ad0a4c31039d9cc",
+      "distance_squared": 0.03256047414684537,
+      "cluster_sum": 1.4749551454606276,
+      "region_center_gene_id": "5153da88d5204d71ce25120f81f532669561cf3e33c3dce6e707ea81beb8207d"
+    },
+    {
+      "rank": 452,
+      "index": 39442,
+      "gene_id": "b93031418206017ed72386e4d596c140a6c00d597e4b8fd868922801db66231c",
+      "distance_squared": 0.02507534217862938,
+      "cluster_sum": 1.4660699934685937,
+      "region_center_gene_id": "f8e634c9dd7b49379a5e35e841bb399610c4159222ffad02d21699cb833424fd"
+    },
+    {
+      "rank": 453,
+      "index": 52452,
+      "gene_id": "f63a2b383d642e8a261a1070e59cc036ecbc12a6361362662178a6be58dbd605",
+      "distance_squared": 0.13429497127343115,
+      "cluster_sum": 1.458792145560356,
+      "region_center_gene_id": "2cb8610a608341fc19c88fc8418808640e25a7a737e87d10e07041e335a57f80"
+    },
+    {
+      "rank": 454,
+      "index": 53182,
+      "gene_id": "f9aff200390562df2fd3554db69e4d9db9ff0892510044a0acbd8a0c1a36f949",
+      "distance_squared": 0.020443207786434395,
+      "cluster_sum": 1.4546299601118096,
+      "region_center_gene_id": "14be8e2c21d35e71a36ddf17876ebcce2e4bed7191db187754993cf2aeab8515"
+    },
+    {
+      "rank": 455,
+      "index": 41800,
+      "gene_id": "c3f91650a25025956f53e530ef0221f7e2b5a62efcb9552ceb8d7928de498cd7",
+      "distance_squared": 0.02097493041908543,
+      "cluster_sum": 1.446473021022138,
+      "region_center_gene_id": "fab003530a338f79e3589dd4b068693dbdc277b6e49ada813aacdeb71b6938ee"
+    },
+    {
+      "rank": 456,
+      "index": 43792,
+      "gene_id": "cd7ffb172b032e2ac87abe218173a20705a262507245b741ada837c58449b855",
+      "distance_squared": 0.015624677273188165,
+      "cluster_sum": 1.4409946512899643,
+      "region_center_gene_id": "f8e634c9dd7b49379a5e35e841bb399610c4159222ffad02d21699cb833424fd"
+    },
+    {
+      "rank": 457,
+      "index": 8419,
+      "gene_id": "270dc6ebf7b9dfffed9fce496d452e5b17309f3f2d6f314f7a4ee0ab78c83b97",
+      "distance_squared": 0.3043281034436295,
+      "cluster_sum": 1.42475688647423,
+      "region_center_gene_id": "d0497dc95ad49d5dc4c921c5636276a0e308eea78c42bb9e53b6f8757dfd9d04"
+    },
+    {
+      "rank": 458,
+      "index": 12301,
+      "gene_id": "390025358feedb3b375d7b46ad6c1c0f137a381e03a0b60de74ee1254877608c",
+      "distance_squared": 0.02309938392672524,
+      "cluster_sum": 1.4202875645482718,
+      "region_center_gene_id": "23bd732615d18d8f9a3f6cb73a7fabb64a1d734e74a1d682073eb1cc06c6491a"
+    },
+    {
+      "rank": 459,
+      "index": 54122,
+      "gene_id": "fe2d277333105f07bf0f5499398c3c3d8e37bdc723ebae5c6596796fd962135a",
+      "distance_squared": 0.03905797295124654,
+      "cluster_sum": 1.4094147088500495,
+      "region_center_gene_id": "957c58f2a10232f1e449f4944e0cb72f1cda078884fe0e013749bffd98e46da2"
+    },
+    {
+      "rank": 460,
+      "index": 5242,
+      "gene_id": "17fd29449612c47215d290731dd117b1a69b320be0e4ca048b6866d459fa5865",
+      "distance_squared": 0.3211109228063699,
+      "cluster_sum": 1.4085697744131027,
+      "region_center_gene_id": "3cd94ab931e5bfb42f1ba7ac8593fe814f61124327afffcf2fab31252b56d637"
+    },
+    {
+      "rank": 461,
+      "index": 26335,
+      "gene_id": "7ad2ad07bb9b8318735e68be2f589a304d364bf6133f2fd718f8e25cbb32293d",
+      "distance_squared": 0.10508811316521913,
+      "cluster_sum": 1.4033094969782294,
+      "region_center_gene_id": "c53bc63133180b4cf49e75346d088cdfdaed64ed88a83adf20b4f45d94216a5e"
+    },
+    {
+      "rank": 462,
+      "index": 20262,
+      "gene_id": "5e88650c44ac03441c3a7e8ab339000efb2191396f4d9d62c5e42a587380c100",
+      "distance_squared": 0.06654316689945633,
+      "cluster_sum": 1.3986268136139828,
+      "region_center_gene_id": "537f195419c709d69582e6e1a9350eeb31911db10f2572b262cee2b16e35701e"
+    },
+    {
+      "rank": 463,
+      "index": 10955,
+      "gene_id": "32c3fdfe8c45d9cecc58969a31e55495c221c1e6bf991627748fa430f66e21ab",
+      "distance_squared": 0.012275329940100922,
+      "cluster_sum": 1.393248931700506,
+      "region_center_gene_id": "6d3e050e5ba542a6e2c5bfdfc989c7f3c2ee1b4142a79aa227b765db68faa14e"
+    },
+    {
+      "rank": 464,
+      "index": 25075,
+      "gene_id": "74ef350bfa85737e71e00df1316030f1a654f2cbccbc2660a1e6039ae96e93c8",
+      "distance_squared": 0.12055737147578742,
+      "cluster_sum": 1.3860525499761434,
+      "region_center_gene_id": "dcfe381ca1ad7dd4859751e9378c15c6e8d7abf39905f23c1d23f7e2284f6947"
+    },
+    {
+      "rank": 465,
+      "index": 16884,
+      "gene_id": "4e7b5e3d7f3b13520d2fbb60e3220c30e55c1df10b1137c9b0f10f3d7fc427be",
+      "distance_squared": 0.01040745679940365,
+      "cluster_sum": 1.3844956614747455,
+      "region_center_gene_id": "bbf789372ac9650bb8e62ff73420f4dd45529252f6118543e4e27aceb1a2483e"
+    },
+    {
+      "rank": 466,
+      "index": 2453,
+      "gene_id": "0b14e53fbeed1b3a70f8608b07e6fe5edd3bcee3142a27b8725bb6d259d8da99",
+      "distance_squared": 0.01601958332545398,
+      "cluster_sum": 1.3760160424567498,
+      "region_center_gene_id": "867f2d6022dcc9905a6e33b2b88fe86ee99d542a7cdda602fb65b0c5d753917b"
+    },
+    {
+      "rank": 467,
+      "index": 20578,
+      "gene_id": "601fada0be954ddca55ddc6d8435bb40f9178f568daf1f4ccafb5e56edd4186c",
+      "distance_squared": 0.18128041236361667,
+      "cluster_sum": 1.3739048410992356,
+      "region_center_gene_id": "f56352d38436bf60133a2109504348943f45b8be2e9c782259cd939d110beef2"
+    },
+    {
+      "rank": 468,
+      "index": 8758,
+      "gene_id": "28b9a9ffd348dad3d0784ba171687ed34e6389173fd0e8d1d5bba520db3fa649",
+      "distance_squared": 0.013291269839883083,
+      "cluster_sum": 1.3646706704812768,
+      "region_center_gene_id": "ede372ac482ea5d67238b14bbe38080c47d01a4b91b115b02a4d77e1e590b96c"
+    },
+    {
+      "rank": 469,
+      "index": 30444,
+      "gene_id": "8e3421e5ed6b7753da06a51d9c004c4f3d2c59429228aa4e323fdedb6a913e98",
+      "distance_squared": 0.0841833127378103,
+      "cluster_sum": 1.3445173810247115,
+      "region_center_gene_id": "8dbba4c91727f2a38ea8fe443666b1c4c5aa9df7271b2e9aa11f215a8a231dc0"
+    },
+    {
+      "rank": 470,
+      "index": 45987,
+      "gene_id": "d80deb2c76cb68529fa3fdd477d8047b30a5902324651acaffee3507503e830d",
+      "distance_squared": 0.012219500426393706,
+      "cluster_sum": 1.3433587891439351,
+      "region_center_gene_id": "891162c2a340ce3387a97de47b11f1fb49af69b2817dafe6588fc9857c30d84f"
+    },
+    {
+      "rank": 471,
+      "index": 14020,
+      "gene_id": "40bdc9568993db3709e666b44eabea5bc368e6f82838fa90936eaf15118203f8",
+      "distance_squared": 0.015322273354156488,
+      "cluster_sum": 1.3432951932737285,
+      "region_center_gene_id": "f4af74fc76b892b67f4d2add6b2bc82118f4b3c98d8ee4e6f643523f373328f3"
+    },
+    {
+      "rank": 472,
+      "index": 40860,
+      "gene_id": "bfaf11e92ac70f3f6600dd4690d785909b4d698a1e76d49d22f32404365f9b3b",
+      "distance_squared": 0.008654989527390859,
+      "cluster_sum": 1.3352697025347493,
+      "region_center_gene_id": "b252fd75569574615a0324319665156fd6fb9cc9774ce88ae259b36386e7565a"
+    },
+    {
+      "rank": 473,
+      "index": 30071,
+      "gene_id": "8c438ee835fb7b6cbc34db294550f2837f36195fdcc5c55f083648825627bb88",
+      "distance_squared": 0.016046838556415782,
+      "cluster_sum": 1.321219544305971,
+      "region_center_gene_id": "9b583afabe4b144b2b4b90742689ac8cd4ec423a2efc6bb1872e0039750ad257"
+    },
+    {
+      "rank": 474,
+      "index": 42490,
+      "gene_id": "c75eb183227cf7b450624893c5a67d45c6d7d5e935670fd60c6242f8044e4692",
+      "distance_squared": 0.03170245031817946,
+      "cluster_sum": 1.307686474346839,
+      "region_center_gene_id": "19c57f41adaa139ae00e400376a7bd53f8de9a780d99584cd1cee9b8223bb3a0"
+    },
+    {
+      "rank": 475,
+      "index": 25636,
+      "gene_id": "7772cf8eeb879c6a6fee34416502cf26a546f644742d84fbdd690065bfbec259",
+      "distance_squared": 0.06728364490024127,
+      "cluster_sum": 1.3045328435113261,
+      "region_center_gene_id": "f91f5791589e41db9bd419d6d4b644aa336d1251cea36e94097f25ceb4c9e0b7"
+    },
+    {
+      "rank": 476,
+      "index": 22921,
+      "gene_id": "6b0947408210b4fe79d735db7a98756bbe071db2c62ed02dd9ca421a2411877e",
+      "distance_squared": 0.015516275836378025,
+      "cluster_sum": 1.2980998907275096,
+      "region_center_gene_id": "f5118b2ef2499da9a1f94351811c2ceccdc8d75cdb8c81f9186714501114da4b"
+    },
+    {
+      "rank": 477,
+      "index": 21478,
+      "gene_id": "6486db080cf75b4a02c0daffd68b462deb68e3a51621dd534c2cf858d5cdce52",
+      "distance_squared": 0.014801288362630019,
+      "cluster_sum": 1.2961706839955525,
+      "region_center_gene_id": "22b54b89c5366845bd80855fb3f298c3dea148092dc7177dddb61e8e1091e434"
+    },
+    {
+      "rank": 478,
+      "index": 47297,
+      "gene_id": "ddfc0dc46bf5a767d420e00c39aadf3daae50237350ba8197e556a8f91ea615e",
+      "distance_squared": 0.019029903203531845,
+      "cluster_sum": 1.2933044185127014,
+      "region_center_gene_id": "e76a1a817e12bfef15ea2d0cb72fe4935844b6b0864db525f003070f98e779e9"
+    },
+    {
+      "rank": 479,
+      "index": 9575,
+      "gene_id": "2c3902b9be990ce5e717768bc79310f825d4b7a6188277b22e3da5fec92d7658",
+      "distance_squared": 0.013354141539360615,
+      "cluster_sum": 1.284874036459792,
+      "region_center_gene_id": "a618d35a9d1feaadf1814af9ad732a12c98d3cfb434e4c1e6ed4488b0d30db35"
+    },
+    {
+      "rank": 480,
+      "index": 39155,
+      "gene_id": "b7e3cd0a9153ac8a6e6b17b5a2a41dba993d539ff0d2a8a8382fae381fe23f75",
+      "distance_squared": 0.017555528191588267,
+      "cluster_sum": 1.2808222386223613,
+      "region_center_gene_id": "2f183c59eb671f566d31b497593daca87871981293e5fdf4dacc19d3deac413a"
+    },
+    {
+      "rank": 481,
+      "index": 26377,
+      "gene_id": "7b0a1aef9d9b0f98fac63a3858f7dc7678b788c2f6159a01cf2b8620bc943944",
+      "distance_squared": 0.050705458386611765,
+      "cluster_sum": 1.2745592808190735,
+      "region_center_gene_id": "671876c04d2598bf19f64b164d257f949d244993b86a430d0e52b2d11b2c92e6"
+    },
+    {
+      "rank": 482,
+      "index": 48691,
+      "gene_id": "e4aa7be3e61fed2b251a710bcb7cf505b74a591922ebe5a35031cb7193bc5b5b",
+      "distance_squared": 0.010068086622004938,
+      "cluster_sum": 1.2733756361628268,
+      "region_center_gene_id": "c2f8477cd4ae6d55bd496ec2962fb506bc503cf7dfeeb86731afb94ecb046809"
+    },
+    {
+      "rank": 483,
+      "index": 29171,
+      "gene_id": "87f203ae3b048376476b65c14766988732d5d12ace9911b11523f26c34f920a9",
+      "distance_squared": 0.08858467300618555,
+      "cluster_sum": 1.2676309959639636,
+      "region_center_gene_id": "f79fd7c463a4a4deb8a3aafad375b478c47fecbd27dd65a22a1ec71108b17331"
+    },
+    {
+      "rank": 484,
+      "index": 13314,
+      "gene_id": "3d974208187ea4a43f0927d72d94cd433131b1afb9bfa68a69a0bdae572c7c5d",
+      "distance_squared": 0.15578304252475345,
+      "cluster_sum": 1.2669096735714982,
+      "region_center_gene_id": "8bca8fdfb1a54a8ca6f4d1ca06afe154235928cf30fe9e679299af7b82e4307d"
+    },
+    {
+      "rank": 485,
+      "index": 1438,
+      "gene_id": "06809bebb813cfd53102fe80f78f88d4fea8bb6dee55b5219b6a5737d7259589",
+      "distance_squared": 0.051061181847082596,
+      "cluster_sum": 1.262808517408924,
+      "region_center_gene_id": "010fc94f7cc53e9fd293d5bbc8534ee06e54d6073253bde9e2000596688071d5"
+    },
+    {
+      "rank": 486,
+      "index": 51917,
+      "gene_id": "f3c0d13397e33fc5568f0dc760b0cf08c0bde7269ce8772d9deae2b44ef425a9",
+      "distance_squared": 0.011458800144988663,
+      "cluster_sum": 1.2614217580445914,
+      "region_center_gene_id": "19dfa93ae34799c4ddeb3bd225a4f9b43a42a4a3c158e0236ada981894bce00c"
+    },
+    {
+      "rank": 487,
+      "index": 36522,
+      "gene_id": "ab6b1e9af1f7ce5454ef70a67b81c94aaf6eb02464f317d451ff1b9b252ea261",
+      "distance_squared": 0.011004548011287986,
+      "cluster_sum": 1.257730798011938,
+      "region_center_gene_id": "5b367f788e9b290e8db530c3bcd7e51d1c21ba8a042f18f16c07e58829c80427"
+    },
+    {
+      "rank": 488,
+      "index": 6212,
+      "gene_id": "1c9dfd0bd100f7db8ce0670c36511a5c2847a3a91f19db82219e4936c5cf586e",
+      "distance_squared": 0.07718245927568766,
+      "cluster_sum": 1.2567672192519337,
+      "region_center_gene_id": "a112400e11784d29f8da3ad56ee82e73d71dcab417f364ab30b7706b63ef5482"
+    },
+    {
+      "rank": 489,
+      "index": 17405,
+      "gene_id": "50e7edbf8deb926e9d29befa4fb8e70062acfc1d5420ec6d3a01c157a583b4d1",
+      "distance_squared": 0.01814970396503919,
+      "cluster_sum": 1.2562722514887088,
+      "region_center_gene_id": "ee446043c5f12fadba4881482a383e1d2d8d118103de80f9b7af6af3e55df137"
+    },
+    {
+      "rank": 490,
+      "index": 16890,
+      "gene_id": "4e842d0ddc00d03ed5859cdb2deba5d628eacf0808a8d90eff7a0a4884d75613",
+      "distance_squared": 0.011228268164834583,
+      "cluster_sum": 1.251579421892452,
+      "region_center_gene_id": "be0cff1accba271dbca8db46366ba22461c00cef6f7e2cf322fcee43fe06c32a"
+    },
+    {
+      "rank": 491,
+      "index": 2618,
+      "gene_id": "0bcc13de178086f6a45e3af47542de4a746928b57b8562a240f66733557fd0ee",
+      "distance_squared": 0.21260029844942485,
+      "cluster_sum": 1.2338971369968594,
+      "region_center_gene_id": "0779d0c339615eb11e572669a76e9d3b267163ccd94d30281f43408ec9171fee"
+    },
+    {
+      "rank": 492,
+      "index": 51705,
+      "gene_id": "f2bd5a139e7655307826292b9fa9127208efd073ce83cfe38172da274876b15c",
+      "distance_squared": 0.061397045386535606,
+      "cluster_sum": 1.2333990685794638,
+      "region_center_gene_id": "c130c59fff95157549d6285c92c1ec72f1ad8cbf6bc2fc8a446035de84717083"
+    },
+    {
+      "rank": 493,
+      "index": 28574,
+      "gene_id": "8550598f1469194548b5142f4f0282258a340ba811f8b3536dafd6ea2ecf5b8b",
+      "distance_squared": 0.009782763214715164,
+      "cluster_sum": 1.2301035533774134,
+      "region_center_gene_id": "1f5d520bb4acbb9953b31209c23f450c242329c3574ebe7de2da93d34e49f3dc"
+    },
+    {
+      "rank": 494,
+      "index": 4346,
+      "gene_id": "13bc5acfd2e68188b6ed25f2ddd3c622e97d44f9b57180d769a1df7bdd2bb101",
+      "distance_squared": 0.025797277105254295,
+      "cluster_sum": 1.225725672865822,
+      "region_center_gene_id": "8fd61d618e93312c8ecb558de194c0ad7c14371e8f617ef96545e9a1129fd5f9"
+    },
+    {
+      "rank": 495,
+      "index": 50597,
+      "gene_id": "ed90a2863297f083496fb5352db5f14f22de85d0adb9a20f450fcbe4c1555d91",
+      "distance_squared": 0.1585959416245123,
+      "cluster_sum": 1.2223771996515658,
+      "region_center_gene_id": "b10940e4b1634ccd769d57c9f97b9f6ba2bec224713f833ed0b567dacd10125b"
+    },
+    {
+      "rank": 496,
+      "index": 8708,
+      "gene_id": "287d516268081b3783183f21b23afd8ed74f1c3a64708bc08f53d2104dc602f1",
+      "distance_squared": 0.010624308555093602,
+      "cluster_sum": 1.2187049193263675,
+      "region_center_gene_id": "66ab187a497463d077dd3a65b2df46bab033fafd31acade651d96636c4e69c7f"
+    },
+    {
+      "rank": 497,
+      "index": 14436,
+      "gene_id": "42d25c0050d95cfa3ad47e8a3fc60c0e6491ee764fd4e22c9c7e88b9d31e11e6",
+      "distance_squared": 0.06990854398592541,
+      "cluster_sum": 1.2183419849148978,
+      "region_center_gene_id": "280f7f47d2090810783cbe7778725406c757cf424a56236cb5a63b6014f3b6ef"
+    },
+    {
+      "rank": 498,
+      "index": 22738,
+      "gene_id": "6a46c04d11c27c74c3985d31dfb7c80ca1ab3c36cf9b3ea643ad768ccd72bcf5",
+      "distance_squared": 0.039845970247337506,
+      "cluster_sum": 1.2160214199994297,
+      "region_center_gene_id": "88609c824bcbc8d392a44bf6710771268fe28cabf41c5c33d7d08a8ac9c04a33"
+    },
+    {
+      "rank": 499,
+      "index": 42362,
+      "gene_id": "c6b820212cacc6d0f65e883428d85ee37ade18c4d548b52dffb9b17ebd35f37f",
+      "distance_squared": 0.3043950416335979,
+      "cluster_sum": 1.2124485260847797,
+      "region_center_gene_id": "309d48e37427678dc9a05d67a09e167dbe1e6b301968afcf017ae2575ab57899"
+    },
+    {
+      "rank": 500,
+      "index": 34775,
+      "gene_id": "a35b26af7524bf389b88199b4e9b0d01337df87586bef754326ded9edc31a61e",
+      "distance_squared": 0.1513602278040223,
+      "cluster_sum": 1.2104561590431482,
+      "region_center_gene_id": "41f6e3c91f7c929fee88e0ac72e353f5fb9d63640aebb0c3d092fd3bc470560d"
+    },
+    {
+      "rank": 501,
+      "index": 54022,
+      "gene_id": "fdac2f28cb1e2e1e78f3e49c62e7576639fbce628cf424fede76bbfb7fe07dcf",
+      "distance_squared": 0.03087799022315193,
+      "cluster_sum": 1.206212746079302,
+      "region_center_gene_id": "3382ca490c35150c8b2370c4414804a55cc3627d68949ee0dae179d647558cd0"
+    },
+    {
+      "rank": 502,
+      "index": 52569,
+      "gene_id": "f6d9f641bdd52c517274ac4654f31c40ca6d76a30557a7a5825a4a60f328bbba",
+      "distance_squared": 0.021436626656822454,
+      "cluster_sum": 1.2059299402109132,
+      "region_center_gene_id": "5c7aa748b4cf7af4c46a874bb0f3b14acd9b69c44c264d266925220b86c7ec31"
+    },
+    {
+      "rank": 503,
+      "index": 46623,
+      "gene_id": "db092308fcd2a57eb2e0ac0f33ef9e581f40e3ed8870fcd6338a69dac11d4aa7",
+      "distance_squared": 0.05778590952493718,
+      "cluster_sum": 1.2049273209967668,
+      "region_center_gene_id": "c81903df0861c51c5a9f150b8de297583e4f25fe8173ffb0da424062125985c6"
+    },
+    {
+      "rank": 504,
+      "index": 33848,
+      "gene_id": "9eb9c44fa738bac0e3ce3ce4e9707f46bbe5f02af5b243d30a6d111deadf5127",
+      "distance_squared": 0.1608620523721742,
+      "cluster_sum": 1.2047854300324699,
+      "region_center_gene_id": "7fdb14d77f91fc4479b84f179acfd02eb52f45136b5cad49162a6dc5179ba26b"
+    },
+    {
+      "rank": 505,
+      "index": 43291,
+      "gene_id": "cb1cda6ce8a2766e6df1096f52ce85244f17502b6a25d17f9bf15c00e546d1d8",
+      "distance_squared": 0.03455429900821208,
+      "cluster_sum": 1.1993289390060078,
+      "region_center_gene_id": "9137c009da1fb665bdd47a605587461e60681a35a5c34abd79b0de17233f87e9"
+    },
+    {
+      "rank": 506,
+      "index": 44986,
+      "gene_id": "d332490b30da7920a57bed190bd8ef4459b702186f127fc36fa7ba1afb955bf1",
+      "distance_squared": 0.02067244973391451,
+      "cluster_sum": 1.1980981164604614,
+      "region_center_gene_id": "73e5dfcd06824f37d9ea08cd28eafed4eebd595350be782d7fb30ee952f481a4"
+    },
+    {
+      "rank": 507,
+      "index": 15345,
+      "gene_id": "472f7980a85e39d70244b741ae28855bf526c07cf1f9d55a782ba136ac5a8bf0",
+      "distance_squared": 0.010551221136463774,
+      "cluster_sum": 1.1920500091957635,
+      "region_center_gene_id": "613830500ca1621732ffd98a65bc7665f8f8c9d11ff8514ff4fc5435b3d0119c"
+    },
+    {
+      "rank": 508,
+      "index": 30711,
+      "gene_id": "8f7d1cd71aa3f02f11a99b96bc29d29c7c5a76704e9d9ad2c2a9ea566aacd19c",
+      "distance_squared": 0.008772830310717732,
+      "cluster_sum": 1.1910653960710207,
+      "region_center_gene_id": "03aa0a599e0cc6f98ee8dc91a276967d8bfd09b85a37c52b1bbfb57a3ff875d1"
+    },
+    {
+      "rank": 509,
+      "index": 31098,
+      "gene_id": "916e00ca7b1a505a371178016b11e3dcbe5c1322d0c01bfea6a492e5109c8f80",
+      "distance_squared": 0.02061389359560856,
+      "cluster_sum": 1.1772896714211278,
+      "region_center_gene_id": "fa80f95e62176580241ea76949740394e032abee8a6665ff5ff3ad5bd56e8454"
+    },
+    {
+      "rank": 510,
+      "index": 42532,
+      "gene_id": "c78f5835c2a4943d9c2adce16f3c9ef12e77958dec66709605fdcb65727451a5",
+      "distance_squared": 0.019109400727964285,
+      "cluster_sum": 1.1710171710844566,
+      "region_center_gene_id": "81312fce26b3a01192bd8d34be6fd349f8b116428595df8786f075474619841e"
+    },
+    {
+      "rank": 511,
+      "index": 43534,
+      "gene_id": "cc40e35539a43a8a0027d5a2d17d5e53812c309f553667093e01e1035133003e",
+      "distance_squared": 0.017705473521901563,
+      "cluster_sum": 1.1657573474828589,
+      "region_center_gene_id": "587f3fe94144c230b50f67c440fb4743b2e620bd8bc668e3b4e086e14f5b3e2b"
+    },
+    {
+      "rank": 512,
+      "index": 11142,
+      "gene_id": "339889abba3ab3ab5e9e463767631a83d3e1f9e90ec3f886c2f947b52e8cfec3",
+      "distance_squared": 0.11610740091142151,
+      "cluster_sum": 1.164084475992524,
+      "region_center_gene_id": "5ab2ab8ecb32454c9f79ed21321f4d369e091ab7aa3210c490cd7ea99a21b221"
+    }
+  ],
+  "elapsed_seconds": 1.7942647000018042,
+  "state_file": "lcmd_anchors_rank_00512.npz",
+  "state_sha256": "f9645ad070f41a81911cb4a48e32d649df3b610dc423b57876b3bcc118779379"
+}

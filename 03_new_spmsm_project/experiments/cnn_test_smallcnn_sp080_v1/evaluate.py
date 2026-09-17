@@ -1,4 +1,4 @@
-﻿"""Fixed selected SmallCNN test evaluation. Inference only: no backward, optimizer, SP, or model selection."""
+"""Fixed selected SmallCNN test evaluation. Inference only: no backward, optimizer, SP, or model selection."""
 from pathlib import Path
 import argparse,csv,hashlib,importlib.util,json,sys,time
 import numpy as np
@@ -8,7 +8,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 ROOT=Path(__file__).resolve().parent
 PROJECT=ROOT.parents[1]
-spec=importlib.util.spec_from_file_location('frozen_sp_runner',ROOT.parent/'cnn_shrink_perturb_v1/update.py')
+spec=importlib.util.spec_from_file_location('frozen_sp_runner',ROOT.parent/'cnn_shrink_perturb_v1/models/small_cnn_v2/update.py')
 r=importlib.util.module_from_spec(spec);spec.loader.exec_module(r)
 OUT=ROOT/'report'
 
@@ -19,7 +19,7 @@ def evaluate_tests():
     assert plan['status']=='fixed_before_test_labels_read'
     for name in ('candidate','baseline'):assert r.sha(PROJECT/plan[name]['checkpoint'])==plan[name]['sha256']
     assert r.sha(r.SPLIT)==plan['split_sha256'] and r.sha(r.PILOT/'memberships.csv')==plan['membership_sha256']
-    checkpoints={name:torch.load(PROJECT/plan[name]['checkpoint'],map_location='cpu',weights_only=False) for name in ('baseline','candidate')}
+    checkpoints={name:torch.load(r.relocated(PROJECT/plan[name]['checkpoint']),map_location='cpu',weights_only=False) for name in ('baseline','candidate')}
     ck=checkpoints['candidate'];cfg=ck['config']
     assert ck['step']==9500 and ck['group']=='F-S' and cfg['sp']['alpha']==.8 and cfg['sp']['beta']==.01 and cfg['new_per_update']==8
     with np.load(r.SPLIT) as z:split={key:np.array(z[key]) for key in ('train','validation','test')}

@@ -1,0 +1,21 @@
+{
+  "generated_unique": 102000,
+  "known_excluded": 91654,
+  "rejections": {
+    "repaired_duplicate_or_known": 1016
+  },
+  "parent_counts": {
+    "pool": 128,
+    "dev": 64,
+    "test": 64
+  },
+  "elapsed_seconds": 19.519511799997417,
+  "file_sha256": {
+    "parent_families.json": "4f9669be9fd7537c59825498b69ae9e7e8716fac511a65cfa1dc0783397757b9",
+    "candidates_train.csv": "d991de457bb45948ed0cc5f158c0e9331c5207e5c50bdc97e7cc045b96949d48",
+    "validation.csv": "f63b6e0b1360ab4e4b3022bc9f39d9e9e4e2df9e4b71938a71df64abcbbfe6c2",
+    "test.csv": "9f43a9d96a6c3e5838ef3294667b26fd8323ecdd71162b101682fa8060f327db"
+  },
+  "no_prediction_filter": true,
+  "test_features_extracted": false
+}

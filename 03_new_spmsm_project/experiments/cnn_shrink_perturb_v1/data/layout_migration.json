@@ -1,0 +1,107 @@
+{
+  "purpose": "Path-only layout migration; original frozen source identities validated by new source hashes; historical records and model/config bytes preserved.",
+  "rules": [
+    [
+      "checkpoint_verification.json",
+      "models/small_cnn_v2/checkpoint_verification.json"
+    ],
+    [
+      "ARTIFACT_CHECKSUMS.json",
+      "models/small_cnn_v2/ARTIFACT_CHECKSUMS.json"
+    ],
+    [
+      "source_reuse_audit.json",
+      "models/small_cnn_v2/source_reuse_audit.json"
+    ],
+    [
+      "plot_mse_comparison.py",
+      "models/small_cnn_v2/plot_mse_comparison.py"
+    ],
+    [
+      "review_tolerance.py",
+      "models/small_cnn_v2/review_tolerance.py"
+    ],
+    [
+      "mse_visual_qa.json",
+      "models/small_cnn_v2/mse_visual_qa.json"
+    ],
+    [
+      "report_results.py",
+      "models/small_cnn_v2/report_results.py"
+    ],
+    [
+      "alpha_050/audit",
+      "data/small_cnn_v2/alpha_050/audit"
+    ],
+    [
+      "alpha_080/audit",
+      "data/small_cnn_v2/alpha_080/audit"
+    ],
+    [
+      "alpha_095/audit",
+      "data/small_cnn_v2/alpha_095/audit"
+    ],
+    [
+      "visual_qa.json",
+      "models/small_cnn_v2/visual_qa.json"
+    ],
+    [
+      "STATUS.json",
+      "models/small_cnn_v2/STATUS.json"
+    ],
+    [
+      "__pycache__",
+      "models/small_cnn_v2/__pycache__"
+    ],
+    [
+      "alpha_050",
+      "models/small_cnn_v2/alpha_050"
+    ],
+    [
+      "alpha_080",
+      "models/small_cnn_v2/alpha_080"
+    ],
+    [
+      "alpha_095",
+      "models/small_cnn_v2/alpha_095"
+    ],
+    [
+      "README.md",
+      "models/small_cnn_v2/README.md"
+    ],
+    [
+      "update.py",
+      "models/small_cnn_v2/update.py"
+    ],
+    [
+      "report",
+      "reports/small_cnn_v2"
+    ],
+    [
+      "logs",
+      "models/small_cnn_v2/logs"
+    ]
+  ],
+  "relocated_sources": {
+    "models/small_cnn_v2/plot_mse_comparison.py": {
+      "original_sha256": "87c4016fe8964f05d34dd996a1e4d62c3704b24b4078104384e56fe0649a9615",
+      "current_sha256": "0e0a8c57f877e21cdf73552ebc8aa801f05a613f5f2e3d509f5d46bd24e2e17a"
+    },
+    "models/small_cnn_v2/report_results.py": {
+      "original_sha256": "60c57422691e5a0bb94b13fd50c141a87b47624ea9392c65c7803a6b51a326ef",
+      "current_sha256": "d29f56e729ce77332806c58e2f5214ef246bcc46779363c54d0481bc6adf6bb0"
+    },
+    "models/small_cnn_v2/review_tolerance.py": {
+      "original_sha256": "ec2156f9669ac3e5894412821abf649d754790bbd6575615bc5dd43eb006ea12",
+      "current_sha256": "bc97a21942f7da6970111a7db01ded7a6c82851272397a8ed15665d6b0a76268"
+    },
+    "models/small_cnn_v2/update.py": {
+      "original_sha256": "de6c4cf533c95855e153c2ad3d47f7b0d261c63518991862d686113ebcf5722d",
+      "current_sha256": "21ba72a2360bb9647b726c947ee2469fbe00190d5ff7234c1e86cf9715698a6c"
+    },
+    "models/small_cnn_v2/README.md": {
+      "original_sha256": "1fcb2880617bcb559cf782913ca522368998b451f3ddbbcb3dee1cb89f4281c9",
+      "current_sha256": "89ae2ef8ac074b575344f781445140a75645e342668c9f74c7da16226cbe5903"
+    }
+  }
+}

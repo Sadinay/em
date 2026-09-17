@@ -1,0 +1,91 @@
+{
+  "files": {
+    "experiments/input_distribution_pilot_v1/pilot.py": "216c13fc16674ded805196b97f689bacdbdf17c8564638fa8e08426a1cef191a",
+    "femm_zone/femm_config.py": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+    "femm_zone/scripts/spmsm_mapping.py": "12947026bb7e7601c7d4bfcf2839d71fe6f00c082a61be2266cc979bf7d076e0",
+    "cnn_zone/src/fem_mesh.py": "77f1d056186ffbe69c5e0ddd00c788f2d1d277a500ae03856f3b8c14725f1e41",
+    "data_zone/raw/workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+    "femm_zone/models/SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5",
+    "experiments/input_distribution_expansion_f1_v1/femm_entry.py": "ac56a5e6d4458038b44e664924588585219e21cb532b6fe62a205cf6e6fb0996",
+    "experiments/input_distribution_expansion_f1_v1/model_identity.json": "fe9e62cbe3a294b2bdee812e195a9a4ffe009bb56a4bf37407d39c5c85bc448d",
+    "experiments/input_distribution_expansion_f1_v1/membership.csv": "72dbf58d7c33634549aef6ee02d3c7f30ab8123966e6aa27109250f85401985c",
+    "experiments/input_distribution_expansion_f1_v1/femm_queue.csv": "405d506b564709d115e95e370ab16ecedce2e5441e169375efeb5f2b454201c0",
+    "experiments/input_distribution_expansion_f1_v1/pilot20.csv": "07312d685de0ed2a1249590e31aad1bf5576b83cbe482506a635c91646975369",
+    "femm_zone/workspaces/f1e1/td/femm_queue.csv": "8816928b0b87c11d0a0cef625a67388e5252bda2637d0f5e183538247b61fb4f",
+    "femm_zone/workspaces/f1e1/td/pilot20.csv": "07312d685de0ed2a1249590e31aad1bf5576b83cbe482506a635c91646975369",
+    "femm_zone/workspaces/f1e1/te/femm_queue.csv": "3ec02edc2d7c7bdcd549d96a5ed90e51177e55475b776398715e37a819815fb7",
+    "femm_zone/workspaces/f1e1/te/pilot20.csv": "46888e1ebe8abfe4bf52a0affe691bde044139d6cc6231767a73c16e22ff4d9d"
+  },
+  "physics_sources": {
+    "femm_zone/femm_config.py": "52459cf11c89ee1589f4d3a11a7e86e92450ac14ea082037a94a6c86e8a7835f",
+    "femm_zone/scripts/spmsm_mapping.py": "12947026bb7e7601c7d4bfcf2839d71fe6f00c082a61be2266cc979bf7d076e0",
+    "data_zone/raw/workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+    "femm_zone/models/SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+  },
+  "portable_physics": {
+    "mat_file": "data_zone/raw/workspace_200.mat",
+    "template_file": "femm_zone/models/SPMSM_discrete.fem",
+    "input_sha256": {
+      "data_zone/raw/workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+      "femm_zone/models/SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5"
+    },
+    "current": {
+      "amplitude_a": 3.5,
+      "pole_pairs": 4,
+      "omega_e_rad_s": 2513.2741228718346,
+      "omega_m_rad_s": 628.3185307179587
+    },
+    "current_source": "导师cos(omega*t)公式；MAT inp.Is_amp、F、wmech、P。t=deg2rad(ANG_R)/wmech。",
+    "problem": {
+      "Frequency": 0,
+      "Precision": 1e-08,
+      "MinAngle": 15,
+      "DoSmartMesh": 1,
+      "Depth": 36.0,
+      "LengthUnits": "millimeters",
+      "ProblemType": "planar",
+      "Coordinates": "cartesian",
+      "ACSolver": 0,
+      "PrevType": 0,
+      "PrevSoln": ""
+    },
+    "airgap": {
+      "name": "sliding_airgap",
+      "boundary_type": 6,
+      "outer_angle_deg": 0,
+      "initial_inner_angle_deg": 29.0
+    },
+    "angle_source": "导师补充ang_0=29°；用户指定ANG_R=0:3:15°。原脚本T/ANG_R生成部分未提供。",
+    "rotor_travel_angles_deg": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15
+    ],
+    "inner_angles_deg": [
+      29.0,
+      32.0,
+      35.0,
+      38.0,
+      41.0,
+      44.0
+    ],
+    "initial_phases_deg": [
+      0.0
+    ],
+    "torque_multiplier": 1.0,
+    "comparison_note": "六点算术平均；MAT DeltaT按峰峰转矩差(N·m)比较。旧-2经验换算另存对照。",
+    "material_source": "几何、绕组和材料BH曲线来自FEM模板；基因只切换设计区Air/N38。"
+  },
+  "portable_physics_fingerprint": "b0c67dac68495ccfe6b3e7c4f02ff335c7366e3b34fca97024d7e365b2a94a2f",
+  "historical_accepted_condition_fingerprint": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+  "historical_fingerprint_note": "Old full runtime fingerprint includes earlier runner/host; physical files and settings are byte-identical. New portable fingerprint removes paths, retains all physics values. Runtime additionally pins installed solver binary/version.",
+  "nominal_genes": 10000,
+  "nominal_angle_tasks": 60000,
+  "default_workers": 6,
+  "pilot_in_budget": 20,
+  "test_storage": "femm_zone/workspaces/f1e1/te; default status/export exclude test labels",
+  "no_femm_started": true
+}

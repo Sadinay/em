@@ -1,0 +1,28 @@
+{
+  "checkpoint_sha256": "9612f9892e76bc354ca6c6e885a57b29f865da8b84d0f3b67b195befc6980346",
+  "model_state_sha256": "bb37bb20e3e35c5616ce8c9516f842d477fc4d321a186101179afcc3d955ca36",
+  "dependencies": {
+    "cnn_zone\\outputs\\lookups\\spmsm_polar90_224_full_motor.npz": "6f49f46729c2567e3523da71760c54f3f002f18996c988361d2b3f4495dc5c21",
+    "experiments\\input_distribution_pilot_v1\\pilot.py": "216c13fc16674ded805196b97f689bacdbdf17c8564638fa8e08426a1cef191a",
+    "cnn_zone\\src\\__init__.py": "b02a2661ded589bf83653298ed09cecc3f3cb031a7c574c92cafddb7959d0bb4",
+    "cnn_zone\\src\\dataset.py": "1ddee15fbd75dc00cb8d2671bc08970911cafa11fe10418a4397982fa847d193",
+    "cnn_zone\\src\\fem_mesh.py": "77f1d056186ffbe69c5e0ddd00c788f2d1d277a500ae03856f3b8c14725f1e41",
+    "cnn_zone\\src\\model_registry.py": "4bf0e35df94fb9b4d3266ba078d8767c3308b42392794a34e5665284df75b83d",
+    "cnn_zone\\src\\models_v2.py": "7fa9316b20a5b109d319a288ed44019ee15fedd6a2d6f897c24552a46ae73954",
+    "cnn_zone\\src\\topology_renderer.py": "81c1919a3af98b599aee0cb74a494c6d81cef84e26921a7a72fc0bf9bca30ebb",
+    "cnn_zone\\src\\training.py": "e33bbd02e82c51bd93384acf2b62af94fd62162a34d3b32d02fcf2a9a5cae069",
+    "cnn_zone\\src\\training_inputs.py": "e4d5f14e4a7a394cad8c6867dea5936c49e7e53a13f97a0fcfe698426ee7d443"
+  },
+  "extractor_sha256": "0f62dfb930a05c02e4b1917f51440af6dbd2286365e966fb27411cea5d792944",
+  "reference_sha256": "cfe093b81d548f01bcf0c0e3cfe3ebc23e3606e8602060b0f6bafc721f9a4968",
+  "candidate_sha256": "d991de457bb45948ed0cc5f158c0e9331c5207e5c50bdc97e7cc045b96949d48",
+  "batch_size": 16,
+  "dtype": "float32",
+  "tf32": false,
+  "amp": false,
+  "torch": "2.13.0+cu132",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "feature_definition": "pre-final-linear Tavg256 concat DeltaT256; eval inference_mode",
+  "scale_fit": "reference_pool only"
+}

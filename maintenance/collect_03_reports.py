@@ -14,9 +14,9 @@ TEST_NAME='SPα0.80_β0.01_掺杂率12.5pct_v1'
 ALLOWED={'.md','.txt','.png','.jpg','.jpeg','.svg','.html','.pdf','.csv','.json'}
 SPECS=[
  ('SP0_掺杂率0pct_v3','V3冻结基线','SmallCNN V2、Mini-Inception V2、ResNet20 V2；VGG16四输入视图','0','0%',[('reports/V3','V3',True)]),
- ('SP0_掺杂率25pct_v1','普通热启动回放v1及6×20扩展','Polar90 VGG16；SmallCNN、Mini-Inception、ResNet20','0','25%',[('experiments/cnn_replay_update_v1/report','Polar90VGG16',True),('experiments/cnn_replay_update_v1/logical6x20/report','6x20',True)]),
- ('SP0_掺杂率12.5pct_v2','普通热启动回放v2及6×20扩展','Polar90 VGG16；SmallCNN、Mini-Inception、ResNet20','0','12.5%',[('experiments/cnn_replay_update_v2/report','Polar90VGG16',True),('experiments/cnn_replay_update_v2/logical6x20/report','6x20',True)]),
- (SP_NAME,'一次性SP＋回放首轮α筛选','Logical6x20SmallCNNV2；原生2×6×20','α=.95/.80/.50；β=.01','12.5%',[('experiments/cnn_shrink_perturb_v1/report','',True)]),
+ ('SP0_掺杂率25pct_v1','普通热启动回放v1及6×20扩展','Polar90 VGG16；SmallCNN、Mini-Inception、ResNet20','0','25%',[('experiments/cnn_replay_update_v1/reports/vgg16','Polar90VGG16',True),('experiments/cnn_replay_update_v1/reports/logical6x20','6x20',True)]),
+ ('SP0_掺杂率12.5pct_v2','普通热启动回放v2及6×20扩展','Polar90 VGG16；SmallCNN、Mini-Inception、ResNet20','0','12.5%',[('experiments/cnn_replay_update_v2/reports/vgg16','Polar90VGG16',True),('experiments/cnn_replay_update_v2/reports/logical6x20','6x20',True)]),
+ (SP_NAME,'一次性SP＋回放首轮α筛选','Logical6x20SmallCNNV2；原生2×6×20','α=.95/.80/.50；β=.01','12.5%',[('experiments/cnn_shrink_perturb_v1/reports/small_cnn_v2','',True)]),
  ('SP不适用_掺杂率不适用_v01','历史FEMM映射和DeltaT诊断散件','FEMM；无CNN系数','不适用','不适用',[('reports','',False)]),
  ('SP不适用_掺杂率不适用_v02','历史拓扑数据整理报告','数据处理；无CNN系数','不适用','不适用',[('reports/spmsm_topology_dataset','',True)]),
  ('SP不适用_掺杂率不适用_v03','历史输入编码报告','输入表示；无CNN系数','不适用','不适用',[('reports/spmsm_inputs','',True)]),
@@ -61,6 +61,9 @@ CHRONOLOGY['SP0_掺杂率0pct_v0']=CHRONOLOGY['SP0_掺杂率0pct_v3']
 CHRONOLOGY['other']=('历史杂项','00')
 SPECS.append((TEST_NAME,'固定模型测试：SP F-S与原始f0','SmallCNN V2；F-S SP α=.80，9500步；原始f0','α=.80；β=.01','12.5%',[('experiments/cnn_test_smallcnn_sp080_v1/report','',True)]))
 CHRONOLOGY[TEST_NAME]=('2026-09-15，固定模型测试','15')
+EXPANSION_NAME='SP0_掺杂率12.5pct_v3'
+SPECS.append((EXPANSION_NAME,'f1特征覆盖扩样：10000基因FEMM任务包','f1 Polar90 VGG16；F-S，4000步无约束候选；本轮未训练CNN','0（选样模型）','12.5%（选样模型；本轮不训练）',[('experiments/input_distribution_expansion_f1_v1/report','',True)]))
+CHRONOLOGY[EXPANSION_NAME]=('2026-09-16，f1覆盖扩样','16')
 SPECS.sort(key=lambda item: CHRONOLOGY[item[0]][1])
 
 def sha(p):

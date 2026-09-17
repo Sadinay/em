@@ -1,0 +1,175 @@
+{
+  "purpose": "Path-only layout migration; original frozen source identities validated by new source hashes; historical records and model/config bytes preserved.",
+  "rules": [
+    [
+      "logical6x20/final_checkpoint_verification.json",
+      "models/final_checkpoint_verification.json"
+    ],
+    [
+      "logical6x20/original_vgg_artifacts.json",
+      "models/original_vgg_artifacts.json"
+    ],
+    [
+      "logical6x20/ARTIFACT_CHECKSUMS.json",
+      "models/ARTIFACT_CHECKSUMS.json"
+    ],
+    [
+      "logical6x20/mini_inception_v2/audit",
+      "data/mini_inception_v2/audit"
+    ],
+    [
+      "logical6x20/offline_checks.json",
+      "models/offline_checks.json"
+    ],
+    [
+      "logical6x20/plot_performance.py",
+      "models/plot_performance.py"
+    ],
+    [
+      "logical6x20/small_cnn_v2/audit",
+      "data/small_cnn_v2/audit"
+    ],
+    [
+      "logical6x20/mini_inception_v2",
+      "models/mini_inception_v2"
+    ],
+    [
+      "logical6x20/report_results.py",
+      "models/report_results.py"
+    ],
+    [
+      "logical6x20/resnet20_v2/audit",
+      "data/resnet20_v2/audit"
+    ],
+    [
+      "logical6x20/test_update.py",
+      "models/test_update.py"
+    ],
+    [
+      "logical6x20/visual_qa.json",
+      "models/visual_qa.json"
+    ],
+    [
+      "logical6x20/small_cnn_v2",
+      "models/small_cnn_v2"
+    ],
+    [
+      "ARTIFACT_CHECKSUMS.json",
+      "models/vgg16/ARTIFACT_CHECKSUMS.json"
+    ],
+    [
+      "logical6x20/resnet20_v2",
+      "models/resnet20_v2"
+    ],
+    [
+      "logical6x20/STATUS.json",
+      "models/STATUS.json"
+    ],
+    [
+      "logical6x20/__pycache__",
+      "models/__pycache__"
+    ],
+    [
+      "logical6x20/README.md",
+      "models/README.md"
+    ],
+    [
+      "logical6x20/update.py",
+      "models/update.py"
+    ],
+    [
+      "logical6x20/report",
+      "reports/logical6x20"
+    ],
+    [
+      "source_snapshot",
+      "models/vgg16/source_snapshot"
+    ],
+    [
+      "config.json",
+      "models/vgg16/config.json"
+    ],
+    [
+      "__pycache__",
+      "models/vgg16/__pycache__"
+    ],
+    [
+      "README.md",
+      "models/vgg16/README.md"
+    ],
+    [
+      "update.py",
+      "models/vgg16/update.py"
+    ],
+    [
+      "baseline",
+      "models/vgg16/baseline"
+    ],
+    [
+      "report",
+      "reports/vgg16"
+    ],
+    [
+      "audit",
+      "models/vgg16/audit"
+    ],
+    [
+      "tests",
+      "models/vgg16/tests"
+    ],
+    [
+      "audit",
+      "data/vgg16/audit"
+    ],
+    [
+      "logs",
+      "models/vgg16/logs"
+    ],
+    [
+      "runs",
+      "models/vgg16/runs"
+    ]
+  ],
+  "relocated_sources": {
+    "models/plot_performance.py": {
+      "original_sha256": "0dcd05fb16e72a03f0fc73cbea85b1283efe4784901ee0f3acc49c4ebc28d18f",
+      "current_sha256": "83e543376f8e98cc4f6fb95b0ad9ecc01dc964da1b0c6601143ee72ae0806173"
+    },
+    "models/report_results.py": {
+      "original_sha256": "2acae435af468c8fc7d992ce7757633bf77d706fd7121e5426bd9c0f7a5262eb",
+      "current_sha256": "f3295fb010fa095c877dd1f81d06389de98cb7df3eeee4ca96e1ab152c5f5a06"
+    },
+    "models/test_update.py": {
+      "original_sha256": "372d67be0da0a3705489fee7e8034db054e4298aa614bc960151b9f6d67d272c",
+      "current_sha256": "c14852e4d2251cae6361cbf6a858d5401e6a6287c36fa64e5efc1ea1a42ebf38"
+    },
+    "models/update.py": {
+      "original_sha256": "68a640d6d3d41738e4c52f6add5eae67d161dd13d4b3fc6429f60329378116c3",
+      "current_sha256": "503254f53247052d3d064e4fd77a878e662ca317db11582ea2e8a9a546dfc06c"
+    },
+    "reports/vgg16/diagnostics.py": {
+      "original_sha256": "bf60372b809ec2e07776cfc7f1e0419c8b526142f184b653219816e9ddb93647",
+      "current_sha256": "fb241215d9ac31e16a4bd62e5bb0763fb8737df73d358d312fa9239d62a5eec3"
+    },
+    "models/vgg16/tests/test_update.py": {
+      "original_sha256": "84efa4f0a4f6da5ddaa5a74f76b5011abbcec61f68d95d4688eb62b60ae69bd1",
+      "current_sha256": "d9d33cf93be9dea549f713dae3e9b5bae28a631d07ecc5ae54c4b899ba6d2484"
+    },
+    "models/vgg16/update.py": {
+      "original_sha256": "632c641ec8f9ee7950a3209ed4bb5d1bf73d4b6a1adac9f8bc2cc1bd0e2874d1",
+      "current_sha256": "d49dd5589c9ea633a3d883a3f124f3223514ba3f6a61b620528a7c06f0507c39"
+    },
+    "models/README.md": {
+      "original_sha256": "2ee8a7862e08d09733bed22c6e4b0b7caff043d19b69d0efaaa967642f6706a0",
+      "current_sha256": "81e295590ec8ee9c48a5e60d8db036b52e59d1a5105589971aa22012395786e8"
+    },
+    "models/vgg16/README.md": {
+      "original_sha256": "44c72812833bd6014fcafe7cf12350fb93b2391ca2d3a851a1ede932e39bb30e",
+      "current_sha256": "26900d80df41757a76fc117f4a11d225d875c087a3025e079ae75188cb8f20ce"
+    },
+    "reports/vgg16/REPORT.md": {
+      "original_sha256": "de3e4997a34e672d20f528ca3c9c8737b2006e03fe38fe1971f95f44b7a7d6a5",
+      "current_sha256": "48f8a39008c73472553810711651d8e9b9e86a375930112c80f5659a3f0ba533"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "reference_count": 54537,
+  "source_counts": {
+    "old_train": 40000,
+    "old_unused_train_pool": 11838,
+    "train_G": 1299,
+    "train_F": 1299,
+    "train_G;train_F": 101
+  },
+  "excluded": {
+    "GF_training_duplicate_merged": 101
+  },
+  "original_train_resource_count": 51838,
+  "original_validation_test_excluded": 12966,
+  "historical_quarantined_conflicts_excluded": 898,
+  "known_unique_excluded": 91654,
+  "history_identity_rows": {
+    "population": 612,
+    "population_all": 123012,
+    "population_noChange_all": 123012
+  },
+  "f1_actual_train_count": 41400,
+  "retained_old_exception_policy": "retained as the same initial-state source audit exception used in project 02; Tavg/DeltaT are aligned to population_all and the mismatch does not occur after state 0",
+  "historical_exception_count": 538,
+  "test_label_reads": 0,
+  "validation_label_reads": 0,
+  "new_test_400_previously_evaluated": true,
+  "labels_definition": "six-angle mean Tavg and max-minus-min DeltaT in N*m; initial29, multiplier1",
+  "source_hashes": {
+    "old_summary": "ae8d1826f2d8955ba95bbffde6fbe7228f1b43c487e5de59d8feb2ba93903ddb",
+    "old_split": "de499be640b68e3aac7f8ce48e6169139896178e43b781c2a8cca8853df7d826",
+    "accepted_checksums": "b6c989f8578244ffa87d17313557a4909f59eb19c917688f67ad0105266019ad",
+    "accepted_audit": "bf45ad1e2cd0c67aa92840a9fe8f865f85388f77e07968866f2918468c784d5c"
+  },
+  "reference_sha256": "cfe093b81d548f01bcf0c0e3cfe3ebc23e3606e8602060b0f6bafc721f9a4968",
+  "known_sha256": "186e75ac51524bf389430f80c05e1a1afc7dcc19883652ecab5bbc6e76f29d2e",
+  "accepted_dependencies_verified": {
+    "cnn_zone/outputs/lookups/spmsm_polar90_224_full_motor.npz": "6f49f46729c2567e3523da71760c54f3f002f18996c988361d2b3f4495dc5c21",
+    "data_zone/raw/workspace_200.mat": "2fbfbe8743cfe0a23c3f3c8dc54378cc82774145845f92d68555fb4eec1270d8",
+    "femm_zone/models/SPMSM_discrete.fem": "c6353f71c75e5d743d90717e4405337a5bce11f2032beb162b6ec9833d8001f5",
+    "cnn_zone/src/training.py": "e33bbd02e82c51bd93384acf2b62af94fd62162a34d3b32d02fcf2a9a5cae069",
+    "cnn_zone/src/training_inputs.py": "e4d5f14e4a7a394cad8c6867dea5936c49e7e53a13f97a0fcfe698426ee7d443",
+    "cnn_zone/src/models_v2.py": "7fa9316b20a5b109d319a288ed44019ee15fedd6a2d6f897c24552a46ae73954",
+    "cnn_zone/src/fem_mesh.py": "77f1d056186ffbe69c5e0ddd00c788f2d1d277a500ae03856f3b8c14725f1e41",
+    "femm_zone/scripts/spmsm_mapping.py": "12947026bb7e7601c7d4bfcf2839d71fe6f00c082a61be2266cc979bf7d076e0"
+  },
+  "allowed_reference_target_float32_sha256": "f62066c5df21318d001e22c9a79656d4eebcc3afcc7d683b62b4144e57c04e36",
+  "allowed_reference_bits_sha256": "19107c5447a92a1109598da5a3d13f02a6ab38cfaf2b2828703645458f40e413",
+  "historical_P_parent_note": "Parent role reservations constrain offspring; parents themselves remain old training resources."
+}

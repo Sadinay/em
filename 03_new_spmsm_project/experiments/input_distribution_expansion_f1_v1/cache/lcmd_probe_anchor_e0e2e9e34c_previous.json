@@ -1,0 +1,43 @@
+{
+  "contract": {
+    "values_sha256": "fd20f792d486dbe0ff0483f9426a5970edee8212026bdd5a7fc57b53eff6a362",
+    "ids_sha256": "b9310be750537a10d83c3f80b79d7b4112c6d038d3bd06c0ca7f4d69ec78f07d",
+    "candidate_count": 19,
+    "select_count": 8,
+    "initial": [
+      4
+    ],
+    "algorithm_sha256": "e0e2e9e34c6b3cf79ead800101a7ef3724b5ce68dc46794723eeaa49af593e72",
+    "dtype": "float64",
+    "distance": "direct squared differences; row blocks8192"
+  },
+  "trace": [
+    {
+      "rank": 1,
+      "index": 4,
+      "gene_id": "014",
+      "distance_squared": 0.0,
+      "cluster_sum": 0.0,
+      "initial_mean_nearest": true
+    },
+    {
+      "rank": 2,
+      "index": 13,
+      "gene_id": "005",
+      "distance_squared": 80.0,
+      "cluster_sum": 903.0,
+      "region_center_gene_id": "014"
+    },
+    {
+      "rank": 3,
+      "index": 1,
+      "gene_id": "017",
+      "distance_squared": 49.0,
+      "cluster_sum": 305.0,
+      "region_center_gene_id": "005"
+    }
+  ],
+  "elapsed_seconds": 0.005481599997438025,
+  "state_file": "lcmd_probe_anchor_e0e2e9e34c_rank_00003.npz",
+  "state_sha256": "6f69c930871593bed1fce256cc236f002d12787d08bb157fc6fb89c5bdff5bc0"
+}

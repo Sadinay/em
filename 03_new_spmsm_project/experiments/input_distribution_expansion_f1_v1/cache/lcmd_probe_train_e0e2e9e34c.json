@@ -1,0 +1,85 @@
+{
+  "contract": {
+    "values_sha256": "fd20f792d486dbe0ff0483f9426a5970edee8212026bdd5a7fc57b53eff6a362",
+    "ids_sha256": "b9310be750537a10d83c3f80b79d7b4112c6d038d3bd06c0ca7f4d69ec78f07d",
+    "candidate_count": 16,
+    "select_count": 8,
+    "initial": [
+      16,
+      17,
+      18
+    ],
+    "algorithm_sha256": "e0e2e9e34c6b3cf79ead800101a7ef3724b5ce68dc46794723eeaa49af593e72",
+    "dtype": "float64",
+    "distance": "direct squared differences; row blocks8192"
+  },
+  "trace": [
+    {
+      "rank": 1,
+      "index": 3,
+      "gene_id": "015",
+      "distance_squared": 65.0,
+      "cluster_sum": 223.0,
+      "region_center_gene_id": "001"
+    },
+    {
+      "rank": 2,
+      "index": 9,
+      "gene_id": "009",
+      "distance_squared": 57.0,
+      "cluster_sum": 174.0,
+      "region_center_gene_id": "002"
+    },
+    {
+      "rank": 3,
+      "index": 0,
+      "gene_id": "018",
+      "distance_squared": 35.0,
+      "cluster_sum": 102.0,
+      "region_center_gene_id": "009"
+    },
+    {
+      "rank": 4,
+      "index": 13,
+      "gene_id": "005",
+      "distance_squared": 35.0,
+      "cluster_sum": 75.0,
+      "region_center_gene_id": "000"
+    },
+    {
+      "rank": 5,
+      "index": 11,
+      "gene_id": "007",
+      "distance_squared": 31.0,
+      "cluster_sum": 78.0,
+      "region_center_gene_id": "005"
+    },
+    {
+      "rank": 6,
+      "index": 5,
+      "gene_id": "013",
+      "distance_squared": 28.0,
+      "cluster_sum": 90.0,
+      "region_center_gene_id": "007"
+    },
+    {
+      "rank": 7,
+      "index": 7,
+      "gene_id": "011",
+      "distance_squared": 26.0,
+      "cluster_sum": 62.0,
+      "region_center_gene_id": "007"
+    },
+    {
+      "rank": 8,
+      "index": 12,
+      "gene_id": "006",
+      "distance_squared": 24.0,
+      "cluster_sum": 47.0,
+      "region_center_gene_id": "005"
+    }
+  ],
+  "elapsed_seconds": 0.0551668999978574,
+  "state_file": "lcmd_probe_train_e0e2e9e34c_rank_00008.npz",
+  "state_sha256": "9cecc254c88ac4c3630db132dcd4971c2af8a873ecc35372e49c7c02f57fec50"
+}
