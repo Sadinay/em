@@ -1,0 +1,200 @@
+{
+  "status": "passed",
+  "scope": {
+    "old_batch": "FEMM_results_20260913 / 3299",
+    "new_batch": "FEMM_10000_results_20260917 / 10000"
+  },
+  "checks": {
+    "batch_counts": {
+      "status": "passed",
+      "old_genes": 3299,
+      "new_train_dev_genes": 9000,
+      "new_test_genes": 1000
+    },
+    "split_roles": {
+      "status": "passed",
+      "old": {
+        "train": 2699,
+        "test": 400,
+        "dev": 200
+      },
+      "new": {
+        "train": 8000,
+        "dev": 1000,
+        "test": 1000
+      }
+    },
+    "partition_disjoint": {
+      "status": "passed",
+      "overlap": 0
+    },
+    "identity_and_repair": {
+      "status": "passed",
+      "old": {},
+      "new": {}
+    },
+    "within_batch_duplicates": {
+      "status": "passed",
+      "old": {
+        "gene_id": 0,
+        "bits": 0,
+        "raw_bits": 0,
+        "raw_gene_id": 0
+      },
+      "new": {
+        "gene_id": 0,
+        "bits": 0,
+        "raw_bits": 0,
+        "raw_gene_id": 0
+      }
+    },
+    "label_identity": {
+      "status": "passed",
+      "old_mismatches": 0,
+      "new_train_dev_mismatches": 0,
+      "new_test_mismatches": 0
+    },
+    "label_definitions_and_groups": {
+      "status": "passed",
+      "old_source": {
+        "L": 1075,
+        "P": 396,
+        "U": 1064,
+        "B": 764
+      },
+      "new_train_dev_source": {
+        "L": 2180,
+        "U": 1580,
+        "B": 3963,
+        "P": 1277
+      },
+      "new_test_source": {
+        "U": 250,
+        "L": 250,
+        "B": 250,
+        "P": 250
+      },
+      "new_groups": {
+        "f1_expansion": 10000
+      }
+    },
+    "waveform_completeness_and_labels": {
+      "status": "passed",
+      "old": {},
+      "new_train_dev": {},
+      "new_test": {},
+      "waveform_counts": {
+        "old": 19794,
+        "new_train_dev": 54000,
+        "new_test": 6000
+      }
+    },
+    "3299_membership_list": {
+      "status": "passed",
+      "rows": 8000,
+      "ids": 3299,
+      "split_group_counts": {
+        "train/G-S": 1400,
+        "train/G-E": 1400,
+        "train/F-S": 1400,
+        "train/F-E": 1400,
+        "test/G-S": 400,
+        "test/F-S": 400,
+        "test/G-E": 400,
+        "test/F-E": 400,
+        "dev/G-S": 200,
+        "dev/F-S": 200,
+        "dev/G-E": 200,
+        "dev/F-E": 200
+      }
+    },
+    "10000_queue_identity": {
+      "status": "passed",
+      "train_dev_mismatches": 0,
+      "test_mismatches": 0,
+      "root_mismatches": 0
+    },
+    "train_dev_subtables": {
+      "status": "passed",
+      "train_rows": 8000,
+      "dev_rows": 1000
+    },
+    "cross_batch_intersection": {
+      "status": "passed",
+      "repaired_bits": 0,
+      "raw_bits": 0,
+      "gene_ids": 0,
+      "old_repaired_new_raw": 0,
+      "old_raw_new_repaired": 0
+    },
+    "physical_fingerprint_consistency": {
+      "status": "passed",
+      "old_fingerprints": [
+        "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712"
+      ],
+      "new_fingerprints": [
+        "a5146b3c9c71ef337943ce10700903bb927c5d327564fa0f8ce35417a42700a4"
+      ],
+      "old_contract_digest": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+      "new_contract_digest": "a5146b3c9c71ef337943ce10700903bb927c5d327564fa0f8ce35417a42700a4",
+      "canonical_physics_digest": "b3676fdbfd636c5eeb8f5b692675d3bbafefbc063b0387b7203309d61d447d0a",
+      "canonical_equal": true,
+      "portable_physics_fingerprint": "b0c67dac68495ccfe6b3e7c4f02ff335c7366e3b34fca97024d7e365b2a94a2f"
+    },
+    "package_metadata": {
+      "status": "passed",
+      "old_package_summary": {
+        "exported_local": "2026-09-13T23:24:19.602486+02:00",
+        "status": "completed_results_export",
+        "condition_fingerprint": "97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+        "source_run_directory": "C:\\Users\\Alexander\\Desktop\\03_new_spmsm_project\\experiments\\input_distribution_pilot_v1\\femm_runs\\97cd342fe5d68919dffee97fe5ff2d37bcfdbfd461eb357e9ca92f75ee05c712",
+        "complete_genes": 3299,
+        "successful_angles": 19794,
+        "incomplete_genes": 0,
+        "failed_gene_attempts": 0,
+        "final_workers": 6,
+        "archived_source_files": 65990,
+        "final_report": {
+          "complete_genes": 3299,
+          "incomplete_genes": 0,
+          "attempted_genes": 3303,
+          "failed_gene_attempts": 0,
+          "median_seconds_per_gene": 35.465622200001235,
+          "p90_seconds_per_gene": 37.3384511000022,
+          "measured_workers": 6,
+          "successful_genes_per_hour": 611.4249640086633,
+          "remaining_seconds_estimate_from_throughput": 0.0,
+          "timing_note": "Throughput uses coordinator wall time at the same worker count, including worker startup and retries; not the sum of concurrent gene durations.",
+          "no_time_estimate_before_measured_success": true
+        },
+        "result_policy": "Results and hash-linked receipts retained; successful FEM/ANS work files were removed after validation.",
+        "historical_audit_note": "audit/machine_validation and io_recovery describe earlier pilot/stoppage snapshots; tables/report.json is the final report.",
+        "original_files_copied_without_move_or_delete": true
+      },
+      "new_package_summary": {
+        "task": "FEMM_10000_f1_v1",
+        "partitions": {
+          "train_dev": {
+            "genes": 9000,
+            "angles": 54000,
+            "archived_files": 180005,
+            "fingerprint": "a5146b3c9c71ef337943ce10700903bb927c5d327564fa0f8ce35417a42700a4"
+          },
+          "sealed_test": {
+            "genes": 1000,
+            "angles": 6000,
+            "archived_files": 20005,
+            "fingerprint": "a5146b3c9c71ef337943ce10700903bb927c5d327564fa0f8ce35417a42700a4"
+          }
+        },
+        "results_only": true
+      }
+    }
+  },
+  "errors": [],
+  "notes": [
+    "Queue status=pending is expected: queues are frozen input manifests; labels/status are read from result tables.",
+    "Full contract fingerprints differ because the old contract is host-specific; canonical physical settings remove paths and runner identity.",
+    "Repeated family_id values are lineage references; genotype and result keys are required to be unique within each batch."
+  ]
+}

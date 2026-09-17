@@ -1,16 +1,20 @@
 # 新 SPMSM 遗传优化项目（第三类基因）
 
+2026-09-17：**f1 扩样的 10000 个基因 FEMM 结果已接收并通过完整性校验**，8000 训练＋1000 验证＋1000 独立测试，共 60000 角度。见[接收记录及数据入口](experiments/input_distribution_expansion_f1_v1/FEMM_RESULTS_RECEIVED_20260917.md)。本次未启动 CNN 训练。
+
+2026-09-16：**f1特征覆盖扩样已完成选样和任务包，未训练CNN、未启动FEMM。** 8000训练＋1000验证＋1000新测试；[独立实验入口](experiments/input_distribution_expansion_f1_v1/README.md)、[集中报告](reports/SP0_掺杂率12.5pct_v3/REPORT.md)、[模型代次登记](experiments/model_registry/README.md)。
+
 **测试集使用状态：**400个新测试基因及6483个旧测试基因已用于固定SmallCNN F-S SP模型与原f0的纯推理比较；未更新权重。[测试报告](reports/SPα0.80_β0.01_掺杂率12.5pct_v1/REPORT.md)。
 
 **集中报告入口：**[按时间查看实验报告（最新在下）](reports/实验索引.md)。新报告目录仅用SP、掺杂率和轮次命名；模型信息在索引和报告正文中。历史原件保留。
 
-2026-09-15 小模型补充：**三个6×20网络的v1/v2共12组训练已完成**，合计约45分钟。v2 SmallCNN G-S与Mini-Inception G-S通过各自旧模型5%容限。源码与结果位于 [v1小模型](experiments/cnn_replay_update_v1/logical6x20/README.md)、[v2小模型及两版比较](experiments/cnn_replay_update_v2/logical6x20/README.md)。原VGG16实验保留。
+2026-09-15 小模型补充：**三个6×20网络的v1/v2共12组训练已完成**，合计约45分钟。v2 SmallCNN G-S与Mini-Inception G-S通过各自旧模型5%容限。源码与结果位于 [v1小模型](experiments/cnn_replay_update_v1/models/README.md)、[v2小模型及两版比较](experiments/cnn_replay_update_v2/models/README.md)。原VGG16实验保留。
 
-2026-09-15 更新：**v2 高旧回放比例实验已完成**，G-S/F-S各5000次更新；两组仍未同时通过旧分布双目标5%容限。源码、模型和对比报告集中在 [cnn_replay_update_v2](experiments/cnn_replay_update_v2/README.md)，先看[本轮结果](experiments/cnn_replay_update_v2/report/REPORT.md)。
+2026-09-15 更新：**v2 高旧回放比例实验已完成**，G-S/F-S各5000次更新；两组仍未同时通过旧分布双目标5%容限。源码、模型和对比报告集中在 [cnn_replay_update_v2](experiments/cnn_replay_update_v2/README.md)，先看[本轮结果](experiments/cnn_replay_update_v2/reports/vgg16/REPORT.md)。
 
 本项目按 `02_new_ipmsm_project` 的功能区规格独立组织，用于 `SPMSM_discrete.fem` 与 `workspace_200.mat` 所代表的第三类基因和电机结构。03 与 01、02 的基因编码、FEMM 几何映射、GA 配置、数据库、CNN 模型及实验结果不得混用。
 
-2026-09-14 更新：**G-S / F-S 首轮 CNN 补样回放训练已完成**，两组各2500步，合计约32分钟。新结构预测显著改善，但都未通过旧分布双目标各自5%的容限；详见[结果解释](experiments/cnn_replay_update_v1/report/interpretation.md)。本阶段训练源码集中在 [update.py](experiments/cnn_replay_update_v1/update.py)，配置、检查点、恢复命令和图表均在独立的 [cnn_replay_update_v1](experiments/cnn_replay_update_v1/README.md)。最终test继续封存。
+2026-09-14 更新：**G-S / F-S 首轮 CNN 补样回放训练已完成**，两组各2500步，合计约32分钟。新结构预测显著改善，但都未通过旧分布双目标各自5%的容限；详见[结果解释](experiments/cnn_replay_update_v1/reports/vgg16/interpretation.md)。本阶段训练源码集中在 [update.py](experiments/cnn_replay_update_v1/models/vgg16/update.py)，配置、检查点、恢复命令和图表均在独立的 [cnn_replay_update_v1](experiments/cnn_replay_update_v1/README.md)。最终test继续封存。
 
 此前已接收并核验另一台设备的全部 **3299 个基因 / 19794 个角度**，完成冻结旧 CNN 的基线评估。G/F 各1400及公共dev/test数据入口见[接收与评估说明](experiments/input_distribution_pilot_v1/post_femm_baseline_20260913/README.md)，原基线结论见[基线报告](experiments/input_distribution_pilot_v1/post_femm_baseline_20260913/BASELINE_REPORT.md)。
 

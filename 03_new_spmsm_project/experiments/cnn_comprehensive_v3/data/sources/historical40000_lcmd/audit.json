@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "candidate_count": 40000,
+  "selected_count": 20000,
+  "anchor_count": 512,
+  "anchor_first_index": 35058,
+  "anchor_first_gene_id": "e09b8d99bb757d7a54446c704b7f4e709239ee3df9a086b2486a32d3807b211a",
+  "feature_shape": [
+    40000,
+    512
+  ],
+  "feature_dtype": "float32",
+  "feature_definition": "f1 Polar90 VGG16 F-S 12.5%; step4000 best_unconstrained; pre-final-linear Tavg256+DeltaT256; frozen reference-pool branch RMS scaler",
+  "checkpoint": "experiments/cnn_replay_update_v2/models/vgg16/runs/F-S/best_unconstrained.pt",
+  "checkpoint_sha256": "9612f9892e76bc354ca6c6e885a57b29f865da8b84d0f3b67b195befc6980346",
+  "feature_cache_sha256": "93d0bb8c2fe5604aec0108293f1cd6874a931c73b065e9245b8873afed4a2f70",
+  "feature_cache_metadata_sha256": "e9928fbcc470c33722b6a592a10b6887400fcd3485ed64de036cbdabc155e69c",
+  "scaler_sha256": "43f780cc21449e5a18c36d337f99e3d805f5fbbffb5d6991c2892702eeb44f4c",
+  "reference_manifest_sha256": "cfe093b81d548f01bcf0c0e3cfe3ebc23e3606e8602060b0f6bafc721f9a4968",
+  "selected_csv_sha256": "34867977dffd58eea1b19f357b0512e747abcc69967ab1220b57aa9054128301",
+  "selected_ids_sha256": "a9e6a881cef2e046811aab77b6bd20faee651d697367e753093cf399354dffb5",
+  "selection_order_sha256": "ecd00ca3951c45e098f10a4b55313eb2dfa80eae867a783a8f409645917dda5f",
+  "algorithm": "direct FP64 squared differences; row blocks8192; cluster cumulative nearest d2; farthest member; hash ties",
+  "no_nxn": true,
+  "no_training": true,
+  "no_femm": true,
+  "no_global_dedup": true,
+  "coverage": {
+    "nearest_distance_sqrt_mean": 0.009157971468829351,
+    "nearest_distance_sqrt_p95": 0.024228689257406556,
+    "nearest_distance_sqrt_max": 0.03286835429359867
+  },
+  "selection_method_counts": {
+    "f1_F_LCMD_old40000": 20000
+  },
+  "distinct_repair_component_count": 20000
+}

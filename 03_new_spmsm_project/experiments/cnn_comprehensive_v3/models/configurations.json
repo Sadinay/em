@@ -1,0 +1,68 @@
+{
+  "status": "registered_not_trained",
+  "comparison_principle": "all configurations train from scratch on one future frozen split",
+  "split_status": "frozen 70/15/15; historical20000 and expanded13299 split separately, then merged",
+  "configurations": [
+    {
+      "id": "gene_6x20_smallcnn",
+      "architecture": "Logical6x20SmallCNNV2",
+      "input": "gene_6x20",
+      "training_status": "not_started",
+      "initialization": "from_scratch"
+    },
+    {
+      "id": "gene_6x20_resnet20",
+      "architecture": "Logical6x20ResNet20V2",
+      "input": "gene_6x20",
+      "training_status": "not_started",
+      "initialization": "from_scratch"
+    },
+    {
+      "id": "gene_gap90_6x97_smallcnn",
+      "architecture": "Logical6x20SmallCNNV2",
+      "input": "gap90_6x97",
+      "training_status": "not_started",
+      "initialization": "from_scratch"
+    },
+    {
+      "id": "gene_gap90_6x97_resnet20",
+      "architecture": "Logical6x20ResNet20V2",
+      "input": "gap90_6x97",
+      "training_status": "not_started",
+      "initialization": "from_scratch"
+    },
+    {
+      "id": "polar90_vgg16",
+      "architecture": "Semantic224VGG16V2",
+      "input": "Polar90_224",
+      "training_status": "not_started",
+      "initialization": "from_scratch"
+    },
+    {
+      "id": "polar90_resnet18",
+      "architecture": "Semantic224ResNet18V2",
+      "input": "Polar90_224",
+      "training_status": "not_started",
+      "initialization": "from_scratch"
+    },
+    {
+      "id": "polar360_vgg16",
+      "architecture": "Semantic224VGG16V2",
+      "input": "Polar360_224",
+      "training_status": "not_started",
+      "initialization": "from_scratch"
+    },
+    {
+      "id": "polar360_resnet18",
+      "architecture": "Semantic224ResNet18V2",
+      "input": "Polar360_224",
+      "training_status": "not_started",
+      "initialization": "from_scratch"
+    }
+  ],
+  "excluded": [
+    "Mini-Inception",
+    "all XY224 inputs",
+    "all other architectures"
+  ]
+}

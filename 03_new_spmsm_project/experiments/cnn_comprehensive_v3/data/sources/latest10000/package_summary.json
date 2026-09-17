@@ -1,0 +1,18 @@
+{
+  "task": "FEMM_10000_f1_v1",
+  "partitions": {
+    "train_dev": {
+      "genes": 9000,
+      "angles": 54000,
+      "archived_files": 180005,
+      "fingerprint": "a5146b3c9c71ef337943ce10700903bb927c5d327564fa0f8ce35417a42700a4"
+    },
+    "sealed_test": {
+      "genes": 1000,
+      "angles": 6000,
+      "archived_files": 20005,
+      "fingerprint": "a5146b3c9c71ef337943ce10700903bb927c5d327564fa0f8ce35417a42700a4"
+    }
+  },
+  "results_only": true
+}

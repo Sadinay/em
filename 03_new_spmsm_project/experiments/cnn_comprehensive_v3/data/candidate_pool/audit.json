@@ -1,0 +1,166 @@
+{
+  "status": "passed",
+  "source_counts": {
+    "historical40000_lcmd": 20000,
+    "prior3299": 3299,
+    "latest10000": 10000
+  },
+  "pairwise_and_triple_intersections": {
+    "historical40000_lcmd__prior3299": 0,
+    "historical40000_lcmd__latest10000": 0,
+    "prior3299__latest10000": 0,
+    "all_three": 0
+  },
+  "duplicate_occurrences_removed": 0,
+  "label_conflict_genes_quarantined": 0,
+  "candidate_pool_unique_genes": 33299,
+  "expected_theoretical_total": 33299,
+  "train_validation_test_split": "stored separately in data/split_audit.json and data/split_membership.csv",
+  "label_tolerance_nm": 1e-06,
+  "array_shapes": {
+    "topology_bits_120": [
+      33299,
+      120
+    ],
+    "topology_6x20": [
+      33299,
+      6,
+      20
+    ],
+    "topology_gap90_6x97": [
+      33299,
+      6,
+      97
+    ],
+    "targets_tavg_delta_nm": [
+      33299,
+      2
+    ]
+  },
+  "label_and_gene_statistics": {
+    "historical40000_lcmd": {
+      "tavg_nm": {
+        "count": 20000,
+        "mean": 3.1000434534851045,
+        "std": 0.35695973137839543,
+        "min": 1.6448564237514052,
+        "p05": 2.4096678909494074,
+        "median": 3.168937533190542,
+        "p95": 3.578716051523143,
+        "max": 3.9186576845750505
+      },
+      "delta_t_nm": {
+        "count": 20000,
+        "mean": 0.40572210397808145,
+        "std": 0.1924709062119276,
+        "min": 0.010409973379561066,
+        "p05": 0.14685409749534645,
+        "median": 0.37753774518574845,
+        "p95": 0.7575587210147469,
+        "max": 1.8980191519326952
+      },
+      "magnet_cells": {
+        "count": 20000,
+        "mean": 79.5561,
+        "std": 8.926564444958654,
+        "min": 45.0,
+        "p05": 63.0,
+        "median": 81.0,
+        "p95": 92.0,
+        "max": 101.0
+      },
+      "generation_source_counts": {
+        "old_train": 20000
+      },
+      "original_role_counts": {
+        "old_train": 20000
+      }
+    },
+    "prior3299": {
+      "tavg_nm": {
+        "count": 3299,
+        "mean": 2.3487709694834584,
+        "std": 1.0180591387937503,
+        "min": 0.028425540135430926,
+        "p05": 0.7257226960390315,
+        "median": 2.4315390787678304,
+        "p95": 3.8617555994572315,
+        "max": 4.423606910641781
+      },
+      "delta_t_nm": {
+        "count": 3299,
+        "mean": 0.8525084819714739,
+        "std": 0.5448981474279715,
+        "min": 0.0159851338621827,
+        "p05": 0.19938818134635447,
+        "median": 0.7569742064112379,
+        "p95": 1.8750514120772637,
+        "max": 3.8200039004028863
+      },
+      "magnet_cells": {
+        "count": 3299,
+        "mean": 61.538344953016065,
+        "std": 26.393482409874462,
+        "min": 2.0,
+        "p05": 20.0,
+        "median": 63.0,
+        "p95": 101.0,
+        "max": 120.0
+      },
+      "generation_source_counts": {
+        "B": 764,
+        "L": 1075,
+        "P": 396,
+        "U": 1064
+      },
+      "original_role_counts": {
+        "dev": 200,
+        "test": 400,
+        "train": 2699
+      }
+    },
+    "latest10000": {
+      "tavg_nm": {
+        "count": 10000,
+        "mean": 2.4367806194604964,
+        "std": 1.0268635221984346,
+        "min": 0.028211909533072007,
+        "p05": 0.6237475023408069,
+        "median": 2.575087303282346,
+        "p95": 3.9563387281290923,
+        "max": 4.399618348305533
+      },
+      "delta_t_nm": {
+        "count": 10000,
+        "mean": 0.9840307014666793,
+        "std": 0.6365383309230392,
+        "min": 0.01943059760235638,
+        "p05": 0.20840288140862878,
+        "median": 0.8554255869494786,
+        "p95": 2.284150124324866,
+        "max": 3.9890829735779896
+      },
+      "magnet_cells": {
+        "count": 10000,
+        "mean": 64.0922,
+        "std": 26.79816223475035,
+        "min": 2.0,
+        "p05": 17.0,
+        "median": 67.0,
+        "p95": 105.0,
+        "max": 118.0
+      },
+      "generation_source_counts": {
+        "B": 4213,
+        "L": 2430,
+        "P": 1527,
+        "U": 1830
+      },
+      "original_role_counts": {
+        "dev": 1000,
+        "test": 1000,
+        "train": 8000
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "generation": "f1",
+  "architecture": "cnn_zone.src.models_v2.Semantic224VGG16V2",
+  "input": "Polar90 8x224x224",
+  "data_source": "F-S: old train 40000 + train_F 1400",
+  "new_sample_fraction": 0.125,
+  "sp_alpha": 1.0,
+  "sp_beta": 0.0,
+  "step": 4000,
+  "checkpoint": "models/f1_polar90_vgg16_F-S_step4000.pt",
+  "sha256": "9612f9892e76bc354ca6c6e885a57b29f865da8b84d0f3b67b195befc6980346",
+  "acceptance_passed": false,
+  "status": "best_unconstrained candidate; failed original two-target old-MAE <=1.05*f0 rule; frozen feature selection only",
+  "f0_sha256": "34cdee2e373e36ecd40e82197de5ea34941397bafea5f586cb00eb87dbfe58ba",
+  "target_mean": [
+    3.099832773208618,
+    0.4043262302875519
+  ],
+  "target_std": [
+    0.35699909925460815,
+    0.191180020570755
+  ],
+  "source_checkpoint": "experiments/cnn_replay_update_v2/runs/F-S/best_unconstrained.pt",
+  "purpose_in_v3": "frozen 512D F feature extractor for historical LCMD only"
+}

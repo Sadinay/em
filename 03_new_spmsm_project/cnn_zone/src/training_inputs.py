@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import numpy as np
@@ -13,6 +14,32 @@ from torch import nn
 def logical6x20(bits: torch.Tensor) -> torch.Tensor:
     grid = bits.reshape(-1, 20, 6).transpose(1, 2).long()
     return functional.one_hot(grid, num_classes=2).permute(0, 3, 1, 2).float()
+
+
+class TorchGap90Renderer(nn.Module):
+    """Map the same 120 design variables to a fixed `[B,2,6,N]` 90° grid."""
+
+    def __init__(self, mapping_path: str | Path) -> None:
+        super().__init__()
+        geometry = json.loads(Path(mapping_path).read_text(encoding="utf-8"))
+        mapping = np.asarray(geometry["source_to_gap90_columns"], dtype=np.int64)
+        if mapping.shape != (20, 4):
+            raise ValueError(f"Expected a [20,4] gap90 mapping, got {mapping.shape}")
+        if len(np.unique(mapping)) != 80 or mapping.min() < 0:
+            raise ValueError("gap90 mapping must contain 80 unique non-negative columns")
+        self.output_columns = int(geometry["output_shape"][1])
+        if self.output_columns != 97:
+            raise ValueError(f"Expected geometry-derived N=97, got {self.output_columns}")
+        self.register_buffer("mapping", torch.from_numpy(mapping), persistent=False)
+
+    def forward(self, bits: torch.Tensor) -> torch.Tensor:
+        if bits.ndim != 2 or bits.shape[1] != 120:
+            raise ValueError(f"Expected [B,120], got {tuple(bits.shape)}")
+        logical = bits.reshape(-1, 20, 6).transpose(1, 2)
+        output = torch.zeros((len(bits), 6, self.output_columns), dtype=torch.long, device=bits.device)
+        for angular in range(20):
+            output[:, :, self.mapping[angular]] = logical[:, :, angular, None].long()
+        return functional.one_hot(output, num_classes=2).permute(0, 3, 1, 2).float()
 
 
 class TorchSemanticRenderer(nn.Module):

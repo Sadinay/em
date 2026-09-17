@@ -1,0 +1,24 @@
+{
+  "status": "ready",
+  "configurations": [
+    "gene_6x20_smallcnn",
+    "gene_6x20_resnet20",
+    "gene_gap90_6x97_smallcnn",
+    "gene_gap90_6x97_resnet20",
+    "polar90_vgg16",
+    "polar90_resnet18",
+    "polar360_vgg16",
+    "polar360_resnet18"
+  ],
+  "seed": 20260917,
+  "split_counts": {
+    "train": 23309,
+    "test": 4995,
+    "validation": 4995
+  },
+  "checkpoint_selection": "validation standardized MSE only",
+  "test_access": "once after each completed run; never used for checkpoint selection or normalization",
+  "normalization": "target mean/std fitted on the frozen training split only",
+  "execution": "sequential on one GPU",
+  "preflight": "passed_no_training"
+}

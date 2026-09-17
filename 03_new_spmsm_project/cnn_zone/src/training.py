@@ -22,10 +22,11 @@ from .models_v2 import (
     Logical6x20ResNet20V2,
     Logical6x20SmallCNNV2,
     Semantic224MiniInceptionV2,
+    Semantic224ResNet18V2,
     Semantic224VGG16V2,
     parameter_count,
 )
-from .training_inputs import TorchSemanticRenderer, enable_angular_circular_padding, logical6x20
+from .training_inputs import TorchGap90Renderer, TorchSemanticRenderer, enable_angular_circular_padding, logical6x20
 
 
 TARGET_NAMES = ("tavg", "delta_t")
@@ -46,6 +47,7 @@ class TrainingSpec:
     physical_batch_size: int
     effective_batch_size: int = 64
     circular_angular_padding: bool = False
+    gap_mapping: str | None = None
 
 
 class EffectiveBatchSampler(Sampler[list[int]]):
@@ -99,7 +101,7 @@ def atomic_torch_save(path: Path, value) -> None:
 def build_model(spec: TrainingSpec) -> nn.Module:
     if spec.architecture == "small_cnn_v2":
         model = Logical6x20SmallCNNV2()
-    elif spec.architecture == "resnet20_v2" and spec.input_mode == "logical6x20":
+    elif spec.architecture == "resnet20_v2" and spec.input_mode in ("logical6x20", "gap90_6x97"):
         model = Logical6x20ResNet20V2()
     elif spec.architecture == "mini_inception_v2" and spec.input_mode == "logical6x20":
         model = Logical6x20MiniInceptionV2()
@@ -107,6 +109,8 @@ def build_model(spec: TrainingSpec) -> nn.Module:
         model = Semantic224MiniInceptionV2()
     elif spec.architecture == "vgg16_v2":
         model = Semantic224VGG16V2()
+    elif spec.architecture == "resnet18_v2":
+        model = Semantic224ResNet18V2()
     else:
         raise KeyError(f"Unsupported architecture/input combination: {spec}")
     if spec.circular_angular_padding:
@@ -117,6 +121,10 @@ def build_model(spec: TrainingSpec) -> nn.Module:
 def build_renderer(spec: TrainingSpec, root: Path, device: torch.device):
     if spec.input_mode == "logical6x20":
         return None
+    if spec.input_mode == "gap90_6x97":
+        if spec.gap_mapping is None:
+            raise ValueError(f"Missing gap mapping for {spec.experiment_id}")
+        return TorchGap90Renderer(root / spec.gap_mapping).to(device)
     if spec.lookup is None:
         raise ValueError(f"Missing lookup for {spec.experiment_id}")
     return TorchSemanticRenderer(root / spec.lookup).to(device)
@@ -125,6 +133,8 @@ def build_renderer(spec: TrainingSpec, root: Path, device: torch.device):
 def make_inputs(bits: torch.Tensor, spec: TrainingSpec, renderer) -> torch.Tensor:
     if spec.input_mode == "logical6x20":
         return logical6x20(bits)
+    if spec.input_mode == "gap90_6x97":
+        return renderer(bits)
     return renderer(bits).contiguous(memory_format=torch.channels_last)
 
 
@@ -159,7 +169,7 @@ def evaluate(
     model.eval()
     loader = DataLoader(
         IndexedSubset(dataset, indices),
-        batch_size=max(spec.physical_batch_size, 64 if spec.input_mode == "logical6x20" else spec.physical_batch_size),
+        batch_size=max(spec.physical_batch_size, 64 if spec.input_mode in ("logical6x20", "gap90_6x97") else spec.physical_batch_size),
         shuffle=False,
         num_workers=0,
         pin_memory=device.type == "cuda",
@@ -204,7 +214,7 @@ def probe_spec(spec: TrainingSpec, root: Path, device: torch.device) -> dict:
     torch.cuda.reset_peak_memory_stats()
     model = build_model(spec).to(device)
     renderer = build_renderer(spec, root, device)
-    if spec.input_mode != "logical6x20":
+    if spec.input_mode not in ("logical6x20", "gap90_6x97"):
         model = model.to(memory_format=torch.channels_last)
     bits = torch.randint(0, 2, (spec.physical_batch_size, 120), dtype=torch.uint8, device=device)
     targets = torch.zeros((spec.physical_batch_size, 2), device=device)
@@ -249,7 +259,7 @@ def train_one(
     target_std = torch.from_numpy(targets.std(axis=0).clip(min=1e-8))
     model = build_model(spec).to(device)
     renderer = build_renderer(spec, root, device)
-    if spec.input_mode != "logical6x20":
+    if spec.input_mode not in ("logical6x20", "gap90_6x97"):
         model = model.to(memory_format=torch.channels_last)
     optimizer = torch.optim.AdamW(model.parameters(), lr=spec.learning_rate, weight_decay=spec.weight_decay)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.5, patience=spec.scheduler_patience, min_lr=1e-6)

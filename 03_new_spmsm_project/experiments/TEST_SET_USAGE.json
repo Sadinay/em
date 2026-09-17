@@ -22,5 +22,28 @@
   },
   "plan_fixed_before_labels_read": true,
   "test_results_not_used_to_change_selection": true,
-  "note": "New test outcomes now observed; future adaptive model development must acknowledge this exposure. Historical old V3 test reports already existed."
+  "note": "New test outcomes now observed; future adaptive model development must acknowledge this exposure. Historical old V3 test reports already existed.",
+  "subsequent_test_sets": {
+    "input_distribution_expansion_f1_v1": {
+      "count": 1000,
+      "status": "FEMM_labels_completed_then_repurposed_into_cnn_comprehensive_v3_candidate_pool",
+      "membership": "experiments/input_distribution_expansion_f1_v1/test.csv",
+      "membership_sha256": "9f43a9d96a6c3e5838ef3294667b26fd8323ecdd71162b101682fa8060f327db",
+      "identity_sha256": "67cf1def0766849ca4392fb810e2d6f8dfc8fc58b6af4f86acd7ec65993ee63d",
+      "features_extracted": false,
+      "labels_read": true,
+      "predictions_generated": false,
+      "prior_400_test_remains_exposed": true,
+      "storage": "femm_zone/results/FEMM_10000_results_20260917/sealed_test",
+      "repurposing_note": "By explicit user decision, all 10000 latest FEMM genes, including the former 1000 test identities, entered the v3 candidate pool before a new frozen split was created. They are no longer a blind test set."
+    }
+  },
+  "cnn_comprehensive_v3": {
+    "candidate_count": 33299,
+    "split": {"train": 23309, "validation": 4995, "test": 4995},
+    "split_policy": "historical20000 and expanded13299 independently split 70/15/15, stratified by source, then merged",
+    "checkpoint_selection": "validation standardized MSE only",
+    "test_policy": "evaluate once after each completed run; never use for target normalization or checkpoint selection",
+    "training_started": false
+  }
 }

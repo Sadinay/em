@@ -1,0 +1,126 @@
+{
+  "status": "passed_no_training",
+  "device": "cuda:0",
+  "checks": [
+    {
+      "configuration": "gene_6x20_smallcnn",
+      "input_shape": [
+        2,
+        2,
+        6,
+        20
+      ],
+      "output_shape": [
+        2,
+        2
+      ],
+      "parameter_count": 1224450,
+      "status": "forward_backward_passed"
+    },
+    {
+      "configuration": "gene_6x20_resnet20",
+      "input_shape": [
+        2,
+        2,
+        6,
+        20
+      ],
+      "output_shape": [
+        2,
+        2
+      ],
+      "parameter_count": 763714,
+      "status": "forward_backward_passed"
+    },
+    {
+      "configuration": "gene_gap90_6x97_smallcnn",
+      "input_shape": [
+        2,
+        2,
+        6,
+        97
+      ],
+      "output_shape": [
+        2,
+        2
+      ],
+      "parameter_count": 1224450,
+      "status": "forward_backward_passed"
+    },
+    {
+      "configuration": "gene_gap90_6x97_resnet20",
+      "input_shape": [
+        2,
+        2,
+        6,
+        97
+      ],
+      "output_shape": [
+        2,
+        2
+      ],
+      "parameter_count": 763714,
+      "status": "forward_backward_passed"
+    },
+    {
+      "configuration": "polar90_vgg16",
+      "input_shape": [
+        2,
+        8,
+        224,
+        224
+      ],
+      "output_shape": [
+        2,
+        2
+      ],
+      "parameter_count": 18917122,
+      "status": "forward_backward_passed"
+    },
+    {
+      "configuration": "polar90_resnet18",
+      "input_shape": [
+        2,
+        8,
+        224,
+        224
+      ],
+      "output_shape": [
+        2,
+        2
+      ],
+      "parameter_count": 3845570,
+      "status": "forward_backward_passed"
+    },
+    {
+      "configuration": "polar360_vgg16",
+      "input_shape": [
+        2,
+        8,
+        224,
+        224
+      ],
+      "output_shape": [
+        2,
+        2
+      ],
+      "parameter_count": 18917122,
+      "status": "forward_backward_passed"
+    },
+    {
+      "configuration": "polar360_resnet18",
+      "input_shape": [
+        2,
+        8,
+        224,
+        224
+      ],
+      "output_shape": [
+        2,
+        2
+      ],
+      "parameter_count": 3845570,
+      "status": "forward_backward_passed"
+    }
+  ]
+}

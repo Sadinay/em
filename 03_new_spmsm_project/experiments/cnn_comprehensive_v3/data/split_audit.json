@@ -1,0 +1,46 @@
+{
+  "status": "frozen",
+  "seed": 20260917,
+  "method": "split historical20000 and expanded13299 independently; stratify by source batch and U/L/B/P generation source; stable SHA256 ordering; then merge",
+  "requested_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "total_counts": {
+    "train": 23309,
+    "test": 4995,
+    "validation": 4995
+  },
+  "super_pool_counts": {
+    "historical20000": {
+      "train": 14000,
+      "test": 3000,
+      "validation": 3000
+    },
+    "expanded13299": {
+      "train": 9309,
+      "validation": 1995,
+      "test": 1995
+    }
+  },
+  "source_counts": {
+    "historical40000_lcmd": {
+      "train": 14000,
+      "test": 3000,
+      "validation": 3000
+    },
+    "latest10000": {
+      "train": 7000,
+      "test": 1499,
+      "validation": 1501
+    },
+    "prior3299": {
+      "train": 2309,
+      "validation": 494,
+      "test": 496
+    }
+  },
+  "membership_sha256": "4b47f706bb6a49c9373475dee2f70d82e656cff0f2d3f9602c6a53414dc7f1cb",
+  "test_policy": "test identities are frozen; training and model selection must not read test labels"
+}
