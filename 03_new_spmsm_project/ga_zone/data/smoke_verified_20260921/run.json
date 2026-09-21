@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "algorithm": "pymoo NSGA-II 0.6.2",
+  "config": {
+    "population": 8,
+    "generations": 2,
+    "seed": 20260921,
+    "initial_magnet_min": 12,
+    "initial_magnet_max": 108,
+    "search_magnet_min": 12,
+    "search_magnet_max": 108,
+    "crossover_probability": 0.9,
+    "mutation_probability": 0.008333333333333333,
+    "inference_batch_size": 16,
+    "femm_review_fraction": 0.1
+  },
+  "proxy": {
+    "experiment_id": "polar90_resnet18",
+    "checkpoint_sha256": "008a095e5cdce326c2b0f6599b86bd38a3501165b85250f2538e32de52eddac8",
+    "config_sha256": "c9944c8b6895ebb04d1ff3f5d6d3d10b501912b5fd29d15aa4987936bf290d3b",
+    "lookup_sha256": "6f49f46729c2567e3523da71760c54f3f002f18996c988361d2b3f4495dc5c21",
+    "device": "cpu"
+  },
+  "objectives": [
+    "minimize -Tavg (N m)",
+    "minimize DeltaT (N m)"
+  ],
+  "unique_evaluated": 16,
+  "final_population": 8,
+  "femm_queue_count": 2,
+  "femm_results_count": 0,
+  "femm_review_is_a_queue_not_a_completed_simulation": true
+}

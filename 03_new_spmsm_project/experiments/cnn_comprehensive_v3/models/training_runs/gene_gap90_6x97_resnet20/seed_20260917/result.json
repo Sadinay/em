@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "experiment_id": "gene_gap90_6x97_resnet20",
+  "seed": 20260917,
+  "epochs_completed": 71,
+  "best_epoch": 59,
+  "best_validation_standardized_mse": 0.0038055966765777366,
+  "test_standardized_mse": 0.003953634837905208,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.013872160576283932,
+      "rmse": 0.01838824152946472,
+      "r2": 0.9994533658027649,
+      "bias": -0.004020925145596266,
+      "absolute_error_p95": 0.03592286258935928
+    },
+    "delta_t": {
+      "mae": 0.03168166056275368,
+      "rmse": 0.04271271079778671,
+      "r2": 0.992967426776886,
+      "bias": -0.0007334402180276811,
+      "absolute_error_p95": 0.08524829149246216
+    }
+  },
+  "elapsed_seconds": 748.6857968000004,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\experiments\\cnn_comprehensive_v3\\models\\training_runs\\gene_gap90_6x97_resnet20\\seed_20260917\\best_checkpoint.pt"
+}

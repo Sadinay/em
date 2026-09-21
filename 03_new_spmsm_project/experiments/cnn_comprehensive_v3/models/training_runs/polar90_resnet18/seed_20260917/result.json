@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "experiment_id": "polar90_resnet18",
+  "seed": 20260917,
+  "epochs_completed": 40,
+  "best_epoch": 37,
+  "best_validation_standardized_mse": 0.002241101552144036,
+  "test_standardized_mse": 0.0025011348106466734,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.011607769876718521,
+      "rmse": 0.015574423596262932,
+      "r2": 0.9996078610420227,
+      "bias": -0.004093448165804148,
+      "absolute_error_p95": 0.03178492933511734
+    },
+    "delta_t": {
+      "mae": 0.024804648011922836,
+      "rmse": 0.03379928693175316,
+      "r2": 0.9955962896347046,
+      "bias": -0.002314771991223097,
+      "absolute_error_p95": 0.06549239158630371
+    }
+  },
+  "elapsed_seconds": 4839.166142100003,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\experiments\\cnn_comprehensive_v3\\models\\training_runs\\polar90_resnet18\\seed_20260917\\best_checkpoint.pt"
+}

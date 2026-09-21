@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "experiment_id": "gene_6x20_resnet20",
+  "seed": 20260917,
+  "epochs_completed": 77,
+  "best_epoch": 65,
+  "best_validation_standardized_mse": 0.0032681219562239296,
+  "test_standardized_mse": 0.003318140807340632,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.013026881963014603,
+      "rmse": 0.017089538276195526,
+      "r2": 0.9995278716087341,
+      "bias": -0.004070968832820654,
+      "absolute_error_p95": 0.03349146991968155
+    },
+    "delta_t": {
+      "mae": 0.029384901747107506,
+      "rmse": 0.039086341857910156,
+      "r2": 0.9941108822822571,
+      "bias": -0.0008549429476261139,
+      "absolute_error_p95": 0.07689758390188217
+    }
+  },
+  "elapsed_seconds": 505.29169099999854,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\experiments\\cnn_comprehensive_v3\\models\\training_runs\\gene_6x20_resnet20\\seed_20260917\\best_checkpoint.pt"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "experiment_id": "gene_6x20_smallcnn",
+  "seed": 20260917,
+  "epochs_completed": 100,
+  "best_epoch": 89,
+  "best_validation_standardized_mse": 0.00423958198464773,
+  "test_standardized_mse": 0.00427769261362913,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.010995607823133469,
+      "rmse": 0.014852176420390606,
+      "r2": 0.9996433854103088,
+      "bias": -0.00039530053618364036,
+      "absolute_error_p95": 0.02828977070748806
+    },
+    "delta_t": {
+      "mae": 0.033478930592536926,
+      "rmse": 0.04509331285953522,
+      "r2": 0.9921616315841675,
+      "bias": 0.003023930359631777,
+      "absolute_error_p95": 0.08932820707559586
+    }
+  },
+  "elapsed_seconds": 257.6835879999999,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\experiments\\cnn_comprehensive_v3\\models\\training_runs\\gene_6x20_smallcnn\\seed_20260917\\best_checkpoint.pt"
+}

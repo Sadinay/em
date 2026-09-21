@@ -1,0 +1,33 @@
+{
+  "experiment_id": "gene_gap90_6x97_smallcnn",
+  "input_mode": "gap90_6x97",
+  "architecture": "small_cnn_v2",
+  "lookup": null,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "max_epochs": 100,
+  "minimum_epochs": 20,
+  "early_stopping_patience": 12,
+  "scheduler_patience": 3,
+  "physical_batch_size": 64,
+  "effective_batch_size": 64,
+  "circular_angular_padding": false,
+  "gap_mapping": "experiments/cnn_comprehensive_v3/data/gap90/geometry.json",
+  "seed": 20260917,
+  "train_samples": 23309,
+  "validation_samples": 4995,
+  "test_samples": 4995,
+  "target_mean": [
+    2.827207565307617,
+    0.62397301197052
+  ],
+  "target_std": [
+    0.7784843444824219,
+    0.4982335865497589
+  ],
+  "target_scaler_source": "training set only",
+  "parameter_count": 1224450,
+  "optimizer": "AdamW",
+  "loss": "mean MSE over independently standardized Tavg and DeltaT",
+  "best_checkpoint_selection": "validation standardized MSE only"
+}

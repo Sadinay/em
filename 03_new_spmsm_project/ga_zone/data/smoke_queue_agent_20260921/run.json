@@ -1,0 +1,56 @@
+{
+  "status": "complete",
+  "algorithm": "binary NSGA-II with verified-elite reservation",
+  "config": {
+    "population": 4,
+    "generations": 1,
+    "seed": 20260921,
+    "initial_magnet_min": 12,
+    "initial_magnet_max": 108,
+    "search_magnet_min": 12,
+    "search_magnet_max": 108,
+    "crossover_probability": 0.9,
+    "mutation_probability": 0.008333333333333333,
+    "inference_batch_size": 16,
+    "femm_fraction": 0.1,
+    "femm_max_per_generation": 10,
+    "verified_elite_fraction": 0.1,
+    "cnn_update_interval": 100
+  },
+  "committee": [
+    {
+      "experiment_id": "polar90_resnet18",
+      "checkpoint_sha256": "008a095e5cdce326c2b0f6599b86bd38a3501165b85250f2538e32de52eddac8",
+      "config_sha256": "c9944c8b6895ebb04d1ff3f5d6d3d10b501912b5fd29d15aa4987936bf290d3b",
+      "device": "cpu",
+      "lookup_sha256": "6f49f46729c2567e3523da71760c54f3f002f18996c988361d2b3f4495dc5c21"
+    },
+    {
+      "experiment_id": "polar90_vgg16",
+      "checkpoint_sha256": "dee83f5b05f0b266e06c1dd856c0af2871c20533e583a6c861f9ad9040e6b045",
+      "config_sha256": "b59d0083714dd9d9a7a82deead7116250c3ebf51bd0733597c70d5f13d8f8eae",
+      "device": "cpu",
+      "lookup_sha256": "6f49f46729c2567e3523da71760c54f3f002f18996c988361d2b3f4495dc5c21"
+    },
+    {
+      "experiment_id": "gene_6x20_resnet20",
+      "checkpoint_sha256": "2a0483f54d1a89c6c24fe61d75c748642df869340e1fa96de8a577d4b1111e43",
+      "config_sha256": "01a3d2833268fdcb8eb1747906ab47cd99c198dfb1c661a5606c40c8b272e756",
+      "device": "cpu"
+    },
+    {
+      "experiment_id": "gene_gap90_6x97_resnet20",
+      "checkpoint_sha256": "ce32da886805e3d8395e81561368b5be1d6e647086930f95b93a466826eed3ff",
+      "config_sha256": "0e945c1ca18b52a7f7b805444c729dba45d29b60a32c698e54930e990527bee7",
+      "device": "cpu",
+      "gap_mapping_sha256": "a48945c0b768798a939aaeeeb5420945388f6726c0875226df842e087dd3a47f"
+    }
+  ],
+  "primary_performance_model": "polar90_resnet18",
+  "four_model_disagreement_ddof": 0,
+  "disagreement_is_calibrated_confidence_bound": false,
+  "femm_physics_fingerprint": "ce59c1571c0259d5c07029b56d5ed9042dd6014ef7598a9da40eb7043a4e708e",
+  "generation_completed": 1,
+  "pending_generation": null,
+  "cnn_weights_updated": false
+}

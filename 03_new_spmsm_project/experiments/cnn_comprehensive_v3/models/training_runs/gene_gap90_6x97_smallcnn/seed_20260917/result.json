@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "experiment_id": "gene_gap90_6x97_smallcnn",
+  "seed": 20260917,
+  "epochs_completed": 87,
+  "best_epoch": 75,
+  "best_validation_standardized_mse": 0.006490050837979302,
+  "test_standardized_mse": 0.006494147920453394,
+  "test_metrics": {
+    "tavg": {
+      "mae": 0.010305557399988174,
+      "rmse": 0.014030140824615955,
+      "r2": 0.9996817708015442,
+      "bias": 0.0019917108584195375,
+      "absolute_error_p95": 0.026572739705443382
+    },
+    "delta_t": {
+      "mae": 0.04183872416615486,
+      "rmse": 0.05606731027364731,
+      "r2": 0.9878823161125183,
+      "bias": 0.0008351924479939044,
+      "absolute_error_p95": 0.11103314906358719
+    }
+  },
+  "elapsed_seconds": 385.35495589999846,
+  "checkpoint": "C:\\Users\\26096\\Desktop\\em\\03_new_spmsm_project\\experiments\\cnn_comprehensive_v3\\models\\training_runs\\gene_gap90_6x97_smallcnn\\seed_20260917\\best_checkpoint.pt"
+}
