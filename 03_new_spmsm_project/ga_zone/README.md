@@ -14,13 +14,21 @@ python ga_zone/run_nsga2.py --name first_search
 默认只生成第一代 FEMM 清单并**暂停**，不会启动 FEMM。要逐代执行真实 FEMM，可以对暂停的运行依次调用：
 
 ```powershell
-python ga_zone/run_nsga2.py --name first_search --solve-pending
+python ga_zone/run_nsga2.py --name first_search --solve-pending --workers 5
 python ga_zone/run_nsga2.py --name first_search --resume
 ```
 
 第二条命令只求解当前清单中的基因，每个基因必须完成同一工况下六个机械角度，才能产生平均转矩和峰峰转矩波动真值。第三条命令核验六个角度的原始结果、模型文件哈希、基因和工况，然后将真值纳入本代的父代加子代选择，并生成下一代清单后再次暂停。中断的 FEMM 求解保留已有角度结果，可再次执行 `--solve-pending`。另一种明确授权的方式是 `--femm-mode live`，它会连续执行所有代的真实 FEMM，成本很高；**不要把它用于试运行**。
 
-续跑会自动沿用原运行的种群、代数、随机种子、FEMM 比例和计算设备；若显式传入与原记录冲突的参数，程序会拒绝继续。
+`--workers 5` 表示最多同时运行五个完整基因。每个 worker 独占一个基因并在内部依次完成六个角度，同一基因的角度不会拆给不同进程。未指定时默认为单 worker。正式连续运行可用：
+
+```powershell
+python ga_zone/run_nsga2.py --name first_search --resume --femm-mode live --workers 5
+```
+
+同材料内部边界安全删除实现已经完成，但正式 FEMM 适配器目前保持关闭。三类代表性基因的删前/删后六角度对照显示总体求解时间缩短 30.6%，同时因网格改变出现最高 0.0080 N·m 的逐角度差异；细网格控制实验又在网格生成阶段失败，尚不能证明该差异已经收敛。因此 100 代正式搜索仍沿用未删线模型。验证证据与启用条件见 `femm_zone/workspaces/safe_boundary_merge_validation_20260922/README.md`。
+
+续跑会自动沿用原运行的种群、代数、随机种子、FEMM 比例和计算设备；除允许提高累计总代数外，若显式传入与原记录冲突的参数，程序会拒绝继续。
 
 先做很小的真实闭环试验可用：
 
@@ -40,8 +48,20 @@ python ga_zone/run_nsga2.py --name tiny_check --resume --population 4 --generati
 
 每次运行的数据集中存放在 `ga_zone/data/<运行名>/`：`run.json` 是配置和模型/物理来源，`state.json` 是可续跑检查点和已验证 Pareto 档案，`seeds.csv` 是初始种子，`candidates.csv` 是所有唯一基因的预测、分歧与真值，`femm_queue.csv` 是逐代 FEMM 选择原因与状态，`femm_labels.csv` 是完整验证的指标，`femm_results/` 存放每个基因的六角度原始 FEMM 文件。所有表由一致的基因哈希和 120 位串关联。选点比例、交叉、位翻转与种群规模都在主程序的 `SearchConfig` 中。
 
-`plots/` 只在第 1、20、40、60、80 代及实际最终代保存快照；若总代数不足，就只保留已达到的节点。横轴是平均转矩、纵轴是绝对转矩波动。灰点是所有代理预测，红点是**尚未做 FEMM 的预测非支配候选**，蓝色空心点是**已完成 FEMM 的真值非支配候选**。图只显示离散样本，不画或暗示连续、已验证的前沿。
+`plots/` 在第1代、每20代及实际最终代保存快照；若总代数不足，就只保留已达到的节点。横轴是平均转矩、纵轴是绝对转矩波动。灰点是所有代理预测，红点是**尚未做 FEMM 的预测非支配候选**，蓝色空心点是**已完成 FEMM 的真值非支配候选**。图只显示离散样本，不画或暗示连续、已验证的前沿。
 
 CNN 权重在此版保持冻结。配置中预留每 100 代检查一次更新的接口，但**目前不会重训或更换模型**；默认 80 代也不会到达该检查点。磁体格数 12–108 和孤立单格修复是目前搜索约束，不代表机械制造可行性已经验证。
 
 依据：[Deb 等人的 NSGA-II 原论文](https://doi.org/10.1109/4235.996017)；FEMM 工况、六角度转矩定义沿用项目现有求解配置。
+
+## 延长已完成的百代任务
+
+`--generations` 表示累计总代数，不是追加代数。续跑时允许只提高此上限；种群、随机种子、FEMM比例、模型及物理配置仍须与原任务一致。提高上限时保留旧运行配置，继续使用断点中的种群和随机状态，以及全部已完成真值。
+
+从100代再跑200代，累计到300代：
+
+```powershell
+python ga_zone/run_nsga2.py --name nsga2_100gen_manual_20260922 --resume --generations 300 --femm-mode live --workers 5
+```
+
+每20代保存一次前沿图，包括120、140直到300代。CNN更新接口仍不执行训练。此命令不会自动按前沿停滞提前停止；如需提前停止，请在观察结果后手动中断并保留断点。

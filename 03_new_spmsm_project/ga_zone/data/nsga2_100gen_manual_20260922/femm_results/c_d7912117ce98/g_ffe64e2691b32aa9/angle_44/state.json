@@ -1,0 +1,24 @@
+{
+  "gene_id": "ffe64e2691b32aa9a4d165730b864f8727b84692ff2e7bd4b2217ee64d141466",
+  "bits": "001110011001111100111111001001111101111011111111111111111111111111111111111111111111111111111111111111101111101111011111",
+  "inner_angle_deg": 44.0,
+  "rotor_travel_deg": 15.0,
+  "currents_a": {
+    "A": 1.7500000000000004,
+    "B": 1.7500000000000004,
+    "C": -3.5
+  },
+  "condition_fingerprint": "d7912117ce983d1b11a550cb7eeb0c22ef24c3e00c0790e3ff3daafbb8fd0c68",
+  "prepared_sha256": "429259baea8a54ff9bb8c9d5e612be80d6f25351d1261b271e65641f8eb4e890",
+  "status": "succeeded",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "succeeded",
+      "worker_pid": 10576,
+      "started_utc": "2026-09-22T17:31:38Z",
+      "elapsed_seconds": 5.575854500002606
+    }
+  ],
+  "result_sha256": "a7c17660ee3f8e26c48b3d2edf9d6c0260f3cb816f171a2ea2dab3137dd70cf1"
+}

@@ -1,0 +1,224 @@
+{
+  "status": "failed_strict_equivalence",
+  "production_default_enabled": false,
+  "tolerances": {
+    "angle_abs_nm": 0.0005,
+    "metric_abs_nm": 0.0005,
+    "relative": 0.0002
+  },
+  "cases": [
+    {
+      "name": "low_pm12_connected",
+      "gene_id": "51437145db61bfa718a59ff2be65d4d4497a5976d2dccd5c70a5bb70719461a8",
+      "magnet_cells": 12,
+      "bits": "111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "merge_audit": {
+        "removed_segments": 408,
+        "removed_arc_segments": 400,
+        "removed_block_labels": 468,
+        "removed_orphan_nodes": 340,
+        "remaining_nodes": 299,
+        "remaining_segments": 146,
+        "remaining_arc_segments": 171,
+        "remaining_block_labels": 24,
+        "skipped_pm_boundaries_with_different_direction": 24
+      },
+      "baseline": {
+        "raw_torques_nm": [
+          0.009572078029674367,
+          0.02476592338821439,
+          0.4370451322118624,
+          0.3140025093206973,
+          0.2909495115667988,
+          0.007159354822062844
+        ],
+        "comparison_torques_nm": [
+          0.009572078029674367,
+          0.02476592338821439,
+          0.4370451322118624,
+          0.3140025093206973,
+          0.2909495115667988,
+          0.007159354822062844
+        ],
+        "tavg_nm": 0.18058241822321838,
+        "peak_to_peak_nm": 0.42988577738979955,
+        "ripple_relative": 2.380551670641694,
+        "elapsed_seconds": 26.620223199995962,
+        "mean_solution_nodes": 23831.0
+      },
+      "merged": {
+        "raw_torques_nm": [
+          0.01005970331884867,
+          0.02571019867569606,
+          0.4390709438525021,
+          0.3080747959380171,
+          0.287991864040621,
+          0.007157906827284012
+        ],
+        "comparison_torques_nm": [
+          0.01005970331884867,
+          0.02571019867569606,
+          0.4390709438525021,
+          0.3080747959380171,
+          0.287991864040621,
+          0.007157906827284012
+        ],
+        "tavg_nm": 0.17967756877549482,
+        "peak_to_peak_nm": 0.4319130370252181,
+        "ripple_relative": 2.403822803083944,
+        "elapsed_seconds": 7.062467199997627,
+        "mean_solution_nodes": 7805.0
+      },
+      "comparison": {
+        "max_angle_abs_error_nm": 0.0059277133826801665,
+        "tavg_abs_error_nm": 0.0009048494477235658,
+        "peak_to_peak_abs_error_nm": 0.0020272596354185546,
+        "angle_pass": false,
+        "metric_pass": false,
+        "passed": false
+      }
+    },
+    {
+      "name": "medium_pm60_connected",
+      "gene_id": "de46250902e1f4af6178865e5df261f34e8abcef79508e65dd1cdf3ca3d73ec5",
+      "magnet_cells": 60,
+      "bits": "111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000",
+      "merge_audit": {
+        "removed_segments": 216,
+        "removed_arc_segments": 400,
+        "removed_block_labels": 436,
+        "removed_orphan_nodes": 180,
+        "remaining_nodes": 459,
+        "remaining_segments": 338,
+        "remaining_arc_segments": 171,
+        "remaining_block_labels": 56,
+        "skipped_pm_boundaries_with_different_direction": 216
+      },
+      "baseline": {
+        "raw_torques_nm": [
+          1.339730261922797,
+          0.8676538083776633,
+          1.624201902041527,
+          2.413556836581429,
+          2.411281022340552,
+          1.335266799070578
+        ],
+        "comparison_torques_nm": [
+          1.339730261922797,
+          0.8676538083776633,
+          1.624201902041527,
+          2.413556836581429,
+          2.411281022340552,
+          1.335266799070578
+        ],
+        "tavg_nm": 1.6652817717224242,
+        "peak_to_peak_nm": 1.5459030282037656,
+        "ripple_relative": 0.9283131866655914,
+        "elapsed_seconds": 27.13794500000222,
+        "mean_solution_nodes": 23831.0
+      },
+      "merged": {
+        "raw_torques_nm": [
+          1.342075119429421,
+          0.8622698637268604,
+          1.632224969964732,
+          2.415533601510514,
+          2.413195637039455,
+          1.32821273241898
+        ],
+        "comparison_torques_nm": [
+          1.342075119429421,
+          0.8622698637268604,
+          1.632224969964732,
+          2.415533601510514,
+          2.413195637039455,
+          1.32821273241898
+        ],
+        "tavg_nm": 1.6655853206816602,
+        "peak_to_peak_nm": 1.5532637377836538,
+        "ripple_relative": 0.9325632968162583,
+        "elapsed_seconds": 19.02101489999768,
+        "mean_solution_nodes": 14346.0
+      },
+      "comparison": {
+        "max_angle_abs_error_nm": 0.008023067923204952,
+        "tavg_abs_error_nm": 0.0003035489592360108,
+        "peak_to_peak_abs_error_nm": 0.007360709579888214,
+        "angle_pass": false,
+        "metric_pass": false,
+        "passed": false
+      }
+    },
+    {
+      "name": "high_pm108_connected",
+      "gene_id": "466bf6b63b0b65c5935df58972651f9371128facb62d14c5d972bb1524029e03",
+      "magnet_cells": 108,
+      "bits": "000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+      "merge_audit": {
+        "removed_segments": 24,
+        "removed_arc_segments": 400,
+        "removed_block_labels": 404,
+        "removed_orphan_nodes": 20,
+        "remaining_nodes": 619,
+        "remaining_segments": 530,
+        "remaining_arc_segments": 171,
+        "remaining_block_labels": 88,
+        "skipped_pm_boundaries_with_different_direction": 408
+      },
+      "baseline": {
+        "raw_torques_nm": [
+          4.171152068649176,
+          4.165255709224686,
+          4.048324629816562,
+          4.736473245689082,
+          4.355052969685832,
+          4.172775354026246
+        ],
+        "comparison_torques_nm": [
+          4.171152068649176,
+          4.165255709224686,
+          4.048324629816562,
+          4.736473245689082,
+          4.355052969685832,
+          4.172775354026246
+        ],
+        "tavg_nm": 4.274838996181931,
+        "peak_to_peak_nm": 0.6881486158725201,
+        "ripple_relative": 0.16097649911192902,
+        "elapsed_seconds": 30.75980709999567,
+        "mean_solution_nodes": 23831.0
+      },
+      "merged": {
+        "raw_torques_nm": [
+          4.174446950670256,
+          4.166747927758231,
+          4.047335277245678,
+          4.739861920094417,
+          4.353257732052234,
+          4.16628271856607
+        ],
+        "comparison_torques_nm": [
+          4.174446950670256,
+          4.166747927758231,
+          4.047335277245678,
+          4.739861920094417,
+          4.353257732052234,
+          4.16628271856607
+        ],
+        "tavg_nm": 4.274655421064481,
+        "peak_to_peak_nm": 0.6925266428487387,
+        "ripple_relative": 0.16200759467912496,
+        "elapsed_seconds": 32.605111200002284,
+        "mean_solution_nodes": 21889.0
+      },
+      "comparison": {
+        "max_angle_abs_error_nm": 0.006492635460176643,
+        "tavg_abs_error_nm": 0.00018357511744948596,
+        "peak_to_peak_abs_error_nm": 0.004378026976218585,
+        "angle_pass": false,
+        "metric_pass": false,
+        "passed": false
+      }
+    }
+  ]
+}

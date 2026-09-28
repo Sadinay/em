@@ -9,12 +9,14 @@ No CNN weights are changed by this program.
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ProcessPoolExecutor, as_completed
 import csv
-from dataclasses import asdict, dataclass, fields
+from dataclasses import asdict, dataclass, fields, replace
 from datetime import datetime
 import hashlib
 import json
 import math
+import multiprocessing
 from pathlib import Path
 import re
 import sys
@@ -257,7 +259,7 @@ def snapshot_generations(total: int) -> tuple[int, ...]:
     """Sparse progress figures: requested milestones plus the actual final generation."""
     if total < 1:
         raise ValueError("generation count must be positive")
-    return tuple(sorted({generation for generation in (1, 20, 40, 60, 80, total) if generation <= total}))
+    return tuple(sorted({1, total, *range(20, total + 1, 20)}))
 
 
 def save_pareto_snapshot(run_dir: Path, generation: int, records: dict[str, dict]) -> Path:
@@ -462,24 +464,43 @@ class FemmAdapter:
         if str(PROJECT) not in sys.path:
             sys.path.insert(0, str(PROJECT))
         from experiments.input_distribution_pilot_v1 import pilot as core
+        from femm_zone.scripts import safe_boundary_merge
         self.core = core
+        self.safe_boundary_merge = safe_boundary_merge
         self.run_dir = run_dir
         self.physical = core.physical_config()
         self.physics_identity = {"physical": self.physical,
                                  "template_sha256": core.sha(core.physical.TEMPLATE_FILE),
                                  "mat_sha256": core.sha(core.physical.MAT_FILE),
                                  "mapping_sha256": core.sha(core.mapping.__file__),
+                                 "safe_boundary_merge_sha256": core.sha(safe_boundary_merge.__file__),
+                                 "design_boundary_policy": "disabled_pending_mesh_convergence_validation",
                                  "physical_source_sha256": core.sha(core.physical.__file__)}
         self.physics_fingerprint = core.digest(self.physics_identity)
-        (run_dir / "femm_results").mkdir(exist_ok=True)
+        (run_dir / "femm_results").mkdir(parents=True, exist_ok=True)
 
     source = "six_angle_femm_verified"
+    safe_boundary_merge_enabled = False  # Enable only after mesh-convergence validation passes.
 
     def _contract(self) -> dict:
         # Capturing the solver binary identity is deliberately deferred until
         # an explicit live FEMM request; a paused search needs no COM process.
         return {**self.physics_identity, "solver": self.core.solver_identity(),
                 "ga_adapter_sha256": file_hash(Path(__file__))}
+
+    def ensure_contract(self) -> tuple[dict, str, Path]:
+        """Create the shared read-only solver contract before workers start."""
+        contract = self._contract()
+        fingerprint = self.core.digest(contract)
+        root = self.run_dir / "femm_results" / ("c_" + fingerprint[:12])
+        root.mkdir(parents=True, exist_ok=True)
+        contract_path = root / "contract.json"
+        if contract_path.exists():
+            if read_json(contract_path) != contract:
+                raise ValueError("FEMM contract changed within result directory")
+        else:
+            write_json(contract_path, contract)
+        return contract, fingerprint, root
 
     def solve(self, row: dict) -> tuple[float, float, str]:
         import scipy.io
@@ -488,23 +509,17 @@ class FemmAdapter:
         bits = parse_bits(row["bits"])
         if gene_id(bits) != row["gene_id"]:
             raise ValueError("FEMM queue gene hash mismatch")
-        contract = self._contract()
-        fingerprint = core.digest(contract)
-        root = self.run_dir / "femm_results" / ("c_" + fingerprint[:12])
+        contract, fingerprint, root = self.ensure_contract()
         gene_folder = root / ("g_" + row["gene_id"][:16])
-        root.mkdir(parents=True, exist_ok=True)
-        contract_path = root / "contract.json"
-        if contract_path.exists():
-            if read_json(contract_path) != contract:
-                raise ValueError("FEMM contract changed within result directory")
-        else:
-            write_json(contract_path, contract)
         template = core.physical.TEMPLATE_FILE.read_text(encoding="utf-8")
         positions = scipy.io.loadmat(core.physical.MAT_FILE, variable_names=["MaterialPosition"],
                                      squeeze_me=True)["MaterialPosition"]
         mapped = core.mapping.match_material_positions(template, positions)
         base = core.mapping.replace_cell_materials(template, bits)
         core.mapping.validate_generated_model(base, mapped, bits)
+        merge_audit = None
+        if self.safe_boundary_merge_enabled:
+            base, merge_audit = self.safe_boundary_merge.merge_equivalent_design_cells(base, bits, mapped)
         raw: list[float] = []
         for angle in self.physical["inner_angles_deg"]:
             folder = gene_folder / f"angle_{angle:g}"
@@ -525,14 +540,14 @@ class FemmAdapter:
                     if not model.exists() or file_hash(model) not in (identity["prepared_sha256"],
                                                                        state.get("last_fem_sha256")):
                         raise ValueError("pending FEMM model was changed")
-                    result = core.solve_angle(folder, contract)
+                    result = self._solve_prepared_angle(folder, contract, identity, content)
             else:
                 if model.exists():
                     raise ValueError("unregistered FEMM model already exists")
                 folder.mkdir(parents=True, exist_ok=True)
                 model.write_bytes(content)
                 write_json(state_path, {**identity, "status": "pending", "attempts": []})
-                result = core.solve_angle(folder, contract)
+                result = self._solve_prepared_angle(folder, contract, identity, content)
             if result is None:
                 raise RuntimeError("FEMM angle failed twice; search remains paused")
             raw.append(float(core.validate_success(folder, identity)["raw_torque_nm"]))
@@ -542,10 +557,76 @@ class FemmAdapter:
         label = {"gene_id": row["gene_id"], "bits": row["bits"],
                  "inner_angles_deg": self.physical["inner_angles_deg"], "raw_torques_nm": raw,
                  "tavg_nm": metric["tavg_nm"], "delta_t_nm": metric["peak_to_peak_nm"],
+                 "safe_boundary_merge": merge_audit,
                  "physics_fingerprint": self.physics_fingerprint, "contract_fingerprint": fingerprint,
                  "source": "six_angle_femm_verified"}
         write_json(gene_folder / "label.json", label)
         return float(metric["tavg_nm"]), float(metric["peak_to_peak_nm"]), str(gene_folder / "label.json")
+
+    def _solve_prepared_angle(self, folder: Path, contract: dict, identity: dict,
+                              content: bytes) -> dict | None:
+        """Solve/retry the exact registered merged input, never rebuild a baseline model."""
+        import os
+        import shutil
+        import time
+        import femm
+        import win32com.client
+
+        core = self.core
+        state_path, model = folder / "state.json", folder / "model.fem"
+        state = read_json(state_path)
+        if state["status"] == "succeeded":
+            return core.validate_success(folder, identity)
+        while len(state["attempts"]) < 2:
+            if shutil.disk_usage(folder).free <= 512 * 1024**2:
+                raise RuntimeError("disk space below 512 MiB; search remains paused")
+            if file_hash(model) not in (identity["prepared_sha256"], state.get("last_fem_sha256")):
+                raise ValueError("FEM input changed before retry")
+            if state["attempts"]:
+                prior = folder / f"attempt_{len(state['attempts'])}"
+                prior.mkdir(exist_ok=True)
+                for ext in ("fem", "ans"):
+                    old = folder / f"model.{ext}"
+                    if old.exists():
+                        shutil.copy2(old, prior / old.name)
+            model.write_bytes(content)
+            started = time.perf_counter()
+            attempt = {"number": len(state["attempts"]) + 1, "status": "running",
+                       "worker_pid": os.getpid(),
+                       "started_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+            state["attempts"].append(attempt); state["status"] = "running"
+            write_json(state_path, state)
+            connected = False
+            try:
+                femm.HandleToFEMM = win32com.client.DispatchEx("femm.ActiveFEMM"); connected = True
+                femm.main_minimize(); femm.opendocument(str(model)); femm.mi_analyze(1); femm.mi_loadsolution()
+                raw = complex(femm.mo_gapintegral("sliding_airgap", 0))
+                if abs(raw.imag) > 1e-10 or not math.isfinite(raw.real):
+                    raise ValueError(f"invalid FEMM torque: {raw}")
+                core.validate_model_settings(model, contract["physical"], identity["inner_angle_deg"])
+                result = {**identity, "raw_torque_nm": raw.real, "fem_sha256": file_hash(model),
+                          "ans_sha256": file_hash(model.with_suffix(".ans")),
+                          "elapsed_seconds": time.perf_counter() - started,
+                          "attempt_number": attempt["number"], "worker_pid": os.getpid()}
+                write_json(folder / "result.json", result)
+                attempt.update(status="succeeded", elapsed_seconds=result["elapsed_seconds"])
+                state.update(status="succeeded", result_sha256=file_hash(folder / "result.json"))
+                write_json(state_path, state)
+                return result
+            except BaseException as exc:
+                attempt.update(status="interrupted" if isinstance(exc, KeyboardInterrupt) else "failed",
+                               error=repr(exc), elapsed_seconds=time.perf_counter() - started)
+                state.update(status=attempt["status"], last_fem_sha256=file_hash(model))
+                write_json(state_path, state)
+                if isinstance(exc, (KeyboardInterrupt, SystemExit)):
+                    raise
+            finally:
+                if connected:
+                    try:
+                        femm.closefemm()
+                    except Exception:
+                        pass
+        return None
 
     def load_label(self, row: dict) -> tuple[float, float]:
         """Accept a paused query only after all six cached angle files validate."""
@@ -584,6 +665,33 @@ class FemmAdapter:
         return float(metrics["tavg_nm"]), float(metrics["peak_to_peak_nm"])
 
 
+def _solve_femm_gene_worker(run_dir: str, row: dict) -> tuple[str, float, float, str]:
+    """Windows spawn-process entry point: one worker owns one complete six-angle gene."""
+    adapter = FemmAdapter(Path(run_dir))
+    tavg, delta, label_path = adapter.solve(row)
+    return row["gene_id"], tavg, delta, label_path
+
+
+def solve_femm_rows(adapter, rows: list[dict], workers: int):
+    """Yield completed whole-gene labels; only the parent updates GA tables/state."""
+    if workers < 1:
+        raise ValueError("FEMM workers must be at least one")
+    if workers == 1 or len(rows) <= 1:
+        for row in rows:
+            tavg, delta, label_path = adapter.solve(row)
+            yield row["gene_id"], tavg, delta, label_path
+        return
+    if not isinstance(adapter, FemmAdapter):
+        raise TypeError("parallel FEMM requires the real FemmAdapter")
+    adapter.ensure_contract()
+    context = multiprocessing.get_context("spawn")
+    with ProcessPoolExecutor(max_workers=min(workers, len(rows)), mp_context=context) as pool:
+        futures = {pool.submit(_solve_femm_gene_worker, str(adapter.run_dir), row): row["gene_id"]
+                   for row in rows}
+        for future in as_completed(futures):
+            yield future.result()
+
+
 def reserved_cnn_update_hook(generation: int, config: SearchConfig) -> bool:
     """Reserved checkpoint only: returning False prevents unapproved retraining."""
     return False  # future: generation % config.cnn_update_interval == 0 after dataset/retrain validation
@@ -619,20 +727,23 @@ def _persist(run_dir: Path, state: dict, records: dict[str, dict], queue: list[d
 
 
 def run_search(config: SearchConfig, name: str, device_name: str = "auto", *, resume: bool = False,
-               femm_mode: str = "pause", committee_override=None, femm_override=None) -> Path:
+               femm_mode: str = "pause", femm_workers: int = 1,
+               committee_override=None, femm_override=None) -> Path:
     config.check()
     if not re.fullmatch(r"[a-zA-Z0-9_-]{1,40}", name):
         raise ValueError("run name must contain only letters, digits, dash or underscore")
     if femm_mode not in ("pause", "live"):
         raise ValueError("FEMM mode must be pause or live")
+    if femm_workers < 1:
+        raise ValueError("FEMM workers must be at least one")
     run_dir = GA_DATA / name
     if resume:
         if not _state_path(run_dir).exists():
             raise FileNotFoundError("no checkpoint to resume")
         state = read_json(_state_path(run_dir))
         original = SearchConfig(**read_json(run_dir / "run.json")["config"])
-        if original != config:
-            raise ValueError("resume configuration differs from saved run")
+        if config.generations < original.generations or replace(config, generations=original.generations) != original:
+            raise ValueError("resume only permits increasing the generation limit")
         records = {row["gene_id"]: row for row in read_csv(run_dir / "candidates.csv")}
         queue = read_csv(run_dir / "femm_queue.csv")
         rng = np.random.default_rng()
@@ -649,6 +760,14 @@ def run_search(config: SearchConfig, name: str, device_name: str = "auto", *, re
         previous = read_json(run_dir / "run.json")
         if previous["committee"] != committee.identity or previous["femm_physics_fingerprint"] != adapter.physics_fingerprint:
             raise ValueError("CNN checkpoint or FEMM physics differs from saved run")
+        if config.generations > original.generations:
+            # Preserve the pre-extension settings; population and RNG remain untouched.
+            archive = run_dir / f"run_before_extension_{original.generations}.json"
+            if not archive.exists():
+                write_json(archive, previous)
+            if state["stage"] == "complete":
+                state["stage"] = "ready"
+            _persist(run_dir, state, records, queue, config, committee, adapter)
     else:
         state["rng_state"] = rng.bit_generator.state
         _persist(run_dir, state, records, queue, config, committee, adapter)
@@ -710,9 +829,29 @@ def run_search(config: SearchConfig, name: str, device_name: str = "auto", *, re
                     if q["gene_id"] == key:
                         q["status"] = "succeeded"
         elif state["pending_queries"]:
+            # A prior --solve-pending run may already have produced complete labels.
+            # Reuse them before dispatching any remaining genes to live workers.
+            cached_labels = {row["gene_id"]: row for row in read_csv(run_dir / "femm_labels.csv")}
             for key in state["pending_queries"]:
+                if records[key]["femm_tavg_nm"] != "" or key not in cached_labels:
+                    continue
+                label = cached_labels[key]
+                if (label["bits"] != records[key]["bits"] or
+                        label["physics_fingerprint"] != adapter.physics_fingerprint or
+                        label["source"] != adapter.source):
+                    raise ValueError("cached live FEMM label gene or physics mismatch")
+                tavg, delta = adapter.load_label(records[key])
+                records[key].update(femm_tavg_nm=tavg, femm_delta_t_nm=delta,
+                                    truth_source=label["source"],
+                                    femm_generation=state["pending_generation"])
+                for q in queue:
+                    if q["gene_id"] == key:
+                        q["status"] = "succeeded"
+            _persist(run_dir, state, records, queue, config, committee, adapter)
+            pending_rows = [records[key] for key in state["pending_queries"]
+                            if records[key]["femm_tavg_nm"] == ""]
+            for key, tavg, delta, label_path in solve_femm_rows(adapter, pending_rows, femm_workers):
                 row = records[key]
-                tavg, delta, label_path = adapter.solve(row)
                 if not (math.isfinite(tavg) and math.isfinite(delta) and delta >= 0):
                     raise ValueError("FEMM returned invalid complete-gene metrics")
                 row.update(femm_tavg_nm=tavg, femm_delta_t_nm=delta,
@@ -754,7 +893,7 @@ def _save_labels(run_dir: Path, records: dict[str, dict], adapter: FemmAdapter) 
     write_csv(run_dir / "femm_labels.csv", ["gene_id", "bits", "tavg_nm", "delta_t_nm", "source", "physics_fingerprint"], rows)
 
 
-def solve_pending(name: str) -> Path:
+def solve_pending(name: str, workers: int = 1) -> Path:
     """Explicit expensive operation, separate from paused GA search."""
     run_dir = GA_DATA / name
     state = read_json(_state_path(run_dir))
@@ -766,14 +905,16 @@ def solve_pending(name: str) -> Path:
         raise ValueError("FEMM physics changed since queue creation")
     records = {row["gene_id"]: row for row in read_csv(run_dir / "candidates.csv")}
     labels = {row["gene_id"]: row for row in read_csv(run_dir / "femm_labels.csv")}
+    unsolved = []
     for key in state["pending_queries"]:
         if key in labels:
             if labels[key]["bits"] != records[key]["bits"] or labels[key]["physics_fingerprint"] != adapter.physics_fingerprint:
                 raise ValueError("cached FEMM label identity mismatch")
             adapter.load_label(records[key])
             continue
+        unsolved.append(records[key])
+    for key, tavg, delta, _ in solve_femm_rows(adapter, unsolved, workers):
         row = records[key]
-        tavg, delta, _ = adapter.solve(row)
         if not (math.isfinite(tavg) and math.isfinite(delta) and delta >= 0):
             raise ValueError("FEMM returned invalid metrics")
         labels[key] = {"gene_id": key, "bits": row["bits"], "tavg_nm": tavg, "delta_t_nm": delta,
@@ -878,6 +1019,21 @@ def self_test() -> None:
             assert read_json(completed / "state.json")["stage"] == "complete"
             saved_cfg, saved_device = resolve_resume_options(read_json(completed / "run.json"))
             assert saved_cfg == cfg and saved_device == "cpu"
+            extended, _ = resolve_resume_options(read_json(completed / "run.json"), generations=3)
+            old_records = read_csv(completed / "candidates.csv")
+            run_search(extended, "paused", "cpu", resume=True, femm_mode="live",
+                       committee_override=proxy, femm_override=paused_adapter)
+            assert read_json(completed / "state.json")["generation_completed"] == 3
+            assert read_json(completed / "run.json")["config"]["generations"] == 3
+            assert (completed / "run_before_extension_1.json").exists()
+            assert {r["gene_id"] for r in old_records} <= {r["gene_id"] for r in read_csv(completed / "candidates.csv")}
+            try:
+                resolve_resume_options(read_json(completed / "run.json"), generations=2)
+            except ValueError:
+                pass
+            else:
+                raise AssertionError("reduced generation limit was accepted")
+            assert snapshot_generations(300) == (1, *range(20, 301, 20))
             try:
                 resolve_resume_options(read_json(completed / "run.json"), population=96)
             except ValueError as exc:
@@ -893,11 +1049,14 @@ def resolve_resume_options(saved: dict, *, population=None, generations=None, se
                            femm_fraction=None, device=None) -> tuple[SearchConfig, str]:
     config = SearchConfig(**saved["config"])
     for flag, saved_value, value in (("population", config.population, population),
-                                     ("generations", config.generations, generations),
                                      ("seed", config.seed, seed),
                                      ("femm-fraction", config.femm_fraction, femm_fraction)):
         if value is not None and value != saved_value:
             raise ValueError(f"--{flag} conflicts with the saved run configuration")
+    if generations is not None:
+        if generations < config.generations:
+            raise ValueError("--generations cannot reduce the saved generation limit")
+        config = replace(config, generations=generations)
     saved_device = saved["committee"][0]["device"]
     if device not in (None, "auto", saved_device):
         raise ValueError("--device conflicts with the saved run device")
@@ -908,11 +1067,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--name", help="run directory name; new runs default to the local time")
     parser.add_argument("--population", type=int)
-    parser.add_argument("--generations", type=int)
+    parser.add_argument("--generations", type=int, help="total generation limit; resume permits increasing it")
     parser.add_argument("--seed", type=int)
     parser.add_argument("--femm-fraction", type=float)
     parser.add_argument("--device", choices=("auto", "cpu", "cuda"))
     parser.add_argument("--femm-mode", choices=("pause", "live"), default="pause")
+    parser.add_argument("--workers", type=int, default=1,
+                        help="parallel whole-gene FEMM workers (each worker solves all six angles)")
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--solve-pending", action="store_true", help="explicitly solve only the queued six-angle FEMM genes")
     parser.add_argument("--self-test", action="store_true")
@@ -924,7 +1085,7 @@ def main() -> None:
     if args.solve_pending:
         if not args.name:
             parser.error("--solve-pending requires --name")
-        print(f"Queued FEMM labels saved under {solve_pending(name)}; resume the GA separately")
+        print(f"Queued FEMM labels saved under {solve_pending(name, args.workers)}; resume the GA separately")
         return
     if args.resume:
         if not args.name:
@@ -942,7 +1103,8 @@ def main() -> None:
                               seed=args.seed if args.seed is not None else SearchConfig.seed,
                               femm_fraction=args.femm_fraction if args.femm_fraction is not None else SearchConfig.femm_fraction)
         device = args.device or "auto"
-    path = run_search(config, name, device, resume=args.resume, femm_mode=args.femm_mode)
+    path = run_search(config, name, device, resume=args.resume, femm_mode=args.femm_mode,
+                      femm_workers=args.workers)
     print(f"Run state: {read_json(path / 'run.json')['status']}; data: {path}")
 
 
