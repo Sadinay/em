@@ -488,6 +488,46 @@ class FemmAdapter:
         return {**self.physics_identity, "solver": self.core.solver_identity(),
                 "ga_adapter_sha256": file_hash(Path(__file__))}
 
+    def _validate_cached_angle(self, folder: Path, identity: dict) -> dict:
+        """Validate a complete angle, including a hash-linked compacted receipt."""
+        state = read_json(folder / "state.json")
+        if "artifact_retention_sha256" not in state:
+            return self.core.validate_success(folder, identity)
+        result_path = folder / "result.json"
+        result = read_json(result_path)
+        if state.get("status") != "succeeded" or any(
+                state.get(key) != value or result.get(key) != value
+                for key, value in identity.items()):
+            raise ValueError("compacted FEMM angle identity mismatch")
+        if file_hash(result_path) != state.get("result_sha256"):
+            raise ValueError("compacted FEMM result hash mismatch")
+        receipt_path = folder / "artifact_retention.json"
+        if file_hash(receipt_path) != state["artifact_retention_sha256"]:
+            raise ValueError("compacted FEMM receipt hash mismatch")
+        receipt = read_json(receipt_path)
+        expected = {"policy": "ga_results_only_v1", "result_sha256": state["result_sha256"],
+                    "gene_id": result["gene_id"],
+                    "condition_fingerprint": result["condition_fingerprint"],
+                    "inner_angle_deg": result["inner_angle_deg"],
+                    "fem_sha256": result["fem_sha256"],
+                    "ans_sha256": result["ans_sha256"]}
+        if receipt != expected:
+            raise ValueError("compacted FEMM receipt differs from result")
+        contract = read_json(folder.parents[1] / "contract.json")
+        if self.core.digest(contract) != identity["condition_fingerprint"]:
+            raise ValueError("compacted FEMM contract mismatch")
+        for ext in ("fem", "ans"):
+            artifact = folder / f"model.{ext}"
+            if artifact.exists() and file_hash(artifact) != result[f"{ext}_sha256"]:
+                raise ValueError(f"compacted FEMM {ext} hash mismatch")
+        if (folder / "model.fem").exists():
+            self.core.validate_model_settings(folder / "model.fem", contract["physical"],
+                                              identity["inner_angle_deg"])
+        if not isinstance(result.get("raw_torque_nm"), (int, float)) or not math.isfinite(
+                result["raw_torque_nm"]):
+            raise ValueError("compacted FEMM torque invalid")
+        return result
+
     def ensure_contract(self) -> tuple[dict, str, Path]:
         """Create the shared read-only solver contract before workers start."""
         contract = self._contract()
@@ -535,7 +575,7 @@ class FemmAdapter:
                 if any(state.get(key) != value for key, value in identity.items()):
                     raise ValueError("existing FEMM angle belongs to a different gene or condition")
                 if state["status"] == "succeeded":
-                    result = core.validate_success(folder, identity)
+                    result = self._validate_cached_angle(folder, identity)
                 else:
                     if not model.exists() or file_hash(model) not in (identity["prepared_sha256"],
                                                                        state.get("last_fem_sha256")):
@@ -550,7 +590,7 @@ class FemmAdapter:
                 result = self._solve_prepared_angle(folder, contract, identity, content)
             if result is None:
                 raise RuntimeError("FEMM angle failed twice; search remains paused")
-            raw.append(float(core.validate_success(folder, identity)["raw_torque_nm"]))
+            raw.append(float(self._validate_cached_angle(folder, identity)["raw_torque_nm"]))
         if len(raw) != len(self.physical["inner_angles_deg"]) or len(raw) != 6:
             raise RuntimeError("all six FEMM angles must finish before using a truth label")
         metric = core.physical.torque_metrics(raw, self.physical)
@@ -655,7 +695,7 @@ class FemmAdapter:
                                                     "currents_a", "condition_fingerprint", "prepared_sha256")}
             if identity["gene_id"] != row["gene_id"] or identity["bits"] != row["bits"]:
                 raise ValueError("FEMM angle belongs to a different gene")
-            raw.append(float(core.validate_success(folder, identity)["raw_torque_nm"]))
+            raw.append(float(self._validate_cached_angle(folder, identity)["raw_torque_nm"]))
         if len(raw) != 6 or not np.allclose(raw, label["raw_torques_nm"], atol=0, rtol=0):
             raise ValueError("FEMM six-angle waveform differs from label")
         metrics = core.physical.torque_metrics(raw, self.physical)
@@ -925,6 +965,71 @@ def solve_pending(name: str, workers: int = 1) -> Path:
     return run_dir
 
 
+def prune_completed_femm(name: str, *, dry_run: bool = False) -> dict:
+    """Discard large solved FEMM artifacts while preserving verified torque evidence.
+
+    Only genes with a complete six-angle label are eligible. A receipt linked to
+    the hashed result is committed before each artifact is removed, so pruning
+    can be interrupted and resumed without leaving an unverifiable angle.
+    """
+    run_dir = GA_DATA / name
+    manifest = read_json(run_dir / "run.json")
+    state = read_json(run_dir / "state.json")
+    if manifest["status"] != "complete" or state["stage"] != "complete":
+        raise ValueError("pruning requires a completed, idle GA run")
+    adapter = FemmAdapter(run_dir)
+    if manifest["femm_physics_fingerprint"] != adapter.physics_fingerprint:
+        raise ValueError("FEMM physics changed since run completion")
+    records = {row["gene_id"]: row for row in read_csv(run_dir / "candidates.csv")}
+    labels = {row["gene_id"]: row for row in read_csv(run_dir / "femm_labels.csv")}
+    genes_done = files_removed = bytes_removed = 0
+    for key, label in labels.items():
+        if key not in records or label["bits"] != records[key]["bits"]:
+            raise ValueError("FEMM label does not match the candidate table")
+        adapter.load_label(records[key])  # Fully validate six angles before touching this gene.
+        matches = list((run_dir / "femm_results").glob(f"c_*/g_{key[:16]}/label.json"))
+        if len(matches) != 1:
+            raise ValueError("expected one complete gene label before pruning")
+        folder = matches[0].parent
+        for angle in adapter.physical["inner_angles_deg"]:
+            angle_dir = folder / f"angle_{angle:g}"
+            state_path = angle_dir / "state.json"
+            angle_state = read_json(state_path)
+            result = read_json(angle_dir / "result.json")
+            artifacts = [angle_dir / "model.fem", angle_dir / "model.ans"]
+            if angle_state.get("status") != "succeeded":
+                raise ValueError("incomplete angle in completed gene")
+            if "artifact_retention_sha256" not in angle_state:
+                receipt = {"policy": "ga_results_only_v1",
+                           "result_sha256": angle_state["result_sha256"],
+                           "gene_id": result["gene_id"],
+                           "condition_fingerprint": result["condition_fingerprint"],
+                           "inner_angle_deg": result["inner_angle_deg"],
+                           "fem_sha256": result["fem_sha256"],
+                           "ans_sha256": result["ans_sha256"]}
+                if not dry_run:
+                    receipt_path = angle_dir / "artifact_retention.json"
+                    write_json(receipt_path, receipt)
+                    angle_state["artifact_retention_sha256"] = file_hash(receipt_path)
+                    write_json(state_path, angle_state)
+            for artifact in artifacts:
+                if artifact.exists():
+                    bytes_removed += artifact.stat().st_size
+                    files_removed += 1
+                    if not dry_run:
+                        artifact.unlink()
+            if not dry_run:
+                identity = {field: angle_state[field] for field in (
+                    "gene_id", "bits", "inner_angle_deg", "rotor_travel_deg", "currents_a",
+                    "condition_fingerprint", "prepared_sha256")}
+                adapter._validate_cached_angle(angle_dir, identity)
+        if not dry_run:
+            adapter.load_label(records[key])
+        genes_done += 1
+    return {"genes_verified": genes_done, "files_removed": files_removed,
+            "bytes_removed": bytes_removed, "dry_run": dry_run}
+
+
 def self_test() -> None:
     from tempfile import TemporaryDirectory
 
@@ -1076,12 +1181,20 @@ def main() -> None:
                         help="parallel whole-gene FEMM workers (each worker solves all six angles)")
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--solve-pending", action="store_true", help="explicitly solve only the queued six-angle FEMM genes")
+    parser.add_argument("--prune-completed", action="store_true",
+                        help="verify complete six-angle labels, then discard their FEM/ANS work files")
+    parser.add_argument("--dry-run", action="store_true", help="with --prune-completed, only report eligible artifacts")
     parser.add_argument("--self-test", action="store_true")
     args = parser.parse_args()
     if args.self_test:
         self_test()
         return
     name = args.name or datetime.now().strftime("nsga2_%Y%m%d_%H%M%S")
+    if args.prune_completed:
+        if not args.name:
+            parser.error("--prune-completed requires --name")
+        print(prune_completed_femm(name, dry_run=args.dry_run))
+        return
     if args.solve_pending:
         if not args.name:
             parser.error("--solve-pending requires --name")
